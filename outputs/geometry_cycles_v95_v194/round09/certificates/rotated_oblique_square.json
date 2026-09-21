@@ -1,0 +1,164 @@
+{
+  "analytic_rule": "proper orthogonal isometry preserves area, Dirichlet form and mean zero",
+  "decimal_enclosure": [
+    "2.195548355301",
+    "2.195548355580"
+  ],
+  "exact_width": "20057973/72057594037927936",
+  "formal_assistant_checked": false,
+  "format": "sphere_rotation_transfer_v184",
+  "geometry": "unit_S2",
+  "lower": "158205932076920971/72057594037927936",
+  "polynomial_identity": "q(x)=p((R*x)_3)",
+  "potential": {
+    "0,2,0": "16/25",
+    "1,1,0": "24/25",
+    "2,0,0": "9/25"
+  },
+  "rotated_coordinate": [
+    "3/5",
+    "4/5",
+    "0"
+  ],
+  "rotation": [
+    [
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "4/5",
+      "-3/5",
+      "0"
+    ],
+    [
+      "3/5",
+      "4/5",
+      "0"
+    ]
+  ],
+  "scope": "all_real_mean_zero_H1_functions_on_unit_S2",
+  "source_certificate": {
+    "angular_tail_cannot_improve_best_upper": true,
+    "angular_tail_lower": "6",
+    "decimal_enclosure": [
+      "2.195548355301",
+      "2.195548355580"
+    ],
+    "eigenvalue_index_in_constrained_space": 1,
+    "exact_width": "20057973/72057594037927936",
+    "formal_assistant_checked": false,
+    "format": "projected_full_sphere_ground_v93",
+    "geometry": "unit_S2",
+    "lower": "158205932076920971/72057594037927936",
+    "mean_zero": true,
+    "omitted_azimuth_m_start": 2,
+    "potential_symmetry": "axisymmetric_polynomial_degree_at_most_6",
+    "q_coefficients": [
+      "0",
+      "0",
+      "1"
+    ],
+    "range_proof": {
+      "kind": "quadratic_range_v5",
+      "lower": "0",
+      "upper": "1"
+    },
+    "scope": "all_mean_zero_H1_functions_on_unit_S2",
+    "sectors": [
+      {
+        "azimuth_m": 0,
+        "decimal_enclosure": [
+          "2.593084579894",
+          "2.593084580265"
+        ],
+        "degree_start": 1,
+        "eigenvalue_index": 1,
+        "exact_width": "1710561543/4611686018427387904",
+        "formal_assistant_checked": false,
+        "format": "projected_sphere_sector_v91_v92",
+        "geometry": "unit_S2",
+        "lower": "11958491901697124089/4611686018427387904",
+        "lower_inertia": [
+          0,
+          0,
+          6
+        ],
+        "mean_zero": true,
+        "modes": 6,
+        "projection": "remove_l0",
+        "q_coefficients": [
+          "0",
+          "0",
+          "1"
+        ],
+        "radial_tail_lower": "56",
+        "radial_tail_start": 7,
+        "range_proof": {
+          "kind": "quadratic_range_v5",
+          "lower": "0",
+          "upper": "1"
+        },
+        "scope": "single_azimuth_sector_only",
+        "upper": "2784303367/1073741824",
+        "upper_inertia": [
+          1,
+          0,
+          5
+        ],
+        "upper_kind": "upper_tail"
+      },
+      {
+        "azimuth_m": 1,
+        "decimal_enclosure": [
+          "2.195548355301",
+          "2.195548355580"
+        ],
+        "degree_start": 1,
+        "eigenvalue_index": 1,
+        "exact_width": "20057973/72057594037927936",
+        "formal_assistant_checked": false,
+        "format": "projected_sphere_sector_v91_v92",
+        "geometry": "unit_S2",
+        "lower": "158205932076920971/72057594037927936",
+        "lower_inertia": [
+          0,
+          0,
+          6
+        ],
+        "mean_zero": true,
+        "modes": 6,
+        "projection": "none",
+        "q_coefficients": [
+          "0",
+          "0",
+          "1"
+        ],
+        "radial_tail_lower": "56",
+        "radial_tail_start": 7,
+        "range_proof": {
+          "kind": "quadratic_range_v5",
+          "lower": "0",
+          "upper": "1"
+        },
+        "scope": "single_azimuth_sector_only",
+        "upper": "36835189/16777216",
+        "upper_inertia": [
+          1,
+          0,
+          5
+        ],
+        "upper_kind": "upper_tail"
+      }
+    ],
+    "status": "certified_target_met",
+    "tolerance": "1/10000000",
+    "upper": "36835189/16777216"
+  },
+  "univariate_coefficients": [
+    "0",
+    "0",
+    "1"
+  ],
+  "upper": "36835189/16777216"
+}

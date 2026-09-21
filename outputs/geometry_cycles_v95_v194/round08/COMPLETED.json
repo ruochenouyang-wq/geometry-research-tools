@@ -1,0 +1,120 @@
+{
+  "completed_utc": "2026-09-11T11:24:14.739653+00:00",
+  "cycle": 8,
+  "file_sha256": {
+    "gn_variation.py": "6efda06153b53806e7f127943f506e307cd918539f7928ed536c95b931d0c6cb",
+    "round08/STAGES.json": "bf20c55f7a3bc7eed82e584f7aa77a9ac9aefef90e858909dc8ce0fed5a8c07a",
+    "test_gn_review.py": "327d01d072433cf68fd9633bae7978bac62c166038b797f118bd9ab4acf856d9",
+    "test_gn_variation.py": "a3ea0a607976361292a3f85cee91edcb566e762304fb4d5662f8ec933355a4c1"
+  },
+  "first_version": 165,
+  "last_version": 174,
+  "stages": [
+    {
+      "callable": "gn_variation.moments",
+      "capability": "Exact mass, energy and quartic moments through trial degree 36",
+      "evidence": [
+        "round08/results.json",
+        "test_gn_variation.py"
+      ],
+      "outcome": "degree36_moments_replayed",
+      "version": 165
+    },
+    {
+      "callable": "gn_variation.normalize",
+      "capability": "Exact zero-mean centering and nonzero rational scale normalization",
+      "evidence": [
+        "round08/results.json",
+        "test_gn_variation.py"
+      ],
+      "outcome": "centering_scale_and_constant_rejection_tested",
+      "version": 166
+    },
+    {
+      "callable": "gn_variation.ratio",
+      "capability": "Bound trial to exact area-normalized pi*K GN quotient",
+      "evidence": [
+        "round08/results.json",
+        "round08/PROOF.md"
+      ],
+      "outcome": "trial_lower_bound_replayed",
+      "version": 167
+    },
+    {
+      "callable": "gn_variation.residual",
+      "capability": "Complete projected Euler-Lagrange residual including cubic high degrees",
+      "evidence": [
+        "round08/results.json",
+        "test_gn_variation.py"
+      ],
+      "outcome": "degree108_full_residual_tested",
+      "version": 168
+    },
+    {
+      "callable": "gn_variation.direction",
+      "capability": "Exact directional derivative and certified positive local direction",
+      "evidence": [
+        "round08/results.json",
+        "test_gn_variation.py"
+      ],
+      "outcome": "positive_direction_and_reversed_sign_replayed",
+      "version": 169
+    },
+    {
+      "callable": "gn_variation.plane",
+      "capability": "Global 2D projective-plane GN maximum via two complete charts",
+      "evidence": [
+        "round08/high_degree_plane.json",
+        "test_gn_variation.py"
+      ],
+      "outcome": "two_chart_high_degree_plane_replayed",
+      "version": 170
+    },
+    {
+      "callable": "gn_variation.refine",
+      "capability": "Finite-budget monotone accepted plane refinements",
+      "evidence": [
+        "round08/refinement.json",
+        "test_gn_variation.py"
+      ],
+      "outcome": "fixed_initial_trial_improved_with_finite_budget",
+      "version": 171
+    },
+    {
+      "callable": "gn_variation.project_residual",
+      "capability": "Legendre degree-budget projection with full inside/outside residual evidence",
+      "evidence": [
+        "round08/results.json",
+        "test_gn_variation.py"
+      ],
+      "outcome": "projected_zero_full_nonzero_distinguished",
+      "version": 172
+    },
+    {
+      "callable": "gn_variation.screen_caps",
+      "capability": "Centered-cap exact trial generation and adaptive target/budget screening",
+      "evidence": [
+        "round08/caps.json",
+        "test_gn_variation.py"
+      ],
+      "outcome": "n2_4_8_12_recorded_and_target_stopping_tested",
+      "version": 173
+    },
+    {
+      "callable": "gn_variation.spectral_diagnostic",
+      "capability": "Compile GN trial square to degree24 potential and replay full-spectrum diagnostics",
+      "evidence": [
+        "round08/spectral_diagnostics.json",
+        "round08/PROOF.md"
+      ],
+      "outcome": "fixed_potential_diagnostics_only_no_universal_GN_claim",
+      "version": 174
+    }
+  ],
+  "validation": {
+    "all_passed": true,
+    "evidence": "round08/ROOT_ACCEPTANCE.json",
+    "tests": 36,
+    "unique_replayed_records": 13
+  }
+}

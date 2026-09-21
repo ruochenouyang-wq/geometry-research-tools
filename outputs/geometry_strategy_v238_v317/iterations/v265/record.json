@@ -1,0 +1,43 @@
+{
+  "version": 265,
+  "recorded_at": "2026-09-18T18:42:48.795392+00:00",
+  "hypothesis": "Related affine profile requests repeat identical normalized shape integrations.",
+  "change": "Add explicit bounded LRU shape reuse keyed by exact ratio and degree; retain independent fresh certificate construction and replay.",
+  "source_sha256": {
+    "adaptive_approx.py": "fabf83fa891eec3ade8c36c1ba5924511ca81a3dc115cb914ddf72fd6c721bd9",
+    "test_adaptive_approx.py": "831371e6d93e2c05a3548b908cb1d941156fe2bc1198d13aba75ecf546e75ca0"
+  },
+  "validation": {
+    "unit_tests_passed": 13,
+    "bounded_eviction_checked": true,
+    "warm_source_bound_certificate_replayed": true
+  },
+  "comparison": {
+    "cold_cost": {
+      "shape_evaluations": 14,
+      "shape_cache_hits": 0,
+      "shape_requests": 14,
+      "level_comparisons": 7,
+      "planning_cache_supplied": true,
+      "sqrt_comparisons": 1,
+      "certificate_builds": 1,
+      "certificate_replays": 1
+    },
+    "warm_changed_amplitude_offset_axis_cost": {
+      "shape_evaluations": 0,
+      "shape_cache_hits": 14,
+      "shape_requests": 14,
+      "level_comparisons": 7,
+      "planning_cache_supplied": true,
+      "sqrt_comparisons": 1,
+      "certificate_builds": 1,
+      "certificate_replays": 1
+    },
+    "warm_status": "met"
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Warm gains require preparation and reuse; certificate build and verification still compute their own exact shapes."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

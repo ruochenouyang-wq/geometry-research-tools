@@ -1,0 +1,96 @@
+{
+  "version": 9,
+  "repetitions": 3,
+  "rows": [
+    {
+      "case": "true_margin",
+      "method": "uniform",
+      "max_cells": 64,
+      "modes": 10,
+      "threshold": "-3/10",
+      "status": "proved",
+      "point_evaluations": 64,
+      "median_seconds": 0.30606483399999995,
+      "samples": [
+        0.306577792,
+        0.30530833300000004,
+        0.30606483399999995
+      ]
+    },
+    {
+      "case": "true_margin",
+      "method": "adaptive",
+      "max_cells": 64,
+      "modes": 10,
+      "threshold": "-3/10",
+      "status": "proved",
+      "point_evaluations": 11,
+      "median_seconds": 0.04250612500000006,
+      "samples": [
+        0.042759916999999925,
+        0.04250612500000006,
+        0.0422349580000001
+      ]
+    },
+    {
+      "case": "false_threshold",
+      "method": "uniform",
+      "max_cells": 64,
+      "modes": 10,
+      "threshold": "-1/10",
+      "status": "disproved",
+      "point_evaluations": 1,
+      "median_seconds": 0.005154667000000002,
+      "samples": [
+        0.005154667000000002,
+        0.0049578750000001115,
+        0.005437999999999832
+      ]
+    },
+    {
+      "case": "false_threshold",
+      "method": "adaptive",
+      "max_cells": 64,
+      "modes": 10,
+      "threshold": "-1/10",
+      "status": "disproved",
+      "point_evaluations": 8,
+      "median_seconds": 0.024634166000000013,
+      "samples": [
+        0.024634166000000013,
+        0.02510049999999997,
+        0.024357666
+      ]
+    },
+    {
+      "case": "insufficient_budget",
+      "method": "uniform",
+      "max_cells": 1,
+      "modes": 10,
+      "threshold": "-3/10",
+      "status": "unresolved",
+      "point_evaluations": 1,
+      "median_seconds": 0.002732624999999933,
+      "samples": [
+        0.002732624999999933,
+        0.0032539579999999457,
+        0.002629041999999915
+      ]
+    },
+    {
+      "case": "insufficient_budget",
+      "method": "adaptive",
+      "max_cells": 1,
+      "modes": 10,
+      "threshold": "-3/10",
+      "status": "unresolved",
+      "point_evaluations": 1,
+      "median_seconds": 0.0027916249999999643,
+      "samples": [
+        0.0027916249999999643,
+        0.0027994169999998597,
+        0.002664957999999995
+      ]
+    }
+  ]
+}

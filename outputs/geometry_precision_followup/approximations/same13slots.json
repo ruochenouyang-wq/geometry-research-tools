@@ -1,0 +1,355 @@
+{
+  "axis_zero_convention": "step(0)=0; singular_power(0)=0 as an a.e. representative",
+  "bound_statement": "probability_L2_norm(original_function-piecewise_model)<=error_upper",
+  "cells": [
+    {
+      "approximation_norm_squared_dt": "1/144",
+      "coordinate": "s=(abs(t)-left)/(right-left)",
+      "core": true,
+      "cross_integral_dt": "1/144",
+      "degree": 0,
+      "error_squared_dt": "1/1152",
+      "left": "0",
+      "left_fourth_root": "0",
+      "polynomial_in_s": [
+        "-64/3"
+      ],
+      "projection": [
+        {
+          "basis_mass_dt": "1/65536",
+          "coefficient": "-64/3",
+          "degree": 0,
+          "norm_squared_dt": "1/144",
+          "shifted_legendre_in_s": [
+            "1"
+          ],
+          "source_inner_product_dt": "-1/3072"
+        }
+      ],
+      "right": "1/65536",
+      "right_fourth_root": "1/16",
+      "source_monomial_moments_dt": [
+        "-1/3072"
+      ],
+      "source_norm_squared_dt": "1/128"
+    },
+    {
+      "approximation_norm_squared_dt": "337314949/14407470000",
+      "coordinate": "s=(abs(t)-left)/(right-left)",
+      "core": false,
+      "cross_integral_dt": "337314949/14407470000",
+      "degree": 2,
+      "error_squared_dt": "2881033/115259760000",
+      "left": "1/65536",
+      "left_fourth_root": "1/16",
+      "polynomial_in_s": [
+        "-741184/51975",
+        "247552/17325",
+        "-147584/17325"
+      ],
+      "projection": [
+        {
+          "basis_mass_dt": "15/65536",
+          "coefficient": "-448/45",
+          "degree": 0,
+          "norm_squared_dt": "49/2160",
+          "shifted_legendre_in_s": [
+            "1"
+          ],
+          "source_inner_product_dt": "-7/3072"
+        },
+        {
+          "basis_mass_dt": "5/65536",
+          "coefficient": "4544/1575",
+          "degree": 1,
+          "norm_squared_dt": "5041/7938000",
+          "shifted_legendre_in_s": [
+            "-1",
+            "2"
+          ],
+          "source_inner_product_dt": "71/322560"
+        },
+        {
+          "basis_mass_dt": "3/65536",
+          "coefficient": "-73792/51975",
+          "degree": 2,
+          "norm_squared_dt": "1329409/14407470000",
+          "shifted_legendre_in_s": [
+            "1",
+            "-6",
+            "6"
+          ],
+          "source_inner_product_dt": "-1153/17740800"
+        }
+      ],
+      "right": "1/4096",
+      "right_fourth_root": "1/8",
+      "source_monomial_moments_dt": [
+        "-7/3072",
+        "-127/469762048",
+        "-2047/48378511622144"
+      ],
+      "source_norm_squared_dt": "3/128"
+    },
+    {
+      "approximation_norm_squared_dt": "337314949/3601867500",
+      "coordinate": "s=(abs(t)-left)/(right-left)",
+      "core": false,
+      "cross_integral_dt": "337314949/3601867500",
+      "degree": 2,
+      "error_squared_dt": "2881033/28814940000",
+      "left": "1/4096",
+      "left_fourth_root": "1/8",
+      "polynomial_in_s": [
+        "-370592/51975",
+        "123776/17325",
+        "-73792/17325"
+      ],
+      "projection": [
+        {
+          "basis_mass_dt": "15/4096",
+          "coefficient": "-224/45",
+          "degree": 0,
+          "norm_squared_dt": "49/540",
+          "shifted_legendre_in_s": [
+            "1"
+          ],
+          "source_inner_product_dt": "-7/384"
+        },
+        {
+          "basis_mass_dt": "5/4096",
+          "coefficient": "2272/1575",
+          "degree": 1,
+          "norm_squared_dt": "5041/1984500",
+          "shifted_legendre_in_s": [
+            "-1",
+            "2"
+          ],
+          "source_inner_product_dt": "71/40320"
+        },
+        {
+          "basis_mass_dt": "3/4096",
+          "coefficient": "-36896/51975",
+          "degree": 2,
+          "norm_squared_dt": "1329409/3601867500",
+          "shifted_legendre_in_s": [
+            "1",
+            "-6",
+            "6"
+          ],
+          "source_inner_product_dt": "-1153/2217600"
+        }
+      ],
+      "right": "1/256",
+      "right_fourth_root": "1/4",
+      "source_monomial_moments_dt": [
+        "-7/384",
+        "-127/3670016",
+        "-2047/23622320128"
+      ],
+      "source_norm_squared_dt": "3/32"
+    },
+    {
+      "approximation_norm_squared_dt": "337314949/900466875",
+      "coordinate": "s=(abs(t)-left)/(right-left)",
+      "core": false,
+      "cross_integral_dt": "337314949/900466875",
+      "degree": 2,
+      "error_squared_dt": "2881033/7203735000",
+      "left": "1/256",
+      "left_fourth_root": "1/4",
+      "polynomial_in_s": [
+        "-185296/51975",
+        "61888/17325",
+        "-36896/17325"
+      ],
+      "projection": [
+        {
+          "basis_mass_dt": "15/256",
+          "coefficient": "-112/45",
+          "degree": 0,
+          "norm_squared_dt": "49/135",
+          "shifted_legendre_in_s": [
+            "1"
+          ],
+          "source_inner_product_dt": "-7/48"
+        },
+        {
+          "basis_mass_dt": "5/256",
+          "coefficient": "1136/1575",
+          "degree": 1,
+          "norm_squared_dt": "5041/496125",
+          "shifted_legendre_in_s": [
+            "-1",
+            "2"
+          ],
+          "source_inner_product_dt": "71/5040"
+        },
+        {
+          "basis_mass_dt": "3/256",
+          "coefficient": "-18448/51975",
+          "degree": 2,
+          "norm_squared_dt": "1329409/900466875",
+          "shifted_legendre_in_s": [
+            "1",
+            "-6",
+            "6"
+          ],
+          "source_inner_product_dt": "-1153/277200"
+        }
+      ],
+      "right": "1/16",
+      "right_fourth_root": "1/2",
+      "source_monomial_moments_dt": [
+        "-7/48",
+        "-127/28672",
+        "-2047/11534336"
+      ],
+      "source_norm_squared_dt": "3/8"
+    },
+    {
+      "approximation_norm_squared_dt": "1349259796/900466875",
+      "coordinate": "s=(abs(t)-left)/(right-left)",
+      "core": false,
+      "cross_integral_dt": "1349259796/900466875",
+      "degree": 2,
+      "error_squared_dt": "2881033/1800933750",
+      "left": "1/16",
+      "left_fourth_root": "1/2",
+      "polynomial_in_s": [
+        "-92648/51975",
+        "30944/17325",
+        "-18448/17325"
+      ],
+      "projection": [
+        {
+          "basis_mass_dt": "15/16",
+          "coefficient": "-56/45",
+          "degree": 0,
+          "norm_squared_dt": "196/135",
+          "shifted_legendre_in_s": [
+            "1"
+          ],
+          "source_inner_product_dt": "-7/6"
+        },
+        {
+          "basis_mass_dt": "5/16",
+          "coefficient": "568/1575",
+          "degree": 1,
+          "norm_squared_dt": "20164/496125",
+          "shifted_legendre_in_s": [
+            "-1",
+            "2"
+          ],
+          "source_inner_product_dt": "71/630"
+        },
+        {
+          "basis_mass_dt": "3/16",
+          "coefficient": "-9224/51975",
+          "degree": 2,
+          "norm_squared_dt": "5317636/900466875",
+          "shifted_legendre_in_s": [
+            "1",
+            "-6",
+            "6"
+          ],
+          "source_inner_product_dt": "-1153/34650"
+        }
+      ],
+      "right": "1",
+      "right_fourth_root": "1",
+      "source_monomial_moments_dt": [
+        "-7/6",
+        "-127/224",
+        "-2047/5632"
+      ],
+      "source_norm_squared_dt": "3/2"
+    }
+  ],
+  "degree": 2,
+  "endpoint_convention": "at nonzero seams choose the cell starting at abs(t); final endpoint included",
+  "error_squared": "2155873/720373500",
+  "error_upper": "3759348317/68719476736",
+  "expanded_polynomial_coefficient_slots": 13,
+  "formal_assistant_checked": false,
+  "format": "sphere_structured_piecewise_L2_v1",
+  "function": {
+    "amplitude": "-1",
+    "axis": 2,
+    "exponent": "-1/4",
+    "kind": "axis_profile",
+    "offset": "0",
+    "profile": "abs_power"
+  },
+  "global_polynomial": false,
+  "levels": 4,
+  "norm": "L2_probability",
+  "representation": "even_reflection_of_positive_half_cells",
+  "root_ratio": "1/2",
+  "scope": "unit_S2_probability_measure",
+  "shape_coefficient_count": 3,
+  "shape_proof": {
+    "approximation_norm_squared_dt": "1349259796/900466875",
+    "coordinate": "s=(abs(t)-left)/(right-left)",
+    "core": false,
+    "cross_integral_dt": "1349259796/900466875",
+    "degree": 2,
+    "error_squared_dt": "2881033/1800933750",
+    "left": "1/16",
+    "left_fourth_root": "1/2",
+    "polynomial_in_s": [
+      "92648/51975",
+      "-30944/17325",
+      "18448/17325"
+    ],
+    "projection": [
+      {
+        "basis_mass_dt": "15/16",
+        "coefficient": "56/45",
+        "degree": 0,
+        "norm_squared_dt": "196/135",
+        "shifted_legendre_in_s": [
+          "1"
+        ],
+        "source_inner_product_dt": "7/6"
+      },
+      {
+        "basis_mass_dt": "5/16",
+        "coefficient": "-568/1575",
+        "degree": 1,
+        "norm_squared_dt": "20164/496125",
+        "shifted_legendre_in_s": [
+          "-1",
+          "2"
+        ],
+        "source_inner_product_dt": "-71/630"
+      },
+      {
+        "basis_mass_dt": "3/16",
+        "coefficient": "9224/51975",
+        "degree": 2,
+        "norm_squared_dt": "5317636/900466875",
+        "shifted_legendre_in_s": [
+          "1",
+          "-6",
+          "6"
+        ],
+        "source_inner_product_dt": "1153/34650"
+      }
+    ],
+    "right": "1",
+    "right_fourth_root": "1",
+    "source_monomial_moments_dt": [
+      "7/6",
+      "127/224",
+      "2047/5632"
+    ],
+    "source_norm_squared_dt": "3/2"
+  },
+  "shape_rule": "t=R^4*x scales centered profile coefficients by 1/R and squared residual integral by R^2",
+  "source_norm_squared": "2",
+  "source_value_at_axis_zero": "0",
+  "spectral_transfer_claimed": false,
+  "sqrt_bits": 40,
+  "sqrt_upper_squared": "14132699768530732489/4722366482869645213696"
+}

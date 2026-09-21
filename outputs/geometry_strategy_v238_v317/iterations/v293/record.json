@@ -1,0 +1,22 @@
+{
+  "version": 293,
+  "recorded_at": "2026-09-18T18:37:25.171111+00:00",
+  "hypothesis": "Multiplying a target and representative by a rational factor scales L2 error by its absolute value.",
+  "change": "Signed and zero amplitude scaling of target, representative and proven error; spectral inputs rejected.",
+  "source_sha256": {
+    "proof_transport.py": "9d1073a605655d0deb2d6195ad8d38b2ab02974aa1c5c8bfc9bd7cccc1bde950",
+    "test_proof_transport.py": "b09fd0175747badda5ede96363fe80bbf0a375b9e485406ce26283a08caf3d74"
+  },
+  "validation": {
+    "tests_passed": 7
+  },
+  "comparison": {
+    "before": "Amplitude changes rebuilt approximation cells.",
+    "after": "Exact affine representative scaling and |factor| times bound."
+  },
+  "outcome": "retained",
+  "limitations": [
+    "No assertion that scaling a potential scales the Laplacian spectrum."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

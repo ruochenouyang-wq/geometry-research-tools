@@ -1,0 +1,204 @@
+{
+  "version": "0.2.0",
+  "problem": {
+    "title": "Ahmadi–Krstic–Parrilo 基准：稳定但不存在多项式 Lyapunov 函数",
+    "dimension": 2,
+    "vector_field": [
+      [
+        {
+          "powers": [
+            1,
+            0
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "powers": [
+            1,
+            1
+          ],
+          "coefficient": "1"
+        }
+      ],
+      [
+        {
+          "powers": [
+            0,
+            1
+          ],
+          "coefficient": "-1"
+        }
+      ]
+    ]
+  },
+  "provider": "baseline",
+  "model": null,
+  "status": "certified_global_asymptotic_stability",
+  "novelty": "not_assessed",
+  "formal_assistant_checked": false,
+  "budget": {
+    "rounds": 5,
+    "iterations_per_round": 2500,
+    "seconds_per_round_soft": 12
+  },
+  "history": [
+    {
+      "round": 1,
+      "plan": {
+        "family": "polynomial",
+        "degree": 2,
+        "log_indices": [],
+        "explanation": "扩大多项式搜索空间。"
+      },
+      "status": "search_failed",
+      "iterations": 2500,
+      "elapsed_seconds": 0.044,
+      "search_variables": 21,
+      "best_numerical_residual": 0.015066342317900688,
+      "feedback": "预算内没有找到能精确复核的证书。可换表示或提高预算；不能据此断言不稳定。"
+    },
+    {
+      "round": 2,
+      "plan": {
+        "family": "polynomial",
+        "degree": 4,
+        "log_indices": [],
+        "explanation": "扩大多项式搜索空间。"
+      },
+      "status": "search_failed",
+      "iterations": 2500,
+      "elapsed_seconds": 0.089,
+      "search_variables": 72,
+      "best_numerical_residual": 0.0006452013225955243,
+      "feedback": "预算内没有找到能精确复核的证书。可换表示或提高预算；不能据此断言不稳定。"
+    },
+    {
+      "round": 3,
+      "plan": {
+        "family": "log_quadratic",
+        "degree": 2,
+        "log_indices": [
+          0
+        ],
+        "explanation": "转换函数表示，检验对数项能否消除乘法耦合。"
+      },
+      "status": "certified",
+      "certificate": {
+        "plan": {
+          "family": "log_quadratic",
+          "degree": 2,
+          "log_indices": [
+            0
+          ],
+          "explanation": "转换函数表示，检验对数项能否消除乘法耦合。"
+        },
+        "coefficients": [
+          "7/5",
+          "13/9"
+        ],
+        "grams": [
+          [
+            [
+              "17/9",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "9/5",
+              "-7/5"
+            ],
+            [
+              "0",
+              "-7/5",
+              "26/9"
+            ]
+          ]
+        ]
+      },
+      "iterations": 25,
+      "elapsed_seconds": 0.001,
+      "search_variables": 8
+    }
+  ],
+  "certificate": {
+    "plan": {
+      "family": "log_quadratic",
+      "degree": 2,
+      "log_indices": [
+        0
+      ],
+      "explanation": "转换函数表示，检验对数项能否消除乘法耦合。"
+    },
+    "coefficients": [
+      "7/5",
+      "13/9"
+    ],
+    "grams": [
+      [
+        [
+          "17/9",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "9/5",
+          "-7/5"
+        ],
+        [
+          "0",
+          "-7/5",
+          "26/9"
+        ]
+      ]
+    ]
+  },
+  "readable_result": {
+    "V_terms": [
+      {
+        "variable": 0,
+        "coefficient": "7/5",
+        "function": "log(1+x_i^2)"
+      },
+      {
+        "variable": 1,
+        "coefficient": "13/9",
+        "function": "x_i^2"
+      }
+    ],
+    "positive_denominator": [
+      {
+        "powers": [
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "powers": [
+          2,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ],
+    "negative_derivative_numerator_lower_bound": [
+      {
+        "powers": [
+          0,
+          2
+        ],
+        "coefficient": "1"
+      },
+      {
+        "powers": [
+          2,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ]
+  },
+  "api_usage": []
+}

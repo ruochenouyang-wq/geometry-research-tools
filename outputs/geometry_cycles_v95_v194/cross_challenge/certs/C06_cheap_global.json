@@ -1,0 +1,114 @@
+{
+  "analytic_dependencies": [
+    "unit sphere Laplacian ground 0 and mean-zero ground 2",
+    "Rayleigh variational principle on the indicated full H1 space"
+  ],
+  "azimuthal_normalization": "cancels separately within each Rayleigh quotient",
+  "decimal_enclosure": [
+    "1.265306122448",
+    "1.874829931973"
+  ],
+  "eigenvalue_index_in_constrained_space": 1,
+  "exact_width": "64/105",
+  "formal_assistant_checked": false,
+  "format": "wide_cheap_sphere_ground_v115",
+  "geometry": "unit_S2",
+  "laplacian_ground_lower": 2,
+  "lower": "62/49",
+  "mean_zero": true,
+  "q_coefficients": [
+    "-1/49",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "2/7",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "-1"
+  ],
+  "range_proof": {
+    "format": "wide_potential_range_v117_v119",
+    "interval": [
+      "-1",
+      "1"
+    ],
+    "lower": "-36/49",
+    "method": "bernstein",
+    "proof": {
+      "cells": [
+        {
+          "interval": [
+            "-1",
+            "0"
+          ],
+          "lower": "-36/49",
+          "upper": "6/49"
+        },
+        {
+          "interval": [
+            "0",
+            "1"
+          ],
+          "lower": "-36/49",
+          "upper": "6/49"
+        }
+      ],
+      "depth": 1
+    },
+    "q_coefficients": [
+      "-1/49",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "2/7",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1"
+    ],
+    "upper": "6/49"
+  },
+  "scope": "all_mean_zero_H1_functions_on_unit_S2",
+  "status": "certified_bound_open_gap",
+  "trial_coordinate_convention": "t=z; x=sqrt(1-t^2)*cos(phi)",
+  "trials": [
+    {
+      "azimuth_m": 0,
+      "degree_l": 1,
+      "kinetic_eigenvalue": 2,
+      "potential_integral": "-184/2205",
+      "radial_mass": "2/3",
+      "radial_squared_coefficients": [
+        "0",
+        "0",
+        "1"
+      ],
+      "rayleigh_quotient": "1378/735",
+      "sphere_function": "z"
+    },
+    {
+      "azimuth_m": 1,
+      "degree_l": 1,
+      "kinetic_eigenvalue": 2,
+      "potential_integral": "-848/28665",
+      "radial_mass": "4/3",
+      "radial_squared_coefficients": [
+        "1",
+        "0",
+        "-1"
+      ],
+      "rayleigh_quotient": "18898/9555",
+      "sphere_function": "x"
+    }
+  ],
+  "upper": "1378/735"
+}

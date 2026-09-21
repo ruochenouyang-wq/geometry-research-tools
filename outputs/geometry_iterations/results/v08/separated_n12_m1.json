@@ -1,0 +1,77 @@
+{
+  "algorithm_version": 8,
+  "modes": 12,
+  "cluster_size": 1,
+  "certificate": {
+    "method": "first_cluster_projector_v8",
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "cluster_indices": [
+      1
+    ],
+    "q_coefficients": [
+      "0",
+      "1"
+    ],
+    "trial_columns": [
+      [
+        "1",
+        "-4160467991655/8796093022208",
+        "903984180747/17592186044416",
+        "-22329677507/8796093022208",
+        "633263841/8796093022208",
+        "-5834055/4398046511104",
+        "150983/8796093022208",
+        "-181/1099511627776",
+        "21/17592186044416",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "ritz_upper": "-21669104107/137438953472",
+    "external_lower": "919526257234185764931/439804651110400000000",
+    "gap_certificate": {
+      "method": "modewise_schur_v3",
+      "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+      "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+      "q_coefficients": [
+        "0",
+        "1"
+      ],
+      "modes": 12,
+      "eigenvalue_index": 2,
+      "tail_policy": "sandwich",
+      "range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "-1",
+        "upper": "1"
+      },
+      "upper_kind": "upper_tail",
+      "tail_lower": "155",
+      "lower_inertia": [
+        1,
+        0,
+        11
+      ],
+      "upper_inertia": [
+        2,
+        0,
+        10
+      ],
+      "formal_assistant_checked": false,
+      "lower": "919526257234185764931/439804651110400000000",
+      "upper": "919526257783941578819/439804651110400000000",
+      "exact_width": "1/800000000",
+      "decimal_enclosure": [
+        "2.090760647738",
+        "2.090760648989"
+      ]
+    },
+    "full_residual_frobenius_squared": "44222443124799453153554962346880480765338/102787955919681127205249516750703987644331897547646220916663267113",
+    "projector_hilbert_schmidt_squared_upper": "17107729056003040587423955334475586433721302054916881009841704796160000000000000000/100512098570207438135442968424832572879323910929728020698894338147960497395675765676851465699521603630314993",
+    "nontrivial_bound": true,
+    "formal_assistant_checked": false
+  },
+  "seconds": 0.009177667
+}

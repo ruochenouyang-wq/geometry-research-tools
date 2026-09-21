@@ -1,0 +1,37 @@
+{
+  "method": "modewise_schur_v3",
+  "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+  "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+  "q_coefficients": [
+    "0",
+    "1"
+  ],
+  "modes": 2,
+  "eigenvalue_index": 1,
+  "tail_policy": "scalar_ritz",
+  "range_proof": {
+    "kind": "coefficient",
+    "lower": "-1",
+    "upper": "1"
+  },
+  "upper_kind": "upper_ritz",
+  "tail_lower": "5",
+  "lower_inertia": [
+    0,
+    0,
+    2
+  ],
+  "upper_inertia": [
+    1,
+    0,
+    1
+  ],
+  "formal_assistant_checked": false,
+  "lower": "-391776713095510970032179127/2475880078570760549798248448",
+  "upper": "-2721520652339/17592186044416",
+  "exact_width": "8756731978166295245866935/2475880078570760549798248448",
+  "decimal_enclosure": [
+    "-0.158237354259",
+    "-0.154700538379"
+  ]
+}

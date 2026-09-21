@@ -1,0 +1,54 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "axisymmetric_ground": "6",
+  "budget": {},
+  "certificates": [
+    {
+      "format": "finite_moment_sector_v153",
+      "path": "certs/C12_axisymmetric_1z_constraints.json",
+      "sha256": "d523a5741671ee6552d856e82e8f4480767af5fdd54a8801fd4cb264bdccdfd0",
+      "verified": true
+    },
+    {
+      "format": "finite_moment_sector_v153",
+      "path": "certs/C12_axisymmetric_exact_6.json",
+      "sha256": "626bf82b1a2483774fccaafbfe30806758c85508bb7f2999a66a528edcf4449d",
+      "verified": true
+    },
+    {
+      "format": "explicit_sector_rayleigh_v95",
+      "path": "certs/C12_full_transverse_trial.json",
+      "sha256": "b059e0652abc6e9cf2015dfd2be7202f71b900aba22bb438557ba6d05f76d3a5",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 0.003116,
+  "full_space_analytic_calibration": "2 by Poincare lower and admissible x/y",
+  "id": "C12",
+  "missing_capability": "No full-space assembly API for arbitrary constraints distributed across m sectors.",
+  "notes": [],
+  "original_acceptance": [
+    "In the full sphere the ground is exactly 2, with admissible x and y.",
+    "For the separately declared axisymmetric space the same constraints give ground 6; scope binding must distinguish the two."
+  ],
+  "original_input": {
+    "orthogonality": [
+      "1",
+      "z"
+    ],
+    "q": [
+      "0"
+    ]
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "partially_supported",
+  "title": "只删除常数和z仍保留横向模",
+  "transverse_trial_rayleigh": "2"
+}

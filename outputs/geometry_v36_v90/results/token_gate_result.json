@@ -1,0 +1,27 @@
+{
+  "engineering_gate_passed": true,
+  "basis": "TOKEN_GATE.md",
+  "corpus_size": 26,
+  "size_gate": {
+    "o200k_base": {
+      "median_receipt": 142.0,
+      "p90_receipt": 157,
+      "median_request_and_receipt": 219.5,
+      "numeric_size_gate": true
+    },
+    "cl100k_base": {
+      "median_receipt": 138.5,
+      "p90_receipt": 154,
+      "median_request_and_receipt": 216.0,
+      "numeric_size_gate": true
+    }
+  },
+  "protocol_audit_tests": 60,
+  "audit_passed": true,
+  "decision": "After V55 prioritize inequality/range precision; continue token checks on new formats",
+  "limitations": [
+    "Not a proof of minimum achievable token usage",
+    "No measurement of model understanding or hidden reasoning",
+    "Actual tool response wrapper is included in request-response totals"
+  ]
+}

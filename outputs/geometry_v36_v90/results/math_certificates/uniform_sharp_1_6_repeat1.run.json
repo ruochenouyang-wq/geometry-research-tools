@@ -1,0 +1,49 @@
+{
+  "claim": "lambda_1(-Delta+a*p(t)) >= a*mean(p)-coefficient*a^2",
+  "coefficient": "1/6",
+  "counterexample": null,
+  "direction": [
+    "0",
+    "1"
+  ],
+  "formal_assistant_checked": false,
+  "mean": "0",
+  "method": "unit_sphere_affine_log_sobolev_v1",
+  "moment_series_rule": {
+    "consequence": "sinh(z)/z <= exp(z^2/6) for every real z",
+    "domination": "(2*k+1)! >= 6^k*k! for every integer k>=0",
+    "identity": "integral exp(z*t) dmu = sinh(z)/z, continued as 1 at z=0",
+    "induction_difference_coefficients": [
+      "0",
+      "4",
+      "4"
+    ]
+  },
+  "optimality_proof": {
+    "centered_energy_numerator_in_amplitude": [
+      "0",
+      "0",
+      "-1/6"
+    ],
+    "limit_rule": "Divide any valid quadratic bound by a^2 and let nonzero a tend to zero",
+    "mass_in_amplitude": [
+      "1",
+      "0",
+      "1/12"
+    ],
+    "necessary_coefficient": "1/6",
+    "trial": "u(a,t)=1-a*d*t/2, where d is the affine slope"
+  },
+  "scope": "full unit sphere; all real amplitudes; affine coordinate potentials only",
+  "sharp_uniform_quadratic_coefficient": "1/6",
+  "status": "proved",
+  "trusted_analytic_theorem": {
+    "entropy_to_dirichlet_constant": "1",
+    "location": "Corollary 2, page 3; uniform probability measure; dimension d=2",
+    "name": "Sharp logarithmic Sobolev inequality on the unit sphere",
+    "proved_by_this_program": false,
+    "source": "https://arxiv.org/pdf/1210.1853v1",
+    "statement": "Ent_mu(|u|^2) <= integral_S2 |grad u|^2 dmu"
+  },
+  "variational_rule": "Dirichlet >= entropy; Gibbs inequality gives energy >= -log moment"
+}

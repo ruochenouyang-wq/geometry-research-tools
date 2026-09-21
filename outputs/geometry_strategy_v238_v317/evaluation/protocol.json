@@ -1,0 +1,298 @@
+{
+  "acceptance": {
+    "accuracy": "Exact replay, original function/kind/space binding, nonnegative bound, requested tolerance, and known constant eigenvalue inclusion where applicable.",
+    "automatic_selection": "Compare all three baselines. No manual per-task settings for service; validation selection preparation costs are included.",
+    "claims": "No aggregate score; no model-vs-model or 30-minute/8-hour claim. Small sample and concurrent-run timing are explicit limitations.",
+    "new_mathematical_family": "Not tested; constant offsets and rotations never count as new mathematical families.",
+    "reliability": "All mutation probes must be rejected. Any falsely accepted mutation blocks a reliability improvement claim.",
+    "transfer": "At least one extra certified holdout success over the strongest baseline without a reliability regression is an accuracy benefit. Equal success with >=20% lower total CPU including charged validation setup is only a preliminary resource benefit."
+  },
+  "budget": {
+    "online_solver_wall_seconds_per_task": 20.0,
+    "replay_wall_seconds_per_certificate": 20.0
+  },
+  "configurations": [
+    {
+      "approximation": {
+        "degree": 1,
+        "levels": 1,
+        "sqrt_bits": 24
+      },
+      "name": "small",
+      "spectrum": {
+        "bits": 12,
+        "max_m": 1,
+        "modes": 2,
+        "near_tail": 0,
+        "sqrt_bits": 24
+      }
+    },
+    {
+      "approximation": {
+        "degree": 3,
+        "levels": 3,
+        "sqrt_bits": 28
+      },
+      "name": "medium",
+      "spectrum": {
+        "bits": 18,
+        "max_m": 2,
+        "modes": 3,
+        "near_tail": 0,
+        "sqrt_bits": 28
+      }
+    },
+    {
+      "approximation": {
+        "degree": 4,
+        "levels": 6,
+        "sqrt_bits": 32
+      },
+      "name": "large",
+      "spectrum": {
+        "bits": 26,
+        "max_m": 3,
+        "modes": 5,
+        "near_tail": 0,
+        "sqrt_bits": 32
+      }
+    }
+  ],
+  "development": [
+    {
+      "classification": "analytic_constant_regression",
+      "id": "D01",
+      "independent_exact_value": "1/3",
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "1/3",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": false,
+        "tolerance": "1/1000"
+      }
+    },
+    {
+      "classification": "analytic_constant_regression",
+      "id": "D02",
+      "independent_exact_value": "7/3",
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "1/3",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      }
+    },
+    {
+      "classification": "step_regression",
+      "id": "D03",
+      "task": {
+        "function": {
+          "amplitude": "1",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "approximation",
+        "tolerance": "1/1000000"
+      }
+    },
+    {
+      "classification": "fixed_singular_regression_not_holdout",
+      "id": "D04",
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/20"
+      }
+    },
+    {
+      "classification": "step_development",
+      "id": "D05",
+      "task": {
+        "function": {
+          "amplitude": "1/4",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      }
+    },
+    {
+      "classification": "abs_power_development",
+      "id": "D06",
+      "task": {
+        "function": {
+          "amplitude": "-1/4",
+          "axis": 2,
+          "exponent": "-1/5",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      }
+    }
+  ],
+  "dimensions": [
+    "certified_accuracy",
+    "reliability",
+    "automatic_selection",
+    "new_parameter_transfer",
+    "runtime_resources",
+    "visible_tokens",
+    "usability"
+  ],
+  "holdout": {
+    "abs_power_amplitudes": [
+      "-1/10",
+      "-1/8",
+      "-1/6",
+      "1/10",
+      "1/8",
+      "1/6"
+    ],
+    "abs_power_exponents": [
+      "-1/7",
+      "-1/8",
+      "-2/7",
+      "1/5",
+      "2/5"
+    ],
+    "approximation_tolerance": "1/1000000",
+    "constant_offsets": [
+      "-5/7",
+      "-3/7",
+      "2/7",
+      "4/7"
+    ],
+    "count": 6,
+    "fixed_axis": 2,
+    "layout": [
+      "constant_full",
+      "constant_mean_zero",
+      "step_approximation",
+      "step_spectrum",
+      "abs_power_spectrum",
+      "abs_power_spectrum"
+    ],
+    "no_fixed_minus_quarter_singular_holdout": true,
+    "sampling": "SHA256(seed || counter_as_8_byte_big_endian), modulo list length; two distinct abs_power exponents; stable form_bound required",
+    "scope": "within_family_new_parameters_only",
+    "spectral_tolerance": "1/1000",
+    "step_amplitudes": [
+      "1/7",
+      "2/7",
+      "3/7",
+      "4/7"
+    ]
+  },
+  "validation": [
+    {
+      "classification": "validation_not_holdout",
+      "id": "V01",
+      "independent_exact_value": "-2/5",
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "-2/5",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": false,
+        "tolerance": "1/1000"
+      }
+    },
+    {
+      "classification": "validation_not_holdout",
+      "id": "V02",
+      "task": {
+        "function": {
+          "amplitude": "3/4",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "1/5",
+          "profile": "step"
+        },
+        "kind": "approximation",
+        "tolerance": "1/1000000"
+      }
+    },
+    {
+      "classification": "fixed_singular_validation_not_holdout",
+      "id": "V03",
+      "task": {
+        "function": {
+          "amplitude": "-1/2",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/50"
+      }
+    },
+    {
+      "classification": "validation_not_holdout",
+      "id": "V04",
+      "task": {
+        "function": {
+          "amplitude": "-1/3",
+          "axis": 2,
+          "exponent": "-1/6",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      }
+    },
+    {
+      "classification": "validation_not_holdout",
+      "id": "V05",
+      "task": {
+        "function": {
+          "amplitude": "1/3",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      }
+    }
+  ],
+  "version": "independent_geometry_evaluation_v1"
+}

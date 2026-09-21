@@ -1,0 +1,40 @@
+{
+  "version": 271,
+  "recorded_at": "2026-09-18T18:37:59.497871+00:00",
+  "hypothesis": "Exact inside/outside residual decomposition can avoid solving coefficients more accurately than the basis supports.",
+  "change": "Added rational mass-inverse projection diagnostics and a residual-budget iteration stopping policy.",
+  "source_sha256": {
+    "adaptive_singular.py": "83c1810761fc803a6c75fd420735d96904acf17ac258105b99dc9dd4d9291ea2",
+    "test_adaptive_singular.py": "0983d2e86dbae6dff8dc9f4baae7d8a903df2f66ced6ee683329cc329b31e5e1"
+  },
+  "validation": {
+    "tests_passed": 9,
+    "replayed": true
+  },
+  "comparison": {
+    "False": {
+      "width": "6493894221480441677597818806301936814480202547319905321419635434035039031385506127460187402774089815177887670755737928245388524256392625550345888420087348140644084219904/1892097439723136693420988865578760253307809367669576275663451345058198600538013792061622831114611297198880552847259845697448584496151693990123871987365400948812673476458502375",
+      "seconds": 0.046939250000000016,
+      "iterations": [
+        14,
+        14,
+        14
+      ]
+    },
+    "True": {
+      "width": "136435748812607845715713835339166870722958083552561580273304783571750912148535339999991439683489249220597366962672874362486396472489942788424043984229353428907572728954880/39734559221113835806418694135159959398771249034334228507917162053035216677840581509865013242526521041334225642270093078586850769152015756278456386316921076944785113302025371827",
+      "seconds": 0.04854245900000001,
+      "iterations": [
+        1,
+        1,
+        3
+      ]
+    }
+  },
+  "outcome": "fewer_iterations_with_diagnostic_overhead_and_accuracy_tradeoff",
+  "limitations": [
+    "Stopping is a candidate heuristic; only complete certificate width establishes success.",
+    "Diagnosis may cost more than iterations saved in small problems."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

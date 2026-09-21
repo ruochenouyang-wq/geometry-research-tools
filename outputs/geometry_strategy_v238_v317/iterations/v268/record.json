@@ -1,0 +1,29 @@
+{
+  "version": 268,
+  "recorded_at": "2026-09-18T18:12:44.699130+00:00",
+  "hypothesis": "Operator exponent shifts can generate the singular basis without a hand-written exponent table.",
+  "change": "Added heap enumeration of the <2,2+alpha> exponent semigroup and full-sphere certificate replay.",
+  "source_sha256": {
+    "adaptive_singular.py": "f439433d1f96087bde81222ef440c6f2fed5cacbce4d1c83e6ff18f024e86815",
+    "test_adaptive_singular.py": "767b966fd5096aa67d8c1cf34069e779333b0cd31f6f6e9e28fef6581d6797a4"
+  },
+  "validation": {
+    "tests_passed": 3,
+    "full_proof_replayed": true
+  },
+  "comparison": {
+    "powers": [
+      "0",
+      "7/4",
+      "2"
+    ],
+    "width": "6075691598347619649275491530047006776611234093809843439040882330073148181209599630979525554705445422384920463782363164154118878185514064600014136809619456/568947808039496055590147713615227634076319402305668980465146503831846361727356317322533352772204623880252596471159587125355874890060286483386305667190061135",
+    "same_fixed_problem_basis_as_frozen": true
+  },
+  "outcome": "capability_added_no_fixed_problem_precision_gain",
+  "limitations": [
+    "Fixed original potential at this stage.",
+    "Generation suggests candidates; it does not prove series convergence."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

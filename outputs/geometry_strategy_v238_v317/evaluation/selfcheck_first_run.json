@@ -1,0 +1,32 @@
+{
+  "checks": [
+    {
+      "passed": false,
+      "test": "valid_replay_overrides_solver_status"
+    },
+    {
+      "passed": true,
+      "test": "spectrum_cannot_substitute_for_approximation"
+    },
+    {
+      "passed": true,
+      "test": "solver_success_flags_do_not_prove_bounds"
+    },
+    {
+      "passed": true,
+      "test": "budget_interrupt_survives_generic_exception_handler"
+    },
+    {
+      "passed": true,
+      "public_parameter_pairs": 30,
+      "test": "all_public_abs_power_parameter_pool_obeys_stability"
+    },
+    {
+      "passed": true,
+      "test": "private_seed_not_disclosed_in_public_commitment"
+    }
+  ],
+  "holdout_generated": false,
+  "interpretation": "One initial test incorrectly altered an integrity-checked certificate field; corrected test alters only untrusted solver-envelope flags. The rejected malformed certificate was safe behavior.",
+  "passed": false
+}

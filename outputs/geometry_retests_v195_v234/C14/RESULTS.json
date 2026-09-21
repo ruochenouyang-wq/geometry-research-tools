@@ -1,0 +1,59 @@
+{
+  "all_passed": true,
+  "case": "C14",
+  "certificate_replays": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "certificates": [
+    "C14/v205.json",
+    "C14/v206_projected.json",
+    "C14/v206.json",
+    "C14/v207.json",
+    "C14/v208.json",
+    "C14/v209.json",
+    "C14/v210.json",
+    "C14/budget_exhaustion.json",
+    "C14/v211.json",
+    "C14/v212.json",
+    "C14/v213.json",
+    "C14/v214.json"
+  ],
+  "model_speed_or_token_claim": null,
+  "original_case_completed": true,
+  "original_input_mapping": "C14/original_input_mapping.json",
+  "results": {
+    "full_mean_zero": {
+      "count_lower": 8,
+      "count_upper": 8,
+      "trace_lower": "20",
+      "trace_upper": "20",
+      "unlisted_eigenvalue_floor": "5"
+    },
+    "full_unprojected": {
+      "count_lower": 9,
+      "count_upper": 9,
+      "trace_lower": "27",
+      "trace_upper": "27",
+      "unlisted_eigenvalue_floor": "5"
+    }
+  },
+  "saved_certificate_replays": 12,
+  "scope_limit": "Fixed axisymmetric polynomial potentials on unit S2; no universal unprojected L2 trace constant is claimed.",
+  "tests_run": 40,
+  "versions": [
+    205,
+    214
+  ],
+  "wall_seconds": 1.2887889579999998
+}

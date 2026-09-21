@@ -1,0 +1,2082 @@
+{
+  "algorithm_version": 12,
+  "certificate": {
+    "method": "moment_eliminated_global_v12",
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "optimization_scope": "all real parameter vectors and all nonzero axisymmetric form-domain functions",
+    "boxed_certificate": {
+      "method": "global_regularized_ground_v11",
+      "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+      "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+      "problem": {
+        "q0": [
+          "0"
+        ],
+        "directions": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "box": [
+          [
+            "-7675/1497",
+            "7475/1497"
+          ],
+          [
+            "-1397/1497",
+            "403/1497"
+          ]
+        ],
+        "penalty": {
+          "constant": "0",
+          "linear": [
+            "1/50",
+            "-1/6"
+          ],
+          "hessian": [
+            [
+              "1/5",
+              "1/50"
+            ],
+            [
+              "1/50",
+              "1"
+            ]
+          ]
+        }
+      },
+      "optimization_scope": "all real parameters in the declared box and all nonzero axisymmetric form-domain functions",
+      "bound_policy": "concavity",
+      "direction_range_proofs": [
+        {
+          "kind": "quadratic_range_v5",
+          "lower": "-1",
+          "upper": "1"
+        },
+        {
+          "kind": "quadratic_range_v5",
+          "lower": "0",
+          "upper": "1"
+        }
+      ],
+      "points": [
+        {
+          "at": [
+            "-7675/1497",
+            "-1397/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-7675/1497",
+              "-1397/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-3024/499",
+              "upper": "6278/1497"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "51866/499",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-81877622638076353559/27487790694400000000",
+            "upper": "-81877622603716615191/27487790694400000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-2.978690559324",
+              "-2.978690558073"
+            ]
+          },
+          "trial_legendre": [
+            "1458627218405/2199023255552",
+            "1",
+            "8550997222157/17592186044416",
+            "1167657692567/8796093022208",
+            "431785603167/17592186044416",
+            "7449071321/2199023255552",
+            "3259681443/8796093022208",
+            "588630421/17592186044416",
+            "45147713/17592186044416",
+            "750295/4398046511104"
+          ],
+          "rayleigh_quotient": "-8263868408459684520490808181101345714/2774329271742076589083510366343801757"
+        },
+        {
+          "at": [
+            "-7675/1497",
+            "403/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-7675/1497",
+              "403/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-2424/499",
+              "upper": "8078/1497"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "52466/499",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-506819125783597937847/219902325555200000000",
+            "upper": "-506819125508720030903/219902325555200000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-2.304746548287",
+              "-2.304746547036"
+            ]
+          },
+          "trial_legendre": [
+            "6223723105205/8796093022208",
+            "1",
+            "7226810690445/17592186044416",
+            "716533046553/8796093022208",
+            "158416404879/17592186044416",
+            "10159151393/17592186044416",
+            "348635379/17592186044416",
+            "1356699/8796093022208",
+            "-262733/17592186044416",
+            "-4973/8796093022208"
+          ],
+          "rayleigh_quotient": "-13495575473792443222605982932782720503/5855557300859665109628295574238872217"
+        },
+        {
+          "at": [
+            "7475/1497",
+            "-1397/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "7475/1497",
+              "-1397/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-8872/1497",
+              "upper": "2026/499"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "155798/1497",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1268511887290464235069/439804651110400000000",
+            "upper": "-1268511886740708421181/439804651110400000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-2.884262101567",
+              "-2.884262100316"
+            ]
+          },
+          "trial_legendre": [
+            "11787295511055/17592186044416",
+            "-1",
+            "4218863958231/8796093022208",
+            "-71101064331/549755813888",
+            "103984897575/4398046511104",
+            "-56834177445/17592186044416",
+            "3081321793/8796093022208",
+            "-552017561/17592186044416",
+            "21018387/8796093022208",
+            "-1388159/8796093022208"
+          ],
+          "rayleigh_quotient": "-5383771664013999812830403333950503091/1866602782824881729145889431037421943"
+        },
+        {
+          "at": [
+            "7475/1497",
+            "403/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "7475/1497",
+              "403/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-7072/1497",
+              "upper": "2626/499"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "157598/1497",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-487030750157125281597/219902325555200000000",
+            "upper": "-487030749882247374653/219902325555200000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-2.214759434343",
+              "-2.214759433092"
+            ]
+          },
+          "trial_legendre": [
+            "1574462327935/2199023255552",
+            "-1",
+            "7088098884405/17592186044416",
+            "-1370249276303/17592186044416",
+            "146564662033/17592186044416",
+            "-8968142711/17592186044416",
+            "281203219/17592186044416",
+            "-794647/17592186044416",
+            "-132099/8796093022208",
+            "8217/17592186044416"
+          ],
+          "rayleigh_quotient": "-4375785868583438989421072713444263183/1975738674804791995954118119890385319"
+        },
+        {
+          "at": [
+            "-100/1497",
+            "-497/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-100/1497",
+              "-497/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-199/499",
+              "upper": "2500/744009"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "54691/499",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-795987051490554714229/7036874417766400000000",
+            "upper": "-795987042694461692021/7036874417766400000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-0.113116563440",
+              "-0.113116562189"
+            ]
+          },
+          "trial_legendre": [
+            "1",
+            "623500353897/17592186044416",
+            "165088118419/4398046511104",
+            "9158349931/17592186044416",
+            "3786305455/17592186044416",
+            "18467657/8796093022208",
+            "9113385/17592186044416",
+            "70241/17592186044416",
+            "757/1099511627776",
+            "39/8796093022208"
+          ],
+          "rayleigh_quotient": "-254342899444611983068119220241335761/2248502722474976577699040977586432019"
+        },
+        {
+          "at": [
+            "-100/1497",
+            "-1397/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-100/1497",
+              "-1397/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-1",
+              "upper": "2500/2091309"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "109",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-572197818363285455901/1759218604441600000000",
+            "upper": "-572197816164262200349/1759218604441600000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-0.325256802605",
+              "-0.325256801354"
+            ]
+          },
+          "trial_legendre": [
+            "1",
+            "348370473107/8796093022208",
+            "1881614127855/17592186044416",
+            "14198552675/8796093022208",
+            "30382132891/17592186044416",
+            "159890425/8796093022208",
+            "102776109/8796093022208",
+            "1701975/17592186044416",
+            "191867/4398046511104",
+            "5293/17592186044416"
+          ],
+          "rayleigh_quotient": "-91610446385462245177760070318818378/281655743486018027246110409839924765"
+        },
+        {
+          "at": [
+            "-100/1497",
+            "403/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-100/1497",
+              "403/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-2500/603291",
+              "upper": "503/1497"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "66359510/603291",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "619033892160512473271/7036874417766400000000",
+            "upper": "619033900956605495479/7036874417766400000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "0.087970007052",
+              "0.087970008303"
+            ]
+          },
+          "trial_legendre": [
+            "1",
+            "560219319287/17592186044416",
+            "-517530833497/17592186044416",
+            "-420132999/1099511627776",
+            "2369859821/17592186044416",
+            "5510351/4398046511104",
+            "-1144689/4398046511104",
+            "-17015/8796093022208",
+            "153/549755813888",
+            "31/17592186044416"
+          ],
+          "rayleigh_quotient": "22818849421384901129304024394308527/259393514036782956965982576738208056"
+        },
+        {
+          "at": [
+            "-7775/2994",
+            "-497/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-7775/2994",
+              "-497/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-2923/998",
+              "upper": "6781/2994"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "106857/998",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-111969968287036273611/109951162777600000000",
+            "upper": "-111969968149597320139/109951162777600000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-1.018360929148",
+              "-1.018360927897"
+            ]
+          },
+          "trial_legendre": [
+            "17027059773229/17592186044416",
+            "1",
+            "5133232477145/17592186044416",
+            "812095725363/17592186044416",
+            "86208841635/17592186044416",
+            "3411246865/8796093022208",
+            "13392201/549755813888",
+            "22263427/17592186044416",
+            "492373/8796093022208",
+            "37873/17592186044416"
+          ],
+          "rayleigh_quotient": "-8837791302587024345646482372349297895/8678446958300040292665176995735675512"
+        },
+        {
+          "at": [
+            "7375/2994",
+            "-497/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "7375/2994",
+              "-497/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-8369/2994",
+              "upper": "2127/998"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "320971/2994",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-830257255395423392013/879609302220800000000",
+            "upper": "-830257254295911764237/879609302220800000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-0.943893218614",
+              "-0.943893217363"
+            ]
+          },
+          "trial_legendre": [
+            "1",
+            "-17584882009265/17592186044416",
+            "1240112873489/4398046511104",
+            "-763550200813/17592186044416",
+            "79241822905/17592186044416",
+            "-3076202579/8796093022208",
+            "380133499/17592186044416",
+            "-19463901/17592186044416",
+            "849869/17592186044416",
+            "-8077/4398046511104"
+          ],
+          "rayleigh_quotient": "-8584582077980623923600103057974995489/9094865726735931001167720835473950772"
+        },
+        {
+          "at": [
+            "-7775/2994",
+            "-1397/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-7775/2994",
+              "-1397/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-3523/998",
+              "upper": "4981/2994"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "106257/998",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1149099980154437454513/879609302220800000000",
+            "upper": "-1149099979054925826737/879609302220800000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-1.306375429698",
+              "-1.306375428447"
+            ]
+          },
+          "trial_legendre": [
+            "502135771929/549755813888",
+            "1",
+            "384169845717/1099511627776",
+            "318862729893/4398046511104",
+            "186455694583/17592186044416",
+            "5263379011/4398046511104",
+            "1931322781/17592186044416",
+            "74627977/8796093022208",
+            "311059/549755813888",
+            "291795/8796093022208"
+          ],
+          "rayleigh_quotient": "-477435292439422103309384000251091531/365465609513541979194338525649209307"
+        },
+        {
+          "at": [
+            "-7775/2994",
+            "403/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-7775/2994",
+              "403/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-2323/998",
+              "upper": "8581/2994"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "107457/998",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1309223715001771393401/1759218604441600000000",
+            "upper": "-1309223712802748137849/1759218604441600000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-0.744207520144",
+              "-0.744207518893"
+            ]
+          },
+          "trial_legendre": [
+            "1",
+            "8554989331303/8796093022208",
+            "3896737491513/17592186044416",
+            "164426508529/8796093022208",
+            "6110475935/17592186044416",
+            "-312946385/8796093022208",
+            "-16149197/8796093022208",
+            "19199/4398046511104",
+            "17865/8796093022208",
+            "119/4398046511104"
+          ],
+          "rayleigh_quotient": "-1107964640466727972378146035267265142/1488784527712908666080397866373109789"
+        },
+        {
+          "at": [
+            "-23125/5988",
+            "-497/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-23125/5988",
+              "-497/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-8371/1996",
+              "upper": "21137/5988"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "211189/1996",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-393214914819145594097/219902325555200000000",
+            "upper": "-393214914544267687153/219902325555200000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-1.788134408431",
+              "-1.788134407180"
+            ]
+          },
+          "trial_legendre": [
+            "3418850972163/4398046511104",
+            "1",
+            "6634751552635/17592186044416",
+            "1322084789715/17592186044416",
+            "171189390769/17592186044416",
+            "16088408077/17592186044416",
+            "1174624965/17592186044416",
+            "69726055/17592186044416",
+            "1737789/8796093022208",
+            "4653/549755813888"
+          ],
+          "rayleigh_quotient": "-23308477484338265819328395596951755607/13035081357750589939289445498964678800"
+        },
+        {
+          "at": [
+            "-7975/5988",
+            "-497/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-7975/5988",
+              "-497/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-3321/1996",
+              "upper": "5987/5988"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "216239/1996",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1403906280096396302427/3518437208883200000000",
+            "upper": "-1403906275698349791323/3518437208883200000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-0.399014163605",
+              "-0.399014162354"
+            ]
+          },
+          "trial_legendre": [
+            "1",
+            "5601116962845/8796093022208",
+            "2248214873067/17592186044416",
+            "67415990627/4398046511104",
+            "5709715165/4398046511104",
+            "1500737961/17592186044416",
+            "80275361/17592186044416",
+            "3627709/17592186044416",
+            "141675/17592186044416",
+            "1219/4398046511104"
+          ],
+          "rayleigh_quotient": "-2041387428895176485063300931306058875/5116077619033372053843534156073763626"
+        },
+        {
+          "at": [
+            "7375/2994",
+            "-1397/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "7375/2994",
+              "-1397/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-10169/2994",
+              "upper": "1527/998"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "319171/2994",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1080139199701042142013/879609302220800000000",
+            "upper": "-1080139198601530514237/879609302220800000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-1.227976099132",
+              "-1.227976097881"
+            ]
+          },
+          "trial_legendre": [
+            "16569723057167/17592186044416",
+            "-1",
+            "6013409563955/17592186044416",
+            "-1227502934289/17592186044416",
+            "177029561251/17592186044416",
+            "-19767044691/17592186044416",
+            "1795682393/17592186044416",
+            "-137603797/17592186044416",
+            "9107091/17592186044416",
+            "-530341/17592186044416"
+          ],
+          "rayleigh_quotient": "-3433920219178603435213820185666447933/2796406398589122991799225553903051389"
+        },
+        {
+          "at": [
+            "7375/2994",
+            "403/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "7375/2994",
+              "403/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-6569/2994",
+              "upper": "2727/998"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "322771/2994",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1185439043110235455901/1759218604441600000000",
+            "upper": "-1185439040911212200349/1759218604441600000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-0.673844080615",
+              "-0.673844079364"
+            ]
+          },
+          "trial_legendre": [
+            "1",
+            "-16515623279781/17592186044416",
+            "1779288125285/8796093022208",
+            "-135965902251/8796093022208",
+            "643870129/4398046511104",
+            "640832247/17592186044416",
+            "-25012525/17592186044416",
+            "-308581/17592186044416",
+            "16065/8796093022208",
+            "-203/17592186044416"
+          ],
+          "rayleigh_quotient": "-1971335112255491748731661767339836340/2925506316365661058856478924755712701"
+        },
+        {
+          "at": [
+            "7175/5988",
+            "-497/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "7175/5988",
+              "-497/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-9163/5988",
+              "upper": "1729/1996"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "649517/5988",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1226029894863228333677/3518437208883200000000",
+            "upper": "-1226029890465181822573/3518437208883200000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-0.348458654248",
+              "-0.348458652997"
+            ]
+          },
+          "trial_legendre": [
+            "1",
+            "-10254632969587/17592186044416",
+            "1976543694689/17592186044416",
+            "-229333233289/17592186044416",
+            "592594407/549755813888",
+            "-610148919/8796093022208",
+            "64173859/17592186044416",
+            "-1428029/8796093022208",
+            "110081/17592186044416",
+            "-3743/17592186044416"
+          ],
+          "rayleigh_quotient": "-2620909099694621300926491440978536921/7521434960633364317230459952389272456"
+        },
+        {
+          "at": [
+            "22325/5988",
+            "-497/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "22325/5988",
+              "-497/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-24313/5988",
+              "upper": "6779/1996"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "634367/5988",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1497425878910192142013/879609302220800000000",
+            "upper": "-1497425877810680514237/879609302220800000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-1.702376128959",
+              "-1.702376127708"
+            ]
+          },
+          "trial_legendre": [
+            "434871760785/549755813888",
+            "-1",
+            "810867824891/2199023255552",
+            "-1264672627851/17592186044416",
+            "160578222781/17592186044416",
+            "-1854022209/2199023255552",
+            "533207573/8796093022208",
+            "-31220277/8796093022208",
+            "192137/1099511627776",
+            "-65117/8796093022208"
+          ],
+          "rayleigh_quotient": "-943846520324654933761395941010176660/554428897713001677376273602781043387"
+        },
+        {
+          "at": [
+            "-7975/5988",
+            "-1397/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-7975/5988",
+              "-1397/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-4521/1996",
+              "upper": "5781875/12167616"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "215039/1996",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1133879358430369049651/1759218604441600000000",
+            "upper": "-1133879356231345794099/1759218604441600000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-0.644535793089",
+              "-0.644535791838"
+            ]
+          },
+          "trial_legendre": [
+            "1",
+            "12206017996809/17592186044416",
+            "3597869814857/17592186044416",
+            "153697133575/4398046511104",
+            "80509444457/17592186044416",
+            "4012231643/8796093022208",
+            "678761437/17592186044416",
+            "47851087/17592186044416",
+            "1496317/8796093022208",
+            "81609/8796093022208"
+          ],
+          "rayleigh_quotient": "-10157940289634168825441342700113126257/15760087195164436149302436702821993406"
+        },
+        {
+          "at": [
+            "-7975/5988",
+            "403/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-7975/5988",
+              "403/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-2121/1996",
+              "upper": "9587/5988"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "217439/1996",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-294928956783074518401/1759218604441600000000",
+            "upper": "-294928954584051262849/1759218604441600000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-0.167647702247",
+              "-0.167647700996"
+            ]
+          },
+          "trial_legendre": [
+            "1",
+            "10275584741885/17592186044416",
+            "235788932203/4398046511104",
+            "-28930737979/17592186044416",
+            "-5373340307/17592186044416",
+            "-12353813/4398046511104",
+            "9516181/17592186044416",
+            "11907/1099511627776",
+            "-4153/8796093022208",
+            "-225/17592186044416"
+          ],
+          "rayleigh_quotient": "-419748090357199265730471503700989318/2503750939014270790975806032078841491"
+        },
+        {
+          "at": [
+            "-23525/11976",
+            "-497/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-23525/11976",
+              "-497/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-9167/3992",
+              "upper": "19549/11976"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "429953/3992",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1199933374697277643401/1759218604441600000000",
+            "upper": "-1199933372498254387849/1759218604441600000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-0.682083154230",
+              "-0.682083152979"
+            ]
+          },
+          "trial_legendre": [
+            "1",
+            "15102015572353/17592186044416",
+            "1851928575831/8796093022208",
+            "256294825663/8796093022208",
+            "24376897811/8796093022208",
+            "3520142689/17592186044416",
+            "204296757/17592186044416",
+            "4951927/8796093022208",
+            "102971/4398046511104",
+            "14989/17592186044416"
+          ],
+          "rayleigh_quotient": "-3845681811938814026304682429324329663/5638142199546236342980167997195657996"
+        },
+        {
+          "at": [
+            "-8375/11976",
+            "-497/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-8375/11976",
+              "-497/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-4117/3992",
+              "upper": "4399/11976"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "435003/3992",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1388239925801457839229/7036874417766400000000",
+            "upper": "-1388239917005364817021/7036874417766400000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-0.197280758955",
+              "-0.197280757704"
+            ]
+          },
+          "trial_legendre": [
+            "1",
+            "3160016629841/8796093022208",
+            "285289782133/4398046511104",
+            "27454458541/4398046511104",
+            "8684338625/17592186044416",
+            "498055623/17592186044416",
+            "25315371/17592186044416",
+            "1037127/17592186044416",
+            "9721/4398046511104",
+            "155/2199023255552"
+          ],
+          "rayleigh_quotient": "-462721355834128119971189787854637149/2345496640185698563398200029611713396"
+        },
+        {
+          "at": [
+            "-23125/5988",
+            "-1397/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-23125/5988",
+              "-1397/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-9571/1996",
+              "upper": "17537/5988"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "209989/1996",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-463385695436842469097/219902325555200000000",
+            "upper": "-463385695161964562153/219902325555200000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-2.107234174386",
+              "-2.107234173135"
+            ]
+          },
+          "trial_legendre": [
+            "13121476769593/17592186044416",
+            "1",
+            "7410039962767/17592186044416",
+            "1779022839731/17592186044416",
+            "73518381669/4398046511104",
+            "36812523501/17592186044416",
+            "3695580633/17592186044416",
+            "309085095/17592186044416",
+            "22128817/17592186044416",
+            "172803/2199023255552"
+          ],
+          "rayleigh_quotient": "-13162251690866232829887301775226834172/6246221637235063411315572092884170891"
+        },
+        {
+          "at": [
+            "-23125/5988",
+            "403/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-23125/5988",
+              "403/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-7171/1996",
+              "upper": "24737/5988"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "212389/1996",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-325654156889097156597/219902325555200000000",
+            "upper": "-325654156614219249653/219902325555200000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-1.480903651505",
+              "-1.480903650254"
+            ]
+          },
+          "trial_legendre": [
+            "14286226312957/17592186044416",
+            "1",
+            "5791091307719/17592186044416",
+            "427057217211/8796093022208",
+            "7827947527/2199023255552",
+            "1939560901/17592186044416",
+            "-23599809/17592186044416",
+            "-1757883/8796093022208",
+            "-73551/17592186044416",
+            "319/4398046511104"
+          ],
+          "rayleigh_quotient": "-3376780439133195975832814670895495724/2280216162021761781451430763485267939"
+        },
+        {
+          "at": [
+            "-53825/11976",
+            "-497/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-53825/11976",
+              "-497/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-19267/3992",
+              "upper": "49849/11976"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "419853/3992",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-484867828258520594097/219902325555200000000",
+            "upper": "-484867827983642687153/219902325555200000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-2.204923604307",
+              "-2.204923603056"
+            ]
+          },
+          "trial_legendre": [
+            "12738943971017/17592186044416",
+            "1",
+            "912546935743/2199023255552",
+            "1601447215621/17592186044416",
+            "56621967015/4398046511104",
+            "23037210947/17592186044416",
+            "225661821/2199023255552",
+            "28550409/4398046511104",
+            "3014955/8796093022208",
+            "34025/2199023255552"
+          ],
+          "rayleigh_quotient": "-1475283869132722424964013499685889688/669086160930737189078487449115116513"
+        },
+        {
+          "at": [
+            "-38675/11976",
+            "-497/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-38675/11976",
+              "-497/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-14217/3992",
+              "upper": "34699/11976"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "424903/3992",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1223087498829274954513/879609302220800000000",
+            "upper": "-1223087497729763326737/879609302220800000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-1.390489499988",
+              "-1.390489498737"
+            ]
+          },
+          "trial_legendre": [
+            "468789278847/549755813888",
+            "1",
+            "369506136301/1099511627776",
+            "528365858227/8796093022208",
+            "15542786885/2199023255552",
+            "10746751971/17592186044416",
+            "728789867/17592186044416",
+            "10127351/4398046511104",
+            "59481/549755813888",
+            "77299/17592186044416"
+          ],
+          "rayleigh_quotient": "-6770913288516343715629891232594312579/4869445825819650009944616315152658838"
+        },
+        {
+          "at": [
+            "-38675/11976",
+            "-1397/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-38675/11976",
+              "-1397/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-16617/3992",
+              "upper": "27499/11976"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "422503/3992",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1491223491704564798263/879609302220800000000",
+            "upper": "-1491223490605053170487/879609302220800000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-1.695324831081",
+              "-1.695324829830"
+            ]
+          },
+          "trial_legendre": [
+            "14290461641897/17592186044416",
+            "1",
+            "6786583712387/17592186044416",
+            "758832832549/8796093022208",
+            "236248045197/17592186044416",
+            "14051870919/8796093022208",
+            "1349217507/8796093022208",
+            "54249829/4398046511104",
+            "234353/274877906944",
+            "907843/17592186044416"
+          ],
+          "rayleigh_quotient": "-5851287958205085642009310356671333291/3451425858389614115718736313149702197"
+        },
+        {
+          "at": [
+            "-38675/11976",
+            "403/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-38675/11976",
+              "403/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-11817/3992",
+              "upper": "41899/11976"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "427303/3992",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-241573958402235437847/219902325555200000000",
+            "upper": "-241573958127357530903/219902325555200000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-1.098551176266",
+              "-1.098551175015"
+            ]
+          },
+          "trial_legendre": [
+            "3946758701251/4398046511104",
+            "1",
+            "4951859619915/17592186044416",
+            "584955682289/17592186044416",
+            "14658011401/8796093022208",
+            "80899403/17592186044416",
+            "-26039393/8796093022208",
+            "-846817/8796093022208",
+            "7591/8796093022208",
+            "53/549755813888"
+          ],
+          "rayleigh_quotient": "-11400345562215630056501966663320920127/10377619008569473648406111531840799884"
+        },
+        {
+          "at": [
+            "-84925/23952",
+            "-497/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-84925/23952",
+              "-497/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-30959/7984",
+              "upper": "76973/23952"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "847281/7984",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-174447193955057367361/109951162777600000000",
+            "upper": "-174447193817618413889/109951162777600000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-1.586587986413",
+              "-1.586587985162"
+            ]
+          },
+          "trial_legendre": [
+            "446115863951/549755813888",
+            "1",
+            "1570170267481/4398046511104",
+            "1187283210447/17592186044416",
+            "36671970951/4398046511104",
+            "13227836103/17592186044416",
+            "931116055/17592186044416",
+            "26748993/8796093022208",
+            "1294753/8796093022208",
+            "108025/17592186044416"
+          ],
+          "rayleigh_quotient": "-14516242834686482552264667399176202007/9149346247872104255754379679440859016"
+        },
+        {
+          "at": [
+            "-69775/23952",
+            "-497/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-69775/23952",
+              "-497/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-25909/7984",
+              "upper": "61823/23952"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "852331/7984",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1056156481904253860763/879609302220800000000",
+            "upper": "-1056156480804742232987/879609302220800000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-1.200710905669",
+              "-1.200710904418"
+            ]
+          },
+          "trial_legendre": [
+            "15896097785869/17592186044416",
+            "1",
+            "1382314923075/4398046511104",
+            "465662420615/8796093022208",
+            "26044813405/4398046511104",
+            "4310215191/8796093022208",
+            "70351363/2199023255552",
+            "30250341/17592186044416",
+            "1379273/17592186044416",
+            "13629/4398046511104"
+          ],
+          "rayleigh_quotient": "-2705543795350382174907193916021197663/2253284936436591771728508966111460338"
+        },
+        {
+          "at": [
+            "-69775/23952",
+            "-947/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-69775/23952",
+              "-947/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-28309/7984",
+              "upper": "54623/23952"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "849931/7984",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-1185231613253666360763/879609302220800000000",
+            "upper": "-1185231612154154732987/879609302220800000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-1.347452340785",
+              "-1.347452339534"
+            ]
+          },
+          "trial_legendre": [
+            "1934476250065/2199023255552",
+            "1",
+            "1502396818011/4398046511104",
+            "1163866537837/17592186044416",
+            "155122747069/17592186044416",
+            "15679383575/17592186044416",
+            "1272820913/17592186044416",
+            "43106009/8796093022208",
+            "1251291/4398046511104",
+            "31745/2199023255552"
+          ],
+          "rayleigh_quotient": "-27398219834569668919509164416263539175/20333349846953832475288536377188602016"
+        },
+        {
+          "at": [
+            "-69775/23952",
+            "-47/1497"
+          ],
+          "spectral_certificate": {
+            "method": "modewise_schur_v3",
+            "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+            "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+            "q_coefficients": [
+              "0",
+              "-69775/23952",
+              "-47/1497"
+            ],
+            "modes": 10,
+            "eigenvalue_index": 1,
+            "tail_policy": "sandwich",
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-23509/7984",
+              "upper": "69023/23952"
+            },
+            "upper_kind": "upper_tail",
+            "tail_lower": "854731/7984",
+            "lower_inertia": [
+              0,
+              0,
+              10
+            ],
+            "upper_inertia": [
+              1,
+              0,
+              9
+            ],
+            "formal_assistant_checked": false,
+            "lower": "-465015084847270485069/439804651110400000000",
+            "upper": "-465015084297514671181/439804651110400000000",
+            "exact_width": "1/800000000",
+            "decimal_enclosure": [
+              "-1.057321889783",
+              "-1.057321888532"
+            ]
+          },
+          "trial_legendre": [
+            "16338186812321/17592186044416",
+            "1",
+            "5024486436285/17592186044416",
+            "10876520673/274877906944",
+            "28922334163/8796093022208",
+            "1622541841/8796093022208",
+            "132717483/17592186044416",
+            "4176761/17592186044416",
+            "26317/4398046511104",
+            "1095/8796093022208"
+          ],
+          "rayleigh_quotient": "-69127410724419366976029963849427708591/65379721571345212915801833105394114704"
+        }
+      ],
+      "partition_tree": {
+        "axis": 0,
+        "split": "-100/1497",
+        "left": {
+          "axis": 0,
+          "split": "-7775/2994",
+          "left": {
+            "axis": 0,
+            "split": "-23125/5988",
+            "left": {
+              "oracle_indices": [
+                0,
+                1,
+                21,
+                22
+              ],
+              "lower_bound": "-1091071016267975134246447212556232726867/4447670973144514251657573511987200000000"
+            },
+            "right": {
+              "axis": 0,
+              "split": "-38675/11976",
+              "left": {
+                "oracle_indices": [
+                  21,
+                  22,
+                  25,
+                  26
+                ],
+                "lower_bound": "-109682536959310346332213516003946787196609/379534589708331882808112939689574400000000"
+              },
+              "right": {
+                "axis": 1,
+                "split": "-497/1497",
+                "left": {
+                  "oracle_indices": [
+                    25,
+                    24,
+                    9,
+                    7
+                  ],
+                  "lower_bound": "-808687236355367825671466810531217623807087/2835668224815449367572431712236339200000000"
+                },
+                "right": {
+                  "oracle_indices": [
+                    24,
+                    26,
+                    7,
+                    10
+                  ],
+                  "lower_bound": "-3312824445643481524030494583032990605273966149008717522416437/11475412502674403570890538836168084817291793566741299200000000"
+                }
+              }
+            }
+          },
+          "right": {
+            "axis": 0,
+            "split": "-7975/5988",
+            "left": {
+              "oracle_indices": [
+                9,
+                10,
+                17,
+                18
+              ],
+              "lower_bound": "-2559143838315821374788213751821387237863644224432205866397163111/9153421544643744584996223749327634007137995810991085977600000000"
+            },
+            "right": {
+              "oracle_indices": [
+                17,
+                18,
+                5,
+                6
+              ],
+              "lower_bound": "-2392083385620598202970773535228161313898823393480986105573031669/16340163978144715819645321798404153081606513509783725670400000000"
+            }
+          }
+        },
+        "right": {
+          "axis": 0,
+          "split": "7375/2994",
+          "left": {
+            "oracle_indices": [
+              5,
+              6,
+              13,
+              14
+            ],
+            "lower_bound": "-80825552434727123452736446820300753950989568345422815970908319757/288343644781950666523704465971778598881255096441185186611200000000"
+          },
+          "right": {
+            "oracle_indices": [
+              13,
+              14,
+              2,
+              3
+            ],
+            "lower_bound": "-9724784585139149948793006879872292940878773816283755622745901/40261238428673970658304966267963340577596549860268441600000000"
+          }
+        }
+      },
+      "candidate_index": 28,
+      "candidate_parameters": [
+        "-69775/23952",
+        "-497/1497"
+      ],
+      "global_lower": "-109682536959310346332213516003946787196609/379534589708331882808112939689574400000000",
+      "candidate_upper": "-242272852153348914496789570076965086637747/863530892760467937863059948100827168252416",
+      "global_gap": "3605298515282717802678893223415203787472574538351744012691473572289855796921/427599786923213272086525803656053574229639702355351632262021988850073600000000",
+      "tolerance": "1/100",
+      "status": "epsilon_global",
+      "leaf_count": 8,
+      "excluded_leaf_count": 5,
+      "possible_optimizer_boxes": [
+        [
+          [
+            "-23125/5988",
+            "-38675/11976"
+          ],
+          [
+            "-1397/1497",
+            "403/1497"
+          ]
+        ],
+        [
+          [
+            "-38675/11976",
+            "-7775/2994"
+          ],
+          [
+            "-1397/1497",
+            "-497/1497"
+          ]
+        ],
+        [
+          [
+            "-38675/11976",
+            "-7775/2994"
+          ],
+          [
+            "-497/1497",
+            "403/1497"
+          ]
+        ]
+      ],
+      "formal_assistant_checked": false
+    },
+    "inverse_penalty_hessian": [
+      [
+        "2500/499",
+        "-50/499"
+      ],
+      [
+        "-50/499",
+        "500/499"
+      ]
+    ],
+    "moment_confined_box": [
+      [
+        "-7675/1497",
+        "7475/1497"
+      ],
+      [
+        "-1397/1497",
+        "403/1497"
+      ]
+    ],
+    "candidate_trial_index": 28,
+    "candidate_parameters": [
+      "-23812440220217503420434225364982322875/7886497277528071201049781381390111183",
+      "-2015451290007919671281950843546418833/7886497277528071201049781381390111183"
+    ],
+    "candidate_moments": [
+      "443273892956684574242913299192632/752600179170538333910657637311777",
+      "2542495863282307909061856322251893/5268201254193768337374603461182439"
+    ],
+    "global_lower": "-109682536959310346332213516003946787196609/379534589708331882808112939689574400000000",
+    "candidate_upper": "-70909195286123432487345222811112899418646738584725274266312738645601699/249285929092014745120486172364468854780089000768712582260596209142692022",
+    "global_gap": "143560718638639749310300734131792247507833953601372816471534015261631269916388613303742412744023003962341267/31600745764194432525905148788667656753801930742439157460331601933233859364072073693054842629298271027200000000",
+    "tolerance": "1/100",
+    "status": "epsilon_global",
+    "formal_assistant_checked": false
+  },
+  "stop_reason": "epsilon_global_after_elimination",
+  "modes": 10,
+  "point_evaluations": 31,
+  "history": [
+    {
+      "leaves": 1,
+      "evaluations": 5,
+      "lower": "-11436982811363560133538477788947558220778331179507350117550265357/4597790372944482358282442669800334267714953120612299571200000000",
+      "upper": "-63113459926080133418030411174632235/20236524502274789199291368798277888171",
+      "gap": "5718958916247382156974326286658350820751759565919427799711153654126707049163319690345248806121413/2301969309938745596481366979841789762147644485828405305277072308897824757933500426669260800000000"
+    },
+    {
+      "leaves": 2,
+      "evaluations": 9,
+      "lower": "-1729352811129899363061923041702181255979164914802694050076556379/2722751715081341081023346168200412110336928105445615206400000000",
+      "upper": "-290409309780750605180994566938984881247/1082636258047930026509980830218025520122",
+      "gap": "361238346695128835331950173016878611752854135054020474502799852691391433179397032725661020063237127/984552347498078435358962844503067819137929645262992875463380578351765575175014571796804403200000000"
+    },
+    {
+      "leaves": 3,
+      "evaluations": 13,
+      "lower": "-338653190471638734887411152558474054074544298059702870135655077271/578276489373699368841283508609746991403278453519693748633600000000",
+      "upper": "-290409309780750605180994566938984881247/1082636258047930026509980830218025520122",
+      "gap": "22122171762052580265415950020847474798210051925927031500068026464426606783441969813221105470396423441/69701970003633428608892121163379869762059548419835666475802715800429770566934059786683652505600000000"
+    },
+    {
+      "leaves": 4,
+      "evaluations": 17,
+      "lower": "-3936000581608836827684341600169394755682254710660519623533831977/11743626559851446987540454007506555685401063301288506163200000000",
+      "upper": "-290409309780750605180994566938984881247/1082636258047930026509980830218025520122",
+      "gap": "94722607189725888349054164275431929551610976846781599419828231906808497362628597513290208966686767/1415506113857699391540098484003777877374732965568656503315506399511390749744391494657323827200000000"
+    },
+    {
+      "leaves": 5,
+      "evaluations": 21,
+      "lower": "-740416644158251530653393347826309092499607566880515178612765581/2300107042956465821671380780955567831273801371992299929600000000",
+      "upper": "-290409309780750605180994566938984881247/1082636258047930026509980830218025520122",
+      "gap": "14877466740265493679499736496152309567276102271375290077014114137877842749225650595002640393585451/277241069037639457317289692434306434355600754519852380685626748358341140417177461982861721600000000"
+    },
+    {
+      "leaves": 6,
+      "evaluations": 25,
+      "lower": "-38755894489305191947776580304031445757640227691072218695832063/127648245110695024136749789243625295043640433773956300800000000",
+      "upper": "-392311639478883198501594966670945813356163/1399595597040387084458321399766437813853312",
+      "gap": "804983224669680134456264587303485761052136741666226857388194165664577069583472190536444087817933/34532011907082079639186915986895078686620233614798121053676637394536231052359759752383692800000000"
+    },
+    {
+      "leaves": 7,
+      "evaluations": 29,
+      "lower": "-13520284778017129822925574138629075286432281367760236244376293/45916911957790331994966291720027366528683755027877068800000000",
+      "upper": "-242272852153348914496789570076965086637747/863530892760467937863059948100827168252416",
+      "gap": "79841738257884582172387554433619140401218148954934158253705488002866897632475000766190300942613/5747993669009676048591667406126681990409125764253137641592325777587435966506402128383180800000000"
+    },
+    {
+      "leaves": 8,
+      "evaluations": 31,
+      "lower": "-109682536959310346332213516003946787196609/379534589708331882808112939689574400000000",
+      "upper": "-242272852153348914496789570076965086637747/863530892760467937863059948100827168252416",
+      "gap": "3605298515282717802678893223415203787472574538351744012691473572289855796921/427599786923213272086525803656053574229639702355351632262021988850073600000000"
+    }
+  ],
+  "seconds": 0.4557375420000014
+}

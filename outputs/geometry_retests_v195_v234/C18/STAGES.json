@@ -1,0 +1,92 @@
+[
+  {
+    "callable": "parity_spectrum.potential_range / verify_range",
+    "capability": "Exact simplex Bernstein potential range on the sphere",
+    "evidence": [
+      "C18/v225_evidence.json"
+    ],
+    "outcome": "Original three-axis potential has globally certified range [1,3]",
+    "version": 225
+  },
+  {
+    "callable": "parity_spectrum.reflection_symmetry / parity_project",
+    "capability": "Exact sign-flip symmetry and eight character projections",
+    "evidence": [
+      "C18/v226_evidence.json"
+    ],
+    "outcome": "C18 accepts all eight blocks; xy exposes only partial symmetry and cannot be split this way",
+    "version": 226
+  },
+  {
+    "callable": "parity_spectrum.degree_basis / parity_basis",
+    "capability": "Complete character harmonic bases and exact positive masses",
+    "evidence": [
+      "C18/v227_evidence.json"
+    ],
+    "outcome": "All degree counts sum to 2l+1; the 000 block removes the constant only",
+    "version": 227
+  },
+  {
+    "callable": "parity_spectrum.block_form / cross_block_form",
+    "capability": "Coupled forms within a character and exact cross-block checks",
+    "evidence": [
+      "C18/v228_evidence.json"
+    ],
+    "outcome": "The original x trial gives18/5; C18 cross blocks vanish and xy has exact nonzero1/15 coupling",
+    "version": 228
+  },
+  {
+    "callable": "parity_spectrum.tail_couplings / next_omitted_degree",
+    "capability": "Complete same-character tail columns and correct first omitted degree",
+    "evidence": [
+      "C18/v229_evidence.json"
+    ],
+    "outcome": "Odd winner omits degree5 after either L3 orL4; even000 omits degree4 afterL3",
+    "version": 229
+  },
+  {
+    "callable": "parity_spectrum.block_ground / verify_block / analytic_floor",
+    "capability": "Infinite-tail Schur enclosure for a reflection character",
+    "evidence": [
+      "C18/v230_evidence.json"
+    ],
+    "outcome": "All block endpoints use exact inertia with same-character graded tails and non-unit masses",
+    "version": 230
+  },
+  {
+    "callable": "parity_spectrum.full_ground / verify_full",
+    "capability": "All-eight-character global ground merge with valid pruning",
+    "evidence": [
+      "C18/v231_evidence.json"
+    ],
+    "outcome": "Three competitive odd blocks computed; five entire-character analytic floors preserved",
+    "version": 231
+  },
+  {
+    "callable": "parity_spectrum.error_diagnosis",
+    "capability": "Measured precision-versus-tail diagnosis and targeted same-parity refinement",
+    "evidence": [
+      "C18/v232_evidence.json"
+    ],
+    "outcome": "32 to56 bits at fixed degree scarcely changes width; degree3 to5 closes the target",
+    "version": 232
+  },
+  {
+    "callable": "parity_spectrum.FormCache / block_ground(cache=...)",
+    "capability": "Input-bound exact finite-form and potential-range reuse",
+    "evidence": [
+      "C18/v233_evidence.json"
+    ],
+    "outcome": "A second precision run reuses the matrix; changing parity or potential builds another matrix",
+    "version": 233
+  },
+  {
+    "callable": "parity_spectrum.adaptive_ground / verify_result",
+    "capability": "Requested-width full-space driver with competitor-only refinement and honest budgets",
+    "evidence": [
+      "C18/v234_evidence.json"
+    ],
+    "outcome": "Unchanged C18 target1e-8 met in three runs; insufficient max_L remains openly unclosed",
+    "version": 234
+  }
+]

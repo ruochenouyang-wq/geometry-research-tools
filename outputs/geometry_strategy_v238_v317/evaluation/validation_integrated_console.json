@@ -1,0 +1,386 @@
+{
+  "report_path": "/PROJECT/outputs/geometry_strategy_v238_v317/evaluation/validation_comparison_20260918T192354220599Z.json",
+  "phase": "validation",
+  "dimensions": {
+    "old_default": {
+      "certified_accuracy": {
+        "approximation": {
+          "count": 2,
+          "successes": 2,
+          "valid_certificates": 2,
+          "values": [
+            {
+              "case_id": "V02",
+              "value": "0",
+              "tolerance": "1/1000000"
+            },
+            {
+              "case_id": "V03",
+              "value": "20488777907/1099511627776",
+              "tolerance": "1/50"
+            }
+          ]
+        },
+        "spectrum": {
+          "count": 3,
+          "successes": 3,
+          "valid_certificates": 3,
+          "values": [
+            {
+              "case_id": "V01",
+              "value": "1/4294967296",
+              "tolerance": "1/1000"
+            },
+            {
+              "case_id": "V04",
+              "value": "14272315206683975047927191921/344800963262078397207103271862272",
+              "tolerance": "1/1000"
+            },
+            {
+              "case_id": "V05",
+              "value": "1776448230303019/55340232221128654848",
+              "tolerance": "1/1000"
+            }
+          ]
+        }
+      },
+      "reliability": {
+        "probes": 7,
+        "falsely_accepted": 0,
+        "replay_is_independent_of_solver_flags": true,
+        "mathematical_verifier_code_shared_with_solver_backend": true,
+        "formal_proof_assistant": false
+      },
+      "automatic_selection": {
+        "successes": 5,
+        "tasks": 5,
+        "solver_attempts": 5,
+        "validation_chosen_config": null,
+        "retrospective_per_task_oracle_used": false,
+        "new_service_internal_attempts_retained_in_response": true
+      },
+      "new_parameter_transfer": {
+        "phase": "validation",
+        "evaluated": false,
+        "new_mathematical_families_tested": 0,
+        "scope": "within_family_only",
+        "fixed_minus_quarter_case_is_regression": true,
+        "holdout_successes": null
+      },
+      "runtime_resources": {
+        "online_wall_seconds": 0.18101970909629017,
+        "online_cpu_seconds": 0.18094400000000005,
+        "charged_selection_wall_seconds": 0.0,
+        "charged_selection_cpu_seconds": 0.0,
+        "reliability_probe_wall_seconds": 0.004692084155976772,
+        "reliability_probe_cpu_seconds": 0.0046939999999999205,
+        "total_accounted_wall_seconds": 0.18571179325226694,
+        "total_accounted_cpu_seconds": 0.18563799999999997,
+        "peak_memory_bytes": null,
+        "development_model_usage": null,
+        "timing_warning": "Other development agents may be active; timing is descriptive and not an isolated speed benchmark.",
+        "cold_start_or_cache": "one process, deterministic interleaving; imports excluded; no warm-cache speed claim"
+      },
+      "visible_tokens": {
+        "token_count": null,
+        "tokenizer": null,
+        "actual_model_input_output_reasoning_usage": null,
+        "serialized_request_response_characters": 31422,
+        "scope": "full task-adapter evidence, not summary-view UI or actual model consumption",
+        "status": "unknown; byte/character counts are reported separately, never treated as tokens"
+      },
+      "usability": {
+        "execution_failures": 0,
+        "missing_or_invalid_final_certificates": 0,
+        "timeouts": 0,
+        "manual_per_task_configuration": false,
+        "certificate_data_retained": true
+      }
+    },
+    "fixed_increasing": {
+      "certified_accuracy": {
+        "approximation": {
+          "count": 2,
+          "successes": 2,
+          "valid_certificates": 2,
+          "values": [
+            {
+              "case_id": "V02",
+              "value": "0",
+              "tolerance": "1/1000000"
+            },
+            {
+              "case_id": "V03",
+              "value": "29844301/4294967296",
+              "tolerance": "1/50"
+            }
+          ]
+        },
+        "spectrum": {
+          "count": 3,
+          "successes": 3,
+          "valid_certificates": 3,
+          "values": [
+            {
+              "case_id": "V01",
+              "value": "1/4096",
+              "tolerance": "1/1000"
+            },
+            {
+              "case_id": "V04",
+              "value": "1597744303517383/4899916394579099648",
+              "tolerance": "1/1000"
+            },
+            {
+              "case_id": "V05",
+              "value": "7994595/17179869184",
+              "tolerance": "1/1000"
+            }
+          ]
+        }
+      },
+      "reliability": {
+        "probes": 7,
+        "falsely_accepted": 0,
+        "replay_is_independent_of_solver_flags": true,
+        "mathematical_verifier_code_shared_with_solver_backend": true,
+        "formal_proof_assistant": false
+      },
+      "automatic_selection": {
+        "successes": 5,
+        "tasks": 5,
+        "solver_attempts": 9,
+        "validation_chosen_config": null,
+        "retrospective_per_task_oracle_used": false,
+        "new_service_internal_attempts_retained_in_response": true
+      },
+      "new_parameter_transfer": {
+        "phase": "validation",
+        "evaluated": false,
+        "new_mathematical_families_tested": 0,
+        "scope": "within_family_only",
+        "fixed_minus_quarter_case_is_regression": true,
+        "holdout_successes": null
+      },
+      "runtime_resources": {
+        "online_wall_seconds": 0.019477207795716822,
+        "online_cpu_seconds": 0.019463000000000008,
+        "charged_selection_wall_seconds": 0.0,
+        "charged_selection_cpu_seconds": 0.0,
+        "reliability_probe_wall_seconds": 0.00032441585790365934,
+        "reliability_probe_cpu_seconds": 0.0003249999999999642,
+        "total_accounted_wall_seconds": 0.01980162365362048,
+        "total_accounted_cpu_seconds": 0.019787999999999972,
+        "peak_memory_bytes": null,
+        "development_model_usage": null,
+        "timing_warning": "Other development agents may be active; timing is descriptive and not an isolated speed benchmark.",
+        "cold_start_or_cache": "one process, deterministic interleaving; imports excluded; no warm-cache speed claim"
+      },
+      "visible_tokens": {
+        "token_count": null,
+        "tokenizer": null,
+        "actual_model_input_output_reasoning_usage": null,
+        "serialized_request_response_characters": 42789,
+        "scope": "full task-adapter evidence, not summary-view UI or actual model consumption",
+        "status": "unknown; byte/character counts are reported separately, never treated as tokens"
+      },
+      "usability": {
+        "execution_failures": 0,
+        "missing_or_invalid_final_certificates": 0,
+        "timeouts": 0,
+        "manual_per_task_configuration": false,
+        "certificate_data_retained": true
+      }
+    },
+    "validation_selected_fixed": {
+      "certified_accuracy": {
+        "approximation": {
+          "count": 2,
+          "successes": 2,
+          "valid_certificates": 2,
+          "values": [
+            {
+              "case_id": "V02",
+              "value": "0",
+              "tolerance": "1/1000000"
+            },
+            {
+              "case_id": "V03",
+              "value": "29844301/4294967296",
+              "tolerance": "1/50"
+            }
+          ]
+        },
+        "spectrum": {
+          "count": 3,
+          "successes": 3,
+          "valid_certificates": 3,
+          "values": [
+            {
+              "case_id": "V01",
+              "value": "1/67108864",
+              "tolerance": "1/1000"
+            },
+            {
+              "case_id": "V04",
+              "value": "45165575035867966940799/411034778668973919400099840",
+              "tolerance": "1/1000"
+            },
+            {
+              "case_id": "V05",
+              "value": "140824309269/1125899906842624",
+              "tolerance": "1/1000"
+            }
+          ]
+        }
+      },
+      "reliability": {
+        "probes": 7,
+        "falsely_accepted": 0,
+        "replay_is_independent_of_solver_flags": true,
+        "mathematical_verifier_code_shared_with_solver_backend": true,
+        "formal_proof_assistant": false
+      },
+      "automatic_selection": {
+        "successes": 5,
+        "tasks": 5,
+        "solver_attempts": 5,
+        "validation_chosen_config": "large",
+        "retrospective_per_task_oracle_used": false,
+        "new_service_internal_attempts_retained_in_response": true
+      },
+      "new_parameter_transfer": {
+        "phase": "validation",
+        "evaluated": false,
+        "new_mathematical_families_tested": 0,
+        "scope": "within_family_only",
+        "fixed_minus_quarter_case_is_regression": true,
+        "holdout_successes": null
+      },
+      "runtime_resources": {
+        "online_wall_seconds": 0.04566399788018316,
+        "online_cpu_seconds": 0.04564599999999999,
+        "charged_selection_wall_seconds": 0.06438104168046266,
+        "charged_selection_cpu_seconds": 0.06418599999999998,
+        "reliability_probe_wall_seconds": 0.001434416975826025,
+        "reliability_probe_cpu_seconds": 0.0014320000000000999,
+        "total_accounted_wall_seconds": 0.11147945653647184,
+        "total_accounted_cpu_seconds": 0.11126400000000007,
+        "peak_memory_bytes": null,
+        "development_model_usage": null,
+        "timing_warning": "Other development agents may be active; timing is descriptive and not an isolated speed benchmark.",
+        "cold_start_or_cache": "one process, deterministic interleaving; imports excluded; no warm-cache speed claim"
+      },
+      "visible_tokens": {
+        "token_count": null,
+        "tokenizer": null,
+        "actual_model_input_output_reasoning_usage": null,
+        "serialized_request_response_characters": 28333,
+        "scope": "full task-adapter evidence, not summary-view UI or actual model consumption",
+        "status": "unknown; byte/character counts are reported separately, never treated as tokens"
+      },
+      "usability": {
+        "execution_failures": 0,
+        "missing_or_invalid_final_certificates": 0,
+        "timeouts": 0,
+        "manual_per_task_configuration": false,
+        "certificate_data_retained": true
+      }
+    },
+    "new_service": {
+      "certified_accuracy": {
+        "approximation": {
+          "count": 2,
+          "successes": 2,
+          "valid_certificates": 2,
+          "values": [
+            {
+              "case_id": "V02",
+              "value": "0",
+              "tolerance": "1/1000000"
+            },
+            {
+              "case_id": "V03",
+              "value": "20488777907/1099511627776",
+              "tolerance": "1/50"
+            }
+          ]
+        },
+        "spectrum": {
+          "count": 3,
+          "successes": 3,
+          "valid_certificates": 3,
+          "values": [
+            {
+              "case_id": "V01",
+              "value": "0",
+              "tolerance": "1/1000"
+            },
+            {
+              "case_id": "V04",
+              "value": "85793267585926778151256959/420899613357029293465702236160",
+              "tolerance": "1/1000"
+            },
+            {
+              "case_id": "V05",
+              "value": "5533178707/6597069766656",
+              "tolerance": "1/1000"
+            }
+          ]
+        }
+      },
+      "reliability": {
+        "probes": 7,
+        "falsely_accepted": 0,
+        "replay_is_independent_of_solver_flags": true,
+        "mathematical_verifier_code_shared_with_solver_backend": true,
+        "formal_proof_assistant": false
+      },
+      "automatic_selection": {
+        "successes": 5,
+        "tasks": 5,
+        "solver_attempts": 5,
+        "validation_chosen_config": null,
+        "retrospective_per_task_oracle_used": false,
+        "new_service_internal_attempts_retained_in_response": true
+      },
+      "new_parameter_transfer": {
+        "phase": "validation",
+        "evaluated": false,
+        "new_mathematical_families_tested": 0,
+        "scope": "within_family_only",
+        "fixed_minus_quarter_case_is_regression": true,
+        "holdout_successes": null
+      },
+      "runtime_resources": {
+        "online_wall_seconds": 0.05324978893622756,
+        "online_cpu_seconds": 0.050971,
+        "charged_selection_wall_seconds": 0.0,
+        "charged_selection_cpu_seconds": 0.0,
+        "reliability_probe_wall_seconds": 0.00011608400382101536,
+        "reliability_probe_cpu_seconds": 0.0001160000000000605,
+        "total_accounted_wall_seconds": 0.053365872940048575,
+        "total_accounted_cpu_seconds": 0.05108700000000006,
+        "peak_memory_bytes": null,
+        "development_model_usage": null,
+        "timing_warning": "Other development agents may be active; timing is descriptive and not an isolated speed benchmark.",
+        "cold_start_or_cache": "one process, deterministic interleaving; imports excluded; no warm-cache speed claim"
+      },
+      "visible_tokens": {
+        "token_count": null,
+        "tokenizer": null,
+        "actual_model_input_output_reasoning_usage": null,
+        "serialized_request_response_characters": 32086,
+        "scope": "full task-adapter evidence, not summary-view UI or actual model consumption",
+        "status": "unknown; byte/character counts are reported separately, never treated as tokens"
+      },
+      "usability": {
+        "execution_failures": 0,
+        "missing_or_invalid_final_certificates": 0,
+        "timeouts": 0,
+        "manual_per_task_configuration": false,
+        "certificate_data_retained": true
+      }
+    }
+  }
+}

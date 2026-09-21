@@ -1,0 +1,66 @@
+{
+  "kind": "unchanged_optional_interaction_component_recount",
+  "runtime": {
+    "strategy": "local_subprocess",
+    "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "python_version": "3.9.6",
+    "tiktoken_version": "0.11.0",
+    "host_python_version": "3.12.14"
+  },
+  "scenarios": [
+    {
+      "scenario": "single",
+      "baseline": {
+        "o200k_base": 308,
+        "cl100k_base": 305
+      },
+      "candidate": {
+        "o200k_base": 308,
+        "cl100k_base": 305
+      },
+      "matches_original": true
+    },
+    {
+      "scenario": "twelve_no_details",
+      "baseline": {
+        "o200k_base": 5922,
+        "cl100k_base": 5878
+      },
+      "candidate": {
+        "o200k_base": 5753,
+        "cl100k_base": 5674
+      },
+      "matches_original": true
+    },
+    {
+      "scenario": "twelve_quarter_details",
+      "baseline": {
+        "o200k_base": 21064,
+        "cl100k_base": 20825
+      },
+      "candidate": {
+        "o200k_base": 20895,
+        "cl100k_base": 20621
+      },
+      "matches_original": true
+    },
+    {
+      "scenario": "twelve_all_details",
+      "baseline": {
+        "o200k_base": 66490,
+        "cl100k_base": 65666
+      },
+      "candidate": {
+        "o200k_base": 66321,
+        "cl100k_base": 65462
+      },
+      "matches_original": true
+    }
+  ],
+  "wall_seconds_including_counter_setup": 0.42940337501931936,
+  "parent_cpu_seconds_excludes_counter_worker": 0.010476,
+  "actual_model_usage": null,
+  "default_service_token_savings_claimed": false,
+  "all_match": true,
+  "limitation": "Frozen scripted text only, not live service timing fields or model behavior; parent CPU excludes any fallback encoding worker."
+}

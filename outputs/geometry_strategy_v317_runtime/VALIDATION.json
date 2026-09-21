@@ -1,0 +1,52 @@
+{
+  "implementation_iterations": 80,
+  "versions": "v238-v317",
+  "iteration_history_unchanged": true,
+  "final_implementation_frozen": true,
+  "new_tests_passed": 54,
+  "frozen_v317_tests_passed": 197,
+  "public_cold_regression": {
+    "report": "evaluation/regression_20260920T041824129864Z/report.json",
+    "cases": 6,
+    "successes": 6,
+    "reliable": true,
+    "vs_v317": true,
+    "vs_first_release": true,
+    "passed": true
+  },
+  "heldout": {
+    "stable_successes": 5,
+    "cases": 14,
+    "reliable_on_declared_probes": true,
+    "no_baseline_success_lost": true,
+    "accuracy_gate": false,
+    "runtime_gate": true,
+    "same_success_baselines": [
+      "frozen_v317"
+    ],
+    "first_release_nonregression": true,
+    "passed": true,
+    "scope": "Predeclared finite suite only; no model superiority or universal dominance claim."
+  },
+  "acceptance_passed": true,
+  "all_inputs_all_dimensions_strictly_improved": false,
+  "default_service_token_savings_measured": false,
+  "optional_scripted_text_component_savings_verified": true,
+  "actual_cross_model_challenge_performed": false,
+  "long_term_model_goal_achieved": false,
+  "complete_historical_cost_ledger_available": false,
+  "references": {
+    "report": "REPORT.md",
+    "guide": "TOOL_GUIDE.md",
+    "iteration_index": "../geometry_strategy_v238_v317/ITERATIONS.md",
+    "freeze": "evaluation/freeze_manifest.json",
+    "tests": "PRE_FREEZE_AUDIT.json",
+    "audit": "FINAL_AUDIT.json",
+    "costs": "metrics/COST_LEDGER.json",
+    "token_component": "metrics/TOKEN_RECOUNT.json",
+    "independent_completion_review": "COMPLETION_REVIEW.md"
+  },
+  "scope": "80-iteration local mathematical tool and declared finite evaluation. All tradeoffs and unknowns retained; not a claim of universal or model superiority.",
+  "local_tool_goal_work_complete": true,
+  "independent_completion_review_passed": true
+}

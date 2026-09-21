@@ -1,0 +1,119 @@
+{
+  "completed_utc": "2026-09-11T11:24:12.658688+00:00",
+  "cycle": 4,
+  "file_sha256": {
+    "parameter_family.py": "caa137fc6f9587d6ad4a80c1d8b5a8868e37e5b52189b87b98a2c564d4d03b17",
+    "round04/STAGES.json": "4b75755120301e8e22f5106c2c7e71fb0987eedc98d8801e2925ad9a69880ccf",
+    "test_family_review.py": "a145fe591017a5e94f998fe666f7a3691a9270c36aecd6e357db8bb0551e4ad7",
+    "test_parameter_family.py": "b0a5713e406906c2a198a0360fc1c4e321abe8da7f7ae134006e5d7eed6961f7"
+  },
+  "first_version": 125,
+  "last_version": 134,
+  "stages": [
+    {
+      "callable": "parameter_family.cheap_family_enclosure",
+      "capability": "Compute a search-free whole-family spectral enclosure from coefficient boxes and a fixed admissible harmonic.",
+      "evidence": [
+        "round04/certificates/v125_family.json",
+        "round04/certificates/v125_cheap_enclosure.json"
+      ],
+      "outcome": "q_s(t)=2t²+s t, every real s in [-1,1]: initial entire-range spectral enclosure [1, 16/5].",
+      "version": 125
+    },
+    {
+      "callable": "parameter_family.direction_norms",
+      "capability": "Certify multiplier L-infinity bounds by rational polynomial extrema.",
+      "evidence": [
+        "round04/certificates/v126_norms.json",
+        "round04/certificates/v126_cancellation_norms.json"
+      ],
+      "outcome": "For t-t³ the norm upper is 110939923506567707/288230376151711744 instead of the coefficient-sum bound 2.",
+      "version": 126
+    },
+    {
+      "callable": "parameter_family.anchor_cell",
+      "capability": "Propagate a verified point spectrum to every point of a whole cell.",
+      "evidence": [
+        "round04/certificates/v127_anchor.json"
+      ],
+      "outcome": "Certified midpoint Lipschitz interval; uniform lower=408087846699942882915/295147905179352825856",
+      "version": 127
+    },
+    {
+      "callable": "parameter_family.partition_certificate",
+      "capability": "Prove exact rational box coverage with disjoint interiors.",
+      "evidence": [
+        "round04/certificates/v128_partition.json"
+      ],
+      "outcome": "Both closed halves cover the original continuum; missing/overlapping cells rejected in tests.",
+      "version": 128
+    },
+    {
+      "callable": "parameter_family.cell_lower_bound",
+      "capability": "Use concavity to certify a uniform lower from every vertex.",
+      "evidence": [
+        "round04/certificates/v129_concavity.json"
+      ],
+      "outcome": "Parameter minimum in [172792310441497958729/73786976294838206464, 10057836215/4294967296]; vertex maxima are not claimed as upper bounds.",
+      "version": 129
+    },
+    {
+      "callable": "parameter_family.affine_majorant",
+      "capability": "Produce exact affine Rayleigh majorants from fixed explicit functions.",
+      "evidence": [
+        "round04/certificates/v130_center_majorant.json",
+        "round04/certificates/v130_plus_majorant.json",
+        "round04/certificates/v130_minus_majorant.json"
+      ],
+      "outcome": "Mean-zero m=1 trials cover nonaxisymmetric functions; center majorant has zero s slope by parity.",
+      "version": 130
+    },
+    {
+      "callable": "parameter_family.envelope_1d",
+      "capability": "Certify the maximum of a one-dimensional minimum affine envelope.",
+      "evidence": [
+        "round04/certificates/v131_intersection_envelope.json",
+        "round04/certificates/v131_tighter_envelope.json"
+      ],
+      "outcome": "All pairwise rational line intersections and endpoints tested; maximum upper=3056515035153204/1282818751141811",
+      "version": 131
+    },
+    {
+      "callable": "parameter_family.envelope_box",
+      "capability": "Provide a safe multi-parameter cell upper from affine majorants.",
+      "evidence": [
+        "round04/certificates/v132_two_parameter_upper.json"
+      ],
+      "outcome": "Two-parameter full-box upper=13508878891754627/5131275004567244; no false maximum-of-vertex-minima rule.",
+      "version": 132
+    },
+    {
+      "callable": "parameter_family.adaptive_family",
+      "capability": "Adaptively subdivide the global-supremum interval using reusable anchor proofs.",
+      "evidence": [
+        "round04/certificates/v133_budget_open.json",
+        "round04/certificates/v133_subdivided.json",
+        "round04/certificates/v133_majorant_accelerated.json"
+      ],
+      "outcome": "Two-cell tight request remains budget_open; ordinary subdivision meets 1/5 at 8 cells; affine majorant meets 1e-7 at 1 cell(s).",
+      "version": 133
+    },
+    {
+      "callable": "parameter_family.universal_inequality",
+      "capability": "Resolve a universally quantified weighted inequality or exhibit parameter and function.",
+      "evidence": [
+        "round04/certificates/v134_proved.json",
+        "round04/certificates/v134_refuted.json",
+        "round04/certificates/v134_undetermined.json"
+      ],
+      "outcome": "Threshold 2.3 proved; threshold 2.4 explicitly refuted; a boundary-straddling threshold preserved as undetermined.",
+      "version": 134
+    }
+  ],
+  "validation": {
+    "all_passed": true,
+    "evidence": "round04/ROOT_ACCEPTANCE.json",
+    "tests": 33,
+    "unique_replayed_records": 19
+  }
+}

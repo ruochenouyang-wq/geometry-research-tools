@@ -1,0 +1,62 @@
+{
+  "version": 276,
+  "recorded_at": "2026-09-18T18:56:33.811057+00:00",
+  "hypothesis": "Affine amplitude and constant shifts should reuse structural candidates while retaining the exact original sphere problem.",
+  "change": "Generalized action and H-squared moments to amplitude/offset; added exact constant-shift source transport with replay and certified-shift search for negative spectra.",
+  "source_sha256": {
+    "adaptive_singular.py": "94e8dfc270b98ecf2c2ac3b7be880c2c5ecf6b924532e2bd90e5119dc8e688b4",
+    "test_adaptive_singular.py": "d03ef9dbafd36178239a3d17b6a2207b1e554d82a04b39f2aee3be3b53fc4d60"
+  },
+  "validation": {
+    "tests_passed": 20,
+    "replayed": true
+  },
+  "comparison": [
+    {
+      "function": {
+        "kind": "axis_profile",
+        "axis": 2,
+        "profile": "abs_power",
+        "exponent": "-1/4",
+        "amplitude": "-1/2",
+        "offset": "0"
+      },
+      "width": "163855642596209527523138381579052823122187471219945773180104601667394683867396782058454762811081711250570854469345219156526026844301062332381782971281917886857216/6302526495018180752754231871691932063254160723309296152382935579359544341629169044977666307195934232012104411071613316135252152952420892457192691641511866160923851985",
+      "seconds": 0.079973833,
+      "status": "certified_open"
+    },
+    {
+      "function": {
+        "kind": "axis_profile",
+        "axis": 2,
+        "profile": "abs_power",
+        "exponent": "-1/4",
+        "amplitude": "-1/2",
+        "offset": "-3"
+      },
+      "width": "163855642596209527523138381579052823122187471219945773180104601667394683867396782058454762811081711250570854469345219156526026844301062332381782971281917886857216/6302526495018180752754231871691932063254160723309296152382935579359544341629169044977666307195934232012104411071613316135252152952420892457192691641511866160923851985",
+      "seconds": 0.070964959,
+      "status": "certified_open"
+    },
+    {
+      "function": {
+        "kind": "axis_profile",
+        "axis": 2,
+        "profile": "abs_power",
+        "exponent": "-1/4",
+        "amplitude": "1/2",
+        "offset": "0"
+      },
+      "width": "11349176193761587093265667/435754893828453856764491726848",
+      "seconds": 0.07705895799999996,
+      "status": "certified_open"
+    }
+  ],
+  "outcome": "point_parameter_family_supported_with_full_coverage",
+  "limitations": [
+    "These are individual parameter points, not a continuum certificate.",
+    "The centered L2 comparison still requires eta<1.",
+    "An exact m1 trial does not eliminate a nonzero m0-source uncertainty."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

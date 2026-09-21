@@ -1,0 +1,25 @@
+{
+  "version": 300,
+  "recorded_at": "2026-09-18T18:13:18.857521+00:00",
+  "hypothesis": "Interrupted publication and altered evidence must never be accepted as a valid stored object.",
+  "change": "Fsync temporary files, atomic exclusive hard-link publication, cleanup, read-after-write and hash-checked canonical reads.",
+  "source_sha256": {
+    "evidence_store.py": "580f5d603201e5178ca941494a9bc3617c4f0073d0fee76d3e840bbc34c78687",
+    "test_evidence_store.py": "f31e43e821042faae80cbf42421c5d0f1354530b10eefe63eb1108576dc8b859"
+  },
+  "validation": {
+    "tests_run": 3,
+    "passed": true,
+    "log": "test_298_full_content_dedup (test_evidence_store.EvidenceTests) ... ok\ntest_299_strict_json_and_complete_summary (test_evidence_store.EvidenceTests) ... ok\ntest_300_tamper_and_failed_atomic_publish (test_evidence_store.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.006s\n\nOK\n"
+  },
+  "comparison": {
+    "modified_bound": "read and duplicate put reject",
+    "injected_publish_failure": "no final object or pending file",
+    "normal_retry": "complete object recovered"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Atomic visibility is guaranteed by local filesystem link semantics; this is not a power-loss durability proof."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

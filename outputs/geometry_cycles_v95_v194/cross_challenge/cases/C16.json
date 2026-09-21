@@ -1,0 +1,178 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {},
+  "certificates": [
+    {
+      "format": "gn_ratio_v167",
+      "path": "certs/C16_n4_original_moments.json",
+      "sha256": "5790cb662d94d6d864ab76589cb374622e4f6f795acefc867de0de09960bb49d",
+      "verified": true
+    },
+    {
+      "format": "gn_ratio_v167",
+      "path": "certs/C16_n16_original_moments.json",
+      "sha256": "7bcca8f2cd17568f43082156e57c0483aa6bf9c3e6c6b572223ae29ac77d7a1a",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 0.007978,
+  "id": "C16",
+  "notes": [
+    "n=64 retained and actually submitted; rejected at degree cap 36. Closed-form reference is not claimed as a GN module certificate or sharp-constant result."
+  ],
+  "original_acceptance": [
+    "For each prescribed n, independently integrate mean, M2, M4 and Dirichlet energy and return the exact rational GN quotient.",
+    "M2=2^(2n)*(1/(2n+1)-1/(n+1)^2); energy=n*2^(2n-1)/(2n+1). M4 follows binomial expansion with E((1+t)^j)=2^j/(j+1).",
+    "All three cases stay in the record even if a resource limit is reached. No claim that these trials are globally optimal or attain the sharp constant."
+  ],
+  "original_input": {
+    "mean_zero": true,
+    "n_values": [
+      4,
+      16,
+      64
+    ],
+    "normalization": "mu=d_sigma/(4*pi)",
+    "trial_family": "u_n(t)=(1+t)^n-2^n/(n+1)"
+  },
+  "prescribed_cases": [
+    {
+      "independent_formula_reference": {
+        "energy": "512/9",
+        "mass": "4096/225",
+        "mean": "0",
+        "probability_ratio": "6696/5525",
+        "quartic": "520093696/414375"
+      },
+      "n": 4,
+      "original_polynomial_coefficients": [
+        "-11/5",
+        "4",
+        "6",
+        "4",
+        "1"
+      ],
+      "status": "solved"
+    },
+    {
+      "independent_formula_reference": {
+        "energy": "34359738368/33",
+        "mass": "1099511627776/9537",
+        "mean": "0",
+        "probability_ratio": "1580832/920465",
+        "quartic": "603253983987699958178381824/2926158235"
+      },
+      "n": 16,
+      "original_polynomial_coefficients": [
+        "-65519/17",
+        "16",
+        "120",
+        "560",
+        "1820",
+        "4368",
+        "8008",
+        "11440",
+        "12870",
+        "11440",
+        "8008",
+        "4368",
+        "1820",
+        "560",
+        "120",
+        "16",
+        "1"
+      ],
+      "status": "solved"
+    },
+    {
+      "exception": "Polynomial degree budget exceeded",
+      "independent_formula_reference": {
+        "energy": "10889035741470030830827987437816582766592/129",
+        "mass": "1393796574908163946345982392040522594123776/545025",
+        "mean": "0",
+        "probability_ratio": "402777216/209564225",
+        "quartic": "15795840762687403075646144764382032229909410008332946447298486703587030743003550298669056/38072580576875"
+      },
+      "n": 64,
+      "original_polynomial_coefficients": [
+        "-18446744073709551551/65",
+        "64",
+        "2016",
+        "41664",
+        "635376",
+        "7624512",
+        "74974368",
+        "621216192",
+        "4426165368",
+        "27540584512",
+        "151473214816",
+        "743595781824",
+        "3284214703056",
+        "13136858812224",
+        "47855699958816",
+        "159518999862720",
+        "488526937079580",
+        "1379370175283520",
+        "3601688791018080",
+        "8719878125622720",
+        "19619725782651120",
+        "41107996877935680",
+        "80347448443237920",
+        "146721427591999680",
+        "250649105469666120",
+        "401038568751465792",
+        "601557853127198688",
+        "846636978475316672",
+        "1118770292985239888",
+        "1388818294740297792",
+        "1620288010530347424",
+        "1777090076065542336",
+        "1832624140942590534",
+        "1777090076065542336",
+        "1620288010530347424",
+        "1388818294740297792",
+        "1118770292985239888",
+        "846636978475316672",
+        "601557853127198688",
+        "401038568751465792",
+        "250649105469666120",
+        "146721427591999680",
+        "80347448443237920",
+        "41107996877935680",
+        "19619725782651120",
+        "8719878125622720",
+        "3601688791018080",
+        "1379370175283520",
+        "488526937079580",
+        "159518999862720",
+        "47855699958816",
+        "13136858812224",
+        "3284214703056",
+        "743595781824",
+        "151473214816",
+        "27540584512",
+        "4426165368",
+        "621216192",
+        "74974368",
+        "7624512",
+        "635376",
+        "41664",
+        "2016",
+        "64",
+        "1"
+      ],
+      "status": "unsupported",
+      "supported_trial_degree": 36
+    }
+  ],
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "partially_supported",
+  "title": "明确集中序列的有理矩与GN试探"
+}

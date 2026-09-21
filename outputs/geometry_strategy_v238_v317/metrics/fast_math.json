@@ -1,0 +1,465 @@
+{
+  "steps": [
+    {
+      "version": 248,
+      "comparison": {
+        "fixed_input": "same ratio=1/2,degree=3; levels2 then4",
+        "baseline_cell_integrations": 4,
+        "new_counters": {
+          "shape_integrations": 1,
+          "cell_integrations": 3,
+          "scaled_cells": 6
+        },
+        "exact_wire_equal": true,
+        "cache_regime": "one cold shape followed by reuse"
+      },
+      "source_sha256": {
+        "fast_math.py": "9280f793dbcd52d26e86133744548b559ce845ea1a074a66efd933f11dd96d66",
+        "test_fast_math.py": "19d0e706927d6d76c21e9310405551c9d164c309fdee4543e872da76b7f39367"
+      }
+    },
+    {
+      "version": 249,
+      "comparison": {
+        "fixed_input": "roots1/8,1/4 degree6 amplitude2/3 offset-1/7",
+        "exact_wire_equal": true,
+        "old_global_compositions": 8,
+        "new_global_compositions": 0,
+        "squared_local_coefficient_peak_bits": 103,
+        "squared_global_coefficient_peak_bits": 234,
+        "baseline": {
+          "serial_seconds": [
+            0.0005348749691620469,
+            0.00047070905566215515,
+            0.00045262498315423727
+          ],
+          "median_seconds": 0.00047070905566215515,
+          "not_a_model_speed_claim": true
+        },
+        "candidate": {
+          "serial_seconds": [
+            0.00028433301486074924,
+            0.0002672499977052212,
+            0.00026291608810424805
+          ],
+          "median_seconds": 0.0002672499977052212,
+          "not_a_model_speed_claim": true
+        },
+        "cache_regime": "uncached cell integrations"
+      },
+      "source_sha256": {
+        "fast_math.py": "20561ba25afb3ccc03848975b9e3890000f43338a45e6b52ac82713186671b73",
+        "test_fast_math.py": "b198e7b785fde543e0ff2da8c831f0a4e25320a92fd414a48c3f1bdd57340f01"
+      }
+    },
+    {
+      "version": 250,
+      "comparison": {
+        "fixed_input": "four exact points -1,0,1/16,1;levels4 degree3",
+        "exact_values_equal": true,
+        "baseline_rebuilds": 4,
+        "candidate_rebuilds": 1,
+        "baseline": {
+          "serial_seconds": [
+            0.0021265840623527765,
+            0.002002791967242956,
+            0.0019952079746872187
+          ],
+          "median_seconds": 0.002002791967242956,
+          "not_a_model_speed_claim": true
+        },
+        "candidate": {
+          "serial_seconds": [
+            0.0006157909519970417,
+            0.000689542037434876,
+            0.0006615830352529883
+          ],
+          "median_seconds": 0.0006615830352529883,
+          "not_a_model_speed_claim": true
+        },
+        "cache_regime": "one complete frozen rebuild per batch, no validation cache"
+      },
+      "source_sha256": {
+        "fast_math.py": "59c8ddda682ebd493956904dca7323fcd9a6aad75c6893a3b3523f521f7ac7fd",
+        "test_fast_math.py": "57e88270abc236fca6d9727e0f22ef747e67c455e84e8035513e6c9e117390b4"
+      }
+    },
+    {
+      "version": 251,
+      "comparison": {
+        "fixed_input": "singular m1 modes6 near6",
+        "exact_assembly_equal": true,
+        "baseline_moment_calls": 540,
+        "baseline_normalizations": 541,
+        "cold_counters": {
+          "moment_source_normalizations": 1,
+          "radial_integral_requests": 108,
+          "raw_moment_requests": 540,
+          "raw_moment_computations": 32
+        },
+        "warm_counters": {
+          "moment_source_normalizations": 1,
+          "radial_integral_requests": 108,
+          "raw_moment_requests": 540
+        },
+        "baseline": {
+          "serial_seconds": [
+            0.006699625053443015,
+            0.0067150830291211605,
+            0.006657332996837795
+          ],
+          "median_seconds": 0.006699625053443015,
+          "not_a_model_speed_claim": true
+        },
+        "candidate_cold": {
+          "serial_seconds": [
+            0.0010352499084547162,
+            0.0010190829634666443,
+            0.001022250042296946
+          ],
+          "median_seconds": 0.001022250042296946,
+          "not_a_model_speed_claim": true
+        },
+        "candidate_warm": {
+          "serial_seconds": [
+            0.0011275409488007426,
+            0.0011175839463248849,
+            0.0011106670135632157
+          ],
+          "median_seconds": 0.0011175839463248849,
+          "not_a_model_speed_claim": true
+        },
+        "cache_regime": "cold clears fast caches; legacy basis polynomial caches remain shared"
+      },
+      "source_sha256": {
+        "fast_math.py": "521659cdd32f392dbf5f839013a21fdf55b4a8caf4307f4cb11d5d83401b3101",
+        "test_fast_math.py": "85939013dd64a59c753a2162b0be4cee6f28db4c67c1942b8d7ebcf9f68c07a8"
+      }
+    },
+    {
+      "version": 252,
+      "comparison": {
+        "fixed_input": "m1 modes6 near6; singular and non-even step",
+        "rows": [
+          {
+            "source": "singular",
+            "exact_assembly_equal": true,
+            "baseline_integral_calls": 108,
+            "candidate_cold_counters": {
+              "moment_source_normalizations": 1,
+              "radial_integral_requests": 78,
+              "raw_moment_requests": 222,
+              "raw_moment_computations": 17,
+              "proven_zero_integrals": 36
+            },
+            "baseline": {
+              "serial_seconds": [
+                0.006281375070102513,
+                0.006320834043435752,
+                0.006335709011182189
+              ],
+              "median_seconds": 0.006320834043435752,
+              "not_a_model_speed_claim": true
+            },
+            "candidate_cold": {
+              "serial_seconds": [
+                0.0005722919013351202,
+                0.0005505000008270144,
+                0.0005400830414146185
+              ],
+              "median_seconds": 0.0005505000008270144,
+              "not_a_model_speed_claim": true
+            }
+          },
+          {
+            "source": "step",
+            "exact_assembly_equal": true,
+            "baseline_integral_calls": 108,
+            "candidate_cold_counters": {
+              "moment_source_normalizations": 1,
+              "radial_integral_requests": 78,
+              "raw_moment_requests": 246,
+              "raw_moment_computations": 29,
+              "proven_zero_integrals": 30
+            },
+            "baseline": {
+              "serial_seconds": [
+                0.004432958085089922,
+                0.004285999923013151,
+                0.004357374971732497
+              ],
+              "median_seconds": 0.004357374971732497,
+              "not_a_model_speed_claim": true
+            },
+            "candidate_cold": {
+              "serial_seconds": [
+                0.0005587090272456408,
+                0.0005442079855129123,
+                0.000538166961632669
+              ],
+              "median_seconds": 0.0005442079855129123,
+              "not_a_model_speed_claim": true
+            }
+          }
+        ],
+        "prior_v251_singular_counters": {
+          "moment_source_normalizations": 1,
+          "radial_integral_requests": 108,
+          "raw_moment_requests": 540,
+          "raw_moment_computations": 32
+        },
+        "proof": "radial product parity is l+k; step same-parity off-diagonal integrates its constant even part; odd step couplings are retained",
+        "cache_regime": "candidate raw moments cold, shared legacy radial polynomials warm"
+      },
+      "source_sha256": {
+        "fast_math.py": "83443da54fd3e9f01f15910cf09ccd63077f447fc54814311fb4ed46a9d32211",
+        "test_fast_math.py": "95c1aaed0e17fc5b9d4917db2b05c7beaf76247d4acc76b2385894538866710f"
+      }
+    },
+    {
+      "version": 253,
+      "comparison": {
+        "fixed_input": "singular m1 modes6 near6; 16 lower shifts 0..15/16",
+        "exact_all_matrices_equal": true,
+        "construction_counters": {
+          "moment_source_normalizations": 1,
+          "radial_integral_requests": 78,
+          "raw_moment_requests": 222,
+          "raw_moment_computations": 17,
+          "proven_zero_integrals": 36,
+          "schur_fixed_outer_products": 36
+        },
+        "query_counters": {
+          "schur_variable_divisions": 768,
+          "kernel_matrix_evaluations": 16
+        },
+        "baseline_repeated_outer_products": 3456,
+        "candidate_repeated_outer_products": 0,
+        "baseline_queries": {
+          "serial_seconds": [
+            0.0036909159971401095,
+            0.00362920796032995,
+            0.003689292003400624
+          ],
+          "median_seconds": 0.003689292003400624,
+          "not_a_model_speed_claim": true
+        },
+        "candidate_queries": {
+          "serial_seconds": [
+            0.000882374937646091,
+            0.000857125036418438,
+            0.0008425420382991433
+          ],
+          "median_seconds": 0.000857125036418438,
+          "not_a_model_speed_claim": true
+        },
+        "candidate_construction": {
+          "serial_seconds": [
+            0.0007633750792592764,
+            0.0006878749700263143,
+            0.0006792499916628003
+          ],
+          "median_seconds": 0.0006878749700263143,
+          "not_a_model_speed_claim": true
+        },
+        "cache_regime": "construction reported separately from repeated shifts; full_ground retains frozen sector rebuilds"
+      },
+      "source_sha256": {
+        "fast_math.py": "c35cde477047d19f2ab479b585c5e4b43c28506d6854ff90325ab56be45f03cf",
+        "test_fast_math.py": "2542dad138c0d4c3702b31e691205395a97c83a34925144d4f54ac24077b5843"
+      }
+    },
+    {
+      "version": 254,
+      "comparison": {
+        "fixed_input": "frozen singular_n4 source; enriched max_terms6 bits32 iterations3",
+        "final_exact_certificate_equal": true,
+        "baseline_full_source_verifications": 5,
+        "candidate_full_source_verifications": 2,
+        "candidate_counters": {
+          "source_context_verifications": 1,
+          "final_enriched_frozen_replays": 1
+        },
+        "attempt_count": 3,
+        "baseline": {
+          "serial_seconds": [
+            0.017295250087045133,
+            0.017111290944740176,
+            0.01697966700885445
+          ],
+          "median_seconds": 0.017111290944740176,
+          "not_a_model_speed_claim": true
+        },
+        "candidate": {
+          "serial_seconds": [
+            0.007896500057540834,
+            0.007848292007111013,
+            0.007879166048951447
+          ],
+          "median_seconds": 0.007879166048951447,
+          "not_a_model_speed_claim": true
+        },
+        "cache_regime": "fresh immutable context for each run; final old enriched verifier always retained"
+      },
+      "source_sha256": {
+        "fast_math.py": "5b4e3794f676a9dfebe847ac4579f6cd6b0c5b727134b193674d19f983e25d60",
+        "test_fast_math.py": "c625c15f988e7bcfacdbe7a7a1115c6767a4da1fedaa1435798e17c5994cc5fb"
+      }
+    },
+    {
+      "version": 255,
+      "comparison": {
+        "fixed_input": "first10 DEFAULT_EXPONENTS and nested1,3,6,10",
+        "exact_all_grams_equal": true,
+        "baseline_weighted_moment_calls": 1231,
+        "candidate_cold_counters": {
+          "gram_border_entries": 165,
+          "weighted_moment_requests": 837,
+          "weighted_moment_computations": 41,
+          "gram_prefix_extensions": 10
+        },
+        "candidate_warm_counters": {},
+        "nested_prefix_counters": {
+          "gram_border_entries": 165,
+          "weighted_moment_requests": 837,
+          "weighted_moment_computations": 41,
+          "gram_prefix_extensions": 10
+        },
+        "baseline_cold": {
+          "serial_seconds": [
+            0.0031957909232005477,
+            0.0032467079581692815,
+            0.0032797500025480986
+          ],
+          "median_seconds": 0.0032467079581692815,
+          "not_a_model_speed_claim": true
+        },
+        "candidate_cold": {
+          "serial_seconds": [
+            0.001202459097839892,
+            0.001173374941572547,
+            0.001181833096779883
+          ],
+          "median_seconds": 0.001181833096779883,
+          "not_a_model_speed_claim": true
+        },
+        "candidate_warm": {
+          "serial_seconds": [
+            1.3125012628734112e-05,
+            1.1708005331456661e-05,
+            1.1292053386569023e-05
+          ],
+          "median_seconds": 1.1708005331456661e-05,
+          "not_a_model_speed_claim": true
+        },
+        "cache_regime": "independent legacy and fast cold caches; immutable prefixes bounded64, moments4096"
+      },
+      "source_sha256": {
+        "fast_math.py": "e39eebda9da014a90f188a57a5e9c5e91ecc2350709d29eede6fa3f2c6cfcd02",
+        "test_fast_math.py": "c611fecd9d7ea4ed8a2b3fdee9066140137f8eb4abb53c8f74695632339e1bbe"
+      }
+    },
+    {
+      "version": 256,
+      "comparison": {
+        "fixed_input": "nested1,3,6,10 terms, bits32 iterations3; then repeat10",
+        "exact_proposal_coefficients_equal": true,
+        "baseline_nested_pivots": 20,
+        "candidate_nested_pivots": 10,
+        "baseline_nested_offdiagonal_entries": 63,
+        "candidate_nested_offdiagonal_entries": 45,
+        "repeat_counters": {
+          "ldl_solves": 3
+        },
+        "baseline_warm_matrices": {
+          "serial_seconds": [
+            0.001133625046350062,
+            0.0011116249952465296,
+            0.0011016249191015959
+          ],
+          "median_seconds": 0.0011116249952465296,
+          "not_a_model_speed_claim": true
+        },
+        "candidate_cold": {
+          "serial_seconds": [
+            0.0024064580211415887,
+            0.0023879170184955,
+            0.0024116249987855554
+          ],
+          "median_seconds": 0.0024064580211415887,
+          "not_a_model_speed_claim": true
+        },
+        "candidate_warm": {
+          "serial_seconds": [
+            0.0008037079824134707,
+            0.0007934160530567169,
+            0.0007872909773141146
+          ],
+          "median_seconds": 0.0007934160530567169,
+          "not_a_model_speed_claim": true
+        },
+        "cache_regime": "baseline timing keeps old Gram warm but recomputes LDL; candidate cold rebuilds both Gram and LDL; warm keeps both"
+      },
+      "source_sha256": {
+        "fast_math.py": "1cc28975e1e1ed4362140727232895aac5f264f7fa8121b882ec6d85a79675fe",
+        "test_fast_math.py": "3ac7ce6a152edd5d91f77fbbb1e691cf24d43c1aab3c8cbd5a8be5f879a81373"
+      }
+    },
+    {
+      "version": 257,
+      "comparison": {
+        "fixed_input": "10 alternating rational coefficients; full six-term run112bits14iterations",
+        "exact_statistics_equal": true,
+        "baseline_full_quadratic_passes": 3,
+        "baseline_gram_contractions": 300,
+        "candidate_statistics_counters": {
+          "statistics_coefficient_products": 55,
+          "statistics_gram_contractions": 165
+        },
+        "baseline_warm_statistics": {
+          "serial_seconds": [
+            0.00028024998027831316,
+            0.0002649170346558094,
+            0.00026070792227983475
+          ],
+          "median_seconds": 0.0002649170346558094,
+          "not_a_model_speed_claim": true
+        },
+        "candidate_warm_statistics": {
+          "serial_seconds": [
+            0.00015883299056440592,
+            0.0001525420229882002,
+            0.0001502919476479292
+          ],
+          "median_seconds": 0.0001525420229882002,
+          "not_a_model_speed_claim": true
+        },
+        "exact_integrated_final_certificate_equal": true,
+        "all_attempt_widths_equal": true,
+        "baseline_warm_enrich": {
+          "serial_seconds": [
+            0.019756624940782785,
+            0.01913445896934718,
+            0.02002187503967434
+          ],
+          "median_seconds": 0.019756624940782785,
+          "not_a_model_speed_claim": true
+        },
+        "candidate_warm_enrich": {
+          "serial_seconds": [
+            0.009547083056531847,
+            0.009870499954558909,
+            0.0097279999172315
+          ],
+          "median_seconds": 0.0097279999172315,
+          "not_a_model_speed_claim": true
+        },
+        "cache_regime": "both Gram caches warm; candidate LDL warm; each enriched run starts new context and finishes frozen replay"
+      },
+      "source_sha256": {
+        "fast_math.py": "d7f6ac0d1f024bfd270abe278f8c10e655613c5723b2ff9e0bf9a0559ebcef19",
+        "test_fast_math.py": "43a814893d9755f23c1475aba9441379c0732e1e34c2d2720fb7029de5bd9764"
+      }
+    }
+  ]
+}

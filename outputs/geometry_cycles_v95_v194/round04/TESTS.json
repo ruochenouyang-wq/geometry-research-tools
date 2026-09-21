@@ -1,0 +1,86 @@
+{
+  "all_certificate_replays_passed": true,
+  "all_passed": true,
+  "certificate_replays": [
+    {
+      "file": "round04/certificates/v125_cheap_enclosure.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v125_family.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v126_cancellation_norms.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v126_norms.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v127_anchor.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v128_partition.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v129_concavity.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v130_center_majorant.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v130_minus_majorant.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v130_plus_majorant.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v131_intersection_envelope.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v131_tighter_envelope.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v132_two_parameter_upper.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v133_budget_open.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v133_majorant_accelerated.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v133_subdivided.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v134_proved.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v134_refuted.json",
+      "verified_after_json_roundtrip": true
+    },
+    {
+      "file": "round04/certificates/v134_undetermined.json",
+      "verified_after_json_roundtrip": true
+    }
+  ],
+  "errors": 0,
+  "failures": 0,
+  "stdout": "test_v125_cheap_spectral_enclosure (test_parameter_family.FamilyTests) ... ok\ntest_v125_cheap_unconstrained_and_exact_constants (test_parameter_family.FamilyTests) ... ok\ntest_v125_exact_affine_evaluation (test_parameter_family.FamilyTests) ... ok\ntest_v125_reject_float_dimension_scope (test_parameter_family.FamilyTests) ... ok\ntest_v126_norm_and_tamper (test_parameter_family.FamilyTests) ... ok\ntest_v127_lipschitz_radius (test_parameter_family.FamilyTests) ... ok\ntest_v127_wrong_cached_family_rejected (test_parameter_family.FamilyTests) ... ok\ntest_v128_coverage_gap_overlap_rejected (test_parameter_family.FamilyTests) ... ok\ntest_v128_two_dimensional_coverage (test_parameter_family.FamilyTests) ... ok\ntest_v129_cache_replay_avoids_search (test_parameter_family.FamilyTests) ... ok\ntest_v129_concavity_gain_and_missing_vertex (test_parameter_family.FamilyTests) ... ok\ntest_v129_vertex_max_is_not_global_upper (test_parameter_family.FamilyTests) ... ok\ntest_v130_affine_matches_direct_rayleigh (test_parameter_family.FamilyTests) ... ok\ntest_v130_no_constant_trial_under_mean_zero (test_parameter_family.FamilyTests) ... ok\ntest_v131_intersection_and_parallel_lines (test_parameter_family.FamilyTests) ... ok\ntest_v132_higher_dimension_safe (test_parameter_family.FamilyTests) ... ok\ntest_v133_honest_budget_and_coverage (test_parameter_family.FamilyTests) ... ok\ntest_v134_input_threshold_binding (test_parameter_family.FamilyTests) ... ok\ntest_v134_prove_refute_undetermined (test_parameter_family.FamilyTests) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.107s\n\nOK\n",
+  "tests_run": 19
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "callable": "anisotropic.cheap_ground_enclosure / verify_cheap",
+    "capability": "Immediate full-space enclosure with exact linear trial upper bound",
+    "evidence": [
+      "round09/v175_evidence.json"
+    ],
+    "outcome": "Sparse xyz potential q=xy now immediately yields rigorous full-space [1,9/5]",
+    "version": 175
+  },
+  {
+    "callable": "anisotropic.sphere_moment / integrate",
+    "capability": "Exact normalized spherical moments",
+    "evidence": [
+      "round09/v176_evidence.json"
+    ],
+    "outcome": "All polynomial integrals use closed rational moments, not sampling",
+    "version": 176
+  },
+  {
+    "callable": "anisotropic.solid_harmonic",
+    "capability": "Rational real solid harmonic construction",
+    "evidence": [
+      "round09/v177_evidence.json"
+    ],
+    "outcome": "15 nonconstant real harmonics constructed and Laplacian-checked",
+    "version": 177
+  },
+  {
+    "callable": "anisotropic.gram_energy",
+    "capability": "Exact Gram and tangential gradient forms",
+    "evidence": [
+      "round09/v178_evidence.json"
+    ],
+    "outcome": "All 15 functions orthogonal with independently integrated l(l+1) energy",
+    "version": 178
+  },
+  {
+    "callable": "anisotropic.coupled_form",
+    "capability": "Coupled finite form includes cross-azimuth entries",
+    "evidence": [
+      "round09/v179_evidence.json"
+    ],
+    "outcome": "7 off-diagonal entries between different azimuthal indices retained",
+    "version": 179
+  },
+  {
+    "callable": "anisotropic.tail_couplings",
+    "capability": "Complete finite-to-tail coupling columns",
+    "evidence": [
+      "round09/v180_evidence.json"
+    ],
+    "outcome": "All 20 harmonics of degrees 4 and 5 included with exact masses",
+    "version": 180
+  },
+  {
+    "callable": "anisotropic.CoupledKernel.matrix",
+    "capability": "Degree-graded lower and upper Schur comparisons",
+    "evidence": [
+      "round09/v181_evidence.json"
+    ],
+    "outcome": "Positive infinite tail controlled with non-unit harmonic mass denominators",
+    "version": 181
+  },
+  {
+    "callable": "anisotropic.certify / verify",
+    "capability": "Whole mean-zero sphere ground certification and exact replay",
+    "evidence": [
+      "round09/v182_evidence.json"
+    ],
+    "outcome": "Five full-space enclosures, including genuinely mixed degree-4 xyz potential",
+    "version": 182
+  },
+  {
+    "callable": "anisotropic.sphere_reduce / potential_range",
+    "capability": "Sphere-identity potential reduction improves global range",
+    "evidence": [
+      "round09/v183_evidence.json"
+    ],
+    "outcome": "q=x²+y²+z² reduces to 1 and the certified mean-zero ground is exactly 3",
+    "version": 183
+  },
+  {
+    "callable": "anisotropic.transfer_rotation / verify_rotation",
+    "capability": "Exact proper-rotation certificate transfer",
+    "evidence": [
+      "round09/v184_evidence.json"
+    ],
+    "outcome": "Two rational rotations reuse the fast axisymmetric full-sphere solver",
+    "version": 184
+  }
+]

@@ -1,0 +1,165 @@
+{
+  "algorithm_version": 5,
+  "status": "target_met",
+  "tolerance": "1/10000000000",
+  "certificate": {
+    "method": "modewise_schur_v3",
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "q_coefficients": [
+      "5",
+      "8",
+      "-70",
+      "2",
+      "4"
+    ],
+    "modes": 16,
+    "eigenvalue_index": 2,
+    "tail_policy": "sandwich",
+    "range_proof": {
+      "kind": "adaptive_bernstein_v5",
+      "intervals": [
+        [
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "1/32"
+        ],
+        [
+          "1/32",
+          "3/64"
+        ],
+        [
+          "3/64",
+          "7/128"
+        ],
+        [
+          "7/128",
+          "29/512"
+        ],
+        [
+          "29/512",
+          "117/2048"
+        ],
+        [
+          "117/2048",
+          "235/4096"
+        ],
+        [
+          "235/4096",
+          "59/1024"
+        ],
+        [
+          "59/1024",
+          "15/256"
+        ],
+        [
+          "15/256",
+          "1/16"
+        ],
+        [
+          "1/16",
+          "1/8"
+        ],
+        [
+          "1/8",
+          "1/4"
+        ],
+        [
+          "1/4",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1"
+        ]
+      ],
+      "lower": "-71",
+      "upper": "183978706681711/35184372088832",
+      "requested_tolerance": "1/1000000",
+      "minimum_witness": {
+        "at": "-1",
+        "value": "-71"
+      },
+      "maximum_witness": {
+        "at": "469/8192",
+        "value": "5887318096241329/1125899906842624"
+      },
+      "range_target_met": true
+    },
+    "upper_kind": "upper_tail",
+    "tail_lower": "201",
+    "lower_inertia": [
+      1,
+      0,
+      15
+    ],
+    "upper_inertia": [
+      2,
+      0,
+      14
+    ],
+    "formal_assistant_checked": false,
+    "lower": "-25486733607134207076671/687194767360000000000",
+    "upper": "-12743366803562217750727/343597383680000000000",
+    "exact_width": "9771575217/687194767360000000000",
+    "decimal_enclosure": [
+      "-37.088078689899",
+      "-37.088078689884"
+    ]
+  },
+  "attempts": [
+    {
+      "modes": 4,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.004074416999999997,
+      "exact_width": "11780840156732310637717/687194767360000000000"
+    },
+    {
+      "modes": 6,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.006684999999999941,
+      "exact_width": "1799151900335201262717/687194767360000000000"
+    },
+    {
+      "modes": 8,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.00968049999999998,
+      "exact_width": "11378551198326262717/687194767360000000000"
+    },
+    {
+      "modes": 10,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.013264542000000046,
+      "exact_width": "96931604420012717/687194767360000000000"
+    },
+    {
+      "modes": 12,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.017420790999999936,
+      "exact_width": "230123445357921/343597383680000000000"
+    },
+    {
+      "modes": 14,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.023449916000000015,
+      "exact_width": "549910201671/343597383680000000000"
+    },
+    {
+      "modes": 16,
+      "path": "guided",
+      "exact_count_calls": 4,
+      "seconds": 0.025201584000000055,
+      "exact_width": "9771575217/687194767360000000000"
+    }
+  ],
+  "seconds": 0.13168804200000006
+}

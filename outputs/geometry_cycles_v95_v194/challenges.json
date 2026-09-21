@@ -1,0 +1,587 @@
+{
+  "format": "geometry-fixed-challenges-v1",
+  "created_utc": "2026-09-11",
+  "status": "prospective_challenges_not_implementation_results",
+  "frozen_baseline": "outputs/geometry_v91_v94",
+  "scope_defaults": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "conventions": [
+    "Power coefficients ascend in t. All potentials are real.",
+    "Rayleigh quotients use either area or probability measure consistently; the factors cancel for spectral quantities. GN constants do change.",
+    "Full mean-zero means compression to the closed mean-zero quadratic-form domain, not deleting the first ordinary eigenvalue.",
+    "m>0 real full-spectrum multiplicity is 2; sector k and full-space k differ.",
+    "Fixed challenges may expose missing scope, resource limits or valid wide bounds; none implies the old algorithm returned a false proof.",
+    "No challenge is advertised as an open mathematical problem; no later version is predeclared successful.",
+    "A future change to a challenge must retain this original and document the reason; failures are not silently removed."
+  ],
+  "sources": {
+    "sphere": {
+      "title": "DLMF 14.30: Spherical and Spheroidal Harmonics",
+      "url": "https://dlmf.nist.gov/14.30",
+      "use": "Unit sphere harmonic eigenvalues and angular basis; exact constant-potential calibrations also derived directly."
+    },
+    "usov": {
+      "title": "Usov, Spheroidal quantum well, arXiv:2307.04124v1, Eq.7a and Table1c",
+      "url": "https://arxiv.org/pdf/2307.04124v1",
+      "use": "For q=+c^2 t^2, m=1, c^2=2, l=1: Lambda=2.38265540616. Only compatibility with the fixed rounding interval plus/minus 0.5e-11; not a rigorous high precision enclosure."
+    },
+    "dlmf_spheroid": {
+      "title": "DLMF 30.2: Differential Equations",
+      "url": "https://dlmf.nist.gov/30.2",
+      "use": "Convention conversion Lambda=lambda_DLMF+c^2 for q=+c^2 t^2. Positive c^2 here is prolate."
+    },
+    "gn": {
+      "title": "Ilyin and Zelik, On a class of interpolation inequalities on the 2D sphere, arXiv:2204.12414v1",
+      "url": "https://arxiv.org/pdf/2204.12414",
+      "use": "Eq.1.8 gives a nonsharp scalar zero-mean interpolation upper bound. At exponent r=4 its probability-measure form is E(u^4) <= 4 E(u^2) E(|grad u|^2). It does not identify the sharp GN constant. The paper also motivates orthonormal-density / spectral trace work."
+    }
+  },
+  "cases": [
+    {
+      "id": "C01",
+      "category": 1,
+      "title": "零势显式违反者",
+      "origin": "exact_calibration",
+      "input": {
+        "q": [
+          "0"
+        ],
+        "threshold": "21/10",
+        "trial": "u=z"
+      },
+      "acceptance": [
+        "Return an exact nonzero mean-zero trial and directly replay its moments: mass=1/3, energy=2/3, Rayleigh=2.",
+        "Verify threshold*mass-energy=1/30>0; spectral existence alone is insufficient."
+      ],
+      "frozen_v94_baseline": "weighted_poincare is applicable but records existence-only refutation.",
+      "source_ids": [
+        "sphere"
+      ],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C02",
+      "category": 1,
+      "title": "椭球势的严格有理违反者",
+      "origin": "constructed_stress_case",
+      "input": {
+        "q": [
+          "0",
+          "0",
+          "2"
+        ],
+        "threshold": "12/5",
+        "trial": "u=x*(1-z^2/10)"
+      },
+      "acceptance": [
+        "Independently integrate the displayed polynomial trial on S2 and prove mass>0, mean=0 and Rayleigh<12/5.",
+        "Report the actual positive violation margin with original potential and full-sphere scope."
+      ],
+      "frozen_v94_baseline": "Existence refutation is supported; no explicit function in V94 output.",
+      "source_ids": [
+        "usov"
+      ],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C03",
+      "category": 2,
+      "title": "固定m=1势的二十四位证书宽度",
+      "origin": "constructed_stress_case",
+      "input": {
+        "q": [
+          "0",
+          "0",
+          "2"
+        ],
+        "m": 1,
+        "mean_zero": true,
+        "k": 1,
+        "target_width": "1/1000000000000000000000000",
+        "initial_modes": 8,
+        "bits": 100
+      },
+      "acceptance": [
+        "Replay an exact interval of width <=1e-24, or report the remaining open width and resource budget.",
+        "The independent Usov rounding band [2.382655406155,2.382655406165] is a compatibility check only; it cannot certify 24 digits."
+      ],
+      "frozen_v94_baseline": "Fixed sector supported; probe fixed N=8,bits=100 to distinguish truncation error from arithmetic precision.",
+      "source_ids": [
+        "usov",
+        "dlmf_spheroid"
+      ],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C04",
+      "category": 2,
+      "title": "强势全角向二十位闭合",
+      "origin": "constructed_stress_case",
+      "input": {
+        "q": [
+          "0",
+          "0",
+          "100"
+        ],
+        "target_width": "1/100000000000000000000",
+        "initial_modes": 8,
+        "initial_max_modes": 8,
+        "initial_max_m": 4,
+        "bits": 100
+      },
+      "acceptance": [
+        "Replay a full-space interval of width <=1e-20 including an explicit omitted-angular-sector lower bound, or keep certified_bound_open_gap.",
+        "Do not infer high precision merely from bits=100 or reuse an m=0-only interval as a full-space result."
+      ],
+      "frozen_v94_baseline": "full_ground supports the input; limited truncation is deliberately probed.",
+      "source_ids": [
+        "dlmf_spheroid"
+      ],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C05",
+      "category": 3,
+      "title": "八次非负势",
+      "origin": "constructed_stress_case",
+      "input": {
+        "q": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "target_width": "1/100000000"
+      },
+      "acceptance": [
+        "Accept degree 8 with exact coefficient binding and global potential range.",
+        "Coarse independent guard: 2 <= full mean-zero ground <=67/33, using u=x and E(z^(2r))=1/(2r+1); requested narrow result must independently replay."
+      ],
+      "frozen_v94_baseline": "V94 degree cap 6 rejects this input.",
+      "source_ids": [],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C06",
+      "category": 3,
+      "title": "GN六次试探平方产生十二次势",
+      "origin": "constructed_stress_case",
+      "input": {
+        "q": [
+          "-1/49",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2/7",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        "construction": "q=-(t^6-1/7)^2",
+        "target_width": "1/100000000"
+      },
+      "acceptance": [
+        "Bind the expanded degree-12 polynomial exactly to the factored trial square.",
+        "Independent guard q>=-36/49 gives full mean-zero ground >=62/49; a successful spectral certificate must cover the whole interval, not samples."
+      ],
+      "frozen_v94_baseline": "V94 degree cap 6 rejects this natural trial-square input.",
+      "source_ids": [
+        "gn"
+      ],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C07",
+      "category": 4,
+      "title": "整个线性参数区间的统一正下界",
+      "origin": "constructed_stress_case",
+      "input": {
+        "q(a,t)": "a*t",
+        "parameter_box": {
+          "a": [
+            "-4",
+            "4"
+          ]
+        },
+        "claimed_uniform_threshold": "1"
+      },
+      "acceptance": [
+        "Prove lambda_mean_zero(a*t)>=1 for every a in [-4,4].",
+        "One admissible proof uses concavity of the constrained ground energy in a plus verified endpoint lower bounds; a finite grid without a remainder is insufficient."
+      ],
+      "frozen_v94_baseline": "Pointwise endpoints supported; no parameter-box certificate API.",
+      "source_ids": [],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C08",
+      "category": 4,
+      "title": "非负参数盒与端点精确达到",
+      "origin": "constructed_stress_case",
+      "input": {
+        "q(a,t)": "a*t^2",
+        "parameter_box": {
+          "a": [
+            "0",
+            "100"
+          ]
+        },
+        "claimed_uniform_threshold": "2"
+      },
+      "acceptance": [
+        "Prove the uniform threshold 2 from q>=0 and Poincare, with equality at a=0 and u=x.",
+        "Bind the full parameter box; sampling the endpoints must not be presented as the general proof."
+      ],
+      "frozen_v94_baseline": "Fixed coefficients supported; uniform quantifier and exact minimizer are outside the API.",
+      "source_ids": [
+        "sphere"
+      ],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C09",
+      "category": 5,
+      "title": "带惩罚的参数全局最优",
+      "origin": "constructed_stress_case",
+      "input": {
+        "q(a,t)": "a*t+t^2",
+        "parameter_box": {
+          "a": [
+            "-4",
+            "4"
+          ]
+        },
+        "objective": "lambda_full_mean_zero(q(a,t))+a^2/5",
+        "target_global_gap": "1/100000000"
+      },
+      "acceptance": [
+        "Return rigorous lower and attained/trial upper bounds for the global objective with gap <=1e-8, or retain an explicit open gap.",
+        "Cover the whole parameter interval and all relevant angular branches; attach proof to any reported minimizer enclosure. No optimal parameter/value is assumed in advance."
+      ],
+      "frozen_v94_baseline": "A fixed a can be evaluated; no global parameter optimizer/certificate API.",
+      "source_ids": [],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C10",
+      "category": 5,
+      "title": "正负椭球势的角分支竞争",
+      "origin": "constructed_stress_case",
+      "input": {
+        "q(a,t)": "a*t^2",
+        "parameters_to_compare": [
+          "-2",
+          "0",
+          "2"
+        ],
+        "parameter_box_for_optional_global_search": {
+          "a": [
+            "-2",
+            "2"
+          ]
+        }
+      },
+      "acceptance": [
+        "At a=-2 and a=2 establish competing m=0/m=1 intervals and identify a winning branch only after separation; retain undecided labels if they overlap.",
+        "At a=0 prove full mean-zero eigenvalue 2 with real multiplicity 3 (one m=0 plus two m=1). Do not infer uniqueness or a whole-box branch ordering from only these three points."
+      ],
+      "frozen_v94_baseline": "Pointwise sectors and full ground supported; branch-family claims require new machinery.",
+      "source_ids": [
+        "sphere",
+        "dlmf_spheroid"
+      ],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C11",
+      "category": 6,
+      "title": "删除完整l=0和l=1空间",
+      "origin": "exact_calibration",
+      "input": {
+        "q": [
+          "0"
+        ],
+        "orthogonality": [
+          "1",
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "acceptance": [
+        "Ground energy is exactly 6; prove all constraints and accept an l=2 trial such as 3z^2-1.",
+        "Excluding only m=0,l=1 is insufficient because the x/y modes remain."
+      ],
+      "frozen_v94_baseline": "Only the constant constraint is available in V94.",
+      "source_ids": [
+        "sphere"
+      ],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C12",
+      "category": 6,
+      "title": "只删除常数和z仍保留横向模",
+      "origin": "exact_calibration",
+      "input": {
+        "q": [
+          "0"
+        ],
+        "orthogonality": [
+          "1",
+          "z"
+        ]
+      },
+      "acceptance": [
+        "In the full sphere the ground is exactly 2, with admissible x and y.",
+        "For the separately declared axisymmetric space the same constraints give ground 6; scope binding must distinguish the two."
+      ],
+      "frozen_v94_baseline": "No extra-constraint API; full and axisymmetric meanings must not be conflated.",
+      "source_ids": [
+        "sphere"
+      ],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C13",
+      "category": 7,
+      "title": "完整高阶谱与重数",
+      "origin": "exact_calibration",
+      "input": {
+        "q": [
+          "0"
+        ],
+        "mean_zero": true,
+        "ordered_full_eigenvalues_k": "1..9"
+      },
+      "acceptance": [
+        "Return [2,2,2,6,6,6,6,6,12], including real angular multiplicities.",
+        "Each sector may be certified independently, but a full-spectrum merge must also exclude omitted levels/sectors."
+      ],
+      "frozen_v94_baseline": "Fixed-sector kth eigenvalue is supported; full_ground only returns full-space k=1.",
+      "source_ids": [
+        "sphere"
+      ],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C14",
+      "category": 7,
+      "title": "负谱个数及负部迹",
+      "origin": "exact_calibration",
+      "input": {
+        "q": [
+          "-7"
+        ],
+        "spaces": [
+          "full_mean_zero",
+          "full_unprojected"
+        ],
+        "quantity": "sum_j max(0,-lambda_j), with multiplicity"
+      },
+      "acceptance": [
+        "Mean-zero result: negative count 8 and negative-part trace 20 (l=1:3*5; l=2:5*1).",
+        "Unprojected result: negative count 9 and trace 27; prove no omitted negative eigenvalues. These are exact test identities, not a new Lieb-Thirring bound."
+      ],
+      "frozen_v94_baseline": "Sector energies are available; full counting and negative-trace sum API are absent.",
+      "source_ids": [
+        "sphere",
+        "gn"
+      ],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C15",
+      "category": 8,
+      "title": "GN候选常数的直接反例",
+      "origin": "exact_calibration",
+      "input": {
+        "inequality": "E_mu(u^4)<=C*E_mu(u^2)*E_mu(|grad u|^2)",
+        "C": "4/5",
+        "trial": "u=z",
+        "mean_zero": true
+      },
+      "acceptance": [
+        "Direct moments are E(u^2)=1/3, E(|grad u|^2)=2/3, E(u^4)=1/5; quotient=9/10>4/5.",
+        "If using area d_sigma instead, the same trial quotient is 9/(40*pi), not 9/10. A weighted linear spectral threshold is not a GN certificate."
+      ],
+      "frozen_v94_baseline": "V94 certifies linear quadratic forms, not this quartic functional.",
+      "source_ids": [
+        "gn"
+      ],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C16",
+      "category": 8,
+      "title": "明确集中序列的有理矩与GN试探",
+      "origin": "constructed_stress_case",
+      "input": {
+        "trial_family": "u_n(t)=(1+t)^n-2^n/(n+1)",
+        "n_values": [
+          4,
+          16,
+          64
+        ],
+        "normalization": "mu=d_sigma/(4*pi)",
+        "mean_zero": true
+      },
+      "acceptance": [
+        "For each prescribed n, independently integrate mean, M2, M4 and Dirichlet energy and return the exact rational GN quotient.",
+        "M2=2^(2n)*(1/(2n+1)-1/(n+1)^2); energy=n*2^(2n-1)/(2n+1). M4 follows binomial expansion with E((1+t)^j)=2^j/(j+1).",
+        "All three cases stay in the record even if a resource limit is reached. No claim that these trials are globally optimal or attain the sharp constant."
+      ],
+      "frozen_v94_baseline": "No GN moment/search interface; potential squares would exceed degree 6 for these trials.",
+      "source_ids": [
+        "gn"
+      ],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C17",
+      "category": 9,
+      "title": "旋转等价的非轴输入q=x",
+      "origin": "constructed_stress_case",
+      "input": {
+        "q_xyz": [
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "mean_zero": true,
+        "target_width": "1/1000000000000"
+      },
+      "acceptance": [
+        "Certify the full mean-zero ground and reproduce the q=z result under an explicit rotation of S2.",
+        "Preserve the mean-zero constraint and full-space scope; comparing only the old m=0 sector is not a rotation test."
+      ],
+      "frozen_v94_baseline": "The axisymmetric q(t) API cannot directly represent x; it can supply the rotated calibration q=z.",
+      "source_ids": [],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C18",
+      "category": 9,
+      "title": "真正三轴二次势",
+      "origin": "constructed_stress_case",
+      "input": {
+        "q_xyz": [
+          {
+            "coefficient": "1",
+            "powers": [
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "2",
+            "powers": [
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "coefficient": "3",
+            "powers": [
+              0,
+              0,
+              2
+            ]
+          }
+        ],
+        "mean_zero": true,
+        "target_width": "1/100000000"
+      },
+      "acceptance": [
+        "Replay a full-sphere certificate for x^2+2y^2+3z^2, which has no rotation making it a function of one axis alone.",
+        "Independent coarse guard is 3 <= ground <=18/5: q>=1 and the trial u=x has potential quotient 8/5 and Dirichlet quotient 2."
+      ],
+      "frozen_v94_baseline": "Nonaxisymmetric coefficients/couplings are outside V94 input scope.",
+      "source_ids": [],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C19",
+      "category": 10,
+      "title": "同一谱证书支持两个后续判定",
+      "origin": "constructed_stress_case",
+      "input": {
+        "q": [
+          "0",
+          "0",
+          "2"
+        ],
+        "thresholds": [
+          "119/50",
+          "12/5"
+        ],
+        "workflow": [
+          "certify",
+          "persist_by_content_hash",
+          "reload_and_verify",
+          "derive_two_threshold_decisions"
+        ]
+      },
+      "acceptance": [
+        "One replayed full-space certificate with L>=119/50 and U<12/5 yields proved and refuted-by-spectral-existence respectively.",
+        "Preserve certificate identity and avoid recomputing the spectrum in both downstream steps; any explicit violating-function extension must be separately checked.",
+        "Reject changed q or scope bindings and corrupt content hashes."
+      ],
+      "frozen_v94_baseline": "V94 already supports content-addressed storage, verify and fetch. Its weighted_poincare operation recomputes the spectrum and takes no existing certificate id. This challenge extends reuse, not basic persistence.",
+      "source_ids": [],
+      "status": "fixed_challenge_not_claimed_solved"
+    },
+    {
+      "id": "C20",
+      "category": 10,
+      "title": "开放证书的预算续算",
+      "origin": "constructed_stress_case",
+      "input": {
+        "q": [
+          "0",
+          "0",
+          "100"
+        ],
+        "first_budget": {
+          "modes": 4,
+          "max_modes": 4,
+          "max_m": 0,
+          "bits": 60,
+          "tolerance": "1/100000000000000000000"
+        },
+        "target_width": "1/100000000000000000000",
+        "continuation_budget": "explicitly recorded larger mode/angular budget"
+      },
+      "acceptance": [
+        "First preserve and replay the honest open certificate. A resumed result must keep best lower=max(old lower,new lower) and best upper=min(old upper,new upper) for the same operator.",
+        "Record actual reused work and certificate ancestry; a fresh full recomputation may be a correct fallback but is not evidence of warm-start reuse.",
+        "If the larger budget still cannot close 1e-20, retain open status. Reject an inherited certificate with changed coefficients or projection."
+      ],
+      "frozen_v94_baseline": "V94 has persisted certificates but full_ground has no seed/resume option.",
+      "source_ids": [],
+      "status": "fixed_challenge_not_claimed_solved"
+    }
+  ]
+}

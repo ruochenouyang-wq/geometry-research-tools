@@ -1,0 +1,528 @@
+{
+  "algorithm_version": 35,
+  "certificate": {
+    "method": "proof_search_v32",
+    "compiled_goal": {
+      "method": "expression_compiler_v23",
+      "source": {
+        "geometry": "unit_sphere",
+        "function_space": "full_sphere",
+        "eigenvalue_index": 1,
+        "parameters": [
+          "a",
+          "b"
+        ],
+        "potential": "(a+2*b)*t+(b-a)*(t*t-1/3)",
+        "penalty": "(a+2*b)**2/4+(b-a)**2/9",
+        "domain": {
+          "kind": "all_real"
+        },
+        "threshold": "0"
+      },
+      "problem": {
+        "geometry": "unit_sphere",
+        "function_space": "full_sphere",
+        "eigenvalue_index": 1,
+        "q0": [
+          "0"
+        ],
+        "directions": [
+          [
+            "1/3",
+            "1",
+            "-1"
+          ],
+          [
+            "-1/3",
+            "2",
+            "1"
+          ]
+        ],
+        "penalty": {
+          "constant": "0",
+          "linear": [
+            "0",
+            "0"
+          ],
+          "hessian": [
+            [
+              "13/18",
+              "7/9"
+            ],
+            [
+              "7/9",
+              "20/9"
+            ]
+          ]
+        },
+        "domain": {
+          "kind": "all_real"
+        }
+      },
+      "threshold": "0",
+      "relation": ">="
+    },
+    "reductions": [
+      {
+        "rule": "sphere_ground_v24",
+        "original": {
+          "geometry": "unit_sphere",
+          "function_space": "full_sphere",
+          "eigenvalue_index": 1,
+          "q0": [
+            "0"
+          ],
+          "directions": [
+            [
+              "1/3",
+              "1",
+              "-1"
+            ],
+            [
+              "-1/3",
+              "2",
+              "1"
+            ]
+          ],
+          "penalty": {
+            "constant": "0",
+            "linear": [
+              "0",
+              "0"
+            ],
+            "hessian": [
+              [
+                "13/18",
+                "7/9"
+              ],
+              [
+                "7/9",
+                "20/9"
+              ]
+            ]
+          },
+          "domain": {
+            "kind": "all_real"
+          }
+        },
+        "reduced": {
+          "geometry": "unit_sphere",
+          "function_space": "axisymmetric",
+          "eigenvalue_index": 1,
+          "q0": [
+            "0"
+          ],
+          "directions": [
+            [
+              "1/3",
+              "1",
+              "-1"
+            ],
+            [
+              "-1/3",
+              "2",
+              "1"
+            ]
+          ],
+          "penalty": {
+            "constant": "0",
+            "linear": [
+              "0",
+              "0"
+            ],
+            "hessian": [
+              [
+                "13/18",
+                "7/9"
+              ],
+              [
+                "7/9",
+                "20/9"
+              ]
+            ]
+          },
+          "domain": {
+            "kind": "all_real"
+          }
+        },
+        "justification": "azimuthal_L2_envelope",
+        "witness_lift": "identity_axisymmetric_function"
+      }
+    ],
+    "terminal": {
+      "kind": "transport",
+      "proof": {
+        "method": "lemma_transport_v31",
+        "problem": {
+          "geometry": "unit_sphere",
+          "function_space": "axisymmetric",
+          "eigenvalue_index": 1,
+          "q0": [
+            "0"
+          ],
+          "directions": [
+            [
+              "1/3",
+              "1",
+              "-1"
+            ],
+            [
+              "-1/3",
+              "2",
+              "1"
+            ]
+          ],
+          "penalty": {
+            "constant": "0",
+            "linear": [
+              "0",
+              "0"
+            ],
+            "hessian": [
+              [
+                "13/18",
+                "7/9"
+              ],
+              [
+                "7/9",
+                "20/9"
+              ]
+            ]
+          },
+          "domain": {
+            "kind": "all_real"
+          }
+        },
+        "template": {
+          "method": "poisson_matrix_v30",
+          "directions": [
+            [
+              "1/3",
+              "1",
+              "-1"
+            ],
+            [
+              "-1/3",
+              "2",
+              "1"
+            ]
+          ],
+          "weight": [
+            [
+              "13/36",
+              "7/18"
+            ],
+            [
+              "7/18",
+              "10/9"
+            ]
+          ],
+          "poisson_solutions": [
+            [
+              "0",
+              "-1/2",
+              "1/6"
+            ],
+            [
+              "0",
+              "-1",
+              "-1/6"
+            ]
+          ],
+          "means": [
+            "0",
+            "0"
+          ],
+          "scale": "1",
+          "quadratic_bound": [
+            [
+              "13/36",
+              "7/18"
+            ],
+            [
+              "7/18",
+              "10/9"
+            ]
+          ],
+          "range_proof": {
+            "method": "polynomial_maximum",
+            "polynomial": [
+              "1",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            "coordinate": "t_squared",
+            "intervals": null,
+            "witness": "0",
+            "maximum_lower": "1",
+            "maximum_upper": "1",
+            "tolerance": "1/1000000",
+            "status": "scale_enclosed"
+          },
+          "scope": "ground energy on the full unit sphere, all real amplitude vectors, axisymmetric polynomial potentials",
+          "formal_assistant_checked": false,
+          "template_id": "cea480fbab92fbb847cc3d77f6317cd6236c59bb3a76aeacbb028b8dc64673a5"
+        },
+        "amplitude_offset": [
+          "0",
+          "0"
+        ],
+        "amplitude_matrix": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "remainder_polynomial": [
+          "0"
+        ],
+        "remainder_proof": {
+          "kind": "quadratic_range_v5",
+          "lower": "0",
+          "upper": "0"
+        },
+        "derived_quadratic": {
+          "constant": "0",
+          "linear": [
+            "0",
+            "0"
+          ],
+          "hessian": [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "lower_bound": "0",
+        "relaxation_minimizer": [
+          "0",
+          "0"
+        ],
+        "formal_assistant_checked": false
+      }
+    },
+    "status": "proved",
+    "lower_bound": "0",
+    "upper_bound": null,
+    "candidate_parameters": null,
+    "original_function_space": "full_sphere",
+    "threshold": "0",
+    "formal_assistant_checked": false
+  },
+  "strategy": "penalty_weighted_lemma",
+  "statistics": {
+    "weighted_attempts": 1,
+    "expanded_states": 4,
+    "points": 0,
+    "spectral_searches": 0,
+    "model_calls": 0
+  },
+  "diagnostics": [
+    {
+      "method": "penalty_budget_v35",
+      "problem": {
+        "geometry": "unit_sphere",
+        "function_space": "axisymmetric",
+        "eigenvalue_index": 1,
+        "q0": [
+          "0"
+        ],
+        "directions": [
+          [
+            "1/3",
+            "1",
+            "-1"
+          ],
+          [
+            "-1/3",
+            "2",
+            "1"
+          ]
+        ],
+        "penalty": {
+          "constant": "0",
+          "linear": [
+            "0",
+            "0"
+          ],
+          "hessian": [
+            [
+              "13/18",
+              "7/9"
+            ],
+            [
+              "7/9",
+              "20/9"
+            ]
+          ]
+        },
+        "domain": {
+          "kind": "all_real"
+        }
+      },
+      "template": {
+        "method": "poisson_matrix_v30",
+        "directions": [
+          [
+            "1/3",
+            "1",
+            "-1"
+          ],
+          [
+            "-1/3",
+            "2",
+            "1"
+          ]
+        ],
+        "weight": [
+          [
+            "13/36",
+            "7/18"
+          ],
+          [
+            "7/18",
+            "10/9"
+          ]
+        ],
+        "poisson_solutions": [
+          [
+            "0",
+            "-1/2",
+            "1/6"
+          ],
+          [
+            "0",
+            "-1",
+            "-1/6"
+          ]
+        ],
+        "means": [
+          "0",
+          "0"
+        ],
+        "scale": "1",
+        "quadratic_bound": [
+          [
+            "13/36",
+            "7/18"
+          ],
+          [
+            "7/18",
+            "10/9"
+          ]
+        ],
+        "range_proof": {
+          "method": "polynomial_maximum",
+          "polynomial": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "-1"
+          ],
+          "coordinate": "t_squared",
+          "intervals": null,
+          "witness": "0",
+          "maximum_lower": "1",
+          "maximum_upper": "1",
+          "tolerance": "1/1000000",
+          "status": "scale_enclosed"
+        },
+        "scope": "ground energy on the full unit sphere, all real amplitude vectors, axisymmetric polynomial potentials",
+        "formal_assistant_checked": false,
+        "template_id": "cea480fbab92fbb847cc3d77f6317cd6236c59bb3a76aeacbb028b8dc64673a5"
+      },
+      "status": "poisson_envelope_fits",
+      "scale_lower": "1",
+      "scale_upper": "1",
+      "meaning": "Tests A(t) <= penalty Hessian / 2 for this fixed Poisson family; does not decide the original spectral goal.",
+      "formal_assistant_checked": false
+    }
+  ],
+  "generated_library": [
+    {
+      "method": "poisson_matrix_v30",
+      "directions": [
+        [
+          "1/3",
+          "1",
+          "-1"
+        ],
+        [
+          "-1/3",
+          "2",
+          "1"
+        ]
+      ],
+      "weight": [
+        [
+          "13/36",
+          "7/18"
+        ],
+        [
+          "7/18",
+          "10/9"
+        ]
+      ],
+      "poisson_solutions": [
+        [
+          "0",
+          "-1/2",
+          "1/6"
+        ],
+        [
+          "0",
+          "-1",
+          "-1/6"
+        ]
+      ],
+      "means": [
+        "0",
+        "0"
+      ],
+      "scale": "1",
+      "quadratic_bound": [
+        [
+          "13/36",
+          "7/18"
+        ],
+        [
+          "7/18",
+          "10/9"
+        ]
+      ],
+      "range_proof": {
+        "method": "polynomial_maximum",
+        "polynomial": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        "coordinate": "t_squared",
+        "intervals": null,
+        "witness": "0",
+        "maximum_lower": "1",
+        "maximum_upper": "1",
+        "tolerance": "1/1000000",
+        "status": "scale_enclosed"
+      },
+      "scope": "ground energy on the full unit sphere, all real amplitude vectors, axisymmetric polynomial potentials",
+      "formal_assistant_checked": false,
+      "template_id": "cea480fbab92fbb847cc3d77f6317cd6236c59bb3a76aeacbb028b8dc64673a5"
+    }
+  ],
+  "seconds": 0.00381937499999907
+}

@@ -1,0 +1,66 @@
+{
+  "version": 251,
+  "recorded_at": "2026-09-18T18:56:13.133862+00:00",
+  "hypothesis": "A normalized source needs one exact raw moment per distinct degree and power.",
+  "change": "Add bounded raw-moment cache and independent compatible matrix assembly.",
+  "source_sha256": {
+    "fast_math.py": "521659cdd32f392dbf5f839013a21fdf55b4a8caf4307f4cb11d5d83401b3101",
+    "test_fast_math.py": "85939013dd64a59c753a2162b0be4cee6f28db4c67c1942b8d7ebcf9f68c07a8"
+  },
+  "validation": {
+    "tests_run": 5,
+    "failures": 0,
+    "frozen_verifiers_retained": true
+  },
+  "comparison": {
+    "fixed_input": "singular m1 modes6 near6",
+    "exact_assembly_equal": true,
+    "baseline_moment_calls": 540,
+    "baseline_normalizations": 541,
+    "cold_counters": {
+      "moment_source_normalizations": 1,
+      "radial_integral_requests": 108,
+      "raw_moment_requests": 540,
+      "raw_moment_computations": 32
+    },
+    "warm_counters": {
+      "moment_source_normalizations": 1,
+      "radial_integral_requests": 108,
+      "raw_moment_requests": 540
+    },
+    "baseline": {
+      "serial_seconds": [
+        0.006699625053443015,
+        0.0067150830291211605,
+        0.006657332996837795
+      ],
+      "median_seconds": 0.006699625053443015,
+      "not_a_model_speed_claim": true
+    },
+    "candidate_cold": {
+      "serial_seconds": [
+        0.0010352499084547162,
+        0.0010190829634666443,
+        0.001022250042296946
+      ],
+      "median_seconds": 0.001022250042296946,
+      "not_a_model_speed_claim": true
+    },
+    "candidate_warm": {
+      "serial_seconds": [
+        0.0011275409488007426,
+        0.0011175839463248849,
+        0.0011106670135632157
+      ],
+      "median_seconds": 0.0011175839463248849,
+      "not_a_model_speed_claim": true
+    },
+    "cache_regime": "cold clears fast caches; legacy basis polynomial caches remain shared"
+  },
+  "outcome": "implemented_exact_checks_passed",
+  "limitations": [
+    "Small serial probes; no claim of universal speedup.",
+    "Caches are process-local; cold and warm costs are identified."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

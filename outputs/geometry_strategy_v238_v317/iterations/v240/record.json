@@ -1,0 +1,23 @@
+{
+  "version": 240,
+  "recorded_at": "2026-09-18T18:11:14.133211+00:00",
+  "hypothesis": "显式 null 可使期望原题或精度绑定失效",
+  "change": "区分省略绑定与显式空绑定，后者在入口拒绝",
+  "source_sha256": {
+    "request_contract.py": "1f3490bce6ac412e1316580a65ea24ac1d2c58c4f78f7460c326edadaeb2111c",
+    "test_request_contract.py": "598d44d30b6116b734f7bc40d1903021d6412e093d31039388b6ac23e55b02e2"
+  },
+  "validation": {
+    "tests": 5,
+    "passed": true
+  },
+  "comparison": {
+    "legacy": "同一合法证书的3种 null 期望条件全部返回 verified=true",
+    "new": "3种显式 null 均拒绝，省略条件仍允许内部重放"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "无期望条件的重放不证明与调用者原题一致"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

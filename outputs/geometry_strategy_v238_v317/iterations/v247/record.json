@@ -1,0 +1,23 @@
+{
+  "version": 247,
+  "recorded_at": "2026-09-18T18:55:46.218032+00:00",
+  "hypothesis": "一个请求或检查程序的故障不能中断其他任务或伪装成数学失败",
+  "change": "逐请求异常隔离、来源/验证阶段标记、资源失败及unknown数学状态；JSONL入口保留中断",
+  "source_sha256": {
+    "request_contract.py": "cf758988985ee308ccfa843df142903a868e3f8710c44a8c3c7914ad9d743533",
+    "test_request_contract.py": "60e3ac1586bab2399541dab8193f668e8b3d03da27e076ab659216a073a9a529"
+  },
+  "validation": {
+    "tests": 26,
+    "passed": true
+  },
+  "comparison": {
+    "legacy": "RuntimeError不在CLI捕获范围，终止后续请求",
+    "new": "坏JSON/工作单元故障/检查故障后下一请求成功；KeyboardInterrupt继续传播"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "同进程隔离不是操作系统沙箱；无法恢复崩溃/终止信号，也未实施真实超时"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

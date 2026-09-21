@@ -1,0 +1,850 @@
+{
+  "schema": "frozen_external_scope_cases_v1",
+  "status": "frozen_before_projected_spectrum_integration",
+  "case_count": 23,
+  "purpose": "Fixed acceptance set for scope-correct projected/azimuthal spectra, with independent published compatibility controls.",
+  "frozen_policy": {
+    "no_post_result_deletions": true,
+    "no_reference_changes_to_fit_solver": true,
+    "all_unsupported_failed_open_cases_reported": true,
+    "amendment_policy": "Any transcription correction requires a dated explicit erratum; retain original references and failure history."
+  },
+  "common_semantics": {
+    "mean_zero": "Closed quadratic-form compression to the orthogonal complement of the constant spherical harmonic, not deletion of the perturbed operator ground eigenpair.",
+    "axisymmetric_mean_zero": "m=0 with unperturbed l=0 removed; l>=1 basis.",
+    "full_sphere_mean_zero": "m=0 compressed sector plus every ordinary |m|>=1 sector; prove or bound the omitted azimuthal tail.",
+    "fixed_azimuthal_m": "Regular endpoint realization of -d/dt((1-t^2)d/dt)+m^2/(1-t^2)+q(t), with l>=|m|.",
+    "indexing": "All API-independent eigenvalue indices are 1-based within the explicitly named space.",
+    "sphere_warning": "The angular equation matches a unit-S2 Schrödinger operator; this does not transplant the paper radial spheroidal-well geometry into the test."
+  },
+  "acceptance_policy": {
+    "scope_and_index_must_match": true,
+    "proof_replay_required": true,
+    "finite_decimal_check": "Certified interval must intersect [reference-radius,reference+radius] and satisfy requested interval-width budget. This is compatibility, not proof from a table.",
+    "exact_check": "The exact reference must be contained in the certified interval; requested width still applies.",
+    "coarse_check": "E19 certificate must be consistent with [6,44/7] and reach the same width budget. Its tight center is not supplied as an external reference.",
+    "semantic_relation_check": "Apply R1-R4 in addition to per-case conditions; equality of two values does not merge their operator scopes.",
+    "no_open_problem_claim": true
+  },
+  "sources": [
+    {
+      "id": "USOV_2023_V1",
+      "type": "primary_research_paper",
+      "title": "N. A. Usov, Spheroidal quantum well",
+      "url": "https://arxiv.org/pdf/2307.04124v1",
+      "locations": [
+        "Equation (7a), PDF page 2",
+        "Equations (12a)-(12b), PDF pages 2-3",
+        "index convention and Tables 1a-1c, PDF page 5"
+      ],
+      "equation": "d/dt((1-t^2)dS/dt)+(Lambda-c^2*t^2-m^2/(1-t^2))*S=0",
+      "indexing": "l=|m|,|m|+1,...; k=l-|m|+1; number of interior zeros=l-|m|",
+      "precision_note": "Author supplies finite decimals and states ten-digit precision. No rigorous error interval is supplied; fixed comparison radius is an engineering compatibility tolerance only.",
+      "retrieval_note": "PDF extracted text was read; the web screenshot service was unavailable. Equations are cross-checked against DLMF after the explicit eigenvalue shift."
+    },
+    {
+      "id": "DLMF_30_2",
+      "type": "official_primary_reference",
+      "title": "NIST DLMF 30.2, Spheroidal Differential Equation",
+      "url": "https://dlmf.nist.gov/30.2",
+      "equation": "d/dt((1-t^2)dw/dt)+(lambda_DLMF+gamma^2*(1-t^2)-m^2/(1-t^2))*w=0",
+      "conversion": "For q=+c^2*t^2 and gamma^2=c^2, Lambda=lambda_DLMF+c^2. No sign flip; no comparison before this shift."
+    },
+    {
+      "id": "DLMF_30_3_ZERO",
+      "type": "official_primary_reference",
+      "title": "NIST DLMF 30.3, Eigenvalues; equation 30.3.3",
+      "url": "https://dlmf.nist.gov/30.3",
+      "zero_parameter_formula": "lambda_l^m(0)=l(l+1), l>=m; regular endpoint solution behaves as (1-t^2)^(m/2) times an analytic factor."
+    },
+    {
+      "id": "AUDIT_LINEAR_80",
+      "type": "independent_audit_calculation_not_external_source",
+      "method": "Before using projected_spectrum, standard-library float Sturm bisection on an independently assembled 80x80 symmetric tridiagonal Legendre matrix.",
+      "diagonal": "l(l+1)",
+      "off_diagonal_squared": "a^2*((l+1)^2-m^2)/((2*l+1)*(2*l+3))",
+      "ordinary_start_l": 0,
+      "m0_projected_start_l": 1,
+      "m1_start_l": 1,
+      "bisection_steps": 120,
+      "initial_bracket": "[-abs(a)-1, last_l*(last_l+1)+abs(a)+1]",
+      "limitations": "Finite-section and floating arithmetic errors were not certified. These numbers are compatibility controls, not published external references and not proofs.",
+      "supplementary_m1_values": {
+        "a=1": "1.950333905229143",
+        "a=4": "1.269853707869948"
+      }
+    },
+    {
+      "id": "AUDIT_M2_RAYLEIGH",
+      "type": "independent_exact_derivation",
+      "derivation": "q>=0 gives Lambda>=m(m+1)=6. For S=(1-t^2), weighted average t^2 with S^2 is 1/7, so Lambda<=6+2/7."
+    },
+    {
+      "id": "AUDIT_BRANCH_SELECTION",
+      "type": "independent_exact_derivation",
+      "linear_potential": "After a sign gauge, the q=a*t Jacobi off-diagonal entries are nonpositive. Their magnitudes for m=0,l>=1 dominate those in every m>=1 branch, embedded in l>=1. Taking absolute coefficients gives full mean-zero ground equal to m0-compressed ground.",
+      "quadratic_potential": "For q=2t^2, the m0-compressed P1 diagonal is 16/5, the l>=2 tail is >=6, and the squared P1-tail coupling is 48/175. At Lambda=3 the Schur bound is (1/5)*3-48/175>0, hence m0 projection>=3. Every |m|>=2 branch>=6, while the m=1,l=1 Rayleigh bound is 2+2/5=12/5. Thus the full mean-zero ground lies in |m|=1."
+    },
+    {
+      "id": "AUDIT_SCOPE_SEPARATION",
+      "type": "predeclared_independent_scope_test",
+      "claim": "q=t+t^2: full mean-zero ground < m0 mean-zero compression ground < ordinary axisymmetric second eigenvalue. Requested independently before this benchmark; compare certified intervals, not matching scope names."
+    }
+  ],
+  "cross_case_relations": [
+    {
+      "id": "R1",
+      "cases": [
+        "E07",
+        "E08",
+        "E09"
+      ],
+      "requirement": "E08.upper < E07.lower; E09 and E08 enclose the same value, with certificate scope kept distinct."
+    },
+    {
+      "id": "R2",
+      "cases": [
+        "E10",
+        "E11",
+        "E12"
+      ],
+      "requirement": "E11.upper < E10.lower; E12 and E11 enclose the same value, with certificate scope kept distinct."
+    },
+    {
+      "id": "R3",
+      "cases": [
+        "E13",
+        "E20"
+      ],
+      "requirement": "E20 must account for all azimuthal branches and agree with E13; a response computed only in m=0 is a scope failure."
+    },
+    {
+      "id": "R4",
+      "cases": [
+        "E01",
+        "E02"
+      ],
+      "requirement": "The exact reference values differ by the constant potential shift 3/2."
+    },
+    {
+      "id": "R5",
+      "cases": [
+        "E21",
+        "E22",
+        "E23"
+      ],
+      "requirement": "E23.upper < E22.lower and E22.upper < E21.lower; all three scopes remain distinct."
+    }
+  ],
+  "cases": [
+    {
+      "id": "E01",
+      "name": "零势完整零均值谱底",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0"
+      ],
+      "requested_space": "full_sphere_mean_zero",
+      "eigenvalue_index": 1,
+      "m": null,
+      "reference": {
+        "kind": "analytic_exact",
+        "value": "2",
+        "source_ids": [
+          "DLMF_30_3_ZERO"
+        ],
+        "formula": "l(l+1)+constant; remove only l=0,m=0 for mean-zero compression"
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "约束空间为球面均值为零，最低l=1；不是普通全空间谱底0。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E02",
+      "name": "常数平移后的完整零均值谱底",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "3/2"
+      ],
+      "requested_space": "full_sphere_mean_zero",
+      "eigenvalue_index": 1,
+      "m": null,
+      "reference": {
+        "kind": "analytic_exact",
+        "value": "7/2",
+        "source_ids": [
+          "DLMF_30_3_ZERO"
+        ],
+        "formula": "l(l+1)+constant; remove only l=0,m=0 for mean-zero compression"
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E03",
+      "name": "零势m=0零均值投影谱底",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0"
+      ],
+      "requested_space": "axisymmetric_mean_zero",
+      "eigenvalue_index": 1,
+      "m": 0,
+      "reference": {
+        "kind": "analytic_exact",
+        "value": "2",
+        "source_ids": [
+          "DLMF_30_3_ZERO"
+        ],
+        "formula": "l(l+1)+constant; remove only l=0,m=0 for mean-zero compression"
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "保留Legendre l>=1；索引1对应l=1。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E04",
+      "name": "负常数与m=0投影第三特征值",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "-3"
+      ],
+      "requested_space": "axisymmetric_mean_zero",
+      "eigenvalue_index": 3,
+      "m": 0,
+      "reference": {
+        "kind": "analytic_exact",
+        "value": "9",
+        "source_ids": [
+          "DLMF_30_3_ZERO"
+        ],
+        "formula": "l(l+1)+constant; remove only l=0,m=0 for mean-zero compression"
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "索引3对应l=3，所以12-3=9，不能再次偏移索引。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E05",
+      "name": "m=2零势分支谱底",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0"
+      ],
+      "requested_space": "fixed_azimuthal_m",
+      "eigenvalue_index": 1,
+      "m": 2,
+      "reference": {
+        "kind": "analytic_exact",
+        "value": "6",
+        "source_ids": [
+          "DLMF_30_3_ZERO"
+        ],
+        "formula": "l(l+1)+constant; remove only l=0,m=0 for mean-zero compression"
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "角向因子exp(2i phi)，起始l=2；旧m=0表达范围之外。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E06",
+      "name": "普通轴对称零势第二特征值",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0"
+      ],
+      "requested_space": "axisymmetric_full",
+      "eigenvalue_index": 2,
+      "m": 0,
+      "reference": {
+        "kind": "analytic_exact",
+        "value": "2",
+        "source_ids": [
+          "DLMF_30_3_ZERO"
+        ],
+        "formula": "l(l+1)+constant; remove only l=0,m=0 for mean-zero compression"
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "普通空间保留l=0，索引2对应l=1；只在常数势校准时与投影谱底数值相同。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E07",
+      "name": "q=1t，axisymmetric_full，索引2",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "1"
+      ],
+      "requested_space": "axisymmetric_full",
+      "eigenvalue_index": 2,
+      "m": 0,
+      "reference": {
+        "kind": "independent_finite_matrix_compatibility",
+        "value": "2.090760648363957",
+        "absolute_compatibility_radius": "1/100000000",
+        "source_ids": [
+          "AUDIT_LINEAR_80"
+        ],
+        "is_external_published_number": false,
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "非恒定乘法势不保持均值零子空间；使用闭二次型的正交压缩。q=a*t的两种零均值谱底相同须由分支比较解释，不可因此混同空间。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E08",
+      "name": "q=1t，axisymmetric_mean_zero，索引1",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "1"
+      ],
+      "requested_space": "axisymmetric_mean_zero",
+      "eigenvalue_index": 1,
+      "m": 0,
+      "reference": {
+        "kind": "independent_finite_matrix_compatibility",
+        "value": "1.934000233546819",
+        "absolute_compatibility_radius": "1/100000000",
+        "source_ids": [
+          "AUDIT_LINEAR_80"
+        ],
+        "is_external_published_number": false,
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "非恒定乘法势不保持均值零子空间；使用闭二次型的正交压缩。q=a*t的两种零均值谱底相同须由分支比较解释，不可因此混同空间。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E09",
+      "name": "q=1t，full_sphere_mean_zero，索引1",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "1"
+      ],
+      "requested_space": "full_sphere_mean_zero",
+      "eigenvalue_index": 1,
+      "m": null,
+      "reference": {
+        "kind": "independent_finite_matrix_compatibility",
+        "value": "1.934000233546819",
+        "absolute_compatibility_radius": "1/100000000",
+        "source_ids": [
+          "AUDIT_LINEAR_80"
+        ],
+        "is_external_published_number": false,
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "非恒定乘法势不保持均值零子空间；使用闭二次型的正交压缩。q=a*t的两种零均值谱底相同须由分支比较解释，不可因此混同空间。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E10",
+      "name": "q=4t，axisymmetric_full，索引2",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "4"
+      ],
+      "requested_space": "axisymmetric_full",
+      "eigenvalue_index": 2,
+      "m": 0,
+      "reference": {
+        "kind": "independent_finite_matrix_compatibility",
+        "value": "2.602377101975056",
+        "absolute_compatibility_radius": "1/100000000",
+        "source_ids": [
+          "AUDIT_LINEAR_80"
+        ],
+        "is_external_published_number": false,
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "非恒定乘法势不保持均值零子空间；使用闭二次型的正交压缩。q=a*t的两种零均值谱底相同须由分支比较解释，不可因此混同空间。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E11",
+      "name": "q=4t，axisymmetric_mean_zero，索引1",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "4"
+      ],
+      "requested_space": "axisymmetric_mean_zero",
+      "eigenvalue_index": 1,
+      "m": 0,
+      "reference": {
+        "kind": "independent_finite_matrix_compatibility",
+        "value": "1.062948168482692",
+        "absolute_compatibility_radius": "1/100000000",
+        "source_ids": [
+          "AUDIT_LINEAR_80"
+        ],
+        "is_external_published_number": false,
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "非恒定乘法势不保持均值零子空间；使用闭二次型的正交压缩。q=a*t的两种零均值谱底相同须由分支比较解释，不可因此混同空间。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E12",
+      "name": "q=4t，full_sphere_mean_zero，索引1",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "4"
+      ],
+      "requested_space": "full_sphere_mean_zero",
+      "eigenvalue_index": 1,
+      "m": null,
+      "reference": {
+        "kind": "independent_finite_matrix_compatibility",
+        "value": "1.062948168482692",
+        "absolute_compatibility_radius": "1/100000000",
+        "source_ids": [
+          "AUDIT_LINEAR_80"
+        ],
+        "is_external_published_number": false,
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "非恒定乘法势不保持均值零子空间；使用闭二次型的正交压缩。q=a*t的两种零均值谱底相同须由分支比较解释，不可因此混同空间。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E13",
+      "name": "Usov Table1c：c²=2,m=1,l=1",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "requested_space": "fixed_azimuthal_m",
+      "eigenvalue_index": 1,
+      "m": 1,
+      "reference": {
+        "kind": "published_decimal_compatibility",
+        "value": "2.38265540616",
+        "absolute_compatibility_radius": "1/200000000000",
+        "source_ids": [
+          "USOV_2023_V1"
+        ],
+        "source_locator": "PDF page 5, Table 1c, author ak(lambda)=0 row, l=1",
+        "source_l": 1,
+        "source_m": 1,
+        "source_c_squared": "2",
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "普通固定|m|=1角向谱；k=l-|m|+1，m=+1与-1共享谱值；不额外删除该分支的最低模态。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E14",
+      "name": "Usov Table1c：c²=2,m=1,l=2",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "requested_space": "fixed_azimuthal_m",
+      "eigenvalue_index": 2,
+      "m": 1,
+      "reference": {
+        "kind": "published_decimal_compatibility",
+        "value": "6.84171800891",
+        "absolute_compatibility_radius": "1/200000000000",
+        "source_ids": [
+          "USOV_2023_V1"
+        ],
+        "source_locator": "PDF page 5, Table 1c, author ak(lambda)=0 row, l=2",
+        "source_l": 2,
+        "source_m": 1,
+        "source_c_squared": "2",
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "普通固定|m|=1角向谱；k=l-|m|+1，m=+1与-1共享谱值；不额外删除该分支的最低模态。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E15",
+      "name": "Usov Table1c：c²=2,m=1,l=3",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "requested_space": "fixed_azimuthal_m",
+      "eigenvalue_index": 3,
+      "m": 1,
+      "reference": {
+        "kind": "published_decimal_compatibility",
+        "value": "12.93788107437",
+        "absolute_compatibility_radius": "1/200000000000",
+        "source_ids": [
+          "USOV_2023_V1"
+        ],
+        "source_locator": "PDF page 5, Table 1c, author ak(lambda)=0 row, l=3",
+        "source_l": 3,
+        "source_m": 1,
+        "source_c_squared": "2",
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "普通固定|m|=1角向谱；k=l-|m|+1，m=+1与-1共享谱值；不额外删除该分支的最低模态。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E16",
+      "name": "Usov Table1c：c²=2,m=1,l=4",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "requested_space": "fixed_azimuthal_m",
+      "eigenvalue_index": 4,
+      "m": 1,
+      "reference": {
+        "kind": "published_decimal_compatibility",
+        "value": "20.96568591695",
+        "absolute_compatibility_radius": "1/200000000000",
+        "source_ids": [
+          "USOV_2023_V1"
+        ],
+        "source_locator": "PDF page 5, Table 1c, author ak(lambda)=0 row, l=4",
+        "source_l": 4,
+        "source_m": 1,
+        "source_c_squared": "2",
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "普通固定|m|=1角向谱；k=l-|m|+1，m=+1与-1共享谱值；不额外删除该分支的最低模态。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E17",
+      "name": "Usov Table1c：c²=2,m=1,l=5",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "requested_space": "fixed_azimuthal_m",
+      "eigenvalue_index": 5,
+      "m": 1,
+      "reference": {
+        "kind": "published_decimal_compatibility",
+        "value": "30.97789126965",
+        "absolute_compatibility_radius": "1/200000000000",
+        "source_ids": [
+          "USOV_2023_V1"
+        ],
+        "source_locator": "PDF page 5, Table 1c, author ak(lambda)=0 row, l=5",
+        "source_l": 5,
+        "source_m": 1,
+        "source_c_squared": "2",
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "普通固定|m|=1角向谱；k=l-|m|+1，m=+1与-1共享谱值；不额外删除该分支的最低模态。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E18",
+      "name": "Usov Table1a：c²=1,m=0,l=0",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "1"
+      ],
+      "requested_space": "axisymmetric_full",
+      "eigenvalue_index": 1,
+      "m": 0,
+      "reference": {
+        "kind": "published_decimal_compatibility",
+        "value": "0.31900005515",
+        "absolute_compatibility_radius": "1/200000000000",
+        "source_ids": [
+          "USOV_2023_V1"
+        ],
+        "source_locator": "PDF page 5, Table 1a, author ak(lambda)=0 row, l=0",
+        "source_l": 0,
+        "source_m": 0,
+        "source_c_squared": "1",
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "普通m=0基态控制项；此数不能移植到投影零均值空间。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E19",
+      "name": "m=2非零扁球势分支的解析夹界",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "requested_space": "fixed_azimuthal_m",
+      "eigenvalue_index": 1,
+      "m": 2,
+      "reference": {
+        "kind": "analytic_coarse_enclosure",
+        "lower": "6",
+        "upper": "44/7",
+        "source_ids": [
+          "DLMF_30_3_ZERO",
+          "AUDIT_M2_RAYLEIGH"
+        ],
+        "external_nonzero_m2_decimal_found": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "非负q给下界6；Y_2^2试探给上界6+2/7。限定检索未找到核对过的m=2非零表值，不冒充外部数值。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E20",
+      "name": "q=2t²完整零均值谱底必须包含|m|=1",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "requested_space": "full_sphere_mean_zero",
+      "eigenvalue_index": 1,
+      "m": null,
+      "reference": {
+        "kind": "published_decimal_plus_analytic_branch_selection",
+        "value": "2.38265540616",
+        "absolute_compatibility_radius": "1/200000000000",
+        "source_ids": [
+          "USOV_2023_V1",
+          "AUDIT_BRANCH_SELECTION"
+        ],
+        "source_locator": "Table 1c m=1,l=1 combined with independent branch inequalities",
+        "is_proof": false,
+        "expected_minimizing_absolute_m": 1,
+        "expected_real_multiplicity": 2
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "m=0零均值压缩>=3，|m|>=2>=6，而m=1试探<=12/5，故完整零均值谱底来自|m|=1；是旧工具不可表达scope的明确验收。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E21",
+      "name": "q=t+t²，axisymmetric_full，索引2",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "1",
+        "1"
+      ],
+      "requested_space": "axisymmetric_full",
+      "eigenvalue_index": 2,
+      "m": 0,
+      "reference": {
+        "kind": "predeclared_scope_separation",
+        "source_ids": [
+          "AUDIT_SCOPE_SEPARATION"
+        ],
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "三个算子须各自绑定并由R5检查严格区间分離；本题不提供假装外部发表的小数。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E22",
+      "name": "q=t+t²，axisymmetric_mean_zero，索引1",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "1",
+        "1"
+      ],
+      "requested_space": "axisymmetric_mean_zero",
+      "eigenvalue_index": 1,
+      "m": 0,
+      "reference": {
+        "kind": "predeclared_scope_separation",
+        "source_ids": [
+          "AUDIT_SCOPE_SEPARATION"
+        ],
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "三个算子须各自绑定并由R5检查严格区间分離；本题不提供假装外部发表的小数。",
+      "result_at_freeze": null
+    },
+    {
+      "id": "E23",
+      "name": "q=t+t²，full_sphere_mean_zero，索引1",
+      "geometry": "unit_S2",
+      "operator": "-Delta_S2+q(t)",
+      "potential_coefficients": [
+        "0",
+        "1",
+        "1"
+      ],
+      "requested_space": "full_sphere_mean_zero",
+      "eigenvalue_index": 1,
+      "m": null,
+      "reference": {
+        "kind": "predeclared_scope_separation",
+        "source_ids": [
+          "AUDIT_SCOPE_SEPARATION"
+        ],
+        "is_proof": false
+      },
+      "acceptance": {
+        "independent_certificate_replay_required": true,
+        "maximum_interval_width": "1/1000000",
+        "failed_or_unsupported_cases_must_remain_in_report": true
+      },
+      "scope_note": "三个算子须各自绑定并由R5检查严格区间分離；本题不提供假装外部发表的小数。",
+      "result_at_freeze": null
+    }
+  ],
+  "search_budget_note": "Four web calls used, including two directed search queries; optional nonzero-m2 external table was not located and is not fabricated.",
+  "frozen_cases_sha256": "976f009554044050f83cbc3861882a835b4f29242113c95d473769f3f12af38b",
+  "pre_benchmark_amendments": [
+    {
+      "stage": "before_first_projected_spectrum_benchmark",
+      "previous_cases_sha256": "f127c8cedbf7080df7f14665393b2dbc37deb3c6abfe39e9231d2412d8995005",
+      "requested_by": "root integration instruction",
+      "changes": [
+        "Add q=t+t^2 three-scope relational cases E21-E23.",
+        "Change published Usov compatibility radius from 1e-7 to exactly 0.5e-11, as explicitly requested; do not relax after running."
+      ],
+      "reason": "Explicit new acceptance instruction before this benchmark author made any new-API calls. Original20 cases retained without deletion. The parent had separately reported smoke values before E21-E23 were added; this extension is pre-benchmark but not claimed blind to upstream smoke results."
+    }
+  ]
+}

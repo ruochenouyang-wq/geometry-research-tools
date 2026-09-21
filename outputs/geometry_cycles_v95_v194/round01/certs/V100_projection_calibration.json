@@ -1,0 +1,73 @@
+{
+  "acted_coefficients": [
+    {
+      "coefficient": "2",
+      "degree": 1
+    },
+    {
+      "coefficient": "2/3",
+      "degree": 2
+    }
+  ],
+  "azimuth_m": 0,
+  "formal_assistant_checked": false,
+  "format": "complete_projected_residual_v100",
+  "in_support_residual_squared": "0",
+  "limitation": "Residual norm alone gives no ground-energy lower bound without spectral separation.",
+  "mean_zero": true,
+  "normalized_residual_squared": "4/15",
+  "orthogonality_to_trial": "0",
+  "outside_support_residual_squared": "4/15",
+  "projection": "remove_l0",
+  "q_coefficients": [
+    "0",
+    "1"
+  ],
+  "removed_l0_coefficient": "1/3",
+  "residual_coefficients": [
+    {
+      "coefficient": "2/3",
+      "degree": 2
+    }
+  ],
+  "residual_norm_squared_divided_by_azimuth_factor": "8/45",
+  "scope": "complete_residual_of_the_stated_projected_operator",
+  "trial": {
+    "azimuth_integral_factor": "2*pi",
+    "azimuth_m": 0,
+    "basis_convention": "standard_Condon_Shortley_P_l^m(t)*cos(m*phi)",
+    "coefficients": [
+      "1"
+    ],
+    "degrees": [
+      1
+    ],
+    "energy_divided_by_azimuth_factor": "4/3",
+    "formal_assistant_checked": false,
+    "format": "explicit_sector_rayleigh_v95",
+    "full_space": "all_mean_zero_H1_functions_on_unit_S2",
+    "full_space_spectral_upper": "2",
+    "geometry": "unit_S2",
+    "harmonic_terms": [
+      {
+        "coefficient": "1",
+        "l": 1,
+        "m": 0,
+        "real_component": "cos"
+      }
+    ],
+    "kinetic_divided_by_azimuth_factor": "4/3",
+    "mean_zero": true,
+    "norm_squared_divided_by_azimuth_factor": "2/3",
+    "potential_divided_by_azimuth_factor": "0",
+    "q_coefficients": [
+      "0",
+      "1"
+    ],
+    "rayleigh_quotient": "2",
+    "scope": "explicit_real_spherical_harmonic_trial_on_unit_S2",
+    "status": "rayleigh_certified",
+    "strict_margin": null,
+    "threshold": null
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "algorithm_version": 21,
+  "certificate": {
+    "method": "constrained_rayleigh_dual_v21",
+    "q": [
+      "0"
+    ],
+    "moment_polynomial": [
+      "0",
+      "1"
+    ],
+    "target": "1/2",
+    "multiplier": "0",
+    "spectral_certificate": {
+      "method": "modewise_schur_v3",
+      "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+      "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+      "q_coefficients": [
+        "0"
+      ],
+      "modes": 4,
+      "eigenvalue_index": 1,
+      "tail_policy": "sandwich",
+      "range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "0",
+        "upper": "0"
+      },
+      "upper_kind": "upper_tail",
+      "tail_lower": "20",
+      "lower_inertia": [
+        0,
+        0,
+        4
+      ],
+      "upper_inertia": [
+        1,
+        0,
+        3
+      ],
+      "formal_assistant_checked": false,
+      "lower": "-2251799813685373/2305843009213693952000",
+      "upper": "2251799813685123/2305843009213693952000",
+      "exact_width": "1/512000",
+      "decimal_enclosure": [
+        "-0.000000976563",
+        "0.000000976563"
+      ]
+    },
+    "trial_legendre": null,
+    "candidate_moment": null,
+    "global_lower": "-2251799813685373/2305843009213693952000",
+    "candidate_upper": null,
+    "global_gap": null,
+    "tolerance": "1/1000",
+    "status": "feasibility_not_found",
+    "optimization_scope": "all nonzero axisymmetric form-domain functions satisfying the expectation inequality",
+    "formal_assistant_checked": false
+  },
+  "steps": 1,
+  "history": [
+    {
+      "step": 0,
+      "beta": "0",
+      "lower": "-2251799813685373/2305843009213693952000",
+      "upper": null
+    }
+  ],
+  "statistics": {
+    "points": 1,
+    "spectral_searches": 1,
+    "orbit_reuses": 0,
+    "modes_histogram": {
+      "4": 1
+    },
+    "maximum_point_width": "2251799813685373/2305843009213693952000"
+  },
+  "seconds": 0.0015317909999907897
+}

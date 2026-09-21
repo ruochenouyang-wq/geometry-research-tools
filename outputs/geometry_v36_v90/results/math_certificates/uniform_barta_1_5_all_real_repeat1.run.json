@@ -1,0 +1,207 @@
+{
+  "all_real": true,
+  "amplitude_box": [
+    "-5",
+    "5"
+  ],
+  "certified_reduced_lower": "139/81920",
+  "certified_reduced_upper": "16861/46080",
+  "claim": "lambda_1(-Delta+a*p(t)) >= a*mean(p)-coefficient*a^2",
+  "coefficient": "1/5",
+  "correctors": [
+    [
+      "0"
+    ],
+    [
+      "0",
+      "-1/2"
+    ],
+    [
+      "0",
+      "0",
+      "-1/24"
+    ],
+    [
+      "0",
+      "1/48",
+      "0",
+      "-1/144"
+    ]
+  ],
+  "direction": [
+    "0",
+    "1"
+  ],
+  "energy_series": [
+    "0",
+    "0",
+    "-1/6",
+    "0"
+  ],
+  "extracted_amplitude_power": 2,
+  "failure_witness": null,
+  "formal_assistant_checked": false,
+  "leaf_count": 5,
+  "max_leaves": 256,
+  "method": "parameter_poisson_tensor_bernstein_v1",
+  "order": 3,
+  "proof_amplitude_box": [
+    "0",
+    "5"
+  ],
+  "reduced_residual": [
+    [
+      0,
+      0,
+      "1/30"
+    ],
+    [
+      2,
+      0,
+      "1/48"
+    ],
+    [
+      2,
+      2,
+      "-7/144"
+    ],
+    [
+      2,
+      4,
+      "1/36"
+    ],
+    [
+      3,
+      1,
+      "1/288"
+    ],
+    [
+      3,
+      3,
+      "-1/144"
+    ],
+    [
+      3,
+      5,
+      "1/288"
+    ],
+    [
+      4,
+      0,
+      "-1/2304"
+    ],
+    [
+      4,
+      2,
+      "1/768"
+    ],
+    [
+      4,
+      4,
+      "-1/768"
+    ],
+    [
+      4,
+      6,
+      "1/2304"
+    ]
+  ],
+  "reflection_used": true,
+  "requested_symmetry": true,
+  "residual": [
+    [
+      2,
+      0,
+      "1/30"
+    ],
+    [
+      4,
+      0,
+      "1/48"
+    ],
+    [
+      4,
+      2,
+      "-7/144"
+    ],
+    [
+      4,
+      4,
+      "1/36"
+    ],
+    [
+      5,
+      1,
+      "1/288"
+    ],
+    [
+      5,
+      3,
+      "-1/144"
+    ],
+    [
+      5,
+      5,
+      "1/288"
+    ],
+    [
+      6,
+      0,
+      "-1/2304"
+    ],
+    [
+      6,
+      2,
+      "1/768"
+    ],
+    [
+      6,
+      4,
+      "-1/768"
+    ],
+    [
+      6,
+      6,
+      "1/2304"
+    ]
+  ],
+  "scope": "full unit sphere; all real amplitudes",
+  "status": "proved",
+  "tail": {
+    "centered_potential_abs_upper": "1",
+    "radius": "5",
+    "rule": "lambda_1-a*mean(p) >= -B*abs(a); c*abs(a)>=B outside radius"
+  },
+  "tree": {
+    "axis": 1,
+    "left": {
+      "axis": 1,
+      "left": {
+        "axis": 1,
+        "left": {
+          "lower": "139/81920",
+          "upper": "90911/1966080"
+        },
+        "right": {
+          "lower": "248989/47185920",
+          "upper": "8173/61440"
+        }
+      },
+      "right": {
+        "lower": "1/30",
+        "upper": "47/160"
+      }
+    },
+    "right": {
+      "axis": 1,
+      "left": {
+        "lower": "1/30",
+        "upper": "16861/46080"
+      },
+      "right": {
+        "lower": "19/4320",
+        "upper": "24689/81920"
+      }
+    }
+  }
+}

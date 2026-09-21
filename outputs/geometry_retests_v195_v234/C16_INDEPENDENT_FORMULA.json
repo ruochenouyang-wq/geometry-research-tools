@@ -1,0 +1,65 @@
+{
+  "Q_denominator": [
+    "1",
+    "9",
+    "27",
+    "31",
+    "12"
+  ],
+  "Q_numerator": [
+    "0",
+    "18",
+    "30",
+    "0",
+    "24"
+  ],
+  "definition": "probability_GN_quotient_of_centered_y_power",
+  "derivative_numerator": [
+    "18",
+    "60",
+    "-216",
+    "-1020",
+    "-930",
+    "576",
+    "744"
+  ],
+  "derivative_shift_n_equals_2_plus_x": [
+    "42282",
+    "146124",
+    "195984",
+    "133620",
+    "49470",
+    "9504",
+    "744"
+  ],
+  "forward_difference_numerator": [
+    "72",
+    "-618",
+    "-2388",
+    "-984",
+    "2742",
+    "2808",
+    "744"
+  ],
+  "forward_difference_shift_n_equals_1_plus_x": [
+    "2376",
+    "21126",
+    "50352",
+    "52944",
+    "27942",
+    "7272",
+    "744"
+  ],
+  "interpretation": "Positive forward-difference coefficients at n=1+x prove Q(n+1)>Q(n) for real n>=1, hence integer sequence increases. Positive 2-Q numerator proves Q<2 for n>0. Leading terms imply Q tends to2. All statements concern this trial family only.",
+  "rejected_hypothesis": {
+    "derivative_numerator_at_1": "-768",
+    "statement": "Q is increasing for every real n>=1",
+    "status": "false"
+  },
+  "two_minus_Q_numerator": [
+    "2",
+    "0",
+    "24",
+    "62"
+  ]
+}

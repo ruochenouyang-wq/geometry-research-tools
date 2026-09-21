@@ -1,0 +1,518 @@
+{
+  "all_targets": "1/100000000",
+  "explanation": "The original function and full mean-zero space are unchanged. Exact original q and q^2 moments replace an approximate potential; finite and infinite spectral errors remain.",
+  "matched_radial_budget": [
+    {
+      "new_path": "certificates/step_matched_radial_budget.json",
+      "new_width": "11004555027585141/18446744073709551616",
+      "old_path": "../geometry_general_v235_v237/certificates/V236_step_degree8.json",
+      "old_sha256": "f2fa0d829ee1270d6617f728bf1ade798de0fa328039965aba7f17c4da5fc3f1",
+      "old_width": "3046628883955295139120697513116340655825071683705706345501/3138550867693340381917894711603833208051177722232017256448",
+      "original_function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "ratio_decimal": 1627.1875751287628,
+      "same_radial_dimensions": true,
+      "same_runtime_or_work_count_claimed": false,
+      "width_ratio": "3046628883955295139120697513116340655825071683705706345501/1872328015849192522063009860023419456022078036165787648"
+    },
+    {
+      "new_path": "certificates/singular_matched_radial_budget.json",
+      "new_width": "1231116368022452353/76092819304051900416",
+      "old_path": "../geometry_general_v235_v237/certificates/V236_negative_singularity_degree8.json",
+      "old_sha256": "67c687599c85b240e2f6061a8cd7c0993f19fdc091ae0e23c9c48797b436e358",
+      "old_width": "3276147737036649181023228693618076178724084776175647/1496577676626844588240573268701473812127674924007424",
+      "original_function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "ratio_decimal": 135.30342337422297,
+      "same_radial_dimensions": true,
+      "same_runtime_or_work_count_claimed": false,
+      "width_ratio": "8316375024785340228751272837645885684453445970292027/61464631251671019937414738757468234951732517404672"
+    }
+  ],
+  "precision_not_runtime_comparison": true,
+  "results": [
+    {
+      "exact_width": "1231116368022452353/76092819304051900416",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "lower": "13225895794215520213/25364273101350633472",
+      "name": "singular_matched_radial_budget",
+      "path": "certificates/singular_matched_radial_budget.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 4,
+          "near_tail": 0
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 4,
+          "near_tail": 0
+        }
+      ],
+      "sha256": "56e06b050537caddb5ba1199617db23623892b2ec2138a463ca1b57150b8f7ec",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "9987500915690677/18577348462903296",
+      "width_decimal": 0.01617913988839281
+    },
+    {
+      "exact_width": "894275751695742576268134413/653632340742680785146737590272",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "lower": "349000811747494250662604060659/653632340742680785146737590272",
+      "name": "singular_n12",
+      "path": "certificates/singular_n12.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 12,
+          "near_tail": 0
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 12,
+          "near_tail": 0
+        }
+      ],
+      "sha256": "201cfe355e38f60c30a7fc6fcc4ca9d7ac4088481a9de1ec3d0e4800300d60d0",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "434486924980071675329/811656739243220271104",
+      "width_decimal": 0.0013681632562422385
+    },
+    {
+      "exact_width": "618511633996873848009643127425/1338639033841010247980518584877056",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "lower": "715966617916245934843051067968895/1338639033841010247980518584877056",
+      "name": "singular_n12_tail16",
+      "path": "certificates/singular_n12_tail16.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 12,
+          "near_tail": 16
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 12,
+          "near_tail": 16
+        }
+      ],
+      "sha256": "0d3477c5749466f6b09822db1b56dbd9bc3d515c9573f257dbe9ad1a38ac1826",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "13903581412164548891035/25973015655783048675328",
+      "width_decimal": 0.0004620451207239593
+    },
+    {
+      "exact_width": "5918573233577981008594315503663/14278816360970775978458864905355264",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "lower": "22907905462686849675007184051390323/42836449082912327935376594716065792",
+      "name": "singular_n20_tail0",
+      "path": "certificates/singular_n20_tail0.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 20,
+          "near_tail": 0
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 20,
+          "near_tail": 0
+        }
+      ],
+      "sha256": "861d7e6d522d345172993c576a4568b3ce6f79a1ae72ab4bd3e7768ff6fa0599",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "333612278080364683672567/623352375738793168207872",
+      "width_decimal": 0.00041450026976714996
+    },
+    {
+      "exact_width": "45470360451064664647361499285/324518553658426726783156020576256",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "lower": "5729914773702010770574878819998923/10709112270728081983844148679016448",
+      "name": "singular_n20_tail24",
+      "path": "certificates/singular_n20_tail24.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 20,
+          "near_tail": 24
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 20,
+          "near_tail": 24
+        }
+      ],
+      "sha256": "2b33f2d7e4be088228c22083ed652f94d558b47160c061775a67b39a80083ced",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "333612278080364683672567/623352375738793168207872",
+      "width_decimal": 0.00014011636603965846
+    },
+    {
+      "exact_width": "862125442395584003509277357/54469361728556732095561465856",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "lower": "85224717463505277624573888505/163408085185670196286684397568",
+      "name": "singular_n4",
+      "path": "certificates/singular_n4.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 4,
+          "near_tail": 0
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 4,
+          "near_tail": 0
+        }
+      ],
+      "sha256": "5ed44272a7db42773f784a7932601f9b671ace94a9dcb57c7168c1849d597d5f",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "327121815795794239771/608742554432415203328",
+      "width_decimal": 0.015827713324270444
+    },
+    {
+      "exact_width": "375175643082213246682454059/108938723457113464191122931712",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "lower": "5270044578991911309562807199/9903520314283042199192993792",
+      "name": "singular_n8",
+      "path": "certificates/singular_n8.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 8,
+          "near_tail": 0
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 8,
+          "near_tail": 0
+        }
+      ],
+      "sha256": "eaa00f0992dc1b2aa9b2cd96a82582b53ad9da6048fb70bc760bcd539bed8a83",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "217354543551777443483/405828369621610135552",
+      "width_decimal": 0.0034439144426904435
+    },
+    {
+      "exact_width": "11004555027585141/18446744073709551616",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "lower": "45267563313265076107/18446744073709551616",
+      "name": "step_matched_radial_budget",
+      "path": "certificates/step_matched_radial_budget.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 8,
+          "near_tail": 0
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 6,
+          "near_tail": 0
+        }
+      ],
+      "sha256": "55140d3f62013503a8e7e81025710c44c70a7236ff0f1069da5e69e581a0f4b1",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "21084476201/8589934592",
+      "width_decimal": 0.0005965581234072044
+    },
+    {
+      "exact_width": "1756559121345/18014398509481984",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "lower": "44212716892251199/18014398509481984",
+      "name": "step_n12",
+      "path": "certificates/step_n12.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 12,
+          "near_tail": 0
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 12,
+          "near_tail": 0
+        }
+      ],
+      "sha256": "0514661f56688b59552b6c29d6bdfb3509290641c1d960e5695e2946e771e504",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "164711749/67108864",
+      "width_decimal": 9.750861903162766e-05
+    },
+    {
+      "exact_width": "181070298523251345/4722366482869645213696",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "lower": "11590377852984120167791/4722366482869645213696",
+      "name": "step_n12_tail16",
+      "path": "certificates/step_n12_tail16.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 12,
+          "near_tail": 16
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 12,
+          "near_tail": 16
+        }
+      ],
+      "sha256": "14a3729d869241cfb483a7f0c234cfea90777c1179e63dc5ce84756537dce401",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "168664830901/68719476736",
+      "width_decimal": 3.8343127154591396e-05
+    },
+    {
+      "exact_width": "112558480566274953/4722366482869645213696",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "lower": "11590331879665663456375/4722366482869645213696",
+      "name": "step_n20_tail0",
+      "path": "certificates/step_n20_tail0.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 20,
+          "near_tail": 0
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 20,
+          "near_tail": 0
+        }
+      ],
+      "sha256": "c514325c26fa98a57ed578989ebf16ded25824765a23ac39e29dfcfe0489871f",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "168663164923/68719476736",
+      "width_decimal": 2.3835185383129442e-05
+    },
+    {
+      "exact_width": "45256800715901901/4722366482869645213696",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "lower": "11590399181345513829427/4722366482869645213696",
+      "name": "step_n20_tail24",
+      "path": "certificates/step_n20_tail24.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 20,
+          "near_tail": 24
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 20,
+          "near_tail": 24
+        }
+      ],
+      "sha256": "185ea66d8083926ac2e69ab4bf1d524265a1a2e31f1d313497602c51dd295104",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "168663164923/68719476736",
+      "width_decimal": 9.58350032342273e-06
+    },
+    {
+      "exact_width": "115979089720797/72057594037927936",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "lower": "176775723893017123/72057594037927936",
+      "name": "step_n4",
+      "path": "certificates/step_n4.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 4,
+          "near_tail": 0
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 4,
+          "near_tail": 0
+        }
+      ],
+      "sha256": "2ba6606176cca2cf905dbc63520f7c7eead050a5776b165e449b8ce52ef60ce5",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "658972945/268435456",
+      "width_decimal": 0.0016095331972886956
+    },
+    {
+      "exact_width": "11004555027585141/18446744073709551616",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "lower": "45267563313265076107/18446744073709551616",
+      "name": "step_n6_paired",
+      "path": "certificates/step_n6_paired.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 6,
+          "near_tail": 0
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 6,
+          "near_tail": 0
+        }
+      ],
+      "sha256": "94958fc1f6e0593354872ca914269365e5877ea5aff5373fb821303ca2564286",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "21084476201/8589934592",
+      "width_decimal": 0.0005965581234072044
+    },
+    {
+      "exact_width": "10301245930161/36028797018963968",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "lower": "88420846559118671/36028797018963968",
+      "name": "step_n8",
+      "path": "certificates/step_n8.json",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "modes": 8,
+          "near_tail": 0
+        },
+        {
+          "azimuth_m": 1,
+          "modes": 8,
+          "near_tail": 0
+        }
+      ],
+      "sha256": "f8ca08fd2bb54c3ac18b7b31fde0904b4bdb0a5ebeb03add4c3d4a6628cfd352",
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "329431697/134217728",
+      "width_decimal": 0.00028591701034977324
+    }
+  ]
+}

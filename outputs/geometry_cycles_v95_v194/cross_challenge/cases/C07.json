@@ -1,0 +1,56 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {
+    "bits": 40,
+    "modes": 8,
+    "parameter_cover": [
+      [
+        -4,
+        4
+      ]
+    ]
+  },
+  "certificates": [
+    {
+      "format": "affine_sphere_family_cheap_enclosure_v125",
+      "path": "certs/C07_whole_box_cheap.json",
+      "sha256": "283e544c15f1cd4129a6015c2dac70ed0f41bfae8682aa5845d931aa080d5963",
+      "verified": true
+    },
+    {
+      "format": "affine_sphere_family_universal_inequality_v134",
+      "path": "certs/C07_whole_box_concavity.json",
+      "sha256": "ff6fea63864f6f71e08013c688599e888be7ecfa88f0ca36463e3c8aae0591f2",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "decision": "proved",
+  "elapsed_seconds": 0.055514,
+  "id": "C07",
+  "notes": [],
+  "original_acceptance": [
+    "Prove lambda_mean_zero(a*t)>=1 for every a in [-4,4].",
+    "One admissible proof uses concavity of the constrained ground energy in a plus verified endpoint lower bounds; a finite grid without a remainder is insufficient."
+  ],
+  "original_input": {
+    "claimed_uniform_threshold": "1",
+    "parameter_box": {
+      "a": [
+        "-4",
+        "4"
+      ]
+    },
+    "q(a,t)": "a*t"
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "solved",
+  "title": "整个线性参数区间的统一正下界",
+  "uniform_lower": "321256371447156064140993/302231454903657293676544"
+}

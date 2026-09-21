@@ -1,0 +1,141 @@
+{
+  "anchor": {
+    "eigenvalue_index": 1,
+    "formal_assistant_checked": false,
+    "format": "sphere_radius_ground_v185",
+    "lower": "-46/9",
+    "problem": {
+      "coordinates": "normalized_t",
+      "geometry": "round_two_sphere",
+      "mean_zero": true,
+      "measure": "natural_area_on_S2_R",
+      "q_coefficients": [
+        "-6"
+      ],
+      "scope": "all_real_mean_zero_H1_on_S2_radius_R"
+    },
+    "radius": "3/2",
+    "rule": "C_R(q)=R^-2*C_unit(R^2*q(R*t)) for ambient; q(t) for normalized",
+    "scale_factor": "4/9",
+    "unit_backend": "projected_v94",
+    "unit_certificate": {
+      "angular_tail_cannot_improve_best_upper": true,
+      "angular_tail_lower": "-23/2",
+      "decimal_enclosure": [
+        "-11.500000000000",
+        "-11.500000000000"
+      ],
+      "eigenvalue_index_in_constrained_space": 1,
+      "exact_width": "0",
+      "formal_assistant_checked": false,
+      "format": "projected_full_sphere_ground_v93",
+      "geometry": "unit_S2",
+      "lower": "-23/2",
+      "mean_zero": true,
+      "omitted_azimuth_m_start": 1,
+      "potential_symmetry": "axisymmetric_polynomial_degree_at_most_6",
+      "q_coefficients": [
+        "-27/2"
+      ],
+      "range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "-27/2",
+        "upper": "-27/2"
+      },
+      "scope": "all_mean_zero_H1_functions_on_unit_S2",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "decimal_enclosure": [
+            "-11.500000000000",
+            "-11.500000000000"
+          ],
+          "degree_start": 1,
+          "eigenvalue_index": 1,
+          "exact_width": "0",
+          "formal_assistant_checked": false,
+          "format": "projected_sphere_sector_v91_v92",
+          "geometry": "unit_S2",
+          "lower": "-23/2",
+          "lower_inertia": [
+            0,
+            1,
+            3
+          ],
+          "mean_zero": true,
+          "modes": 4,
+          "projection": "remove_l0",
+          "q_coefficients": [
+            "-27/2"
+          ],
+          "radial_tail_lower": "33/2",
+          "radial_tail_start": 5,
+          "range_proof": {
+            "kind": "quadratic_range_v5",
+            "lower": "-27/2",
+            "upper": "-27/2"
+          },
+          "scope": "single_azimuth_sector_only",
+          "upper": "-23/2",
+          "upper_inertia": [
+            0,
+            1,
+            3
+          ],
+          "upper_kind": "upper_ritz"
+        }
+      ],
+      "status": "certified_target_met",
+      "tolerance": "9/400000000",
+      "upper": "-23/2"
+    },
+    "unit_q_coefficients": [
+      "-27/2"
+    ],
+    "upper": "-46/9",
+    "width": "0"
+  },
+  "bound_quantity": "ground_eigenvalue_at_each_R",
+  "coefficient_deviations": [
+    "21/2"
+  ],
+  "constant_potential_analytic_intersection": [
+    "-11/2",
+    "-4"
+  ],
+  "formal_assistant_checked": false,
+  "format": "uniform_radius_cell_v189",
+  "four_signed_products": [
+    "-11/2",
+    "-22",
+    "-1/4",
+    "-1"
+  ],
+  "interval": [
+    "1",
+    "2"
+  ],
+  "inverse_radius_squared_interval": [
+    "1/4",
+    "1"
+  ],
+  "lower": "-11/2",
+  "lower_bound_inequality_quantifier": "for_every_nonzero_real_mean_zero_H1_function",
+  "problem": {
+    "coordinates": "normalized_t",
+    "geometry": "round_two_sphere",
+    "mean_zero": true,
+    "measure": "natural_area_on_S2_R",
+    "q_coefficients": [
+      "-6"
+    ],
+    "scope": "all_real_mean_zero_H1_on_S2_radius_R"
+  },
+  "quantifier": "for_every_R_in_closed_interval",
+  "uniform_potential_perturbation": "21/2",
+  "unit_eigenvalue_interval": [
+    "-22",
+    "-1"
+  ],
+  "upper": "-4"
+}

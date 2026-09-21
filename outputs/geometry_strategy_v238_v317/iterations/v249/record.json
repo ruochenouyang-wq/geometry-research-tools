@@ -1,0 +1,48 @@
+{
+  "version": 249,
+  "recorded_at": "2026-09-18T18:47:04.198769+00:00",
+  "hypothesis": "Integrating in local s coordinates avoids large physical-coordinate polynomial coefficients.",
+  "change": "Replace global polynomial integration with exact binomial local moments and local squared-polynomial integration.",
+  "source_sha256": {
+    "fast_math.py": "20561ba25afb3ccc03848975b9e3890000f43338a45e6b52ac82713186671b73",
+    "test_fast_math.py": "b198e7b785fde543e0ff2da8c831f0a4e25320a92fd414a48c3f1bdd57340f01"
+  },
+  "validation": {
+    "tests_run": 3,
+    "failures": 0,
+    "frozen_verifiers_retained": true
+  },
+  "comparison": {
+    "fixed_input": "roots1/8,1/4 degree6 amplitude2/3 offset-1/7",
+    "exact_wire_equal": true,
+    "old_global_compositions": 8,
+    "new_global_compositions": 0,
+    "squared_local_coefficient_peak_bits": 103,
+    "squared_global_coefficient_peak_bits": 234,
+    "baseline": {
+      "serial_seconds": [
+        0.0005348749691620469,
+        0.00047070905566215515,
+        0.00045262498315423727
+      ],
+      "median_seconds": 0.00047070905566215515,
+      "not_a_model_speed_claim": true
+    },
+    "candidate": {
+      "serial_seconds": [
+        0.00028433301486074924,
+        0.0002672499977052212,
+        0.00026291608810424805
+      ],
+      "median_seconds": 0.0002672499977052212,
+      "not_a_model_speed_claim": true
+    },
+    "cache_regime": "uncached cell integrations"
+  },
+  "outcome": "implemented_exact_checks_passed",
+  "limitations": [
+    "Small serial probes; no claim of universal speedup.",
+    "Caches are process-local; cold and warm costs are identified."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

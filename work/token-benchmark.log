@@ -1,0 +1,38 @@
+{
+  "cases": 26,
+  "size_gate": {
+    "o200k_base": {
+      "median_receipt": 142.0,
+      "p90_receipt": 157,
+      "median_request_and_receipt": 219.5,
+      "numeric_size_gate": true
+    },
+    "cl100k_base": {
+      "median_receipt": 138.5,
+      "p90_receipt": 154,
+      "median_request_and_receipt": 216.0,
+      "numeric_size_gate": true
+    }
+  },
+  "sessions": {
+    "first_use_plus_all_requests": {
+      "encodings": {
+        "o200k_base": 5924,
+        "cl100k_base": 5838
+      },
+      "items": 54,
+      "basis": "sum of explicit text item encodings; excludes unknown API framing and hidden reasoning",
+      "model_mapping_asserted": false,
+      "actual_api_usage": null
+    },
+    "one_time_instructions": {
+      "o200k_base": 81,
+      "cl100k_base": 81
+    },
+    "one_time_operation_schema": {
+      "o200k_base": 148,
+      "cl100k_base": 139
+    },
+    "interpretation": "Exact text counts only. Full proof retrieval adds the explicit request and proof response; it is not free and can erase savings."
+  }
+}

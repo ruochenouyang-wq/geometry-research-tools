@@ -1,0 +1,24 @@
+{
+  "version": 283,
+  "recorded_at": "2026-09-18T18:38:21.266332+00:00",
+  "hypothesis": "Structural applicability selects specialized methods before generic growth",
+  "change": "Automatically choose exact piecewise step, fixed singular enrichment, or original-function moment spectrum; retain explicit route override",
+  "source_sha256": {
+    "research_controller.py": "ee98afcc34ad51e3906ae17e9282c0c9eddcf18ce86f8603932cf86a196ddd11",
+    "test_research_controller.py": "bbce90364f1b1cef3d496e67a86e2242b5278c986c449fd6622735819c76010d"
+  },
+  "validation": {
+    "tests": 9,
+    "passed": true
+  },
+  "comparison": {
+    "step_function_goal": "exact two-piece model",
+    "fixed_singular_spectrum": "fractional enrichment",
+    "other_exponent_spectrum": "generic direct moments"
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Automatic enriched dispatch currently matches the frozen fixed singular family only"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

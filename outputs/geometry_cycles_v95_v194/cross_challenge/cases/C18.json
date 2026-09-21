@@ -1,0 +1,88 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {
+    "bits": 40,
+    "maximum_supported_L": 4,
+    "retained_degree_ladder": [
+      3,
+      4
+    ],
+    "target": "1/100000000"
+  },
+  "certificates": [
+    {
+      "format": "anisotropic_cheap_ground_v175",
+      "path": "certs/C18_cheap_full.json",
+      "sha256": "9edf3d219b2a52ffaa856878deaa0b773f8a7d61d275fac72a98937cd73723d0",
+      "verified": true
+    },
+    {
+      "format": "anisotropic_mean_zero_sphere_v182",
+      "path": "certs/C18_coupled_L3.json",
+      "sha256": "de8ce607f6afe85afb0be6121a5390dccf6d6f842f12b52ab2b42044ff95892b",
+      "verified": true
+    },
+    {
+      "format": "anisotropic_mean_zero_sphere_v182",
+      "path": "certs/C18_coupled_L4.json",
+      "sha256": "ef721bdf3438c64103a3297b00451ec81baa27c20f4d98da0c2203ca4cf4643b",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 0.812132,
+  "id": "C18",
+  "independent_guard": {
+    "lower": "3",
+    "rule": "q>=1 on S²; actual trial x",
+    "upper": "18/5"
+  },
+  "lower": "8458364896409780694401/2361183241434822606848",
+  "notes": [],
+  "original_acceptance": [
+    "Replay a full-sphere certificate for x^2+2y^2+3z^2, which has no rotation making it a function of one axis alone.",
+    "Independent coarse guard is 3 <= ground <=18/5: q>=1 and the trial u=x has potential quotient 8/5 and Dirichlet quotient 2."
+  ],
+  "original_input": {
+    "mean_zero": true,
+    "q_xyz": [
+      {
+        "coefficient": "1",
+        "powers": [
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "coefficient": "2",
+        "powers": [
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": "3",
+        "powers": [
+          0,
+          0,
+          2
+        ]
+      }
+    ],
+    "target_width": "1/100000000"
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "certified_open",
+  "target": "1/100000000",
+  "title": "真正三轴二次势",
+  "upper": "61542745045/17179869184",
+  "width": "5576369132851839/2361183241434822606848"
+}

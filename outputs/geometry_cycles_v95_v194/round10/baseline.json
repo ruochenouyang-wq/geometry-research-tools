@@ -1,0 +1,18 @@
+{
+  "actual_old_result": {
+    "exception": "ValueError",
+    "message": "Unknown fields: radius",
+    "status": "unsupported_request"
+  },
+  "diagnosis": "Unit-sphere interface has no radius; rejection is correct, not an incorrect spectral calculation.",
+  "expected_exact_answer": "1/2",
+  "old_request": {
+    "op": "mean_zero_ground",
+    "q": [
+      0
+    ],
+    "radius": 2
+  },
+  "question": "Lowest mean-zero Laplace eigenvalue on the sphere of radius 2",
+  "rule": "Eigenvalues of -Delta on S2_R are l(l+1)/R^2."
+}

@@ -1,0 +1,23 @@
+{
+  "version": 238,
+  "recorded_at": "2026-09-18T17:13:46.790435+00:00",
+  "hypothesis": "重复 JSON 键会悄悄覆盖原题绑定",
+  "change": "在所有对象层拒绝重复键",
+  "source_sha256": {
+    "request_contract.py": "7275d900e67937071f19c1e0dd5fd1c5cba50353d3adb98629c2afebdcb5941a",
+    "test_request_contract.py": "5a818b3cd907f8f7eeb4467a0d8930a659125b7db4d7973ea88a8b0809a994a8"
+  },
+  "validation": {
+    "tests": 2,
+    "passed": true
+  },
+  "comparison": {
+    "legacy_json": "function 后值 null 覆盖前值",
+    "new": "解析即拒绝；普通请求不变"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "尚未统一检查非有限数、空绑定或后端状态"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

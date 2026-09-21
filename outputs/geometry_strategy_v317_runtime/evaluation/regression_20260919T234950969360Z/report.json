@@ -1,0 +1,2806 @@
+{
+  "cases": [
+    {
+      "budget_seconds": 3.0,
+      "classification": "old_disclosed_holdout_now_regression",
+      "family": "old_disclosed_regression",
+      "id": "OLD_H01",
+      "independent_exact_value": "-3/7",
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "-3/7",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": false,
+        "tolerance": "1/1000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "old_disclosed_holdout_now_regression",
+      "family": "old_disclosed_regression",
+      "id": "OLD_H02",
+      "independent_exact_value": "11/7",
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "-3/7",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "old_disclosed_holdout_now_regression",
+      "family": "old_disclosed_regression",
+      "id": "OLD_H03",
+      "task": {
+        "function": {
+          "amplitude": "3/7",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "approximation",
+        "tolerance": "1/1000000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "old_disclosed_holdout_now_regression",
+      "family": "old_disclosed_regression",
+      "id": "OLD_H04",
+      "task": {
+        "function": {
+          "amplitude": "2/7",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "old_disclosed_holdout_now_regression",
+      "family": "old_disclosed_regression",
+      "id": "OLD_H05",
+      "task": {
+        "function": {
+          "amplitude": "-1/6",
+          "axis": 2,
+          "exponent": "1/5",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "old_disclosed_holdout_now_regression",
+      "family": "old_disclosed_regression",
+      "id": "OLD_H06",
+      "task": {
+        "function": {
+          "amplitude": "-1/8",
+          "axis": 2,
+          "exponent": "-1/7",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      }
+    }
+  ],
+  "created_utc": "2026-09-19T23:49:55.656968+00:00",
+  "environment": {
+    "actual_model_input_output_reasoning_tokens": null,
+    "concurrent_other_activity": "unknown, shared host",
+    "development_model_usage": null,
+    "executable": "/PYTHON/bin/python3",
+    "external_model_calls_by_evaluator": 0,
+    "financial_cost": null,
+    "logical_cpus": 18,
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]"
+  },
+  "independence": {
+    "drawn_cases": 6,
+    "prior_public_overlap_case_ids": [],
+    "unique_new_instances": 0,
+    "within_draw_duplicate_case_ids": []
+  },
+  "limitations": [
+    "Only known-family parameter transfer; no new mathematical families.",
+    "Five repetitions quantify machine timing variation, not five independent mathematical tasks.",
+    "Independent evaluation orchestration shares trusted frozen mathematical replay code with solver backends.",
+    "All failures/unsupported cases remain; faster failure is not a benefit.",
+    "Development/model/human costs unknown; preparation, setup, online, replay, exceptions and probes retained.",
+    "Any algorithm change after reveal requires a fresh protocol and untouched seed."
+  ],
+  "phase": "regression",
+  "protocol_digest": "33ff230524e2b429ba84bb9a871cf09ef738f4022dcbbf3812e0f8be5cf61acf",
+  "results": {
+    "methods": {
+      "first_release": {
+        "actual_model_usage": null,
+        "attempted_task_runs": 30,
+        "cases": 6,
+        "false_accepts": 0,
+        "family_breakdown": {
+          "old_disclosed_regression": {
+            "cases": 6,
+            "robust_successes": 6,
+            "successful_runs": 30
+          }
+        },
+        "first_task_latency_seconds": {
+          "max": 0.07101487508043647,
+          "median": 0.0676620420999825,
+          "min": 0.0644597919890657,
+          "values": [
+            0.06625537481158972,
+            0.0644597919890657,
+            0.0676620420999825,
+            0.06992454105056822,
+            0.07101487508043647
+          ]
+        },
+        "full_session_cpu_seconds": {
+          "max": 0.12015500000000026,
+          "median": 0.11929499999999997,
+          "min": 0.11791500000000002,
+          "values": [
+            0.11827600000000005,
+            0.11791500000000002,
+            0.11929499999999997,
+            0.12015500000000026,
+            0.11977999999999994
+          ]
+        },
+        "full_session_wall_seconds": {
+          "max": 0.12225091701839119,
+          "median": 0.12128787499386817,
+          "min": 0.11991412506904453,
+          "values": [
+            0.12128787499386817,
+            0.11991412506904453,
+            0.12120612501166761,
+            0.12225091701839119,
+            0.12178437493275851
+          ]
+        },
+        "independent_new_subset": {
+          "case_ids": [],
+          "cases": 0,
+          "full_session_cost_attribution": "not allocated to cases; initialization/output/probes remain whole-session costs",
+          "online_cpu_seconds_per_repeat": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "online_cpu_seconds_total": 0,
+          "online_wall_seconds_per_repeat": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "online_wall_seconds_total": 0,
+          "per_case": [],
+          "robust_successes": 0,
+          "successful_runs": 0
+        },
+        "model_tokenizer": null,
+        "online_cpu_seconds": {
+          "max": 0.01811199999999999,
+          "median": 0.018055,
+          "min": 0.01800399999999998,
+          "values": [
+            0.01803600000000001,
+            0.01800399999999998,
+            0.01811199999999999,
+            0.018055,
+            0.018075999999999995
+          ]
+        },
+        "online_wall_seconds": {
+          "max": 0.0181320421397686,
+          "median": 0.01807033212389797,
+          "min": 0.018023292999714613,
+          "values": [
+            0.01804416684899479,
+            0.018023292999714613,
+            0.0181320421397686,
+            0.01807033212389797,
+            0.018085498828440905
+          ]
+        },
+        "per_case": [
+          {
+            "case_id": "OLD_H01",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.0031049999999999967,
+              "median": 0.00021699999999999497,
+              "min": 0.00020299999999999485,
+              "values": [
+                0.0031049999999999967,
+                0.00020299999999999485,
+                0.00021699999999999497,
+                0.00022700000000000498,
+                0.00021199999999998997
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": false,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.0031049168901517987,
+              "median": 0.00021733308676630259,
+              "min": 0.00020362494979053736,
+              "values": [
+                0.0031049168901517987,
+                0.00020362494979053736,
+                0.00021733308676630259,
+                0.00022649997845292091,
+                0.00021133292466402054
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H02",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.003017000000000006,
+              "median": 0.00021400000000000585,
+              "min": 0.00019500000000000073,
+              "values": [
+                0.00021400000000000585,
+                0.003017000000000006,
+                0.00019500000000000073,
+                0.00019700000000000273,
+                0.00024399999999999422
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.0030176249565556645,
+              "median": 0.00021416600793600082,
+              "min": 0.00019570800941437483,
+              "values": [
+                0.00021416600793600082,
+                0.0030176249565556645,
+                0.00019570800941437483,
+                0.0001971661113202572,
+                0.0002450409810990095
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H03",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.005580000000000002,
+              "median": 0.002823999999999993,
+              "min": 0.002796000000000007,
+              "values": [
+                0.002796999999999994,
+                0.002823999999999993,
+                0.005580000000000002,
+                0.0028490000000000043,
+                0.002796000000000007
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "approximation",
+            "mean_zero": null,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.005590209038928151,
+              "median": 0.002831208985298872,
+              "min": 0.0027967499336227775,
+              "values": [
+                0.0027971669333055615,
+                0.002831208985298872,
+                0.005590209038928151,
+                0.0028494580183178186,
+                0.0027967499336227775
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H04",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.007945999999999995,
+              "median": 0.005071999999999993,
+              "min": 0.002563999999999997,
+              "values": [
+                0.005052000000000001,
+                0.005071999999999993,
+                0.005208000000000004,
+                0.007945999999999995,
+                0.002563999999999997
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "36977063/60129542144",
+              "36977063/60129542144",
+              "36977063/60129542144",
+              "36977063/60129542144",
+              "36977063/60129542144"
+            ],
+            "wall_seconds": {
+              "max": 0.007953791064210236,
+              "median": 0.0050728339701890945,
+              "min": 0.0025637500220909715,
+              "values": [
+                0.005052000051364303,
+                0.0050728339701890945,
+                0.005208207992836833,
+                0.007953791064210236,
+                0.0025637500220909715
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H05",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.008856000000000003,
+              "median": 0.0034169999999999895,
+              "min": 0.0032970000000000083,
+              "values": [
+                0.0032970000000000083,
+                0.0034169999999999895,
+                0.003474999999999992,
+                0.0033460000000000018,
+                0.008856000000000003
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "26051871639785/2594073385365405696",
+              "26051871639785/2594073385365405696",
+              "26051871639785/2594073385365405696",
+              "26051871639785/2594073385365405696",
+              "26051871639785/2594073385365405696"
+            ],
+            "wall_seconds": {
+              "max": 0.00886449997778982,
+              "median": 0.0034265840658918023,
+              "min": 0.0032969999592751265,
+              "values": [
+                0.0032969999592751265,
+                0.0034265840658918023,
+                0.00348362501244992,
+                0.003346625017002225,
+                0.00886449997778982
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H06",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.0035710000000000047,
+              "median": 0.003471000000000002,
+              "min": 0.0034040000000000042,
+              "values": [
+                0.0035710000000000047,
+                0.003471000000000002,
+                0.0034369999999999956,
+                0.003489999999999993,
+                0.0034040000000000042
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "87960325267135/1152921504606846976",
+              "87960325267135/1152921504606846976",
+              "87960325267135/1152921504606846976",
+              "87960325267135/1152921504606846976",
+              "87960325267135/1152921504606846976"
+            ],
+            "wall_seconds": {
+              "max": 0.0035789170069620013,
+              "median": 0.003471416071988642,
+              "min": 0.0034041249891743064,
+              "values": [
+                0.0035789170069620013,
+                0.003471416071988642,
+                0.0034369589993730187,
+                0.003496791934594512,
+                0.0034041249891743064
+              ]
+            }
+          }
+        ],
+        "preparation_cpu_seconds_charged_once": 0,
+        "preparation_wall_seconds_charged_once": 0,
+        "probe_execution_failures": 0,
+        "probes": 35,
+        "robust_successes": 6,
+        "scope_breakdown": {
+          "full_space_spectrum": {
+            "cases": 1,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "function_approximation": {
+            "cases": 1,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "mean_zero_spectrum": {
+            "cases": 4,
+            "robust_successes": 4,
+            "successful_runs": 20
+          }
+        },
+        "setup_cpu_seconds": {
+          "max": 0.062108,
+          "median": 0.061915,
+          "min": 0.061389,
+          "values": [
+            0.06184100000000001,
+            0.061389,
+            0.06202,
+            0.061915,
+            0.062108
+          ]
+        },
+        "setup_wall_seconds": {
+          "max": 0.06315045792143792,
+          "median": 0.06207183306105435,
+          "min": 0.06144216703251004,
+          "values": [
+            0.06315045792143792,
+            0.06144216703251004,
+            0.06207183306105435,
+            0.06197074998635799,
+            0.06215037510264665
+          ]
+        },
+        "successful_runs": 30,
+        "timeouts": 0,
+        "total_experiment_cpu_seconds": 0.5954210000000002,
+        "total_experiment_wall_seconds": 0.60644341702573,
+        "worker_failures": 0
+      },
+      "fixed_increasing": {
+        "actual_model_usage": null,
+        "attempted_task_runs": 30,
+        "cases": 6,
+        "false_accepts": 0,
+        "family_breakdown": {
+          "old_disclosed_regression": {
+            "cases": 6,
+            "robust_successes": 6,
+            "successful_runs": 30
+          }
+        },
+        "first_task_latency_seconds": {
+          "max": 0.051675209077075124,
+          "median": 0.046716708107851446,
+          "min": 0.045402207877486944,
+          "values": [
+            0.0461489170556888,
+            0.046716708107851446,
+            0.045402207877486944,
+            0.051675209077075124,
+            0.04821004194673151
+          ]
+        },
+        "full_session_cpu_seconds": {
+          "max": 0.09948300000000021,
+          "median": 0.09781899999999963,
+          "min": 0.09754099999999996,
+          "values": [
+            0.09754099999999996,
+            0.09770399999999993,
+            0.09849300000000044,
+            0.09948300000000021,
+            0.09781899999999963
+          ]
+        },
+        "full_session_wall_seconds": {
+          "max": 0.10154587496072054,
+          "median": 0.0996806250186637,
+          "min": 0.0995900830021128,
+          "values": [
+            0.0995900830021128,
+            0.09967504208907485,
+            0.10046483296900988,
+            0.10154587496072054,
+            0.0996806250186637
+          ]
+        },
+        "independent_new_subset": {
+          "case_ids": [],
+          "cases": 0,
+          "full_session_cost_attribution": "not allocated to cases; initialization/output/probes remain whole-session costs",
+          "online_cpu_seconds_per_repeat": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "online_cpu_seconds_total": 0,
+          "online_wall_seconds_per_repeat": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "online_wall_seconds_total": 0,
+          "per_case": [],
+          "robust_successes": 0,
+          "successful_runs": 0
+        },
+        "model_tokenizer": null,
+        "online_cpu_seconds": {
+          "max": 0.014355999999999994,
+          "median": 0.014348999999999987,
+          "min": 0.014265,
+          "values": [
+            0.014348999999999987,
+            0.014354999999999979,
+            0.014265,
+            0.014355999999999994,
+            0.014288999999999982
+          ]
+        },
+        "online_wall_seconds": {
+          "max": 0.014374874881468713,
+          "median": 0.014363874099217355,
+          "min": 0.01428262481931597,
+          "values": [
+            0.014363874099217355,
+            0.014371666125953197,
+            0.01428262481931597,
+            0.014374874881468713,
+            0.014304540818557143
+          ]
+        },
+        "per_case": [
+          {
+            "case_id": "OLD_H01",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.001020000000000007,
+              "median": 0.000800000000000009,
+              "min": 0.000788999999999998,
+              "values": [
+                0.001020000000000007,
+                0.000794000000000003,
+                0.000800000000000009,
+                0.000788999999999998,
+                0.0008050000000000002
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": false,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "1/4096",
+              "1/4096",
+              "1/4096",
+              "1/4096",
+              "1/4096"
+            ],
+            "wall_seconds": {
+              "max": 0.001026917016133666,
+              "median": 0.0008008750155568123,
+              "min": 0.0007892909925431013,
+              "values": [
+                0.001026917016133666,
+                0.0007949999999254942,
+                0.0008008750155568123,
+                0.0007892909925431013,
+                0.0008047081064432859
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H02",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.0013219999999999898,
+              "median": 0.0010209999999999941,
+              "min": 0.0010060000000000069,
+              "values": [
+                0.001119999999999996,
+                0.0013219999999999898,
+                0.0010060000000000069,
+                0.001016000000000003,
+                0.0010209999999999941
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "1/4096",
+              "1/4096",
+              "1/4096",
+              "1/4096",
+              "1/4096"
+            ],
+            "wall_seconds": {
+              "max": 0.0013300830032676458,
+              "median": 0.0010212078923359513,
+              "min": 0.0010061670327559114,
+              "values": [
+                0.001119583030231297,
+                0.0013300830032676458,
+                0.0010061670327559114,
+                0.0010169589659199119,
+                0.0010212078923359513
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H03",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.00019299999999999873,
+              "median": 0.00011200000000000099,
+              "min": 0.00010699999999999599,
+              "values": [
+                0.00010999999999999899,
+                0.00011999999999999511,
+                0.00019299999999999873,
+                0.00011200000000000099,
+                0.00010699999999999599
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "approximation",
+            "mean_zero": null,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.00019337492994964123,
+              "median": 0.00011145800817757845,
+              "min": 0.00010679196566343307,
+              "values": [
+                0.00011074997019022703,
+                0.00012008310295641422,
+                0.00019337492994964123,
+                0.00011145800817757845,
+                0.00010679196566343307
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H04",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.006727999999999998,
+              "median": 0.006506999999999999,
+              "min": 0.006436999999999998,
+              "values": [
+                0.006485999999999992,
+                0.006436999999999998,
+                0.006609999999999991,
+                0.006727999999999998,
+                0.006506999999999999
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "10322219/30064771072",
+              "10322219/30064771072",
+              "10322219/30064771072",
+              "10322219/30064771072",
+              "10322219/30064771072"
+            ],
+            "wall_seconds": {
+              "max": 0.006736917071975768,
+              "median": 0.0065137079218402505,
+              "min": 0.006437166011892259,
+              "values": [
+                0.006486749975010753,
+                0.006437166011892259,
+                0.006617833976633847,
+                0.006736917071975768,
+                0.0065137079218402505
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H05",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.0031079999999999997,
+              "median": 0.0028750000000000026,
+              "min": 0.0027459999999999984,
+              "values": [
+                0.0028829999999999967,
+                0.0028750000000000026,
+                0.0027459999999999984,
+                0.0027579999999999966,
+                0.0031079999999999997
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "159008021/618475290624",
+              "159008021/618475290624",
+              "159008021/618475290624",
+              "159008021/618475290624",
+              "159008021/618475290624"
+            ],
+            "wall_seconds": {
+              "max": 0.0031178329372778535,
+              "median": 0.00288304197601974,
+              "min": 0.0027469159103929996,
+              "values": [
+                0.002890208037570119,
+                0.00288304197601974,
+                0.0027469159103929996,
+                0.002758457907475531,
+                0.0031178329372778535
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H06",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.0029529999999999973,
+              "median": 0.00280699999999999,
+              "min": 0.0027299999999999963,
+              "values": [
+                0.0027299999999999963,
+                0.00280699999999999,
+                0.002909999999999996,
+                0.0029529999999999973,
+                0.0027409999999999934
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "67108403/257698037760",
+              "67108403/257698037760",
+              "67108403/257698037760",
+              "67108403/257698037760",
+              "67108403/257698037760"
+            ],
+            "wall_seconds": {
+              "max": 0.002961791935376823,
+              "median": 0.002806292031891644,
+              "min": 0.0027296660700812936,
+              "values": [
+                0.0027296660700812936,
+                0.002806292031891644,
+                0.0029174579540267587,
+                0.002961791935376823,
+                0.002740291994996369
+              ]
+            }
+          }
+        ],
+        "preparation_cpu_seconds_charged_once": 0,
+        "preparation_wall_seconds_charged_once": 0,
+        "probe_execution_failures": 0,
+        "probes": 35,
+        "robust_successes": 6,
+        "scope_breakdown": {
+          "full_space_spectrum": {
+            "cases": 1,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "function_approximation": {
+            "cases": 1,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "mean_zero_spectrum": {
+            "cases": 4,
+            "robust_successes": 4,
+            "successful_runs": 20
+          }
+        },
+        "setup_cpu_seconds": {
+          "max": 0.045353,
+          "median": 0.045087,
+          "min": 0.044902,
+          "values": [
+            0.045087,
+            0.045353,
+            0.045174000000000006,
+            0.044902,
+            0.04506399999999999
+          ]
+        },
+        "setup_wall_seconds": {
+          "max": 0.0453866251045838,
+          "median": 0.04512200003955513,
+          "min": 0.044938292005099356,
+          "values": [
+            0.04512200003955513,
+            0.0453866251045838,
+            0.0452088329475373,
+            0.044938292005099356,
+            0.045092209009453654
+          ]
+        },
+        "successful_runs": 30,
+        "timeouts": 0,
+        "total_experiment_cpu_seconds": 0.49104000000000014,
+        "total_experiment_wall_seconds": 0.5009564580395818,
+        "worker_failures": 0
+      },
+      "frozen_v317": {
+        "actual_model_usage": null,
+        "attempted_task_runs": 30,
+        "cases": 6,
+        "false_accepts": 0,
+        "family_breakdown": {
+          "old_disclosed_regression": {
+            "cases": 6,
+            "robust_successes": 6,
+            "successful_runs": 30
+          }
+        },
+        "first_task_latency_seconds": {
+          "max": 0.06482912600040436,
+          "median": 0.058880082913674414,
+          "min": 0.05550095799844712,
+          "values": [
+            0.058880082913674414,
+            0.05550095799844712,
+            0.0583050410496071,
+            0.06353124906308949,
+            0.06482912600040436
+          ]
+        },
+        "full_session_cpu_seconds": {
+          "max": 0.11323399999999989,
+          "median": 0.11206200000000002,
+          "min": 0.11169200000000007,
+          "values": [
+            0.11206200000000002,
+            0.11169200000000007,
+            0.11323399999999989,
+            0.11205899999999966,
+            0.11253400000000052
+          ]
+        },
+        "full_session_wall_seconds": {
+          "max": 0.11721562501043081,
+          "median": 0.11446249997243285,
+          "min": 0.11365416704211384,
+          "values": [
+            0.11721562501043081,
+            0.11365416704211384,
+            0.11535616707988083,
+            0.11395491601433605,
+            0.11446249997243285
+          ]
+        },
+        "independent_new_subset": {
+          "case_ids": [],
+          "cases": 0,
+          "full_session_cost_attribution": "not allocated to cases; initialization/output/probes remain whole-session costs",
+          "online_cpu_seconds_per_repeat": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "online_cpu_seconds_total": 0,
+          "online_wall_seconds_per_repeat": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "online_wall_seconds_total": 0,
+          "per_case": [],
+          "robust_successes": 0,
+          "successful_runs": 0
+        },
+        "model_tokenizer": null,
+        "online_cpu_seconds": {
+          "max": 0.021669999999999995,
+          "median": 0.021365999999999996,
+          "min": 0.021315000000000014,
+          "values": [
+            0.02157400000000001,
+            0.021315000000000014,
+            0.021669999999999995,
+            0.021365999999999996,
+            0.02132999999999996
+          ]
+        },
+        "online_wall_seconds": {
+          "max": 0.021920833154581487,
+          "median": 0.021390666137449443,
+          "min": 0.02133391611278057,
+          "values": [
+            0.021920833154581487,
+            0.02133391611278057,
+            0.021696376148611307,
+            0.021390666137449443,
+            0.021358835161663592
+          ]
+        },
+        "per_case": [
+          {
+            "case_id": "OLD_H01",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.003054000000000001,
+              "median": 0.00020699999999999885,
+              "min": 0.0001799999999999996,
+              "values": [
+                0.003054000000000001,
+                0.00020699999999999885,
+                0.0002370000000000011,
+                0.0001799999999999996,
+                0.00018799999999999373
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": false,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.003054249915294349,
+              "median": 0.00020812498405575752,
+              "min": 0.0001793750561773777,
+              "values": [
+                0.003054249915294349,
+                0.00020812498405575752,
+                0.0002459590323269367,
+                0.0001793750561773777,
+                0.00018787500448524952
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H02",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.0029820000000000124,
+              "median": 0.00017500000000000848,
+              "min": 0.00015999999999999348,
+              "values": [
+                0.00017500000000000848,
+                0.0029820000000000124,
+                0.0001729999999999926,
+                0.00021300000000000485,
+                0.00015999999999999348
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.0029830830171704292,
+              "median": 0.00017470901366323233,
+              "min": 0.00016075000166893005,
+              "values": [
+                0.00017470901366323233,
+                0.0029830830171704292,
+                0.00017374998424202204,
+                0.00021241605281829834,
+                0.00016075000166893005
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H03",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.005849000000000007,
+              "median": 0.0029840000000000005,
+              "min": 0.00020299999999999485,
+              "values": [
+                0.0030879999999999935,
+                0.0029840000000000005,
+                0.005849000000000007,
+                0.00025999999999999635,
+                0.00020299999999999485
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "approximation",
+            "mean_zero": null,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.0058579579927027225,
+              "median": 0.002992709050886333,
+              "min": 0.00020391703583300114,
+              "values": [
+                0.003262791084125638,
+                0.002992709050886333,
+                0.0058579579927027225,
+                0.00026766699738800526,
+                0.00020391703583300114
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H04",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.011431999999999998,
+              "median": 0.005956000000000003,
+              "min": 0.0034000000000000002,
+              "values": [
+                0.005956000000000003,
+                0.005868999999999999,
+                0.006020999999999999,
+                0.011431999999999998,
+                0.0034000000000000002
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "36977063/60129542144",
+              "36977063/60129542144",
+              "36977063/60129542144",
+              "36977063/60129542144",
+              "36977063/60129542144"
+            ],
+            "wall_seconds": {
+              "max": 0.011440708069130778,
+              "median": 0.006020916975103319,
+              "min": 0.003410042030736804,
+              "values": [
+                0.006119500030763447,
+                0.00586854200810194,
+                0.006020916975103319,
+                0.011440708069130778,
+                0.003410042030736804
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H05",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.01267299999999999,
+              "median": 0.004686999999999997,
+              "min": 0.004576999999999998,
+              "values": [
+                0.004576999999999998,
+                0.004686999999999997,
+                0.004714999999999997,
+                0.004670999999999995,
+                0.01267299999999999
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "26051871639785/2594073385365405696",
+              "26051871639785/2594073385365405696",
+              "26051871639785/2594073385365405696",
+              "26051871639785/2594073385365405696",
+              "26051871639785/2594073385365405696"
+            ],
+            "wall_seconds": {
+              "max": 0.012681917054578662,
+              "median": 0.004694791045039892,
+              "min": 0.004577375017106533,
+              "values": [
+                0.004577375017106533,
+                0.004694791045039892,
+                0.004722292069345713,
+                0.004679791978560388,
+                0.012681917054578662
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H06",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.004724000000000006,
+              "median": 0.004674999999999999,
+              "min": 0.004586000000000007,
+              "values": [
+                0.004724000000000006,
+                0.004586000000000007,
+                0.004674999999999999,
+                0.004610000000000003,
+                0.004705999999999988
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "87960325267135/1152921504606846976",
+              "87960325267135/1152921504606846976",
+              "87960325267135/1152921504606846976",
+              "87960325267135/1152921504606846976",
+              "87960325267135/1152921504606846976"
+            ],
+            "wall_seconds": {
+              "max": 0.004732208093628287,
+              "median": 0.0046755000948905945,
+              "min": 0.004586666007526219,
+              "values": [
+                0.004732208093628287,
+                0.004586666007526219,
+                0.0046755000948905945,
+                0.004610707983374596,
+                0.004714334034360945
+              ]
+            }
+          }
+        ],
+        "preparation_cpu_seconds_charged_once": 0,
+        "preparation_wall_seconds_charged_once": 0,
+        "probe_execution_failures": 0,
+        "probes": 35,
+        "robust_successes": 6,
+        "scope_breakdown": {
+          "full_space_spectrum": {
+            "cases": 1,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "function_approximation": {
+            "cases": 1,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "mean_zero_spectrum": {
+            "cases": 4,
+            "robust_successes": 4,
+            "successful_runs": 20
+          }
+        },
+        "setup_cpu_seconds": {
+          "max": 0.052732999999999995,
+          "median": 0.052412,
+          "min": 0.052045999999999995,
+          "values": [
+            0.052732999999999995,
+            0.052472000000000005,
+            0.052412,
+            0.052045999999999995,
+            0.052104
+          ]
+        },
+        "setup_wall_seconds": {
+          "max": 0.055825832998380065,
+          "median": 0.052447083056904376,
+          "min": 0.05209054099395871,
+          "values": [
+            0.055825832998380065,
+            0.05251787498127669,
+            0.052447083056904376,
+            0.05209054099395871,
+            0.052147208945825696
+          ]
+        },
+        "successful_runs": 30,
+        "timeouts": 0,
+        "total_experiment_cpu_seconds": 0.5615810000000001,
+        "total_experiment_wall_seconds": 0.5746433751191944,
+        "worker_failures": 0
+      },
+      "old_default": {
+        "actual_model_usage": null,
+        "attempted_task_runs": 30,
+        "cases": 6,
+        "false_accepts": 0,
+        "family_breakdown": {
+          "old_disclosed_regression": {
+            "cases": 6,
+            "robust_successes": 6,
+            "successful_runs": 30
+          }
+        },
+        "first_task_latency_seconds": {
+          "max": 0.1252538749249652,
+          "median": 0.06650341709610075,
+          "min": 0.0455633340170607,
+          "values": [
+            0.06336795806419104,
+            0.06650341709610075,
+            0.0455633340170607,
+            0.12404587503988296,
+            0.1252538749249652
+          ]
+        },
+        "full_session_cpu_seconds": {
+          "max": 0.37373599999999996,
+          "median": 0.3702239999999997,
+          "min": 0.36134700000000003,
+          "values": [
+            0.36134700000000003,
+            0.36459000000000014,
+            0.3702239999999997,
+            0.3713580000000001,
+            0.37373599999999996
+          ]
+        },
+        "full_session_wall_seconds": {
+          "max": 0.3759874999523163,
+          "median": 0.3724581249989569,
+          "min": 0.363981792004779,
+          "values": [
+            0.363981792004779,
+            0.36673316603992134,
+            0.3724581249989569,
+            0.37362349999602884,
+            0.3759874999523163
+          ]
+        },
+        "independent_new_subset": {
+          "case_ids": [],
+          "cases": 0,
+          "full_session_cost_attribution": "not allocated to cases; initialization/output/probes remain whole-session costs",
+          "online_cpu_seconds_per_repeat": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "online_cpu_seconds_total": 0,
+          "online_wall_seconds_per_repeat": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "online_wall_seconds_total": 0,
+          "per_case": [],
+          "robust_successes": 0,
+          "successful_runs": 0
+        },
+        "model_tokenizer": null,
+        "online_cpu_seconds": {
+          "max": 0.27409399999999995,
+          "median": 0.271019,
+          "min": 0.26994099999999993,
+          "values": [
+            0.26994099999999993,
+            0.27409399999999995,
+            0.271019,
+            0.27269999999999994,
+            0.27042800000000006
+          ]
+        },
+        "online_wall_seconds": {
+          "max": 0.27431991684716195,
+          "median": 0.2712571669835597,
+          "min": 0.27016441605519503,
+          "values": [
+            0.27016441605519503,
+            0.27431991684716195,
+            0.2712571669835597,
+            0.27293008321430534,
+            0.2706609171582386
+          ]
+        },
+        "per_case": [
+          {
+            "case_id": "OLD_H01",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.01802899999999999,
+              "median": 0.016942000000000013,
+              "min": 0.016830999999999985,
+              "values": [
+                0.01802899999999999,
+                0.016830999999999985,
+                0.016942000000000013,
+                0.01705000000000001,
+                0.01689799999999997
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": false,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "1/4294967296",
+              "1/4294967296",
+              "1/4294967296",
+              "1/4294967296",
+              "1/4294967296"
+            ],
+            "wall_seconds": {
+              "max": 0.018037958070635796,
+              "median": 0.0169622499961406,
+              "min": 0.01684774993918836,
+              "values": [
+                0.018037958070635796,
+                0.01684774993918836,
+                0.0169622499961406,
+                0.017067500040866435,
+                0.01691479200962931
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H02",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.021639000000000005,
+              "median": 0.020574999999999954,
+              "min": 0.020118000000000025,
+              "values": [
+                0.02069,
+                0.021639000000000005,
+                0.020307999999999993,
+                0.020574999999999954,
+                0.020118000000000025
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "1/4294967296",
+              "1/4294967296",
+              "1/4294967296",
+              "1/4294967296",
+              "1/4294967296"
+            ],
+            "wall_seconds": {
+              "max": 0.021666959044523537,
+              "median": 0.020593250053934753,
+              "min": 0.02013270801398903,
+              "values": [
+                0.020707500050775707,
+                0.021666959044523537,
+                0.0203282079892233,
+                0.020593250053934753,
+                0.02013270801398903
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H03",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.00020199999999999385,
+              "median": 0.0001239999999999991,
+              "min": 0.00011700000000003374,
+              "values": [
+                0.0001239999999999991,
+                0.00014300000000000423,
+                0.00020199999999999385,
+                0.00011800000000000699,
+                0.00011700000000003374
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "approximation",
+            "mean_zero": null,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.0002014170167967677,
+              "median": 0.00012337497901171446,
+              "min": 0.00011616700794547796,
+              "values": [
+                0.00012337497901171446,
+                0.0001425419468432665,
+                0.0002014170167967677,
+                0.00011775002349168062,
+                0.00011616700794547796
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H04",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.079164,
+              "median": 0.07710399999999999,
+              "min": 0.07550400000000002,
+              "values": [
+                0.077006,
+                0.07710399999999999,
+                0.07874,
+                0.079164,
+                0.07550400000000002
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "380744950901817/16140901064495857664",
+              "380744950901817/16140901064495857664",
+              "380744950901817/16140901064495857664",
+              "380744950901817/16140901064495857664",
+              "380744950901817/16140901064495857664"
+            ],
+            "wall_seconds": {
+              "max": 0.07922845799475908,
+              "median": 0.0771589579526335,
+              "min": 0.0755743330810219,
+              "values": [
+                0.07706062495708466,
+                0.0771589579526335,
+                0.0787999159656465,
+                0.07922845799475908,
+                0.0755743330810219
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H05",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.08005800000000002,
+              "median": 0.077714,
+              "min": 0.07675499999999996,
+              "values": [
+                0.07675499999999996,
+                0.07904699999999998,
+                0.07705200000000001,
+                0.077714,
+                0.08005800000000002
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "682535142097122625622731/45635421608216258453881315393536",
+              "682535142097122625622731/45635421608216258453881315393536",
+              "682535142097122625622731/45635421608216258453881315393536",
+              "682535142097122625622731/45635421608216258453881315393536",
+              "682535142097122625622731/45635421608216258453881315393536"
+            ],
+            "wall_seconds": {
+              "max": 0.08012412500102073,
+              "median": 0.0777825420955196,
+              "min": 0.07682329195085913,
+              "values": [
+                0.07682329195085913,
+                0.07911216700449586,
+                0.0771184170152992,
+                0.0777825420955196,
+                0.08012412500102073
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H06",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.07932999999999996,
+              "median": 0.07777500000000001,
+              "min": 0.07733699999999999,
+              "values": [
+                0.07733699999999999,
+                0.07932999999999996,
+                0.07777500000000001,
+                0.07807899999999998,
+                0.077733
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "123286835025292372413983713/38029518006846882044901096161280",
+              "123286835025292372413983713/38029518006846882044901096161280",
+              "123286835025292372413983713/38029518006846882044901096161280",
+              "123286835025292372413983713/38029518006846882044901096161280",
+              "123286835025292372413983713/38029518006846882044901096161280"
+            ],
+            "wall_seconds": {
+              "max": 0.07939154095947742,
+              "median": 0.07784695900045335,
+              "min": 0.07741166604682803,
+              "values": [
+                0.07741166604682803,
+                0.07939154095947742,
+                0.07784695900045335,
+                0.07814058300573379,
+                0.07779879204463214
+              ]
+            }
+          }
+        ],
+        "preparation_cpu_seconds_charged_once": 0,
+        "preparation_wall_seconds_charged_once": 0,
+        "probe_execution_failures": 0,
+        "probes": 35,
+        "robust_successes": 6,
+        "scope_breakdown": {
+          "full_space_spectrum": {
+            "cases": 1,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "function_approximation": {
+            "cases": 1,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "mean_zero_spectrum": {
+            "cases": 4,
+            "robust_successes": 4,
+            "successful_runs": 20
+          }
+        },
+        "setup_cpu_seconds": {
+          "max": 0.045329,
+          "median": 0.045091000000000006,
+          "min": 0.044782,
+          "values": [
+            0.045304,
+            0.04480100000000001,
+            0.045329,
+            0.044782,
+            0.045091000000000006
+          ]
+        },
+        "setup_wall_seconds": {
+          "max": 0.04536191700026393,
+          "median": 0.04512974992394447,
+          "min": 0.044817417045123875,
+          "values": [
+            0.04532999999355525,
+            0.04483645805157721,
+            0.04536191700026393,
+            0.044817417045123875,
+            0.04512974992394447
+          ]
+        },
+        "successful_runs": 30,
+        "timeouts": 0,
+        "total_experiment_cpu_seconds": 1.8412549999999999,
+        "total_experiment_wall_seconds": 1.8527840829920024,
+        "worker_failures": 0
+      },
+      "release": {
+        "actual_model_usage": null,
+        "attempted_task_runs": 30,
+        "cases": 6,
+        "false_accepts": 0,
+        "family_breakdown": {
+          "old_disclosed_regression": {
+            "cases": 6,
+            "robust_successes": 6,
+            "successful_runs": 30
+          }
+        },
+        "first_task_latency_seconds": {
+          "max": 0.06292858300730586,
+          "median": 0.05676087492611259,
+          "min": 0.05440079199615866,
+          "values": [
+            0.05495687504298985,
+            0.05440079199615866,
+            0.05676087492611259,
+            0.06245420896448195,
+            0.06292858300730586
+          ]
+        },
+        "full_session_cpu_seconds": {
+          "max": 0.11064499999999997,
+          "median": 0.10957999999999982,
+          "min": 0.10882700000000006,
+          "values": [
+            0.10882700000000006,
+            0.10920799999999983,
+            0.10983199999999996,
+            0.11064499999999997,
+            0.10957999999999982
+          ]
+        },
+        "full_session_wall_seconds": {
+          "max": 0.11269016598816961,
+          "median": 0.11179629201069474,
+          "min": 0.11123037501238286,
+          "values": [
+            0.11179629201069474,
+            0.11123037501238286,
+            0.11201145802624524,
+            0.11269016598816961,
+            0.11165120801888406
+          ]
+        },
+        "independent_new_subset": {
+          "case_ids": [],
+          "cases": 0,
+          "full_session_cost_attribution": "not allocated to cases; initialization/output/probes remain whole-session costs",
+          "online_cpu_seconds_per_repeat": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "online_cpu_seconds_total": 0,
+          "online_wall_seconds_per_repeat": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "online_wall_seconds_total": 0,
+          "per_case": [],
+          "robust_successes": 0,
+          "successful_runs": 0
+        },
+        "model_tokenizer": null,
+        "online_cpu_seconds": {
+          "max": 0.02085900000000003,
+          "median": 0.02082200000000002,
+          "min": 0.020541000000000018,
+          "values": [
+            0.020657999999999968,
+            0.020827000000000012,
+            0.02082200000000002,
+            0.02085900000000003,
+            0.020541000000000018
+          ]
+        },
+        "online_wall_seconds": {
+          "max": 0.020874626003205776,
+          "median": 0.020840249955654144,
+          "min": 0.02056033385451883,
+          "values": [
+            0.02066783409100026,
+            0.020842667086981237,
+            0.020840249955654144,
+            0.020874626003205776,
+            0.02056033385451883
+          ]
+        },
+        "per_case": [
+          {
+            "case_id": "OLD_H01",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.003941999999999987,
+              "median": 0.00021800000000000985,
+              "min": 0.00020699999999999885,
+              "values": [
+                0.003941999999999987,
+                0.00020699999999999885,
+                0.00021400000000000585,
+                0.00021800000000000985,
+                0.00022300000000000098
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": false,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.0039417920634150505,
+              "median": 0.0002179170260205865,
+              "min": 0.0002065841108560562,
+              "values": [
+                0.0039417920634150505,
+                0.0002065841108560562,
+                0.00021462503354996443,
+                0.0002179170260205865,
+                0.000224041985347867
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H02",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.004013000000000003,
+              "median": 0.00019800000000000373,
+              "min": 0.00019199999999999773,
+              "values": [
+                0.00020499999999999685,
+                0.004013000000000003,
+                0.00019199999999999773,
+                0.0001930000000000126,
+                0.00019800000000000373
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.004013666999526322,
+              "median": 0.0001977919600903988,
+              "min": 0.0001924580428749323,
+              "values": [
+                0.00020516698714345694,
+                0.004013666999526322,
+                0.0001924580428749323,
+                0.0001925419783219695,
+                0.0001977919600903988
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H03",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.006828000000000001,
+              "median": 0.0030810000000000004,
+              "min": 0.0002360000000000001,
+              "values": [
+                0.0030810000000000004,
+                0.003148999999999999,
+                0.006828000000000001,
+                0.0002360000000000001,
+                0.0002370000000000011
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "approximation",
+            "mean_zero": null,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.006836124928668141,
+              "median": 0.003082500072196126,
+              "min": 0.00023566698655486107,
+              "values": [
+                0.003082500072196126,
+                0.0031579999485984445,
+                0.006836124928668141,
+                0.00023566698655486107,
+                0.00023708294611424208
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H04",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.012310000000000001,
+              "median": 0.0055700000000000055,
+              "min": 0.002819000000000002,
+              "values": [
+                0.0055700000000000055,
+                0.0055650000000000005,
+                0.005597000000000005,
+                0.012310000000000001,
+                0.002819000000000002
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "36977063/60129542144",
+              "36977063/60129542144",
+              "36977063/60129542144",
+              "36977063/60129542144",
+              "36977063/60129542144"
+            ],
+            "wall_seconds": {
+              "max": 0.012319291941821575,
+              "median": 0.005578499985858798,
+              "min": 0.002819749992340803,
+              "values": [
+                0.005578499985858798,
+                0.00556429207790643,
+                0.005596749950200319,
+                0.012319291941821575,
+                0.002819749992340803
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H05",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.013024000000000008,
+              "median": 0.0040040000000000076,
+              "min": 0.003831999999999988,
+              "values": [
+                0.003831999999999988,
+                0.0040050000000000086,
+                0.0040040000000000076,
+                0.003963000000000008,
+                0.013024000000000008
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "26051871639785/2594073385365405696",
+              "26051871639785/2594073385365405696",
+              "26051871639785/2594073385365405696",
+              "26051871639785/2594073385365405696",
+              "26051871639785/2594073385365405696"
+            ],
+            "wall_seconds": {
+              "max": 0.0130333750275895,
+              "median": 0.004011957906186581,
+              "min": 0.003831958048976958,
+              "values": [
+                0.003831958048976958,
+                0.004011957906186581,
+                0.0040122499922290444,
+                0.003970124991610646,
+                0.0130333750275895
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H06",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.004040000000000002,
+              "median": 0.003987000000000004,
+              "min": 0.0038880000000000026,
+              "values": [
+                0.00402799999999999,
+                0.0038880000000000026,
+                0.003987000000000004,
+                0.003938999999999998,
+                0.004040000000000002
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "87960325267135/1152921504606846976",
+              "87960325267135/1152921504606846976",
+              "87960325267135/1152921504606846976",
+              "87960325267135/1152921504606846976",
+              "87960325267135/1152921504606846976"
+            ],
+            "wall_seconds": {
+              "max": 0.00404829194303602,
+              "median": 0.0039880420081317425,
+              "min": 0.003888166043907404,
+              "values": [
+                0.00402791693340987,
+                0.003888166043907404,
+                0.0039880420081317425,
+                0.003939083078876138,
+                0.00404829194303602
+              ]
+            }
+          }
+        ],
+        "preparation_cpu_seconds_charged_once": 0,
+        "preparation_wall_seconds_charged_once": 0,
+        "probe_execution_failures": 0,
+        "probes": 35,
+        "robust_successes": 6,
+        "scope_breakdown": {
+          "full_space_spectrum": {
+            "cases": 1,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "function_approximation": {
+            "cases": 1,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "mean_zero_spectrum": {
+            "cases": 4,
+            "robust_successes": 4,
+            "successful_runs": 20
+          }
+        },
+        "setup_cpu_seconds": {
+          "max": 0.050342,
+          "median": 0.050094,
+          "min": 0.04984899999999999,
+          "values": [
+            0.050172,
+            0.050342,
+            0.049881999999999996,
+            0.050094,
+            0.04984899999999999
+          ]
+        },
+        "setup_wall_seconds": {
+          "max": 0.0510150829795748,
+          "median": 0.050134917022660375,
+          "min": 0.04989520797971636,
+          "values": [
+            0.0510150829795748,
+            0.05038712499663234,
+            0.04992474999744445,
+            0.050134917022660375,
+            0.04989520797971636
+          ]
+        },
+        "successful_runs": 30,
+        "timeouts": 0,
+        "total_experiment_cpu_seconds": 0.5480919999999996,
+        "total_experiment_wall_seconds": 0.5593794990563765,
+        "worker_failures": 0
+      },
+      "validation_selected_fixed": {
+        "actual_model_usage": null,
+        "attempted_task_runs": 30,
+        "cases": 6,
+        "false_accepts": 0,
+        "family_breakdown": {
+          "old_disclosed_regression": {
+            "cases": 6,
+            "robust_successes": 6,
+            "successful_runs": 30
+          }
+        },
+        "first_task_latency_seconds": {
+          "max": 0.051824083901010454,
+          "median": 0.04897279094439,
+          "min": 0.044964457978494465,
+          "values": [
+            0.04729308292735368,
+            0.04897279094439,
+            0.044964457978494465,
+            0.05041075102053583,
+            0.051824083901010454
+          ]
+        },
+        "full_session_cpu_seconds": {
+          "max": 0.10591900000000054,
+          "median": 0.10567700000000008,
+          "min": 0.10422399999999998,
+          "values": [
+            0.10422399999999998,
+            0.10588000000000003,
+            0.1046030000000001,
+            0.10567700000000008,
+            0.10591900000000054
+          ]
+        },
+        "full_session_wall_seconds": {
+          "max": 0.10802229202818125,
+          "median": 0.10765262495260686,
+          "min": 0.10611733398400247,
+          "values": [
+            0.10611733398400247,
+            0.10775791597552598,
+            0.10667791694868356,
+            0.10765262495260686,
+            0.10802229202818125
+          ]
+        },
+        "independent_new_subset": {
+          "case_ids": [],
+          "cases": 0,
+          "full_session_cost_attribution": "not allocated to cases; initialization/output/probes remain whole-session costs",
+          "online_cpu_seconds_per_repeat": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "online_cpu_seconds_total": 0,
+          "online_wall_seconds_per_repeat": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "values": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "online_wall_seconds_total": 0,
+          "per_case": [],
+          "robust_successes": 0,
+          "successful_runs": 0
+        },
+        "model_tokenizer": null,
+        "online_cpu_seconds": {
+          "max": 0.021118000000000026,
+          "median": 0.021049,
+          "min": 0.020944000000000004,
+          "values": [
+            0.020944000000000004,
+            0.021118000000000026,
+            0.021049,
+            0.021090000000000025,
+            0.021009999999999987
+          ]
+        },
+        "online_wall_seconds": {
+          "max": 0.021136372932232916,
+          "median": 0.02106512407772243,
+          "min": 0.020971665857359767,
+          "values": [
+            0.020971665857359767,
+            0.021136372932232916,
+            0.02106512407772243,
+            0.021106793079525232,
+            0.021036499878391623
+          ]
+        },
+        "per_case": [
+          {
+            "case_id": "OLD_H01",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.001910999999999996,
+              "median": 0.0016690000000000038,
+              "min": 0.0016380000000000006,
+              "values": [
+                0.001910999999999996,
+                0.0016690000000000038,
+                0.0016720000000000068,
+                0.0016380000000000006,
+                0.0016380000000000006
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": false,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "1/262144",
+              "1/262144",
+              "1/262144",
+              "1/262144",
+              "1/262144"
+            ],
+            "wall_seconds": {
+              "max": 0.0019205829594284296,
+              "median": 0.001670041005127132,
+              "min": 0.0016376250423491001,
+              "values": [
+                0.0019205829594284296,
+                0.001670041005127132,
+                0.0016714170342311263,
+                0.001638708054088056,
+                0.0016376250423491001
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H02",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.002360000000000001,
+              "median": 0.0020820000000000005,
+              "min": 0.0020560000000000023,
+              "values": [
+                0.0020560000000000023,
+                0.002360000000000001,
+                0.0020820000000000005,
+                0.0020750000000000074,
+                0.0020839999999999886
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "1/262144",
+              "1/262144",
+              "1/262144",
+              "1/262144",
+              "1/262144"
+            ],
+            "wall_seconds": {
+              "max": 0.0023592079523950815,
+              "median": 0.0020816250471398234,
+              "min": 0.0020558329997584224,
+              "values": [
+                0.0020558329997584224,
+                0.0023592079523950815,
+                0.0020816250471398234,
+                0.0020745840156450868,
+                0.002083666971884668
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H03",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.00019500000000000073,
+              "median": 0.00011300000000000199,
+              "min": 0.00010699999999999599,
+              "values": [
+                0.00011300000000000199,
+                0.00012200000000001099,
+                0.00019500000000000073,
+                0.00011299999999998811,
+                0.00010699999999999599
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "approximation",
+            "mean_zero": null,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.00019591697491705418,
+              "median": 0.00011366698890924454,
+              "min": 0.00010791595559567213,
+              "values": [
+                0.00011320901103317738,
+                0.0001212080242112279,
+                0.00019591697491705418,
+                0.00011366698890924454,
+                0.00010791595559567213
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H04",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.004838000000000009,
+              "median": 0.004470000000000002,
+              "min": 0.004417000000000004,
+              "values": [
+                0.004417000000000004,
+                0.004452999999999999,
+                0.004697999999999994,
+                0.004838000000000009,
+                0.004470000000000002
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "10322219/30064771072",
+              "10322219/30064771072",
+              "10322219/30064771072",
+              "10322219/30064771072",
+              "10322219/30064771072"
+            ],
+            "wall_seconds": {
+              "max": 0.004845667048357427,
+              "median": 0.004477874957956374,
+              "min": 0.004417749936692417,
+              "values": [
+                0.004417749936692417,
+                0.004452875000424683,
+                0.004705208004452288,
+                0.004845667048357427,
+                0.004477874957956374
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H05",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.006533999999999998,
+              "median": 0.00628200000000001,
+              "min": 0.006217,
+              "values": [
+                0.006217,
+                0.006342,
+                0.0062419999999999976,
+                0.00628200000000001,
+                0.006533999999999998
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "333461413277603/83010348331692982272",
+              "333461413277603/83010348331692982272",
+              "333461413277603/83010348331692982272",
+              "333461413277603/83010348331692982272",
+              "333461413277603/83010348331692982272"
+            ],
+            "wall_seconds": {
+              "max": 0.006543666939251125,
+              "median": 0.006290249992161989,
+              "min": 0.00622533296700567,
+              "values": [
+                0.00622533296700567,
+                0.0063505410216748714,
+                0.006250165984965861,
+                0.006290249992161989,
+                0.006543666939251125
+              ]
+            }
+          },
+          {
+            "case_id": "OLD_H06",
+            "classification": "old_disclosed_holdout_now_regression",
+            "cpu_seconds": {
+              "max": 0.006229999999999999,
+              "median": 0.006172000000000011,
+              "min": 0.0061440000000000106,
+              "values": [
+                0.006229999999999999,
+                0.006172000000000011,
+                0.006159999999999999,
+                0.0061440000000000106,
+                0.006177000000000002
+              ]
+            },
+            "family": "old_disclosed_regression",
+            "independent_new_instance": false,
+            "kind": "spectrum",
+            "mean_zero": true,
+            "prior_public_overlap": [],
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "8795831272807/270215977642229760",
+              "8795831272807/270215977642229760",
+              "8795831272807/270215977642229760",
+              "8795831272807/270215977642229760",
+              "8795831272807/270215977642229760"
+            ],
+            "wall_seconds": {
+              "max": 0.006238957983441651,
+              "median": 0.0061824999283999205,
+              "min": 0.006143916980363429,
+              "values": [
+                0.006238957983441651,
+                0.0061824999283999205,
+                0.006160791032016277,
+                0.006143916980363429,
+                0.006185750011354685
+              ]
+            }
+          }
+        ],
+        "preparation_cpu_seconds_charged_once": 2.4432479999999996,
+        "preparation_wall_seconds_charged_once": 2.475962250144221,
+        "probe_execution_failures": 0,
+        "probes": 35,
+        "robust_successes": 6,
+        "scope_breakdown": {
+          "full_space_spectrum": {
+            "cases": 1,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "function_approximation": {
+            "cases": 1,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "mean_zero_spectrum": {
+            "cases": 4,
+            "robust_successes": 4,
+            "successful_runs": 20
+          }
+        },
+        "setup_cpu_seconds": {
+          "max": 0.04657800000000001,
+          "median": 0.045337,
+          "min": 0.04474199999999999,
+          "values": [
+            0.045337,
+            0.04657800000000001,
+            0.04474199999999999,
+            0.04553,
+            0.04524500000000001
+          ]
+        },
+        "setup_wall_seconds": {
+          "max": 0.04661358299199492,
+          "median": 0.04537249996792525,
+          "min": 0.04476854100357741,
+          "values": [
+            0.04537249996792525,
+            0.04661358299199492,
+            0.04476854100357741,
+            0.0455650839721784,
+            0.04528041696175933
+          ]
+        },
+        "successful_runs": 30,
+        "timeouts": 0,
+        "total_experiment_cpu_seconds": 2.9695510000000005,
+        "total_experiment_wall_seconds": 3.012190334033221,
+        "worker_failures": 0
+      }
+    },
+    "preregistered_gates": {
+      "first_release_incremental_no_regression": true,
+      "long_term_gate_excludes_first_release_by_preregistration": true,
+      "long_term_original_baseline_runtime_gate": false,
+      "old_six_cold_no_regression_vs_v317": true,
+      "old_six_gate_scope": "applies only to the original six regression phase; full wall/CPU medians AND five-session sums <=1.0, no lost robust successes",
+      "phase": "regression",
+      "statistical_significance_claimed": false
+    },
+    "release_against_every_baseline": {
+      "first_release": {
+        "incremental_nonregression_all_four_time_ratios": true,
+        "long_term_20_percent_gate_applicable": false,
+        "long_term_20_percent_gate_passed": null,
+        "median_full_session_cpu_ratio_release_over_baseline": 0.9185632256171662,
+        "median_full_session_wall_ratio_release_over_baseline": 0.9217433483466234,
+        "median_online_wall_ratio": 1.153285385833776,
+        "robust_success_gains": [],
+        "robust_success_losses": [],
+        "total_experiment_cpu_ratio_including_preparation": 0.9205117051632364,
+        "total_experiment_wall_ratio_including_preparation": 0.9223935545377406,
+        "warning": "Ratio includes all successes and failures. Faster failure is not a runtime benefit. Repeated timings are descriptive on a shared host."
+      },
+      "fixed_increasing": {
+        "incremental_nonregression_all_four_time_ratios": false,
+        "long_term_20_percent_gate_applicable": true,
+        "long_term_20_percent_gate_passed": false,
+        "median_full_session_cpu_ratio_release_over_baseline": 1.120232265715252,
+        "median_full_session_wall_ratio_release_over_baseline": 1.1215448537743675,
+        "median_online_wall_ratio": 1.4508794641126566,
+        "robust_success_gains": [],
+        "robust_success_losses": [],
+        "total_experiment_cpu_ratio_including_preparation": 1.1161860540892787,
+        "total_experiment_wall_ratio_including_preparation": 1.116622992036922,
+        "warning": "Ratio includes all successes and failures. Faster failure is not a runtime benefit. Repeated timings are descriptive on a shared host."
+      },
+      "frozen_v317": {
+        "incremental_nonregression_all_four_time_ratios": true,
+        "long_term_20_percent_gate_applicable": true,
+        "long_term_20_percent_gate_passed": false,
+        "median_full_session_cpu_ratio_release_over_baseline": 0.9778515464653477,
+        "median_full_session_wall_ratio_release_over_baseline": 0.9767067121338409,
+        "median_online_wall_ratio": 0.9742683945297214,
+        "robust_success_gains": [],
+        "robust_success_losses": [],
+        "total_experiment_cpu_ratio_including_preparation": 0.9759803127242543,
+        "total_experiment_wall_ratio_including_preparation": 0.973437654163068,
+        "warning": "Ratio includes all successes and failures. Faster failure is not a runtime benefit. Repeated timings are descriptive on a shared host."
+      },
+      "old_default": {
+        "incremental_nonregression_all_four_time_ratios": true,
+        "long_term_20_percent_gate_applicable": true,
+        "long_term_20_percent_gate_passed": true,
+        "median_full_session_cpu_ratio_release_over_baseline": 0.29598297247072014,
+        "median_full_session_wall_ratio_release_over_baseline": 0.30015801645086365,
+        "median_online_wall_ratio": 0.07682838461892962,
+        "robust_success_gains": [],
+        "robust_success_losses": [],
+        "total_experiment_cpu_ratio_including_preparation": 0.2976730545198789,
+        "total_experiment_wall_ratio_including_preparation": 0.3019129450599836,
+        "warning": "Ratio includes all successes and failures. Faster failure is not a runtime benefit. Repeated timings are descriptive on a shared host."
+      },
+      "validation_selected_fixed": {
+        "incremental_nonregression_all_four_time_ratios": false,
+        "long_term_20_percent_gate_applicable": true,
+        "long_term_20_percent_gate_passed": false,
+        "median_full_session_cpu_ratio_release_over_baseline": 1.0369332967438492,
+        "median_full_session_wall_ratio_release_over_baseline": 1.0384910916934176,
+        "median_online_wall_ratio": 0.9893248137899124,
+        "robust_success_gains": [],
+        "robust_success_losses": [],
+        "total_experiment_cpu_ratio_including_preparation": 0.18457066404988481,
+        "total_experiment_wall_ratio_including_preparation": 0.1857052300899546,
+        "warning": "Ratio includes all successes and failures. Faster failure is not a runtime benefit. Repeated timings are descriptive on a shared host."
+      }
+    }
+  },
+  "session_files": [
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/old_default_r0_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/fixed_increasing_r0_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/validation_selected_fixed_1_r0_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/frozen_v317_r0_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/first_release_r0_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/release_r0_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/fixed_increasing_r1_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/validation_selected_fixed_1_r1_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/frozen_v317_r1_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/first_release_r1_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/release_r1_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/old_default_r1_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/validation_selected_fixed_1_r2_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/frozen_v317_r2_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/first_release_r2_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/release_r2_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/old_default_r2_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/fixed_increasing_r2_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/frozen_v317_r3_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/first_release_r3_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/release_r3_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/old_default_r3_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/fixed_increasing_r3_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/validation_selected_fixed_1_r3_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/first_release_r4_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/release_r4_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/old_default_r4_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/fixed_increasing_r4_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/validation_selected_fixed_1_r4_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/frozen_v317_r4_output.json"
+  ],
+  "version": "geometry_runtime_preregistered_v3"
+}

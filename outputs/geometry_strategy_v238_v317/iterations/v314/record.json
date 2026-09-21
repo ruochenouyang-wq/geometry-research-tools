@@ -1,0 +1,26 @@
+{
+  "version": 314,
+  "recorded_at": "2026-09-18T18:42:26.224254+00:00",
+  "hypothesis": "Accounting only successful results hides failed work and permits repeated failures beyond budget.",
+  "change": "Added a cumulative ledger with request/execution admission limits and charges for returned failures, exceptions and budget rejections.",
+  "source_sha256": {
+    "interaction.py": "a62f27d31414fbe420ced28ab8b0b8c6f83f7279b5c58e923e37bf41ea01c4aa",
+    "test_interaction.py": "edce0827176694064f60c46f7d9e81bcbd41c133c72061561088c79d6d31af19"
+  },
+  "validation": {
+    "unittest_tests": 20,
+    "passed": true
+  },
+  "comparison": {
+    "success_only_accounting_on_failure_fixture": 0,
+    "actual_started_executions": 2,
+    "recorded_failures": 3,
+    "third_execution_prevented": true,
+    "cache_hit_new_executions": 0
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Only program request/execution budgets; model use and billing remain null or zero calls, not estimated."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

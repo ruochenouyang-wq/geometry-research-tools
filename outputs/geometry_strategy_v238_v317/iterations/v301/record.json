@@ -1,0 +1,25 @@
+{
+  "version": 301,
+  "recorded_at": "2026-09-18T18:35:30.250222+00:00",
+  "hypothesis": "References and untrusted files must not bypass store boundaries or gain mathematical authority.",
+  "change": "Restrict full hashes, reject symlinks/nonregular/oversized files and excessive nesting; classify unknown formats as explicitly unverified.",
+  "source_sha256": {
+    "evidence_store.py": "7efa5d999b40f779758650b635714f0c4ba6157a42db910f7f2887a8a3e0dee8",
+    "test_evidence_store.py": "78be9af36711c22fc316e9867ccaed2c8bde1c731ff56d5468f3d426e701a1fc"
+  },
+  "validation": {
+    "tests_run": 4,
+    "passed": true,
+    "log": "test_298_full_content_dedup (test_evidence_store.EvidenceTests) ... ok\ntest_299_strict_json_and_complete_summary (test_evidence_store.EvidenceTests) ... ok\ntest_300_tamper_and_failed_atomic_publish (test_evidence_store.EvidenceTests) ... ok\ntest_301_paths_sizes_and_unknown_format (test_evidence_store.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.008s\n\nOK\n"
+  },
+  "comparison": {
+    "traversal_short_hash_uppercase": "rejected",
+    "symlink_oversized_deep_input": "rejected",
+    "unknown_format_self_verified_true": "retained only as unverified data"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Not a sandbox for a malicious process replacing an ancestor directory concurrently."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

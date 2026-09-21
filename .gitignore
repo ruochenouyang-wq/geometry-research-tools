@@ -1,0 +1,33 @@
+# Local system and Python caches
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+
+# Downloaded optional tokenizer dependencies, not project source
+/work/token-deps/
+
+# Quick-start local requests/results
+/request.json
+/response.json
+
+# Private evaluation randomness stays local
+**/private_seed*
+
+# Local output from the portable quick start
+/response.jsonl
+/tmp/
+
+# GitHub authentication is never part of project source
+.gh-auth/

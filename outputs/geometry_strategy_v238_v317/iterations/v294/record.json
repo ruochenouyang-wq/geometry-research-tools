@@ -1,0 +1,22 @@
+{
+  "version": 294,
+  "recorded_at": "2026-09-18T18:37:56.915369+00:00",
+  "hypothesis": "Independent valid intervals for the identical constrained target can be intersected.",
+  "change": "Replay all full spectral sources, require identical normalized function and space, then maximize lower/minimize upper bounds.",
+  "source_sha256": {
+    "proof_transport.py": "53766f382f25cf713dd95160422cb818c82b6b2e817b7fb8ccd58adb80a637f6",
+    "test_proof_transport.py": "35bb0a4d13e95b2499fd9fb340c4f01d43c66c9c5d92863fd05cc69797a0b268"
+  },
+  "validation": {
+    "tests_passed": 8
+  },
+  "comparison": {
+    "before": "Only one route interval could be returned.",
+    "after": "Combines valid endpoints from multiple routes without another spectral search."
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Contradictory, mixed-space and differently bound sources rejected."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

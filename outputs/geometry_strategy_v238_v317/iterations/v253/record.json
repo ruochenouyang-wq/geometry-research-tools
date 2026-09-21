@@ -1,0 +1,67 @@
+{
+  "version": 253,
+  "recorded_at": "2026-09-18T18:58:35.459088+00:00",
+  "hypothesis": "Fixed Schur outer products and symmetric entries can be prepared once for all spectral shifts.",
+  "change": "Add compatible Kernel, certify_sector and full_ground with frozen final aggregation.",
+  "source_sha256": {
+    "fast_math.py": "c35cde477047d19f2ab479b585c5e4b43c28506d6854ff90325ab56be45f03cf",
+    "test_fast_math.py": "2542dad138c0d4c3702b31e691205395a97c83a34925144d4f54ac24077b5843"
+  },
+  "validation": {
+    "tests_run": 7,
+    "failures": 0,
+    "frozen_verifiers_retained": true
+  },
+  "comparison": {
+    "fixed_input": "singular m1 modes6 near6; 16 lower shifts 0..15/16",
+    "exact_all_matrices_equal": true,
+    "construction_counters": {
+      "moment_source_normalizations": 1,
+      "radial_integral_requests": 78,
+      "raw_moment_requests": 222,
+      "raw_moment_computations": 17,
+      "proven_zero_integrals": 36,
+      "schur_fixed_outer_products": 36
+    },
+    "query_counters": {
+      "schur_variable_divisions": 768,
+      "kernel_matrix_evaluations": 16
+    },
+    "baseline_repeated_outer_products": 3456,
+    "candidate_repeated_outer_products": 0,
+    "baseline_queries": {
+      "serial_seconds": [
+        0.0036909159971401095,
+        0.00362920796032995,
+        0.003689292003400624
+      ],
+      "median_seconds": 0.003689292003400624,
+      "not_a_model_speed_claim": true
+    },
+    "candidate_queries": {
+      "serial_seconds": [
+        0.000882374937646091,
+        0.000857125036418438,
+        0.0008425420382991433
+      ],
+      "median_seconds": 0.000857125036418438,
+      "not_a_model_speed_claim": true
+    },
+    "candidate_construction": {
+      "serial_seconds": [
+        0.0007633750792592764,
+        0.0006878749700263143,
+        0.0006792499916628003
+      ],
+      "median_seconds": 0.0006878749700263143,
+      "not_a_model_speed_claim": true
+    },
+    "cache_regime": "construction reported separately from repeated shifts; full_ground retains frozen sector rebuilds"
+  },
+  "outcome": "implemented_exact_checks_passed",
+  "limitations": [
+    "Small serial probes; no claim of universal speedup.",
+    "Caches are process-local; cold and warm costs are identified."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

@@ -1,0 +1,28 @@
+{
+  "version": 303,
+  "recorded_at": "2026-09-18T18:39:02.215055+00:00",
+  "hypothesis": "Verified reuse saves checking work only when complete bytes and the verifier version remain bound.",
+  "change": "Add in-memory positive-result cache keyed by content reference, verifier version and callback identity; always hash-read first; unversioned callbacks never cache.",
+  "source_sha256": {
+    "evidence_store.py": "1a12e05feee6389f9cdc07146402222c155483097cd8f1ef6e07f1c902a9523c",
+    "test_evidence_store.py": "641784ffc8455ffc5683edfa2527f5d785e772ef77b03ff202c916048adf2fa1"
+  },
+  "validation": {
+    "tests_run": 6,
+    "passed": true,
+    "log": "test_298_full_content_dedup (test_evidence_store.EvidenceTests) ... ok\ntest_299_strict_json_and_complete_summary (test_evidence_store.EvidenceTests) ... ok\ntest_300_tamper_and_failed_atomic_publish (test_evidence_store.EvidenceTests) ... ok\ntest_301_paths_sizes_and_unknown_format (test_evidence_store.EvidenceTests) ... ok\ntest_302_default_math_replay_and_callback_boundary (test_evidence_store.EvidenceTests) ... ok\ntest_303_cache_binds_full_content_version_and_integrity (test_evidence_store.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.123s\n\nOK\n"
+  },
+  "comparison": {
+    "two_identical_verifications": "one callback",
+    "version_change": "new callback",
+    "different_content": "new callback",
+    "tampered_cached_file": "rejected before callback",
+    "unversioned_callback": "two calls"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Default version fingerprints frozen sources at construction; hot-reloading trusted verifier implementations requires a new store or version.",
+    "Only process-local mathematical verification is cached; every retrieval rechecks bytes."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

@@ -1,0 +1,110 @@
+{
+  "completed_utc": "2026-09-11T11:24:13.705285+00:00",
+  "cycle": 7,
+  "file_sha256": {
+    "ordered_spectrum.py": "a602c61cf1549397870d6de766c80511629eb082677deadafc3d40be6cab2fc7",
+    "round07/STAGES.json": "3cceb228ac4f99423d1a3492cb9580f8909937b71e250d22ae4a6efab9f19daf",
+    "test_ordered_spectrum.py": "776afd5693e67cfe00e48fcaae5b3f945244a59cfd2e031881b89ac450a27d3a",
+    "test_spectrum_review.py": "80f4ddf1295eb90c7d5b3c5ecb5a0fdc41fca2f9b2a40e6f28aed3dd21c984a0"
+  },
+  "first_version": 155,
+  "last_version": 164,
+  "stages": [
+    {
+      "callable": "ordered_spectrum.initial_order_bounds",
+      "capability": "Global initial ordered min-max intervals with full multiplicity and no Schur computation.",
+      "evidence": [
+        "round07/v155.json"
+      ],
+      "outcome": "First three eigenvalues in [-4,-2], next five in [0,2]; full q/k/projection replay binding.",
+      "version": 155
+    },
+    {
+      "callable": "ordered_spectrum.laplace_spectrum",
+      "capability": "Exact unperturbed and constant-shift ordered-spectrum calibration.",
+      "evidence": [
+        "round07/v156.json"
+      ],
+      "outcome": "First eight levels: 2,2,2,6,6,6,6,6.",
+      "version": 156
+    },
+    {
+      "callable": "ordered_spectrum.assemble_sectors",
+      "capability": "Verified sector eigenvalue assembly with 1/2 angular multiplicity.",
+      "evidence": [
+        "round07/v157.json"
+      ],
+      "outcome": "Six certified sector eigenvalues represent ten real full-sphere eigenvalues.",
+      "version": 157
+    },
+    {
+      "callable": "ordered_spectrum.omitted_floors",
+      "capability": "Independent radial and azimuthal floors for unenumerated modes.",
+      "evidence": [
+        "round07/v158.json"
+      ],
+      "outcome": "Each omitted direction has a min-max bound; no numerical truncation is assumed exact.",
+      "version": 158
+    },
+    {
+      "callable": "ordered_spectrum.ordered_bounds",
+      "capability": "Full kth order statistics with analytical missing-mode placeholders.",
+      "evidence": [
+        "round07/v159.json"
+      ],
+      "outcome": "All first eight eigenvalues exactly enclosed despite uncomputed higher modes.",
+      "version": 159
+    },
+    {
+      "callable": "ordered_spectrum.adaptive_spectrum",
+      "capability": "Adaptive sector/radial enumeration with honest resource exhaustion.",
+      "evidence": [
+        "round07/v160.json"
+      ],
+      "outcome": "certified_target_met",
+      "version": 160
+    },
+    {
+      "callable": "ordered_spectrum.count_below",
+      "capability": "Strict full spectral counts and explicit threshold clusters.",
+      "evidence": [
+        "round07/v161.json"
+      ],
+      "outcome": "Exactly 3 negative eigenvalues; the five zero eigenvalues are excluded.",
+      "version": 161
+    },
+    {
+      "callable": "ordered_spectrum.negative_trace",
+      "capability": "Negative trace intervals include all potentially negative omitted modes.",
+      "evidence": [
+        "round07/v162.json"
+      ],
+      "outcome": "Exact trace 180, including a rigorously resolved omitted angular contribution.",
+      "version": 162
+    },
+    {
+      "callable": "ordered_spectrum.lt_quotient",
+      "capability": "Nonnegative-potential validation and rational pi-scaled fixed-potential LT quotient.",
+      "evidence": [
+        "round07/v163.json"
+      ],
+      "outcome": "pi times trace quotient = 9/80; witness lower bound only, with factor-four dual normalization.",
+      "version": 163
+    },
+    {
+      "callable": "ordered_spectrum.bundle",
+      "capability": "Bound certificate bundle, independent replay and tri-state eigenvalue assertion.",
+      "evidence": [
+        "round07/v164.json"
+      ],
+      "outcome": "All subproofs bind to q=-6+2t^2; first eigenvalue >= -4 proved.",
+      "version": 164
+    }
+  ],
+  "validation": {
+    "all_passed": true,
+    "evidence": "round07/ROOT_ACCEPTANCE.json",
+    "tests": 37,
+    "unique_replayed_records": 10
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {
+    "bits": 40,
+    "max_leaves": 32,
+    "modes": 6,
+    "strategy": "concavity",
+    "tolerance": "1/100000000"
+  },
+  "certificates": [
+    {
+      "format": "cheap_global_affine_sphere_v135",
+      "path": "certs/C09_cheap_objective.json",
+      "sha256": "1532758a0f6cf88107ab11aa472949be706f6cf8e5b5164020f0054235b2d3a0",
+      "verified": true
+    },
+    {
+      "format": "global_affine_projected_sphere_v144",
+      "path": "certs/C09_global_objective.json",
+      "sha256": "e3ace0845f6db95fefb182c39adeb6dd73fb3f3df73a895f4b24dcfd117982a6",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 2.211369,
+  "id": "C09",
+  "lower": "13458672197949556823821974757400672922784120438020307595/6129982163463555433433388108601236734474956488734408704",
+  "minimizer_enclosure": {
+    "all_minimizers_in": [
+      [
+        "-1/512",
+        "0"
+      ],
+      [
+        "0",
+        "1/512"
+      ]
+    ],
+    "excluded_intervals": [
+      [
+        "-4",
+        "-2"
+      ],
+      [
+        "-2",
+        "-1"
+      ],
+      [
+        "-1",
+        "-1/2"
+      ],
+      [
+        "-1/2",
+        "-1/4"
+      ],
+      [
+        "-1/4",
+        "-1/8"
+      ],
+      [
+        "-1/8",
+        "-1/16"
+      ],
+      [
+        "-1/16",
+        "-1/32"
+      ],
+      [
+        "-1/32",
+        "-1/64"
+      ],
+      [
+        "-1/64",
+        "-1/128"
+      ],
+      [
+        "-1/128",
+        "-1/256"
+      ],
+      [
+        "-1/256",
+        "-1/512"
+      ],
+      [
+        "1/512",
+        "1/256"
+      ],
+      [
+        "1/256",
+        "1/128"
+      ],
+      [
+        "1/128",
+        "1/64"
+      ],
+      [
+        "1/64",
+        "1/32"
+      ],
+      [
+        "1/32",
+        "1/16"
+      ],
+      [
+        "1/16",
+        "1/8"
+      ],
+      [
+        "1/8",
+        "1/4"
+      ],
+      [
+        "1/4",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "1"
+      ],
+      [
+        "1",
+        "2"
+      ],
+      [
+        "2",
+        "4"
+      ]
+    ],
+    "uniqueness_claimed": false
+  },
+  "notes": [
+    "Global objective over the full interval; feasible-point spectral upper is not an asserted exact minimizer."
+  ],
+  "original_acceptance": [
+    "Return rigorous lower and attained/trial upper bounds for the global objective with gap <=1e-8, or retain an explicit open gap.",
+    "Cover the whole parameter interval and all relevant angular branches; attach proof to any reported minimizer enclosure. No optimal parameter/value is assumed in advance."
+  ],
+  "original_input": {
+    "objective": "lambda_full_mean_zero(q(a,t))+a^2/5",
+    "parameter_box": {
+      "a": [
+        "-4",
+        "4"
+      ]
+    },
+    "q(a,t)": "a*t+t^2",
+    "target_global_gap": "1/100000000"
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "narrow_target_met",
+  "target": "1/100000000",
+  "title": "带惩罚的参数全局最优",
+  "upper": "603507736531/274877906944",
+  "width": "59770225775415215028614636856575950842153469301/6129982163463555433433388108601236734474956488734408704"
+}

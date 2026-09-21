@@ -1,0 +1,263 @@
+{
+  "actual_model_calls": 0,
+  "counting_scope": "explicit text only",
+  "experiments": [
+    {
+      "version": 36,
+      "feature": "real_text_token_meter",
+      "checked_property": "both real encoders loaded; model mapping and API usage are explicitly unknown",
+      "counts": {
+        "o200k_base": 9,
+        "cl100k_base": 9
+      }
+    },
+    {
+      "version": 37,
+      "feature": "verified_decision_projection",
+      "checked_property": "same independently checked certificate; untrusted trace and generated-library repetitions omitted",
+      "before_text_tokens": {
+        "o200k_base": 3056,
+        "cl100k_base": 2976
+      },
+      "after_text_tokens": {
+        "o200k_base": 2554,
+        "cl100k_base": 2494
+      }
+    },
+    {
+      "version": 38,
+      "feature": "directed_bound_display",
+      "checked_property": "display bounds enclose exact rationals including sign; exact certificate retained",
+      "before_text_tokens": {
+        "o200k_base": 57,
+        "cl100k_base": 57
+      },
+      "after_text_tokens": {
+        "o200k_base": 17,
+        "cl100k_base": 17
+      }
+    },
+    {
+      "version": 39,
+      "feature": "immutable_evidence_reference",
+      "checked_property": "full exact evidence recovered and checked",
+      "before_text_tokens": {
+        "o200k_base": 2515,
+        "cl100k_base": 2455
+      },
+      "after_text_tokens": {
+        "o200k_base": 162,
+        "cl100k_base": 157
+      }
+    },
+    {
+      "version": 40,
+      "feature": "selective_evidence_query",
+      "checked_property": "selected exact field equals original field; this measures a field query, not full proof reading",
+      "before_text_tokens": {
+        "o200k_base": 2349,
+        "cl100k_base": 2298
+      },
+      "after_text_tokens": {
+        "o200k_base": 75,
+        "cl100k_base": 71
+      }
+    },
+    {
+      "version": 41,
+      "feature": "explicit_pagination",
+      "checked_property": "first-page identity and total/next preserved; reading all pages adds overhead",
+      "before_text_tokens": {
+        "o200k_base": 20359,
+        "cl100k_base": 20290
+      },
+      "after_text_tokens": {
+        "o200k_base": 886,
+        "cl100k_base": 879
+      }
+    },
+    {
+      "version": 42,
+      "feature": "explicit_geometry_profile",
+      "checked_property": "fixed sphere/ground/full-space declared by named profile; source restored exactly",
+      "before_text_tokens": {
+        "o200k_base": 66,
+        "cl100k_base": 61
+      },
+      "after_text_tokens": {
+        "o200k_base": 51,
+        "cl100k_base": 48
+      }
+    },
+    {
+      "version": 43,
+      "feature": "polynomial_coefficient_input",
+      "checked_property": "compiles to identical operator and original target; this simple case may cost more tokens",
+      "before_text_tokens": {
+        "o200k_base": 51,
+        "cl100k_base": 48
+      },
+      "after_text_tokens": {
+        "o200k_base": 66,
+        "cl100k_base": 62
+      }
+    },
+    {
+      "version": 44,
+      "feature": "triangular_quadratic_input",
+      "checked_property": "same full Hessian including doubled off-diagonal convention",
+      "before_text_tokens": {
+        "o200k_base": 51,
+        "cl100k_base": 48
+      },
+      "after_text_tokens": {
+        "o200k_base": 68,
+        "cl100k_base": 64
+      }
+    },
+    {
+      "version": 45,
+      "feature": "goal_reference_patch",
+      "checked_property": "unchanged parameters, function space and domain remain bound",
+      "before_text_tokens": {
+        "o200k_base": 69,
+        "cl100k_base": 64
+      },
+      "after_text_tokens": {
+        "o200k_base": 30,
+        "cl100k_base": 29
+      }
+    },
+    {
+      "version": 46,
+      "feature": "batch_tool_request",
+      "checked_property": "same ordered set of eight outcomes; response is not claimed compressed",
+      "before_text_tokens": {
+        "o200k_base": 258,
+        "cl100k_base": 258
+      },
+      "after_text_tokens": {
+        "o200k_base": 145,
+        "cl100k_base": 144
+      }
+    },
+    {
+      "version": 47,
+      "feature": "deduplicated_outcome_table",
+      "checked_property": "lossless order reconstruction and one actual solve for eight identical requests",
+      "actual_solver_calls": 1,
+      "before_text_tokens": {
+        "o200k_base": 1175,
+        "cl100k_base": 1150
+      },
+      "after_text_tokens": {
+        "o200k_base": 185,
+        "cl100k_base": 181
+      }
+    },
+    {
+      "version": 48,
+      "feature": "exception_view_with_complete_inventory",
+      "checked_property": "every task status retained and unresolved detail present",
+      "before_text_tokens": {
+        "o200k_base": 756,
+        "cl100k_base": 740
+      },
+      "after_text_tokens": {
+        "o200k_base": 431,
+        "cl100k_base": 427
+      }
+    },
+    {
+      "version": 49,
+      "feature": "persistent_verified_lemma_index",
+      "checked_property": "another service restores same checked lemma; index cannot mutate stored proof",
+      "before_text_tokens": {
+        "o200k_base": 3993,
+        "cl100k_base": 3964
+      },
+      "after_text_tokens": {
+        "o200k_base": 19,
+        "cl100k_base": 19
+      }
+    },
+    {
+      "version": 50,
+      "feature": "scoped_diagnostic_aggregation",
+      "checked_property": "diagnostics validated as reachable representations of the original goal",
+      "before_text_tokens": {
+        "o200k_base": 353,
+        "cl100k_base": 348
+      },
+      "after_text_tokens": {
+        "o200k_base": 39,
+        "cl100k_base": 40
+      }
+    },
+    {
+      "version": 51,
+      "feature": "semantic_token_budget",
+      "checked_property": "undersized budget explicitly fails without a mathematical verdict",
+      "sufficient": 145,
+      "too_small": {
+        "fits": false,
+        "required_text_tokens": 118,
+        "required_wire_tokens": 146,
+        "encoding": "o200k_base",
+        "error": "budget_too_small_for_required_semantics"
+      }
+    },
+    {
+      "version": 52,
+      "feature": "checked_unchanged_poll",
+      "checked_property": "same evidence rechecked; previous receipt remains required context",
+      "before_text_tokens": {
+        "o200k_base": 145,
+        "cl100k_base": 142
+      },
+      "after_text_tokens": {
+        "o200k_base": 24,
+        "cl100k_base": 24
+      }
+    },
+    {
+      "version": 53,
+      "feature": "reference_backed_interaction_checkpoint",
+      "checked_property": "fresh service recovers exact verified receipts and library; not numerical solver resume",
+      "before_text_tokens": {
+        "o200k_base": 1154,
+        "cl100k_base": 1130
+      },
+      "after_text_tokens": {
+        "o200k_base": 21,
+        "cl100k_base": 21
+      }
+    },
+    {
+      "version": 54,
+      "feature": "recoverable_session_context",
+      "checked_property": "all task bindings, unresolved work and results recoverable; arbitrary user chat is not summarized",
+      "before_text_tokens": {
+        "o200k_base": 1154,
+        "cl100k_base": 1130
+      },
+      "after_text_tokens": {
+        "o200k_base": 428,
+        "cl100k_base": 427
+      }
+    },
+    {
+      "version": 55,
+      "feature": "one_call_checked_goal_workflow",
+      "checked_property": "registered input, same mathematical solver, exact evidence and bounded presentation",
+      "receipt_tokens": 145,
+      "fits": true
+    }
+  ],
+  "limitations": [
+    "per-feature different workloads, not one monotonic speedup curve",
+    "negative token gains retained",
+    "reference retrieval and first-use instructions cost extra",
+    "no observed model understanding or hidden reasoning usage"
+  ]
+}

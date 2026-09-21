@@ -1,0 +1,23 @@
+{
+  "version": 239,
+  "recorded_at": "2026-09-18T17:14:33.410887+00:00",
+  "hypothesis": "非标准 NaN 或数值溢出和错误根结构应在计算前拒绝",
+  "change": "严格常量解析、递归有限数检查、对象根约束",
+  "source_sha256": {
+    "request_contract.py": "84024cb3afad5930cfff458b6562659b00543d24e3b2e84ef1cd2eaeeb2b7127",
+    "test_request_contract.py": "eed5842ae3ac55dce614d69d417c057d01244b323e9adecc6a4ff5ea6303c469"
+  },
+  "validation": {
+    "tests": 4,
+    "passed": true
+  },
+  "comparison": {
+    "legacy_json": "接受 NaN/Infinity/1e999 与非对象根",
+    "new": "8种无效形态及直接调用均拒绝"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "此步不改变数学域或后端预算"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

@@ -1,0 +1,50 @@
+{
+  "callable": "constraints.analytic_moment_bound",
+  "outcome": "A codimension bound leaves a nonzero trial vector in the first two harmonic modes, giving the rigorous pre-Schur bracket [0,4].",
+  "output": {
+    "azimuth_m": 0,
+    "constraint_count_upper_bound": 1,
+    "constraint_spec": {
+      "azimuth_m": 0,
+      "coefficient_degree_start": 0,
+      "interpretation": "L2_inner_product_with_harmonic_expansion",
+      "kind": "single_azimuth_finite_moments",
+      "real_angular_component": "cos(m*phi); constant 1 when m=0",
+      "rows": [
+        [
+          "1",
+          "1",
+          "1"
+        ]
+      ]
+    },
+    "decimal_enclosure": [
+      "0.000000000000",
+      "4.000000000000"
+    ],
+    "eigenvalue_index_in_constrained_sector": 1,
+    "entire_radial_tail_controlled": true,
+    "exact_width": "4",
+    "formal_assistant_checked": false,
+    "format": "analytic_finite_moment_bound_v150",
+    "geometry": "unit_S2",
+    "lower": "0",
+    "modes": 6,
+    "q_coefficients": [
+      "0",
+      "0",
+      "2"
+    ],
+    "range_proof": {
+      "kind": "quadratic_range_v5",
+      "lower": "0",
+      "upper": "2"
+    },
+    "scope": "single_real_cosine_azimuth_component_only",
+    "trial_highest_harmonic_degree": 1,
+    "upper": "4",
+    "variational_trial_dimension": 2
+  },
+  "version": 150,
+  "wall_seconds": 0.0003402920000000198
+}

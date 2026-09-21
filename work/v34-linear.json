@@ -1,0 +1,178 @@
+{
+  "algorithm_version": 34,
+  "certificate": {
+    "method": "global_matrix_envelope_v33",
+    "template": {
+      "method": "poisson_matrix_v30",
+      "directions": [
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "weight": [
+        [
+          "1"
+        ]
+      ],
+      "poisson_solutions": [
+        [
+          "0",
+          "-1/2"
+        ]
+      ],
+      "means": [
+        "0"
+      ],
+      "scale": "1/4",
+      "quadratic_bound": [
+        [
+          "1/4"
+        ]
+      ],
+      "range_proof": {
+        "method": "polynomial_maximum",
+        "polynomial": [
+          "1/4",
+          "0",
+          "-1/4"
+        ],
+        "coordinate": "t_squared",
+        "intervals": null,
+        "witness": "0",
+        "maximum_lower": "1/4",
+        "maximum_upper": "1/4",
+        "tolerance": "1/100000000",
+        "status": "scale_enclosed"
+      },
+      "scope": "ground energy on the full unit sphere, all real amplitude vectors, axisymmetric polynomial potentials",
+      "formal_assistant_checked": false,
+      "template_id": "f77bb3d4fa47b5c4e7ae03cee242b46974c49a1af5e5b99e96a8f656f86ce62a"
+    },
+    "dual": {
+      "method": "matrix_dual_lower_v33",
+      "directions": [
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "cost": [
+        [
+          "1"
+        ]
+      ],
+      "atoms": [
+        {
+          "t": "-1",
+          "matrix": [
+            [
+              "8322031746031745499136/29959462048769310648193359375"
+            ]
+          ]
+        },
+        {
+          "t": "-3/4",
+          "matrix": [
+            [
+              "8322031746031745499136/16852201043367699320068359375"
+            ]
+          ]
+        },
+        {
+          "t": "-1/2",
+          "matrix": [
+            [
+              "58254222222222218493952/52429102276565838599853515625"
+            ]
+          ]
+        },
+        {
+          "t": "-1/4",
+          "matrix": [
+            [
+              "58254222222222218493952/13107319260361004615478515625"
+            ]
+          ]
+        },
+        {
+          "t": "0",
+          "matrix": [
+            [
+              "58254222222222218493952/58254959393287353515625"
+            ]
+          ]
+        },
+        {
+          "t": "1/4",
+          "matrix": [
+            [
+              "58254222222222218493952/13107319260361004615478515625"
+            ]
+          ]
+        },
+        {
+          "t": "1/2",
+          "matrix": [
+            [
+              "58254222222222218493952/52429102276565838599853515625"
+            ]
+          ]
+        },
+        {
+          "t": "3/4",
+          "matrix": [
+            [
+              "8322031746031745499136/16852201043367699320068359375"
+            ]
+          ]
+        },
+        {
+          "t": "1",
+          "matrix": [
+            [
+              "8322031746031745499136/29959462048769310648193359375"
+            ]
+          ]
+        }
+      ],
+      "cost_slack": [
+        [
+          "8810921939405961328038524034989698544813122698771/21769120689644615001457782210777634846144717874400321044921875"
+        ]
+      ],
+      "lower_bound": "761917319348587452900402918539665671338650939424768/3047676049966792940428346517322773296540294189453125",
+      "scope": "minimum trace(C G) over all matrix Poisson envelopes on the full interval [-1,1]",
+      "formal_assistant_checked": false
+    },
+    "lower_bound": "761917319348587452900402918539665671338650939424768/3047676049966792940428346517322773296540294189453125",
+    "upper_bound": "1/4",
+    "gap": "6772572443128826734843164110611185690431754053/12190704199867171761713386069291093186161176757812500",
+    "tolerance": "1/100000",
+    "status": "global_gap_closed",
+    "objective": "trace(C G); G dominates (1-t^2) v(t)v(t)^T for all t in [-1,1]",
+    "limitation": "Optimality is within the fixed Poisson exponential ansatz, not the sharp spectral inequality.",
+    "formal_assistant_checked": false
+  },
+  "statistics": {
+    "exchange_rounds": 1,
+    "newton_steps": 66,
+    "sample_count": 9,
+    "model_calls": 0
+  },
+  "trace": [
+    {
+      "round": 1,
+      "sample_count": 9,
+      "lower": "761917319348587452900402918539665671338650939424768/3047676049966792940428346517322773296540294189453125",
+      "upper": "1/4",
+      "gap": "6772572443128826734843164110611185690431754053/12190704199867171761713386069291093186161176757812500",
+      "envelope_scale": "50000000000/50000013889",
+      "range_status": "scale_enclosed",
+      "newton_steps": 66,
+      "barrier_stages": 10,
+      "reached_final_barrier": true
+    }
+  ],
+  "seconds": 0.005492917
+}

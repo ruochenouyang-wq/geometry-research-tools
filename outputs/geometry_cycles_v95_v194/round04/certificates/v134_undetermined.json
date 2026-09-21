@@ -1,0 +1,408 @@
+{
+  "counterexample": {
+    "parameter": [
+      "-1"
+    ],
+    "trial": {
+      "azimuth_integral_factor": "pi",
+      "azimuth_m": 1,
+      "basis_convention": "standard_Condon_Shortley_P_l^m(t)*cos(m*phi)",
+      "coefficients": [
+        "1",
+        "37339/524288",
+        "-379147/16777216",
+        "-15303/8388608",
+        "143/524288",
+        "355/16777216"
+      ],
+      "degrees": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "energy_divided_by_azimuth_factor": "138897377139750311/44024445576151040",
+      "formal_assistant_checked": false,
+      "format": "explicit_sector_rayleigh_v95",
+      "full_space": "all_mean_zero_H1_functions_on_unit_S2",
+      "full_space_spectral_upper": "3333537051354007464/1423510216612555621",
+      "geometry": "unit_S2",
+      "harmonic_terms": [
+        {
+          "coefficient": "1",
+          "l": 1,
+          "m": 1,
+          "real_component": "cos"
+        },
+        {
+          "coefficient": "37339/524288",
+          "l": 2,
+          "m": 1,
+          "real_component": "cos"
+        },
+        {
+          "coefficient": "-379147/16777216",
+          "l": 3,
+          "m": 1,
+          "real_component": "cos"
+        },
+        {
+          "coefficient": "-15303/8388608",
+          "l": 4,
+          "m": 1,
+          "real_component": "cos"
+        },
+        {
+          "coefficient": "143/524288",
+          "l": 5,
+          "m": 1,
+          "real_component": "cos"
+        },
+        {
+          "coefficient": "355/16777216",
+          "l": 6,
+          "m": 1,
+          "real_component": "cos"
+        }
+      ],
+      "kinetic_divided_by_azimuth_factor": "132602819001767813/48026667901255680",
+      "mean_zero": true,
+      "norm_squared_divided_by_azimuth_factor": "129410019692050511/96053335802511360",
+      "potential_divided_by_azimuth_factor": "208137516657557789/528293346913812480",
+      "q_coefficients": [
+        "0",
+        "-1",
+        "2"
+      ],
+      "rayleigh_quotient": "3333537051354007464/1423510216612555621",
+      "scope": "explicit_real_spherical_harmonic_trial_on_unit_S2",
+      "status": "rayleigh_certified",
+      "strict_margin": null,
+      "threshold": null
+    }
+  },
+  "family": {
+    "box": [
+      [
+        "-1",
+        "1"
+      ]
+    ],
+    "directions": [
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "formal_assistant_checked": false,
+    "format": "affine_sphere_family_representation_v125",
+    "function_space": "all_mean_zero_H1_functions_on_unit_S2",
+    "geometry": "unit_S2",
+    "mean_zero": true,
+    "parameter_dimension": 1,
+    "parameters_quantifier": "every_real_point_in_closed_box",
+    "potential_degree_limit": 6,
+    "q0": [
+      "0",
+      "0",
+      "2"
+    ]
+  },
+  "formal_assistant_checked": false,
+  "format": "affine_sphere_family_universal_inequality_v134",
+  "limitation": "This is a fixed affine potential family statement, not the universal GN sharp constant.",
+  "lower_proof": {
+    "cell": [
+      [
+        "-1",
+        "1"
+      ]
+    ],
+    "claim": "uniform_lower_for_all_parameters_and_enclosure_of_parameter_minimum",
+    "family": {
+      "box": [
+        [
+          "-1",
+          "1"
+        ]
+      ],
+      "directions": [
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "formal_assistant_checked": false,
+      "format": "affine_sphere_family_representation_v125",
+      "function_space": "all_mean_zero_H1_functions_on_unit_S2",
+      "geometry": "unit_S2",
+      "mean_zero": true,
+      "parameter_dimension": 1,
+      "parameters_quantifier": "every_real_point_in_closed_box",
+      "potential_degree_limit": 6,
+      "q0": [
+        "0",
+        "0",
+        "2"
+      ]
+    },
+    "format": "affine_sphere_family_vertex_concavity_v129",
+    "lower": "172792310441497958729/73786976294838206464",
+    "maximum_lower": "172792310441497958729/73786976294838206464",
+    "minimum_gap": "6299739831/73786976294838206464",
+    "minimum_upper": "10057836215/4294967296",
+    "rule": "lowest_constrained_eigenvalue_is_infimum_of_affine_Rayleigh_forms_hence_concave",
+    "vertices": [
+      {
+        "point": [
+          "-1"
+        ],
+        "spectrum": {
+          "angular_tail_cannot_improve_best_upper": true,
+          "angular_tail_lower": "47/8",
+          "decimal_enclosure": [
+            "2.341772479618",
+            "2.341772479704"
+          ],
+          "eigenvalue_index_in_constrained_space": 1,
+          "exact_width": "6299739831/73786976294838206464",
+          "formal_assistant_checked": false,
+          "format": "projected_full_sphere_ground_v93",
+          "geometry": "unit_S2",
+          "lower": "172792310441497958729/73786976294838206464",
+          "mean_zero": true,
+          "omitted_azimuth_m_start": 2,
+          "potential_symmetry": "axisymmetric_polynomial_degree_at_most_6",
+          "q_coefficients": [
+            "0",
+            "-1",
+            "2"
+          ],
+          "range_proof": {
+            "kind": "quadratic_range_v5",
+            "lower": "-1/8",
+            "upper": "3"
+          },
+          "scope": "all_mean_zero_H1_functions_on_unit_S2",
+          "sectors": [
+            {
+              "azimuth_m": 0,
+              "decimal_enclosure": [
+                "3.110591728883",
+                "3.110591729079"
+              ],
+              "degree_start": 1,
+              "eigenvalue_index": 1,
+              "exact_width": "3687088651623/18889465931478580854784",
+              "formal_assistant_checked": false,
+              "format": "projected_sphere_sector_v91_v92",
+              "geometry": "unit_S2",
+              "lower": "58757416489486062453401/18889465931478580854784",
+              "lower_inertia": [
+                0,
+                0,
+                6
+              ],
+              "mean_zero": true,
+              "modes": 6,
+              "projection": "remove_l0",
+              "q_coefficients": [
+                "0",
+                "-1",
+                "2"
+              ],
+              "radial_tail_lower": "447/8",
+              "radial_tail_start": 7,
+              "range_proof": {
+                "kind": "quadratic_range_v5",
+                "lower": "-1/8",
+                "upper": "3"
+              },
+              "scope": "single_azimuth_sector_only",
+              "upper": "1710065887693/549755813888",
+              "upper_inertia": [
+                1,
+                0,
+                5
+              ],
+              "upper_kind": "upper_tail"
+            },
+            {
+              "azimuth_m": 1,
+              "decimal_enclosure": [
+                "2.341772479618",
+                "2.341772479704"
+              ],
+              "degree_start": 1,
+              "eigenvalue_index": 1,
+              "exact_width": "6299739831/73786976294838206464",
+              "formal_assistant_checked": false,
+              "format": "projected_sphere_sector_v91_v92",
+              "geometry": "unit_S2",
+              "lower": "172792310441497958729/73786976294838206464",
+              "lower_inertia": [
+                0,
+                0,
+                6
+              ],
+              "mean_zero": true,
+              "modes": 6,
+              "projection": "none",
+              "q_coefficients": [
+                "0",
+                "-1",
+                "2"
+              ],
+              "radial_tail_lower": "447/8",
+              "radial_tail_start": 7,
+              "range_proof": {
+                "kind": "quadratic_range_v5",
+                "lower": "-1/8",
+                "upper": "3"
+              },
+              "scope": "single_azimuth_sector_only",
+              "upper": "10057836215/4294967296",
+              "upper_inertia": [
+                1,
+                0,
+                5
+              ],
+              "upper_kind": "upper_tail"
+            }
+          ],
+          "status": "certified_target_met",
+          "tolerance": "1/10000000",
+          "upper": "10057836215/4294967296"
+        }
+      },
+      {
+        "point": [
+          "1"
+        ],
+        "spectrum": {
+          "angular_tail_cannot_improve_best_upper": true,
+          "angular_tail_lower": "47/8",
+          "decimal_enclosure": [
+            "2.341772479618",
+            "2.341772479704"
+          ],
+          "eigenvalue_index_in_constrained_space": 1,
+          "exact_width": "6299739831/73786976294838206464",
+          "formal_assistant_checked": false,
+          "format": "projected_full_sphere_ground_v93",
+          "geometry": "unit_S2",
+          "lower": "172792310441497958729/73786976294838206464",
+          "mean_zero": true,
+          "omitted_azimuth_m_start": 2,
+          "potential_symmetry": "axisymmetric_polynomial_degree_at_most_6",
+          "q_coefficients": [
+            "0",
+            "1",
+            "2"
+          ],
+          "range_proof": {
+            "kind": "quadratic_range_v5",
+            "lower": "-1/8",
+            "upper": "3"
+          },
+          "scope": "all_mean_zero_H1_functions_on_unit_S2",
+          "sectors": [
+            {
+              "azimuth_m": 0,
+              "decimal_enclosure": [
+                "3.110591728883",
+                "3.110591729079"
+              ],
+              "degree_start": 1,
+              "eigenvalue_index": 1,
+              "exact_width": "3687088651623/18889465931478580854784",
+              "formal_assistant_checked": false,
+              "format": "projected_sphere_sector_v91_v92",
+              "geometry": "unit_S2",
+              "lower": "58757416489486062453401/18889465931478580854784",
+              "lower_inertia": [
+                0,
+                0,
+                6
+              ],
+              "mean_zero": true,
+              "modes": 6,
+              "projection": "remove_l0",
+              "q_coefficients": [
+                "0",
+                "1",
+                "2"
+              ],
+              "radial_tail_lower": "447/8",
+              "radial_tail_start": 7,
+              "range_proof": {
+                "kind": "quadratic_range_v5",
+                "lower": "-1/8",
+                "upper": "3"
+              },
+              "scope": "single_azimuth_sector_only",
+              "upper": "1710065887693/549755813888",
+              "upper_inertia": [
+                1,
+                0,
+                5
+              ],
+              "upper_kind": "upper_tail"
+            },
+            {
+              "azimuth_m": 1,
+              "decimal_enclosure": [
+                "2.341772479618",
+                "2.341772479704"
+              ],
+              "degree_start": 1,
+              "eigenvalue_index": 1,
+              "exact_width": "6299739831/73786976294838206464",
+              "formal_assistant_checked": false,
+              "format": "projected_sphere_sector_v91_v92",
+              "geometry": "unit_S2",
+              "lower": "172792310441497958729/73786976294838206464",
+              "lower_inertia": [
+                0,
+                0,
+                6
+              ],
+              "mean_zero": true,
+              "modes": 6,
+              "projection": "none",
+              "q_coefficients": [
+                "0",
+                "1",
+                "2"
+              ],
+              "radial_tail_lower": "447/8",
+              "radial_tail_start": 7,
+              "range_proof": {
+                "kind": "quadratic_range_v5",
+                "lower": "-1/8",
+                "upper": "3"
+              },
+              "scope": "single_azimuth_sector_only",
+              "upper": "10057836215/4294967296",
+              "upper_inertia": [
+                1,
+                0,
+                5
+              ],
+              "upper_kind": "upper_tail"
+            }
+          ],
+          "status": "certified_target_met",
+          "tolerance": "1/10000000",
+          "upper": "10057836215/4294967296"
+        }
+      }
+    ],
+    "warning": "The maximum of vertex values is NOT a bound from above on the concave family maximum."
+  },
+  "statement": "For every parameter in the box and every mean-zero real H1(S2) function u, integral(|grad u|^2+q_parameter*u^2)>=threshold*integral(u^2).",
+  "status": "undetermined",
+  "threshold": "16478758854055209992383753753943289/7036874417766400000000000000000000"
+}

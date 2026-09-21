@@ -1,0 +1,84 @@
+{
+  "version": 275,
+  "recorded_at": "2026-09-18T18:46:51.682481+00:00",
+  "hypothesis": "A parity-specific second eigenvalue can strengthen Temple while separately retaining the omitted odd component.",
+  "change": "Added the even-m1 second free eigenvalue12 and odd-m1 ground6 comparisons, completed across cos/sin and all source sectors.",
+  "source_sha256": {
+    "adaptive_singular.py": "1167bda28722d4e0c8662bff77642ab4bc84727b94967928cb21ba41797e4c8e",
+    "test_adaptive_singular.py": "a43a156537cc3a48054a6aaae8f80f7189a01315d2678e4005135e559afc32ec"
+  },
+  "validation": {
+    "tests_passed": 17,
+    "replayed": true
+  },
+  "comparison": {
+    "full_radial": {
+      "width": "177567420503740558329682462785883812336092678750148498681381805362969528565949656628911160011387751094891347385530846360632354294988191318133860041702436027499838177280/51737039450122611889781072460323119246748888221438738652852510015569050274697278147344838951429433802208255457562251129595105585540486158830707564148240379801200385423995017",
+      "seconds": 0.04231479100000002,
+      "gap": {
+        "policy": "full_radial",
+        "form": {
+          "method": "centered_probability_L2",
+          "energy_factor": "145299218945/274877906944",
+          "mass_offset": "-1488247691773/824633720832",
+          "center": "-4/3",
+          "variance": "2/9",
+          "eta_upper": "129578687999/274877906944",
+          "sqrt_bits": 40,
+          "measure": "d_sigma/(4*pi)_on_unit_S2",
+          "embedding": {
+            "domain": "all_real_H1_functions_on_unit_S2",
+            "measure": "d_sigma/(4*pi)_on_unit_S2",
+            "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+            "energy_coefficient": "1",
+            "mass_coefficient": "1",
+            "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+          }
+        },
+        "space": "one_real_cos_m1_component_both_radial_parities",
+        "free_second_eigenvalue": "6",
+        "beta": "1127138249237/824633720832",
+        "sin_component_is_unitarily_equivalent": true
+      }
+    },
+    "even_odd": {
+      "width": "177567420503740558329682462785883812336092678750148498681381805362969528565949656628911160011387751094891347385530846360632354294988191318133860041702436027499838177280/249030873449716045282798345586755497420564648251367562666134054870799849277224677818908212865899592589798876133091816478416456775839926195037242142259543085242106995310664227",
+      "seconds": 0.03234762500000002,
+      "gap": {
+        "policy": "even_odd",
+        "form": {
+          "method": "centered_probability_L2",
+          "energy_factor": "145299218945/274877906944",
+          "mass_offset": "-1488247691773/824633720832",
+          "center": "-4/3",
+          "variance": "2/9",
+          "eta_upper": "129578687999/274877906944",
+          "sqrt_bits": 40,
+          "measure": "d_sigma/(4*pi)_on_unit_S2",
+          "embedding": {
+            "domain": "all_real_H1_functions_on_unit_S2",
+            "measure": "d_sigma/(4*pi)_on_unit_S2",
+            "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+            "energy_coefficient": "1",
+            "mass_coefficient": "1",
+            "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+          }
+        },
+        "space": "one_real_cos_m1_even_radial_component",
+        "free_second_eigenvalue": "12",
+        "beta": "3742524190247/824633720832",
+        "odd_component_free_ground": "6",
+        "odd_component_lower": "1127138249237/824633720832",
+        "reflection_invariant_potential": true,
+        "even_and_odd_cover_full_radial_m1": true,
+        "sin_component_is_unitarily_equivalent": true
+      }
+    }
+  },
+  "outcome": "same_trial_stronger_complete_lower_bound",
+  "limitations": [
+    "Even-potential symmetry is required.",
+    "A weaker odd lower bound can still limit the complete m1 result."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

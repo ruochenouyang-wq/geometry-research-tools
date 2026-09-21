@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/PROJECT/outputs/geometry_retests_v195_v234/acceptance.py", line 191, in <module>
+    else: main()
+  File "/PROJECT/outputs/geometry_retests_v195_v234/acceptance.py", line 173, in main
+    stage_rows = stages()
+  File "/PROJECT/outputs/geometry_retests_v195_v234/acceptance.py", line 159, in stages
+    assert callable(getattr(module, name.split('.')[-1]))
+AttributeError: module 'parity_spectrum' has no attribute ')'

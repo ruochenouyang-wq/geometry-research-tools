@@ -1,0 +1,34 @@
+{
+  "version": 264,
+  "recorded_at": "2026-09-18T18:41:43.135853+00:00",
+  "hypothesis": "Amplitude scaling changes the error target, while zero amplitude should eliminate the entire search.",
+  "change": "Normalize the planning target by absolute amplitude, solve constant degeneracies directly, and preserve original offset/axis/source binding.",
+  "source_sha256": {
+    "adaptive_approx.py": "d2945485ec862ca596d51aa7303441c117e5b77b85adaf4db9da91aa67c9f16c",
+    "test_adaptive_approx.py": "ef8b4c21476b7c432fde8f64026c7f7cd1056b5170be994d7c0eddd40ae8868f"
+  },
+  "validation": {
+    "unit_tests_passed": 11,
+    "scaled_errors_exactly_match_amplitude_squared": true,
+    "zero_amplitude_old_verifier_accepts": true
+  },
+  "comparison": {
+    "case": {
+      "kind": "axis_profile",
+      "profile": "abs_power",
+      "exponent": "-1/4",
+      "amplitude": "0",
+      "offset": "17/11",
+      "axis": 0
+    },
+    "previous_shape_evaluations": 3,
+    "new_shape_evaluations": 0,
+    "certificate_error": "0",
+    "status": "met"
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Normalization is specific to the supported affine profile family."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

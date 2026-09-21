@@ -1,0 +1,17 @@
+{
+  "geometry": "unit_sphere",
+  "function_space": "full_sphere",
+  "eigenvalue_index": 1,
+  "parameters": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "potential": "(a+2*b-c+3*d)*t",
+  "penalty": "(a*a+b*b+c*c+d*d)/2",
+  "domain": {
+    "kind": "all_real"
+  },
+  "threshold": "-4"
+}

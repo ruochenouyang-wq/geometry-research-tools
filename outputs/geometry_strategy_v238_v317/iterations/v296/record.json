@@ -1,0 +1,27 @@
+{
+  "version": 296,
+  "recorded_at": "2026-09-18T18:41:24.512576+00:00",
+  "hypothesis": "Consecutive proved affine transformations can be composed into one canonical step.",
+  "change": "Normalize rotation, shift and signed L2 scaling prefixes; independently replay source proof and retain exact transform order.",
+  "source_sha256": {
+    "proof_transport.py": "c613bb0460968162482ca4928f522856c20c848e1ed5210ae07887d6f954c8ca",
+    "test_proof_transport.py": "19387d127d482c50be6dd8b5b513728c0497466fc24001b374726cc6e1b60269"
+  },
+  "validation": {
+    "tests_passed": 10,
+    "nested_transport_checks": 5,
+    "normalized_transport_checks": 1,
+    "nested_json_bytes": 3037,
+    "normalized_json_bytes": 1528
+  },
+  "comparison": {
+    "before": "Five nested transport checks for the development chain.",
+    "after": "One affine check; same original source proof still replayed."
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Normalization itself first verifies the original chain; reductions apply to later replay and serialized proof size.",
+    "Sources under selection/intersection are preserved, not erased."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

@@ -1,0 +1,82 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {},
+  "certificates": [
+    {
+      "format": "projected_full_sphere_ground_v93",
+      "path": "certs/C19_one_original_spectrum.json",
+      "sha256": "11c2d4112dcef2fc27bf4c68bfa8ed88c3276c6f39a27790ed18c06bf6df6d57",
+      "verified": true
+    },
+    {
+      "format": "reused_sphere_threshold",
+      "path": "certs/C19_reused_decision_0.json",
+      "sha256": "733aeb6c2ba364b9adcf5f7b757bd2ee8d07149a9e109e55af33445efe2babb0",
+      "verified": true
+    },
+    {
+      "format": "reused_sphere_threshold",
+      "path": "certs/C19_reused_decision_1.json",
+      "sha256": "7f36a6f3f108eef75fe1733f073e48b0fcc749cdf55286c6fdef5debdc73200e",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "decisions": [
+    "proved",
+    "refuted_by_spectral_existence"
+  ],
+  "elapsed_seconds": 0.047194,
+  "id": "C19",
+  "negative_checks": {
+    "corrupt_hash": {
+      "exception": "ValueError",
+      "message": "Certificate content hash mismatch",
+      "rejected": true
+    },
+    "wrong_q": {
+      "exception": "ValueError",
+      "message": "The reused proof belongs to a different potential",
+      "rejected": true
+    },
+    "wrong_scope": {
+      "exception": "ValueError",
+      "message": "Verified full mean-zero evidence is required",
+      "rejected": true
+    }
+  },
+  "new_downstream_spectral_solves": 0,
+  "notes": [],
+  "original_acceptance": [
+    "One replayed full-space certificate with L>=119/50 and U<12/5 yields proved and refuted-by-spectral-existence respectively.",
+    "Preserve certificate identity and avoid recomputing the spectrum in both downstream steps; any explicit violating-function extension must be separately checked.",
+    "Reject changed q or scope bindings and corrupt content hashes."
+  ],
+  "original_input": {
+    "q": [
+      "0",
+      "0",
+      "2"
+    ],
+    "thresholds": [
+      "119/50",
+      "12/5"
+    ],
+    "workflow": [
+      "certify",
+      "persist_by_content_hash",
+      "reload_and_verify",
+      "derive_two_threshold_decisions"
+    ]
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "solved",
+  "stored_certificate_id": "1b212d9754ecc1c6527c03e050592b82566780577d2fd57ff502911495e84b85",
+  "title": "同一谱证书支持两个后续判定"
+}

@@ -1,0 +1,42 @@
+{
+  "version": 269,
+  "recorded_at": "2026-09-18T18:13:59.238372+00:00",
+  "hypothesis": "Complete residual powers identify useful next basis directions.",
+  "change": "Added merged residual functions, a derivative-inverse exponent frontier, and budgeted certified-width greedy selection.",
+  "source_sha256": {
+    "adaptive_singular.py": "f3a4dc3bc938b76ea68b6168c00f10b97bee8bd5c1f409b55bd6cfdc982ebcc4",
+    "test_adaptive_singular.py": "e109e3ad0c648faa6fe0d6fef63080bf31fafc14ae3f133f42a21ac49fbc01be"
+  },
+  "validation": {
+    "tests_passed": 5,
+    "replayed": true
+  },
+  "comparison": {
+    "nested": {
+      "width": "1270594304738190250536865293249600195470757611802944120273899200616606678671949062868375973465701333005011554246335178421300943222735684612432912128769971826204868608/1420921684384654220857516658359407544512121424150295435526475006984601303329301979172437412888173835036785989619068882944178958473418720069680244357575484496753066412067",
+      "seconds": 0.03775766700000001,
+      "powers": [
+        "0",
+        "7/4",
+        "2",
+        "7/2"
+      ]
+    },
+    "residual": {
+      "width": "12749220124695271783927778916161505492140803167203654933730961704817493008685446549485155953999926530362387882740260906130039372023627567327820381818400295354368/9498871286685039372246619070906829169097680929576146649428615003840543796488491210139392988240215153804603590908399360467163241283992815661196874932246584310504205",
+      "seconds": 0.072811459,
+      "powers": [
+        "0",
+        "7/4",
+        "2",
+        "15/4"
+      ]
+    }
+  },
+  "outcome": "bounded_alternative_policy_evaluated",
+  "limitations": [
+    "Frontier ranking is heuristic, with final certificate selection.",
+    "More candidate checks can cost more than nested enumeration."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

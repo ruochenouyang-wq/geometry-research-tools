@@ -1,0 +1,142 @@
+{
+  "completed_utc": "2026-09-11T11:06:50.777135+00:00",
+  "cycle": 1,
+  "file_sha256": {
+    "round01/STAGES.json": "2111346c41cd93535e899bca48cf9e16907d8e8cd9496043ed7ec549349b7f99",
+    "round01/test_witness_review.py": "cf6a74a6f7a86168a9e4acb1380cd448b90ea8dcfa2a6b4990be130e6d5f5aa2",
+    "test_witness.py": "4f2f0c27de7425ec3778e69f5fb6ea01e197e1ba65e6e159075017a0167ec959",
+    "witness.py": "e9e42c07bc30334f34f0590c98617c14b13f3217ea6ff9c6f8f5cb3decb712fe"
+  },
+  "first_version": 95,
+  "last_version": 104,
+  "stages": [
+    {
+      "callable": "witness.rayleigh_certificate",
+      "capability": "精确任意有理球谐Rayleigh证书",
+      "evidence": [
+        "round01/results/V95.json",
+        "round01/certs/V95_rayleigh.json"
+      ],
+      "outcome": "商722/303，比阈值12/5严格小26/1515；系数分母不受旧小预算限制。",
+      "version": 95
+    },
+    {
+      "callable": "witness.select_sector",
+      "capability": "从完整谱证书选择候选方位扇区",
+      "evidence": [
+        "round01/results/V96.json",
+        "round01/certs/V96_selection.json"
+      ],
+      "outcome": "选m=1；m=0不能给本阈值的违反者，显式保留选择尚未展示函数的限制。",
+      "version": 96
+    },
+    {
+      "callable": "witness.mass_normalized_proposal",
+      "capability": "质量归一化最低本征向量提议",
+      "evidence": [
+        "round01/results/V97.json",
+        "round01/certs/V97_rationalized_trial.json"
+      ],
+      "outcome": "浮点单位质量向量给R约2.38266866的四模候选，低于单模2.4；浮点数本身不作证。",
+      "version": 97
+    },
+    {
+      "callable": "witness.quantize_proposal",
+      "capability": "逐级有理量化且保留最佳商",
+      "evidence": [
+        "round01/results/V98.json",
+        "round01/certs/V98_bits2.json",
+        "round01/certs/V98_bits4.json",
+        "round01/certs/V98_bits8.json",
+        "round01/certs/V98_bits16.json",
+        "round01/certs/V98_bits24.json"
+      ],
+      "outcome": "8/16/24bits改善；4bits没有改善而保留旧候选，不假设分母更大必更好。",
+      "version": 98
+    },
+    {
+      "callable": "witness.sparsify",
+      "capability": "质量贡献排序的稀疏截断与精确接受",
+      "evidence": [
+        "round01/results/V99.json",
+        "round01/certs/V99_noisy_baseline.json",
+        "round01/certs/V99_keep1.json",
+        "round01/certs/V99_keep2.json"
+      ],
+      "outcome": "保留一项使商回到2.4，明确拒绝；删除P7^1噪声保留两项严格改善。",
+      "version": 99
+    },
+    {
+      "callable": "witness.residual_certificate",
+      "capability": "完整投影残差与所有势乘法高阶",
+      "evidence": [
+        "round01/results/V100.json",
+        "round01/certs/V100_candidate_residual.json",
+        "round01/certs/V100_projection_calibration.json"
+      ],
+      "outcome": "校准移除l0系数1/3，完整归一化残差平方4/15；不误用未投影的3/5。",
+      "version": 100
+    },
+    {
+      "callable": "witness.residual_enrich",
+      "capability": "残差驱动新增试探支持",
+      "evidence": [
+        "round01/results/V101.json",
+        "round01/certs/V101_enriched_trial.json",
+        "round01/certs/V101_zero_residual.json"
+      ],
+      "outcome": "自动新增degree3并严格降低R；q=0精确本征函数无新增degree，保留support_did_not_grow。",
+      "version": 101
+    },
+    {
+      "callable": "witness.two_trial_ritz",
+      "capability": "二维Ritz精确下界及实际试探上界",
+      "evidence": [
+        "round01/results/V102.json",
+        "round01/certs/V102_ritz.json",
+        "round01/certs/V102_actual_trial.json"
+      ],
+      "outcome": "二维最小商误差小于1e-8；Ritz下界仅限此二维空间，禁止充当完整球面谱下界。",
+      "version": 102
+    },
+    {
+      "callable": "witness.residual_line_search",
+      "capability": "负残差方向的驻点及有理线搜索",
+      "evidence": [
+        "round01/results/V103.json",
+        "round01/certs/V103_line_trial.json",
+        "round01/certs/V103_exact_root_trial.json"
+      ],
+      "outcome": "前者从2.4降低到约2.3826686613；后者有理驻点精确获得R=2。根转浮点前按有理系数归一化，避免缩放溢出。",
+      "version": 103
+    },
+    {
+      "callable": "witness.find_counterexample",
+      "capability": "自动构造显式球谐违反者",
+      "evidence": [
+        "round01/results/V104.json",
+        "round01/certs/V104_counterexample.json",
+        "round01/certs/V104_honest_not_found.json"
+      ],
+      "outcome": "自动选m=1并给严格R<threshold及明确球谐系数；q=0阈值1未找到，未伪称证明或反例。",
+      "version": 104
+    }
+  ],
+  "validation": {
+    "all_passed": true,
+    "independent_review": "round01/INDEPENDENT_REVIEW.md",
+    "saved_records_replayed": 21,
+    "test_runs": [
+      {
+        "output_tail": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.034s\n\nOK\n",
+        "passed": true,
+        "test": "test_witness.py"
+      },
+      {
+        "output_tail": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.066s\n\nOK\n",
+        "passed": true,
+        "test": "round01/test_witness_review.py"
+      }
+    ]
+  }
+}

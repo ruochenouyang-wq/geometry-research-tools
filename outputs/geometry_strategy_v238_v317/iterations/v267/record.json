@@ -1,0 +1,152 @@
+{
+  "version": 267,
+  "recorded_at": "2026-09-18T18:56:33.986905+00:00",
+  "hypothesis": "Meeting precision with the smallest error is not the same as meeting precision with the smallest certificate.",
+  "change": "Minimize expanded coefficient slots over the configured finite model family, prune remaining degrees with a rigorous core-error cost lower bound, and include finite sqrt precision in feasibility.",
+  "source_sha256": {
+    "adaptive_approx.py": "ed8ac129c72adf3bed62b1872636cab1403910c91e762eb34759f346fe20b98d",
+    "test_adaptive_approx.py": "0f04f111d11aec5271db044e5c85f810f8862912bfa50e9d4128799fc8a2af02"
+  },
+  "validation": {
+    "unit_tests_passed": 20,
+    "old_certificate_exhaustive_comparisons": 336,
+    "minimum_slots_matches_exhaustive": true,
+    "initial_test_failures": 2,
+    "failure_resolution": "Separate newly introduced core cost-bound comparisons from existing per-degree level comparisons; both are now counted."
+  },
+  "comparison": {
+    "before": [
+      {
+        "tolerance": "1/100",
+        "cost": {
+          "shape_evaluations": 13,
+          "shape_cache_hits": 0,
+          "shape_requests": 13,
+          "level_comparisons": 21,
+          "planning_cache_supplied": false,
+          "sqrt_comparisons": 1,
+          "certificate_builds": 1,
+          "certificate_replays": 1
+        },
+        "status": "met",
+        "degree": 3,
+        "levels": 10,
+        "root_ratio": "2/3",
+        "expanded_polynomial_coefficient_slots": 41,
+        "error_upper": "9861451195/1099511627776"
+      },
+      {
+        "tolerance": "1/10000",
+        "cost": {
+          "shape_evaluations": 28,
+          "shape_cache_hits": 0,
+          "shape_requests": 28,
+          "level_comparisons": 21,
+          "planning_cache_supplied": false,
+          "sqrt_comparisons": 1,
+          "certificate_builds": 1,
+          "certificate_replays": 1
+        },
+        "status": "met",
+        "degree": 7,
+        "levels": 22,
+        "root_ratio": "2/3",
+        "expanded_polynomial_coefficient_slots": 177,
+        "error_upper": "88097483/1099511627776"
+      },
+      {
+        "tolerance": "1/100000000",
+        "cost": {
+          "shape_evaluations": 55,
+          "shape_cache_hits": 0,
+          "shape_requests": 55,
+          "level_comparisons": 14,
+          "planning_cache_supplied": false,
+          "sqrt_comparisons": 1,
+          "certificate_builds": 1,
+          "certificate_replays": 1
+        },
+        "status": "met",
+        "degree": 12,
+        "levels": 62,
+        "root_ratio": "3/4",
+        "expanded_polynomial_coefficient_slots": 807,
+        "error_upper": "10611/1099511627776"
+      }
+    ],
+    "after": [
+      {
+        "tolerance": "1/100",
+        "cost": {
+          "shape_evaluations": 11,
+          "shape_cache_hits": 0,
+          "shape_requests": 11,
+          "level_comparisons": 7,
+          "planning_cache_supplied": false,
+          "shape_candidates_pruned_by_cost_bound": 64,
+          "core_bound_comparisons": 21,
+          "sqrt_comparisons": 1,
+          "certificate_builds": 1,
+          "certificate_replays": 1
+        },
+        "status": "met",
+        "minimum_slots_within_configured_family": true,
+        "degree": 5,
+        "levels": 6,
+        "root_ratio": "1/2",
+        "expanded_polynomial_coefficient_slots": 37,
+        "error_upper": "5305103255/549755813888"
+      },
+      {
+        "tolerance": "1/10000",
+        "cost": {
+          "shape_evaluations": 27,
+          "shape_cache_hits": 0,
+          "shape_requests": 27,
+          "level_comparisons": 14,
+          "planning_cache_supplied": false,
+          "shape_candidates_pruned_by_cost_bound": 48,
+          "core_bound_comparisons": 21,
+          "sqrt_comparisons": 1,
+          "certificate_builds": 1,
+          "certificate_replays": 1
+        },
+        "status": "met",
+        "minimum_slots_within_configured_family": true,
+        "degree": 7,
+        "levels": 22,
+        "root_ratio": "2/3",
+        "expanded_polynomial_coefficient_slots": 177,
+        "error_upper": "88097483/1099511627776"
+      },
+      {
+        "tolerance": "1/100000000",
+        "cost": {
+          "shape_evaluations": 54,
+          "shape_cache_hits": 0,
+          "shape_requests": 54,
+          "level_comparisons": 7,
+          "planning_cache_supplied": false,
+          "shape_candidates_pruned_by_cost_bound": 21,
+          "core_bound_comparisons": 21,
+          "sqrt_comparisons": 1,
+          "certificate_builds": 1,
+          "certificate_replays": 1
+        },
+        "status": "met",
+        "minimum_slots_within_configured_family": true,
+        "degree": 16,
+        "levels": 44,
+        "root_ratio": "2/3",
+        "expanded_polynomial_coefficient_slots": 749,
+        "error_upper": "2731/274877906944"
+      }
+    ]
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Optimality concerns expanded coefficient slots only within the finite configured family, not runtime, all ratios, variable-degree meshes, general functions, or spectrum.",
+    "Budget exhaustion suppresses the finite-family minimum-cost claim."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

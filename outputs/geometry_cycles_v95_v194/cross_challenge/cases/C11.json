@@ -1,0 +1,56 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {},
+  "certificates": [
+    {
+      "format": "harmonic_exclusion_full_ground_v149",
+      "path": "certs/C11_full_l01_excluded.json",
+      "sha256": "6287edf20f988f4ca66275ec8e8f363e2d3006bd7c7d3b4f33894ef3e9381eed",
+      "verified": true
+    },
+    {
+      "format": "explicit_sector_rayleigh_v95",
+      "path": "certs/C11_trial_3z2_minus1.json",
+      "sha256": "8560ab8cc7f0068076a1ca009dbdecea46ee1d7a70aaf535e7766f8f5efcd0ac",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "constraints_checked": [
+    "1",
+    "x",
+    "y",
+    "z"
+  ],
+  "elapsed_seconds": 0.003798,
+  "id": "C11",
+  "lower": "6",
+  "notes": [],
+  "original_acceptance": [
+    "Ground energy is exactly 6; prove all constraints and accept an l=2 trial such as 3z^2-1.",
+    "Excluding only m=0,l=1 is insufficient because the x/y modes remain."
+  ],
+  "original_input": {
+    "orthogonality": [
+      "1",
+      "x",
+      "y",
+      "z"
+    ],
+    "q": [
+      "0"
+    ]
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "solved",
+  "title": "删除完整l=0和l=1空间",
+  "transverse_orthogonality_rule": "azimuthal integral of x or y times an axisymmetric function is zero",
+  "trial": "3z²-1",
+  "upper": "6"
+}

@@ -1,0 +1,33 @@
+{
+  "version": 307,
+  "recorded_at": "2026-09-18T18:57:27.428607+00:00",
+  "hypothesis": "Research relations require checked premises, full original scope and applicable conditions; a graph must be replayed from evidence rather than trusting saved flags.",
+  "change": "Add exact bound weakening and L2 approximation relation rules, explicit versioned extension checkers, conservative scope/condition binding, read-only graph reconstruction and full relation replay; retain callback identities for cache safety.",
+  "source_sha256": {
+    "evidence_store.py": "132b9913ddbbba0ce38f58722fb13cd196bb163046d95e9c207246c05e20ea78",
+    "test_evidence_store.py": "8db41d5d75072e09189c1b0457ba387656d7d14dffb528e79cb1accef53542dd"
+  },
+  "validation": {
+    "tests_run": 13,
+    "passed": true,
+    "log": "test_298_full_content_dedup (test_evidence_store.EvidenceTests) ... ok\ntest_299_strict_json_and_complete_summary (test_evidence_store.EvidenceTests) ... ok\ntest_300_tamper_and_failed_atomic_publish (test_evidence_store.EvidenceTests) ... ok\ntest_301_paths_sizes_and_unknown_format (test_evidence_store.EvidenceTests) ... ok\ntest_302_default_math_replay_and_callback_boundary (test_evidence_store.EvidenceTests) ... ok\ntest_303_cache_binds_full_content_version_and_integrity (test_evidence_store.EvidenceTests) ... ok\ntest_304_problem_binding_including_cached_results (test_evidence_store.EvidenceTests) ... ok\ntest_305_typed_graph_does_not_promote_claims (test_evidence_store.EvidenceTests) ... ok\ntest_306_cycles_cannot_justify_the_original_claim (test_evidence_store.EvidenceTests) ... ok\ntest_307_approximation_never_becomes_spectral_bound (test_evidence_store.EvidenceTests) ... ok\ntest_307_bound_rules_require_conditions_scope_and_source (test_evidence_store.EvidenceTests) ... ok\ntest_307_custom_rule_needs_verified_premise_and_explicit_boolean (test_evidence_store.EvidenceTests) ... ok\ntest_307_read_only_replay_tamper_cycles_and_explicit_custom_rules (test_evidence_store.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.226s\n\nOK\n"
+  },
+  "comparison": {
+    "certified_upper_lower_and_matching_L2_approximation": "verified",
+    "tightened_unproved_upper_wrong_approximant_spectral_use_of_L2": "rejected",
+    "false_unknown_conditions_or_broader_scope": "rejected",
+    "unknown_equivalence_rule_and_heuristic": "unverified",
+    "versioned_implication_checker_with_verified_premise": "accepted",
+    "candidate_premise": "rejected before checker",
+    "read_only_replay": "passes while all writes disabled",
+    "tampered_manifest_or_dependency_cycle": "rejected"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Builtin relations only weaken an already certified bound or report a verified approximation of the exact recorded function.",
+    "Arbitrary equivalence and implication have no automatic proof rule; custom checking code is an explicit trust dependency.",
+    "Scope compatibility is exact equality, not general domain inclusion or theorem proving.",
+    "Graph structure can be valid with unverified research ideas; replay reports both separately."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

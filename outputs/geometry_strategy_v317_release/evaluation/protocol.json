@@ -1,0 +1,372 @@
+{
+  "budgets": {
+    "easy_seconds": 3,
+    "hard_seconds": 10,
+    "mutation_seconds_each": 3,
+    "scope": "solver + exact independent replay + attempt selection; same whole-task deadline for every method",
+    "setup_seconds_per_session": 30,
+    "timeout": "required Unix SIGALRM on main thread; BaseException + parent subprocess watchdog; no cooperative fallback"
+  },
+  "configurations": [
+    {
+      "approximation": {
+        "degree": 1,
+        "levels": 1,
+        "sqrt_bits": 24
+      },
+      "name": "small",
+      "spectrum": {
+        "bits": 12,
+        "max_m": 1,
+        "modes": 2,
+        "near_tail": 0,
+        "sqrt_bits": 24
+      }
+    },
+    {
+      "approximation": {
+        "degree": 3,
+        "levels": 3,
+        "sqrt_bits": 28
+      },
+      "name": "medium",
+      "spectrum": {
+        "bits": 18,
+        "max_m": 2,
+        "modes": 3,
+        "near_tail": 0,
+        "sqrt_bits": 28
+      }
+    },
+    {
+      "approximation": {
+        "degree": 4,
+        "levels": 6,
+        "sqrt_bits": 32
+      },
+      "name": "large",
+      "spectrum": {
+        "bits": 26,
+        "max_m": 3,
+        "modes": 5,
+        "near_tail": 0,
+        "sqrt_bits": 32
+      }
+    }
+  ],
+  "holdout": {
+    "constant_offsets": [
+      "-5/11",
+      "-3/11",
+      "2/11",
+      "7/11"
+    ],
+    "count": 14,
+    "failures": "Unsupported exponents/spaces, invalid responses, timeout and loose certificates remain in denominators and full raw results",
+    "fixed_minus_quarter": "regression only, never a new holdout",
+    "layout": [
+      "constant_full",
+      "constant_mean_zero",
+      "easy_step_spectrum",
+      "step_approximation",
+      "negative_power_spectrum_1e-6_mean_zero",
+      "negative_power_spectrum_1e-6_full",
+      "negative_power_spectrum_1e-8_mean_zero",
+      "negative_power_spectrum_1e-8_full",
+      "negative_power_spectrum_1e-10_mean_zero",
+      "negative_power_spectrum_1e-10_full",
+      "negative_power_approximation_1e-6",
+      "negative_power_approximation_1e-8",
+      "negative_power_approximation_1e-10",
+      "negative_step_spectrum_1e-8"
+    ],
+    "negative_amplitudes": [
+      "-1/3",
+      "-2/5",
+      "-3/5"
+    ],
+    "negative_exponents": [
+      "-2/9",
+      "-2/11",
+      "-3/10",
+      "-4/11",
+      "-2/5",
+      "-3/7",
+      "-4/9"
+    ],
+    "parameter_scope": "within known mathematical families only",
+    "positive_step_amplitudes": [
+      "1/7",
+      "2/7",
+      "3/7",
+      "4/7"
+    ],
+    "sampler": "SHA256(seed || 8-byte counter), modulo each predeclared list; no success/stability/support rejection or resampling",
+    "tolerances": [
+      "1/1000000",
+      "1/100000000",
+      "1/10000000000"
+    ]
+  },
+  "methods": [
+    "old_default",
+    "fixed_increasing",
+    "validation_selected_fixed",
+    "frozen_v317",
+    "release"
+  ],
+  "reliability": "wrong original function, wrong space, impossible bound and status-only certificate rejected; reliability failure blocks improvement claim",
+  "repetitions": 5,
+  "replay": "frozen v317 verification.verify_any with original function, conclusion kind, space and tolerance bound; independent constant eigenvalue inclusion; never trust returned status flags",
+  "reward_rules": {
+    "accuracy": "An additional robust heldout success over the strongest robust-success baseline, without lost successes or reliability failure, supports a limited within-family accuracy benefit.",
+    "model_claims": "actual model input/output/reasoning tokens, model identity, monetary cost and 30-min/8-hour comparison unknown; characters/bytes are not token proxies",
+    "no_aggregate": "Report accuracy, reliability, runtime, automation, support, interaction and usability separately; no aggregate reward hides regressions.",
+    "resources": "At equal robust successes and no per-case success loss, >=20% median full-session wall and CPU reduction versus each equal-success baseline is a preliminary runtime benefit; also show online-only results and validation preparation charged to selected baseline once."
+  },
+  "selection": "5 independent cold sessions/configuration on all 13 validation cases; maximize total budget-valid successes, then replay-valid certificates, then smallest predeclared configuration; never timing or per-task oracle",
+  "session_design": "new subprocess per method/repetition; methods rotated by repetition; same task order rotated by repetition; session-local caches allowed, no cache across sessions; all imports/constructor setup and first-use lazy imports charged",
+  "statistics": "report 5 raw session totals, median/min/max; paired wins and losses against every baseline, per-case successes and 5/5 robust successes, family and scope breakdown; repeats are not independent mathematical tasks; small-sample timings descriptive",
+  "validation": [
+    {
+      "budget_seconds": 3.0,
+      "classification": "public_validation",
+      "family": "easy",
+      "id": "V01",
+      "independent_exact_value": "-2/5",
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "-2/5",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": false,
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "public_validation",
+      "family": "easy",
+      "id": "V02",
+      "independent_exact_value": "13/5",
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "3/5",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "public_validation",
+      "family": "easy",
+      "id": "V03",
+      "task": {
+        "function": {
+          "amplitude": "1/3",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "public_validation",
+      "family": "easy",
+      "id": "V04",
+      "task": {
+        "function": {
+          "amplitude": "3/4",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "1/5",
+          "profile": "step"
+        },
+        "kind": "approximation",
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "public_validation",
+      "family": "negative_power_spectrum",
+      "id": "V05",
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/8",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "public_validation",
+      "family": "negative_power_spectrum",
+      "id": "V06",
+      "task": {
+        "function": {
+          "amplitude": "-1/2",
+          "axis": 2,
+          "exponent": "-1/3",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/100000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "known_failed_structure_regression",
+      "family": "negative_power_spectrum",
+      "id": "V07",
+      "task": {
+        "function": {
+          "amplitude": "-1/2",
+          "axis": 2,
+          "exponent": "-3/8",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "full_space_support_challenge",
+      "family": "negative_power_spectrum",
+      "id": "V08",
+      "task": {
+        "function": {
+          "amplitude": "-1/3",
+          "axis": 2,
+          "exponent": "-1/5",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": false,
+        "tolerance": "1/100000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "known_failed_structure_regression",
+      "family": "step_spectrum_hard",
+      "id": "V09",
+      "task": {
+        "function": {
+          "amplitude": "-1/2",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/100000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "fixed_minus_quarter_regression",
+      "family": "negative_power_approximation",
+      "id": "V10",
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/1000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "fixed_minus_quarter_regression",
+      "family": "negative_power_approximation",
+      "id": "V11",
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/100000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "fixed_minus_quarter_regression",
+      "family": "negative_power_approximation",
+      "id": "V12",
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "outside_current_approximation_support",
+      "family": "negative_power_approximation",
+      "id": "V13",
+      "task": {
+        "function": {
+          "amplitude": "-1/3",
+          "axis": 2,
+          "exponent": "-1/5",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/100000000"
+      }
+    }
+  ],
+  "version": "geometry_release_preregistered_v2"
+}

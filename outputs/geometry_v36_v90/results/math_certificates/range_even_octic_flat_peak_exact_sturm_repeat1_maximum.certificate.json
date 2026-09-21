@@ -1,0 +1,123 @@
+{
+  "budget_exhausted": false,
+  "coefficient_order": "ascending",
+  "constant_polynomial": false,
+  "coordinate": "x_squared",
+  "critical_remainder": [
+    "0"
+  ],
+  "critical_square_free": [
+    "-1/3",
+    "1"
+  ],
+  "derivative": [
+    "4/27",
+    "-4/3",
+    "4",
+    "-4"
+  ],
+  "derivative_gcd": [
+    "1/9",
+    "-2/3",
+    "1"
+  ],
+  "error_bound": "0",
+  "formal_assistant_checked": false,
+  "format": "exact_sturm_extrema_v1",
+  "interior_critical_count": 1,
+  "interval": [
+    "-1",
+    "1"
+  ],
+  "isolation_complete": true,
+  "lower_source": {
+    "at": "1/3",
+    "coordinate": "x_squared",
+    "kind": "rational_coordinate",
+    "value": "0"
+  },
+  "max_nodes": 32,
+  "maximum_lower": "0",
+  "maximum_upper": "0",
+  "partition": [
+    {
+      "bounds": {
+        "bernstein": [
+          "-16/81",
+          "8/81"
+        ],
+        "critical_remainder": [
+          "0",
+          "0"
+        ],
+        "rational_root": [
+          "0",
+          "0"
+        ],
+        "stationary_taylor": [
+          "-217/1296",
+          "32/81"
+        ]
+      },
+      "critical_value_bounds": [
+        "0",
+        "0"
+      ],
+      "exact_root": "1/3",
+      "interval": [
+        "0",
+        "1"
+      ],
+      "kind": "isolated",
+      "root_count": 1
+    }
+  ],
+  "partition_cells": 1,
+  "polynomial": [
+    "-1/81",
+    "0",
+    "4/27",
+    "0",
+    "-2/3",
+    "0",
+    "4/3",
+    "0",
+    "-1"
+  ],
+  "rational_critical_points": [
+    {
+      "at": "1/3",
+      "derivative_multiplicity": 3,
+      "value": "0"
+    }
+  ],
+  "refinement_nodes": 0,
+  "sample_witness": {
+    "at": "1/3",
+    "coordinate": "x_squared",
+    "value": "0"
+  },
+  "status": "exact",
+  "sturm_sequence": [
+    [
+      "-1/3",
+      "1"
+    ],
+    [
+      "1"
+    ]
+  ],
+  "target_met": true,
+  "tolerance": "1/1000000000000",
+  "working_interval": [
+    "0",
+    "1"
+  ],
+  "working_polynomial": [
+    "-1/81",
+    "4/27",
+    "-2/3",
+    "4/3",
+    "-1"
+  ]
+}

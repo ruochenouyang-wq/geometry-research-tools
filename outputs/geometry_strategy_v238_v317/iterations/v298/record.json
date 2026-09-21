@@ -1,0 +1,24 @@
+{
+  "version": 298,
+  "recorded_at": "2026-09-18T18:12:01.092200+00:00",
+  "hypothesis": "Full-content hashes deduplicate identical evidence without merging different bounds.",
+  "change": "Add canonical content-addressed EvidenceStore put/get.",
+  "source_sha256": {
+    "evidence_store.py": "3ff3edd82c728e505f4041f50b286dc0d7473ced6b6cd1328c30409d8346c795",
+    "test_evidence_store.py": "195736cacd4c7bbfef54695d73f2f04ec48448245b312558bc847b1d054990c9"
+  },
+  "validation": {
+    "tests_run": 1,
+    "passed": true,
+    "log": "test_298_full_content_dedup (test_evidence_store.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n"
+  },
+  "comparison": {
+    "same_nested_content_reordered": "one stored object",
+    "different_lower_bound": "different reference"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Stored data is not yet mathematically verified; hardening follows."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

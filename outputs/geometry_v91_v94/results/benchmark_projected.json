@@ -1,0 +1,1119 @@
+{
+  "run_id": "20260911T103004944864Z",
+  "frozen_cases_sha256": "976f009554044050f83cbc3861882a835b4f29242113c95d473769f3f12af38b",
+  "case_count": 23,
+  "source_sha256": {
+    "geometry_v91_v94/projected_spectrum.py": "11eaea10c6827df4dcdc70f72c0fe44b338d0252a49c610788308d13367121bb",
+    "geometry_v91_v94/sphere_sectors.py": "8d9122eb3418a1429c866a18691cdee465101991679a1b4a89c16d2ee25a1ac9",
+    "geometry_v36_v90/spectral_certifier.py": "feba4ccaef97ec16fc310ed85d62a74bb20d75e9724dd2b174326cd14a2c5412"
+  },
+  "source_changed_during_run": false,
+  "cases": [
+    {
+      "id": "E01",
+      "name": "零势完整零均值谱底",
+      "requested_space": "full_sphere_mean_zero",
+      "potential_coefficients": [
+        "0"
+      ],
+      "eigenvalue_index": 1,
+      "m": null,
+      "status": "certified_target_met",
+      "verified": true,
+      "lower": "2",
+      "upper": "2",
+      "exact_width": "0",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "analytic_exact",
+        "compatible": true,
+        "exact_reference": "2"
+      },
+      "options": {
+        "mean_zero": true,
+        "modes": 8,
+        "max_modes": 32,
+        "bits": 44,
+        "max_m": 16,
+        "tolerance": "1/10000000000"
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E01.json",
+      "generation_seconds": 0.002374666999999997,
+      "independent_replay_seconds": 0.0007005830000000046,
+      "winning_absolute_m": 0,
+      "included_sectors": [
+        0
+      ],
+      "angular_tail_covered": true,
+      "sector_modes": [
+        8
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "常数平移后的完整零均值谱底",
+      "requested_space": "full_sphere_mean_zero",
+      "potential_coefficients": [
+        "3/2"
+      ],
+      "eigenvalue_index": 1,
+      "m": null,
+      "status": "certified_target_met",
+      "verified": true,
+      "lower": "7/2",
+      "upper": "7/2",
+      "exact_width": "0",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "analytic_exact",
+        "compatible": true,
+        "exact_reference": "7/2"
+      },
+      "options": {
+        "mean_zero": true,
+        "modes": 8,
+        "max_modes": 32,
+        "bits": 44,
+        "max_m": 16,
+        "tolerance": "1/10000000000"
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E02.json",
+      "generation_seconds": 0.0022336669999999947,
+      "independent_replay_seconds": 0.0007971250000000096,
+      "winning_absolute_m": 0,
+      "included_sectors": [
+        0
+      ],
+      "angular_tail_covered": true,
+      "sector_modes": [
+        8
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "零势m=0零均值投影谱底",
+      "requested_space": "axisymmetric_mean_zero",
+      "potential_coefficients": [
+        "0"
+      ],
+      "eigenvalue_index": 1,
+      "m": 0,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "2",
+      "upper": "2",
+      "exact_width": "0",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "analytic_exact",
+        "compatible": true,
+        "exact_reference": "2"
+      },
+      "options": {
+        "m": 0,
+        "mean_zero": true,
+        "k": 1,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E03.json",
+      "generation_seconds": 0.004341125000000001,
+      "independent_replay_seconds": 0.0019592499999999957
+    },
+    {
+      "id": "E04",
+      "name": "负常数与m=0投影第三特征值",
+      "requested_space": "axisymmetric_mean_zero",
+      "potential_coefficients": [
+        "-3"
+      ],
+      "eigenvalue_index": 3,
+      "m": 0,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "9",
+      "upper": "9",
+      "exact_width": "0",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "analytic_exact",
+        "compatible": true,
+        "exact_reference": "9"
+      },
+      "options": {
+        "m": 0,
+        "mean_zero": true,
+        "k": 3,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E04.json",
+      "generation_seconds": 0.004364791000000007,
+      "independent_replay_seconds": 0.0021628749999999947
+    },
+    {
+      "id": "E05",
+      "name": "m=2零势分支谱底",
+      "requested_space": "fixed_azimuthal_m",
+      "potential_coefficients": [
+        "0"
+      ],
+      "eigenvalue_index": 1,
+      "m": 2,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "6",
+      "upper": "6",
+      "exact_width": "0",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "analytic_exact",
+        "compatible": true,
+        "exact_reference": "6"
+      },
+      "options": {
+        "m": 2,
+        "mean_zero": false,
+        "k": 1,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E05.json",
+      "generation_seconds": 0.004299625000000001,
+      "independent_replay_seconds": 0.0020567920000000017
+    },
+    {
+      "id": "E06",
+      "name": "普通轴对称零势第二特征值",
+      "requested_space": "axisymmetric_full",
+      "potential_coefficients": [
+        "0"
+      ],
+      "eigenvalue_index": 2,
+      "m": 0,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "2",
+      "upper": "2",
+      "exact_width": "0",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "analytic_exact",
+        "compatible": true,
+        "exact_reference": "2"
+      },
+      "options": {
+        "m": 0,
+        "mean_zero": false,
+        "k": 2,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E06.json",
+      "generation_seconds": 0.004126791000000005,
+      "independent_replay_seconds": 0.0019768339999999968
+    },
+    {
+      "id": "E07",
+      "name": "q=1t，axisymmetric_full，索引2",
+      "requested_space": "axisymmetric_full",
+      "potential_coefficients": [
+        "0",
+        "1"
+      ],
+      "eigenvalue_index": 2,
+      "m": 0,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "161764769948238630105644557/77371252455336267181195264",
+      "upper": "9195262575091/4398046511104",
+      "exact_width": "17991355597299/77371252455336267181195264",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "independent_finite_matrix_compatibility",
+        "compatible": true,
+        "reference_band": [
+          "2090760638363957/1000000000000000",
+          "2090760658363957/1000000000000000"
+        ],
+        "comparison_is_not_proof": true
+      },
+      "options": {
+        "m": 0,
+        "mean_zero": false,
+        "k": 2,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E07.json",
+      "generation_seconds": 0.019070874999999987,
+      "independent_replay_seconds": 0.002669625000000009
+    },
+    {
+      "id": "E08",
+      "name": "q=1t，axisymmetric_mean_zero，索引1",
+      "requested_space": "axisymmetric_mean_zero",
+      "potential_coefficients": [
+        "0",
+        "1"
+      ],
+      "eigenvalue_index": 1,
+      "m": 0,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "149636020318423337890044375/77371252455336267181195264",
+      "upper": "8505822979625/4398046511104",
+      "exact_width": "8505822979625/77371252455336267181195264",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "independent_finite_matrix_compatibility",
+        "compatible": true,
+        "reference_band": [
+          "1934000223546819/1000000000000000",
+          "1934000243546819/1000000000000000"
+        ],
+        "comparison_is_not_proof": true
+      },
+      "options": {
+        "m": 0,
+        "mean_zero": true,
+        "k": 1,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E08.json",
+      "generation_seconds": 0.019721500000000003,
+      "independent_replay_seconds": 0.0024403330000000167
+    },
+    {
+      "id": "E09",
+      "name": "q=1t，full_sphere_mean_zero，索引1",
+      "requested_space": "full_sphere_mean_zero",
+      "potential_coefficients": [
+        "0",
+        "1"
+      ],
+      "eigenvalue_index": 1,
+      "m": null,
+      "status": "certified_target_met",
+      "verified": true,
+      "lower": "149636020318423337890044375/77371252455336267181195264",
+      "upper": "8505822979625/4398046511104",
+      "exact_width": "8505822979625/77371252455336267181195264",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "independent_finite_matrix_compatibility",
+        "compatible": true,
+        "reference_band": [
+          "1934000223546819/1000000000000000",
+          "1934000243546819/1000000000000000"
+        ],
+        "comparison_is_not_proof": true
+      },
+      "options": {
+        "mean_zero": true,
+        "modes": 8,
+        "max_modes": 32,
+        "bits": 44,
+        "max_m": 16,
+        "tolerance": "1/10000000000"
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E09.json",
+      "generation_seconds": 0.021357583000000013,
+      "independent_replay_seconds": 0.0017837500000000284,
+      "winning_absolute_m": 0,
+      "included_sectors": [
+        0,
+        1
+      ],
+      "angular_tail_covered": true,
+      "sector_modes": [
+        8,
+        8
+      ]
+    },
+    {
+      "id": "E10",
+      "name": "q=4t，axisymmetric_full，索引2",
+      "requested_space": "axisymmetric_full",
+      "potential_coefficients": [
+        "0",
+        "4"
+      ],
+      "eigenvalue_index": 2,
+      "m": 0,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "6292161741902947288328165/2417851639229258349412352",
+      "upper": "357667985435/137438953472",
+      "exact_width": "1044862752795/2417851639229258349412352",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "independent_finite_matrix_compatibility",
+        "compatible": true,
+        "reference_band": [
+          "162648568248441/62500000000000",
+          "162648569498441/62500000000000"
+        ],
+        "comparison_is_not_proof": true
+      },
+      "options": {
+        "m": 0,
+        "mean_zero": false,
+        "k": 2,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E10.json",
+      "generation_seconds": 0.01836887499999995,
+      "independent_replay_seconds": 0.002438750000000045
+    },
+    {
+      "id": "E11",
+      "name": "q=4t，axisymmetric_mean_zero，索引1",
+      "requested_space": "axisymmetric_mean_zero",
+      "potential_coefficients": [
+        "0",
+        "4"
+      ],
+      "eigenvalue_index": 1,
+      "m": 0,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "164483262181216093100038191/154742504910672534362390528",
+      "upper": "9349790967761/8796093022208",
+      "exact_width": "35738070034385/154742504910672534362390528",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "independent_finite_matrix_compatibility",
+        "compatible": true,
+        "reference_band": [
+          "265737039620673/250000000000000",
+          "265737044620673/250000000000000"
+        ],
+        "comparison_is_not_proof": true
+      },
+      "options": {
+        "m": 0,
+        "mean_zero": true,
+        "k": 1,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E11.json",
+      "generation_seconds": 0.01945087499999998,
+      "independent_replay_seconds": 0.0023220830000000303
+    },
+    {
+      "id": "E12",
+      "name": "q=4t，full_sphere_mean_zero，索引1",
+      "requested_space": "full_sphere_mean_zero",
+      "potential_coefficients": [
+        "0",
+        "4"
+      ],
+      "eigenvalue_index": 1,
+      "m": null,
+      "status": "certified_target_met",
+      "verified": true,
+      "lower": "164483262181216093100038191/154742504910672534362390528",
+      "upper": "9349790967761/8796093022208",
+      "exact_width": "35738070034385/154742504910672534362390528",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "independent_finite_matrix_compatibility",
+        "compatible": true,
+        "reference_band": [
+          "265737039620673/250000000000000",
+          "265737044620673/250000000000000"
+        ],
+        "comparison_is_not_proof": true
+      },
+      "options": {
+        "mean_zero": true,
+        "modes": 8,
+        "max_modes": 32,
+        "bits": 44,
+        "max_m": 16,
+        "tolerance": "1/10000000000"
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E12.json",
+      "generation_seconds": 0.021234499999999934,
+      "independent_replay_seconds": 0.0018759170000000047,
+      "winning_absolute_m": 0,
+      "included_sectors": [
+        0,
+        1
+      ],
+      "angular_tail_covered": true,
+      "sector_modes": [
+        8,
+        8
+      ]
+    },
+    {
+      "id": "E13",
+      "name": "Usov Table1c：c²=2,m=1,l=1",
+      "requested_space": "fixed_azimuthal_m",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "eigenvalue_index": 1,
+      "m": 1,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "5760907279492644810712635/2417851639229258349412352",
+      "upper": "654939331013/274877906944",
+      "exact_width": "380061424069/2417851639229258349412352",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "published_decimal_compatibility",
+        "compatible": true,
+        "reference_band": [
+          "476531081231/200000000000",
+          "476531081233/200000000000"
+        ],
+        "comparison_is_not_proof": true
+      },
+      "options": {
+        "m": 1,
+        "mean_zero": false,
+        "k": 1,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E13.json",
+      "generation_seconds": 0.022817959000000054,
+      "independent_replay_seconds": 0.0025602909999999923
+    },
+    {
+      "id": "E14",
+      "name": "Usov Table1c：c²=2,m=1,l=2",
+      "requested_space": "fixed_azimuthal_m",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "eigenvalue_index": 2,
+      "m": 1,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "132338072823892488896587591/19342813113834066795298816",
+      "upper": "7522548504761/1099511627776",
+      "exact_width": "6423036876985/19342813113834066795298816",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "published_decimal_compatibility",
+        "compatible": true,
+        "reference_band": [
+          "1368343601781/200000000000",
+          "1368343601783/200000000000"
+        ],
+        "comparison_is_not_proof": true
+      },
+      "options": {
+        "m": 1,
+        "mean_zero": false,
+        "k": 2,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E14.json",
+      "generation_seconds": 0.022605792000000013,
+      "independent_replay_seconds": 0.002568374999999956
+    },
+    {
+      "id": "E15",
+      "name": "Usov Table1c：c²=2,m=1,l=3",
+      "requested_space": "fixed_azimuthal_m",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "eigenvalue_index": 3,
+      "m": 1,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "2002040125683941890686521453/154742504910672534362390528",
+      "upper": "113802805440403/8796093022208",
+      "exact_width": "105006712418195/154742504910672534362390528",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "published_decimal_compatibility",
+        "compatible": true,
+        "reference_band": [
+          "2587576214873/200000000000",
+          "20700609719/1600000000"
+        ],
+        "comparison_is_not_proof": true
+      },
+      "options": {
+        "m": 1,
+        "mean_zero": false,
+        "k": 3,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E15.json",
+      "generation_seconds": 0.02280900000000008,
+      "independent_replay_seconds": 0.002629833999999942
+    },
+    {
+      "id": "E16",
+      "name": "Usov Table1c：c²=2,m=1,l=4",
+      "requested_space": "fixed_azimuthal_m",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "eigenvalue_index": 4,
+      "m": 1,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "1622141377979376770800624129/77371252455336267181195264",
+      "upper": "92208061799935/4398046511104",
+      "exact_width": "87810015288831/77371252455336267181195264",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "published_decimal_compatibility",
+        "compatible": true,
+        "reference_band": [
+          "4193137183389/200000000000",
+          "4193137183391/200000000000"
+        ],
+        "comparison_is_not_proof": true
+      },
+      "options": {
+        "m": 1,
+        "mean_zero": false,
+        "k": 4,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E16.json",
+      "generation_seconds": 0.022660499999999972,
+      "independent_replay_seconds": 0.002575832999999972
+    },
+    {
+      "id": "E17",
+      "name": "Usov Table1c：c²=2,m=1,l=5",
+      "requested_space": "fixed_azimuthal_m",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "eigenvalue_index": 5,
+      "m": 1,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "299599780744714729727293673/9671406556917033397649408",
+      "upper": "17030275827479/549755813888",
+      "exact_width": "16480520013591/9671406556917033397649408",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "published_decimal_compatibility",
+        "compatible": true,
+        "reference_band": [
+          "6195578253929/200000000000",
+          "6195578253931/200000000000"
+        ],
+        "comparison_is_not_proof": true
+      },
+      "options": {
+        "m": 1,
+        "mean_zero": false,
+        "k": 5,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E17.json",
+      "generation_seconds": 0.022199083999999925,
+      "independent_replay_seconds": 0.0024544160000000703
+    },
+    {
+      "id": "E18",
+      "name": "Usov Table1a：c²=1,m=0,l=0",
+      "requested_space": "axisymmetric_full",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "1"
+      ],
+      "eigenvalue_index": 1,
+      "m": 0,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "49362867600063554109839695/154742504910672534362390528",
+      "upper": "2805954159163/8796093022208",
+      "exact_width": "34806141544113/154742504910672534362390528",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "published_decimal_compatibility",
+        "compatible": true,
+        "reference_band": [
+          "63800011029/200000000000",
+          "63800011031/200000000000"
+        ],
+        "comparison_is_not_proof": true
+      },
+      "options": {
+        "m": 0,
+        "mean_zero": false,
+        "k": 1,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E18.json",
+      "generation_seconds": 0.022378208999999982,
+      "independent_replay_seconds": 0.0025976659999999985
+    },
+    {
+      "id": "E19",
+      "name": "m=2非零扁球势分支的解析夹界",
+      "requested_space": "fixed_azimuthal_m",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "eigenvalue_index": 1,
+      "m": 2,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "121438418725308811645686635/19342813113834066795298816",
+      "upper": "6902974901397/1099511627776",
+      "exact_width": "1405416762517/19342813113834066795298816",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "analytic_coarse_enclosure",
+        "compatible": true,
+        "analytic_band": [
+          "6",
+          "44/7"
+        ]
+      },
+      "options": {
+        "m": 2,
+        "mean_zero": false,
+        "k": 1,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E19.json",
+      "generation_seconds": 0.022530583999999965,
+      "independent_replay_seconds": 0.0025627910000000087
+    },
+    {
+      "id": "E20",
+      "name": "q=2t²完整零均值谱底必须包含|m|=1",
+      "requested_space": "full_sphere_mean_zero",
+      "potential_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "eigenvalue_index": 1,
+      "m": null,
+      "status": "certified_target_met",
+      "verified": true,
+      "lower": "5760907279492644810712635/2417851639229258349412352",
+      "upper": "654939331013/274877906944",
+      "exact_width": "380061424069/2417851639229258349412352",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "published_decimal_plus_analytic_branch_selection",
+        "compatible": true,
+        "reference_band": [
+          "476531081231/200000000000",
+          "476531081233/200000000000"
+        ],
+        "comparison_is_not_proof": true
+      },
+      "options": {
+        "mean_zero": true,
+        "modes": 8,
+        "max_modes": 32,
+        "bits": 44,
+        "max_m": 16,
+        "tolerance": "1/10000000000"
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E20.json",
+      "generation_seconds": 0.026805583999999993,
+      "independent_replay_seconds": 0.0021024579999999737,
+      "winning_absolute_m": 1,
+      "included_sectors": [
+        0,
+        1
+      ],
+      "angular_tail_covered": true,
+      "sector_modes": [
+        8,
+        8
+      ]
+    },
+    {
+      "id": "E21",
+      "name": "q=t+t²，axisymmetric_full，索引2",
+      "requested_space": "axisymmetric_full",
+      "potential_coefficients": [
+        "0",
+        "1",
+        "1"
+      ],
+      "eigenvalue_index": 2,
+      "m": 0,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "410220594835480751822071715/154742504910672534362390528",
+      "upper": "23318341097565/8796093022208",
+      "exact_width": "34313457375325/154742504910672534362390528",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "predeclared_scope_separation",
+        "compatible": null,
+        "requires_cross_case_relation": "R5"
+      },
+      "options": {
+        "m": 0,
+        "mean_zero": false,
+        "k": 2,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E21.json",
+      "generation_seconds": 0.03866691700000002,
+      "independent_replay_seconds": 0.003187249999999864
+    },
+    {
+      "id": "E22",
+      "name": "q=t+t²，axisymmetric_mean_zero，索引1",
+      "requested_space": "axisymmetric_mean_zero",
+      "potential_coefficients": [
+        "0",
+        "1",
+        "1"
+      ],
+      "eigenvalue_index": 1,
+      "m": 0,
+      "status": "certified_sector_enclosure",
+      "verified": true,
+      "lower": "1565533707032104911880518969/618970019642690137449562112",
+      "upper": "88990288249543/35184372088832",
+      "exact_width": "62602009182919/618970019642690137449562112",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "predeclared_scope_separation",
+        "compatible": null,
+        "requires_cross_case_relation": "R5"
+      },
+      "options": {
+        "m": 0,
+        "mean_zero": true,
+        "k": 1,
+        "modes": 12,
+        "bits": 44
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E22.json",
+      "generation_seconds": 0.035790791000000155,
+      "independent_replay_seconds": 0.00325129199999985
+    },
+    {
+      "id": "E23",
+      "name": "q=t+t²，full_sphere_mean_zero，索引1",
+      "requested_space": "full_sphere_mean_zero",
+      "potential_coefficients": [
+        "0",
+        "1",
+        "1"
+      ],
+      "eigenvalue_index": 1,
+      "m": null,
+      "status": "certified_target_met",
+      "verified": true,
+      "lower": "1331143500070273795427716357/618970019642690137449562112",
+      "upper": "75666747538345/35184372088832",
+      "exact_width": "147835405415163/618970019642690137449562112",
+      "requested_width": "1/1000000",
+      "width_met": true,
+      "reference_check": {
+        "kind": "predeclared_scope_separation",
+        "compatible": null,
+        "requires_cross_case_relation": "R5"
+      },
+      "options": {
+        "mean_zero": true,
+        "modes": 8,
+        "max_modes": 32,
+        "bits": 44,
+        "max_m": 16,
+        "tolerance": "1/10000000000"
+      },
+      "acceptance": "passed",
+      "certificate": "results/certificates/20260911T103004944864Z/E23.json",
+      "generation_seconds": 0.036986709000000006,
+      "independent_replay_seconds": 0.0025712909999999756,
+      "winning_absolute_m": 1,
+      "included_sectors": [
+        0,
+        1
+      ],
+      "angular_tail_covered": true,
+      "sector_modes": [
+        8,
+        8
+      ]
+    }
+  ],
+  "legacy_scope_comparisons": [
+    {
+      "case": "E06",
+      "old_scope": "ordinary_m0_without_mean_zero_constraint",
+      "verified": true,
+      "lower": "35184372088829/17592186044416",
+      "upper": "2",
+      "exact_width": "3/17592186044416",
+      "seconds": 0.119477917,
+      "intervals_overlap": true,
+      "certificate": "results/certificates/20260911T103004944864Z/E06_frozen_v90.json"
+    },
+    {
+      "case": "E07",
+      "old_scope": "ordinary_m0_without_mean_zero_constraint",
+      "verified": true,
+      "lower": "161764769948238630105644557/77371252455336267181195264",
+      "upper": "9195262575091/4398046511104",
+      "exact_width": "17991355597299/77371252455336267181195264",
+      "seconds": 0.12867233299999997,
+      "intervals_overlap": true,
+      "certificate": "results/certificates/20260911T103004944864Z/E07_frozen_v90.json"
+    },
+    {
+      "case": "E10",
+      "old_scope": "ordinary_m0_without_mean_zero_constraint",
+      "verified": true,
+      "lower": "6292161741902947288328165/2417851639229258349412352",
+      "upper": "357667985435/137438953472",
+      "exact_width": "1044862752795/2417851639229258349412352",
+      "seconds": 0.126950375,
+      "intervals_overlap": true,
+      "certificate": "results/certificates/20260911T103004944864Z/E10_frozen_v90.json"
+    },
+    {
+      "case": "E18",
+      "old_scope": "ordinary_m0_without_mean_zero_constraint",
+      "verified": true,
+      "lower": "24681433800030184962567907/77371252455336267181195264",
+      "upper": "1402977079581/4398046511104",
+      "exact_width": "10199070101789/77371252455336267181195264",
+      "seconds": 0.12906887499999997,
+      "intervals_overlap": true,
+      "certificate": "results/certificates/20260911T103004944864Z/E18_frozen_v90.json"
+    },
+    {
+      "case": "E21",
+      "old_scope": "ordinary_m0_without_mean_zero_constraint",
+      "verified": true,
+      "lower": "102555148708861941618309609/38685626227668133590597632",
+      "upper": "5829585274391/2199023255552",
+      "exact_width": "12426655041047/38685626227668133590597632",
+      "seconds": 0.146191709,
+      "intervals_overlap": true,
+      "certificate": "results/certificates/20260911T103004944864Z/E21_frozen_v90.json"
+    }
+  ],
+  "cross_case_relations": [
+    {
+      "id": "R1",
+      "cases": [
+        "E07",
+        "E08",
+        "E09"
+      ],
+      "passed": true,
+      "criterion": "Projected and ordinary intervals strictly separate; two distinct mean-zero scopes agree."
+    },
+    {
+      "id": "R2",
+      "cases": [
+        "E10",
+        "E11",
+        "E12"
+      ],
+      "passed": true,
+      "criterion": "Projected and ordinary intervals strictly separate; two distinct mean-zero scopes agree."
+    },
+    {
+      "id": "R3",
+      "cases": [
+        "E13",
+        "E20"
+      ],
+      "passed": true,
+      "criterion": "Full mean-zero ground includes all sectors and agrees with the m=1 branch."
+    },
+    {
+      "id": "R4",
+      "cases": [
+        "E01",
+        "E02"
+      ],
+      "passed": true,
+      "criterion": "Exact constant potential shift is 3/2."
+    },
+    {
+      "id": "R5",
+      "cases": [
+        "E21",
+        "E22",
+        "E23"
+      ],
+      "passed": true,
+      "criterion": "For q=t+t^2, full mean-zero < m0 compression < ordinary m0 second eigenvalue."
+    }
+  ],
+  "behavioral_controls": [
+    {
+      "id": "C01",
+      "operation": "weighted_poincare",
+      "threshold": "119/50",
+      "expected_status": "proved",
+      "status": "proved",
+      "verified": true,
+      "passed": true,
+      "refutation_has_explicit_function": null,
+      "certificate": "results/certificates/20260911T103004944864Z/C01.json",
+      "seconds": 0.031145542000000193
+    },
+    {
+      "id": "C02",
+      "operation": "weighted_poincare",
+      "threshold": "12/5",
+      "expected_status": "refuted_by_spectral_existence",
+      "status": "refuted_by_spectral_existence",
+      "verified": true,
+      "passed": true,
+      "refutation_has_explicit_function": false,
+      "certificate": "results/certificates/20260911T103004944864Z/C02.json",
+      "seconds": 0.031049208000000217
+    },
+    {
+      "id": "C03",
+      "operation": "full_ground",
+      "resource_limit": "max_m=0",
+      "status": "certified_bound_open_gap",
+      "lower": "2",
+      "upper": "13951166129771/4398046511104",
+      "verified": true,
+      "angular_tail_covered": false,
+      "passed": true,
+      "certificate": "results/certificates/20260911T103004944864Z/C03.json"
+    }
+  ],
+  "mutation_audit": [
+    {
+      "name": "sector_projection",
+      "rejected": true
+    },
+    {
+      "name": "sector_degree_start",
+      "rejected": true
+    },
+    {
+      "name": "sector_azimuth_m",
+      "rejected": true
+    },
+    {
+      "name": "sector_eigenvalue_index",
+      "rejected": true
+    },
+    {
+      "name": "sector_mean_zero",
+      "rejected": true
+    },
+    {
+      "name": "sector_lower",
+      "rejected": true
+    },
+    {
+      "name": "full_scope",
+      "rejected": true
+    },
+    {
+      "name": "remove_middle_sector",
+      "rejected": true
+    },
+    {
+      "name": "false_angular_tail",
+      "rejected": true
+    },
+    {
+      "name": "wrong_q",
+      "rejected": true
+    }
+  ],
+  "summary": {
+    "cases_passed": 23,
+    "cases_failed": 0,
+    "all_cross_relations_passed": true,
+    "all_legacy_comparisons_overlap": true,
+    "all_controls_passed": true,
+    "all_mutations_rejected": true
+  },
+  "limitations": [
+    "Published decimals are finite-precision compatibility references, not proofs.",
+    "Local 80-mode float linear references are not externally published or certified.",
+    "One serial run is not a performance guarantee or monotonic speedup study.",
+    "A valid existence-based spectral refutation need not include an explicit function.",
+    "No failed, open, unsupported, or incompatible case was removed."
+  ]
+}

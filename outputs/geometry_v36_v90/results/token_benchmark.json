@@ -1,0 +1,2743 @@
+{
+  "encoding_implementation": "tiktoken 0.11.0",
+  "encodings": [
+    "o200k_base",
+    "cl100k_base"
+  ],
+  "actual_model_calls": 0,
+  "actual_api_usage": null,
+  "protocol": "Development certificate corpus. Required-information baseline and shorter but information-limited old CLI are both shown. Counts include explicit text only.",
+  "cases": [
+    {
+      "case": "v30_identity_degree_six",
+      "kind": "family_lemma",
+      "status": "scale_enclosed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 491,
+          "cl100k_base": 491
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 306,
+          "cl100k_base": 299
+        },
+        "old_cli_brief": {
+          "o200k_base": 32,
+          "cl100k_base": 32
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 131,
+          "cl100k_base": 126
+        },
+        "decision_receipt": {
+          "o200k_base": 124,
+          "cl100k_base": 121
+        },
+        "actual_tool_response": {
+          "o200k_base": 152,
+          "cl100k_base": 152
+        },
+        "request": {
+          "o200k_base": 44,
+          "cl100k_base": 42
+        },
+        "get_full_proof_request": {
+          "o200k_base": 24,
+          "cl100k_base": 24
+        },
+        "get_full_proof_response": {
+          "o200k_base": 303,
+          "cl100k_base": 296
+        }
+      },
+      "receipt": {
+        "kind": "family_lemma",
+        "status": "scale_enclosed",
+        "task": "goal:87efccbde7860dc7db3e0b48",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "amplitudes": "all_real",
+          "ansatz": "poisson_exponential"
+        },
+        "target": "1/1000000",
+        "bounds": {
+          "lower": "0.25",
+          "upper": "0.25"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:55716cc7ec08e54f39f455e6",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "lemma",
+        "spec": {
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "weight": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v30_identity_four_directions",
+      "kind": "family_lemma",
+      "status": "scale_enclosed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 656,
+          "cl100k_base": 656
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 385,
+          "cl100k_base": 370
+        },
+        "old_cli_brief": {
+          "o200k_base": 32,
+          "cl100k_base": 32
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 169,
+          "cl100k_base": 160
+        },
+        "decision_receipt": {
+          "o200k_base": 126,
+          "cl100k_base": 123
+        },
+        "actual_tool_response": {
+          "o200k_base": 154,
+          "cl100k_base": 154
+        },
+        "request": {
+          "o200k_base": 82,
+          "cl100k_base": 76
+        },
+        "get_full_proof_request": {
+          "o200k_base": 25,
+          "cl100k_base": 25
+        },
+        "get_full_proof_response": {
+          "o200k_base": 382,
+          "cl100k_base": 367
+        }
+      },
+      "receipt": {
+        "kind": "family_lemma",
+        "status": "scale_enclosed",
+        "task": "goal:d386d4a472ad2ed15b397bb3",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "amplitudes": "all_real",
+          "ansatz": "poisson_exponential"
+        },
+        "target": "1/1000000",
+        "bounds": {
+          "lower": "0.3125",
+          "upper": "0.3125"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:ea80d11d60b2ff4f7121df49",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "lemma",
+        "spec": {
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "weight": [
+            [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v30_identity_linear",
+      "kind": "family_lemma",
+      "status": "scale_enclosed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 315,
+          "cl100k_base": 314
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 207,
+          "cl100k_base": 203
+        },
+        "old_cli_brief": {
+          "o200k_base": 32,
+          "cl100k_base": 32
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 109,
+          "cl100k_base": 106
+        },
+        "decision_receipt": {
+          "o200k_base": 122,
+          "cl100k_base": 119
+        },
+        "actual_tool_response": {
+          "o200k_base": 150,
+          "cl100k_base": 150
+        },
+        "request": {
+          "o200k_base": 22,
+          "cl100k_base": 22
+        },
+        "get_full_proof_request": {
+          "o200k_base": 24,
+          "cl100k_base": 24
+        },
+        "get_full_proof_response": {
+          "o200k_base": 204,
+          "cl100k_base": 200
+        }
+      },
+      "receipt": {
+        "kind": "family_lemma",
+        "status": "scale_enclosed",
+        "task": "goal:b4398d366cf42f3b36888971",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "amplitudes": "all_real",
+          "ansatz": "poisson_exponential"
+        },
+        "target": "1/1000000",
+        "bounds": {
+          "lower": "0.25",
+          "upper": "0.25"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:903e8d98819f5ac5ebfe3ccb",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "lemma",
+        "spec": {
+          "directions": [
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "weight": [
+            [
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v30_identity_nonorthogonal",
+      "kind": "family_lemma",
+      "status": "scale_enclosed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 618,
+          "cl100k_base": 618
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 411,
+          "cl100k_base": 394
+        },
+        "old_cli_brief": {
+          "o200k_base": 32,
+          "cl100k_base": 32
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 138,
+          "cl100k_base": 133
+        },
+        "decision_receipt": {
+          "o200k_base": 126,
+          "cl100k_base": 122
+        },
+        "actual_tool_response": {
+          "o200k_base": 154,
+          "cl100k_base": 153
+        },
+        "request": {
+          "o200k_base": 39,
+          "cl100k_base": 37
+        },
+        "get_full_proof_request": {
+          "o200k_base": 25,
+          "cl100k_base": 24
+        },
+        "get_full_proof_response": {
+          "o200k_base": 408,
+          "cl100k_base": 391
+        }
+      },
+      "receipt": {
+        "kind": "family_lemma",
+        "status": "scale_enclosed",
+        "task": "goal:07e12582130f1b04d766be91",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "amplitudes": "all_real",
+          "ansatz": "poisson_exponential"
+        },
+        "target": "1/1000000",
+        "bounds": {
+          "lower": "1.275637",
+          "upper": "1.275638"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:6cae3b83030f1eeeb60a5493",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "lemma",
+        "spec": {
+          "directions": [
+            [
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "0",
+              "2",
+              "-1"
+            ]
+          ],
+          "weight": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v30_identity_odd_even",
+      "kind": "family_lemma",
+      "status": "scale_enclosed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 402,
+          "cl100k_base": 402
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 255,
+          "cl100k_base": 248
+        },
+        "old_cli_brief": {
+          "o200k_base": 32,
+          "cl100k_base": 32
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 126,
+          "cl100k_base": 121
+        },
+        "decision_receipt": {
+          "o200k_base": 124,
+          "cl100k_base": 121
+        },
+        "actual_tool_response": {
+          "o200k_base": 152,
+          "cl100k_base": 152
+        },
+        "request": {
+          "o200k_base": 39,
+          "cl100k_base": 37
+        },
+        "get_full_proof_request": {
+          "o200k_base": 25,
+          "cl100k_base": 25
+        },
+        "get_full_proof_response": {
+          "o200k_base": 252,
+          "cl100k_base": 245
+        }
+      },
+      "receipt": {
+        "kind": "family_lemma",
+        "status": "scale_enclosed",
+        "task": "goal:d5e8a5557660dc8600eaca84",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "amplitudes": "all_real",
+          "ansatz": "poisson_exponential"
+        },
+        "target": "1/1000000",
+        "bounds": {
+          "lower": "0.25",
+          "upper": "0.25"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:31d5aca83d22fbd52c9f3796",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "lemma",
+        "spec": {
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1/3",
+              "0",
+              "1"
+            ]
+          ],
+          "weight": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v30_identity_quartic",
+      "kind": "family_lemma",
+      "status": "scale_enclosed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 455,
+          "cl100k_base": 455
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 284,
+          "cl100k_base": 277
+        },
+        "old_cli_brief": {
+          "o200k_base": 32,
+          "cl100k_base": 32
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 127,
+          "cl100k_base": 122
+        },
+        "decision_receipt": {
+          "o200k_base": 121,
+          "cl100k_base": 118
+        },
+        "actual_tool_response": {
+          "o200k_base": 149,
+          "cl100k_base": 149
+        },
+        "request": {
+          "o200k_base": 40,
+          "cl100k_base": 38
+        },
+        "get_full_proof_request": {
+          "o200k_base": 21,
+          "cl100k_base": 21
+        },
+        "get_full_proof_response": {
+          "o200k_base": 281,
+          "cl100k_base": 274
+        }
+      },
+      "receipt": {
+        "kind": "family_lemma",
+        "status": "scale_enclosed",
+        "task": "goal:60f2fff4231064dad2f91f3d",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "amplitudes": "all_real",
+          "ansatz": "poisson_exponential"
+        },
+        "target": "1/1000000",
+        "bounds": {
+          "lower": "0.25",
+          "upper": "0.25"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:494f4224c06330ec19777019",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "lemma",
+        "spec": {
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "weight": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v30_identity_three_directions",
+      "kind": "family_lemma",
+      "status": "scale_enclosed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 517,
+          "cl100k_base": 517
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 309,
+          "cl100k_base": 298
+        },
+        "old_cli_brief": {
+          "o200k_base": 32,
+          "cl100k_base": 32
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 143,
+          "cl100k_base": 136
+        },
+        "decision_receipt": {
+          "o200k_base": 128,
+          "cl100k_base": 125
+        },
+        "actual_tool_response": {
+          "o200k_base": 156,
+          "cl100k_base": 156
+        },
+        "request": {
+          "o200k_base": 56,
+          "cl100k_base": 52
+        },
+        "get_full_proof_request": {
+          "o200k_base": 23,
+          "cl100k_base": 23
+        },
+        "get_full_proof_response": {
+          "o200k_base": 306,
+          "cl100k_base": 295
+        }
+      },
+      "receipt": {
+        "kind": "family_lemma",
+        "status": "scale_enclosed",
+        "task": "goal:c4c3d0f5461936d4c3be66e5",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "amplitudes": "all_real",
+          "ansatz": "poisson_exponential"
+        },
+        "target": "1/1000000",
+        "bounds": {
+          "lower": "0.3125",
+          "upper": "0.3125"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:3eeab4d11e9ca949992db607",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "lemma",
+        "spec": {
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "weight": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v30_identity_weighted_cost",
+      "kind": "family_lemma",
+      "status": "scale_enclosed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 402,
+          "cl100k_base": 402
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 255,
+          "cl100k_base": 248
+        },
+        "old_cli_brief": {
+          "o200k_base": 32,
+          "cl100k_base": 32
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 126,
+          "cl100k_base": 121
+        },
+        "decision_receipt": {
+          "o200k_base": 124,
+          "cl100k_base": 121
+        },
+        "actual_tool_response": {
+          "o200k_base": 152,
+          "cl100k_base": 152
+        },
+        "request": {
+          "o200k_base": 39,
+          "cl100k_base": 37
+        },
+        "get_full_proof_request": {
+          "o200k_base": 25,
+          "cl100k_base": 25
+        },
+        "get_full_proof_response": {
+          "o200k_base": 252,
+          "cl100k_base": 245
+        }
+      },
+      "receipt": {
+        "kind": "family_lemma",
+        "status": "scale_enclosed",
+        "task": "goal:d5e8a5557660dc8600eaca84",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "amplitudes": "all_real",
+          "ansatz": "poisson_exponential"
+        },
+        "target": "1/1000000",
+        "bounds": {
+          "lower": "0.25",
+          "upper": "0.25"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:31d5aca83d22fbd52c9f3796",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "lemma",
+        "spec": {
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1/3",
+              "0",
+              "1"
+            ]
+          ],
+          "weight": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v32_anisotropic_goal",
+      "kind": "ground_goal",
+      "status": "unresolved",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 45613,
+          "cl100k_base": 45396
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 33375,
+          "cl100k_base": 32604
+        },
+        "old_cli_brief": {
+          "o200k_base": 72,
+          "cl100k_base": 70
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 209,
+          "cl100k_base": 199
+        },
+        "decision_receipt": {
+          "o200k_base": 121,
+          "cl100k_base": 117
+        },
+        "actual_tool_response": {
+          "o200k_base": 150,
+          "cl100k_base": 150
+        },
+        "request": {
+          "o200k_base": 58,
+          "cl100k_base": 54
+        },
+        "get_full_proof_request": {
+          "o200k_base": 22,
+          "cl100k_base": 22
+        },
+        "get_full_proof_response": {
+          "o200k_base": 32608,
+          "cl100k_base": 31873
+        }
+      },
+      "receipt": {
+        "kind": "ground_goal",
+        "status": "unresolved",
+        "task": "goal:ac4c536785a0ec25e87419ec",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "eigenvalue_index": 1,
+          "domain": {
+            "kind": "all_real"
+          }
+        },
+        "target": "0",
+        "bounds": {
+          "lower": "-39282e-7",
+          "upper": "1122228e-10"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:df3995eee98259e09f998ef0",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "submit",
+        "goal": {
+          "domain": {
+            "kind": "all_real"
+          },
+          "parameters": [
+            "a",
+            "b"
+          ],
+          "penalty": "a*a/4+b*b/9",
+          "potential": "a*t+b*(t*t-1/3)",
+          "threshold": "0",
+          "profile": "sphere_ground"
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v32_generic",
+      "kind": "ground_goal",
+      "status": "proved",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 4003,
+          "cl100k_base": 3966
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 2688,
+          "cl100k_base": 2615
+        },
+        "old_cli_brief": {
+          "o200k_base": 71,
+          "cl100k_base": 69
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 213,
+          "cl100k_base": 204
+        },
+        "decision_receipt": {
+          "o200k_base": 124,
+          "cl100k_base": 120
+        },
+        "actual_tool_response": {
+          "o200k_base": 154,
+          "cl100k_base": 154
+        },
+        "request": {
+          "o200k_base": 67,
+          "cl100k_base": 64
+        },
+        "get_full_proof_request": {
+          "o200k_base": 22,
+          "cl100k_base": 22
+        },
+        "get_full_proof_response": {
+          "o200k_base": 1998,
+          "cl100k_base": 1953
+        }
+      },
+      "receipt": {
+        "kind": "ground_goal",
+        "status": "proved",
+        "task": "goal:f00f10338413016de1810e19",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "eigenvalue_index": 1,
+          "domain": {
+            "kind": "box",
+            "box": [
+              [
+                -4,
+                4
+              ]
+            ]
+          }
+        },
+        "target": "-1",
+        "bounds": {
+          "lower": "8673084e-7",
+          "upper": "1.367589"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:03b78457590aa7d01422e262",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "submit",
+        "goal": {
+          "domain": {
+            "box": [
+              [
+                -4,
+                4
+              ]
+            ],
+            "kind": "box"
+          },
+          "parameters": [
+            "a"
+          ],
+          "penalty": "3*a*a/20+3*a/100",
+          "potential": "2-3*t+3*t*t/2+a*t",
+          "threshold": "-1",
+          "profile": "sphere_ground"
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v32_mapped_goal",
+      "kind": "ground_goal",
+      "status": "unresolved",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 48594,
+          "cl100k_base": 48371
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 35945,
+          "cl100k_base": 35143
+        },
+        "old_cli_brief": {
+          "o200k_base": 72,
+          "cl100k_base": 70
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 232,
+          "cl100k_base": 222
+        },
+        "decision_receipt": {
+          "o200k_base": 124,
+          "cl100k_base": 120
+        },
+        "actual_tool_response": {
+          "o200k_base": 153,
+          "cl100k_base": 153
+        },
+        "request": {
+          "o200k_base": 73,
+          "cl100k_base": 69
+        },
+        "get_full_proof_request": {
+          "o200k_base": 24,
+          "cl100k_base": 24
+        },
+        "get_full_proof_response": {
+          "o200k_base": 35035,
+          "cl100k_base": 34279
+        }
+      },
+      "receipt": {
+        "kind": "ground_goal",
+        "status": "unresolved",
+        "task": "goal:60be39054a95bc5d0474fbc7",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "eigenvalue_index": 1,
+          "domain": {
+            "kind": "all_real"
+          }
+        },
+        "target": "0",
+        "bounds": {
+          "lower": "-2189527e-9",
+          "upper": "184704e-10"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:0ed52c999a2e394d7aec8abd",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "submit",
+        "goal": {
+          "domain": {
+            "kind": "all_real"
+          },
+          "parameters": [
+            "a",
+            "b"
+          ],
+          "penalty": "(a+2*b)**2/4+(b-a)**2/9",
+          "potential": "(a+2*b)*t+(b-a)*(t*t-1/3)",
+          "threshold": "0",
+          "profile": "sphere_ground"
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v34_one_round",
+      "kind": "matrix_envelope",
+      "status": "global_gap_open",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 2453,
+          "cl100k_base": 2455
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 1938,
+          "cl100k_base": 1917
+        },
+        "old_cli_brief": {
+          "o200k_base": 59,
+          "cl100k_base": 59
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 281,
+          "cl100k_base": 276
+        },
+        "decision_receipt": {
+          "o200k_base": 144,
+          "cl100k_base": 142
+        },
+        "actual_tool_response": {
+          "o200k_base": 175,
+          "cl100k_base": 177
+        },
+        "request": {
+          "o200k_base": 40,
+          "cl100k_base": 37
+        },
+        "get_full_proof_request": {
+          "o200k_base": 22,
+          "cl100k_base": 23
+        },
+        "get_full_proof_response": {
+          "o200k_base": 1674,
+          "cl100k_base": 1655
+        }
+      },
+      "receipt": {
+        "kind": "matrix_envelope",
+        "status": "global_gap_open",
+        "task": "goal:c38038477b9f13ceebcc2f00",
+        "scope": {
+          "geometry": "unit_sphere",
+          "amplitudes": "all_real",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "ansatz": "poisson_exponential",
+          "objective": "trace(C G)"
+        },
+        "target": "1/100000",
+        "bounds": {
+          "lower": "3338063e-7",
+          "upper": "3379794e-7",
+          "gap": "4173021e-9"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:a3b1aae93a695717f0eff656",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "optimize",
+        "spec": {
+          "cost": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1/3",
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v34_optimized_degree_six",
+      "kind": "matrix_envelope",
+      "status": "global_gap_closed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 2775,
+          "cl100k_base": 2778
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 2144,
+          "cl100k_base": 2114
+        },
+        "old_cli_brief": {
+          "o200k_base": 59,
+          "cl100k_base": 59
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 291,
+          "cl100k_base": 286
+        },
+        "decision_receipt": {
+          "o200k_base": 150,
+          "cl100k_base": 147
+        },
+        "actual_tool_response": {
+          "o200k_base": 181,
+          "cl100k_base": 182
+        },
+        "request": {
+          "o200k_base": 45,
+          "cl100k_base": 42
+        },
+        "get_full_proof_request": {
+          "o200k_base": 25,
+          "cl100k_base": 25
+        },
+        "get_full_proof_response": {
+          "o200k_base": 1875,
+          "cl100k_base": 1847
+        }
+      },
+      "receipt": {
+        "kind": "matrix_envelope",
+        "status": "global_gap_closed",
+        "task": "goal:cf6c2ea093bbb9c8a3b7e514",
+        "scope": {
+          "geometry": "unit_sphere",
+          "amplitudes": "all_real",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "ansatz": "poisson_exponential",
+          "objective": "trace(C G)"
+        },
+        "target": "1/100000",
+        "bounds": {
+          "lower": "2815198e-7",
+          "upper": "2815282e-7",
+          "gap": "8252452e-12"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:99b979b177d5c0eeff7d250a",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "optimize",
+        "spec": {
+          "cost": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v34_optimized_four_directions",
+      "kind": "matrix_envelope",
+      "status": "global_gap_closed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 35472,
+          "cl100k_base": 35469
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 33519,
+          "cl100k_base": 33405
+        },
+        "old_cli_brief": {
+          "o200k_base": 59,
+          "cl100k_base": 59
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 1269,
+          "cl100k_base": 1260
+        },
+        "decision_receipt": {
+          "o200k_base": 149,
+          "cl100k_base": 146
+        },
+        "actual_tool_response": {
+          "o200k_base": 180,
+          "cl100k_base": 181
+        },
+        "request": {
+          "o200k_base": 83,
+          "cl100k_base": 76
+        },
+        "get_full_proof_request": {
+          "o200k_base": 26,
+          "cl100k_base": 26
+        },
+        "get_full_proof_response": {
+          "o200k_base": 27368,
+          "cl100k_base": 27263
+        }
+      },
+      "receipt": {
+        "kind": "matrix_envelope",
+        "status": "global_gap_closed",
+        "task": "goal:6c2e7010b8845989597203f6",
+        "scope": {
+          "geometry": "unit_sphere",
+          "amplitudes": "all_real",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "ansatz": "poisson_exponential",
+          "objective": "trace(C G)"
+        },
+        "target": "1/100000",
+        "bounds": {
+          "lower": "5160275e-7",
+          "upper": "5160339e-7",
+          "gap": "6285611e-12"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:dc9d05e698f2c1039b5d474e",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "optimize",
+        "spec": {
+          "cost": [
+            [
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v34_optimized_linear",
+      "kind": "matrix_envelope",
+      "status": "global_gap_closed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 1341,
+          "cl100k_base": 1344
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 967,
+          "cl100k_base": 963
+        },
+        "old_cli_brief": {
+          "o200k_base": 59,
+          "cl100k_base": 59
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 188,
+          "cl100k_base": 185
+        },
+        "decision_receipt": {
+          "o200k_base": 143,
+          "cl100k_base": 139
+        },
+        "actual_tool_response": {
+          "o200k_base": 174,
+          "cl100k_base": 174
+        },
+        "request": {
+          "o200k_base": 23,
+          "cl100k_base": 22
+        },
+        "get_full_proof_request": {
+          "o200k_base": 24,
+          "cl100k_base": 23
+        },
+        "get_full_proof_response": {
+          "o200k_base": 792,
+          "cl100k_base": 790
+        }
+      },
+      "receipt": {
+        "kind": "matrix_envelope",
+        "status": "global_gap_closed",
+        "task": "goal:2da221f024830d9ef4cc7236",
+        "scope": {
+          "geometry": "unit_sphere",
+          "amplitudes": "all_real",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "ansatz": "poisson_exponential",
+          "objective": "trace(C G)"
+        },
+        "target": "1/100000",
+        "bounds": {
+          "lower": "2499994e-7",
+          "upper": "0.25",
+          "gap": "5555522e-13"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:31bf8eec99e6441cc17b328f",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "optimize",
+        "spec": {
+          "cost": [
+            [
+              "1"
+            ]
+          ],
+          "directions": [
+            [
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v34_optimized_nonorthogonal",
+      "kind": "matrix_envelope",
+      "status": "global_gap_closed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 8112,
+          "cl100k_base": 8111
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 7158,
+          "cl100k_base": 7107
+        },
+        "old_cli_brief": {
+          "o200k_base": 59,
+          "cl100k_base": 59
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 659,
+          "cl100k_base": 654
+        },
+        "decision_receipt": {
+          "o200k_base": 140,
+          "cl100k_base": 137
+        },
+        "actual_tool_response": {
+          "o200k_base": 171,
+          "cl100k_base": 172
+        },
+        "request": {
+          "o200k_base": 40,
+          "cl100k_base": 37
+        },
+        "get_full_proof_request": {
+          "o200k_base": 21,
+          "cl100k_base": 21
+        },
+        "get_full_proof_response": {
+          "o200k_base": 4861,
+          "cl100k_base": 4816
+        }
+      },
+      "receipt": {
+        "kind": "matrix_envelope",
+        "status": "global_gap_closed",
+        "task": "goal:b5b20fa71f3604763f4fca3f",
+        "scope": {
+          "geometry": "unit_sphere",
+          "amplitudes": "all_real",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "ansatz": "poisson_exponential",
+          "objective": "trace(C G)"
+        },
+        "target": "1/100000",
+        "bounds": {
+          "lower": "1.445401",
+          "upper": "1.44541",
+          "gap": "80401e-10"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:c11ac448d98e41ce04afd058",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "optimize",
+        "spec": {
+          "cost": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "directions": [
+            [
+              "0",
+              "1",
+              "1"
+            ],
+            [
+              "0",
+              "2",
+              "-1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v34_optimized_odd_even",
+      "kind": "matrix_envelope",
+      "status": "global_gap_closed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 4748,
+          "cl100k_base": 4748
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 3993,
+          "cl100k_base": 3964
+        },
+        "old_cli_brief": {
+          "o200k_base": 59,
+          "cl100k_base": 59
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 438,
+          "cl100k_base": 433
+        },
+        "decision_receipt": {
+          "o200k_base": 145,
+          "cl100k_base": 141
+        },
+        "actual_tool_response": {
+          "o200k_base": 176,
+          "cl100k_base": 176
+        },
+        "request": {
+          "o200k_base": 40,
+          "cl100k_base": 37
+        },
+        "get_full_proof_request": {
+          "o200k_base": 23,
+          "cl100k_base": 22
+        },
+        "get_full_proof_response": {
+          "o200k_base": 2736,
+          "cl100k_base": 2712
+        }
+      },
+      "receipt": {
+        "kind": "matrix_envelope",
+        "status": "global_gap_closed",
+        "task": "goal:c38038477b9f13ceebcc2f00",
+        "scope": {
+          "geometry": "unit_sphere",
+          "amplitudes": "all_real",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "ansatz": "poisson_exponential",
+          "objective": "trace(C G)"
+        },
+        "target": "1/100000",
+        "bounds": {
+          "lower": "3373634e-7",
+          "upper": "3373679e-7",
+          "gap": "4355655e-12"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:3cdfd875a4eea7288dc306bc",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "optimize",
+        "spec": {
+          "cost": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1/3",
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v34_optimized_quartic",
+      "kind": "matrix_envelope",
+      "status": "global_gap_closed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 4520,
+          "cl100k_base": 4521
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 3754,
+          "cl100k_base": 3719
+        },
+        "old_cli_brief": {
+          "o200k_base": 59,
+          "cl100k_base": 59
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 428,
+          "cl100k_base": 423
+        },
+        "decision_receipt": {
+          "o200k_base": 146,
+          "cl100k_base": 141
+        },
+        "actual_tool_response": {
+          "o200k_base": 177,
+          "cl100k_base": 176
+        },
+        "request": {
+          "o200k_base": 41,
+          "cl100k_base": 38
+        },
+        "get_full_proof_request": {
+          "o200k_base": 24,
+          "cl100k_base": 24
+        },
+        "get_full_proof_response": {
+          "o200k_base": 2819,
+          "cl100k_base": 2788
+        }
+      },
+      "receipt": {
+        "kind": "matrix_envelope",
+        "status": "global_gap_closed",
+        "task": "goal:ee234495c224981cbd7caa1c",
+        "scope": {
+          "geometry": "unit_sphere",
+          "amplitudes": "all_real",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "ansatz": "poisson_exponential",
+          "objective": "trace(C G)"
+        },
+        "target": "1/100000",
+        "bounds": {
+          "lower": "2974059e-7",
+          "upper": "2974075e-7",
+          "gap": "1471127e-12"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:62e78af939255c6c8871aa0e",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "optimize",
+        "spec": {
+          "cost": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v34_optimized_three_directions",
+      "kind": "matrix_envelope",
+      "status": "global_gap_closed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 12546,
+          "cl100k_base": 12545
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 11356,
+          "cl100k_base": 11291
+        },
+        "old_cli_brief": {
+          "o200k_base": 59,
+          "cl100k_base": 59
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 698,
+          "cl100k_base": 691
+        },
+        "decision_receipt": {
+          "o200k_base": 146,
+          "cl100k_base": 143
+        },
+        "actual_tool_response": {
+          "o200k_base": 177,
+          "cl100k_base": 178
+        },
+        "request": {
+          "o200k_base": 57,
+          "cl100k_base": 52
+        },
+        "get_full_proof_request": {
+          "o200k_base": 24,
+          "cl100k_base": 24
+        },
+        "get_full_proof_response": {
+          "o200k_base": 8999,
+          "cl100k_base": 8940
+        }
+      },
+      "receipt": {
+        "kind": "matrix_envelope",
+        "status": "global_gap_closed",
+        "task": "goal:c11c6fd142bbcec858d4c52c",
+        "scope": {
+          "geometry": "unit_sphere",
+          "amplitudes": "all_real",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "ansatz": "poisson_exponential",
+          "objective": "trace(C G)"
+        },
+        "target": "1/100000",
+        "bounds": {
+          "lower": "4531611e-7",
+          "upper": "4531712e-7",
+          "gap": "9926575e-12"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:0f337f8c89d1189556c49317",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "optimize",
+        "spec": {
+          "cost": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v34_optimized_weighted_cost",
+      "kind": "matrix_envelope",
+      "status": "global_gap_closed",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 10463,
+          "cl100k_base": 10459
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 9352,
+          "cl100k_base": 9294
+        },
+        "old_cli_brief": {
+          "o200k_base": 59,
+          "cl100k_base": 59
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 766,
+          "cl100k_base": 761
+        },
+        "decision_receipt": {
+          "o200k_base": 148,
+          "cl100k_base": 144
+        },
+        "actual_tool_response": {
+          "o200k_base": 179,
+          "cl100k_base": 179
+        },
+        "request": {
+          "o200k_base": 44,
+          "cl100k_base": 41
+        },
+        "get_full_proof_request": {
+          "o200k_base": 24,
+          "cl100k_base": 24
+        },
+        "get_full_proof_response": {
+          "o200k_base": 5684,
+          "cl100k_base": 5634
+        }
+      },
+      "receipt": {
+        "kind": "matrix_envelope",
+        "status": "global_gap_closed",
+        "task": "goal:41d096dbeab5f8f15bd6739a",
+        "scope": {
+          "geometry": "unit_sphere",
+          "amplitudes": "all_real",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "ansatz": "poisson_exponential",
+          "objective": "trace(C G)"
+        },
+        "target": "1/100000",
+        "bounds": {
+          "lower": "5954796e-7",
+          "upper": "5954868e-7",
+          "gap": "7063825e-12"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:9797f7e5acae64c760b18184",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "optimize",
+        "spec": {
+          "cost": [
+            [
+              "2",
+              "1/2"
+            ],
+            [
+              "1/2",
+              "1"
+            ]
+          ],
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1/3",
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v34_range_budget",
+      "kind": "matrix_envelope",
+      "status": "global_gap_open",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 2539,
+          "cl100k_base": 2541
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 1975,
+          "cl100k_base": 1954
+        },
+        "old_cli_brief": {
+          "o200k_base": 59,
+          "cl100k_base": 59
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 276,
+          "cl100k_base": 271
+        },
+        "decision_receipt": {
+          "o200k_base": 149,
+          "cl100k_base": 146
+        },
+        "actual_tool_response": {
+          "o200k_base": 180,
+          "cl100k_base": 181
+        },
+        "request": {
+          "o200k_base": 45,
+          "cl100k_base": 42
+        },
+        "get_full_proof_request": {
+          "o200k_base": 24,
+          "cl100k_base": 24
+        },
+        "get_full_proof_response": {
+          "o200k_base": 1718,
+          "cl100k_base": 1699
+        }
+      },
+      "receipt": {
+        "kind": "matrix_envelope",
+        "status": "global_gap_open",
+        "task": "goal:cf6c2ea093bbb9c8a3b7e514",
+        "scope": {
+          "geometry": "unit_sphere",
+          "amplitudes": "all_real",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "ansatz": "poisson_exponential",
+          "objective": "trace(C G)"
+        },
+        "target": "1/100000",
+        "bounds": {
+          "lower": "2815198e-7",
+          "upper": "3203287e-7",
+          "gap": "3880883e-8"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:af4e52dc06c5016175b2924c",
+        "diagnostics": []
+      },
+      "request": {
+        "op": "optimize",
+        "spec": {
+          "cost": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "directions": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ]
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v35_anisotropic_goal",
+      "kind": "ground_goal",
+      "status": "proved",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 2628,
+          "cl100k_base": 2614
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 1556,
+          "cl100k_base": 1492
+        },
+        "old_cli_brief": {
+          "o200k_base": 62,
+          "cl100k_base": 61
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 178,
+          "cl100k_base": 169
+        },
+        "decision_receipt": {
+          "o200k_base": 145,
+          "cl100k_base": 142
+        },
+        "actual_tool_response": {
+          "o200k_base": 175,
+          "cl100k_base": 175
+        },
+        "request": {
+          "o200k_base": 58,
+          "cl100k_base": 54
+        },
+        "get_full_proof_request": {
+          "o200k_base": 27,
+          "cl100k_base": 27
+        },
+        "get_full_proof_response": {
+          "o200k_base": 1264,
+          "cl100k_base": 1209
+        }
+      },
+      "receipt": {
+        "kind": "ground_goal",
+        "status": "proved",
+        "task": "goal:ac4c536785a0ec25e87419ec",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "eigenvalue_index": 1,
+          "domain": {
+            "kind": "all_real"
+          }
+        },
+        "target": "0",
+        "bounds": {
+          "lower": "0",
+          "upper": null
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:fb2b7fda67168ca1f9b0c3fc",
+        "diagnostics": [
+          {
+            "scope": "fixed_poisson_budget",
+            "status": "poisson_envelope_fits",
+            "count": 1,
+            "scale_lower": "1",
+            "scale_upper": "1"
+          }
+        ]
+      },
+      "request": {
+        "op": "submit",
+        "goal": {
+          "domain": {
+            "kind": "all_real"
+          },
+          "parameters": [
+            "a",
+            "b"
+          ],
+          "penalty": "a*a/4+b*b/9",
+          "potential": "a*t+b*(t*t-1/3)",
+          "threshold": "0",
+          "profile": "sphere_ground"
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v35_counterexample",
+      "kind": "ground_goal",
+      "status": "refuted",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 4687,
+          "cl100k_base": 4646
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 3042,
+          "cl100k_base": 2957
+        },
+        "old_cli_brief": {
+          "o200k_base": 80,
+          "cl100k_base": 77
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 237,
+          "cl100k_base": 228
+        },
+        "decision_receipt": {
+          "o200k_base": 173,
+          "cl100k_base": 169
+        },
+        "actual_tool_response": {
+          "o200k_base": 204,
+          "cl100k_base": 204
+        },
+        "request": {
+          "o200k_base": 53,
+          "cl100k_base": 50
+        },
+        "get_full_proof_request": {
+          "o200k_base": 25,
+          "cl100k_base": 25
+        },
+        "get_full_proof_response": {
+          "o200k_base": 2340,
+          "cl100k_base": 2284
+        }
+      },
+      "receipt": {
+        "kind": "ground_goal",
+        "status": "refuted",
+        "task": "goal:b2de0b17c130ba7d39b3664d",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "eigenvalue_index": 1,
+          "domain": {
+            "kind": "box",
+            "box": [
+              [
+                -4,
+                4
+              ]
+            ]
+          }
+        },
+        "target": "-1/10",
+        "bounds": {
+          "lower": "-2327893e-7",
+          "upper": "-1572853e-7"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:99a4ecaaf1f36e00560c3f04",
+        "diagnostics": [
+          {
+            "scope": "fixed_poisson_budget",
+            "status": "poisson_envelope_incompatible",
+            "count": 1,
+            "scale_lower": "2.5",
+            "scale_upper": "2.5"
+          }
+        ]
+      },
+      "request": {
+        "op": "submit",
+        "goal": {
+          "domain": {
+            "box": [
+              [
+                -4,
+                4
+              ]
+            ],
+            "kind": "box"
+          },
+          "parameters": [
+            "a"
+          ],
+          "penalty": "a*a/10",
+          "potential": "a*t",
+          "threshold": "-1/10",
+          "profile": "sphere_ground"
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v35_generic",
+      "kind": "ground_goal",
+      "status": "proved",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 4575,
+          "cl100k_base": 4536
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 3056,
+          "cl100k_base": 2976
+        },
+        "old_cli_brief": {
+          "o200k_base": 79,
+          "cl100k_base": 76
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 250,
+          "cl100k_base": 241
+        },
+        "decision_receipt": {
+          "o200k_base": 162,
+          "cl100k_base": 157
+        },
+        "actual_tool_response": {
+          "o200k_base": 193,
+          "cl100k_base": 192
+        },
+        "request": {
+          "o200k_base": 67,
+          "cl100k_base": 64
+        },
+        "get_full_proof_request": {
+          "o200k_base": 23,
+          "cl100k_base": 22
+        },
+        "get_full_proof_response": {
+          "o200k_base": 2349,
+          "cl100k_base": 2298
+        }
+      },
+      "receipt": {
+        "kind": "ground_goal",
+        "status": "proved",
+        "task": "goal:f00f10338413016de1810e19",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "eigenvalue_index": 1,
+          "domain": {
+            "kind": "box",
+            "box": [
+              [
+                -4,
+                4
+              ]
+            ]
+          }
+        },
+        "target": "-1",
+        "bounds": {
+          "lower": "8673084e-7",
+          "upper": "1.367589"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:852eea5ee6ee0e7625927197",
+        "diagnostics": [
+          {
+            "scope": "fixed_poisson_budget",
+            "status": "poisson_envelope_incompatible",
+            "count": 1,
+            "scale_lower": "1.666666",
+            "scale_upper": "1.666667"
+          }
+        ]
+      },
+      "request": {
+        "op": "submit",
+        "goal": {
+          "domain": {
+            "box": [
+              [
+                -4,
+                4
+              ]
+            ],
+            "kind": "box"
+          },
+          "parameters": [
+            "a"
+          ],
+          "penalty": "3*a*a/20+3*a/100",
+          "potential": "2-3*t+3*t*t/2+a*t",
+          "threshold": "-1",
+          "profile": "sphere_ground"
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v35_mapped_goal",
+      "kind": "ground_goal",
+      "status": "proved",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 2745,
+          "cl100k_base": 2731
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 1664,
+          "cl100k_base": 1600
+        },
+        "old_cli_brief": {
+          "o200k_base": 62,
+          "cl100k_base": 61
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 193,
+          "cl100k_base": 184
+        },
+        "decision_receipt": {
+          "o200k_base": 141,
+          "cl100k_base": 138
+        },
+        "actual_tool_response": {
+          "o200k_base": 171,
+          "cl100k_base": 171
+        },
+        "request": {
+          "o200k_base": 73,
+          "cl100k_base": 69
+        },
+        "get_full_proof_request": {
+          "o200k_base": 22,
+          "cl100k_base": 22
+        },
+        "get_full_proof_response": {
+          "o200k_base": 1356,
+          "cl100k_base": 1301
+        }
+      },
+      "receipt": {
+        "kind": "ground_goal",
+        "status": "proved",
+        "task": "goal:60be39054a95bc5d0474fbc7",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "eigenvalue_index": 1,
+          "domain": {
+            "kind": "all_real"
+          }
+        },
+        "target": "0",
+        "bounds": {
+          "lower": "0",
+          "upper": null
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:9ae7bbbcc248763f2269eddd",
+        "diagnostics": [
+          {
+            "scope": "fixed_poisson_budget",
+            "status": "poisson_envelope_fits",
+            "count": 1,
+            "scale_lower": "1",
+            "scale_upper": "1"
+          }
+        ]
+      },
+      "request": {
+        "op": "submit",
+        "goal": {
+          "domain": {
+            "kind": "all_real"
+          },
+          "parameters": [
+            "a",
+            "b"
+          ],
+          "penalty": "(a+2*b)**2/4+(b-a)**2/9",
+          "potential": "(a+2*b)*t+(b-a)*(t*t-1/3)",
+          "threshold": "0",
+          "profile": "sphere_ground"
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    },
+    {
+      "case": "v35_weak_poisson_ansatz",
+      "kind": "ground_goal",
+      "status": "unresolved",
+      "text_tokens": {
+        "old_complete_pretty_file": {
+          "o200k_base": 18108,
+          "cl100k_base": 18007
+        },
+        "same_complete_compact_json": {
+          "o200k_base": 12769,
+          "cl100k_base": 12444
+        },
+        "old_cli_brief": {
+          "o200k_base": 80,
+          "cl100k_base": 77
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 211,
+          "cl100k_base": 202
+        },
+        "decision_receipt": {
+          "o200k_base": 157,
+          "cl100k_base": 154
+        },
+        "actual_tool_response": {
+          "o200k_base": 188,
+          "cl100k_base": 189
+        },
+        "request": {
+          "o200k_base": 50,
+          "cl100k_base": 47
+        },
+        "get_full_proof_request": {
+          "o200k_base": 21,
+          "cl100k_base": 21
+        },
+        "get_full_proof_response": {
+          "o200k_base": 12067,
+          "cl100k_base": 11771
+        }
+      },
+      "receipt": {
+        "kind": "ground_goal",
+        "status": "unresolved",
+        "task": "goal:44f719bb2711a00a62980eef",
+        "scope": {
+          "geometry": "unit_sphere",
+          "space": "full_sphere",
+          "eigenvalue_index": 1,
+          "domain": {
+            "kind": "box",
+            "box": [
+              [
+                -2,
+                2
+              ]
+            ]
+          }
+        },
+        "target": "0",
+        "bounds": {
+          "lower": "-3128234e-14",
+          "upper": "0"
+        },
+        "bound_display": "outward",
+        "verified": true,
+        "formal_kernel": false,
+        "evidence": "proof:821383aea55453d14cbe7764",
+        "diagnostics": [
+          {
+            "scope": "fixed_poisson_budget",
+            "status": "poisson_envelope_incompatible",
+            "count": 1,
+            "scale_lower": "1.25",
+            "scale_upper": "1.25"
+          }
+        ]
+      },
+      "request": {
+        "op": "submit",
+        "goal": {
+          "domain": {
+            "box": [
+              [
+                -2,
+                2
+              ]
+            ],
+            "kind": "box"
+          },
+          "parameters": [
+            "a"
+          ],
+          "penalty": "a*a/5",
+          "potential": "a*t",
+          "threshold": "0",
+          "profile": "sphere_ground"
+        }
+      },
+      "same_exact_evidence_after_retrieval": true
+    }
+  ],
+  "input_format_probes": [
+    {
+      "case": "v32_anisotropic_goal",
+      "variants": {
+        "profile": {
+          "o200k_base": 51,
+          "cl100k_base": 48
+        },
+        "coefficients": {
+          "o200k_base": 66,
+          "cl100k_base": 62
+        },
+        "triangular_quadratic": {
+          "o200k_base": 68,
+          "cl100k_base": 64
+        },
+        "both": {
+          "o200k_base": 83,
+          "cl100k_base": 78
+        }
+      },
+      "all_compile_to_same_problem": true
+    },
+    {
+      "case": "v32_generic",
+      "variants": {
+        "profile": {
+          "o200k_base": 60,
+          "cl100k_base": 58
+        },
+        "coefficients": {
+          "o200k_base": 71,
+          "cl100k_base": 68
+        },
+        "triangular_quadratic": {
+          "o200k_base": 69,
+          "cl100k_base": 66
+        },
+        "both": {
+          "o200k_base": 80,
+          "cl100k_base": 76
+        }
+      },
+      "all_compile_to_same_problem": true
+    },
+    {
+      "case": "v32_mapped_goal",
+      "variants": {
+        "profile": {
+          "o200k_base": 66,
+          "cl100k_base": 63
+        },
+        "coefficients": {
+          "o200k_base": 79,
+          "cl100k_base": 75
+        },
+        "triangular_quadratic": {
+          "o200k_base": 77,
+          "cl100k_base": 73
+        },
+        "both": {
+          "o200k_base": 90,
+          "cl100k_base": 85
+        }
+      },
+      "all_compile_to_same_problem": true
+    },
+    {
+      "case": "v35_anisotropic_goal",
+      "variants": {
+        "profile": {
+          "o200k_base": 51,
+          "cl100k_base": 48
+        },
+        "coefficients": {
+          "o200k_base": 66,
+          "cl100k_base": 62
+        },
+        "triangular_quadratic": {
+          "o200k_base": 68,
+          "cl100k_base": 64
+        },
+        "both": {
+          "o200k_base": 83,
+          "cl100k_base": 78
+        }
+      },
+      "all_compile_to_same_problem": true
+    },
+    {
+      "case": "v35_counterexample",
+      "variants": {
+        "profile": {
+          "o200k_base": 46,
+          "cl100k_base": 44
+        },
+        "coefficients": {
+          "o200k_base": 60,
+          "cl100k_base": 57
+        },
+        "triangular_quadratic": {
+          "o200k_base": 59,
+          "cl100k_base": 56
+        },
+        "both": {
+          "o200k_base": 73,
+          "cl100k_base": 69
+        }
+      },
+      "all_compile_to_same_problem": true
+    },
+    {
+      "case": "v35_generic",
+      "variants": {
+        "profile": {
+          "o200k_base": 60,
+          "cl100k_base": 58
+        },
+        "coefficients": {
+          "o200k_base": 71,
+          "cl100k_base": 68
+        },
+        "triangular_quadratic": {
+          "o200k_base": 69,
+          "cl100k_base": 66
+        },
+        "both": {
+          "o200k_base": 80,
+          "cl100k_base": 76
+        }
+      },
+      "all_compile_to_same_problem": true
+    },
+    {
+      "case": "v35_mapped_goal",
+      "variants": {
+        "profile": {
+          "o200k_base": 66,
+          "cl100k_base": 63
+        },
+        "coefficients": {
+          "o200k_base": 79,
+          "cl100k_base": 75
+        },
+        "triangular_quadratic": {
+          "o200k_base": 77,
+          "cl100k_base": 73
+        },
+        "both": {
+          "o200k_base": 90,
+          "cl100k_base": 85
+        }
+      },
+      "all_compile_to_same_problem": true
+    },
+    {
+      "case": "v35_weak_poisson_ansatz",
+      "variants": {
+        "profile": {
+          "o200k_base": 43,
+          "cl100k_base": 41
+        },
+        "coefficients": {
+          "o200k_base": 57,
+          "cl100k_base": 54
+        },
+        "triangular_quadratic": {
+          "o200k_base": 56,
+          "cl100k_base": 53
+        },
+        "both": {
+          "o200k_base": 70,
+          "cl100k_base": 66
+        }
+      },
+      "all_compile_to_same_problem": true
+    }
+  ],
+  "size_gate": {
+    "o200k_base": {
+      "median_receipt": 142.0,
+      "p90_receipt": 157,
+      "median_request_and_receipt": 219.5,
+      "numeric_size_gate": true
+    },
+    "cl100k_base": {
+      "median_receipt": 138.5,
+      "p90_receipt": 154,
+      "median_request_and_receipt": 216.0,
+      "numeric_size_gate": true
+    }
+  },
+  "sessions": {
+    "first_use_plus_all_requests": {
+      "encodings": {
+        "o200k_base": 5998,
+        "cl100k_base": 5914
+      },
+      "items": 54,
+      "basis": "sum of explicit text item encodings; excludes unknown API framing and hidden reasoning",
+      "model_mapping_asserted": false,
+      "actual_api_usage": null
+    },
+    "one_time_instructions": {
+      "o200k_base": 81,
+      "cl100k_base": 81
+    },
+    "one_time_operation_schema": {
+      "o200k_base": 222,
+      "cl100k_base": 215
+    },
+    "interpretation": "Exact text counts only. Full proof retrieval adds the explicit request and proof response; it is not free and can erase savings."
+  }
+}

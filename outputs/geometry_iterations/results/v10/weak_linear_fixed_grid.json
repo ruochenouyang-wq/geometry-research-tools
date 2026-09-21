@@ -1,0 +1,52 @@
+{
+  "algorithm_version": 5,
+  "status": "target_met",
+  "tolerance": "1/10000000000",
+  "certificate": {
+    "method": "modewise_schur_v3",
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "q_coefficients": [
+      "0",
+      "1/2"
+    ],
+    "modes": 4,
+    "eigenvalue_index": 1,
+    "tail_policy": "sandwich",
+    "range_proof": {
+      "kind": "quadratic_range_v5",
+      "lower": "-1/2",
+      "upper": "1/2"
+    },
+    "upper_kind": "upper_tail",
+    "tail_lower": "39/2",
+    "lower_inertia": [
+      0,
+      0,
+      4
+    ],
+    "upper_inertia": [
+      1,
+      0,
+      3
+    ],
+    "formal_assistant_checked": false,
+    "lower": "-7221731963444150299651/175921860444160000000000",
+    "upper": "-112839561887458802691/2748779069440000000000",
+    "exact_width": "2646786927427/175921860444160000000000",
+    "decimal_enclosure": [
+      "-0.041050793490",
+      "-0.041050793474"
+    ]
+  },
+  "attempts": [
+    {
+      "modes": 4,
+      "path": "guided",
+      "exact_count_calls": 4,
+      "seconds": 0.0008263329999999985,
+      "exact_width": "2646786927427/175921860444160000000000"
+    }
+  ],
+  "seconds": 0.0010280420000000068
+}

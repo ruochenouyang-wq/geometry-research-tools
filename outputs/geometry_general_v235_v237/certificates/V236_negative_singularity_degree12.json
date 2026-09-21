@@ -1,0 +1,1080 @@
+{
+  "approximant": {
+    "0,0,0": "-1436435/627456",
+    "0,0,10": "13698685/16512",
+    "0,0,12": "-26050375/99072",
+    "0,0,2": "7182175/313728",
+    "0,0,4": "-35910875/209152",
+    "0,0,6": "4883879/8256",
+    "0,0,8": "-11099725/11008"
+  },
+  "coercivity": null,
+  "eigenvalue_index": 1,
+  "error_budget": {
+    "lower_widening": "587672972882514519758345/373007000228462415839232",
+    "representation_widening": "61875040633453675666675/19631947380445390307328",
+    "source_width": "307372543/113082630144",
+    "upper_widening": "143543163855738603005/91066162165151956992"
+  },
+  "error_evidence": {
+    "coercivity_shifted_floor": "1",
+    "embedding": {
+      "domain": "all_real_H1_functions_on_unit_S2",
+      "energy_coefficient": "1",
+      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+      "mass_coefficient": "1",
+      "measure": "d_sigma/(4*pi)_on_unit_S2",
+      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+    },
+    "probability_L2_error": "303460493315/1099511627776",
+    "relative_form_error": "303460493315/1099511627776",
+    "rule": "minmax_relative_closed_form_comparison",
+    "shift": "418493/80883",
+    "source_shifted_lower_used": "1936571599363/339247890432"
+  },
+  "exact_width": "1176639651090882573329929/373007000228462415839232",
+  "formal_proof_assistant_checked": false,
+  "format": "l2_function_spectrum_v236",
+  "full_infinite_space_covered": true,
+  "function": {
+    "amplitude": "-1",
+    "axis": 2,
+    "exponent": "-1/4",
+    "kind": "axis_profile",
+    "offset": "0",
+    "profile": "abs_power"
+  },
+  "geometry": "unit_S2",
+  "lower": "-1003483974862696411267/963842377851324071936",
+  "mean_zero": true,
+  "measure": "d_sigma/(4*pi)_on_unit_S2",
+  "model": {
+    "axis_power_coefficients": [
+      "-1436435/627456",
+      "0",
+      "7182175/313728",
+      "0",
+      "-35910875/209152",
+      "0",
+      "4883879/8256",
+      "0",
+      "-11099725/11008",
+      "0",
+      "13698685/16512",
+      "0",
+      "-26050375/99072"
+    ],
+    "bound_statement": "probability_L2_norm(source_function-polynomial)<=error_upper",
+    "degree": 12,
+    "error_squared": "4118450/54066609",
+    "error_upper": "303460493315/1099511627776",
+    "formal_assistant_checked": false,
+    "format": "sphere_axis_profile_projection_v1",
+    "function": {
+      "amplitude": "-1",
+      "axis": 2,
+      "exponent": "-1/4",
+      "kind": "axis_profile",
+      "offset": "0",
+      "profile": "abs_power"
+    },
+    "legendre_projection": [
+      {
+        "basis_mass": "1",
+        "degree": 0,
+        "legendre_coefficients": [
+          "1"
+        ],
+        "norm_squared_contribution": "16/9",
+        "projection_coefficient": "-4/3",
+        "source_inner_product": "-4/3"
+      },
+      {
+        "basis_mass": "1/3",
+        "degree": 1,
+        "legendre_coefficients": [
+          "0",
+          "1"
+        ],
+        "norm_squared_contribution": "0",
+        "projection_coefficient": "0",
+        "source_inner_product": "0"
+      },
+      {
+        "basis_mass": "1/5",
+        "degree": 2,
+        "legendre_coefficients": [
+          "-1/2",
+          "0",
+          "3/2"
+        ],
+        "norm_squared_contribution": "80/1089",
+        "projection_coefficient": "20/33",
+        "source_inner_product": "4/33"
+      },
+      {
+        "basis_mass": "1/7",
+        "degree": 3,
+        "legendre_coefficients": [
+          "0",
+          "-3/2",
+          "0",
+          "5/2"
+        ],
+        "norm_squared_contribution": "0",
+        "projection_coefficient": "0",
+        "source_inner_product": "0"
+      },
+      {
+        "basis_mass": "1/9",
+        "degree": 4,
+        "legendre_coefficients": [
+          "3/8",
+          "0",
+          "-15/4",
+          "0",
+          "35/8"
+        ],
+        "norm_squared_contribution": "1296/43681",
+        "projection_coefficient": "-108/209",
+        "source_inner_product": "-12/209"
+      },
+      {
+        "basis_mass": "1/11",
+        "degree": 5,
+        "legendre_coefficients": [
+          "0",
+          "15/8",
+          "0",
+          "-35/4",
+          "0",
+          "63/8"
+        ],
+        "norm_squared_contribution": "0",
+        "projection_coefficient": "0",
+        "source_inner_product": "0"
+      },
+      {
+        "basis_mass": "1/13",
+        "degree": 6,
+        "legendre_coefficients": [
+          "-5/16",
+          "0",
+          "105/16",
+          "0",
+          "-315/16",
+          "0",
+          "231/16"
+        ],
+        "norm_squared_contribution": "60112/3538161",
+        "projection_coefficient": "884/1881",
+        "source_inner_product": "68/1881"
+      },
+      {
+        "basis_mass": "1/15",
+        "degree": 7,
+        "legendre_coefficients": [
+          "0",
+          "-35/16",
+          "0",
+          "315/16",
+          "0",
+          "-693/16",
+          "0",
+          "429/16"
+        ],
+        "norm_squared_contribution": "0",
+        "projection_coefficient": "0",
+        "source_inner_product": "0"
+      },
+      {
+        "basis_mass": "1/17",
+        "degree": 8,
+        "legendre_coefficients": [
+          "35/128",
+          "0",
+          "-315/32",
+          "0",
+          "3465/64",
+          "0",
+          "-3003/32",
+          "0",
+          "6435/128"
+        ],
+        "norm_squared_contribution": "1965200/173369889",
+        "projection_coefficient": "-5780/13167",
+        "source_inner_product": "-340/13167"
+      },
+      {
+        "basis_mass": "1/19",
+        "degree": 9,
+        "legendre_coefficients": [
+          "0",
+          "315/128",
+          "0",
+          "-1155/32",
+          "0",
+          "9009/64",
+          "0",
+          "-6435/32",
+          "0",
+          "12155/128"
+        ],
+        "norm_squared_contribution": "0",
+        "projection_coefficient": "0",
+        "source_inner_product": "0"
+      },
+      {
+        "basis_mass": "1/21",
+        "degree": 10,
+        "legendre_coefficients": [
+          "-63/256",
+          "0",
+          "3465/256",
+          "0",
+          "-15015/128",
+          "0",
+          "45045/128",
+          "0",
+          "-109395/256",
+          "0",
+          "46189/256"
+        ],
+        "norm_squared_contribution": "115600/14017269",
+        "projection_coefficient": "340/817",
+        "source_inner_product": "340/17157"
+      },
+      {
+        "basis_mass": "1/23",
+        "degree": 11,
+        "legendre_coefficients": [
+          "0",
+          "-693/256",
+          "0",
+          "15015/256",
+          "0",
+          "-45045/128",
+          "0",
+          "109395/128",
+          "0",
+          "-230945/256",
+          "0",
+          "88179/256"
+        ],
+        "norm_squared_contribution": "0",
+        "projection_coefficient": "0",
+        "source_inner_product": "0"
+      },
+      {
+        "basis_mass": "1/25",
+        "degree": 12,
+        "legendre_coefficients": [
+          "231/1024",
+          "0",
+          "-9009/512",
+          "0",
+          "225225/1024",
+          "0",
+          "-255255/256",
+          "0",
+          "2078505/1024",
+          "0",
+          "-969969/512",
+          "0",
+          "676039/1024"
+        ],
+        "norm_squared_contribution": "16810000/2649263841",
+        "projection_coefficient": "-20500/51471",
+        "source_inner_product": "-820/51471"
+      }
+    ],
+    "monomial_source_moments": [
+      "-4/3",
+      "0",
+      "-4/11",
+      "0",
+      "-4/19",
+      "0",
+      "-4/27",
+      "0",
+      "-4/35",
+      "0",
+      "-4/43",
+      "0",
+      "-4/51"
+    ],
+    "norm": "L2_probability",
+    "point_convention": "step(0)=0;negative_abs_power_at0_is_set_to0_as_an_L2_equivalent_representative",
+    "point_value_at_axis_zero": "0",
+    "polynomial": {
+      "0,0,0": "-1436435/627456",
+      "0,0,10": "13698685/16512",
+      "0,0,12": "-26050375/99072",
+      "0,0,2": "7182175/313728",
+      "0,0,4": "-35910875/209152",
+      "0,0,6": "4883879/8256",
+      "0,0,8": "-11099725/11008"
+    },
+    "projection_identity": "exact_error_squared=target_norm_squared-sum_l(2l+1)*source_inner_product_l^2",
+    "projection_norm_squared": "104014768/54066609",
+    "scope": "unit_S2_probability_measure",
+    "spectral_transfer_claimed": false,
+    "sqrt_bits": 40,
+    "sqrt_upper_squared": "92088271002983159689225/1208925819614629174706176",
+    "target_norm_squared": "2"
+  },
+  "requested_width": "1/100000000",
+  "scope": "all_real_mean_zero_H1_on_unit_S2",
+  "source": {
+    "backend": "axis_isometry_wide",
+    "conversion": {
+      "axis": 2,
+      "identity": "coordinate_permutation_preserves_L2_energy_and_mean"
+    },
+    "eigenvalue_index": 1,
+    "exact_width": "307372543/113082630144",
+    "format": "full_sphere_polynomial_source_v235",
+    "full_infinite_space_covered": true,
+    "geometry": "unit_S2",
+    "lower": "181284735491/339247890432",
+    "mean_zero": true,
+    "measure": "d_sigma/(4*pi)_on_unit_S2",
+    "pointwise_range": {
+      "axis": 2,
+      "identity": "coordinate_permutation_isometry_of_full_S2",
+      "kind": "axis_isometry",
+      "lower": "-337610/80883",
+      "polynomial": {
+        "0,0,0": "-1436435/627456",
+        "0,0,10": "13698685/16512",
+        "0,0,12": "-26050375/99072",
+        "0,0,2": "7182175/313728",
+        "0,0,4": "-35910875/209152",
+        "0,0,6": "4883879/8256",
+        "0,0,8": "-11099725/11008"
+      },
+      "proof": {
+        "format": "wide_potential_range_v117_v119",
+        "interval": [
+          "-1",
+          "1"
+        ],
+        "lower": "-337610/80883",
+        "method": "bernstein",
+        "proof": {
+          "cells": [
+            {
+              "interval": [
+                "-1",
+                "0"
+              ],
+              "lower": "-337610/80883",
+              "upper": "52234/26961"
+            },
+            {
+              "interval": [
+                "0",
+                "1"
+              ],
+              "lower": "-337610/80883",
+              "upper": "52234/26961"
+            }
+          ],
+          "depth": 1
+        },
+        "q_coefficients": [
+          "-1436435/627456",
+          "0",
+          "7182175/313728",
+          "0",
+          "-35910875/209152",
+          "0",
+          "4883879/8256",
+          "0",
+          "-11099725/11008",
+          "0",
+          "13698685/16512",
+          "0",
+          "-26050375/99072"
+        ],
+        "upper": "52234/26961"
+      },
+      "upper": "52234/26961"
+    },
+    "polynomial": {
+      "0,0,0": "-1436435/627456",
+      "0,0,10": "13698685/16512",
+      "0,0,12": "-26050375/99072",
+      "0,0,2": "7182175/313728",
+      "0,0,4": "-35910875/209152",
+      "0,0,6": "4883879/8256",
+      "0,0,8": "-11099725/11008"
+    },
+    "scope": "all_real_mean_zero_H1_on_unit_S2",
+    "source_proof": {
+      "angular_tail_cannot_improve_best_upper": true,
+      "angular_tail_lower": "147688/80883",
+      "decimal_enclosure": [
+        "0.534372476893",
+        "0.537090600293"
+      ],
+      "eigenvalue_index_in_constrained_space": 1,
+      "exact_width": "307372543/113082630144",
+      "formal_assistant_checked": false,
+      "format": "wide_full_sphere_ground_v122",
+      "geometry": "unit_S2",
+      "lower": "181284735491/339247890432",
+      "mean_zero": true,
+      "omitted_azimuth_m_start": 2,
+      "potential_symmetry": "axisymmetric_polynomial_degree_at_most_24",
+      "q_coefficients": [
+        "-1436435/627456",
+        "0",
+        "7182175/313728",
+        "0",
+        "-35910875/209152",
+        "0",
+        "4883879/8256",
+        "0",
+        "-11099725/11008",
+        "0",
+        "13698685/16512",
+        "0",
+        "-26050375/99072"
+      ],
+      "range_proof": {
+        "format": "wide_potential_range_v117_v119",
+        "interval": [
+          "-1",
+          "1"
+        ],
+        "lower": "-337610/80883",
+        "method": "bernstein",
+        "proof": {
+          "cells": [
+            {
+              "interval": [
+                "-1",
+                "0"
+              ],
+              "lower": "-337610/80883",
+              "upper": "52234/26961"
+            },
+            {
+              "interval": [
+                "0",
+                "1"
+              ],
+              "lower": "-337610/80883",
+              "upper": "52234/26961"
+            }
+          ],
+          "depth": 1
+        },
+        "q_coefficients": [
+          "-1436435/627456",
+          "0",
+          "7182175/313728",
+          "0",
+          "-35910875/209152",
+          "0",
+          "4883879/8256",
+          "0",
+          "-11099725/11008",
+          "0",
+          "13698685/16512",
+          "0",
+          "-26050375/99072"
+        ],
+        "upper": "52234/26961"
+      },
+      "scope": "all_mean_zero_H1_functions_on_unit_S2",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "decimal_enclosure": [
+            "0.907399377623",
+            "0.909393248292"
+          ],
+          "degree_start": 1,
+          "eigenvalue_index": 1,
+          "exact_width": "338208209/169623945216",
+          "formal_assistant_checked": false,
+          "format": "wide_sphere_sector_v121",
+          "geometry": "unit_S2",
+          "kernel_evidence": {
+            "A": [
+              [
+                "20/33",
+                "0",
+                "8/209",
+                "0"
+              ],
+              [
+                "0",
+                "5884/3135",
+                "0",
+                "136/1881"
+              ],
+              [
+                "8/209",
+                "0",
+                "122384/39501",
+                "0"
+              ],
+              [
+                "0",
+                "136/1881",
+                "0",
+                "2608/627"
+              ]
+            ],
+            "mass": [
+              "2/3",
+              "2/5",
+              "2/7",
+              "2/9"
+            ],
+            "tail_couplings": [
+              {
+                "column": [
+                  [
+                    2,
+                    "8/297"
+                  ],
+                  [
+                    0,
+                    "-8/627"
+                  ]
+                ],
+                "degree": 5,
+                "mass": "2/11"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "3352/80883"
+                  ],
+                  [
+                    1,
+                    "-376/9405"
+                  ]
+                ],
+                "degree": 6,
+                "mass": "2/13"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "-10312/943635"
+                  ],
+                  [
+                    0,
+                    "136/21945"
+                  ]
+                ],
+                "degree": 7,
+                "mass": "2/15"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "-25656/1069453"
+                  ],
+                  [
+                    1,
+                    "77384/2830905"
+                  ]
+                ],
+                "degree": 8,
+                "mass": "2/17"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "3368/566181"
+                  ],
+                  [
+                    0,
+                    "-680/188727"
+                  ]
+                ],
+                "degree": 9,
+                "mass": "2/19"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "155968/18505179"
+                  ],
+                  [
+                    1,
+                    "-3880/188727"
+                  ]
+                ],
+                "degree": 10,
+                "mass": "2/21"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "-138872/10654497"
+                  ],
+                  [
+                    0,
+                    "40/17157"
+                  ]
+                ],
+                "degree": 11,
+                "mass": "2/23"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "-120040/11443719"
+                  ],
+                  [
+                    1,
+                    "16/2835"
+                  ]
+                ],
+                "degree": 12,
+                "mass": "2/25"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "7696/1492659"
+                  ],
+                  [
+                    0,
+                    "-21320/1389717"
+                  ]
+                ],
+                "degree": 13,
+                "mass": "2/27"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "10088/2203449"
+                  ],
+                  [
+                    1,
+                    "-21320/1919133"
+                  ]
+                ],
+                "degree": 14,
+                "mass": "2/29"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "-533000/59493123"
+                  ]
+                ],
+                "degree": 15,
+                "mass": "2/31"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "-14924000/1963273059"
+                  ]
+                ],
+                "degree": 16,
+                "mass": "2/33"
+              }
+            ]
+          },
+          "lower": "153916662319/169623945216",
+          "lower_inertia": [
+            0,
+            0,
+            4
+          ],
+          "mean_zero": true,
+          "modes": 4,
+          "projection": "remove_l0",
+          "q_coefficients": [
+            "-1436435/627456",
+            "0",
+            "7182175/313728",
+            "0",
+            "-35910875/209152",
+            "0",
+            "4883879/8256",
+            "0",
+            "-11099725/11008",
+            "0",
+            "13698685/16512",
+            "0",
+            "-26050375/99072"
+          ],
+          "radial_tail_lower": "2088880/80883",
+          "radial_tail_start": 5,
+          "range_proof": {
+            "format": "wide_potential_range_v117_v119",
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "lower": "-337610/80883",
+            "method": "bernstein",
+            "proof": {
+              "cells": [
+                {
+                  "interval": [
+                    "-1",
+                    "0"
+                  ],
+                  "lower": "-337610/80883",
+                  "upper": "52234/26961"
+                },
+                {
+                  "interval": [
+                    "0",
+                    "1"
+                  ],
+                  "lower": "-337610/80883",
+                  "upper": "52234/26961"
+                }
+              ],
+              "depth": 1
+            },
+            "q_coefficients": [
+              "-1436435/627456",
+              "0",
+              "7182175/313728",
+              "0",
+              "-35910875/209152",
+              "0",
+              "4883879/8256",
+              "0",
+              "-11099725/11008",
+              "0",
+              "13698685/16512",
+              "0",
+              "-26050375/99072"
+            ],
+            "upper": "52234/26961"
+          },
+          "scope": "single_azimuth_sector_only",
+          "upper": "2282417/2509824",
+          "upper_inertia": [
+            1,
+            0,
+            3
+          ],
+          "upper_kind": "upper_tail"
+        },
+        {
+          "azimuth_m": 1,
+          "decimal_enclosure": [
+            "0.534372476893",
+            "0.537090600293"
+          ],
+          "degree_start": 1,
+          "eigenvalue_index": 1,
+          "exact_width": "307372543/113082630144",
+          "formal_assistant_checked": false,
+          "format": "wide_sphere_sector_v121",
+          "geometry": "unit_S2",
+          "kernel_evidence": {
+            "A": [
+              [
+                "8/11",
+                "0",
+                "128/209",
+                "0"
+              ],
+              [
+                "0",
+                "12168/1045",
+                "0",
+                "640/1881"
+              ],
+              [
+                "128/209",
+                "0",
+                "14624/399",
+                "0"
+              ],
+              [
+                "0",
+                "640/1881",
+                "0",
+                "472160/5643"
+              ]
+            ],
+            "mass": [
+              "4/3",
+              "12/5",
+              "24/7",
+              "40/9"
+            ],
+            "tail_couplings": [
+              {
+                "column": [
+                  [
+                    2,
+                    "640/627"
+                  ],
+                  [
+                    0,
+                    "-320/627"
+                  ]
+                ],
+                "degree": 5,
+                "mass": "60/11"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "54400/80883"
+                  ],
+                  [
+                    1,
+                    "-192/1045"
+                  ]
+                ],
+                "degree": 6,
+                "mass": "84/13"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "-512/645"
+                  ],
+                  [
+                    0,
+                    "4352/9405"
+                  ]
+                ],
+                "degree": 7,
+                "mass": "112/15"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "-401920/1069453"
+                  ],
+                  [
+                    1,
+                    "39168/314545"
+                  ]
+                ],
+                "degree": 8,
+                "mass": "144/17"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "44160/62909"
+                  ],
+                  [
+                    0,
+                    "-27200/62909"
+                  ]
+                ],
+                "degree": 9,
+                "mass": "180/19"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "19266880/31963491"
+                  ],
+                  [
+                    1,
+                    "-1600/17157"
+                  ]
+                ],
+                "degree": 10,
+                "mass": "220/21"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "-1213088/3551499"
+                  ],
+                  [
+                    0,
+                    "7040/17157"
+                  ]
+                ],
+                "degree": 11,
+                "mass": "264/23"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "-47758880/102993471"
+                  ],
+                  [
+                    1,
+                    "255424/772065"
+                  ]
+                ],
+                "degree": 12,
+                "mass": "312/25"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "223808/639711"
+                  ],
+                  [
+                    0,
+                    "-42640/198531"
+                  ]
+                ],
+                "degree": 13,
+                "mass": "364/27"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "7579520/19831041"
+                  ],
+                  [
+                    1,
+                    "-213200/639711"
+                  ]
+                ],
+                "degree": 14,
+                "mass": "420/29"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "-8528000/19831041"
+                  ]
+                ],
+                "degree": 15,
+                "mass": "480/31"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "-1014832000/1963273059"
+                  ]
+                ],
+                "degree": 16,
+                "mass": "544/33"
+              }
+            ]
+          },
+          "lower": "181284735491/339247890432",
+          "lower_inertia": [
+            0,
+            0,
+            4
+          ],
+          "mean_zero": true,
+          "modes": 4,
+          "projection": "none",
+          "q_coefficients": [
+            "-1436435/627456",
+            "0",
+            "7182175/313728",
+            "0",
+            "-35910875/209152",
+            "0",
+            "4883879/8256",
+            "0",
+            "-11099725/11008",
+            "0",
+            "13698685/16512",
+            "0",
+            "-26050375/99072"
+          ],
+          "radial_tail_lower": "2088880/80883",
+          "radial_tail_start": 5,
+          "range_proof": {
+            "format": "wide_potential_range_v117_v119",
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "lower": "-337610/80883",
+            "method": "bernstein",
+            "proof": {
+              "cells": [
+                {
+                  "interval": [
+                    "-1",
+                    "0"
+                  ],
+                  "lower": "-337610/80883",
+                  "upper": "52234/26961"
+                },
+                {
+                  "interval": [
+                    "0",
+                    "1"
+                  ],
+                  "lower": "-337610/80883",
+                  "upper": "52234/26961"
+                }
+              ],
+              "depth": 1
+            },
+            "q_coefficients": [
+              "-1436435/627456",
+              "0",
+              "7182175/313728",
+              "0",
+              "-35910875/209152",
+              "0",
+              "4883879/8256",
+              "0",
+              "-11099725/11008",
+              "0",
+              "13698685/16512",
+              "0",
+              "-26050375/99072"
+            ],
+            "upper": "52234/26961"
+          },
+          "scope": "single_azimuth_sector_only",
+          "upper": "44484095/82824192",
+          "upper_inertia": [
+            1,
+            0,
+            3
+          ],
+          "upper_kind": "upper_tail"
+        }
+      ],
+      "status": "certified_bound_open_gap",
+      "tolerance": "1/1000",
+      "upper": "44484095/82824192"
+    },
+    "upper": "44484095/82824192"
+  },
+  "status": "certified_open",
+  "upper": "192453943559330825725/91066162165151956992"
+}

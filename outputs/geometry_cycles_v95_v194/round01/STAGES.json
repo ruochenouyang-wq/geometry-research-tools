@@ -1,0 +1,204 @@
+[
+  {
+    "actual_outcome": "商722/303，比阈值12/5严格小26/1515；系数分母不受旧小预算限制。",
+    "certificate_paths": [
+      "round01/certs/V95_rayleigh.json"
+    ],
+    "evidence_path": "round01/results/V95.json",
+    "evidence_paths": [
+      "round01/results/V95.json",
+      "round01/certs/V95_rayleigh.json"
+    ],
+    "example": "q=2t²，u=(P1^1−P3^1/36)cosφ，等价于x1(5−x3²)的非零倍数",
+    "function": "witness.rayleigh_certificate",
+    "name": "精确任意有理球谐Rayleigh证书",
+    "new_mathematical_theorem_claimed": false,
+    "status": "implemented_and_example_verified",
+    "test": "test_witness.WitnessStages.test_v95_exact_trial",
+    "version": 95
+  },
+  {
+    "actual_outcome": "选m=1；m=0不能给本阈值的违反者，显式保留选择尚未展示函数的限制。",
+    "certificate_paths": [
+      "round01/certs/V96_selection.json"
+    ],
+    "evidence_path": "round01/results/V96.json",
+    "evidence_paths": [
+      "round01/results/V96.json",
+      "round01/certs/V96_selection.json"
+    ],
+    "example": "对baseline完整零均值谱证书按扇区上界排序",
+    "function": "witness.select_sector",
+    "name": "从完整谱证书选择候选方位扇区",
+    "new_mathematical_theorem_claimed": false,
+    "status": "implemented_and_example_verified",
+    "test": "test_witness.WitnessStages.test_v96_sector_selection",
+    "version": 96
+  },
+  {
+    "actual_outcome": "浮点单位质量向量给R约2.38266866的四模候选，低于单模2.4；浮点数本身不作证。",
+    "certificate_paths": [
+      "round01/certs/V97_rationalized_trial.json"
+    ],
+    "evidence_path": "round01/results/V97.json",
+    "evidence_paths": [
+      "round01/results/V97.json",
+      "round01/certs/V97_rationalized_trial.json"
+    ],
+    "example": "m=1、连续四个degree的有限形式矩阵；只将量化后的函数用于证明",
+    "function": "witness.mass_normalized_proposal",
+    "name": "质量归一化最低本征向量提议",
+    "new_mathematical_theorem_claimed": false,
+    "status": "implemented_and_example_verified",
+    "test": "test_witness.WitnessStages.test_v97_mass_normalized_proposal",
+    "version": 97
+  },
+  {
+    "actual_outcome": "8/16/24bits改善；4bits没有改善而保留旧候选，不假设分母更大必更好。",
+    "certificate_paths": [
+      "round01/certs/V98_bits2.json",
+      "round01/certs/V98_bits4.json",
+      "round01/certs/V98_bits8.json",
+      "round01/certs/V98_bits16.json",
+      "round01/certs/V98_bits24.json"
+    ],
+    "evidence_path": "round01/results/V98.json",
+    "evidence_paths": [
+      "round01/results/V98.json",
+      "round01/certs/V98_bits2.json",
+      "round01/certs/V98_bits4.json",
+      "round01/certs/V98_bits8.json",
+      "round01/certs/V98_bits16.json",
+      "round01/certs/V98_bits24.json"
+    ],
+    "example": "同一提议依次使用2、4、8、16、24bits",
+    "function": "witness.quantize_proposal",
+    "name": "逐级有理量化且保留最佳商",
+    "new_mathematical_theorem_claimed": false,
+    "status": "implemented_and_example_verified",
+    "test": "test_witness.WitnessStages.test_v98_quantization_keeps_best",
+    "version": 98
+  },
+  {
+    "actual_outcome": "保留一项使商回到2.4，明确拒绝；删除P7^1噪声保留两项严格改善。",
+    "certificate_paths": [
+      "round01/certs/V99_noisy_baseline.json",
+      "round01/certs/V99_keep1.json",
+      "round01/certs/V99_keep2.json"
+    ],
+    "evidence_path": "round01/results/V99.json",
+    "evidence_paths": [
+      "round01/results/V99.json",
+      "round01/certs/V99_noisy_baseline.json",
+      "round01/certs/V99_keep1.json",
+      "round01/certs/V99_keep2.json"
+    ],
+    "example": "三项含P7^1噪声试探，分别保留一项、两项",
+    "function": "witness.sparsify",
+    "name": "质量贡献排序的稀疏截断与精确接受",
+    "new_mathematical_theorem_claimed": false,
+    "status": "implemented_and_example_verified",
+    "test": "test_witness.WitnessStages.test_v99_sparse_acceptance_and_rejection",
+    "version": 99
+  },
+  {
+    "actual_outcome": "校准移除l0系数1/3，完整归一化残差平方4/15；不误用未投影的3/5。",
+    "certificate_paths": [
+      "round01/certs/V100_candidate_residual.json",
+      "round01/certs/V100_projection_calibration.json"
+    ],
+    "evidence_path": "round01/results/V100.json",
+    "evidence_paths": [
+      "round01/results/V100.json",
+      "round01/certs/V100_candidate_residual.json",
+      "round01/certs/V100_projection_calibration.json"
+    ],
+    "example": "量化后q=2t²试探及q=t,u=P1的投影校准",
+    "function": "witness.residual_certificate",
+    "name": "完整投影残差与所有势乘法高阶",
+    "new_mathematical_theorem_claimed": false,
+    "status": "implemented_and_example_verified",
+    "test": "test_witness.WitnessStages.test_v100_complete_projected_residual",
+    "version": 100
+  },
+  {
+    "actual_outcome": "自动新增degree3并严格降低R；q=0精确本征函数无新增degree，保留support_did_not_grow。",
+    "certificate_paths": [
+      "round01/certs/V101_enriched_trial.json",
+      "round01/certs/V101_zero_residual.json"
+    ],
+    "evidence_path": "round01/results/V101.json",
+    "evidence_paths": [
+      "round01/results/V101.json",
+      "round01/certs/V101_enriched_trial.json",
+      "round01/certs/V101_zero_residual.json"
+    ],
+    "example": "q=2t²从单个P1^1出发，由非零残差检测并新增degree3",
+    "function": "witness.residual_enrich",
+    "name": "残差驱动新增试探支持",
+    "new_mathematical_theorem_claimed": false,
+    "status": "implemented_and_example_verified",
+    "test": "test_witness.WitnessStages.test_v101_residual_driven_support_growth",
+    "version": 101
+  },
+  {
+    "actual_outcome": "二维最小商误差小于1e-8；Ritz下界仅限此二维空间，禁止充当完整球面谱下界。",
+    "certificate_paths": [
+      "round01/certs/V102_ritz.json",
+      "round01/certs/V102_actual_trial.json"
+    ],
+    "evidence_path": "round01/results/V102.json",
+    "evidence_paths": [
+      "round01/results/V102.json",
+      "round01/certs/V102_ritz.json",
+      "round01/certs/V102_actual_trial.json"
+    ],
+    "example": "span(P1^1 cosφ,P3^1 cosφ)的2×2广义本征问题",
+    "function": "witness.two_trial_ritz",
+    "name": "二维Ritz精确下界及实际试探上界",
+    "new_mathematical_theorem_claimed": false,
+    "status": "implemented_and_example_verified",
+    "test": "test_witness.WitnessStages.test_v102_two_trial_ritz_scope_and_actual_upper",
+    "version": 102
+  },
+  {
+    "actual_outcome": "前者从2.4降低到约2.3826686613；后者有理驻点精确获得R=2。根转浮点前按有理系数归一化，避免缩放溢出。",
+    "certificate_paths": [
+      "round01/certs/V103_line_trial.json",
+      "round01/certs/V103_exact_root_trial.json"
+    ],
+    "evidence_path": "round01/results/V103.json",
+    "evidence_paths": [
+      "round01/results/V103.json",
+      "round01/certs/V103_line_trial.json",
+      "round01/certs/V103_exact_root_trial.json"
+    ],
+    "example": "q=2t²从P1^1沿负残差下降；另用q=0,P1+P2演示有理驻点",
+    "function": "witness.residual_line_search",
+    "name": "负残差方向的驻点及有理线搜索",
+    "new_mathematical_theorem_claimed": false,
+    "status": "implemented_and_example_verified",
+    "test": "test_witness.WitnessStages.test_v103_negative_residual_line_search",
+    "version": 103
+  },
+  {
+    "actual_outcome": "自动选m=1并给严格R<threshold及明确球谐系数；q=0阈值1未找到，未伪称证明或反例。",
+    "certificate_paths": [
+      "round01/certs/V104_counterexample.json",
+      "round01/certs/V104_honest_not_found.json"
+    ],
+    "evidence_path": "round01/results/V104.json",
+    "evidence_paths": [
+      "round01/results/V104.json",
+      "round01/certs/V104_counterexample.json",
+      "round01/certs/V104_honest_not_found.json"
+    ],
+    "example": "输入q=2t²、threshold=12/5和baseline源证书；另测试q=0、threshold=1",
+    "function": "witness.find_counterexample",
+    "name": "自动构造显式球谐违反者",
+    "new_mathematical_theorem_claimed": false,
+    "status": "implemented_and_example_verified",
+    "test": "test_witness.WitnessStages.test_v104_explicit_refutation_and_honest_not_found",
+    "version": 104
+  }
+]

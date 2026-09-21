@@ -1,0 +1,26 @@
+{
+  "version": 305,
+  "recorded_at": "2026-09-18T18:44:44.472911+00:00",
+  "hypothesis": "Explicit relation types can preserve research meaning without treating a named equivalence or implication as proved.",
+  "change": "Add content-addressed typed ResearchGraph nodes and six relation kinds; endpoints checked and all unruled edges remain unverified.",
+  "source_sha256": {
+    "evidence_store.py": "1828bc0c256c54e15f41700e321d9df1703c83823d0833ab99906de9ed43634b",
+    "test_evidence_store.py": "7e3d6ec9b432f253551d8231a7c3facc3c896c4ea8cc6e4e4a32ed6f207e6e0e"
+  },
+  "validation": {
+    "tests_run": 8,
+    "passed": true,
+    "log": "test_298_full_content_dedup (test_evidence_store.EvidenceTests) ... ok\ntest_299_strict_json_and_complete_summary (test_evidence_store.EvidenceTests) ... ok\ntest_300_tamper_and_failed_atomic_publish (test_evidence_store.EvidenceTests) ... ok\ntest_301_paths_sizes_and_unknown_format (test_evidence_store.EvidenceTests) ... ok\ntest_302_default_math_replay_and_callback_boundary (test_evidence_store.EvidenceTests) ... ok\ntest_303_cache_binds_full_content_version_and_integrity (test_evidence_store.EvidenceTests) ... ok\ntest_304_problem_binding_including_cached_results (test_evidence_store.EvidenceTests) ... ok\ntest_305_typed_graph_does_not_promote_claims (test_evidence_store.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.145s\n\nOK\n",
+    "initial_test_failure": "New test was inserted inside an earlier test tail, causing NameError; restored method boundaries and reran all cases."
+  },
+  "comparison": {
+    "six_allowed_relations": "stored with explicit distinct semantics",
+    "self_declared_assumed_condition": "does not authorize proof",
+    "unknown_type_or_dangling_source": "rejected"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "This stage stores relation intent only; cycle and applicability checking follow."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

@@ -1,0 +1,46 @@
+{
+  "version": 250,
+  "recorded_at": "2026-09-18T18:55:02.917009+00:00",
+  "hypothesis": "Batch evaluation can share one complete frozen replay.",
+  "change": "Add evaluate_many and same-semantics evaluate over an owned certificate copy.",
+  "source_sha256": {
+    "fast_math.py": "59c8ddda682ebd493956904dca7323fcd9a6aad75c6893a3b3523f521f7ac7fd",
+    "test_fast_math.py": "57e88270abc236fca6d9727e0f22ef747e67c455e84e8035513e6c9e117390b4"
+  },
+  "validation": {
+    "tests_run": 4,
+    "failures": 0,
+    "frozen_verifiers_retained": true
+  },
+  "comparison": {
+    "fixed_input": "four exact points -1,0,1/16,1;levels4 degree3",
+    "exact_values_equal": true,
+    "baseline_rebuilds": 4,
+    "candidate_rebuilds": 1,
+    "baseline": {
+      "serial_seconds": [
+        0.0021265840623527765,
+        0.002002791967242956,
+        0.0019952079746872187
+      ],
+      "median_seconds": 0.002002791967242956,
+      "not_a_model_speed_claim": true
+    },
+    "candidate": {
+      "serial_seconds": [
+        0.0006157909519970417,
+        0.000689542037434876,
+        0.0006615830352529883
+      ],
+      "median_seconds": 0.0006615830352529883,
+      "not_a_model_speed_claim": true
+    },
+    "cache_regime": "one complete frozen rebuild per batch, no validation cache"
+  },
+  "outcome": "implemented_exact_checks_passed",
+  "limitations": [
+    "Small serial probes; no claim of universal speedup.",
+    "Caches are process-local; cold and warm costs are identified."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

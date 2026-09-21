@@ -1,0 +1,77 @@
+{
+  "certificate_valid": false,
+  "cpu_seconds": 0.062449000000000005,
+  "id": "H10",
+  "initialization_seconds": 0.06221883394755423,
+  "online_seconds": 0.00027287506964057684,
+  "raw": {
+    "attempts": [],
+    "certificate": null,
+    "cost": {
+      "backend_model_tokens": null,
+      "controller_model_calls": 0,
+      "controller_overhead_seconds": 0.00022858392912894487,
+      "diagnosis_seconds": 0.0,
+      "elapsed_seconds": 0.00022858392912894487,
+      "failed_attempts": 0,
+      "reported_backend_attempts": 0,
+      "solver_calls": 0,
+      "solver_seconds": 0.0,
+      "unreported_backend_work_included_in_wall_time": true,
+      "verification_seconds": 0.0,
+      "verified_attempts": 0,
+      "wall_budget_is_cooperative": true,
+      "work_is_proxy_not_runtime": true,
+      "work_units_charged": 0
+    },
+    "diagnosis": {
+      "hypothesis": null,
+      "kind": "no_verified_result"
+    },
+    "mathematical_target_met": false,
+    "rejected_actions": [
+      {
+        "action": {
+          "bits": 20,
+          "function": {
+            "amplitude": "-3/5",
+            "axis": 2,
+            "exponent": "-3/7",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "max_m": 2,
+          "mean_zero": false,
+          "modes": 2,
+          "near_tail": 0,
+          "op": "spectrum",
+          "route": "spectrum",
+          "tolerance": "1/10000000000"
+        },
+        "reason": "Centered L2 form bound requires eta < 1"
+      }
+    ],
+    "route_comparison": {},
+    "status": "unsupported",
+    "stop_reason": "unsupported",
+    "within_budget": true
+  },
+  "status": "verification_failed",
+  "target_met": false,
+  "task": {
+    "function": {
+      "amplitude": "-3/5",
+      "axis": 2,
+      "exponent": "-3/7",
+      "kind": "axis_profile",
+      "offset": "0",
+      "profile": "abs_power"
+    },
+    "kind": "spectrum",
+    "mean_zero": false,
+    "tolerance": "1/10000000000"
+  },
+  "total_worker_seconds": 0.06250437500420958,
+  "parent_wall_seconds": 0.08480750001035631
+}

@@ -1,0 +1,25 @@
+{
+  "version": 260,
+  "recorded_at": "2026-09-18T18:13:24.506119+00:00",
+  "hypothesis": "Increasing levels cannot remove a fixed polynomial shape error floor.",
+  "change": "Detect the exact infinite-level error floor, distinguish it from the finite core budget, and skip futile level search.",
+  "source_sha256": {
+    "adaptive_approx.py": "827bc5e3efd87eaa0475c87d63be057c406adc53c3ae591372017a9a77ac44c5",
+    "test_adaptive_approx.py": "dea4cda71aa5f0da0d3774764d20a17f97d03a8f4a6886cf2d8a6461c088d7c9"
+  },
+  "validation": {
+    "unit_tests_passed": 5,
+    "floor_above_target_squared": true
+  },
+  "comparison": {
+    "target": "1/100000000",
+    "previous_max_level_probe_count": 1,
+    "new_level_comparisons": 0,
+    "diagnosis": "fixed_degree_floor"
+  },
+  "outcome": "retained",
+  "limitations": [
+    "The retained fallback still expands max_levels; later degree adaptation is needed."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

@@ -1,0 +1,351 @@
+{
+  "format": "geometry_snapshot_portable_replay_v1",
+  "started_at_utc": "2026-09-18T19:38:39.923755+00:00",
+  "historical_python_executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+  "historical_python_version": "3.9.6",
+  "per_snapshot_timeout_seconds": 20,
+  "sequential_child_processes": true,
+  "initial_replay_report": "SNAPSHOT_REPLAY.json",
+  "prior_harness_failure_report": "snapshot_logs/portable_environment_attempt1.json",
+  "initial_report_sha256": "6cdf793fbfc711e7b6a62787e98505f68f07a07044b7dd3ce1dc80783d8c13d6",
+  "method": "Copy recorded production and test bytes into a temporary project/outputs layout; link existing historical fixture directories, token_cache and work/token-deps as read dependencies. Each version runs in a fresh process.",
+  "limitations": [
+    "This historical compatibility run uses Python 3.9 and is distinct from final-framework bundled Python 3.12 tests.",
+    "Only the versioned interaction production module and tests are historical snapshots; shared backend and other current modules are not reconstructed historically.",
+    "Filesystem links are used for reading existing dependencies; this is not an operating-system read-only sandbox.",
+    "Test counts repeat cumulative cases across versions and must not be added as independent test coverage.",
+    "Elapsed times describe audit execution, not algorithm speed or model usage."
+  ],
+  "read_dependency_links": {
+    "geometry_precision_followup": "/PROJECT/outputs/geometry_precision_followup",
+    "geometry_v36_v90": "/PROJECT/outputs/geometry_v36_v90",
+    "geometry_v91_v94": "/PROJECT/outputs/geometry_v91_v94",
+    "geometry_cycles_v95_v194": "/PROJECT/outputs/geometry_cycles_v95_v194",
+    "geometry_retests_v195_v234": "/PROJECT/outputs/geometry_retests_v195_v234",
+    "geometry_generalization_notes": "/PROJECT/outputs/geometry_generalization_notes",
+    "geometry_general_v235_v237": "/PROJECT/outputs/geometry_general_v235_v237",
+    "token_cache": "/PROJECT/outputs/geometry_strategy_v238_v317/token_cache",
+    "work/token-deps": "/PROJECT/work/token-deps"
+  },
+  "results": [
+    {
+      "version": 308,
+      "source_sha256": {
+        "interaction.py": "015f817e655bbfbeea12d0b9cf8561ffd391af150cea5223ee43681c99f7fcda",
+        "test_interaction.py": "c77a794ca9153b5eeb7b36168bcbafeda186ba595d9e49b0d8bda4f33e357f1f"
+      },
+      "source_matches_original_record": true,
+      "copied_sha256": {
+        "interaction.py": "015f817e655bbfbeea12d0b9cf8561ffd391af150cea5223ee43681c99f7fcda",
+        "test_interaction.py": "c77a794ca9153b5eeb7b36168bcbafeda186ba595d9e49b0d8bda4f33e357f1f"
+      },
+      "copied_bytes_match_snapshot": true,
+      "exit_code": 0,
+      "python_version": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "production_module": "/private/tmp/geometry-portable-v308-co7izhas/outputs/geometry_strategy_v238_v317/interaction.py",
+      "production_sha256": "015f817e655bbfbeea12d0b9cf8561ffd391af150cea5223ee43681c99f7fcda",
+      "test_module": "/private/tmp/geometry-portable-v308-co7izhas/outputs/geometry_strategy_v238_v317/test_interaction.py",
+      "copied_snapshot_module_loaded": true,
+      "tests_run": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "skip_reasons": [],
+      "successful": true,
+      "status": "passed",
+      "wall_seconds": 0.152090125,
+      "staged_source_unchanged": true,
+      "original_snapshot_unchanged": true,
+      "log": "snapshot_logs/portable_v308.log"
+    },
+    {
+      "version": 309,
+      "source_sha256": {
+        "interaction.py": "e9aa34f0ab54cb1dc86bb2038aa527b1b3135a344d8e889a162e8a9268d37efa",
+        "test_interaction.py": "d6c5106a7797d9a1850e06f1f648dd033f04a92a40ced381e6a93585c9bcbd51"
+      },
+      "source_matches_original_record": true,
+      "copied_sha256": {
+        "interaction.py": "e9aa34f0ab54cb1dc86bb2038aa527b1b3135a344d8e889a162e8a9268d37efa",
+        "test_interaction.py": "d6c5106a7797d9a1850e06f1f648dd033f04a92a40ced381e6a93585c9bcbd51"
+      },
+      "copied_bytes_match_snapshot": true,
+      "exit_code": 0,
+      "python_version": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "production_module": "/private/tmp/geometry-portable-v309-hd7bi2vb/outputs/geometry_strategy_v238_v317/interaction.py",
+      "production_sha256": "e9aa34f0ab54cb1dc86bb2038aa527b1b3135a344d8e889a162e8a9268d37efa",
+      "test_module": "/private/tmp/geometry-portable-v309-hd7bi2vb/outputs/geometry_strategy_v238_v317/test_interaction.py",
+      "copied_snapshot_module_loaded": true,
+      "tests_run": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "skip_reasons": [],
+      "successful": true,
+      "status": "passed",
+      "wall_seconds": 0.143978542,
+      "staged_source_unchanged": true,
+      "original_snapshot_unchanged": true,
+      "log": "snapshot_logs/portable_v309.log"
+    },
+    {
+      "version": 310,
+      "source_sha256": {
+        "interaction.py": "2a23d2e0b6ec7ea5c66439df6a7c66238f00986f5a4dd1b339a659460ba6e853",
+        "test_interaction.py": "34b01e9967ef108ad01d1eac39c0d0b51bafeee7ef2e27b36a196d72b746a034"
+      },
+      "source_matches_original_record": true,
+      "copied_sha256": {
+        "interaction.py": "2a23d2e0b6ec7ea5c66439df6a7c66238f00986f5a4dd1b339a659460ba6e853",
+        "test_interaction.py": "34b01e9967ef108ad01d1eac39c0d0b51bafeee7ef2e27b36a196d72b746a034"
+      },
+      "copied_bytes_match_snapshot": true,
+      "exit_code": 0,
+      "python_version": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "production_module": "/private/tmp/geometry-portable-v310-u4rzss99/outputs/geometry_strategy_v238_v317/interaction.py",
+      "production_sha256": "2a23d2e0b6ec7ea5c66439df6a7c66238f00986f5a4dd1b339a659460ba6e853",
+      "test_module": "/private/tmp/geometry-portable-v310-u4rzss99/outputs/geometry_strategy_v238_v317/test_interaction.py",
+      "copied_snapshot_module_loaded": true,
+      "tests_run": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "skip_reasons": [],
+      "successful": true,
+      "status": "passed",
+      "wall_seconds": 0.14378354200000004,
+      "staged_source_unchanged": true,
+      "original_snapshot_unchanged": true,
+      "log": "snapshot_logs/portable_v310.log"
+    },
+    {
+      "version": 311,
+      "source_sha256": {
+        "interaction.py": "bc838fb83369a1a281223f4f9c72208c181ebdce5c443bbc841a98492c4b6995",
+        "test_interaction.py": "524aa84a596fa8de2be2910298250c4dd59076f1e47f71db30ff528dcfcf681c"
+      },
+      "source_matches_original_record": true,
+      "copied_sha256": {
+        "interaction.py": "bc838fb83369a1a281223f4f9c72208c181ebdce5c443bbc841a98492c4b6995",
+        "test_interaction.py": "524aa84a596fa8de2be2910298250c4dd59076f1e47f71db30ff528dcfcf681c"
+      },
+      "copied_bytes_match_snapshot": true,
+      "exit_code": 0,
+      "python_version": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "production_module": "/private/tmp/geometry-portable-v311-eswnlmg8/outputs/geometry_strategy_v238_v317/interaction.py",
+      "production_sha256": "bc838fb83369a1a281223f4f9c72208c181ebdce5c443bbc841a98492c4b6995",
+      "test_module": "/private/tmp/geometry-portable-v311-eswnlmg8/outputs/geometry_strategy_v238_v317/test_interaction.py",
+      "copied_snapshot_module_loaded": true,
+      "tests_run": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "skip_reasons": [],
+      "successful": true,
+      "status": "passed",
+      "wall_seconds": 0.143577917,
+      "staged_source_unchanged": true,
+      "original_snapshot_unchanged": true,
+      "log": "snapshot_logs/portable_v311.log"
+    },
+    {
+      "version": 312,
+      "source_sha256": {
+        "interaction.py": "eb9f44eda4d86ccd58720da50e19cad62e26a31c3f009028c336b8c35eef3695",
+        "test_interaction.py": "b7d817529b3a71a4c87756caa01bcd318e280fcf69828d376b64ba4a03face88"
+      },
+      "source_matches_original_record": true,
+      "copied_sha256": {
+        "interaction.py": "eb9f44eda4d86ccd58720da50e19cad62e26a31c3f009028c336b8c35eef3695",
+        "test_interaction.py": "b7d817529b3a71a4c87756caa01bcd318e280fcf69828d376b64ba4a03face88"
+      },
+      "copied_bytes_match_snapshot": true,
+      "exit_code": 0,
+      "python_version": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "production_module": "/private/tmp/geometry-portable-v312-6hzxyp3x/outputs/geometry_strategy_v238_v317/interaction.py",
+      "production_sha256": "eb9f44eda4d86ccd58720da50e19cad62e26a31c3f009028c336b8c35eef3695",
+      "test_module": "/private/tmp/geometry-portable-v312-6hzxyp3x/outputs/geometry_strategy_v238_v317/test_interaction.py",
+      "copied_snapshot_module_loaded": true,
+      "tests_run": 15,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "skip_reasons": [],
+      "successful": true,
+      "status": "passed",
+      "wall_seconds": 0.14543679199999993,
+      "staged_source_unchanged": true,
+      "original_snapshot_unchanged": true,
+      "log": "snapshot_logs/portable_v312.log"
+    },
+    {
+      "version": 313,
+      "source_sha256": {
+        "interaction.py": "91998e894f49d2a53477d5134156711648600c8ed4329d8f8855df36df604d2c",
+        "test_interaction.py": "5c69e61b59705f906af9102085daede8dca37ddf6ec0c580b7a3f6f714b275d0"
+      },
+      "source_matches_original_record": true,
+      "copied_sha256": {
+        "interaction.py": "91998e894f49d2a53477d5134156711648600c8ed4329d8f8855df36df604d2c",
+        "test_interaction.py": "5c69e61b59705f906af9102085daede8dca37ddf6ec0c580b7a3f6f714b275d0"
+      },
+      "copied_bytes_match_snapshot": true,
+      "exit_code": 0,
+      "python_version": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "production_module": "/private/tmp/geometry-portable-v313-4st9ry1x/outputs/geometry_strategy_v238_v317/interaction.py",
+      "production_sha256": "91998e894f49d2a53477d5134156711648600c8ed4329d8f8855df36df604d2c",
+      "test_module": "/private/tmp/geometry-portable-v313-4st9ry1x/outputs/geometry_strategy_v238_v317/test_interaction.py",
+      "copied_snapshot_module_loaded": true,
+      "tests_run": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "skip_reasons": [],
+      "successful": true,
+      "status": "passed",
+      "wall_seconds": 0.14515995799999992,
+      "staged_source_unchanged": true,
+      "original_snapshot_unchanged": true,
+      "log": "snapshot_logs/portable_v313.log"
+    },
+    {
+      "version": 314,
+      "source_sha256": {
+        "interaction.py": "a62f27d31414fbe420ced28ab8b0b8c6f83f7279b5c58e923e37bf41ea01c4aa",
+        "test_interaction.py": "edce0827176694064f60c46f7d9e81bcbd41c133c72061561088c79d6d31af19"
+      },
+      "source_matches_original_record": true,
+      "copied_sha256": {
+        "interaction.py": "a62f27d31414fbe420ced28ab8b0b8c6f83f7279b5c58e923e37bf41ea01c4aa",
+        "test_interaction.py": "edce0827176694064f60c46f7d9e81bcbd41c133c72061561088c79d6d31af19"
+      },
+      "copied_bytes_match_snapshot": true,
+      "exit_code": 0,
+      "python_version": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "production_module": "/private/tmp/geometry-portable-v314-4ozy0z6q/outputs/geometry_strategy_v238_v317/interaction.py",
+      "production_sha256": "a62f27d31414fbe420ced28ab8b0b8c6f83f7279b5c58e923e37bf41ea01c4aa",
+      "test_module": "/private/tmp/geometry-portable-v314-4ozy0z6q/outputs/geometry_strategy_v238_v317/test_interaction.py",
+      "copied_snapshot_module_loaded": true,
+      "tests_run": 20,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "skip_reasons": [],
+      "successful": true,
+      "status": "passed",
+      "wall_seconds": 0.14772766700000006,
+      "staged_source_unchanged": true,
+      "original_snapshot_unchanged": true,
+      "log": "snapshot_logs/portable_v314.log"
+    },
+    {
+      "version": 315,
+      "source_sha256": {
+        "interaction.py": "5b09dfeec746a8cfbc4b24661328e77f26507075f2107fd7d10614f990808341",
+        "test_interaction.py": "6d864758b524974aa116c809d271672abac68dbbe353a0b083cabfbd4192e92d"
+      },
+      "source_matches_original_record": true,
+      "copied_sha256": {
+        "interaction.py": "5b09dfeec746a8cfbc4b24661328e77f26507075f2107fd7d10614f990808341",
+        "test_interaction.py": "6d864758b524974aa116c809d271672abac68dbbe353a0b083cabfbd4192e92d"
+      },
+      "copied_bytes_match_snapshot": true,
+      "exit_code": 0,
+      "python_version": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "production_module": "/private/tmp/geometry-portable-v315-y_23tb6z/outputs/geometry_strategy_v238_v317/interaction.py",
+      "production_sha256": "5b09dfeec746a8cfbc4b24661328e77f26507075f2107fd7d10614f990808341",
+      "test_module": "/private/tmp/geometry-portable-v315-y_23tb6z/outputs/geometry_strategy_v238_v317/test_interaction.py",
+      "copied_snapshot_module_loaded": true,
+      "tests_run": 22,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "skip_reasons": [],
+      "successful": true,
+      "status": "passed",
+      "wall_seconds": 0.14626074999999994,
+      "staged_source_unchanged": true,
+      "original_snapshot_unchanged": true,
+      "log": "snapshot_logs/portable_v315.log"
+    },
+    {
+      "version": 316,
+      "source_sha256": {
+        "interaction.py": "92337db1a94a4ced1890df847aa63c50d31321468bffc1393f7a7fd815e4b84f",
+        "test_interaction.py": "218e6cdfe0006874a7069ad0aa58d649c327617e417f64572f6165259c8880b9"
+      },
+      "source_matches_original_record": true,
+      "copied_sha256": {
+        "interaction.py": "92337db1a94a4ced1890df847aa63c50d31321468bffc1393f7a7fd815e4b84f",
+        "test_interaction.py": "218e6cdfe0006874a7069ad0aa58d649c327617e417f64572f6165259c8880b9"
+      },
+      "copied_bytes_match_snapshot": true,
+      "exit_code": 0,
+      "python_version": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "production_module": "/private/tmp/geometry-portable-v316-v_onyock/outputs/geometry_strategy_v238_v317/interaction.py",
+      "production_sha256": "92337db1a94a4ced1890df847aa63c50d31321468bffc1393f7a7fd815e4b84f",
+      "test_module": "/private/tmp/geometry-portable-v316-v_onyock/outputs/geometry_strategy_v238_v317/test_interaction.py",
+      "copied_snapshot_module_loaded": true,
+      "tests_run": 24,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "skip_reasons": [],
+      "successful": true,
+      "status": "passed",
+      "wall_seconds": 0.14698033300000013,
+      "staged_source_unchanged": true,
+      "original_snapshot_unchanged": true,
+      "log": "snapshot_logs/portable_v316.log"
+    },
+    {
+      "version": 317,
+      "source_sha256": {
+        "interaction.py": "0887152a23fa01430bac04d75c81f34a18efe8de2a05029a8967ce619a2f07c9",
+        "test_interaction.py": "15780d2ec542df7047ed2781ac3ee513811f1602dc0451c98277c0e32ccec150"
+      },
+      "source_matches_original_record": true,
+      "copied_sha256": {
+        "interaction.py": "0887152a23fa01430bac04d75c81f34a18efe8de2a05029a8967ce619a2f07c9",
+        "test_interaction.py": "15780d2ec542df7047ed2781ac3ee513811f1602dc0451c98277c0e32ccec150"
+      },
+      "copied_bytes_match_snapshot": true,
+      "exit_code": 0,
+      "python_version": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+      "production_module": "/private/tmp/geometry-portable-v317-3enamr2m/outputs/geometry_strategy_v238_v317/interaction.py",
+      "production_sha256": "0887152a23fa01430bac04d75c81f34a18efe8de2a05029a8967ce619a2f07c9",
+      "test_module": "/private/tmp/geometry-portable-v317-3enamr2m/outputs/geometry_strategy_v238_v317/test_interaction.py",
+      "copied_snapshot_module_loaded": true,
+      "tests_run": 30,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "skip_reasons": [],
+      "successful": true,
+      "status": "passed",
+      "wall_seconds": 0.37206745799999985,
+      "staged_source_unchanged": true,
+      "original_snapshot_unchanged": true,
+      "log": "snapshot_logs/portable_v317.log"
+    }
+  ],
+  "counts": {
+    "passed": 10,
+    "failed": 0,
+    "timeout": 0
+  },
+  "complete": true,
+  "initial_report_unchanged": true,
+  "elapsed_wall_seconds": 1.719138541,
+  "summary": {
+    "test_invocations_including_cumulative_repeats": 164,
+    "assertion_failures": 0,
+    "test_errors": 0,
+    "skipped_tests": 0,
+    "all_original_and_copied_sources_unchanged": true
+  },
+  "reproduction_script": "snapshot_logs/replay_portable.py",
+  "reproduction_script_sha256": "c927f4feeac73c8b6228da280cfcbeb89bf39cddd2f87f1418087d342f6cf996",
+  "reproduction_command": "python3 -B snapshot_logs/replay_portable.py --python /Library/Developer/CommandLineTools/usr/bin/python3",
+  "interpretation": "All 10 previously path-blocked interaction snapshots passed after restoring their original relative fixture/dependency layout, with byte-identical production and test snapshots, on the original Python 3.9.6 runtime. This supplements, rather than replaces, the first 70/80 report and the separate final-framework Python 3.12 validation."
+}

@@ -1,0 +1,182 @@
+{
+  "report_path": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/report.json",
+  "gates": {
+    "phase": "holdout",
+    "long_term_original_baseline_runtime_gate": true,
+    "long_term_gate_excludes_first_release_by_preregistration": true,
+    "first_release_incremental_no_regression": true,
+    "old_six_cold_no_regression_vs_v317": null,
+    "old_six_gate_scope": "applies only to the original six regression phase; full wall/CPU medians AND five-session sums <=1.0, no lost robust successes",
+    "statistical_significance_claimed": false
+  },
+  "methods": {
+    "old_default": {
+      "robust_successes": 2,
+      "cases": 14,
+      "full_session_wall_seconds": {
+        "values": [
+          0.9069592079613358,
+          0.8688856250373647,
+          0.8835820419481024,
+          0.885533457971178,
+          0.9215843330603093
+        ],
+        "median": 0.885533457971178,
+        "min": 0.8688856250373647,
+        "max": 0.9215843330603093
+      },
+      "full_session_cpu_seconds": {
+        "values": [
+          0.8984129999999999,
+          0.8611060000000001,
+          0.8804830000000009,
+          0.8804850000000006,
+          0.9184420000000013
+        ],
+        "median": 0.8804850000000006,
+        "min": 0.8611060000000001,
+        "max": 0.9184420000000013
+      }
+    },
+    "fixed_increasing": {
+      "robust_successes": 2,
+      "cases": 14,
+      "full_session_wall_seconds": {
+        "values": [
+          0.37474900006782264,
+          0.36105166596826166,
+          0.38025145803112537,
+          0.3698535410221666,
+          0.37265762500464916
+        ],
+        "median": 0.37265762500464916,
+        "min": 0.36105166596826166,
+        "max": 0.38025145803112537
+      },
+      "full_session_cpu_seconds": {
+        "values": [
+          0.3725590000000001,
+          0.3587009999999992,
+          0.3763289999999988,
+          0.36740700000000015,
+          0.370269000000002
+        ],
+        "median": 0.370269000000002,
+        "min": 0.3587009999999992,
+        "max": 0.3763289999999988
+      }
+    },
+    "validation_selected_fixed": {
+      "robust_successes": 1,
+      "cases": 14,
+      "full_session_wall_seconds": {
+        "values": [
+          0.14410700008738786,
+          0.14117683295626193,
+          0.14194408303592354,
+          0.14270712493453175,
+          0.14497004204895347
+        ],
+        "median": 0.14270712493453175,
+        "min": 0.14117683295626193,
+        "max": 0.14497004204895347
+      },
+      "full_session_cpu_seconds": {
+        "values": [
+          0.1420629999999998,
+          0.1390040000000005,
+          0.14001799999999998,
+          0.14063399999999998,
+          0.1427359999999998
+        ],
+        "median": 0.14063399999999998,
+        "min": 0.1390040000000005,
+        "max": 0.1427359999999998
+      }
+    },
+    "frozen_v317": {
+      "robust_successes": 5,
+      "cases": 14,
+      "full_session_wall_seconds": {
+        "values": [
+          2.3524809159571305,
+          2.2794627910479903,
+          2.3004354590084404,
+          2.3282460829941556,
+          2.3290333750192076
+        ],
+        "median": 2.3282460829941556,
+        "min": 2.2794627910479903,
+        "max": 2.3524809159571305
+      },
+      "full_session_cpu_seconds": {
+        "values": [
+          2.348773,
+          2.2754149999999993,
+          2.296251000000001,
+          2.322180000000003,
+          2.323141999999998
+        ],
+        "median": 2.322180000000003,
+        "min": 2.2754149999999993,
+        "max": 2.348773
+      }
+    },
+    "first_release": {
+      "robust_successes": 5,
+      "cases": 14,
+      "full_session_wall_seconds": {
+        "values": [
+          1.4609056250192225,
+          1.442947292001918,
+          1.468669332913123,
+          1.4816377079114318,
+          1.4840374579653144
+        ],
+        "median": 1.468669332913123,
+        "min": 1.442947292001918,
+        "max": 1.4840374579653144
+      },
+      "full_session_cpu_seconds": {
+        "values": [
+          1.4579520000000001,
+          1.439599,
+          1.465305999999999,
+          1.4775280000000013,
+          1.479773000000003
+        ],
+        "median": 1.465305999999999,
+        "min": 1.439599,
+        "max": 1.479773000000003
+      }
+    },
+    "release": {
+      "robust_successes": 5,
+      "cases": 14,
+      "full_session_wall_seconds": {
+        "values": [
+          1.445603874977678,
+          1.4527465420542285,
+          1.4659028749447316,
+          1.4653259590268135,
+          1.4719150000019
+        ],
+        "median": 1.4653259590268135,
+        "min": 1.445603874977678,
+        "max": 1.4719150000019
+      },
+      "full_session_cpu_seconds": {
+        "values": [
+          1.442382,
+          1.449091000000001,
+          1.4622139999999995,
+          1.4620209999999996,
+          1.4674409999999982
+        ],
+        "median": 1.4620209999999996,
+        "min": 1.442382,
+        "max": 1.4674409999999982
+      }
+    }
+  }
+}

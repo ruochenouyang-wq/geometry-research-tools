@@ -1,0 +1,59 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {
+    "bits": 40,
+    "modes": 8,
+    "parameter_cover": [
+      [
+        0,
+        100
+      ]
+    ]
+  },
+  "certificates": [
+    {
+      "format": "affine_sphere_family_cheap_enclosure_v125",
+      "path": "certs/C08_whole_box_cheap.json",
+      "sha256": "66143771c8ff99d07c3c993d3fb8dc13feb441e6e3ecac8e8df1e0c08a01b4a7",
+      "verified": true
+    },
+    {
+      "format": "explicit_sector_rayleigh_v95",
+      "path": "certs/C08_equality_a0_x.json",
+      "sha256": "b059e0652abc6e9cf2015dfd2be7202f71b900aba22bb438557ba6d05f76d3a5",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 0.001299,
+  "equality_parameter": "0",
+  "equality_trial": "x",
+  "id": "C08",
+  "notes": [
+    "Whole box proof uses q>=0; equality at a=0. No grid inference."
+  ],
+  "original_acceptance": [
+    "Prove the uniform threshold 2 from q>=0 and Poincare, with equality at a=0 and u=x.",
+    "Bind the full parameter box; sampling the endpoints must not be presented as the general proof."
+  ],
+  "original_input": {
+    "claimed_uniform_threshold": "2",
+    "parameter_box": {
+      "a": [
+        "0",
+        "100"
+      ]
+    },
+    "q(a,t)": "a*t^2"
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "solved",
+  "title": "非负参数盒与端点精确达到",
+  "uniform_lower": "2"
+}

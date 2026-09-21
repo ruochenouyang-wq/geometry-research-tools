@@ -1,0 +1,23 @@
+{
+  "version": 288,
+  "recorded_at": "2026-09-18T18:12:37.853912+00:00",
+  "hypothesis": "Constant potentials admit analytic exact spectra without a Galerkin search.",
+  "change": "Independent constant-potential certificate uses c on full H1 and 2+c on mean-zero H1.",
+  "source_sha256": {
+    "proof_transport.py": "3b8b5f91d2e6a5c2a9629982f2bb9222ebd4d599295266b1e68d5f058b1d2dfd",
+    "test_proof_transport.py": "f3428519e299116c42453a9b75eff08cd04421f4cbdec58c4afca8708a990899"
+  },
+  "validation": {
+    "tests_passed": 2,
+    "command": "python3 -B -m unittest discover -s outputs/geometry_strategy_v238_v317 -p test_proof_transport.py -v"
+  },
+  "comparison": {
+    "before": "Numerical spectral route needed matrices and finite-width bounds.",
+    "after": "Zero-width analytic interval, no source certificate or matrix solve."
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Unit S2 only; zero amplitude constants."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

@@ -1,0 +1,27 @@
+{
+  "version": 304,
+  "recorded_at": "2026-09-18T18:42:23.264160+00:00",
+  "hypothesis": "A valid or cached certificate for another space, function or goal must not satisfy the original request.",
+  "change": "Extract complete supported problem identity and enforce exact typed binding before mathematical cache lookup.",
+  "source_sha256": {
+    "evidence_store.py": "f9219cccb7fc773771b941b35329ecf5ff91f20f8360bebe871e2c24085ba696",
+    "test_evidence_store.py": "defd70e8d07532a4c4b8d06232dbf332f4966d02e49705de94e9616b65b05c9f"
+  },
+  "validation": {
+    "tests_run": 7,
+    "passed": true,
+    "log": "test_298_full_content_dedup (test_evidence_store.EvidenceTests) ... ok\ntest_299_strict_json_and_complete_summary (test_evidence_store.EvidenceTests) ... ok\ntest_300_tamper_and_failed_atomic_publish (test_evidence_store.EvidenceTests) ... ok\ntest_301_paths_sizes_and_unknown_format (test_evidence_store.EvidenceTests) ... ok\ntest_302_default_math_replay_and_callback_boundary (test_evidence_store.EvidenceTests) ... ok\ntest_303_cache_binds_full_content_version_and_integrity (test_evidence_store.EvidenceTests) ... ok\ntest_304_problem_binding_including_cached_results (test_evidence_store.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.134s\n\nOK\n"
+  },
+  "comparison": {
+    "same_problem": "accepted with cache reuse",
+    "changed_function_space_geometry_measure_index_or_tolerance": "problem_mismatch",
+    "partial_identity_or_bool_index": "rejected",
+    "valid_open_certificate": "verified but original status remains certified_open"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Binding is conservative and exact; looser-goal or mathematically equivalent reuse requires an explicit relation rule.",
+    "Verified evidence does not mean its requested precision was attained."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

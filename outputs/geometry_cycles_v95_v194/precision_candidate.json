@@ -1,0 +1,122 @@
+{
+  "old_certificate": {
+    "angular_tail_cannot_improve_best_upper": true,
+    "angular_tail_lower": "6",
+    "decimal_enclosure": [
+      "2.382655406155",
+      "2.382655406157"
+    ],
+    "eigenvalue_index_in_constrained_space": 1,
+    "exact_width": "380061424069/2417851639229258349412352",
+    "formal_assistant_checked": false,
+    "format": "projected_full_sphere_ground_v93",
+    "geometry": "unit_S2",
+    "lower": "5760907279492644810712635/2417851639229258349412352",
+    "mean_zero": true,
+    "omitted_azimuth_m_start": 2,
+    "potential_symmetry": "axisymmetric_polynomial_degree_at_most_6",
+    "q_coefficients": [
+      "0",
+      "0",
+      "2"
+    ],
+    "range_proof": {
+      "kind": "quadratic_range_v5",
+      "lower": "0",
+      "upper": "2"
+    },
+    "scope": "all_mean_zero_H1_functions_on_unit_S2",
+    "sectors": [
+      {
+        "azimuth_m": 0,
+        "decimal_enclosure": [
+          "3.172127919645",
+          "3.172127919646"
+        ],
+        "degree_start": 1,
+        "eigenvalue_index": 1,
+        "exact_width": "9553119618667/77371252455336267181195264",
+        "formal_assistant_checked": false,
+        "format": "projected_sphere_sector_v91_v92",
+        "geometry": "unit_S2",
+        "lower": "245431510091477011106290069/77371252455336267181195264",
+        "lower_inertia": [
+          0,
+          0,
+          32
+        ],
+        "mean_zero": true,
+        "modes": 32,
+        "projection": "remove_l0",
+        "q_coefficients": [
+          "0",
+          "0",
+          "2"
+        ],
+        "radial_tail_lower": "1122",
+        "radial_tail_start": 33,
+        "range_proof": {
+          "kind": "quadratic_range_v5",
+          "lower": "0",
+          "upper": "2"
+        },
+        "scope": "single_azimuth_sector_only",
+        "upper": "13951166129771/4398046511104",
+        "upper_inertia": [
+          1,
+          0,
+          31
+        ],
+        "upper_kind": "upper_tail"
+      },
+      {
+        "azimuth_m": 1,
+        "decimal_enclosure": [
+          "2.382655406155",
+          "2.382655406157"
+        ],
+        "degree_start": 1,
+        "eigenvalue_index": 1,
+        "exact_width": "380061424069/2417851639229258349412352",
+        "formal_assistant_checked": false,
+        "format": "projected_sphere_sector_v91_v92",
+        "geometry": "unit_S2",
+        "lower": "5760907279492644810712635/2417851639229258349412352",
+        "lower_inertia": [
+          0,
+          0,
+          32
+        ],
+        "mean_zero": true,
+        "modes": 32,
+        "projection": "none",
+        "q_coefficients": [
+          "0",
+          "0",
+          "2"
+        ],
+        "radial_tail_lower": "1122",
+        "radial_tail_start": 33,
+        "range_proof": {
+          "kind": "quadratic_range_v5",
+          "lower": "0",
+          "upper": "2"
+        },
+        "scope": "single_azimuth_sector_only",
+        "upper": "654939331013/274877906944",
+        "upper_inertia": [
+          1,
+          0,
+          31
+        ],
+        "upper_kind": "upper_tail"
+      }
+    ],
+    "status": "certified_bound_open_gap",
+    "tolerance": "1/1000000000000000000",
+    "upper": "654939331013/274877906944"
+  },
+  "problem": "Certify q=2t² mean-zero full ground to absolute width1e-18",
+  "seconds": 0.45119016700000003,
+  "weakness": "Default bisection bits remain fixed while radial mode count grows; tolerance remains unmet."
+}

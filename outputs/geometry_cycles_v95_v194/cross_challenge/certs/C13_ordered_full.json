@@ -1,0 +1,425 @@
+{
+  "analytical_dependencies": [
+    "complete real spherical harmonic decomposition",
+    "quadratic form minmax under bounded multiplication",
+    "verified sector radial Schur comparison"
+  ],
+  "assembly": {
+    "entries": [
+      {
+        "laplace_degree": 1,
+        "lower": "2",
+        "m": 0,
+        "multiplicity": 1,
+        "radial_index": 1,
+        "upper": "2"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "6",
+        "m": 0,
+        "multiplicity": 1,
+        "radial_index": 2,
+        "upper": "6"
+      },
+      {
+        "laplace_degree": 3,
+        "lower": "12",
+        "m": 0,
+        "multiplicity": 1,
+        "radial_index": 3,
+        "upper": "12"
+      }
+    ],
+    "format": "angular_multiplicity_assembly_v157",
+    "mean_zero": true,
+    "q_coefficients": [
+      "0"
+    ],
+    "represented_eigenvalues_with_multiplicity": 3,
+    "sector_lists": [
+      [
+        {
+          "azimuth_m": 0,
+          "decimal_enclosure": [
+            "2.000000000000",
+            "2.000000000000"
+          ],
+          "degree_start": 1,
+          "eigenvalue_index": 1,
+          "exact_width": "0",
+          "formal_assistant_checked": false,
+          "format": "projected_sphere_sector_v91_v92",
+          "geometry": "unit_S2",
+          "lower": "2",
+          "lower_inertia": [
+            0,
+            1,
+            3
+          ],
+          "mean_zero": true,
+          "modes": 4,
+          "projection": "remove_l0",
+          "q_coefficients": [
+            "0"
+          ],
+          "radial_tail_lower": "30",
+          "radial_tail_start": 5,
+          "range_proof": {
+            "kind": "quadratic_range_v5",
+            "lower": "0",
+            "upper": "0"
+          },
+          "scope": "single_azimuth_sector_only",
+          "upper": "2",
+          "upper_inertia": [
+            0,
+            1,
+            3
+          ],
+          "upper_kind": "upper_ritz"
+        },
+        {
+          "azimuth_m": 0,
+          "decimal_enclosure": [
+            "6.000000000000",
+            "6.000000000000"
+          ],
+          "degree_start": 1,
+          "eigenvalue_index": 2,
+          "exact_width": "0",
+          "formal_assistant_checked": false,
+          "format": "projected_sphere_sector_v91_v92",
+          "geometry": "unit_S2",
+          "lower": "6",
+          "lower_inertia": [
+            1,
+            1,
+            2
+          ],
+          "mean_zero": true,
+          "modes": 4,
+          "projection": "remove_l0",
+          "q_coefficients": [
+            "0"
+          ],
+          "radial_tail_lower": "30",
+          "radial_tail_start": 5,
+          "range_proof": {
+            "kind": "quadratic_range_v5",
+            "lower": "0",
+            "upper": "0"
+          },
+          "scope": "single_azimuth_sector_only",
+          "upper": "6",
+          "upper_inertia": [
+            1,
+            1,
+            2
+          ],
+          "upper_kind": "upper_ritz"
+        },
+        {
+          "azimuth_m": 0,
+          "decimal_enclosure": [
+            "12.000000000000",
+            "12.000000000000"
+          ],
+          "degree_start": 1,
+          "eigenvalue_index": 3,
+          "exact_width": "0",
+          "formal_assistant_checked": false,
+          "format": "projected_sphere_sector_v91_v92",
+          "geometry": "unit_S2",
+          "lower": "12",
+          "lower_inertia": [
+            2,
+            1,
+            1
+          ],
+          "mean_zero": true,
+          "modes": 4,
+          "projection": "remove_l0",
+          "q_coefficients": [
+            "0"
+          ],
+          "radial_tail_lower": "30",
+          "radial_tail_start": 5,
+          "range_proof": {
+            "kind": "quadratic_range_v5",
+            "lower": "0",
+            "upper": "0"
+          },
+          "scope": "single_azimuth_sector_only",
+          "upper": "12",
+          "upper_inertia": [
+            2,
+            1,
+            1
+          ],
+          "upper_kind": "upper_ritz"
+        }
+      ]
+    ]
+  },
+  "cutoff_proof": {
+    "cutoff": "12",
+    "degree_cutoff": 3,
+    "every_unlisted_mode_above_cutoff": true,
+    "unlisted_floor": "20"
+  },
+  "first_k_resolved_without_enumerating_all_modes": true,
+  "floors": {
+    "all_unenumerated_angular_eigenvalues_at_least": "2",
+    "format": "omitted_sector_floors_v158",
+    "omitted_azimuth_m_start": 1,
+    "potential_range_proof": {
+      "kind": "quadratic_range_v5",
+      "lower": "0",
+      "upper": "0"
+    },
+    "q_coefficients": [
+      "0"
+    ],
+    "q_lower": "0",
+    "q_upper": "0",
+    "radial": [
+      {
+        "all_unenumerated_radial_eigenvalues_at_least": "20",
+        "m": 0,
+        "multiplicity": 1,
+        "next_laplace_degree": 4,
+        "next_radial_index": 4
+      }
+    ],
+    "rule": "minmax: l(l+1)+inf(q) <= lambda_m,j <= l(l+1)+sup(q)"
+  },
+  "formal_assistant_checked": false,
+  "format": "full_ordered_spectrum_v159",
+  "ordered_intervals": [
+    {
+      "index": 1,
+      "lower": "2",
+      "target_met": true,
+      "upper": "2",
+      "width": "0"
+    },
+    {
+      "index": 2,
+      "lower": "2",
+      "target_met": true,
+      "upper": "2",
+      "width": "0"
+    },
+    {
+      "index": 3,
+      "lower": "2",
+      "target_met": true,
+      "upper": "2",
+      "width": "0"
+    },
+    {
+      "index": 4,
+      "lower": "6",
+      "target_met": true,
+      "upper": "6",
+      "width": "0"
+    },
+    {
+      "index": 5,
+      "lower": "6",
+      "target_met": true,
+      "upper": "6",
+      "width": "0"
+    },
+    {
+      "index": 6,
+      "lower": "6",
+      "target_met": true,
+      "upper": "6",
+      "width": "0"
+    },
+    {
+      "index": 7,
+      "lower": "6",
+      "target_met": true,
+      "upper": "6",
+      "width": "0"
+    },
+    {
+      "index": 8,
+      "lower": "6",
+      "target_met": true,
+      "upper": "6",
+      "width": "0"
+    },
+    {
+      "index": 9,
+      "lower": "12",
+      "target_met": true,
+      "upper": "12",
+      "width": "0"
+    }
+  ],
+  "request": {
+    "bits": 8,
+    "format": "full_mean_zero_ordered_request_v155",
+    "function_space": "all_real_mean_zero_H1_S2",
+    "geometry": "unit_S2",
+    "k": 9,
+    "max_m": 4,
+    "max_modes": 4,
+    "max_radial": 4,
+    "mean_zero": true,
+    "modes": 4,
+    "multiplicity": {
+      "m=0": 1,
+      "m>0": 2
+    },
+    "operator": "P_mean_zero*(-Delta+q)*P_mean_zero",
+    "q_coefficients": [
+      "0"
+    ],
+    "tolerance": "1/100000000"
+  },
+  "slots": [
+    {
+      "laplace_degree": 1,
+      "lower": "2",
+      "m": 0,
+      "multiplicity": 1,
+      "radial_index": 1,
+      "source": "certified_sector_and_minmax",
+      "upper": "2"
+    },
+    {
+      "laplace_degree": 2,
+      "lower": "6",
+      "m": 0,
+      "multiplicity": 1,
+      "radial_index": 2,
+      "source": "certified_sector_and_minmax",
+      "upper": "6"
+    },
+    {
+      "laplace_degree": 3,
+      "lower": "12",
+      "m": 0,
+      "multiplicity": 1,
+      "radial_index": 3,
+      "source": "certified_sector_and_minmax",
+      "upper": "12"
+    },
+    {
+      "laplace_degree": 1,
+      "lower": "2",
+      "m": 1,
+      "multiplicity": 2,
+      "radial_index": 1,
+      "source": "uncomputed_minmax_placeholder",
+      "upper": "2"
+    },
+    {
+      "laplace_degree": 2,
+      "lower": "6",
+      "m": 1,
+      "multiplicity": 2,
+      "radial_index": 2,
+      "source": "uncomputed_minmax_placeholder",
+      "upper": "6"
+    },
+    {
+      "laplace_degree": 3,
+      "lower": "12",
+      "m": 1,
+      "multiplicity": 2,
+      "radial_index": 3,
+      "source": "uncomputed_minmax_placeholder",
+      "upper": "12"
+    },
+    {
+      "laplace_degree": 2,
+      "lower": "6",
+      "m": 2,
+      "multiplicity": 2,
+      "radial_index": 1,
+      "source": "uncomputed_minmax_placeholder",
+      "upper": "6"
+    },
+    {
+      "laplace_degree": 3,
+      "lower": "12",
+      "m": 2,
+      "multiplicity": 2,
+      "radial_index": 2,
+      "source": "uncomputed_minmax_placeholder",
+      "upper": "12"
+    },
+    {
+      "laplace_degree": 3,
+      "lower": "12",
+      "m": 3,
+      "multiplicity": 2,
+      "radial_index": 1,
+      "source": "uncomputed_minmax_placeholder",
+      "upper": "12"
+    }
+  ],
+  "status": "certified_target_met",
+  "uncomputed_modes_may_touch_first_k": [
+    {
+      "laplace_degree": 1,
+      "lower": "2",
+      "m": 1,
+      "multiplicity": 2,
+      "radial_index": 1,
+      "source": "uncomputed_minmax_placeholder",
+      "upper": "2"
+    },
+    {
+      "laplace_degree": 2,
+      "lower": "6",
+      "m": 1,
+      "multiplicity": 2,
+      "radial_index": 2,
+      "source": "uncomputed_minmax_placeholder",
+      "upper": "6"
+    },
+    {
+      "laplace_degree": 3,
+      "lower": "12",
+      "m": 1,
+      "multiplicity": 2,
+      "radial_index": 3,
+      "source": "uncomputed_minmax_placeholder",
+      "upper": "12"
+    },
+    {
+      "laplace_degree": 2,
+      "lower": "6",
+      "m": 2,
+      "multiplicity": 2,
+      "radial_index": 1,
+      "source": "uncomputed_minmax_placeholder",
+      "upper": "6"
+    },
+    {
+      "laplace_degree": 3,
+      "lower": "12",
+      "m": 2,
+      "multiplicity": 2,
+      "radial_index": 2,
+      "source": "uncomputed_minmax_placeholder",
+      "upper": "12"
+    },
+    {
+      "laplace_degree": 3,
+      "lower": "12",
+      "m": 3,
+      "multiplicity": 2,
+      "radial_index": 1,
+      "source": "uncomputed_minmax_placeholder",
+      "upper": "12"
+    }
+  ]
+}

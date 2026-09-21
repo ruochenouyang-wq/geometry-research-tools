@@ -1,0 +1,80 @@
+linear_coarse scalar_ritz width 0.003536815879717911 ms 2.314
+linear_coarse graded_ritz width 0.003536815879717911 ms 2.071
+linear_coarse sandwich width 0.0010028799001463122 ms 2.707
+quadratic scalar_ritz width 1.6398205250699877e-08 ms 12.888
+quadratic graded_ritz width 1.4458647077580994e-08 ms 12.922
+quadratic sandwich width 2.86191364687755e-09 ms 14.006
+quartic scalar_ritz width 0.0003139301955664451 ms 110.024
+quartic graded_ritz width 0.00030847534959983216 ms 110.454
+quartic sandwich width 0.00020034180314225597 ms 219.825
+broken_symmetry_cluster scalar_ritz width 2.1286506556414985e-13 ms 154.381
+broken_symmetry_cluster graded_ritz width 2.1286506556414985e-13 ms 154.52
+broken_symmetry_cluster sandwich width 2.1286506556414985e-13 ms 155.482
+
+linear v3_exact ms 12.286 counts None met True
+linear v4_guided ms 2.783 counts 4 met True
+quartic v3_exact ms 376.006 counts None met True
+quartic v4_guided ms 55.968 counts 4 met True
+cluster_second v3_exact ms 156.467 counts None met True
+cluster_second v4_guided ms 21.798 counts 4 met True
+high_precision v3_exact ms 75.121 counts None met True
+high_precision v4_guided ms 43.656 counts 120 met True
+
+positive_quadratic coefficient_range target_met 18 48.133
+positive_quadratic certified_range target_met 18 47.528
+shifted_quartic coefficient_range target_met 20 225.529
+shifted_quartic certified_range target_met 20 250.582
+perturbed coefficient_range target_met 18 151.66
+perturbed certified_range target_met 18 178.73
+
+double_well_first v5_full target_met 48.616
+double_well_first v6_parity target_met 40.615
+double_well_second v5_full target_met 47.567
+double_well_second v6_parity target_met 40.384
+sextic_third v5_full target_met 286.994
+sextic_third v6_parity target_met 259.309
+
+linear_low_space 0 0.716 1.8746940733141457e-07
+linear_low_space 1 1.485 1.8746940733141457e-07
+linear_low_space 2 2.524 1.8746940733141457e-07
+linear_high_precision 0 3.33 3.7163633469971443e-25
+linear_high_precision 1 9.414 1.240342365967524e-50
+linear_high_precision 2 23.105 1.240342365967524e-50
+quadratic_high_precision 0 9.278 1.8312590582104557e-24
+quadratic_high_precision 1 33.256 3.738191638348648e-38
+quadratic_high_precision 2 95.755 3.738191638348648e-38
+
+separated 12 1 certified 1.7020566975878368e-25
+separated 12 2 certified 1.5340275509138098e-25
+separated 16 1 certified 1.7020566976319e-25
+separated 16 2 certified 1.5340275509393495e-25
+separated 20 1 certified 1.7020566978852633e-25
+separated 20 2 certified 1.534027551004617e-25
+near_doublet 12 1 no_certified_gap 0.0
+near_doublet 12 2 certified 7.23577861156807e-05
+near_doublet 16 1 certified 2.0
+near_doublet 16 2 certified 1.4362695686424892e-08
+near_doublet 20 1 certified 2.0
+near_doublet 20 2 certified 4.4101797301344575e-13
+
+true_margin uniform proved 64 306.065
+true_margin adaptive proved 11 42.506
+false_threshold uniform disproved 1 5.155
+false_threshold adaptive disproved 8 24.634
+insufficient_budget uniform unresolved 1 2.733
+insufficient_budget adaptive unresolved 1 2.792
+
+weak_linear fixed_grid target_met [4] 1.347
+weak_linear adaptive target_met [4] 1.575
+cubic fixed_grid target_met [4, 6, 8, 10] 37.042
+cubic adaptive target_met [4, 6, 12] 36.336
+asymmetric_quartic fixed_grid target_met [4, 6, 8, 10, 12, 14, 16] 143.036
+asymmetric_quartic adaptive target_met [4, 6, 14, 16] 101.974
+even_sextic fixed_grid target_met [5, 7, 9, 11, 13] 76.804
+even_sextic adaptive target_met [5, 7, 13] 54.306
+near_pair fixed_grid target_met [4, 6, 8, 10, 12, 14, 16, 18, 20] 83.06
+near_pair adaptive target_met [4, 6, 14, 22] 47.547
+budget_failure fixed_grid target_not_met [4, 6, 8, 10, 12] 77.727
+budget_failure adaptive target_not_met [4, 6, 12] 55.713
+
+Final V2/V10 comparison was run separately after these eight benchmarks; full exact results and three timing samples are in results/final/benchmark.json.

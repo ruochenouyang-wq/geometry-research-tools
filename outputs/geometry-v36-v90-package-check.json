@@ -1,0 +1,72 @@
+{
+  "archive": "geometry-v36-v90.zip",
+  "bytes": 3440086,
+  "sha256": "144fe88e775a586939c328a47ab58cab4356adb6a672f94c8324c18808199bc4",
+  "file_count": 362,
+  "zip_crc_valid": true,
+  "all_manifest_hashes_valid": true,
+  "feature_versions": 55,
+  "source_identical_to_fresh_tested_extraction": true,
+  "fresh_extraction": true,
+  "offline_wordlist_cache": true,
+  "optional_tiktoken_runtime": "Existing separately installed tiktoken supplied via PYTHONPATH, not bundled binary",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "seconds": 16.474669584,
+      "output": ".........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................\n----------------------------------------------------------------------\nRan 489 tests in 16.232s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "run.py",
+        "verify",
+        "results/service_certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 0.1542302080000013,
+      "output": "{\"checked\":14,\"failed\":[]}\n"
+    },
+    {
+      "command": [
+        "python3",
+        "benchmark_precision.py",
+        "--verify",
+        "results/math_benchmark.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3314988329999977,
+      "output": "{\n  \"certificate_count\": 105,\n  \"all_saved_certificates_valid\": true,\n  \"failed_certificate_checks\": [],\n  \"generation_failures_recorded\": 0,\n  \"source_files_changed_since_run\": [],\n  \"note\": \"Replayed certificate validity includes honest open, obstruction, and disproved records; it does not turn those into proved inequalities.\"\n}\n"
+    },
+    {
+      "command": [
+        "python3",
+        "version_token_experiments.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.9741647919999998,
+      "output": "{\"versions\": 20, \"all_checked\": true}\n"
+    },
+    {
+      "command": [
+        "python3",
+        "run.py",
+        "serve"
+      ],
+      "exit_code": 0,
+      "actual_original_goal_lower_upper_zero": true,
+      "wire_tokens": 185
+    }
+  ],
+  "all_passed": true
+}

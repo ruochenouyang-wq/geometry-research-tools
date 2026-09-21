@@ -1,0 +1,104 @@
+{
+  "definition": "sum_with_multiplicity max(0,-lambda)",
+  "formal_assistant_checked": false,
+  "format": "two_scope_complete_negative_trace_v209",
+  "lower": "27",
+  "model": {
+    "entries": [],
+    "format": "two_scope_verified_model_v206",
+    "geometry": "unit_S2",
+    "groups": [],
+    "mean_zero": false,
+    "measure": "standard_sphere_area",
+    "operator": "-Delta+q",
+    "q": [
+      "-7"
+    ],
+    "real_angular_multiplicity": {
+      "m=0": 1,
+      "m>0": 2
+    },
+    "space": "full_unprojected"
+  },
+  "omitted_negative_trace_lower": "27",
+  "omitted_negative_trace_upper": "27",
+  "slots": [
+    {
+      "j": 1,
+      "l": 0,
+      "lower": "-7",
+      "m": 0,
+      "multiplicity": 1,
+      "uncomputed": true,
+      "upper": "-7"
+    },
+    {
+      "j": 2,
+      "l": 1,
+      "lower": "-5",
+      "m": 0,
+      "multiplicity": 1,
+      "uncomputed": true,
+      "upper": "-5"
+    },
+    {
+      "j": 3,
+      "l": 2,
+      "lower": "-1",
+      "m": 0,
+      "multiplicity": 1,
+      "uncomputed": true,
+      "upper": "-1"
+    },
+    {
+      "j": 1,
+      "l": 1,
+      "lower": "-5",
+      "m": 1,
+      "multiplicity": 2,
+      "uncomputed": true,
+      "upper": "-5"
+    },
+    {
+      "j": 2,
+      "l": 2,
+      "lower": "-1",
+      "m": 1,
+      "multiplicity": 2,
+      "uncomputed": true,
+      "upper": "-1"
+    },
+    {
+      "j": 1,
+      "l": 2,
+      "lower": "-1",
+      "m": 2,
+      "multiplicity": 2,
+      "uncomputed": true,
+      "upper": "-1"
+    }
+  ],
+  "tails": {
+    "angular_floor": "-7",
+    "cutoff": "0",
+    "degree_cutoff": 2,
+    "every_unlisted_eigenvalue_strictly_above_cutoff": true,
+    "next_uncomputed_m": 0,
+    "potential_range": {
+      "lower": "-7",
+      "proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "-7",
+        "upper": "-7"
+      },
+      "upper": "-7"
+    },
+    "radial_floors": [],
+    "rule": "sector minmax: l(l+1)+inf(q) <= lambda_m,j <= l(l+1)+sup(q)",
+    "unlisted_floor": "5"
+  },
+  "target_met": true,
+  "tolerance": "1/100000000",
+  "upper": "27",
+  "width": "0"
+}

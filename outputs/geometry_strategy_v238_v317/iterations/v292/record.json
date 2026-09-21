@@ -1,0 +1,22 @@
+{
+  "version": 292,
+  "recorded_at": "2026-09-18T18:36:08.472765+00:00",
+  "hypothesis": "Shifting both target and approximate representative leaves their L2 difference unchanged.",
+  "change": "Transport approximation constant shifts and add representative evaluation that applies the proved transform.",
+  "source_sha256": {
+    "proof_transport.py": "c96a936923a0d0e574b4cd1b1cb266f2e7bc9a62289977f3770ae5e9f5a949e0",
+    "test_proof_transport.py": "a79deabbdb3dac644a5b845f541f9a3fa51ca0683a2722d62f83c58cc5464376"
+  },
+  "validation": {
+    "tests_passed": 6
+  },
+  "comparison": {
+    "before": "Each offset required rebuilding the projection.",
+    "after": "Same error certificate plus exact constant addition; endpoint representative tests included."
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Evaluation is available for frozen piecewise sources and supported transport chains only."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

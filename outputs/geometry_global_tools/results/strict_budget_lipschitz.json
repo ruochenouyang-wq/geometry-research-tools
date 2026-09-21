@@ -1,0 +1,140 @@
+{
+  "algorithm_version": 11,
+  "certificate": {
+    "method": "global_regularized_ground_v11",
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "problem": {
+      "q0": [
+        "0"
+      ],
+      "directions": [
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "box": [
+        [
+          "-6",
+          "6"
+        ]
+      ],
+      "penalty": {
+        "constant": "0",
+        "linear": [
+          "1/50"
+        ],
+        "hessian": [
+          [
+            "1/5"
+          ]
+        ]
+      }
+    },
+    "optimization_scope": "all real parameters in the declared box and all nonzero axisymmetric form-domain functions",
+    "bound_policy": "lipschitz",
+    "direction_range_proofs": [
+      {
+        "kind": "quadratic_range_v5",
+        "lower": "-1",
+        "upper": "1"
+      }
+    ],
+    "points": [
+      {
+        "at": [
+          "0"
+        ],
+        "spectral_certificate": {
+          "method": "modewise_schur_v3",
+          "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+          "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+          "q_coefficients": [
+            "0"
+          ],
+          "modes": 10,
+          "eigenvalue_index": 1,
+          "tail_policy": "sandwich",
+          "range_proof": {
+            "kind": "quadratic_range_v5",
+            "lower": "0",
+            "upper": "0"
+          },
+          "upper_kind": "upper_tail",
+          "tail_lower": "110",
+          "lower_inertia": [
+            0,
+            0,
+            10
+          ],
+          "upper_inertia": [
+            1,
+            0,
+            9
+          ],
+          "formal_assistant_checked": false,
+          "lower": "-4503599627761121/7205759403792793600000000",
+          "upper": "4503599626979871/7205759403792793600000000",
+          "exact_width": "1/800000000",
+          "decimal_enclosure": [
+            "-0.000000000626",
+            "0.000000000625"
+          ]
+        },
+        "trial_legendre": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "rayleigh_quotient": "0"
+      }
+    ],
+    "partition_tree": {
+      "oracle_indices": [
+        0
+      ],
+      "lower_bound": "-43241762186664154021361121/7205759403792793600000000"
+    },
+    "candidate_index": 0,
+    "candidate_parameters": [
+      "0"
+    ],
+    "global_lower": "-43241762186664154021361121/7205759403792793600000000",
+    "candidate_upper": "0",
+    "global_gap": "43241762186664154021361121/7205759403792793600000000",
+    "tolerance": "1/1000",
+    "status": "global_gap_open",
+    "leaf_count": 1,
+    "excluded_leaf_count": 0,
+    "possible_optimizer_boxes": [
+      [
+        [
+          "-6",
+          "6"
+        ]
+      ]
+    ],
+    "formal_assistant_checked": false
+  },
+  "stop_reason": "leaf_budget",
+  "modes": 10,
+  "point_evaluations": 1,
+  "history": [
+    {
+      "leaves": 1,
+      "evaluations": 1,
+      "lower": "-43241762186664154021361121/7205759403792793600000000",
+      "upper": "0",
+      "gap": "43241762186664154021361121/7205759403792793600000000"
+    }
+  ],
+  "seconds": 0.0037545839999992836
+}

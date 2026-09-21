@@ -1,0 +1,32 @@
+[
+  {
+    "case": "degree24_source_coefficient_budget",
+    "exception": "ValueError",
+    "reason": "Coefficient magnitude or denominator exceeds budget",
+    "status": "not_certified"
+  },
+  {
+    "case": "non_L2_boundary_alpha_minus_half",
+    "exception": "ValueError",
+    "reason": "abs_power requires exponent>-1/2 for probability L2",
+    "status": "not_certified"
+  },
+  {
+    "case": "log_domain_not_certified",
+    "exception": "ValueError",
+    "reason": "log1p Taylor evidence requires the argument L1 coefficient radius<1",
+    "status": "not_certified"
+  },
+  {
+    "case": "relative_L2_error_at_least_one",
+    "exception": "ValueError",
+    "reason": "Relative form error must be strictly below one",
+    "status": "not_certified"
+  },
+  {
+    "case": "fixed_relative_error_equal_one",
+    "exception": "ValueError",
+    "reason": "Relative form error must be strictly below one",
+    "status": "not_certified"
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {
+    "bits": 40,
+    "max_m": 8,
+    "max_modes": 12,
+    "modes": 6,
+    "tolerance": "1/100000000"
+  },
+  "certificates": [
+    {
+      "format": "wide_cheap_sphere_ground_v115",
+      "path": "certs/C05_cheap_global.json",
+      "sha256": "9e6c810411225f9c26ba2d55cead1d1b895c1c63c8c41e37efcb085020315c1f",
+      "verified": true
+    },
+    {
+      "format": "wide_full_sphere_ground_v122",
+      "path": "certs/C05_wide_full.json",
+      "sha256": "9de707d1e64125ff129f71f162c92f1d47287652c32989e0f792aa40dd920967",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 0.286102,
+  "id": "C05",
+  "independent_guard": {
+    "lower": "2",
+    "trial": "x",
+    "upper": "67/33"
+  },
+  "lower": "2453771654697437826707731/1208925819614629174706176",
+  "notes": [],
+  "original_acceptance": [
+    "Accept degree 8 with exact coefficient binding and global potential range.",
+    "Coarse independent guard: 2 <= full mean-zero ground <=67/33, using u=x and E(z^(2r))=1/(2r+1); requested narrow result must independently replay."
+  ],
+  "original_input": {
+    "q": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    "target_width": "1/100000000"
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "narrow_target_met",
+  "target": "1/100000000",
+  "title": "八次非负势",
+  "upper": "2231692319311/1099511627776",
+  "width": "3396542074605/1208925819614629174706176"
+}

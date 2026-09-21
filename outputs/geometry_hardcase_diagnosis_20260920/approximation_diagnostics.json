@@ -1,0 +1,2148 @@
+{
+  "version": "hardcase_approximation_readonly_diagnosis_v1",
+  "created_utc": "2026-09-20T18:15:14.749965+00:00",
+  "source_report": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/report.json",
+  "source_report_sha256": "2b338ca46947b0c74761ebaa7ef3ebca33aaa17a220aa12ad0f5784aff3e5bfe",
+  "source_files": [
+    {
+      "path": "/PROJECT/outputs/geometry_precision_followup/piecewise_models.py",
+      "lines": [
+        31,
+        47,
+        103,
+        108,
+        147,
+        187,
+        216,
+        220,
+        232,
+        247
+      ],
+      "sha256": "e38855e0ff3e6c6b6fe8513a1902defa28a45be90479c32b95cffcd5f2b01fc9"
+    },
+    {
+      "path": "/PROJECT/outputs/geometry_strategy_v238_v317/adaptive_approx.py",
+      "lines": [
+        25,
+        43,
+        68,
+        84,
+        132,
+        149
+      ],
+      "sha256": "56f9bc3e49943d4186747657121c88484d33c53f2dbcc622a3c5243c550c799c"
+    },
+    {
+      "path": "/PROJECT/outputs/geometry_strategy_v238_v317/fast_math.py",
+      "lines": [
+        39,
+        87,
+        105,
+        117,
+        128
+      ],
+      "sha256": "d7f6ac0d1f024bfd270abe278f8c10e655613c5723b2ff9e0bf9a0559ebcef19"
+    },
+    {
+      "path": "/PROJECT/outputs/geometry_strategy_v238_v317/research_service.py",
+      "lines": [
+        120,
+        139,
+        144
+      ],
+      "sha256": "7df29bd08db34d8185ddcdd3523ebb3c02eb707d793842a22894d9117280d044"
+    },
+    {
+      "path": "/PROJECT/outputs/geometry_strategy_v238_v317/verification.py",
+      "lines": [
+        13,
+        27,
+        55
+      ],
+      "sha256": "4652f6e07303217aba74493583ca7826dd5f8c05331a8c57d602aa7270bbeb77"
+    },
+    {
+      "path": "/PROJECT/outputs/geometry_strategy_v238_v317/backend.py",
+      "lines": [
+        10,
+        14
+      ],
+      "sha256": "12ede992a59f487a723b6b3a70740d0f3d10d178881f9a11fbe9708b1796440e"
+    },
+    {
+      "path": "/PROJECT/outputs/geometry_general_v235_v237/function_models.py",
+      "lines": [
+        118,
+        217,
+        228,
+        235,
+        249,
+        271
+      ],
+      "sha256": "7ed1540035eec59da95bca7a7dd59172568e124446fc93ca0ba6bf825ec4b7f3"
+    },
+    {
+      "path": "/PROJECT/outputs/geometry_strategy_v317_runtime/release_service.py",
+      "lines": [
+        69,
+        78
+      ],
+      "sha256": "832a06683f583e61082d7447063b11b85fdf2c2ecb03a690b4c3747cbd203284"
+    },
+    {
+      "path": "/PROJECT/outputs/geometry_strategy_v317_runtime/request_runtime.py",
+      "lines": [
+        87,
+        100,
+        107,
+        110
+      ],
+      "sha256": "dcfb3561b61623e16479f2edd4719b5bd3fd89acdd20d8128bf9997995a7db2d"
+    },
+    {
+      "path": "/PROJECT/outputs/geometry_strategy_v238_v317/proof_transport.py",
+      "lines": [
+        11,
+        44
+      ],
+      "sha256": "f5868e18797af42a97407673975145c51426933b5eb04ef586aa1efb7ecf1fff"
+    }
+  ],
+  "measure": {
+    "sphere": "unit S2",
+    "normalized_measure": "d_sigma/(4*pi)",
+    "axis_coordinate_distribution": "z uniform on [-1,1], density 1/2",
+    "even_error_reduction": "(1/2)*integral_{-1}^1 |e(z)|^2 dz = integral_0^1 |e(t)|^2 dt",
+    "justification": "z=cos(theta), surface area element sin(theta)dtheta dphi = |dz|dphi"
+  },
+  "notation": {
+    "source": "signed_amplitude*|z|^alpha+offset",
+    "alpha": "-p",
+    "p": "positive singularity order",
+    "a": "absolute amplitude",
+    "tolerance": "L2 norm bound, not squared error"
+  },
+  "general_formulas": {
+    "L2_condition_for_nonzero_singular_amplitude": "alpha>-1/2, equivalently p<1/2",
+    "source_squared_norm": "offset^2+2*offset*signed_amplitude/(1-p)+signed_amplitude^2/(1-2*p)",
+    "power_moment": "integral_l^r t^(k-p) dt = (r^(k+1-p)-l^(k+1-p))/(k+1-p)",
+    "scaling": "Under t=B*x, homogeneous squared residual integral scales by B^(1-2*p).",
+    "rational_root_coordinates": "For p=m/d, t=R^d makes profile moments powers d*(k+1)-m and squared-profile norm powers d-2*m; exact rational roots/endpoints preserve rational integrals."
+  },
+  "assumptions_and_limits": [
+    "No solver implementation or frozen file was modified.",
+    "No private seed was opened.",
+    "Truncation numbers use an ideal model exact outside |z|<epsilon, with its full L2 tolerance spent inside.",
+    "Rounded decimal thresholds are explanatory evaluations of exact expressions, not outward-rounded certificates.",
+    "Dyadic scale depth is not a required uniform point count or an observed solver configuration.",
+    "A singular basis containing the original function changes the permitted representation; its formal exactness is not an existing piecewise-polynomial certificate or a spectrum result.",
+    "The existing degree-24 global projection was evaluated read-only for diagnosis; it was not substituted into the official evaluation."
+  ],
+  "checks": {
+    "recorded_failures_verified_for_all_six_methods": true,
+    "all_three_cases_zero_successes_out_of_five_per_method": true,
+    "no_recorded_timeouts_for_these_cases": true,
+    "threshold_equation_checked_to_80_decimal_digits": true,
+    "general_constant_core_identity_checked_exactly": true,
+    "p_one_quarter_core_coefficient_reduces_to_2_over_9": true,
+    "old_global_degree24_models_verified_by_their_original_verifier": true,
+    "inspected_source_hashes_unchanged": true
+  },
+  "cases": [
+    {
+      "case_id": "H11",
+      "original_task": {
+        "function": {
+          "amplitude": "-1/3",
+          "axis": 2,
+          "exponent": "-2/9",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/1000000"
+      },
+      "positive_singularity_order_p": "2/9",
+      "amplitude_magnitude_a": "1/3",
+      "L2_integrable": true,
+      "one_minus_2p": "5/9",
+      "failure_type": "interface_rejection_before_approximation_planning",
+      "method_evidence": {
+        "first_release": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.7750032283365726e-05,
+              "accounted_cpu_seconds": 5.699999999997374e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.40000619366765e-05,
+              "accounted_cpu_seconds": 5.499999999991623e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.633298471570015e-05,
+              "accounted_cpu_seconds": 6.600000000012152e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.383296567946672e-05,
+              "accounted_cpu_seconds": 6.299999999992423e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 0.00010337505955249071,
+              "accounted_cpu_seconds": 0.00010299999999996423,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "fixed_increasing": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 15
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.574997678399086e-05,
+              "accounted_cpu_seconds": 6.60000000000105e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.600003689527512e-05,
+              "accounted_cpu_seconds": 6.60000000000105e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 7.470790296792984e-05,
+              "accounted_cpu_seconds": 7.40000000000185e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 7.24580604583025e-05,
+              "accounted_cpu_seconds": 7.299999999998974e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 7.845798972994089e-05,
+              "accounted_cpu_seconds": 7.80000000000225e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "frozen_v317": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.9999991208314896e-05,
+              "accounted_cpu_seconds": 5.900000000003125e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.962494131177664e-05,
+              "accounted_cpu_seconds": 4.899999999996574e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.1459064707159996e-05,
+              "accounted_cpu_seconds": 5.199999999994098e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.0459057092666626e-05,
+              "accounted_cpu_seconds": 5.100000000002325e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.870793782174587e-05,
+              "accounted_cpu_seconds": 4.8000000000048004e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "old_default": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.7917052395641804e-05,
+              "accounted_cpu_seconds": 3.799999999998249e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.745791036635637e-05,
+              "accounted_cpu_seconds": 3.799999999998249e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.3917021937668324e-05,
+              "accounted_cpu_seconds": 3.2999999999949736e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.358302637934685e-05,
+              "accounted_cpu_seconds": 3.300000000006076e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.179193638265133e-05,
+              "accounted_cpu_seconds": 4.199999999998649e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "release": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.708304863423109e-05,
+              "accounted_cpu_seconds": 6.700000000003925e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.77499920129776e-05,
+              "accounted_cpu_seconds": 6.799999999995698e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.212492007762194e-05,
+              "accounted_cpu_seconds": 6.20000000000065e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.937503349035978e-05,
+              "accounted_cpu_seconds": 6.900000000009676e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.912497337907553e-05,
+              "accounted_cpu_seconds": 6.900000000009676e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "validation_selected_fixed": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.1708041206002235e-05,
+              "accounted_cpu_seconds": 3.100000000000325e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.21660190820694e-05,
+              "accounted_cpu_seconds": 3.300000000000525e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.8792029954493046e-05,
+              "accounted_cpu_seconds": 3.799999999999637e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.395893145352602e-05,
+              "accounted_cpu_seconds": 3.399999999999237e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.2542040571570396e-05,
+              "accounted_cpu_seconds": 3.200000000000425e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "zero_core_idealization": {
+        "squared_error_formula": "a^2*epsilon^(1-2*p)/(1-2*p)",
+        "epsilon_threshold_exact_base": "1/200000000000",
+        "epsilon_threshold_exact_exponent": "9/5",
+        "epsilon_max_decimal_approx": "4.55141050756520066094855263676365746E-21",
+        "binary_z_scale_depth_ceil": 68,
+        "all_tolerance_allocated_to_core": true,
+        "outside_core_error_assumed_zero": true,
+        "universal_algorithm_lower_bound": false
+      },
+      "best_constant_core_idealization": {
+        "constant": "signed_amplitude*epsilon^(-p)/(1-p)+offset",
+        "squared_error_coefficient_excluding_a_squared": "36/245",
+        "squared_error_formula": "a^2*p^2*epsilon^(1-2*p)/((1-2*p)*(1-p)^2)",
+        "epsilon_max_decimal_approx": "4.13800458431412423465080649583524106E-19",
+        "epsilon_relaxation_factor_vs_zero_core": "9.0916971286946605276239445E+1"
+      },
+      "existing_global_degree24_diagnostic": {
+        "method": "unchanged function_models.l2_model, degree=24, sqrt_bits=80",
+        "format": "sphere_axis_profile_projection_v1",
+        "error_squared_exact": "390356970439631043743973376/111869682289223310380830684445",
+        "error_upper_exact": "71412530107751844224667/1208925819614629174706176",
+        "error_upper_decimal_approx": "0.05907106039849170193206318579558480245765561544857291664811782538890838623046875",
+        "own_frozen_verifier_valid": true,
+        "exact_projection_error_exceeds_target": true,
+        "target_met": false,
+        "accepted_by_current_integrated_format_registry": false,
+        "diagnostic_only_not_new_algorithm": true
+      }
+    },
+    {
+      "case_id": "H12",
+      "original_task": {
+        "function": {
+          "amplitude": "-3/5",
+          "axis": 2,
+          "exponent": "-2/11",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/100000000"
+      },
+      "positive_singularity_order_p": "2/11",
+      "amplitude_magnitude_a": "3/5",
+      "L2_integrable": true,
+      "one_minus_2p": "7/11",
+      "failure_type": "interface_rejection_before_approximation_planning",
+      "method_evidence": {
+        "first_release": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.924996756017208e-05,
+              "accounted_cpu_seconds": 4.899999999996574e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.620799493044615e-05,
+              "accounted_cpu_seconds": 5.699999999997374e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.0332979299128056e-05,
+              "accounted_cpu_seconds": 5.100000000002325e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.6875054724514484e-05,
+              "accounted_cpu_seconds": 5.700000000019578e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.683310493826866e-05,
+              "accounted_cpu_seconds": 6.700000000003925e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "fixed_increasing": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 15
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.89999433234334e-05,
+              "accounted_cpu_seconds": 6.899999999998574e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.77499158680439e-05,
+              "accounted_cpu_seconds": 5.700000000002925e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 7.070903666317463e-05,
+              "accounted_cpu_seconds": 7.00000000000145e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.108300294727087e-05,
+              "accounted_cpu_seconds": 6.20000000000065e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.8582983911037445e-05,
+              "accounted_cpu_seconds": 5.899999999997574e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "frozen_v317": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.179201252758503e-05,
+              "accounted_cpu_seconds": 5.199999999994098e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.829101428389549e-05,
+              "accounted_cpu_seconds": 5.900000000003125e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.554202314466238e-05,
+              "accounted_cpu_seconds": 4.4999999999850715e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.187490023672581e-05,
+              "accounted_cpu_seconds": 5.100000000002325e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.3082982301712036e-05,
+              "accounted_cpu_seconds": 4.300000000001525e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "old_default": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.4415978007018566e-05,
+              "accounted_cpu_seconds": 3.399999999997849e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.4917029552161694e-05,
+              "accounted_cpu_seconds": 3.500000000000725e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.0624989196658134e-05,
+              "accounted_cpu_seconds": 4.099999999995774e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.78340482711792e-05,
+              "accounted_cpu_seconds": 3.6999999999953737e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.2208976335823536e-05,
+              "accounted_cpu_seconds": 3.2000000000032e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "release": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.362497176975012e-05,
+              "accounted_cpu_seconds": 5.3999999999998494e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.1749986596405506e-05,
+              "accounted_cpu_seconds": 5.199999999994098e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.9416983276605606e-05,
+              "accounted_cpu_seconds": 5.8999999999809205e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.9666926972568035e-05,
+              "accounted_cpu_seconds": 5.999999999994898e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.9249927289783955e-05,
+              "accounted_cpu_seconds": 5.900000000003125e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "validation_selected_fixed": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 2.816703636199236e-05,
+              "accounted_cpu_seconds": 2.8000000000000247e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 2.6792054995894432e-05,
+              "accounted_cpu_seconds": 2.8000000000000247e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 2.8665992431342602e-05,
+              "accounted_cpu_seconds": 2.9000000000001247e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 2.65840208157897e-05,
+              "accounted_cpu_seconds": 2.6999999999999247e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 2.9542017728090286e-05,
+              "accounted_cpu_seconds": 2.999999999998837e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "zero_core_idealization": {
+        "squared_error_formula": "a^2*epsilon^(1-2*p)/(1-2*p)",
+        "epsilon_threshold_exact_base": "7/39600000000000000",
+        "epsilon_threshold_exact_exponent": "11/7",
+        "epsilon_max_decimal_approx": "1.76164652189839190301630756472584407E-25",
+        "binary_z_scale_depth_ceil": 83,
+        "all_tolerance_allocated_to_core": true,
+        "outside_core_error_assumed_zero": true,
+        "universal_algorithm_lower_bound": false
+      },
+      "best_constant_core_idealization": {
+        "constant": "signed_amplitude*epsilon^(-p)/(1-p)+offset",
+        "squared_error_coefficient_excluding_a_squared": "44/567",
+        "squared_error_formula": "a^2*p^2*epsilon^(1-2*p)/((1-2*p)*(1-p)^2)",
+        "epsilon_max_decimal_approx": "1.99008847870039630858340045871998792E-23",
+        "epsilon_relaxation_factor_vs_zero_core": "1.1296752520794182688805962E+2"
+      },
+      "existing_global_degree24_diagnostic": {
+        "method": "unchanged function_models.l2_model, degree=24, sqrt_bits=80",
+        "format": "sphere_axis_profile_projection_v1",
+        "error_squared_exact": "36971662197245296853129363456/7756905236541558395468922991575",
+        "error_upper_exact": "83462213482417832037465/1208925819614629174706176",
+        "error_upper_decimal_approx": "0.06903832487341794740626617746435969243980201870414248332963325083255767822265625",
+        "own_frozen_verifier_valid": true,
+        "exact_projection_error_exceeds_target": true,
+        "target_met": false,
+        "accepted_by_current_integrated_format_registry": false,
+        "diagnostic_only_not_new_algorithm": true
+      }
+    },
+    {
+      "case_id": "H13",
+      "original_task": {
+        "function": {
+          "amplitude": "-3/5",
+          "axis": 2,
+          "exponent": "-2/9",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/10000000000"
+      },
+      "positive_singularity_order_p": "2/9",
+      "amplitude_magnitude_a": "3/5",
+      "L2_integrable": true,
+      "one_minus_2p": "5/9",
+      "failure_type": "interface_rejection_before_approximation_planning",
+      "method_evidence": {
+        "first_release": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.308305844664574e-05,
+              "accounted_cpu_seconds": 5.2999999999858716e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.9625057727098465e-05,
+              "accounted_cpu_seconds": 4.999999999988347e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.495796747505665e-05,
+              "accounted_cpu_seconds": 4.399999999993298e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.549999721348286e-05,
+              "accounted_cpu_seconds": 4.599999999999049e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/first_release_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.716690793633461e-05,
+              "accounted_cpu_seconds": 5.699999999997374e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "fixed_increasing": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 15
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.133399438112974e-05,
+              "accounted_cpu_seconds": 6.099999999997774e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.900005973875523e-05,
+              "accounted_cpu_seconds": 6.899999999998574e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.670799873769283e-05,
+              "accounted_cpu_seconds": 5.700000000002925e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.187497638165951e-05,
+              "accounted_cpu_seconds": 6.20000000000065e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/fixed_increasing_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 6.833299994468689e-05,
+              "accounted_cpu_seconds": 6.799999999995698e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                },
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "frozen_v317": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.604097921401262e-05,
+              "accounted_cpu_seconds": 4.599999999999049e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.950002767145634e-05,
+              "accounted_cpu_seconds": 4.899999999996574e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.541706923395395e-05,
+              "accounted_cpu_seconds": 5.3999999999998494e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.425004590302706e-05,
+              "accounted_cpu_seconds": 4.4000000000155026e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/frozen_v317_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.975001163780689e-05,
+              "accounted_cpu_seconds": 3.900000000012227e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "old_default": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.041699528694153e-05,
+              "accounted_cpu_seconds": 2.999999999997449e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.404205199331045e-05,
+              "accounted_cpu_seconds": 3.399999999997849e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.324996214359999e-05,
+              "accounted_cpu_seconds": 3.300000000006076e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 3.308302257210016e-05,
+              "accounted_cpu_seconds": 3.199999999992098e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/old_default_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 2.7832924388349056e-05,
+              "accounted_cpu_seconds": 2.8000000000028002e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "release": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 4.80839516967535e-05,
+              "accounted_cpu_seconds": 4.700000000013027e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.829101428389549e-05,
+              "accounted_cpu_seconds": 5.900000000003125e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.083298310637474e-05,
+              "accounted_cpu_seconds": 5.100000000002325e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.4750009439885616e-05,
+              "accounted_cpu_seconds": 5.499999999991623e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/release_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 5.0332979299128056e-05,
+              "accounted_cpu_seconds": 5.100000000002325e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        },
+        "validation_selected_fixed": {
+          "runs": 5,
+          "successes": 0,
+          "reason_counts": {
+            "This structured model supports only exponent -1/4": 5
+          },
+          "raw_existing_records": [
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r0_output.json",
+              "repetition": 0,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 2.9499991796910763e-05,
+              "accounted_cpu_seconds": 3.0000000000002247e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r1_output.json",
+              "repetition": 1,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 2.504198346287012e-05,
+              "accounted_cpu_seconds": 2.5999999999998247e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r2_output.json",
+              "repetition": 2,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 2.616702113300562e-05,
+              "accounted_cpu_seconds": 2.5999999999998247e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r3_output.json",
+              "repetition": 3,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 2.537504769861698e-05,
+              "accounted_cpu_seconds": 2.4999999999997247e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            },
+            {
+              "session_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/validation_selected_fixed_1_r4_output.json",
+              "repetition": 4,
+              "success": false,
+              "certificate_valid": false,
+              "budget_seconds": 10.0,
+              "timed_out": false,
+              "accounted_wall_seconds": 2.5541987270116806e-05,
+              "accounted_cpu_seconds": 2.4999999999997247e-05,
+              "attempt_errors": [
+                {
+                  "execution_ok": false,
+                  "error_type": "ValueError",
+                  "reason": "This structured model supports only exponent -1/4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "zero_core_idealization": {
+        "squared_error_formula": "a^2*epsilon^(1-2*p)/(1-2*p)",
+        "epsilon_threshold_exact_base": "1/64800000000000000000",
+        "epsilon_threshold_exact_exponent": "9/5",
+        "epsilon_max_decimal_approx": "2.18355929328960729133614022710089044E-36",
+        "binary_z_scale_depth_ceil": 119,
+        "all_tolerance_allocated_to_core": true,
+        "outside_core_error_assumed_zero": true,
+        "universal_algorithm_lower_bound": false
+      },
+      "best_constant_core_idealization": {
+        "constant": "signed_amplitude*epsilon^(-p)/(1-p)+offset",
+        "squared_error_coefficient_excluding_a_squared": "36/245",
+        "squared_error_formula": "a^2*p^2*epsilon^(1-2*p)/((1-2*p)*(1-p)^2)",
+        "epsilon_max_decimal_approx": "1.98522597571356647336633712959458526E-34",
+        "epsilon_relaxation_factor_vs_zero_core": "9.0916971286946605276239445E+1"
+      },
+      "existing_global_degree24_diagnostic": {
+        "method": "unchanged function_models.l2_model, degree=24, sqrt_bits=80",
+        "format": "sphere_axis_profile_projection_v1",
+        "error_squared_exact": "31618914605610114543261843456/2796742057230582759520767111125",
+        "error_upper_exact": "128542554193953319604401/1208925819614629174706176",
+        "error_upper_decimal_approx": "0.10632790871728506347771406530429766563485005637090807795175351202487945556640625",
+        "own_frozen_verifier_valid": true,
+        "exact_projection_error_exceeds_target": true,
+        "target_met": false,
+        "accepted_by_current_integrated_format_registry": false,
+        "diagnostic_only_not_new_algorithm": true
+      }
+    }
+  ]
+}

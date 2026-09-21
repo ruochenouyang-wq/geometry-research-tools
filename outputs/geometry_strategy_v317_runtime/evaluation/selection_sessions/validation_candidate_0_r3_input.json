@@ -1,0 +1,248 @@
+{
+  "cases": [
+    {
+      "budget_seconds": 3.0,
+      "classification": "public_validation",
+      "family": "easy",
+      "id": "V04",
+      "task": {
+        "function": {
+          "amplitude": "3/4",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "1/5",
+          "profile": "step"
+        },
+        "kind": "approximation",
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "public_validation",
+      "family": "negative_power_spectrum",
+      "id": "V05",
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/8",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "public_validation",
+      "family": "negative_power_spectrum",
+      "id": "V06",
+      "task": {
+        "function": {
+          "amplitude": "-1/2",
+          "axis": 2,
+          "exponent": "-1/3",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/100000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "known_failed_structure_regression",
+      "family": "negative_power_spectrum",
+      "id": "V07",
+      "task": {
+        "function": {
+          "amplitude": "-1/2",
+          "axis": 2,
+          "exponent": "-3/8",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "full_space_support_challenge",
+      "family": "negative_power_spectrum",
+      "id": "V08",
+      "task": {
+        "function": {
+          "amplitude": "-1/3",
+          "axis": 2,
+          "exponent": "-1/5",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": false,
+        "tolerance": "1/100000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "known_failed_structure_regression",
+      "family": "step_spectrum_hard",
+      "id": "V09",
+      "task": {
+        "function": {
+          "amplitude": "-1/2",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/100000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "fixed_minus_quarter_regression",
+      "family": "negative_power_approximation",
+      "id": "V10",
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/1000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "fixed_minus_quarter_regression",
+      "family": "negative_power_approximation",
+      "id": "V11",
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/100000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "fixed_minus_quarter_regression",
+      "family": "negative_power_approximation",
+      "id": "V12",
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "outside_current_approximation_support",
+      "family": "negative_power_approximation",
+      "id": "V13",
+      "task": {
+        "function": {
+          "amplitude": "-1/3",
+          "axis": 2,
+          "exponent": "-1/5",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/100000000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "public_validation",
+      "family": "easy",
+      "id": "V01",
+      "independent_exact_value": "-2/5",
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "-2/5",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": false,
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "public_validation",
+      "family": "easy",
+      "id": "V02",
+      "independent_exact_value": "13/5",
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "3/5",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "public_validation",
+      "family": "easy",
+      "id": "V03",
+      "task": {
+        "function": {
+          "amplitude": "1/3",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      }
+    }
+  ],
+  "checkpoint": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/selection_sessions/validation_candidate_0_r3_checkpoint.json",
+  "configuration": 0,
+  "method": "validation_candidate",
+  "output": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/selection_sessions/validation_candidate_0_r3_output.json",
+  "repetition": 3
+}

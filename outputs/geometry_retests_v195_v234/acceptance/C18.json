@@ -1,0 +1,92 @@
+{
+  "case": "C18",
+  "detail": {
+    "complete_reflection_blocks": 8,
+    "exact_width": "18701891022471/302231454903657293676544",
+    "lower": "1082670971198065026650489/302231454903657293676544",
+    "max_computed_dimension": 6,
+    "upper": "984683512085/274877906944"
+  },
+  "elapsed_including_store_and_replay_seconds": 0.141178333,
+  "original": {
+    "acceptance": [
+      "Replay a full-sphere certificate for x^2+2y^2+3z^2, which has no rotation making it a function of one axis alone.",
+      "Independent coarse guard is 3 <= ground <=18/5: q>=1 and the trial u=x has potential quotient 8/5 and Dirichlet quotient 2."
+    ],
+    "category": 9,
+    "frozen_v94_baseline": "Nonaxisymmetric coefficients/couplings are outside V94 input scope.",
+    "id": "C18",
+    "input": {
+      "mean_zero": true,
+      "q_xyz": [
+        {
+          "coefficient": "1",
+          "powers": [
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "2",
+          "powers": [
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": "3",
+          "powers": [
+            0,
+            0,
+            2
+          ]
+        }
+      ],
+      "target_width": "1/100000000"
+    },
+    "origin": "constructed_stress_case",
+    "source_ids": [],
+    "status": "fixed_challenge_not_claimed_solved",
+    "title": "真正三轴二次势"
+  },
+  "original_target_met": true,
+  "outer_process_limit_seconds": 90,
+  "service_calls": [
+    {
+      "request": {
+        "bits": 40,
+        "max_L": 9,
+        "op": "parity_ground",
+        "q": {
+          "0,0,2": "3",
+          "0,2,0": "2",
+          "2,0,0": "1"
+        },
+        "start_L": 3,
+        "target": "1/100000000",
+        "wall_budget_seconds": 90
+      },
+      "result": {
+        "certificate_id": "2e1ac185d0e161d4684e35917838375189f83de118d3eff34f18f2b6ddabcb9e",
+        "exact_width": "18701891022471/302231454903657293676544",
+        "formal_proof_assistant_checked": false,
+        "lower": "1082670971198065026650489/302231454903657293676544",
+        "mathematical_proof_verified": true,
+        "operation": "parity_ground",
+        "original_request_bound": true,
+        "potential": {
+          "0,0,2": "3",
+          "0,2,0": "2",
+          "2,0,0": "1"
+        },
+        "requested_width": "1/100000000",
+        "scope": "all_real_mean_zero_H1_functions_on_unit_S2",
+        "status": "target_met",
+        "upper": "984683512085/274877906944"
+      }
+    }
+  ],
+  "unchanged_input_scope_and_target": true
+}

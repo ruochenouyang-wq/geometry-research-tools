@@ -1,0 +1,32 @@
+{
+  "version": 261,
+  "recorded_at": "2026-09-18T18:35:23.574378+00:00",
+  "hypothesis": "A proved degree floor should trigger changing polynomial degree rather than expanding more cells.",
+  "change": "Adapt degree from zero until the exact target is reachable; plan all probes without generating full certificates and replay only the winner.",
+  "source_sha256": {
+    "adaptive_approx.py": "3655fe70a8c66f57916823325db8c72e074c81824e30eb4af0eb1f1bd564b6cd",
+    "test_adaptive_approx.py": "700ac0002f6febb92c1aafc97c9a95c2742ca1e0ee34ef97113917be18498381"
+  },
+  "validation": {
+    "unit_tests_passed": 6,
+    "full_winner_replay": true
+  },
+  "comparison": {
+    "target": "1/10000",
+    "fixed_degree3_error": "25143883867/1099511627776",
+    "new_degree": 13,
+    "new_levels": 13,
+    "new_error": "89372367/1099511627776",
+    "cost": {
+      "shape_evaluations": 14,
+      "level_comparisons": 7,
+      "certificate_builds": 1,
+      "certificate_replays": 1
+    }
+  },
+  "outcome": "retained",
+  "limitations": [
+    "The first attainable degree need not minimize certificate size; only one ratio is considered."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

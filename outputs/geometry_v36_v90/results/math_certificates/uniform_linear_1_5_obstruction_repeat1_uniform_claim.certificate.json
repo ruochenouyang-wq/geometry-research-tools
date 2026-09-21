@@ -1,0 +1,82 @@
+{
+  "all_real": true,
+  "amplitude_box": [
+    "-5",
+    "5"
+  ],
+  "certified_reduced_lower": "-3/10",
+  "certified_reduced_upper": "1/5",
+  "claim": "lambda_1(-Delta+a*p(t)) >= a*mean(p)-coefficient*a^2",
+  "coefficient": "1/5",
+  "correctors": [
+    [
+      "0"
+    ],
+    [
+      "0",
+      "-1/2"
+    ]
+  ],
+  "direction": [
+    "0",
+    "1"
+  ],
+  "energy_series": [
+    "0",
+    "0"
+  ],
+  "extracted_amplitude_power": 2,
+  "failure_witness": {
+    "amplitude": "5",
+    "meaning": "This local-energy ansatz fails; this is not a spectral counterexample.",
+    "reduced_value": "-1/20",
+    "residual_value": "-5/4",
+    "t": "0"
+  },
+  "formal_assistant_checked": false,
+  "leaf_count": 1,
+  "max_leaves": 256,
+  "method": "parameter_poisson_tensor_bernstein_v1",
+  "order": 1,
+  "proof_amplitude_box": [
+    "0",
+    "5"
+  ],
+  "reduced_residual": [
+    [
+      0,
+      0,
+      "-1/20"
+    ],
+    [
+      0,
+      2,
+      "1/4"
+    ]
+  ],
+  "reflection_used": true,
+  "requested_symmetry": true,
+  "residual": [
+    [
+      2,
+      0,
+      "-1/20"
+    ],
+    [
+      2,
+      2,
+      "1/4"
+    ]
+  ],
+  "scope": "full unit sphere; all real amplitudes",
+  "status": "ansatz_obstruction",
+  "tail": {
+    "centered_potential_abs_upper": "1",
+    "radius": "5",
+    "rule": "lambda_1-a*mean(p) >= -B*abs(a); c*abs(a)>=B outside radius"
+  },
+  "tree": {
+    "lower": "-3/10",
+    "upper": "1/5"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "phase": "authorized_revealed_running_precheck",
+  "batch": "B001",
+  "checks": {
+    "twenty_cases_and_unique_ids": true,
+    "twenty_distinct_identity_ignoring_tolerance": true,
+    "no_identity_overlap_with_committed_catalog": true,
+    "catalog_commitment_binding": true,
+    "explicit_root_authorization": true,
+    "authorization_freeze_binding": true,
+    "authorization_commitment_binding": true,
+    "protocol_chain_binding": true,
+    "reveal_started_authorization_binding": true,
+    "revealed_cases_and_audit_binding": true,
+    "all_cases_ten_seconds": true,
+    "fixed_axis_and_offset": true,
+    "fixed_twenty_case_layout": true,
+    "audited_identity_only_exclusions_and_selected_indices": true,
+    "source_archive_exists": true,
+    "source_archive_frozen_hash": true,
+    "archive_contains_all_frozen_source_bytes": true,
+    "archive_member_integrity": true,
+    "archive_contains_protocol_catalog_regression_binding": true
+  },
+  "all_checks_passed": true,
+  "case_count": 20,
+  "unique_identities": 20,
+  "known_catalog_unique_identities": 87,
+  "source_files_archived": 562,
+  "archive_members_in_index": 576,
+  "layout": [
+    {
+      "case_id": "N01",
+      "slot": "power_weak",
+      "mean_zero": false,
+      "tolerance": "1/1000000",
+      "correct": true
+    },
+    {
+      "case_id": "N02",
+      "slot": "power_strong",
+      "mean_zero": false,
+      "tolerance": "1/1000000",
+      "correct": true
+    },
+    {
+      "case_id": "N03",
+      "slot": "power_weak",
+      "mean_zero": true,
+      "tolerance": "1/1000000",
+      "correct": true
+    },
+    {
+      "case_id": "N04",
+      "slot": "power_strong",
+      "mean_zero": true,
+      "tolerance": "1/1000000",
+      "correct": true
+    },
+    {
+      "case_id": "N05",
+      "slot": "power_weak",
+      "mean_zero": false,
+      "tolerance": "1/100000000",
+      "correct": true
+    },
+    {
+      "case_id": "N06",
+      "slot": "power_strong",
+      "mean_zero": false,
+      "tolerance": "1/100000000",
+      "correct": true
+    },
+    {
+      "case_id": "N07",
+      "slot": "power_weak",
+      "mean_zero": true,
+      "tolerance": "1/100000000",
+      "correct": true
+    },
+    {
+      "case_id": "N08",
+      "slot": "power_strong",
+      "mean_zero": true,
+      "tolerance": "1/100000000",
+      "correct": true
+    },
+    {
+      "case_id": "N09",
+      "slot": "power_weak",
+      "mean_zero": false,
+      "tolerance": "1/10000000000",
+      "correct": true
+    },
+    {
+      "case_id": "N10",
+      "slot": "power_strong",
+      "mean_zero": false,
+      "tolerance": "1/10000000000",
+      "correct": true
+    },
+    {
+      "case_id": "N11",
+      "slot": "power_weak",
+      "mean_zero": true,
+      "tolerance": "1/10000000000",
+      "correct": true
+    },
+    {
+      "case_id": "N12",
+      "slot": "power_strong",
+      "mean_zero": true,
+      "tolerance": "1/10000000000",
+      "correct": true
+    },
+    {
+      "case_id": "N13",
+      "slot": "power_approximation",
+      "mean_zero": null,
+      "tolerance": "1/1000000",
+      "correct": true
+    },
+    {
+      "case_id": "N14",
+      "slot": "power_approximation",
+      "mean_zero": null,
+      "tolerance": "1/1000000",
+      "correct": true
+    },
+    {
+      "case_id": "N15",
+      "slot": "power_approximation",
+      "mean_zero": null,
+      "tolerance": "1/100000000",
+      "correct": true
+    },
+    {
+      "case_id": "N16",
+      "slot": "power_approximation",
+      "mean_zero": null,
+      "tolerance": "1/100000000",
+      "correct": true
+    },
+    {
+      "case_id": "N17",
+      "slot": "power_approximation",
+      "mean_zero": null,
+      "tolerance": "1/10000000000",
+      "correct": true
+    },
+    {
+      "case_id": "N18",
+      "slot": "power_approximation",
+      "mean_zero": null,
+      "tolerance": "1/10000000000",
+      "correct": true
+    },
+    {
+      "case_id": "N19",
+      "slot": "step_spectrum",
+      "mean_zero": false,
+      "tolerance": "1/100000000",
+      "correct": true
+    },
+    {
+      "case_id": "N20",
+      "slot": "step_spectrum",
+      "mean_zero": true,
+      "tolerance": "1/100000000",
+      "correct": true
+    }
+  ],
+  "private_seed_read": false,
+  "mathematical_solver_called": false,
+  "independent_sampling_limit": "Chosen indices and identity exclusions replayed from public audit; private randomness was not reread or reproduced."
+}

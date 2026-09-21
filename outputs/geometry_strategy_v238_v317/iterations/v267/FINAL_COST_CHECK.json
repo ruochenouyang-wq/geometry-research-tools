@@ -1,0 +1,112 @@
+{
+  "observations": [
+    {
+      "label": "old_manual_high_accuracy_settings",
+      "observed_seconds": 0.09550620899999998,
+      "certificate_bytes": 1669967,
+      "error_upper": "1833/1099511627776",
+      "expanded_slots": 1009,
+      "cost": null,
+      "status": "met"
+    },
+    {
+      "label": "new_cold_auto_plan",
+      "observed_seconds": 0.3243916250000001,
+      "certificate_bytes": 1005479,
+      "error_upper": "2731/274877906944",
+      "expanded_slots": 749,
+      "cost": {
+        "shape_evaluations": 54,
+        "shape_cache_hits": 0,
+        "shape_requests": 54,
+        "level_comparisons": 7,
+        "planning_cache_supplied": false,
+        "shape_candidates_pruned_by_cost_bound": 21,
+        "core_bound_comparisons": 21,
+        "sqrt_comparisons": 1,
+        "certificate_builds": 1,
+        "certificate_replays": 1
+      },
+      "status": "met"
+    },
+    {
+      "label": "new_preparation_with_empty_explicit_cache",
+      "observed_seconds": 0.324093125,
+      "certificate_bytes": 1005479,
+      "error_upper": "2731/274877906944",
+      "expanded_slots": 749,
+      "cost": {
+        "shape_evaluations": 54,
+        "shape_cache_hits": 0,
+        "shape_requests": 54,
+        "level_comparisons": 7,
+        "planning_cache_supplied": true,
+        "shape_candidates_pruned_by_cost_bound": 21,
+        "core_bound_comparisons": 21,
+        "sqrt_comparisons": 1,
+        "certificate_builds": 1,
+        "certificate_replays": 1
+      },
+      "status": "met"
+    },
+    {
+      "label": "new_warm_same_family",
+      "observed_seconds": 0.14095670800000004,
+      "certificate_bytes": 1030089,
+      "error_upper": "2731/274877906944",
+      "expanded_slots": 749,
+      "cost": {
+        "shape_evaluations": 0,
+        "shape_cache_hits": 54,
+        "shape_requests": 54,
+        "level_comparisons": 7,
+        "planning_cache_supplied": true,
+        "shape_candidates_pruned_by_cost_bound": 21,
+        "core_bound_comparisons": 21,
+        "sqrt_comparisons": 1,
+        "certificate_builds": 1,
+        "certificate_replays": 1
+      },
+      "status": "met"
+    },
+    {
+      "label": "old_manual_settings_plus_frozen_replay",
+      "observed_seconds": 0.206710459,
+      "certificate_bytes": 1669967,
+      "error_upper": "1833/1099511627776",
+      "expanded_slots": 1009,
+      "cost": {
+        "certificate_builds": 1,
+        "certificate_replays": 1
+      },
+      "status": "met"
+    },
+    {
+      "label": "new_warm_identical_source",
+      "observed_seconds": 0.11949333299999998,
+      "certificate_bytes": 1005479,
+      "error_upper": "2731/274877906944",
+      "expanded_slots": 749,
+      "cost": {
+        "shape_evaluations": 0,
+        "shape_cache_hits": 54,
+        "shape_requests": 54,
+        "level_comparisons": 7,
+        "planning_cache_supplied": true,
+        "shape_candidates_pruned_by_cost_bound": 21,
+        "core_bound_comparisons": 21,
+        "sqrt_comparisons": 1,
+        "certificate_builds": 1,
+        "certificate_replays": 1
+      },
+      "status": "met"
+    }
+  ],
+  "limitations": [
+    "One local observation per mode, other agents active; not a controlled timing benchmark.",
+    "Old manual setting is supplied directly and does not include prior discovery cost.",
+    "Old timing constructs a certificate once; adaptive timings also replay it independently.",
+    "Cache preparation and warm execution are reported separately.",
+    "Bytes are file encoding size, not model token usage."
+  ]
+}

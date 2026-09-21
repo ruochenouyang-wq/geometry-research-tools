@@ -1,0 +1,407 @@
+[
+  {
+    "callable": "global_constraints.trial_enclosure",
+    "capability": "Validate all global moments of a real trial and a justified Poincare lower bound",
+    "case": "C12",
+    "evidence": [
+      "C12/stages/V195.json"
+    ],
+    "outcome": "The original full-sphere problem is sharply enclosed by [2,2]; x is orthogonal to both 1 and z.",
+    "version": 195
+  },
+  {
+    "callable": "global_constraints.full_harmonics",
+    "capability": "Assemble every real harmonic including constant and sine/cosine modes",
+    "case": "C12",
+    "evidence": [
+      "C12/stages/V196.json"
+    ],
+    "outcome": "All 9 real harmonics of degrees 0..2 have exact Gram and independently integrated gradient matrices.",
+    "version": 196
+  },
+  {
+    "callable": "global_constraints.constraint_nullspace",
+    "capability": "Mass-weighted nullspace of complete cross-m and cross-component moments",
+    "case": "C12",
+    "evidence": [
+      "C12/stages/V197.json"
+    ],
+    "outcome": "The x+z moment couples different m blocks; no constraint support is dropped.",
+    "version": 197
+  },
+  {
+    "callable": "global_constraints.reduced_forms",
+    "capability": "Congruence of the full coupled energy and non-diagonal mass matrix",
+    "case": "C12",
+    "evidence": [
+      "C12/stages/V198.json"
+    ],
+    "outcome": "Dense T^T M T retains every off-diagonal entry; mixed xyz potential is integrated exactly.",
+    "version": 198
+  },
+  {
+    "callable": "global_constraints.transformed_tail",
+    "capability": "Transform every finite-to-tail harmonic coupling through the global nullspace",
+    "case": "C12",
+    "evidence": [
+      "C12/stages/V199.json"
+    ],
+    "outcome": "All 7 real degree-3 tail modes are represented, including sine components.",
+    "version": 199
+  },
+  {
+    "callable": "global_constraints.certify",
+    "capability": "Full-sphere constrained Schur spectral enclosure with entire infinite tail",
+    "case": "C12",
+    "evidence": [
+      "C12/stages/V200.json"
+    ],
+    "outcome": "A nonconstant, nonaxisymmetric problem is certified on the complete constrained H1 space.",
+    "version": 200
+  },
+  {
+    "callable": "global_constraints.exact_level",
+    "capability": "Snap to an exact Laplace level only when both exact inertia inequalities hold",
+    "case": "C12",
+    "evidence": [
+      "C12/stages/V201.json"
+    ],
+    "outcome": "Original C12 full-space sharp value is exactly 2; no axisymmetric certificate is reused as global evidence.",
+    "version": 201
+  },
+  {
+    "callable": "global_constraints.equivalent_constraints",
+    "capability": "Transfer verified spectra between identical global constraint row spaces",
+    "case": "C12",
+    "evidence": [
+      "C12/stages/V202.json"
+    ],
+    "outcome": "Scaling, duplicates and zero rows preserve the complete constrained function space and reuse the spectral proof.",
+    "version": 202
+  },
+  {
+    "callable": "global_constraints.adaptive",
+    "capability": "Increase the complete harmonic head while preserving all constraint support",
+    "case": "C12",
+    "evidence": [
+      "C12/stages/V203.json"
+    ],
+    "outcome": "L=1 has no admissible head direction; L=2 resolves the unchanged problem and certifies exact 6.",
+    "version": 203
+  },
+  {
+    "callable": "global_constraints.inequality",
+    "capability": "Prove a global weighted inequality or provide an explicit rational violating function",
+    "case": "C12",
+    "evidence": [
+      "C12/stages/V204.json"
+    ],
+    "outcome": "The overstrong threshold 3 is refuted with an explicitly verified admissible real polynomial trial.",
+    "version": 204
+  },
+  {
+    "callable": "general_spectrum.analytic_bounds",
+    "capability": "Global analytic ordered bounds include l=0 with multiplicity one in the unprojected space.",
+    "case": "C14",
+    "evidence": [
+      "C14/v205.json"
+    ],
+    "outcome": "q=t: first eigenvalue in [-1,1], next three in [1,3], before any sector solve.",
+    "version": 205
+  },
+  {
+    "callable": "general_spectrum.enumerate_sector",
+    "capability": "Distinct radial enumeration for actual full and mean-zero operators.",
+    "case": "C14",
+    "evidence": [
+      "C14/v206.json",
+      "C14/v206_projected.json"
+    ],
+    "outcome": "For q=t the full m=0 basis starts at l=0 and has a negative ground state; the projected basis starts at l=1.",
+    "version": 206
+  },
+  {
+    "callable": "general_spectrum.ordered_merge",
+    "capability": "Full kth eigenvalue merge with uncomputed angular and radial min-max intervals.",
+    "case": "C14",
+    "evidence": [
+      "C14/v207.json"
+    ],
+    "outcome": "All six requested full-space eigenvalues for q=t certified to tolerance 1e-6.",
+    "version": 207
+  },
+  {
+    "callable": "general_spectrum.strict_count",
+    "capability": "Strict threshold counting with the constant mode and exact threshold ties.",
+    "case": "C14",
+    "evidence": [
+      "C14/v208.json"
+    ],
+    "outcome": "Original C14 unprojected negative count exactly 9.",
+    "version": 208
+  },
+  {
+    "callable": "general_spectrum.negative_trace",
+    "capability": "Complete negative trace including every potentially negative omitted mode.",
+    "case": "C14",
+    "evidence": [
+      "C14/v209.json"
+    ],
+    "outcome": "Original C14 unprojected trace exactly 27; l>=3 has lower bound 5 and cannot be negative.",
+    "version": 209
+  },
+  {
+    "callable": "general_spectrum.adaptive_spectrum",
+    "capability": "Trace-aware adaptive scheduling continues after requested ordered eigenvalues close.",
+    "case": "C14",
+    "evidence": [
+      "C14/v210.json",
+      "C14/trace_schedule.json"
+    ],
+    "outcome": "k=1 ordering closes at step 2; full negative trace closes at step 9.",
+    "version": 210
+  },
+  {
+    "callable": "general_spectrum.spectral_shift",
+    "capability": "Projection-preserving threshold shift computes both count and sum(T-lambda)+.",
+    "case": "C14",
+    "evidence": [
+      "C14/v211.json"
+    ],
+    "outcome": "Full q=0 at T=6: strict count 4, shifted negative trace 18; five ties are excluded.",
+    "version": 211
+  },
+  {
+    "callable": "general_spectrum.fixed_potential_quotient",
+    "capability": "Scope-bound fixed-V trace quotient with standard-area factor 4 and constant-mode obstruction.",
+    "case": "C14",
+    "evidence": [
+      "C14/v212.json"
+    ],
+    "outcome": "V=1/100 gives pi-scaled full trace quotient 25; the 1/(4 epsilon) divergence is explicit.",
+    "version": 212
+  },
+  {
+    "callable": "general_spectrum.projection_interlacing",
+    "capability": "Verified codimension-one interlacing for the same nonconstant potential.",
+    "case": "C14",
+    "evidence": [
+      "C14/v213.json"
+    ],
+    "outcome": "q=t: five interlacing relations bind the actual full and projected operators.",
+    "version": 213
+  },
+  {
+    "callable": "general_spectrum.research_driver",
+    "capability": "One driver gives separate requested-quantity decisions and verified input-bound cache reuse.",
+    "case": "C14",
+    "evidence": [
+      "C14/v214.json",
+      "C14/cache_execution.json"
+    ],
+    "outcome": "Original C14: mean-zero count 8 / trace 20; unprojected count 9 / trace 27; second run reuses both verified results.",
+    "version": 214
+  },
+  {
+    "callable": "compact_gn.mean_certificate",
+    "capability": "Sparse powers of y and exact probability mean kernel",
+    "case": "C16",
+    "evidence": [
+      "C16/kernel_evidence.json"
+    ],
+    "outcome": "implemented_and_evidence_replayed",
+    "version": 215
+  },
+  {
+    "callable": "compact_gn.centered_function",
+    "capability": "Centered sparse basis and explicit nonzero scale representative",
+    "case": "C16",
+    "evidence": [
+      "C16/kernel_evidence.json"
+    ],
+    "outcome": "implemented_and_evidence_replayed",
+    "version": 216
+  },
+  {
+    "callable": "compact_gn.mass_form",
+    "capability": "Closed pair mass Gram kernel for centered powers",
+    "case": "C16",
+    "evidence": [
+      "C16/kernel_evidence.json"
+    ],
+    "outcome": "implemented_and_evidence_replayed",
+    "version": 217
+  },
+  {
+    "callable": "compact_gn.energy_form",
+    "capability": "Closed exact sphere Dirichlet pair kernel including constant handling",
+    "case": "C16",
+    "evidence": [
+      "C16/kernel_evidence.json"
+    ],
+    "outcome": "implemented_and_evidence_replayed",
+    "version": 218
+  },
+  {
+    "callable": "compact_gn.quartic_moment",
+    "capability": "Sparse exponent-sum quartic convolution and exact moments",
+    "case": "C16",
+    "evidence": [
+      "C16/kernel_evidence.json",
+      "C16/benchmark.json"
+    ],
+    "outcome": "implemented_and_evidence_replayed",
+    "version": 219
+  },
+  {
+    "callable": "compact_gn.ratio",
+    "capability": "Probability GN ratio and original 2^n moment scaling",
+    "case": "C16",
+    "evidence": [
+      "C16/original_cases.json"
+    ],
+    "outcome": "implemented_and_evidence_replayed",
+    "version": 220
+  },
+  {
+    "callable": "compact_gn.residual",
+    "capability": "Complete sparse Euler-Lagrange residual and exact improvement derivative",
+    "case": "C16",
+    "evidence": [
+      "C16/residuals.json"
+    ],
+    "outcome": "implemented_and_evidence_replayed",
+    "version": 221
+  },
+  {
+    "callable": "compact_gn.plane",
+    "capability": "Global two-chart projective-plane maximum with compressed moment kernels",
+    "case": "C16",
+    "evidence": [
+      "C16/planes.json"
+    ],
+    "outcome": "implemented_and_evidence_replayed",
+    "version": 222
+  },
+  {
+    "callable": "compact_gn.family_law",
+    "capability": "Symbolic rational family, strict integer monotonicity and exact asymptotic limit",
+    "case": "C16",
+    "evidence": [
+      "C16/family.json"
+    ],
+    "outcome": "implemented_and_evidence_replayed",
+    "version": 223
+  },
+  {
+    "callable": "compact_gn.bridge_original",
+    "capability": "Unified evaluator and verified original monomial bridge for n4/16/64",
+    "case": "C16",
+    "evidence": [
+      "C16/original_cases.json",
+      "C16/baseline.json"
+    ],
+    "outcome": "implemented_and_evidence_replayed",
+    "version": 224
+  },
+  {
+    "callable": "parity_spectrum.potential_range / verify_range",
+    "capability": "Exact simplex Bernstein potential range on the sphere",
+    "case": "C18",
+    "evidence": [
+      "C18/v225_evidence.json"
+    ],
+    "outcome": "Original three-axis potential has globally certified range [1,3]",
+    "version": 225
+  },
+  {
+    "callable": "parity_spectrum.reflection_symmetry / parity_project",
+    "capability": "Exact sign-flip symmetry and eight character projections",
+    "case": "C18",
+    "evidence": [
+      "C18/v226_evidence.json"
+    ],
+    "outcome": "C18 accepts all eight blocks; xy exposes only partial symmetry and cannot be split this way",
+    "version": 226
+  },
+  {
+    "callable": "parity_spectrum.degree_basis / parity_basis",
+    "capability": "Complete character harmonic bases and exact positive masses",
+    "case": "C18",
+    "evidence": [
+      "C18/v227_evidence.json"
+    ],
+    "outcome": "All degree counts sum to 2l+1; the 000 block removes the constant only",
+    "version": 227
+  },
+  {
+    "callable": "parity_spectrum.block_form / cross_block_form",
+    "capability": "Coupled forms within a character and exact cross-block checks",
+    "case": "C18",
+    "evidence": [
+      "C18/v228_evidence.json"
+    ],
+    "outcome": "The original x trial gives18/5; C18 cross blocks vanish and xy has exact nonzero1/15 coupling",
+    "version": 228
+  },
+  {
+    "callable": "parity_spectrum.tail_couplings / next_omitted_degree",
+    "capability": "Complete same-character tail columns and correct first omitted degree",
+    "case": "C18",
+    "evidence": [
+      "C18/v229_evidence.json"
+    ],
+    "outcome": "Odd winner omits degree5 after either L3 orL4; even000 omits degree4 afterL3",
+    "version": 229
+  },
+  {
+    "callable": "parity_spectrum.block_ground / verify_block / analytic_floor",
+    "capability": "Infinite-tail Schur enclosure for a reflection character",
+    "case": "C18",
+    "evidence": [
+      "C18/v230_evidence.json"
+    ],
+    "outcome": "All block endpoints use exact inertia with same-character graded tails and non-unit masses",
+    "version": 230
+  },
+  {
+    "callable": "parity_spectrum.full_ground / verify_full",
+    "capability": "All-eight-character global ground merge with valid pruning",
+    "case": "C18",
+    "evidence": [
+      "C18/v231_evidence.json"
+    ],
+    "outcome": "Three competitive odd blocks computed; five entire-character analytic floors preserved",
+    "version": 231
+  },
+  {
+    "callable": "parity_spectrum.error_diagnosis",
+    "capability": "Measured precision-versus-tail diagnosis and targeted same-parity refinement",
+    "case": "C18",
+    "evidence": [
+      "C18/v232_evidence.json"
+    ],
+    "outcome": "32 to56 bits at fixed degree scarcely changes width; degree3 to5 closes the target",
+    "version": 232
+  },
+  {
+    "callable": "parity_spectrum.FormCache / block_ground(cache=...)",
+    "capability": "Input-bound exact finite-form and potential-range reuse",
+    "case": "C18",
+    "evidence": [
+      "C18/v233_evidence.json"
+    ],
+    "outcome": "A second precision run reuses the matrix; changing parity or potential builds another matrix",
+    "version": 233
+  },
+  {
+    "callable": "parity_spectrum.adaptive_ground / verify_result",
+    "capability": "Requested-width full-space driver with competitor-only refinement and honest budgets",
+    "case": "C18",
+    "evidence": [
+      "C18/v234_evidence.json"
+    ],
+    "outcome": "Unchanged C18 target1e-8 met in three runs; insufficient max_L remains openly unclosed",
+    "version": 234
+  }
+]

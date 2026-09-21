@@ -1,0 +1,25 @@
+{
+  "version": 299,
+  "recorded_at": "2026-09-18T18:12:42.340585+00:00",
+  "hypothesis": "A small receipt can identify all nested evidence while refusing lossy JSON inputs.",
+  "change": "Strict JSON canonicalization and bounded summary with full-content hash; summary explicitly has no certificate authority.",
+  "source_sha256": {
+    "evidence_store.py": "5481cd7ac60eddd2b36e322dbff5fd3c0fec74b0eb8969db754567d4456ccfee",
+    "test_evidence_store.py": "0c673a5d8c8433252ec0ec5dc0e88fe8610aa6a4bd4f7b56021bb4df7fdd03b8"
+  },
+  "validation": {
+    "tests_run": 2,
+    "passed": true,
+    "log": "test_298_full_content_dedup (test_evidence_store.EvidenceTests) ... ok\ntest_299_strict_json_and_complete_summary (test_evidence_store.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.002s\n\nOK\n"
+  },
+  "comparison": {
+    "numeric_key_tuple_nan": "rejected instead of silent conversion",
+    "deep_last_element_change": "different receipt digest",
+    "bool_int_float": "distinct identities"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Summary is an index, not mathematical evidence."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

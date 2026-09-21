@@ -1,0 +1,60 @@
+{
+  "version": 256,
+  "recorded_at": "2026-09-18T19:02:17.615329+00:00",
+  "hypothesis": "Nested trial bases and repeated proposals can reuse positive exact LDL prefixes.",
+  "change": "Add immutable incrementally extended LDL factors and exactly equivalent rounded inverse iteration.",
+  "source_sha256": {
+    "fast_math.py": "1cc28975e1e1ed4362140727232895aac5f264f7fa8121b882ec6d85a79675fe",
+    "test_fast_math.py": "3ac7ce6a152edd5d91f77fbbb1e691cf24d43c1aab3c8cbd5a8be5f879a81373"
+  },
+  "validation": {
+    "tests_run": 10,
+    "failures": 0,
+    "frozen_verifiers_retained": true
+  },
+  "comparison": {
+    "fixed_input": "nested1,3,6,10 terms, bits32 iterations3; then repeat10",
+    "exact_proposal_coefficients_equal": true,
+    "baseline_nested_pivots": 20,
+    "candidate_nested_pivots": 10,
+    "baseline_nested_offdiagonal_entries": 63,
+    "candidate_nested_offdiagonal_entries": 45,
+    "repeat_counters": {
+      "ldl_solves": 3
+    },
+    "baseline_warm_matrices": {
+      "serial_seconds": [
+        0.001133625046350062,
+        0.0011116249952465296,
+        0.0011016249191015959
+      ],
+      "median_seconds": 0.0011116249952465296,
+      "not_a_model_speed_claim": true
+    },
+    "candidate_cold": {
+      "serial_seconds": [
+        0.0024064580211415887,
+        0.0023879170184955,
+        0.0024116249987855554
+      ],
+      "median_seconds": 0.0024064580211415887,
+      "not_a_model_speed_claim": true
+    },
+    "candidate_warm": {
+      "serial_seconds": [
+        0.0008037079824134707,
+        0.0007934160530567169,
+        0.0007872909773141146
+      ],
+      "median_seconds": 0.0007934160530567169,
+      "not_a_model_speed_claim": true
+    },
+    "cache_regime": "baseline timing keeps old Gram warm but recomputes LDL; candidate cold rebuilds both Gram and LDL; warm keeps both"
+  },
+  "outcome": "implemented_exact_checks_passed",
+  "limitations": [
+    "Small serial probes; no claim of universal speedup.",
+    "Caches are process-local; cold and warm costs are identified."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

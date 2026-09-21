@@ -1,0 +1,113 @@
+[
+  {
+    "callable": "precision.diagnose_precision",
+    "capability": "Choose bit, radial or angular work from a verified bound",
+    "evidence": [
+      "round02/results/v105.json",
+      "round02/certificates/old_q2.json"
+    ],
+    "name": "Precision bottleneck diagnosis",
+    "outcome": "increase_bisection_bits",
+    "version": 105
+  },
+  {
+    "callable": "precision.choose_bits",
+    "capability": "Scale bisection bits to a rational absolute target",
+    "evidence": [
+      "round02/results/v106.json",
+      "round02/certificates/auto_bits_q2.json"
+    ],
+    "name": "Absolute tolerance bit selection",
+    "outcome": "same N12: width 380061424069/2417851639229258349412352 -> 306065885033884508805/21778071482940061661655974875633165533184",
+    "version": 106
+  },
+  {
+    "callable": "precision.temple_certificate",
+    "capability": "Use full projected variance and bound the same m second eigenvalue",
+    "evidence": [
+      "round02/results/v107.json",
+      "round02/certificates/q2_temple.json"
+    ],
+    "name": "Same-sector Temple lower",
+    "outcome": "temple_bound_verified",
+    "version": 107
+  },
+  {
+    "callable": "precision.recover_gap",
+    "capability": "Refine a weak separator and keep Rayleigh only if the gap still fails",
+    "evidence": [
+      "round02/results/v108.json"
+    ],
+    "name": "Gap recovery and honest refusal",
+    "outcome": "weak separator recovered; excited trial keeps lower=null",
+    "version": 108
+  },
+  {
+    "callable": "precision.residual_schedule",
+    "capability": "Partition by radial window, retaining every projected tail coefficient",
+    "evidence": [
+      "round02/results/v109.json"
+    ],
+    "name": "Residual-controlled radial growth",
+    "outcome": "tail-dominated residual schedules N4 -> N6",
+    "version": 109
+  },
+  {
+    "callable": "precision.refine_coefficients",
+    "capability": "Increase dyadic coefficient precision and apply exact inverse steps",
+    "evidence": [
+      "round02/results/v110.json"
+    ],
+    "name": "Rational coefficient refinement",
+    "outcome": "full variance 1874944/1450957475 -> 676504425091068390250694311678230190418787131902936758395898713090621068647921708507356391384096/73693036549998242949284145142655972691249968107384888360096582117840196308087586434771658997616979109232891",
+    "version": 110
+  },
+  {
+    "callable": "precision.intersect_bounds",
+    "capability": "Intersect verified Schur, Temple and previously accepted sector bounds",
+    "evidence": [
+      "round02/results/v111.json"
+    ],
+    "name": "Independent enclosure intersection",
+    "outcome": "intersection never widens any contributing certified enclosure",
+    "version": 111
+  },
+  {
+    "callable": "precision.checkpoint",
+    "capability": "Revalidate q/projection binding and inherit exact bounds monotonically",
+    "evidence": [
+      "round02/results/v112.json",
+      "round02/certificates/mixed_checkpoint.json",
+      "round02/certificates/mixed_resumed.json"
+    ],
+    "name": "Bound-preserving continuation",
+    "outcome": "both endpoints inherited monotonically",
+    "version": 112
+  },
+  {
+    "callable": "precision.winning_sectors",
+    "capability": "Prune sectors by exact lower bounds against the best certified upper",
+    "evidence": [
+      "round02/results/v113.json",
+      "round02/certificates/q2_full.json"
+    ],
+    "name": "Winner-directed sector refinement",
+    "outcome": "m0 stops at N4; possible winner m1 reaches target at N9",
+    "version": 113
+  },
+  {
+    "callable": "precision.full_ground",
+    "capability": "Target absolute full-S2 projected ground width with honest finite-budget exits",
+    "evidence": [
+      "round02/results/v114.json",
+      "round02/certificates/q2_full.json",
+      "round02/certificates/mixed_full.json",
+      "round02/certificates/q100_full.json",
+      "round02/certificates/zero_budget.json",
+      "round02/certificates/old_q2.json"
+    ],
+    "name": "Full sphere precision driver",
+    "outcome": "all three requested potentials reach 1e-18; zero budget remains valid open",
+    "version": 114
+  }
+]

@@ -1,0 +1,207 @@
+{
+  "scope": "Post-holdout development diagnosis, not new independent evaluation or an algorithm version.",
+  "task": {
+    "function": {
+      "amplitude": "-3/5",
+      "axis": 2,
+      "kind": "axis_profile",
+      "offset": "0",
+      "profile": "step"
+    },
+    "kind": "spectrum",
+    "mean_zero": true,
+    "tolerance": "1/100000000"
+  },
+  "original_stop_reason": "attempt_budget",
+  "single_call_timeout_seconds": 10,
+  "records": [
+    {
+      "name": "recorded_configuration",
+      "configuration": {
+        "function": {
+          "amplitude": "-3/5",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "mean_zero": true,
+        "modes": 8,
+        "near_tail": 16,
+        "bits": 20,
+        "max_m": 2,
+        "tolerance": "1/100000000"
+      },
+      "execution": {
+        "execution_ok": true,
+        "timed_out": false,
+        "wall_seconds": 0.17611520900391042,
+        "cpu_seconds": 0.17544200000000001,
+        "hard_timeout_enforced": true
+      },
+      "certificate_file": "step_recorded_configuration.json",
+      "certificate_sha256": "347626f05a4ad2cf55b30a46ee8ea87ebe190f05bf76b227376a1c1cbbf7aba1",
+      "width": "41721381/1099511627776",
+      "width_float": 3.7945374970149714e-05,
+      "lower_float": 1.6834655870346977,
+      "upper_float": 1.6835035324096679,
+      "angular_tail_lower_float": 5.4,
+      "sectors": [
+        {
+          "m": 0,
+          "lower": 1.694661527001608,
+          "upper": 1.6946627616882324,
+          "width": 1.2346866242296528e-06
+        },
+        {
+          "m": 1,
+          "lower": 1.6834655870346977,
+          "upper": 1.6835035324096679,
+          "width": 3.7945374970149714e-05
+        }
+      ],
+      "independently_replayed": true
+    },
+    {
+      "name": "endpoint_precision_only",
+      "configuration": {
+        "function": {
+          "amplitude": "-3/5",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "mean_zero": true,
+        "modes": 8,
+        "near_tail": 16,
+        "bits": 48,
+        "max_m": 2,
+        "tolerance": "1/100000000"
+      },
+      "execution": {
+        "execution_ok": true,
+        "timed_out": false,
+        "wall_seconds": 0.5039271670393646,
+        "cpu_seconds": 0.501471,
+        "hard_timeout_enforced": true
+      },
+      "certificate_file": "step_endpoint_precision_only.json",
+      "certificate_sha256": "6a8645895fd053d1f7b68a7a8e2e7bd24e943bd214c11003489031d23cb08db1",
+      "width": "14825859553406215469703249/396140812571321687967719751680",
+      "width_float": 3.742573116153476e-05,
+      "lower_float": 1.6834659579681515,
+      "upper_float": 1.683503383699313,
+      "angular_tail_lower_float": 5.4,
+      "sectors": [
+        {
+          "m": 0,
+          "lower": 1.6946616514839534,
+          "upper": 1.694662165262205,
+          "width": 5.137782515482392e-07
+        },
+        {
+          "m": 1,
+          "lower": 1.6834659579681515,
+          "upper": 1.683503383699313,
+          "width": 3.742573116153476e-05
+        }
+      ],
+      "independently_replayed": true
+    },
+    {
+      "name": "near_tail_only",
+      "configuration": {
+        "function": {
+          "amplitude": "-3/5",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "mean_zero": true,
+        "modes": 8,
+        "near_tail": 32,
+        "bits": 48,
+        "max_m": 2,
+        "tolerance": "1/100000000"
+      },
+      "execution": {
+        "execution_ok": true,
+        "timed_out": false,
+        "wall_seconds": 1.1979458749992773,
+        "cpu_seconds": 1.1942840000000001,
+        "hard_timeout_enforced": true
+      },
+      "certificate_file": "step_near_tail_only.json",
+      "certificate_sha256": "2714bce6b63f5523cd13e72ec349a484b9bddb8400019afea44cbd0ed7e18405",
+      "width": "6886125395465066542964523/198070406285660843983859875840",
+      "width_float": 3.476604872276461e-05,
+      "lower_float": 1.6834686176505902,
+      "upper_float": 1.683503383699313,
+      "angular_tail_lower_float": 5.4,
+      "sectors": [
+        {
+          "m": 0,
+          "lower": 1.6946616567586827,
+          "upper": 1.694662165262205,
+          "width": 5.085035221666462e-07
+        },
+        {
+          "m": 1,
+          "lower": 1.6834686176505902,
+          "upper": 1.683503383699313,
+          "width": 3.476604872276461e-05
+        }
+      ],
+      "independently_replayed": true
+    },
+    {
+      "name": "basis_size_only",
+      "configuration": {
+        "function": {
+          "amplitude": "-3/5",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "mean_zero": true,
+        "modes": 16,
+        "near_tail": 16,
+        "bits": 48,
+        "max_m": 2,
+        "tolerance": "1/100000000"
+      },
+      "execution": {
+        "execution_ok": true,
+        "timed_out": false,
+        "wall_seconds": 5.376442583044991,
+        "cpu_seconds": 5.366326,
+        "hard_timeout_enforced": true
+      },
+      "certificate_file": "step_basis_size_only.json",
+      "certificate_sha256": "340487f12d3b01fdbb09a5ee0e316af16f1b810fbd37e4c6e155f9faea2e031f",
+      "width": "340205650436775189172379/49517601571415210995964968960",
+      "width_float": 6.8703983965403545e-06,
+      "lower_float": 1.6834679618468606,
+      "upper_float": 1.6834748322452573,
+      "angular_tail_lower_float": 5.4,
+      "sectors": [
+        {
+          "m": 0,
+          "lower": 1.6946616568280188,
+          "upper": 1.6946616883074967,
+          "width": 3.1479477902122425e-08
+        },
+        {
+          "m": 1,
+          "lower": 1.6834679618468606,
+          "upper": 1.6834748322452573,
+          "width": 6.8703983965403545e-06
+        }
+      ],
+      "independently_replayed": true
+    }
+  ]
+}

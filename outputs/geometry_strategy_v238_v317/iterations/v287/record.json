@@ -1,0 +1,46 @@
+{
+  "version": 287,
+  "recorded_at": "2026-09-18T18:58:53.398299+00:00",
+  "hypothesis": "Failures and verification overhead must consume the same budget as successful computation",
+  "change": "Add isolated solver/replay failure fallback, phase timing, unknown token accounting, strict request controls, cooperative wall budget, late-result distinction and adaptive-format residual compatibility",
+  "source_sha256": {
+    "research_controller.py": "853a4ed2e9c41bf10e5e856a38dbe61f4e91e1f909f07ed7e47af3bd3f3966fc",
+    "test_research_controller.py": "0f6adb6d5670230b2f1b5f534d5fd592c57fb1490950bcb96ee339b336f6c8b6"
+  },
+  "validation": {
+    "tests": 21,
+    "passed": true,
+    "real_development_cases": {
+      "fixed_singular_spectrum_1e8": {
+        "status": "target_met",
+        "calls": 4
+      },
+      "singular_approximation_1e6": {
+        "status": "certified_open",
+        "calls": 8
+      },
+      "step_spectrum_1e4": {
+        "status": "certified_open",
+        "calls": 8
+      },
+      "other_exponent_spectrum_1e3": {
+        "status": "target_met",
+        "calls": 8
+      }
+    }
+  },
+  "comparison": {
+    "failed_singular_route": "fallback to real direct solver; both attempts charged",
+    "forged_verified_flag": "rejected by independent replay",
+    "late_valid_result": "certificate retained, budget_exceeded",
+    "adaptive_format": "same-shape controller fixture only; integrated real backend test pending"
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Wall budget is cooperative and cannot interrupt an in-flight synchronous call",
+    "Observed phase times include all attempts but do not isolate cache/hardware effects",
+    "Default policy is deterministic greedy search, not global strategy optimality",
+    "Backend model usage remains unknown when not reported"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

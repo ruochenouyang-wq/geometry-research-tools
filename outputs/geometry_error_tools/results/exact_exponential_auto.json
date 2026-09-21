@@ -1,0 +1,43 @@
+{
+  "status": "target_met",
+  "tolerance": "1/10000000000",
+  "requested_method": "auto",
+  "size": 1,
+  "seconds": 0.00012941700000013157,
+  "attempts": [
+    {
+      "method": "exponential_structural",
+      "size": 1,
+      "seconds": 0.0001245829999998449,
+      "exact_width": "0",
+      "status": "certified"
+    }
+  ],
+  "certificate": {
+    "method": "positive_exponential_local_energy_v1",
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "eigenvalue_index": 1,
+    "q_coefficients": [
+      "0",
+      "20",
+      "-100"
+    ],
+    "s_power_coefficients": [
+      "0",
+      "-10"
+    ],
+    "subdivision_depth": 3,
+    "local_energy_coefficients": [
+      "-100"
+    ],
+    "formal_assistant_checked": false,
+    "lower": "-100",
+    "upper": "-100",
+    "exact_width": "0",
+    "decimal_enclosure": [
+      "-100.000000000000",
+      "-100.000000000000"
+    ]
+  }
+}

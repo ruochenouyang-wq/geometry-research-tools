@@ -1,0 +1,79 @@
+{
+  "version": 277,
+  "recorded_at": "2026-09-18T18:58:56.088046+00:00",
+  "hypothesis": "The same operator-derived generator and exact residual proof can transfer to new rational singular exponents.",
+  "change": "Extended the original-function action and automatic powers to -1/2<alpha<0; retained explicit eta and Temple-gap applicability boundaries and honest source-only fallback.",
+  "source_sha256": {
+    "adaptive_singular.py": "0e549fbfea6365d9b305e307c4471699a2525156ddc15cd3450365573b26a5d4",
+    "test_adaptive_singular.py": "059c0a8f504eb8a5a3b10b3d285ec94b9526bed915c07b8bd13402014719c190"
+  },
+  "validation": {
+    "tests_passed": 25,
+    "replayed": true
+  },
+  "comparison": [
+    {
+      "function": {
+        "kind": "axis_profile",
+        "axis": 2,
+        "profile": "abs_power",
+        "exponent": "-1/8",
+        "amplitude": "-1",
+        "offset": "0"
+      },
+      "width": "2859394567185303397389629765865384959447430787619390710456182717114893754091484702422900034669623766822646873434823705384790837154157444964575960992222683046310094034462850022375424/262709464429475482743180602376057362488371903010421061218817355088131961742058341444102396259684382646971738700514176474617629383328358431736131224730858640367886674366408893127863507684575",
+      "seconds": 0.08352020799999998,
+      "status": "certified_open",
+      "last_attempt": "certified_open"
+    },
+    {
+      "function": {
+        "kind": "axis_profile",
+        "axis": 2,
+        "profile": "abs_power",
+        "exponent": "-1/3",
+        "amplitude": "-1/2",
+        "offset": "0"
+      },
+      "width": "95756647075225102850263802937328562215396573195053858097043910926335138497501338174144854671364080483435742610428551051177358998301996295391299000112372756688157016064/101339973756789258136976702240284135541200011020810608726359080529599360396323104274237053232175876886522446330923065304257219372577591638047036339365448391986970363579402035",
+      "seconds": 0.08137675,
+      "status": "certified_open",
+      "last_attempt": "certified_open"
+    },
+    {
+      "function": {
+        "kind": "axis_profile",
+        "axis": 2,
+        "profile": "abs_power",
+        "exponent": "-3/8",
+        "amplitude": "-1/2",
+        "offset": "0"
+      },
+      "width": "19617933550405250390074906379838483720716441792481400709998326354306814018532268999695381498865206623330414005309/447099292646845092676864849250025271272188396924233031398074220764381803665879686591163398976090072804405616312320",
+      "seconds": 0.12149100000000002,
+      "status": "certified_open",
+      "last_attempt": "certified_open"
+    },
+    {
+      "function": {
+        "kind": "axis_profile",
+        "axis": 2,
+        "profile": "abs_power",
+        "exponent": "-1/3",
+        "amplitude": "-1",
+        "offset": "0"
+      },
+      "width": "75927516500382376076286391/154742504910672534362390528",
+      "seconds": 0.16192191700000003,
+      "status": "certified_open",
+      "last_attempt": "temple_gap_unavailable"
+    }
+  ],
+  "outcome": "new_parameter_points_certified_including_honest_gap_failure",
+  "limitations": [
+    "This is within one human-designed singular-potential family, not general mathematical problem solving.",
+    "The alpha=-1/3,a=-1 case has eta<1 but the current Temple gap remains too weak.",
+    "m0-source or other-sector uncertainty may control the final global width."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

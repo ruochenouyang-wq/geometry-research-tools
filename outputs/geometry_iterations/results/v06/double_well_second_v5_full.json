@@ -1,0 +1,102 @@
+{
+  "algorithm_version": 5,
+  "status": "target_met",
+  "tolerance": "1/10000000000",
+  "certificate": {
+    "method": "modewise_schur_v3",
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "q_coefficients": [
+      "0",
+      "0",
+      "-100"
+    ],
+    "modes": 18,
+    "eigenvalue_index": 2,
+    "tail_policy": "sandwich",
+    "range_proof": {
+      "kind": "quadratic_range_v5",
+      "lower": "-100",
+      "upper": "0"
+    },
+    "upper_kind": "upper_tail",
+    "tail_lower": "242",
+    "lower_inertia": [
+      1,
+      0,
+      17
+    ],
+    "upper_inertia": [
+      2,
+      0,
+      16
+    ],
+    "formal_assistant_checked": false,
+    "lower": "-27840987509946786155523/343597383680000000000",
+    "upper": "-6960246877485410394713/85899345920000000000",
+    "exact_width": "5144576671/343597383680000000000",
+    "decimal_enclosure": [
+      "-81.027938023754",
+      "-81.027938023738"
+    ]
+  },
+  "attempts": [
+    {
+      "modes": 4,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.0013250839999999764,
+      "exact_width": "3511457090292899436773/171798691840000000000"
+    },
+    {
+      "modes": 6,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.0018722500000000197,
+      "exact_width": "637939870421843795421/343597383680000000000"
+    },
+    {
+      "modes": 8,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.0028444580000000497,
+      "exact_width": "34234225934226607921/343597383680000000000"
+    },
+    {
+      "modes": 10,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.0035891250000000263,
+      "exact_width": "1094899653191451671/343597383680000000000"
+    },
+    {
+      "modes": 12,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.004829000000000028,
+      "exact_width": "18155507312545421/343597383680000000000"
+    },
+    {
+      "modes": 14,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.005673000000000039,
+      "exact_width": "41721238326671/343597383680000000000"
+    },
+    {
+      "modes": 16,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.007142999999999955,
+      "exact_width": "234597701671/343597383680000000000"
+    },
+    {
+      "modes": 18,
+      "path": "guided",
+      "exact_count_calls": 4,
+      "seconds": 0.007540665999999974,
+      "exact_width": "5144576671/343597383680000000000"
+    }
+  ],
+  "seconds": 0.044517584
+}

@@ -1,0 +1,174 @@
+{
+  "version": "0.2.0",
+  "problem": {
+    "title": "Ahmadi–Krstic–Parrilo 基准：稳定但不存在多项式 Lyapunov 函数",
+    "dimension": 2,
+    "vector_field": [
+      [
+        {
+          "powers": [
+            1,
+            0
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "powers": [
+            1,
+            1
+          ],
+          "coefficient": "1"
+        }
+      ],
+      [
+        {
+          "powers": [
+            0,
+            1
+          ],
+          "coefficient": "-1"
+        }
+      ]
+    ]
+  },
+  "provider": "manual",
+  "model": null,
+  "status": "certified_global_asymptotic_stability",
+  "novelty": "not_assessed",
+  "formal_assistant_checked": false,
+  "budget": {
+    "rounds": 6,
+    "iterations_per_round": 2500,
+    "seconds_per_round_soft": 12
+  },
+  "history": [
+    {
+      "round": 1,
+      "plan": {
+        "family": "log_quadratic",
+        "degree": 2,
+        "log_indices": [
+          0
+        ],
+        "explanation": "x 方程中出现乘法耦合 xy。尝试对 x 使用 log(1+x^2)，其导数带分母 1+x^2；清分母后将导数符号问题转为多项式平方和证书搜索。"
+      },
+      "status": "certified",
+      "certificate": {
+        "plan": {
+          "family": "log_quadratic",
+          "degree": 2,
+          "log_indices": [
+            0
+          ],
+          "explanation": "x 方程中出现乘法耦合 xy。尝试对 x 使用 log(1+x^2)，其导数带分母 1+x^2；清分母后将导数符号问题转为多项式平方和证书搜索。"
+        },
+        "coefficients": [
+          "7/5",
+          "13/9"
+        ],
+        "grams": [
+          [
+            [
+              "17/9",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "9/5",
+              "-7/5"
+            ],
+            [
+              "0",
+              "-7/5",
+              "26/9"
+            ]
+          ]
+        ]
+      },
+      "iterations": 25,
+      "elapsed_seconds": 0.001,
+      "search_variables": 8
+    }
+  ],
+  "certificate": {
+    "plan": {
+      "family": "log_quadratic",
+      "degree": 2,
+      "log_indices": [
+        0
+      ],
+      "explanation": "x 方程中出现乘法耦合 xy。尝试对 x 使用 log(1+x^2)，其导数带分母 1+x^2；清分母后将导数符号问题转为多项式平方和证书搜索。"
+    },
+    "coefficients": [
+      "7/5",
+      "13/9"
+    ],
+    "grams": [
+      [
+        [
+          "17/9",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "9/5",
+          "-7/5"
+        ],
+        [
+          "0",
+          "-7/5",
+          "26/9"
+        ]
+      ]
+    ]
+  },
+  "readable_result": {
+    "V_terms": [
+      {
+        "variable": 0,
+        "coefficient": "7/5",
+        "function": "log(1+x_i^2)"
+      },
+      {
+        "variable": 1,
+        "coefficient": "13/9",
+        "function": "x_i^2"
+      }
+    ],
+    "positive_denominator": [
+      {
+        "powers": [
+          0,
+          0
+        ],
+        "coefficient": "1"
+      },
+      {
+        "powers": [
+          2,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ],
+    "negative_derivative_numerator_lower_bound": [
+      {
+        "powers": [
+          0,
+          2
+        ],
+        "coefficient": "1"
+      },
+      {
+        "powers": [
+          2,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ]
+  },
+  "api_usage": []
+}

@@ -1,0 +1,104 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {
+    "Temple_second_eigenvalue_same_m": true,
+    "bits": 100,
+    "coefficient_bits": 140,
+    "initial_modes": 8,
+    "mode_ladder": [
+      8,
+      12,
+      18,
+      27,
+      32
+    ]
+  },
+  "certificates": [
+    {
+      "format": "projected_sphere_sector_v91_v92",
+      "path": "certs/C03_schur_N8.json",
+      "sha256": "79be7c37a0aa480b25adc35efa86b1d074e4c3306f16cf7858d644fe04a6bebd",
+      "verified": true
+    },
+    {
+      "format": "explicit_sector_rayleigh_v95",
+      "path": "certs/C03_trial_N8.json",
+      "sha256": "b77ba93164f8ec7e63fe026c988763f32aad96600643012d19d3940a432077d5",
+      "verified": true
+    },
+    {
+      "format": "same_sector_temple_v107",
+      "path": "certs/C03_temple_N8.json",
+      "sha256": "c82390813ce08d29a1cb0662ec980f4f0c71db4928ea8d1e7732407c8f574006",
+      "verified": true
+    },
+    {
+      "format": "precision_sector_intersection_v111",
+      "path": "certs/C03_combined_N8.json",
+      "sha256": "9a655e6909ff5df374d87787a6cd5c96f956ea7da7998a36232cc2111673dd4f",
+      "verified": true
+    },
+    {
+      "format": "projected_sphere_sector_v91_v92",
+      "path": "certs/C03_schur_N12.json",
+      "sha256": "f55f2465bc046653ece885c1f1aa32af248737be4e0779d2c1f552ca99648125",
+      "verified": true
+    },
+    {
+      "format": "explicit_sector_rayleigh_v95",
+      "path": "certs/C03_trial_N12.json",
+      "sha256": "223537c00ea063ecbf576f50920b777f43b336ec71d3621ba838a40145d36823",
+      "verified": true
+    },
+    {
+      "format": "same_sector_temple_v107",
+      "path": "certs/C03_temple_N12.json",
+      "sha256": "37364ee8f4538e346717772758774f55faed6da52188b39326b108df4befb75e",
+      "verified": true
+    },
+    {
+      "format": "precision_sector_intersection_v111",
+      "path": "certs/C03_combined_N12.json",
+      "sha256": "5de80ed436fd955eda80cc62e2865760be346c2e9621afb3f0d6526d6e00b253",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 0.232638,
+  "id": "C03",
+  "lower": "957194904627851871326546826589826382903004576385630559310951/401734511064747568885490523085290650630550748445698208825344",
+  "notes": [
+    "Usov decimal rounding is compatibility only, not a 24-digit proof."
+  ],
+  "original_acceptance": [
+    "Replay an exact interval of width <=1e-24, or report the remaining open width and resource budget.",
+    "The independent Usov rounding band [2.382655406155,2.382655406165] is a compatibility check only; it cannot certify 24 digits."
+  ],
+  "original_input": {
+    "bits": 100,
+    "initial_modes": 8,
+    "k": 1,
+    "m": 1,
+    "mean_zero": true,
+    "q": [
+      "0",
+      "0",
+      "2"
+    ],
+    "target_width": "1/1000000000000000000000000"
+  },
+  "scope": "single m=1 projected sector, k=1",
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "narrow_target_met",
+  "target": "1/1000000000000000000000000",
+  "title": "固定m=1势的二十四位证书宽度",
+  "upper": "755093638937667289423312241593/316912650057057350374175801344",
+  "usov_rounding_band_compatible": true,
+  "width": "103074628557352517792345512249093017/401734511064747568885490523085290650630550748445698208825344"
+}

@@ -1,0 +1,63 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {},
+  "certificates": [
+    {
+      "format": "full_ordered_spectrum_v159",
+      "path": "certs/C14_ordered_full.json",
+      "sha256": "90ba9b8d538c2fde2961bd42766ef1e9c210b106d2e8fd8deca1f17f77fb0199",
+      "verified": true
+    },
+    {
+      "format": "strict_full_spectral_count_v161",
+      "path": "certs/C14_negative_count.json",
+      "sha256": "6314e75d6788736f2b0b2c5273e141733f1fa0349103c1b1031e44baa9b9c07c",
+      "verified": true
+    },
+    {
+      "format": "full_negative_trace_v162",
+      "path": "certs/C14_negative_trace.json",
+      "sha256": "8b2057cf5e889af3a3829ebd8f8aa6cbaeada62cc0a84a120889f1f17ec4f58d",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 0.011444,
+  "full_unprojected": {
+    "expected_count": 9,
+    "expected_trace": "27",
+    "rejection": {
+      "exception": "ValueError",
+      "message": "This full spectrum interface requires mean_zero=True",
+      "rejected": true
+    },
+    "status": "unsupported"
+  },
+  "id": "C14",
+  "mean_zero_negative_count": 8,
+  "mean_zero_negative_trace": "20",
+  "notes": [],
+  "original_acceptance": [
+    "Mean-zero result: negative count 8 and negative-part trace 20 (l=1:3*5; l=2:5*1).",
+    "Unprojected result: negative count 9 and trace 27; prove no omitted negative eigenvalues. These are exact test identities, not a new Lieb-Thirring bound."
+  ],
+  "original_input": {
+    "q": [
+      "-7"
+    ],
+    "quantity": "sum_j max(0,-lambda_j), with multiplicity",
+    "spaces": [
+      "full_mean_zero",
+      "full_unprojected"
+    ]
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "partially_supported",
+  "title": "负谱个数及负部迹"
+}

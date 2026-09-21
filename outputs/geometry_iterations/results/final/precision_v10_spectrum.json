@@ -1,0 +1,69 @@
+{
+  "algorithm_version": 10,
+  "route": "spectral",
+  "status": "target_met",
+  "tolerance": "1/10000000000000000000000000000000000000000",
+  "max_modes": 24,
+  "parity_blocks": false,
+  "certificate": {
+    "method": "modewise_schur_v3",
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "q_coefficients": [
+      "0",
+      "1"
+    ],
+    "modes": 14,
+    "eigenvalue_index": 1,
+    "tail_policy": "sandwich",
+    "range_proof": {
+      "kind": "quadratic_range_v5",
+      "lower": "-1",
+      "upper": "1"
+    },
+    "upper_kind": "upper_tail",
+    "tail_lower": "209",
+    "lower_inertia": [
+      0,
+      0,
+      14
+    ],
+    "upper_inertia": [
+      1,
+      0,
+      13
+    ],
+    "formal_assistant_checked": false,
+    "lower": "-247417430902771310584433264292044758320686585766854563073/1569275433846670190958947355801916604025588861116008628224",
+    "upper": "-989669723611085242337733057168179033282725488456093133869/6277101735386680763835789423207666416102355444464034512896",
+    "exact_width": "20854611325118423/6277101735386680763835789423207666416102355444464034512896",
+    "decimal_enclosure": [
+      "-0.157663483138",
+      "-0.157663483137"
+    ]
+  },
+  "attempts": [
+    {
+      "modes": 4,
+      "exact_width": "340080233883580366703/316912650057057350374175801344",
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.0010557920000007215
+    },
+    {
+      "modes": 6,
+      "exact_width": "264743902746521280783018358649901818153947/6277101735386680763835789423207666416102355444464034512896",
+      "path": "exact_local_refinement",
+      "exact_count_calls": 188,
+      "seconds": 0.01835879099999893
+    },
+    {
+      "modes": 14,
+      "exact_width": "20854611325118423/6277101735386680763835789423207666416102355444464034512896",
+      "path": "exact_local_refinement",
+      "exact_count_calls": 188,
+      "seconds": 0.06776449999999912
+    }
+  ],
+  "seconds": 0.09032062500000038
+}

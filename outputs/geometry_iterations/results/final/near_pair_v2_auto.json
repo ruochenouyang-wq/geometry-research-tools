@@ -1,0 +1,177 @@
+{
+  "status": "target_met",
+  "tolerance": "1/10000000000",
+  "requested_method": "auto",
+  "size": 20,
+  "seconds": 2.4666982080000004,
+  "attempts": [
+    {
+      "method": "exponential_structural",
+      "size": 1,
+      "seconds": 0.00031549999999924694,
+      "exact_width": "399999999999999/4000000000000",
+      "status": "certified"
+    },
+    {
+      "method": "symmetry_temple",
+      "size": 4,
+      "seconds": 0.014419791999999987,
+      "status": "not_certified",
+      "reason": "No certified separation: gamma must exceed the Rayleigh quotient"
+    },
+    {
+      "method": "banded",
+      "size": 4,
+      "seconds": 0.01088083399999995,
+      "exact_width": "209188215723704703962093989933102659/9903520314283042199192993792000000",
+      "status": "certified"
+    },
+    {
+      "method": "symmetry_temple",
+      "size": 6,
+      "seconds": 0.028672667000000374,
+      "status": "not_certified",
+      "reason": "No certified separation: gamma must exceed the Rayleigh quotient"
+    },
+    {
+      "method": "banded",
+      "size": 6,
+      "seconds": 0.023028124999999733,
+      "exact_width": "22339940271152237605058151319027539/4951760157141521099596496896000000",
+      "status": "certified"
+    },
+    {
+      "method": "symmetry_temple",
+      "size": 8,
+      "seconds": 0.04978216599999996,
+      "status": "not_certified",
+      "reason": "No certified separation: gamma must exceed the Rayleigh quotient"
+    },
+    {
+      "method": "banded",
+      "size": 8,
+      "seconds": 0.04051454199999949,
+      "exact_width": "562198064960390325179460766427373/2475880078570760549798248448000000",
+      "status": "certified"
+    },
+    {
+      "method": "symmetry_temple",
+      "size": 10,
+      "seconds": 0.0783005000000001,
+      "status": "not_certified",
+      "reason": "No certified separation: gamma must exceed the Rayleigh quotient"
+    },
+    {
+      "method": "banded",
+      "size": 10,
+      "seconds": 0.06432029199999967,
+      "exact_width": "40074954442771097578144567827/6338253001141147007483516026880",
+      "status": "certified"
+    },
+    {
+      "method": "symmetry_temple",
+      "size": 12,
+      "seconds": 0.11021691700000069,
+      "status": "not_certified",
+      "reason": "No certified separation: gamma must exceed the Rayleigh quotient"
+    },
+    {
+      "method": "banded",
+      "size": 12,
+      "seconds": 0.09208312500000027,
+      "exact_width": "224827408674692346639026815887/1980704062856608439838598758400000",
+      "status": "certified"
+    },
+    {
+      "method": "symmetry_temple",
+      "size": 14,
+      "seconds": 0.17957924999999975,
+      "exact_width": "1034739448693133410140202533706264460948455582200449145641042263517859705099191245273674704882413164560384/4436070463391652335716889446849984473757815231216021226104317646864194726050104871653906220348638546875",
+      "status": "certified"
+    },
+    {
+      "method": "banded",
+      "size": 14,
+      "seconds": 0.12679145799999958,
+      "exact_width": "9571377151246587204144739941/2475880078570760549798248448000000",
+      "status": "certified"
+    },
+    {
+      "method": "symmetry_temple",
+      "size": 16,
+      "seconds": 0.23996237500000017,
+      "exact_width": "1340055851895331570609903988149112901906107945538031096960525110175234960090495876799014845210775988994048/1017123826636293814676963516287416308039260414715378777447599292251284305667961519613465199167475800703125",
+      "status": "certified"
+    },
+    {
+      "method": "banded",
+      "size": 16,
+      "seconds": 0.17417212500000012,
+      "exact_width": "645051612405277715623872783/19807040628566084398385987584000000",
+      "status": "certified"
+    },
+    {
+      "method": "symmetry_temple",
+      "size": 18,
+      "seconds": 0.3165809580000003,
+      "exact_width": "636168630952848481325635373169740495052332627915593582087155363847350550205440037205046752677060151345152/69909341288320122027448142749981257006901606478925565607138463581922908834475824415339793563351246971015625",
+      "status": "certified"
+    },
+    {
+      "method": "banded",
+      "size": 18,
+      "seconds": 0.21837587500000044,
+      "exact_width": "27306649193146783621623/154742504910672534362390528000000",
+      "status": "certified"
+    },
+    {
+      "method": "symmetry_temple",
+      "size": 20,
+      "seconds": 0.4132064590000004,
+      "exact_width": "5576549969673558527995573617766158026461425540184375532348206193013388735968761509144478554214608065311801344/134756522533490463092788005111485504759751915864402556410666918484552657223592118700906709221175842185585430328125",
+      "status": "certified"
+    },
+    {
+      "method": "banded",
+      "size": 20,
+      "seconds": 0.28532483300000067,
+      "exact_width": "11945972787260708118651/9903520314283042199192993792000000",
+      "status": "certified"
+    }
+  ],
+  "certificate": {
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "q_coefficients": [
+      "0",
+      "1/1000000",
+      "-100"
+    ],
+    "eigenvalue_index": 1,
+    "modes": 20,
+    "bisection_steps": 48,
+    "evidence": {
+      "analytic_potential_lower": "-100000001/1000000",
+      "tail_lower": "319999999/1000000",
+      "lower_schur_inertia": [
+        0,
+        0,
+        20
+      ],
+      "upper_finite_inertia": [
+        1,
+        0,
+        19
+      ]
+    },
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "verification": "exact_rational_with_analytic_tail",
+    "formal_assistant_checked": false,
+    "lower": "-32098475613891044046634423513032627/396140812571321687967719751680000",
+    "upper": "-2850917334552833023029/35184372088832000000",
+    "exact_width": "11945972787260708118651/9903520314283042199192993792000000",
+    "decimal_enclosure": [
+      "-81.027944092764",
+      "-81.027944092762"
+    ]
+  }
+}

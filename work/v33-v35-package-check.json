@@ -1,0 +1,64 @@
+{
+  "archive": "/PROJECT/outputs/geometry-weight-v33-v35.zip",
+  "sha256": "c6a0ace02a4d4801dbd01459db616b7a4a25e9472264db62997d2a50645174e1",
+  "archive_files": 87,
+  "verified_manifest_files": 86,
+  "saved_certificate_replay": {
+    "checked": 26,
+    "failed": []
+  },
+  "optimization": {
+    "output": "weights.json",
+    "method": "global_matrix_envelope_v33",
+    "status": "global_gap_closed",
+    "statistics": {
+      "exchange_rounds": 4,
+      "newton_steps": 302,
+      "sample_count": 15,
+      "model_calls": 0
+    }
+  },
+  "optimized_result_replay": {
+    "checked": 1,
+    "failed": []
+  },
+  "original_goal": {
+    "output": "goal.json",
+    "method": "proof_search_v32",
+    "status": "proved",
+    "statistics": {
+      "weighted_attempts": 1,
+      "expanded_states": 4,
+      "points": 0,
+      "spectral_searches": 0,
+      "model_calls": 0
+    }
+  },
+  "reuse": {
+    "output": "reuse.json",
+    "method": "proof_search_v32",
+    "status": "proved",
+    "statistics": {
+      "expanded_states": 4,
+      "template_attempts": 1,
+      "template_syntheses": 0,
+      "points": 0,
+      "spectral_searches": 0,
+      "model_calls": 0,
+      "weighted_attempts": 0
+    }
+  },
+  "actual_library_reuse_confirmed": true,
+  "fresh_goal_replay": {
+    "checked": 2,
+    "failed": []
+  },
+  "invalid_scope_rejected": "unsupported_or_invalid_input",
+  "tampered_certificate_rejected": {
+    "checked": 1,
+    "failed": [
+      "tampered.json"
+    ]
+  },
+  "status": "passed"
+}

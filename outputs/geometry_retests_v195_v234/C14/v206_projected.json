@@ -1,0 +1,103 @@
+{
+  "degree_start": 1,
+  "eigenvalues": [
+    {
+      "azimuth_m": 0,
+      "decimal_enclosure": [
+        "1.934000233219",
+        "1.934000234120"
+      ],
+      "degree_start": 1,
+      "eigenvalue_index": 1,
+      "exact_width": "2076616939/2305843009213693952",
+      "formal_assistant_checked": false,
+      "format": "projected_sphere_sector_v91_v92",
+      "geometry": "unit_S2",
+      "lower": "4459500917585696533/2305843009213693952",
+      "lower_inertia": [
+        0,
+        0,
+        6
+      ],
+      "mean_zero": true,
+      "modes": 6,
+      "projection": "remove_l0",
+      "q_coefficients": [
+        "0",
+        "1"
+      ],
+      "radial_tail_lower": "55",
+      "radial_tail_start": 7,
+      "range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "-1",
+        "upper": "1"
+      },
+      "scope": "single_azimuth_sector_only",
+      "upper": "2076616939/1073741824",
+      "upper_inertia": [
+        1,
+        0,
+        5
+      ],
+      "upper_kind": "upper_tail"
+    },
+    {
+      "azimuth_m": 0,
+      "decimal_enclosure": [
+        "6.023129111616",
+        "6.023129113019"
+      ],
+      "degree_start": 1,
+      "eigenvalue_index": 2,
+      "exact_width": "808410705/576460752303423488",
+      "formal_assistant_checked": false,
+      "format": "projected_sphere_sector_v91_v92",
+      "geometry": "unit_S2",
+      "lower": "3472097538902892975/576460752303423488",
+      "lower_inertia": [
+        1,
+        0,
+        5
+      ],
+      "mean_zero": true,
+      "modes": 6,
+      "projection": "remove_l0",
+      "q_coefficients": [
+        "0",
+        "1"
+      ],
+      "radial_tail_lower": "55",
+      "radial_tail_start": 7,
+      "range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "-1",
+        "upper": "1"
+      },
+      "scope": "single_azimuth_sector_only",
+      "upper": "808410705/134217728",
+      "upper_inertia": [
+        2,
+        0,
+        4
+      ],
+      "upper_kind": "upper_tail"
+    }
+  ],
+  "format": "two_scope_sector_enumeration_v206",
+  "geometry": "unit_S2",
+  "m": 0,
+  "mean_zero": true,
+  "measure": "standard_sphere_area",
+  "multiplicity": 1,
+  "operator": "P_mean_zero*(-Delta+q)*P_mean_zero",
+  "q": [
+    "0",
+    "1"
+  ],
+  "real_angular_multiplicity": {
+    "m=0": 1,
+    "m>0": 2
+  },
+  "space": "full_mean_zero"
+}

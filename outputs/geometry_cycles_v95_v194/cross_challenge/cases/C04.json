@@ -1,0 +1,66 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {
+    "initial": {
+      "bits": 100,
+      "max_m": 4,
+      "max_modes": 8,
+      "modes": 8
+    },
+    "refinement": {
+      "max_m": 8,
+      "max_modes": 32,
+      "max_steps": 24,
+      "modes": 8,
+      "tolerance": "1/100000000000000000000"
+    }
+  },
+  "certificates": [
+    {
+      "format": "projected_full_sphere_ground_v93",
+      "path": "certs/C04_original_budget.json",
+      "sha256": "5f79c161acf0abc62c5b27d222ca5c1ad6ddd2933c80ac76e686d9dc756f52bb",
+      "verified": true
+    },
+    {
+      "format": "precision_full_ground_v114",
+      "path": "certs/C04_refined_full.json",
+      "sha256": "f70942822de67305bf894df3116d3b6ad6c06a2a1199829baf0eea85f03c14af",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 1.361299,
+  "id": "C04",
+  "initial_width": "5522826437052279078105867631462129534060592373909967648592756420347570086754086997918725/509258994083621521567111422102344540262867098416484062659035112338595324940834176545849344",
+  "lower": "2448482963996277873462364944476013257794061643402992207355473164340998466426054176991767245666131201025801675436966962402976995778/237999416526262664709186280139959976908738048963512886167625511249562435116904854891294857094600739291528828626770388701154299545",
+  "notes": [],
+  "original_acceptance": [
+    "Replay a full-space interval of width <=1e-20 including an explicit omitted-angular-sector lower bound, or keep certified_bound_open_gap.",
+    "Do not infer high precision merely from bits=100 or reuse an m=0-only interval as a full-space result."
+  ],
+  "original_input": {
+    "bits": 100,
+    "initial_max_m": 4,
+    "initial_max_modes": 8,
+    "initial_modes": 8,
+    "q": [
+      "0",
+      "0",
+      "100"
+    ],
+    "target_width": "1/100000000000000000000"
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "narrow_target_met",
+  "target": "1/100000000000000000000",
+  "title": "强势全角向二十位闭合",
+  "upper": "596189852977072951700263005480404580193960445689108790607901118512278589090814/57951327100855984051210439237365333734540305031166728748860146542969558590791",
+  "width": "10517268686696176588842432941048675171640052592647312052532666754109920994088087609089180279828248660197269268835313267925377191082367461482292715365400664181050135076936860127199232/13792382036926317127823551574558059533015490429922963368707777776487700735141667737291882676431315338852072878947872314102386535811628753886754807368210406337995433971969946689570999588682394891900892490095"
+}

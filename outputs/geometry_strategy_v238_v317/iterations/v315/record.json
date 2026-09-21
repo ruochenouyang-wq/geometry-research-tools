@@ -1,0 +1,27 @@
+{
+  "version": 315,
+  "recorded_at": "2026-09-18T18:47:00.867781+00:00",
+  "hypothesis": "Timing only successful solver calls omits verification, storage and failed attempts.",
+  "change": "Added cumulative stage timing, injected-clock accounting tests, and elapsed-wall admission checks that explicitly do not interrupt active calls.",
+  "source_sha256": {
+    "interaction.py": "5b09dfeec746a8cfbc4b24661328e77f26507075f2107fd7d10614f990808341",
+    "test_interaction.py": "6d864758b524974aa116c809d271672abac68dbbe353a0b083cabfbd4192e92d"
+  },
+  "validation": {
+    "unittest_tests": 22,
+    "passed": true
+  },
+  "comparison": {
+    "synthetic_clock_verification_seconds": 6,
+    "storage_seconds": 2,
+    "load_seconds": 1,
+    "total_elapsed_seconds": 9,
+    "failed_executor_seconds_preserved": 2.5,
+    "measurement": "deterministic accounting test, not performance benchmark"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Stage timers may overlap; wall limits reject future admissions rather than killing running calls; concurrent development can perturb real timings."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

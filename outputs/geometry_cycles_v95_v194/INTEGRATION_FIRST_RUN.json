@@ -1,0 +1,32 @@
+{
+  "all_passed": false,
+  "errors": 0,
+  "failures": 2,
+  "output": "................................F................................................................................................................................F..........................................................................................................................................................................................................................................................................\n======================================================================\nFAIL: test_saved_certificate_roundtrips (test_anisotropic_review.IndependentAnisotropicReview)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/PROJECT/outputs/geometry_cycles_v95_v194/test_anisotropic_review.py\", line 165, in test_saved_certificate_roundtrips\n    self.assertTrue(valid, str(path)+':'+c['format'])\nAssertionError: False is not true : /PROJECT/outputs/geometry_cycles_v95_v194/round09/ROOT_ACCEPTANCE.json:anisotropic_mean_zero_sphere_v182\n\n======================================================================\nFAIL: test_saved_certificate_roundtrips (test_gn_review.IndependentGNReview)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/PROJECT/outputs/geometry_cycles_v95_v194/test_gn_review.py\", line 142, in test_saved_certificate_roundtrips\n    self.assertTrue(g.verify(c), str(path)+':'+c['format'])\nAssertionError: False is not true : /PROJECT/outputs/geometry_cycles_v95_v194/round08/ROOT_ACCEPTANCE.json:gn_caps_v173\n\n----------------------------------------------------------------------\nRan 428 tests in 11.340s\n\nFAILED (failures=2)\n",
+  "per_module": {
+    "round01.test_witness_review": 15,
+    "test_anisotropic": 24,
+    "test_anisotropic_review": 13,
+    "test_constraints": 44,
+    "test_constraints_review": 15,
+    "test_family_review": 14,
+    "test_global_parameter": 26,
+    "test_global_review": 15,
+    "test_gn_review": 11,
+    "test_gn_variation": 25,
+    "test_ordered_spectrum": 23,
+    "test_parameter_family": 19,
+    "test_portal": 9,
+    "test_precision": 14,
+    "test_precision_review": 10,
+    "test_scale_review": 24,
+    "test_spectrum_review": 14,
+    "test_sphere_scale": 35,
+    "test_wide_potential": 56,
+    "test_wide_review": 10,
+    "test_witness": 12
+  },
+  "seconds": 11.3399125,
+  "skipped": 0,
+  "tests_run": 428
+}

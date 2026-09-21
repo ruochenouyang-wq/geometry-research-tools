@@ -1,0 +1,162 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {},
+  "certificates": [
+    {
+      "format": "projected_sphere_sector_v91_v92",
+      "path": "certs/C10_a-2_m0.json",
+      "sha256": "302d87a65d7826c302765ed8415b01c9e5dfe14185db3be134f6f2a0bd4b0d6b",
+      "verified": true
+    },
+    {
+      "format": "projected_sphere_sector_v91_v92",
+      "path": "certs/C10_a-2_m1.json",
+      "sha256": "abea9129958d867ee7b7f54cdc5b0c0fce8eb869943a735057ab89bd999d480b",
+      "verified": true
+    },
+    {
+      "format": "projected_full_sphere_ground_v93",
+      "path": "certs/C10_a-2_full.json",
+      "sha256": "3e483bb088cfdeeab04e6229863d40e7f9304c6e8ed6101fa29d3e4c359a7be8",
+      "verified": true
+    },
+    {
+      "format": "projected_sphere_sector_v91_v92",
+      "path": "certs/C10_a0_m0.json",
+      "sha256": "f88fdaeab38d0a8922353b644abc5e074063bf7eae8ade13b7152885db11368a",
+      "verified": true
+    },
+    {
+      "format": "projected_sphere_sector_v91_v92",
+      "path": "certs/C10_a0_m1.json",
+      "sha256": "2e62b5fa207095f19df25487f474ac3f2f9058b7951642e310cb0605b76a6dfd",
+      "verified": true
+    },
+    {
+      "format": "projected_full_sphere_ground_v93",
+      "path": "certs/C10_a0_full.json",
+      "sha256": "710cfb56bf45e5a22b25a1bdbc18be8bb811c96c53bed69e0f6187d51564add8",
+      "verified": true
+    },
+    {
+      "format": "projected_sphere_sector_v91_v92",
+      "path": "certs/C10_a2_m0.json",
+      "sha256": "fc654afe50a336e917d2ee197076c7b58e29960e63bc04ab54f228223b77e0d9",
+      "verified": true
+    },
+    {
+      "format": "projected_sphere_sector_v91_v92",
+      "path": "certs/C10_a2_m1.json",
+      "sha256": "529923488e97d88a8ffd0a5e4ce6a3065626ee5d1e6e03b4da0dd753d9d6b1e9",
+      "verified": true
+    },
+    {
+      "format": "projected_full_sphere_ground_v93",
+      "path": "certs/C10_a2_full.json",
+      "sha256": "9eb0cb36e9667e81bcedcc7c036757c122aa6dff3ad968cfcfe910e63dfd4c94",
+      "verified": true
+    },
+    {
+      "format": "full_ordered_spectrum_v159",
+      "path": "certs/C10_zero_multiplicity.json",
+      "sha256": "f01a80d85ca001913fc30ab2125d121ba8330af003793d592f6ffee941614ddc",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "comparisons": [
+    {
+      "a": -2,
+      "full_interval": [
+        "29206801786807782906709/37778931862957161709568",
+        "26563431481/34359738368"
+      ],
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "lower": "29206801786807782906709/37778931862957161709568",
+          "upper": "26563431481/34359738368"
+        },
+        {
+          "azimuth_m": 1,
+          "lower": "477739158329738017461581/302231454903657293676544",
+          "upper": "434501233331/274877906944"
+        }
+      ],
+      "separated_winner": 0
+    },
+    {
+      "a": 0,
+      "full_interval": [
+        "2",
+        "2"
+      ],
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "lower": "2",
+          "upper": "2"
+        },
+        {
+          "azimuth_m": 1,
+          "lower": "2",
+          "upper": "2"
+        }
+      ],
+      "separated_winner": null
+    },
+    {
+      "a": 2,
+      "full_interval": [
+        "720113409936248047593019/302231454903657293676544",
+        "654939331013/274877906944"
+      ],
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "lower": "958716836294615918914969/302231454903657293676544",
+          "upper": "871947883111/274877906944"
+        },
+        {
+          "azimuth_m": 1,
+          "lower": "720113409936248047593019/302231454903657293676544",
+          "upper": "654939331013/274877906944"
+        }
+      ],
+      "separated_winner": 1
+    }
+  ],
+  "elapsed_seconds": 0.113781,
+  "id": "C10",
+  "notes": [
+    "Only the three prescribed parameters; no whole-box branch ordering or uniqueness claim."
+  ],
+  "original_acceptance": [
+    "At a=-2 and a=2 establish competing m=0/m=1 intervals and identify a winning branch only after separation; retain undecided labels if they overlap.",
+    "At a=0 prove full mean-zero eigenvalue 2 with real multiplicity 3 (one m=0 plus two m=1). Do not infer uniqueness or a whole-box branch ordering from only these three points."
+  ],
+  "original_input": {
+    "parameter_box_for_optional_global_search": {
+      "a": [
+        "-2",
+        "2"
+      ]
+    },
+    "parameters_to_compare": [
+      "-2",
+      "0",
+      "2"
+    ],
+    "q(a,t)": "a*t^2"
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "solved",
+  "title": "正负椭球势的角分支竞争",
+  "zero_real_multiplicity": 3
+}

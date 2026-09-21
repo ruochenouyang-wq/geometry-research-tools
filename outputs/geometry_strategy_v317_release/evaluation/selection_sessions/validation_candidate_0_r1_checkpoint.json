@@ -1,0 +1,3049 @@
+{
+  "complete": false,
+  "rows": [
+    {
+      "accounted_cpu_seconds": 0.0013240000000000057,
+      "accounted_wall_seconds": 0.0013247081078588963,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "spectral_interval_width",
+        "reason": "replayed",
+        "target_met": false,
+        "tolerance": "1/10000000000",
+        "value": "1/4096"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "spectral_interval_width",
+            "reason": "replayed",
+            "target_met": false,
+            "tolerance": "1/10000000000",
+            "value": "1/4096"
+          },
+          "configuration": "small",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.00036999999999999533,
+          "replay_wall_seconds": 0.0003702909452840686,
+          "response": {
+            "certificate": {
+              "angular_form_bound": {
+                "energy_factor": "1",
+                "mass_offset": "3/5",
+                "measure": "d_sigma/(4*pi)_on_unit_S2",
+                "method": "pointwise_step",
+                "pointwise_lower": "3/5"
+              },
+              "angular_tail_cannot_improve_best_upper": true,
+              "angular_tail_lower": "13/5",
+              "eigenvalue_index": 1,
+              "exact_width": "1/4096",
+              "formal_proof_assistant_checked": false,
+              "format": "direct_axis_moment_full_v1",
+              "full_infinite_space_covered": true,
+              "function": {
+                "amplitude": "0",
+                "axis": 2,
+                "kind": "axis_profile",
+                "offset": "3/5",
+                "profile": "step"
+              },
+              "function_approximation_error": "0",
+              "geometry": "unit_S2",
+              "lower": "53243/20480",
+              "mean_zero": true,
+              "measure": "d_sigma/(4*pi)_on_unit_S2",
+              "omitted_azimuth_m_start": 1,
+              "original_function_moments_exact": true,
+              "scope": "all_real_mean_zero_H1_on_unit_S2",
+              "sectors": [
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 0,
+                  "eigenvalue_index": 1,
+                  "exact_width": "1/4096",
+                  "form_bound": {
+                    "energy_factor": "1",
+                    "mass_offset": "3/5",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "pointwise_step",
+                    "pointwise_lower": "3/5"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "0",
+                    "axis": 2,
+                    "kind": "axis_profile",
+                    "offset": "3/5",
+                    "profile": "step"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "26/15",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "66/25"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "0",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "0"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "6/25",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "18/125"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "2/5",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "6/25"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "2/3",
+                      "2/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": {
+                      "column": [
+                        "0",
+                        "0"
+                      ],
+                      "mass": "2"
+                    }
+                  },
+                  "lower": "53243/20480",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "remove_l0",
+                  "radial_tail_lower": "63/5",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "63/5",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 24,
+                  "upper": "13/5",
+                  "upper_inertia": [
+                    0,
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "status": "certified_open",
+              "tolerance": "1/10000000000",
+              "upper": "13/5"
+            },
+            "kind": "original_function_spectrum",
+            "ok": true
+          },
+          "solver_cpu_seconds": 0.0009229999999999933,
+          "solver_wall_seconds": 0.000922541948966682
+        }
+      ],
+      "budget_seconds": 3.0,
+      "case_id": "V02",
+      "classification": "public_validation",
+      "execution": {
+        "cpu_seconds": 0.0013240000000000057,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.0013247081078588963
+      },
+      "family": "easy",
+      "last_stage": "serialization_and_selection",
+      "method": "validation_candidate",
+      "selected_attempt": 0,
+      "success": false,
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "3/5",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/10000000000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.0020519999999999983,
+      "accounted_wall_seconds": 0.00205220899078995,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "spectral_interval_width",
+        "reason": "replayed",
+        "target_met": false,
+        "tolerance": "1/1000",
+        "value": "28553/25165824"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "spectral_interval_width",
+            "reason": "replayed",
+            "target_met": false,
+            "tolerance": "1/1000",
+            "value": "28553/25165824"
+          },
+          "configuration": "small",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.0005949999999999983,
+          "replay_wall_seconds": 0.000594708020798862,
+          "response": {
+            "certificate": {
+              "angular_form_bound": {
+                "energy_factor": "1",
+                "mass_offset": "0",
+                "measure": "d_sigma/(4*pi)_on_unit_S2",
+                "method": "pointwise_step",
+                "pointwise_lower": "0"
+              },
+              "angular_tail_cannot_improve_best_upper": true,
+              "angular_tail_lower": "6",
+              "eigenvalue_index": 1,
+              "exact_width": "28553/25165824",
+              "formal_proof_assistant_checked": false,
+              "format": "direct_axis_moment_full_v1",
+              "full_infinite_space_covered": true,
+              "function": {
+                "amplitude": "1/3",
+                "axis": 2,
+                "kind": "axis_profile",
+                "offset": "0",
+                "profile": "step"
+              },
+              "function_approximation_error": "0",
+              "geometry": "unit_S2",
+              "lower": "18125181/8388608",
+              "mean_zero": true,
+              "measure": "d_sigma/(4*pi)_on_unit_S2",
+              "omitted_azimuth_m_start": 2,
+              "original_function_moments_exact": true,
+              "scope": "all_real_mean_zero_H1_on_unit_S2",
+              "sectors": [
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 0,
+                  "eigenvalue_index": 1,
+                  "exact_width": "28637/100663296",
+                  "form_bound": {
+                    "energy_factor": "1",
+                    "mass_offset": "0",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "pointwise_step",
+                    "pointwise_lower": "0"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "1/3",
+                    "axis": 2,
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "step"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "13/9",
+                        "1/24"
+                      ],
+                      [
+                        "1/24",
+                        "37/15"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "1/3456",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "49/5760"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "1/27",
+                        "1/72"
+                      ],
+                      [
+                        "1/72",
+                        "1/45"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "1/9",
+                        "1/24"
+                      ],
+                      [
+                        "1/24",
+                        "1/15"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "2/3",
+                      "2/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": {
+                      "column": [
+                        "1/6",
+                        "0"
+                      ],
+                      "mass": "2"
+                    }
+                  },
+                  "lower": "72643937/33554432",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "remove_l0",
+                  "radial_tail_lower": "12",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "12",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 24,
+                  "upper": "53213/24576",
+                  "upper_inertia": [
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 1,
+                  "eigenvalue_index": 1,
+                  "exact_width": "28553/25165824",
+                  "form_bound": {
+                    "energy_factor": "1",
+                    "mass_offset": "0",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "pointwise_step",
+                    "pointwise_lower": "0"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "1/3",
+                    "axis": 2,
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "step"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "26/9",
+                        "1/4"
+                      ],
+                      [
+                        "1/4",
+                        "74/5"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "19/1728",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "19/960"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "2/27",
+                        "1/12"
+                      ],
+                      [
+                        "1/12",
+                        "2/15"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "2/9",
+                        "1/4"
+                      ],
+                      [
+                        "1/4",
+                        "2/5"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "4/3",
+                      "12/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": null
+                  },
+                  "lower": "18125181/8388608",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "none",
+                  "radial_tail_lower": "12",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "12",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 24,
+                  "upper": "53129/24576",
+                  "upper_inertia": [
+                    1,
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "status": "certified_open",
+              "tolerance": "1/1000",
+              "upper": "53129/24576"
+            },
+            "kind": "original_function_spectrum",
+            "ok": true
+          },
+          "solver_cpu_seconds": 0.0014269999999999977,
+          "solver_wall_seconds": 0.0014269580133259296
+        }
+      ],
+      "budget_seconds": 3.0,
+      "case_id": "V03",
+      "classification": "public_validation",
+      "execution": {
+        "cpu_seconds": 0.0020519999999999983,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.00205220899078995
+      },
+      "family": "easy",
+      "last_stage": "serialization_and_selection",
+      "method": "validation_candidate",
+      "selected_attempt": 0,
+      "success": false,
+      "task": {
+        "function": {
+          "amplitude": "1/3",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.00010899999999999799,
+      "accounted_wall_seconds": 0.00010941596701741219,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "function_L2_error_upper",
+        "reason": "replayed",
+        "target_met": true,
+        "tolerance": "1/10000000000",
+        "value": "0"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "function_L2_error_upper",
+            "reason": "replayed",
+            "target_met": true,
+            "tolerance": "1/10000000000",
+            "value": "0"
+          },
+          "configuration": "small",
+          "execution_ok": true,
+          "replay_cpu_seconds": 6.40000000000085e-05,
+          "replay_wall_seconds": 6.333307828754187e-05,
+          "response": {
+            "certificate": {
+              "axis_zero_convention": "step(0)=0; singular_power(0)=0 as an a.e. representative",
+              "bound_statement": "probability_L2_norm(original_function-piecewise_model)<=error_upper",
+              "cells": [
+                {
+                  "left": "-1",
+                  "polynomial_in_t": [
+                    "1/5"
+                  ],
+                  "right": "0"
+                },
+                {
+                  "left": "0",
+                  "polynomial_in_t": [
+                    "19/20"
+                  ],
+                  "right": "1"
+                }
+              ],
+              "degree": 1,
+              "endpoint_convention": "at nonzero seams choose the cell starting at abs(t); final endpoint included",
+              "error_squared": "0",
+              "error_upper": "0",
+              "expanded_polynomial_coefficient_slots": 2,
+              "formal_assistant_checked": false,
+              "format": "sphere_structured_piecewise_L2_v1",
+              "function": {
+                "amplitude": "3/4",
+                "axis": 2,
+                "kind": "axis_profile",
+                "offset": "1/5",
+                "profile": "step"
+              },
+              "global_polynomial": false,
+              "levels": 1,
+              "norm": "L2_probability",
+              "representation": "two_halves_with_separate_value_at_zero",
+              "root_ratio": "1/2",
+              "scope": "unit_S2_probability_measure",
+              "shape_coefficient_count": 2,
+              "shape_proof": null,
+              "shape_rule": "t=R^4*x scales centered profile coefficients by 1/R and squared residual integral by R^2",
+              "source_norm_squared": "377/800",
+              "source_value_at_axis_zero": "1/5",
+              "spectral_transfer_claimed": false,
+              "sqrt_bits": 24,
+              "sqrt_upper_squared": "0"
+            },
+            "kind": "function_L2_approximation_only",
+            "ok": true
+          },
+          "solver_cpu_seconds": 3.0000000000002247e-05,
+          "solver_wall_seconds": 2.9374961741268635e-05
+        }
+      ],
+      "budget_seconds": 3.0,
+      "case_id": "V04",
+      "classification": "public_validation",
+      "execution": {
+        "cpu_seconds": 0.00010899999999999799,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.00010941596701741219
+      },
+      "family": "easy",
+      "last_stage": "serialization_and_selection",
+      "method": "validation_candidate",
+      "selected_attempt": 0,
+      "success": true,
+      "task": {
+        "function": {
+          "amplitude": "3/4",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "1/5",
+          "profile": "step"
+        },
+        "kind": "approximation",
+        "tolerance": "1/10000000000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.0028740000000000016,
+      "accounted_wall_seconds": 0.0028738749679178,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "spectral_interval_width",
+        "reason": "replayed",
+        "target_met": false,
+        "tolerance": "1/1000000",
+        "value": "11710882971/2765958938624"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "spectral_interval_width",
+            "reason": "replayed",
+            "target_met": false,
+            "tolerance": "1/1000000",
+            "value": "11710882971/2765958938624"
+          },
+          "configuration": "small",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.000897999999999996,
+          "replay_wall_seconds": 0.0008982080034911633,
+          "response": {
+            "certificate": {
+              "angular_form_bound": {
+                "center": "-8/7",
+                "embedding": {
+                  "domain": "all_real_H1_functions_on_unit_S2",
+                  "energy_coefficient": "1",
+                  "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                  "mass_coefficient": "1",
+                  "measure": "d_sigma/(4*pi)_on_unit_S2",
+                  "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                },
+                "energy_factor": "14009693/16777216",
+                "eta_upper": "2767523/16777216",
+                "mass_offset": "-153590389/117440512",
+                "measure": "d_sigma/(4*pi)_on_unit_S2",
+                "method": "centered_probability_L2",
+                "sqrt_bits": 24,
+                "variance": "4/147"
+              },
+              "angular_tail_cannot_improve_best_upper": true,
+              "angular_tail_lower": "434816717/117440512",
+              "eigenvalue_index": 1,
+              "exact_width": "11710882971/2765958938624",
+              "formal_proof_assistant_checked": false,
+              "format": "direct_axis_moment_full_v1",
+              "full_infinite_space_covered": true,
+              "function": {
+                "amplitude": "-1",
+                "axis": 2,
+                "exponent": "-1/8",
+                "kind": "axis_profile",
+                "offset": "0",
+                "profile": "abs_power"
+              },
+              "function_approximation_error": "0",
+              "geometry": "unit_S2",
+              "lower": "2221672110949/2765958938624",
+              "mean_zero": true,
+              "measure": "d_sigma/(4*pi)_on_unit_S2",
+              "omitted_azimuth_m_start": 2,
+              "original_function_moments_exact": true,
+              "scope": "all_real_mean_zero_H1_on_unit_S2",
+              "sectors": [
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 0,
+                  "eigenvalue_index": 1,
+                  "exact_width": "4306280841/11063835754496",
+                  "form_bound": {
+                    "center": "-8/7",
+                    "embedding": {
+                      "domain": "all_real_H1_functions_on_unit_S2",
+                      "energy_coefficient": "1",
+                      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                      "mass_coefficient": "1",
+                      "measure": "d_sigma/(4*pi)_on_unit_S2",
+                      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                    },
+                    "energy_factor": "14009693/16777216",
+                    "eta_upper": "2767523/16777216",
+                    "mass_offset": "-153590389/117440512",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "centered_probability_L2",
+                    "sqrt_bits": 24,
+                    "variance": "4/147"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "-1",
+                    "axis": 2,
+                    "exponent": "-1/8",
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "abs_power"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "44/69",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "20396/10465"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "8/5819",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "26433928/2746666923"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "8/11",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "328/627"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-16/23",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "-944/2093"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "2/3",
+                      "2/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": {
+                      "column": [
+                        "0",
+                        "16/161"
+                      ],
+                      "mass": "2"
+                    }
+                  },
+                  "lower": "10578493136503/11063835754496",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "remove_l0",
+                  "radial_tail_lower": "1023223823/117440512",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "1023223823/117440512",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 24,
+                  "upper": "22/23",
+                  "upper_inertia": [
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 1,
+                  "eigenvalue_index": 1,
+                  "exact_width": "11710882971/2765958938624",
+                  "form_bound": {
+                    "center": "-8/7",
+                    "embedding": {
+                      "domain": "all_real_H1_functions_on_unit_S2",
+                      "energy_coefficient": "1",
+                      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                      "mass_coefficient": "1",
+                      "measure": "d_sigma/(4*pi)_on_unit_S2",
+                      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                    },
+                    "energy_factor": "14009693/16777216",
+                    "eta_upper": "2767523/16777216",
+                    "mass_offset": "-153590389/117440512",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "centered_probability_L2",
+                    "sqrt_bits": 24,
+                    "variance": "4/147"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "-1",
+                    "axis": 2,
+                    "exponent": "-1/8",
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "abs_power"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "520/483",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "17688/1495"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "36928/855393",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "131136/18684809"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "64/33",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "576/209"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-256/161",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "-768/299"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "4/3",
+                      "12/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": null
+                  },
+                  "lower": "2221672110949/2765958938624",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "none",
+                  "radial_tail_lower": "1023223823/117440512",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "1023223823/117440512",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 24,
+                  "upper": "130/161",
+                  "upper_inertia": [
+                    0,
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "status": "certified_open",
+              "tolerance": "1/1000000",
+              "upper": "130/161"
+            },
+            "kind": "original_function_spectrum",
+            "ok": true
+          },
+          "solver_cpu_seconds": 0.0019460000000000033,
+          "solver_wall_seconds": 0.0019455000292509794
+        }
+      ],
+      "budget_seconds": 10.0,
+      "case_id": "V05",
+      "classification": "public_validation",
+      "execution": {
+        "cpu_seconds": 0.0028740000000000016,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.0028738749679178
+      },
+      "family": "negative_power_spectrum",
+      "last_stage": "serialization_and_selection",
+      "method": "validation_candidate",
+      "selected_attempt": 0,
+      "success": false,
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/8",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.003039,
+      "accounted_wall_seconds": 0.0030443329596892,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "spectral_interval_width",
+        "reason": "replayed",
+        "target_met": false,
+        "tolerance": "1/100000000",
+        "value": "120245437/2147483648"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "spectral_interval_width",
+            "reason": "replayed",
+            "target_met": false,
+            "tolerance": "1/100000000",
+            "value": "120245437/2147483648"
+          },
+          "configuration": "small",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.001011999999999999,
+          "replay_wall_seconds": 0.0010121249360963702,
+          "response": {
+            "certificate": {
+              "angular_form_bound": {
+                "center": "-3/4",
+                "embedding": {
+                  "domain": "all_real_H1_functions_on_unit_S2",
+                  "energy_coefficient": "1",
+                  "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                  "mass_coefficient": "1",
+                  "measure": "d_sigma/(4*pi)_on_unit_S2",
+                  "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                },
+                "energy_factor": "2378117/4194304",
+                "eta_upper": "1816187/4194304",
+                "mass_offset": "-4961915/4194304",
+                "measure": "d_sigma/(4*pi)_on_unit_S2",
+                "method": "centered_probability_L2",
+                "sqrt_bits": 24,
+                "variance": "3/16"
+              },
+              "angular_tail_cannot_improve_best_upper": true,
+              "angular_tail_lower": "9306787/4194304",
+              "eigenvalue_index": 1,
+              "exact_width": "120245437/2147483648",
+              "formal_proof_assistant_checked": false,
+              "format": "direct_axis_moment_full_v1",
+              "full_infinite_space_covered": true,
+              "function": {
+                "amplitude": "-1/2",
+                "axis": 2,
+                "exponent": "-1/3",
+                "kind": "axis_profile",
+                "offset": "0",
+                "profile": "abs_power"
+              },
+              "function_approximation_error": "0",
+              "geometry": "unit_S2",
+              "lower": "2362782531/2147483648",
+              "mean_zero": true,
+              "measure": "d_sigma/(4*pi)_on_unit_S2",
+              "omitted_azimuth_m_start": 2,
+              "original_function_moments_exact": true,
+              "scope": "all_real_mean_zero_H1_on_unit_S2",
+              "sectors": [
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 0,
+                  "eigenvalue_index": 1,
+                  "exact_width": "10429297/8589934592",
+                  "form_bound": {
+                    "center": "-3/4",
+                    "embedding": {
+                      "domain": "all_real_H1_functions_on_unit_S2",
+                      "energy_coefficient": "1",
+                      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                      "mass_coefficient": "1",
+                      "measure": "d_sigma/(4*pi)_on_unit_S2",
+                      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                    },
+                    "energy_factor": "2378117/4194304",
+                    "eta_upper": "1816187/4194304",
+                    "mass_offset": "-4961915/4194304",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "centered_probability_L2",
+                    "sqrt_bits": 24,
+                    "variance": "3/16"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "-1/2",
+                    "axis": 2,
+                    "exponent": "-1/3",
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "abs_power"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "23/24",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "1179/560"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "3/896",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "12813/163072"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "3/14",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "57/182"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-3/8",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "-33/112"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "2/3",
+                      "2/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": {
+                      "column": [
+                        "0",
+                        "3/16"
+                      ],
+                      "mass": "2"
+                    }
+                  },
+                  "lower": "12337601679/8589934592",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "remove_l0",
+                  "radial_tail_lower": "23575489/4194304",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "23575489/4194304",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 24,
+                  "upper": "23/16",
+                  "upper_inertia": [
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 1,
+                  "eigenvalue_index": 1,
+                  "exact_width": "120245437/2147483648",
+                  "form_bound": {
+                    "center": "-3/4",
+                    "embedding": {
+                      "domain": "all_real_H1_functions_on_unit_S2",
+                      "energy_coefficient": "1",
+                      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                      "mass_coefficient": "1",
+                      "measure": "d_sigma/(4*pi)_on_unit_S2",
+                      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                    },
+                    "energy_factor": "2378117/4194304",
+                    "eta_upper": "1816187/4194304",
+                    "mass_offset": "-4961915/4194304",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "centered_probability_L2",
+                    "sqrt_bits": 24,
+                    "variance": "3/16"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "-1/2",
+                    "axis": 2,
+                    "exponent": "-1/3",
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "abs_power"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "37/24",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "3627/280"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "603/1792",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "2997/163072"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "9/7",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "81/91"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-9/8",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "-81/56"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "4/3",
+                      "12/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": null
+                  },
+                  "lower": "2362782531/2147483648",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "none",
+                  "radial_tail_lower": "23575489/4194304",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "23575489/4194304",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 24,
+                  "upper": "37/32",
+                  "upper_inertia": [
+                    0,
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "status": "certified_open",
+              "tolerance": "1/100000000",
+              "upper": "37/32"
+            },
+            "kind": "original_function_spectrum",
+            "ok": true
+          },
+          "solver_cpu_seconds": 0.0019929999999999948,
+          "solver_wall_seconds": 0.0019982079975306988
+        }
+      ],
+      "budget_seconds": 10.0,
+      "case_id": "V06",
+      "classification": "public_validation",
+      "execution": {
+        "cpu_seconds": 0.003039,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.0030443329596892
+      },
+      "family": "negative_power_spectrum",
+      "last_stage": "serialization_and_selection",
+      "method": "validation_candidate",
+      "selected_attempt": 0,
+      "success": false,
+      "task": {
+        "function": {
+          "amplitude": "-1/2",
+          "axis": 2,
+          "exponent": "-1/3",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/100000000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.0029529999999999973,
+      "accounted_wall_seconds": 0.0029530839528888464,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "spectral_interval_width",
+        "reason": "replayed",
+        "target_met": false,
+        "tolerance": "1/10000000000",
+        "value": "119067905123/601295421440"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "spectral_interval_width",
+            "reason": "replayed",
+            "target_met": false,
+            "tolerance": "1/10000000000",
+            "value": "119067905123/601295421440"
+          },
+          "configuration": "small",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.0009320000000000023,
+          "replay_wall_seconds": 0.000931665999814868,
+          "response": {
+            "certificate": {
+              "angular_form_bound": {
+                "center": "-4/5",
+                "embedding": {
+                  "domain": "all_real_H1_functions_on_unit_S2",
+                  "energy_coefficient": "1",
+                  "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                  "mass_coefficient": "1",
+                  "measure": "d_sigma/(4*pi)_on_unit_S2",
+                  "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                },
+                "energy_factor": "3355443/8388608",
+                "eta_upper": "5033165/8388608",
+                "mass_offset": "-58720257/41943040",
+                "measure": "d_sigma/(4*pi)_on_unit_S2",
+                "method": "centered_probability_L2",
+                "sqrt_bits": 24,
+                "variance": "9/25"
+              },
+              "angular_tail_cannot_improve_best_upper": false,
+              "angular_tail_lower": "41943033/41943040",
+              "eigenvalue_index": 1,
+              "exact_width": "119067905123/601295421440",
+              "formal_proof_assistant_checked": false,
+              "format": "direct_axis_moment_full_v1",
+              "full_infinite_space_covered": true,
+              "function": {
+                "amplitude": "-1/2",
+                "axis": 2,
+                "exponent": "-3/8",
+                "kind": "axis_profile",
+                "offset": "0",
+                "profile": "abs_power"
+              },
+              "function_approximation_error": "0",
+              "geometry": "unit_S2",
+              "lower": "76252446267/85899345920",
+              "mean_zero": true,
+              "measure": "d_sigma/(4*pi)_on_unit_S2",
+              "omitted_azimuth_m_start": 2,
+              "original_function_moments_exact": true,
+              "scope": "all_real_mean_zero_H1_on_unit_S2",
+              "sectors": [
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 0,
+                  "eigenvalue_index": 1,
+                  "exact_width": "889192469/240518168576",
+                  "form_bound": {
+                    "center": "-4/5",
+                    "embedding": {
+                      "domain": "all_real_H1_functions_on_unit_S2",
+                      "energy_coefficient": "1",
+                      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                      "mass_coefficient": "1",
+                      "measure": "d_sigma/(4*pi)_on_unit_S2",
+                      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                    },
+                    "energy_factor": "3355443/8388608",
+                    "eta_upper": "5033165/8388608",
+                    "mass_offset": "-58720257/41943040",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "centered_probability_L2",
+                    "sqrt_bits": 24,
+                    "variance": "9/25"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "-1/2",
+                    "axis": 2,
+                    "exponent": "-3/8",
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "abs_power"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "20/21",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "540/259"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "2/441",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "13436182/85528275"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "2/9",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "22/51"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-8/21",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "-408/1295"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "2/3",
+                      "2/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": {
+                      "column": [
+                        "0",
+                        "8/35"
+                      ],
+                      "mass": "2"
+                    }
+                  },
+                  "lower": "342708191211/240518168576",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "remove_l0",
+                  "radial_tail_lower": "142606323/41943040",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "142606323/41943040",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 24,
+                  "upper": "10/7",
+                  "upper_inertia": [
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 1,
+                  "eigenvalue_index": 1,
+                  "exact_width": "119067905123/601295421440",
+                  "form_bound": {
+                    "center": "-4/5",
+                    "embedding": {
+                      "domain": "all_real_H1_functions_on_unit_S2",
+                      "energy_coefficient": "1",
+                      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                      "mass_coefficient": "1",
+                      "measure": "d_sigma/(4*pi)_on_unit_S2",
+                      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                    },
+                    "energy_factor": "3355443/8388608",
+                    "eta_upper": "5033165/8388608",
+                    "mass_offset": "-58720257/41943040",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "centered_probability_L2",
+                    "sqrt_bits": 24,
+                    "variance": "9/25"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "-1/2",
+                    "axis": 2,
+                    "exponent": "-3/8",
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "abs_power"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "152/105",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "16728/1295"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "7312/11025",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "28816/1140377"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "16/9",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "16/17"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-128/105",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "-384/259"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "4/3",
+                      "12/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": null
+                  },
+                  "lower": "76252446267/85899345920",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "none",
+                  "radial_tail_lower": "142606323/41943040",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "142606323/41943040",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 24,
+                  "upper": "38/35",
+                  "upper_inertia": [
+                    0,
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "status": "certified_open",
+              "tolerance": "1/10000000000",
+              "upper": "38/35"
+            },
+            "kind": "original_function_spectrum",
+            "ok": true
+          },
+          "solver_cpu_seconds": 0.0019820000000000115,
+          "solver_wall_seconds": 0.0019820419838652015
+        }
+      ],
+      "budget_seconds": 10.0,
+      "case_id": "V07",
+      "classification": "known_failed_structure_regression",
+      "execution": {
+        "cpu_seconds": 0.0029529999999999973,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.0029530839528888464
+      },
+      "family": "negative_power_spectrum",
+      "last_stage": "serialization_and_selection",
+      "method": "validation_candidate",
+      "selected_attempt": 0,
+      "success": false,
+      "task": {
+        "function": {
+          "amplitude": "-1/2",
+          "axis": 2,
+          "exponent": "-3/8",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/10000000000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.001237000000000002,
+      "accounted_wall_seconds": 0.0012373750796541572,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "spectral_interval_width",
+        "reason": "replayed",
+        "target_met": false,
+        "tolerance": "1/100000000",
+        "value": "83619711/34359738368"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "spectral_interval_width",
+            "reason": "replayed",
+            "target_met": false,
+            "tolerance": "1/100000000",
+            "value": "83619711/34359738368"
+          },
+          "configuration": "small",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.0003959999999999936,
+          "replay_wall_seconds": 0.000396291958168149,
+          "response": {
+            "certificate": {
+              "angular_form_bound": {
+                "center": "-5/12",
+                "embedding": {
+                  "domain": "all_real_H1_functions_on_unit_S2",
+                  "energy_coefficient": "1",
+                  "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                  "mass_coefficient": "1",
+                  "measure": "d_sigma/(4*pi)_on_unit_S2",
+                  "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                },
+                "energy_factor": "7486137/8388608",
+                "eta_upper": "902471/8388608",
+                "mass_offset": "-13193173/25165824",
+                "measure": "d_sigma/(4*pi)_on_unit_S2",
+                "method": "centered_probability_L2",
+                "sqrt_bits": 24,
+                "variance": "5/432"
+              },
+              "angular_tail_cannot_improve_best_upper": true,
+              "angular_tail_lower": "31723649/25165824",
+              "eigenvalue_index": 1,
+              "exact_width": "83619711/34359738368",
+              "formal_proof_assistant_checked": false,
+              "format": "direct_axis_moment_full_v1",
+              "full_infinite_space_covered": true,
+              "function": {
+                "amplitude": "-1/3",
+                "axis": 2,
+                "exponent": "-1/5",
+                "kind": "axis_profile",
+                "offset": "0",
+                "profile": "abs_power"
+              },
+              "function_approximation_error": "0",
+              "geometry": "unit_S2",
+              "lower": "-43200532093/103079215104",
+              "mean_zero": false,
+              "measure": "d_sigma/(4*pi)_on_unit_S2",
+              "omitted_azimuth_m_start": 1,
+              "original_function_moments_exact": true,
+              "scope": "all_real_H1_on_unit_S2",
+              "sectors": [
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 0,
+                  "eigenvalue_index": 1,
+                  "exact_width": "83619711/34359738368",
+                  "form_bound": {
+                    "center": "-5/12",
+                    "embedding": {
+                      "domain": "all_real_H1_functions_on_unit_S2",
+                      "energy_coefficient": "1",
+                      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                      "mass_coefficient": "1",
+                      "measure": "d_sigma/(4*pi)_on_unit_S2",
+                      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                    },
+                    "energy_factor": "7486137/8388608",
+                    "eta_upper": "902471/8388608",
+                    "mass_offset": "-13193173/25165824",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "centered_probability_L2",
+                    "sqrt_bits": 24,
+                    "variance": "5/432"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "-1/3",
+                    "axis": 2,
+                    "exponent": "-1/5",
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "abs_power"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "-5/6",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "23/21"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "5/216",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "5/11466"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "10/27",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "10/117"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-5/6",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "-5/21"
+                      ]
+                    ],
+                    "degrees": [
+                      0,
+                      1
+                    ],
+                    "mass": [
+                      "2",
+                      "2/3"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": null
+                  },
+                  "lower": "-43200532093/103079215104",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": false,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "none",
+                  "radial_tail_lower": "121557293/25165824",
+                  "radial_tail_start": 2,
+                  "remainder_tail_lower": "121557293/25165824",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 24,
+                  "upper": "-5/12",
+                  "upper_inertia": [
+                    0,
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "status": "certified_open",
+              "tolerance": "1/100000000",
+              "upper": "-5/12"
+            },
+            "kind": "original_function_spectrum",
+            "ok": true
+          },
+          "solver_cpu_seconds": 0.0008120000000000072,
+          "solver_wall_seconds": 0.0008119579870253801
+        }
+      ],
+      "budget_seconds": 10.0,
+      "case_id": "V08",
+      "classification": "full_space_support_challenge",
+      "execution": {
+        "cpu_seconds": 0.001237000000000002,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.0012373750796541572
+      },
+      "family": "negative_power_spectrum",
+      "last_stage": "serialization_and_selection",
+      "method": "validation_candidate",
+      "selected_attempt": 0,
+      "success": false,
+      "task": {
+        "function": {
+          "amplitude": "-1/3",
+          "axis": 2,
+          "exponent": "-1/5",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": false,
+        "tolerance": "1/100000000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.002121999999999999,
+      "accounted_wall_seconds": 0.002130500040948391,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "spectral_interval_width",
+        "reason": "replayed",
+        "target_met": false,
+        "tolerance": "1/100000000",
+        "value": "20305/8388608"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "spectral_interval_width",
+            "reason": "replayed",
+            "target_met": false,
+            "tolerance": "1/100000000",
+            "value": "20305/8388608"
+          },
+          "configuration": "small",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.000685000000000005,
+          "replay_wall_seconds": 0.0006929169176146388,
+          "response": {
+            "certificate": {
+              "angular_form_bound": {
+                "energy_factor": "1",
+                "mass_offset": "-1/2",
+                "measure": "d_sigma/(4*pi)_on_unit_S2",
+                "method": "pointwise_step",
+                "pointwise_lower": "-1/2"
+              },
+              "angular_tail_cannot_improve_best_upper": true,
+              "angular_tail_lower": "11/2",
+              "eigenvalue_index": 1,
+              "exact_width": "20305/8388608",
+              "formal_proof_assistant_checked": false,
+              "format": "direct_axis_moment_full_v1",
+              "full_infinite_space_covered": true,
+              "function": {
+                "amplitude": "-1/2",
+                "axis": 2,
+                "kind": "axis_profile",
+                "offset": "0",
+                "profile": "step"
+              },
+              "function_approximation_error": "0",
+              "geometry": "unit_S2",
+              "lower": "14570159/8388608",
+              "mean_zero": true,
+              "measure": "d_sigma/(4*pi)_on_unit_S2",
+              "omitted_azimuth_m_start": 2,
+              "original_function_moments_exact": true,
+              "scope": "all_real_mean_zero_H1_on_unit_S2",
+              "sectors": [
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 0,
+                  "eigenvalue_index": 1,
+                  "exact_width": "20425/33554432",
+                  "form_bound": {
+                    "energy_factor": "1",
+                    "mass_offset": "-1/2",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "pointwise_step",
+                    "pointwise_lower": "-1/2"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "-1/2",
+                    "axis": 2,
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "step"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "7/6",
+                        "-1/16"
+                      ],
+                      [
+                        "-1/16",
+                        "23/10"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "1/1536",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "49/2560"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "1/12",
+                        "1/32"
+                      ],
+                      [
+                        "1/32",
+                        "1/20"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-1/6",
+                        "-1/16"
+                      ],
+                      [
+                        "-1/16",
+                        "-1/10"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "2/3",
+                      "2/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": {
+                      "column": [
+                        "-1/4",
+                        "0"
+                      ],
+                      "mass": "2"
+                    }
+                  },
+                  "lower": "58587191/33554432",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "remove_l0",
+                  "radial_tail_lower": "23/2",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "23/2",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 24,
+                  "upper": "28617/16384",
+                  "upper_inertia": [
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 1,
+                  "eigenvalue_index": 1,
+                  "exact_width": "20305/8388608",
+                  "form_bound": {
+                    "energy_factor": "1",
+                    "mass_offset": "-1/2",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "pointwise_step",
+                    "pointwise_lower": "-1/2"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "-1/2",
+                    "axis": 2,
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "step"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "7/3",
+                        "-3/8"
+                      ],
+                      [
+                        "-3/8",
+                        "69/5"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "19/768",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "57/1280"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "1/6",
+                        "3/16"
+                      ],
+                      [
+                        "3/16",
+                        "3/10"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-1/3",
+                        "-3/8"
+                      ],
+                      [
+                        "-3/8",
+                        "-3/5"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "4/3",
+                      "12/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": null
+                  },
+                  "lower": "14570159/8388608",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "none",
+                  "radial_tail_lower": "23/2",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "23/2",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 24,
+                  "upper": "28497/16384",
+                  "upper_inertia": [
+                    1,
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "status": "certified_open",
+              "tolerance": "1/100000000",
+              "upper": "28497/16384"
+            },
+            "kind": "original_function_spectrum",
+            "ok": true
+          },
+          "solver_cpu_seconds": 0.0014009999999999995,
+          "solver_wall_seconds": 0.0014012500178068876
+        }
+      ],
+      "budget_seconds": 10.0,
+      "case_id": "V09",
+      "classification": "known_failed_structure_regression",
+      "execution": {
+        "cpu_seconds": 0.002121999999999999,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.002130500040948391
+      },
+      "family": "step_spectrum_hard",
+      "last_stage": "serialization_and_selection",
+      "method": "validation_candidate",
+      "selected_attempt": 0,
+      "success": false,
+      "task": {
+        "function": {
+          "amplitude": "-1/2",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/100000000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.0004529999999999951,
+      "accounted_wall_seconds": 0.00045366701669991016,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "function_L2_error_upper",
+        "reason": "replayed",
+        "target_met": false,
+        "tolerance": "1/1000000",
+        "value": "4213077/16777216"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "function_L2_error_upper",
+            "reason": "replayed",
+            "target_met": false,
+            "tolerance": "1/1000000",
+            "value": "4213077/16777216"
+          },
+          "configuration": "small",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.0002489999999999992,
+          "replay_wall_seconds": 0.0002479159738868475,
+          "response": {
+            "certificate": {
+              "axis_zero_convention": "step(0)=0; singular_power(0)=0 as an a.e. representative",
+              "bound_statement": "probability_L2_norm(original_function-piecewise_model)<=error_upper",
+              "cells": [
+                {
+                  "approximation_norm_squared_dt": "4/9",
+                  "coordinate": "s=(abs(t)-left)/(right-left)",
+                  "core": true,
+                  "cross_integral_dt": "4/9",
+                  "degree": 0,
+                  "error_squared_dt": "1/18",
+                  "left": "0",
+                  "left_fourth_root": "0",
+                  "polynomial_in_s": [
+                    "-8/3"
+                  ],
+                  "projection": [
+                    {
+                      "basis_mass_dt": "1/16",
+                      "coefficient": "-8/3",
+                      "degree": 0,
+                      "norm_squared_dt": "4/9",
+                      "shifted_legendre_in_s": [
+                        "1"
+                      ],
+                      "source_inner_product_dt": "-1/6"
+                    }
+                  ],
+                  "right": "1/16",
+                  "right_fourth_root": "1/2",
+                  "source_monomial_moments_dt": [
+                    "-1/6"
+                  ],
+                  "source_norm_squared_dt": "1/2"
+                },
+                {
+                  "approximation_norm_squared_dt": "740464/496125",
+                  "coordinate": "s=(abs(t)-left)/(right-left)",
+                  "core": false,
+                  "cross_integral_dt": "740464/496125",
+                  "degree": 1,
+                  "error_squared_dt": "7447/992250",
+                  "left": "1/16",
+                  "left_fourth_root": "1/2",
+                  "polynomial_in_s": [
+                    "-2528/1575",
+                    "1136/1575"
+                  ],
+                  "projection": [
+                    {
+                      "basis_mass_dt": "15/16",
+                      "coefficient": "-56/45",
+                      "degree": 0,
+                      "norm_squared_dt": "196/135",
+                      "shifted_legendre_in_s": [
+                        "1"
+                      ],
+                      "source_inner_product_dt": "-7/6"
+                    },
+                    {
+                      "basis_mass_dt": "5/16",
+                      "coefficient": "568/1575",
+                      "degree": 1,
+                      "norm_squared_dt": "20164/496125",
+                      "shifted_legendre_in_s": [
+                        "-1",
+                        "2"
+                      ],
+                      "source_inner_product_dt": "71/630"
+                    }
+                  ],
+                  "right": "1",
+                  "right_fourth_root": "1",
+                  "source_monomial_moments_dt": [
+                    "-7/6",
+                    "-127/224"
+                  ],
+                  "source_norm_squared_dt": "3/2"
+                }
+              ],
+              "degree": 1,
+              "endpoint_convention": "at nonzero seams choose the cell starting at abs(t); final endpoint included",
+              "error_squared": "31286/496125",
+              "error_upper": "4213077/16777216",
+              "expanded_polynomial_coefficient_slots": 3,
+              "formal_assistant_checked": false,
+              "format": "sphere_structured_piecewise_L2_v1",
+              "function": {
+                "amplitude": "-1",
+                "axis": 2,
+                "exponent": "-1/4",
+                "kind": "axis_profile",
+                "offset": "0",
+                "profile": "abs_power"
+              },
+              "global_polynomial": false,
+              "levels": 1,
+              "norm": "L2_probability",
+              "representation": "even_reflection_of_positive_half_cells",
+              "root_ratio": "1/2",
+              "scope": "unit_S2_probability_measure",
+              "shape_coefficient_count": 2,
+              "shape_proof": {
+                "approximation_norm_squared_dt": "740464/496125",
+                "coordinate": "s=(abs(t)-left)/(right-left)",
+                "core": false,
+                "cross_integral_dt": "740464/496125",
+                "degree": 1,
+                "error_squared_dt": "7447/992250",
+                "left": "1/16",
+                "left_fourth_root": "1/2",
+                "polynomial_in_s": [
+                  "2528/1575",
+                  "-1136/1575"
+                ],
+                "projection": [
+                  {
+                    "basis_mass_dt": "15/16",
+                    "coefficient": "56/45",
+                    "degree": 0,
+                    "norm_squared_dt": "196/135",
+                    "shifted_legendre_in_s": [
+                      "1"
+                    ],
+                    "source_inner_product_dt": "7/6"
+                  },
+                  {
+                    "basis_mass_dt": "5/16",
+                    "coefficient": "-568/1575",
+                    "degree": 1,
+                    "norm_squared_dt": "20164/496125",
+                    "shifted_legendre_in_s": [
+                      "-1",
+                      "2"
+                    ],
+                    "source_inner_product_dt": "-71/630"
+                  }
+                ],
+                "right": "1",
+                "right_fourth_root": "1",
+                "source_monomial_moments_dt": [
+                  "7/6",
+                  "127/224"
+                ],
+                "source_norm_squared_dt": "3/2"
+              },
+              "shape_rule": "t=R^4*x scales centered profile coefficients by 1/R and squared residual integral by R^2",
+              "source_norm_squared": "2",
+              "source_value_at_axis_zero": "0",
+              "spectral_transfer_claimed": false,
+              "sqrt_bits": 24,
+              "sqrt_upper_squared": "17750017807929/281474976710656"
+            },
+            "kind": "function_L2_approximation_only",
+            "ok": true
+          },
+          "solver_cpu_seconds": 0.0001789999999999986,
+          "solver_wall_seconds": 0.00017870799638330936
+        }
+      ],
+      "budget_seconds": 10.0,
+      "case_id": "V10",
+      "classification": "fixed_minus_quarter_regression",
+      "execution": {
+        "cpu_seconds": 0.0004529999999999951,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.00045366701669991016
+      },
+      "family": "negative_power_approximation",
+      "last_stage": "serialization_and_selection",
+      "method": "validation_candidate",
+      "selected_attempt": 0,
+      "success": false,
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/1000000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.0004089999999999927,
+      "accounted_wall_seconds": 0.00040858308784663677,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "function_L2_error_upper",
+        "reason": "replayed",
+        "target_met": false,
+        "tolerance": "1/100000000",
+        "value": "4213077/16777216"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "function_L2_error_upper",
+            "reason": "replayed",
+            "target_met": false,
+            "tolerance": "1/100000000",
+            "value": "4213077/16777216"
+          },
+          "configuration": "small",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.0002329999999999971,
+          "replay_wall_seconds": 0.00023395800963044167,
+          "response": {
+            "certificate": {
+              "axis_zero_convention": "step(0)=0; singular_power(0)=0 as an a.e. representative",
+              "bound_statement": "probability_L2_norm(original_function-piecewise_model)<=error_upper",
+              "cells": [
+                {
+                  "approximation_norm_squared_dt": "4/9",
+                  "coordinate": "s=(abs(t)-left)/(right-left)",
+                  "core": true,
+                  "cross_integral_dt": "4/9",
+                  "degree": 0,
+                  "error_squared_dt": "1/18",
+                  "left": "0",
+                  "left_fourth_root": "0",
+                  "polynomial_in_s": [
+                    "-8/3"
+                  ],
+                  "projection": [
+                    {
+                      "basis_mass_dt": "1/16",
+                      "coefficient": "-8/3",
+                      "degree": 0,
+                      "norm_squared_dt": "4/9",
+                      "shifted_legendre_in_s": [
+                        "1"
+                      ],
+                      "source_inner_product_dt": "-1/6"
+                    }
+                  ],
+                  "right": "1/16",
+                  "right_fourth_root": "1/2",
+                  "source_monomial_moments_dt": [
+                    "-1/6"
+                  ],
+                  "source_norm_squared_dt": "1/2"
+                },
+                {
+                  "approximation_norm_squared_dt": "740464/496125",
+                  "coordinate": "s=(abs(t)-left)/(right-left)",
+                  "core": false,
+                  "cross_integral_dt": "740464/496125",
+                  "degree": 1,
+                  "error_squared_dt": "7447/992250",
+                  "left": "1/16",
+                  "left_fourth_root": "1/2",
+                  "polynomial_in_s": [
+                    "-2528/1575",
+                    "1136/1575"
+                  ],
+                  "projection": [
+                    {
+                      "basis_mass_dt": "15/16",
+                      "coefficient": "-56/45",
+                      "degree": 0,
+                      "norm_squared_dt": "196/135",
+                      "shifted_legendre_in_s": [
+                        "1"
+                      ],
+                      "source_inner_product_dt": "-7/6"
+                    },
+                    {
+                      "basis_mass_dt": "5/16",
+                      "coefficient": "568/1575",
+                      "degree": 1,
+                      "norm_squared_dt": "20164/496125",
+                      "shifted_legendre_in_s": [
+                        "-1",
+                        "2"
+                      ],
+                      "source_inner_product_dt": "71/630"
+                    }
+                  ],
+                  "right": "1",
+                  "right_fourth_root": "1",
+                  "source_monomial_moments_dt": [
+                    "-7/6",
+                    "-127/224"
+                  ],
+                  "source_norm_squared_dt": "3/2"
+                }
+              ],
+              "degree": 1,
+              "endpoint_convention": "at nonzero seams choose the cell starting at abs(t); final endpoint included",
+              "error_squared": "31286/496125",
+              "error_upper": "4213077/16777216",
+              "expanded_polynomial_coefficient_slots": 3,
+              "formal_assistant_checked": false,
+              "format": "sphere_structured_piecewise_L2_v1",
+              "function": {
+                "amplitude": "-1",
+                "axis": 2,
+                "exponent": "-1/4",
+                "kind": "axis_profile",
+                "offset": "0",
+                "profile": "abs_power"
+              },
+              "global_polynomial": false,
+              "levels": 1,
+              "norm": "L2_probability",
+              "representation": "even_reflection_of_positive_half_cells",
+              "root_ratio": "1/2",
+              "scope": "unit_S2_probability_measure",
+              "shape_coefficient_count": 2,
+              "shape_proof": {
+                "approximation_norm_squared_dt": "740464/496125",
+                "coordinate": "s=(abs(t)-left)/(right-left)",
+                "core": false,
+                "cross_integral_dt": "740464/496125",
+                "degree": 1,
+                "error_squared_dt": "7447/992250",
+                "left": "1/16",
+                "left_fourth_root": "1/2",
+                "polynomial_in_s": [
+                  "2528/1575",
+                  "-1136/1575"
+                ],
+                "projection": [
+                  {
+                    "basis_mass_dt": "15/16",
+                    "coefficient": "56/45",
+                    "degree": 0,
+                    "norm_squared_dt": "196/135",
+                    "shifted_legendre_in_s": [
+                      "1"
+                    ],
+                    "source_inner_product_dt": "7/6"
+                  },
+                  {
+                    "basis_mass_dt": "5/16",
+                    "coefficient": "-568/1575",
+                    "degree": 1,
+                    "norm_squared_dt": "20164/496125",
+                    "shifted_legendre_in_s": [
+                      "-1",
+                      "2"
+                    ],
+                    "source_inner_product_dt": "-71/630"
+                  }
+                ],
+                "right": "1",
+                "right_fourth_root": "1",
+                "source_monomial_moments_dt": [
+                  "7/6",
+                  "127/224"
+                ],
+                "source_norm_squared_dt": "3/2"
+              },
+              "shape_rule": "t=R^4*x scales centered profile coefficients by 1/R and squared residual integral by R^2",
+              "source_norm_squared": "2",
+              "source_value_at_axis_zero": "0",
+              "spectral_transfer_claimed": false,
+              "sqrt_bits": 24,
+              "sqrt_upper_squared": "17750017807929/281474976710656"
+            },
+            "kind": "function_L2_approximation_only",
+            "ok": true
+          },
+          "solver_cpu_seconds": 0.00015099999999999836,
+          "solver_wall_seconds": 0.00015154096763581038
+        }
+      ],
+      "budget_seconds": 10.0,
+      "case_id": "V11",
+      "classification": "fixed_minus_quarter_regression",
+      "execution": {
+        "cpu_seconds": 0.0004089999999999927,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.00040858308784663677
+      },
+      "family": "negative_power_approximation",
+      "last_stage": "serialization_and_selection",
+      "method": "validation_candidate",
+      "selected_attempt": 0,
+      "success": false,
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/100000000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.00038900000000000046,
+      "accounted_wall_seconds": 0.00038945896085351706,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "function_L2_error_upper",
+        "reason": "replayed",
+        "target_met": false,
+        "tolerance": "1/10000000000",
+        "value": "4213077/16777216"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "function_L2_error_upper",
+            "reason": "replayed",
+            "target_met": false,
+            "tolerance": "1/10000000000",
+            "value": "4213077/16777216"
+          },
+          "configuration": "small",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.00022099999999999898,
+          "replay_wall_seconds": 0.00022075010929256678,
+          "response": {
+            "certificate": {
+              "axis_zero_convention": "step(0)=0; singular_power(0)=0 as an a.e. representative",
+              "bound_statement": "probability_L2_norm(original_function-piecewise_model)<=error_upper",
+              "cells": [
+                {
+                  "approximation_norm_squared_dt": "4/9",
+                  "coordinate": "s=(abs(t)-left)/(right-left)",
+                  "core": true,
+                  "cross_integral_dt": "4/9",
+                  "degree": 0,
+                  "error_squared_dt": "1/18",
+                  "left": "0",
+                  "left_fourth_root": "0",
+                  "polynomial_in_s": [
+                    "-8/3"
+                  ],
+                  "projection": [
+                    {
+                      "basis_mass_dt": "1/16",
+                      "coefficient": "-8/3",
+                      "degree": 0,
+                      "norm_squared_dt": "4/9",
+                      "shifted_legendre_in_s": [
+                        "1"
+                      ],
+                      "source_inner_product_dt": "-1/6"
+                    }
+                  ],
+                  "right": "1/16",
+                  "right_fourth_root": "1/2",
+                  "source_monomial_moments_dt": [
+                    "-1/6"
+                  ],
+                  "source_norm_squared_dt": "1/2"
+                },
+                {
+                  "approximation_norm_squared_dt": "740464/496125",
+                  "coordinate": "s=(abs(t)-left)/(right-left)",
+                  "core": false,
+                  "cross_integral_dt": "740464/496125",
+                  "degree": 1,
+                  "error_squared_dt": "7447/992250",
+                  "left": "1/16",
+                  "left_fourth_root": "1/2",
+                  "polynomial_in_s": [
+                    "-2528/1575",
+                    "1136/1575"
+                  ],
+                  "projection": [
+                    {
+                      "basis_mass_dt": "15/16",
+                      "coefficient": "-56/45",
+                      "degree": 0,
+                      "norm_squared_dt": "196/135",
+                      "shifted_legendre_in_s": [
+                        "1"
+                      ],
+                      "source_inner_product_dt": "-7/6"
+                    },
+                    {
+                      "basis_mass_dt": "5/16",
+                      "coefficient": "568/1575",
+                      "degree": 1,
+                      "norm_squared_dt": "20164/496125",
+                      "shifted_legendre_in_s": [
+                        "-1",
+                        "2"
+                      ],
+                      "source_inner_product_dt": "71/630"
+                    }
+                  ],
+                  "right": "1",
+                  "right_fourth_root": "1",
+                  "source_monomial_moments_dt": [
+                    "-7/6",
+                    "-127/224"
+                  ],
+                  "source_norm_squared_dt": "3/2"
+                }
+              ],
+              "degree": 1,
+              "endpoint_convention": "at nonzero seams choose the cell starting at abs(t); final endpoint included",
+              "error_squared": "31286/496125",
+              "error_upper": "4213077/16777216",
+              "expanded_polynomial_coefficient_slots": 3,
+              "formal_assistant_checked": false,
+              "format": "sphere_structured_piecewise_L2_v1",
+              "function": {
+                "amplitude": "-1",
+                "axis": 2,
+                "exponent": "-1/4",
+                "kind": "axis_profile",
+                "offset": "0",
+                "profile": "abs_power"
+              },
+              "global_polynomial": false,
+              "levels": 1,
+              "norm": "L2_probability",
+              "representation": "even_reflection_of_positive_half_cells",
+              "root_ratio": "1/2",
+              "scope": "unit_S2_probability_measure",
+              "shape_coefficient_count": 2,
+              "shape_proof": {
+                "approximation_norm_squared_dt": "740464/496125",
+                "coordinate": "s=(abs(t)-left)/(right-left)",
+                "core": false,
+                "cross_integral_dt": "740464/496125",
+                "degree": 1,
+                "error_squared_dt": "7447/992250",
+                "left": "1/16",
+                "left_fourth_root": "1/2",
+                "polynomial_in_s": [
+                  "2528/1575",
+                  "-1136/1575"
+                ],
+                "projection": [
+                  {
+                    "basis_mass_dt": "15/16",
+                    "coefficient": "56/45",
+                    "degree": 0,
+                    "norm_squared_dt": "196/135",
+                    "shifted_legendre_in_s": [
+                      "1"
+                    ],
+                    "source_inner_product_dt": "7/6"
+                  },
+                  {
+                    "basis_mass_dt": "5/16",
+                    "coefficient": "-568/1575",
+                    "degree": 1,
+                    "norm_squared_dt": "20164/496125",
+                    "shifted_legendre_in_s": [
+                      "-1",
+                      "2"
+                    ],
+                    "source_inner_product_dt": "-71/630"
+                  }
+                ],
+                "right": "1",
+                "right_fourth_root": "1",
+                "source_monomial_moments_dt": [
+                  "7/6",
+                  "127/224"
+                ],
+                "source_norm_squared_dt": "3/2"
+              },
+              "shape_rule": "t=R^4*x scales centered profile coefficients by 1/R and squared residual integral by R^2",
+              "source_norm_squared": "2",
+              "source_value_at_axis_zero": "0",
+              "spectral_transfer_claimed": false,
+              "sqrt_bits": 24,
+              "sqrt_upper_squared": "17750017807929/281474976710656"
+            },
+            "kind": "function_L2_approximation_only",
+            "ok": true
+          },
+          "solver_cpu_seconds": 0.00014600000000000724,
+          "solver_wall_seconds": 0.00014591694343835115
+        }
+      ],
+      "budget_seconds": 10.0,
+      "case_id": "V12",
+      "classification": "fixed_minus_quarter_regression",
+      "execution": {
+        "cpu_seconds": 0.00038900000000000046,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.00038945896085351706
+      },
+      "family": "negative_power_approximation",
+      "last_stage": "serialization_and_selection",
+      "method": "validation_candidate",
+      "selected_attempt": 0,
+      "success": false,
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/10000000000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 3.099999999998937e-05,
+      "accounted_wall_seconds": 3.112491685897112e-05,
+      "assessment": {
+        "certificate_valid": false,
+        "target_met": false
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": false,
+            "reason": "missing_certificate",
+            "target_met": false
+          },
+          "configuration": "small",
+          "error_type": "ValueError",
+          "execution_ok": false,
+          "reason": "This structured model supports only exponent -1/4",
+          "replay_cpu_seconds": 0.0,
+          "replay_wall_seconds": 1.125037670135498e-06,
+          "solver_cpu_seconds": 1.8000000000004124e-05,
+          "solver_wall_seconds": 1.8042046576738358e-05
+        }
+      ],
+      "budget_seconds": 10.0,
+      "case_id": "V13",
+      "classification": "outside_current_approximation_support",
+      "execution": {
+        "cpu_seconds": 3.099999999998937e-05,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 3.112491685897112e-05
+      },
+      "family": "negative_power_approximation",
+      "last_stage": "serialization_and_selection",
+      "method": "validation_candidate",
+      "selected_attempt": null,
+      "success": false,
+      "task": {
+        "function": {
+          "amplitude": "-1/3",
+          "axis": 2,
+          "exponent": "-1/5",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/100000000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.0008319999999999994,
+      "accounted_wall_seconds": 0.000832833000458777,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "spectral_interval_width",
+        "reason": "replayed",
+        "target_met": false,
+        "tolerance": "1/10000000000",
+        "value": "1/4096"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "spectral_interval_width",
+            "reason": "replayed",
+            "target_met": false,
+            "tolerance": "1/10000000000",
+            "value": "1/4096"
+          },
+          "configuration": "small",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.00025799999999999434,
+          "replay_wall_seconds": 0.00025833293329924345,
+          "response": {
+            "certificate": {
+              "angular_form_bound": {
+                "energy_factor": "1",
+                "mass_offset": "-2/5",
+                "measure": "d_sigma/(4*pi)_on_unit_S2",
+                "method": "pointwise_step",
+                "pointwise_lower": "-2/5"
+              },
+              "angular_tail_cannot_improve_best_upper": true,
+              "angular_tail_lower": "8/5",
+              "eigenvalue_index": 1,
+              "exact_width": "1/4096",
+              "formal_proof_assistant_checked": false,
+              "format": "direct_axis_moment_full_v1",
+              "full_infinite_space_covered": true,
+              "function": {
+                "amplitude": "0",
+                "axis": 2,
+                "kind": "axis_profile",
+                "offset": "-2/5",
+                "profile": "step"
+              },
+              "function_approximation_error": "0",
+              "geometry": "unit_S2",
+              "lower": "-8197/20480",
+              "mean_zero": false,
+              "measure": "d_sigma/(4*pi)_on_unit_S2",
+              "omitted_azimuth_m_start": 1,
+              "original_function_moments_exact": true,
+              "scope": "all_real_H1_on_unit_S2",
+              "sectors": [
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 0,
+                  "eigenvalue_index": 1,
+                  "exact_width": "1/4096",
+                  "form_bound": {
+                    "energy_factor": "1",
+                    "mass_offset": "-2/5",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "pointwise_step",
+                    "pointwise_lower": "-2/5"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "0",
+                    "axis": 2,
+                    "kind": "axis_profile",
+                    "offset": "-2/5",
+                    "profile": "step"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "-4/5",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "16/15"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "0",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "0"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "8/25",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "8/75"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-4/5",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "-4/15"
+                      ]
+                    ],
+                    "degrees": [
+                      0,
+                      1
+                    ],
+                    "mass": [
+                      "2",
+                      "2/3"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": null
+                  },
+                  "lower": "-8197/20480",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": false,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "none",
+                  "radial_tail_lower": "28/5",
+                  "radial_tail_start": 2,
+                  "remainder_tail_lower": "28/5",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 24,
+                  "upper": "-2/5",
+                  "upper_inertia": [
+                    0,
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "status": "certified_open",
+              "tolerance": "1/10000000000",
+              "upper": "-2/5"
+            },
+            "kind": "original_function_spectrum",
+            "ok": true
+          },
+          "solver_cpu_seconds": 0.0005560000000000009,
+          "solver_wall_seconds": 0.0005550410132855177
+        }
+      ],
+      "budget_seconds": 3.0,
+      "case_id": "V01",
+      "classification": "public_validation",
+      "execution": {
+        "cpu_seconds": 0.0008319999999999994,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.000832833000458777
+      },
+      "family": "easy",
+      "last_stage": "serialization_and_selection",
+      "method": "validation_candidate",
+      "selected_attempt": 0,
+      "success": false,
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "-2/5",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": false,
+        "tolerance": "1/10000000000"
+      },
+      "within_budget": true
+    }
+  ],
+  "setup": {
+    "cpu_seconds": 0.046438999999999994,
+    "execution_ok": true,
+    "hard_timeout_enforced": true,
+    "timed_out": false,
+    "wall_seconds": 0.04647116700652987
+  }
+}

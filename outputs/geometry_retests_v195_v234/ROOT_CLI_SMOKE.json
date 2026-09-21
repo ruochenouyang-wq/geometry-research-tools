@@ -1,0 +1,44 @@
+{
+  "valid_request": {
+    "op": "constraints",
+    "q": {},
+    "constraints": [
+      {
+        "0,0,0": "1"
+      },
+      {
+        "0,0,1": "1"
+      }
+    ],
+    "L": 2
+  },
+  "responses": [
+    {
+      "certificate_id": "d729ed37ddc00dc5c90fe5f1cfbe7629f5c53fc4224a070776c63afd582c95bb",
+      "constraints": [
+        {
+          "0,0,0": "1"
+        },
+        {
+          "0,0,1": "1"
+        }
+      ],
+      "exact_width": "0",
+      "formal_proof_assistant_checked": false,
+      "lower": "2",
+      "mathematical_proof_verified": true,
+      "operation": "constraints",
+      "original_request_bound": true,
+      "potential": {},
+      "scope": "all_real_H1_functions_on_unit_S2_satisfying_all_recorded_moments",
+      "status": "certified_ground_enclosure",
+      "upper": "2"
+    },
+    {
+      "exception": "ValueError",
+      "message": "Unknown operation or malformed arguments",
+      "status": "rejected_or_computation_failed"
+    }
+  ],
+  "all_passed": true
+}

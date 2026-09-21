@@ -1,0 +1,183 @@
+{
+  "version": 4,
+  "rows": [
+    {
+      "case": "linear",
+      "q": [
+        0,
+        1
+      ],
+      "k": 1,
+      "modes": 8,
+      "method": "v3_exact",
+      "tolerance": "1/10000000000",
+      "target_met": true,
+      "median_seconds": 0.012285667,
+      "samples": [
+        0.012962666999999997,
+        0.011521166,
+        0.012285667
+      ],
+      "exact_width": "129642907044249/9903520314283042199192993792",
+      "search_count_calls": null,
+      "path": null
+    },
+    {
+      "case": "linear",
+      "q": [
+        0,
+        1
+      ],
+      "k": 1,
+      "modes": 8,
+      "method": "v4_guided",
+      "tolerance": "1/10000000000",
+      "target_met": true,
+      "median_seconds": 0.0027829590000000015,
+      "samples": [
+        0.0026797920000000003,
+        0.003084500000000004,
+        0.0027829590000000015
+      ],
+      "exact_width": "1/80000000000",
+      "search_count_calls": 4,
+      "path": "guided"
+    },
+    {
+      "case": "quartic",
+      "q": [
+        0,
+        20,
+        -100,
+        0,
+        1
+      ],
+      "k": 1,
+      "modes": 20,
+      "method": "v3_exact",
+      "tolerance": "1/10000000000",
+      "target_met": true,
+      "median_seconds": 0.3760064999999999,
+      "samples": [
+        0.374909292,
+        0.376388333,
+        0.3760064999999999
+      ],
+      "exact_width": "20881596481266677/19807040628566084398385987584",
+      "search_count_calls": null,
+      "path": null
+    },
+    {
+      "case": "quartic",
+      "q": [
+        0,
+        20,
+        -100,
+        0,
+        1
+      ],
+      "k": 1,
+      "modes": 20,
+      "method": "v4_guided",
+      "tolerance": "1/10000000000",
+      "target_met": true,
+      "median_seconds": 0.05596837499999996,
+      "samples": [
+        0.05596837499999996,
+        0.0562497500000001,
+        0.05493100000000006
+      ],
+      "exact_width": "4382857921/343597383680000000000",
+      "search_count_calls": 4,
+      "path": "guided"
+    },
+    {
+      "case": "cluster_second",
+      "q": [
+        0,
+        "1/1000000",
+        -100
+      ],
+      "k": 2,
+      "modes": 20,
+      "method": "v3_exact",
+      "tolerance": "1/10000000000",
+      "target_met": true,
+      "median_seconds": 0.15646724999999995,
+      "samples": [
+        0.1561847919999999,
+        0.15646724999999995,
+        0.15757175
+      ],
+      "exact_width": "8432454004062998876391/39614081257132168796771975168000000",
+      "search_count_calls": null,
+      "path": null
+    },
+    {
+      "case": "cluster_second",
+      "q": [
+        0,
+        "1/1000000",
+        -100
+      ],
+      "k": 2,
+      "modes": 20,
+      "method": "v4_guided",
+      "tolerance": "1/10000000000",
+      "target_met": true,
+      "median_seconds": 0.021797875000000078,
+      "samples": [
+        0.021797875000000078,
+        0.02181024999999992,
+        0.021753750000000016
+      ],
+      "exact_width": "1/80000000000",
+      "search_count_calls": 4,
+      "path": "guided"
+    },
+    {
+      "case": "high_precision",
+      "q": [
+        0,
+        1
+      ],
+      "k": 1,
+      "modes": 14,
+      "method": "v3_exact",
+      "tolerance": "1/1000000000000000000000000000000",
+      "target_met": true,
+      "median_seconds": 0.07512074999999996,
+      "samples": [
+        0.07512074999999996,
+        0.07512845800000001,
+        0.07464033300000006
+      ],
+      "exact_width": "1195744763608481521272578770737531/3369993333393829974333376885877453834204643052817571560137951281152",
+      "search_count_calls": null,
+      "path": null
+    },
+    {
+      "case": "high_precision",
+      "q": [
+        0,
+        1
+      ],
+      "k": 1,
+      "modes": 14,
+      "method": "v4_guided",
+      "tolerance": "1/1000000000000000000000000000000",
+      "target_met": true,
+      "median_seconds": 0.043656417000000225,
+      "samples": [
+        0.04403995900000002,
+        0.043656417000000225,
+        0.043549832999999705
+      ],
+      "exact_width": "20854611325118423/365375409332725729550921208179070754913983135744",
+      "search_count_calls": 120,
+      "path": "exact_local_refinement"
+    }
+  ],
+  "repetitions": 3,
+  "timing": "generation plus verification; same process; no file I/O"
+}

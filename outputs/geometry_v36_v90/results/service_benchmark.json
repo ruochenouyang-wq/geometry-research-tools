@@ -1,0 +1,1060 @@
+{
+  "solver_triggered_model_calls": 0,
+  "actual_model_comparison": false,
+  "development_subagents": 5,
+  "tokenizer_mapping_to_5_6_or_astra_asserted": false,
+  "cases": [
+    {
+      "case": "extrema_cubic",
+      "request": {
+        "op": "extrema",
+        "spec": {
+          "polynomial": [
+            0,
+            1,
+            0,
+            -1
+          ]
+        }
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {
+          "gap": "7812101e-20",
+          "lower": "3849001e-7",
+          "upper": "3849002e-7"
+        },
+        "diagnostics": [],
+        "evidence": "proof:2be19cd57ddfc75abeca8b89",
+        "formal_kernel": false,
+        "kind": "polynomial_maximum",
+        "scope": {
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "objective": "global polynomial maximum"
+        },
+        "status": "enclosed",
+        "target": "1/1000000000000",
+        "task": "goal:b6a1c6e342237b9838f34daf",
+        "verified": true
+      },
+      "status": "enclosed",
+      "seconds_including_verification_and_budget": 0.177110583,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 20,
+          "cl100k_base": 20
+        },
+        "receipt": {
+          "o200k_base": 127,
+          "cl100k_base": 124
+        },
+        "actual_tool_response": {
+          "o200k_base": 158,
+          "cl100k_base": 159
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 142,
+          "cl100k_base": 136
+        },
+        "full_compact_proof": {
+          "o200k_base": 834,
+          "cl100k_base": 807
+        },
+        "retrieval_request": {
+          "o200k_base": 23,
+          "cl100k_base": 23
+        },
+        "retrieval_response": {
+          "o200k_base": 834,
+          "cl100k_base": 807
+        }
+      },
+      "certificate": "results/service_certificates/extrema_cubic.json",
+      "exact_evidence_retrieved": true
+    },
+    {
+      "case": "extrema_budget_open",
+      "request": {
+        "op": "extrema",
+        "spec": {
+          "polynomial": [
+            0,
+            1,
+            0,
+            -1
+          ]
+        },
+        "max_nodes": 0
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {
+          "gap": "6666667e-7",
+          "lower": "0",
+          "upper": "6666667e-7"
+        },
+        "diagnostics": [],
+        "evidence": "proof:f86e610558584203ec060d13",
+        "formal_kernel": false,
+        "kind": "polynomial_maximum",
+        "scope": {
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "objective": "global polynomial maximum"
+        },
+        "status": "open",
+        "target": "1/1000000000000",
+        "task": "goal:b6a1c6e342237b9838f34daf",
+        "verified": true
+      },
+      "status": "open",
+      "seconds_including_verification_and_budget": 0.003199416999999982,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 25,
+          "cl100k_base": 25
+        },
+        "receipt": {
+          "o200k_base": 118,
+          "cl100k_base": 115
+        },
+        "actual_tool_response": {
+          "o200k_base": 149,
+          "cl100k_base": 150
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 109,
+          "cl100k_base": 103
+        },
+        "full_compact_proof": {
+          "o200k_base": 355,
+          "cl100k_base": 339
+        },
+        "retrieval_request": {
+          "o200k_base": 20,
+          "cl100k_base": 20
+        },
+        "retrieval_response": {
+          "o200k_base": 355,
+          "cl100k_base": 339
+        }
+      },
+      "certificate": "results/service_certificates/extrema_budget_open.json",
+      "exact_evidence_retrieved": true
+    },
+    {
+      "case": "uniform_sharp_sixth",
+      "request": {
+        "op": "uniform",
+        "spec": {}
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {
+          "sharp_coefficient_lower": "1666666e-7",
+          "sharp_coefficient_upper": "1666667e-7"
+        },
+        "diagnostics": [],
+        "evidence": "proof:bca629e4ac42702366597a2b",
+        "formal_kernel": false,
+        "kind": "uniform_spectral_inequality",
+        "scope": {
+          "amplitudes": "all_real",
+          "analytic_dependency": "classical sharp S2 log-Sobolev theorem (not proved by this program)",
+          "claim": "lambda_1(-Delta+a*p(t)) >= a*mean(p)-coefficient*a^2",
+          "eigenvalue_index": 1,
+          "geometry": "unit_sphere",
+          "space": "full_sphere"
+        },
+        "status": "proved",
+        "target": "1/6",
+        "task": "goal:0d1ed5c5f53e0a959695e890",
+        "verified": true
+      },
+      "status": "proved",
+      "seconds_including_verification_and_budget": 0.0011346250000000002,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 9,
+          "cl100k_base": 9
+        },
+        "receipt": {
+          "o200k_base": 179,
+          "cl100k_base": 176
+        },
+        "actual_tool_response": {
+          "o200k_base": 208,
+          "cl100k_base": 209
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 173,
+          "cl100k_base": 168
+        },
+        "full_compact_proof": {
+          "o200k_base": 399,
+          "cl100k_base": 390
+        },
+        "retrieval_request": {
+          "o200k_base": 22,
+          "cl100k_base": 22
+        },
+        "retrieval_response": {
+          "o200k_base": 399,
+          "cl100k_base": 390
+        }
+      },
+      "certificate": "results/service_certificates/uniform_sharp_sixth.json",
+      "exact_evidence_retrieved": true
+    },
+    {
+      "case": "uniform_counterexample_seventh",
+      "request": {
+        "op": "uniform",
+        "spec": {
+          "coefficient": "1/7"
+        }
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {
+          "counterexample_objective_upper": "-1098901e-8",
+          "sharp_coefficient_lower": "1666666e-7",
+          "sharp_coefficient_upper": "1666667e-7"
+        },
+        "diagnostics": [],
+        "evidence": "proof:538987be4d9ca78072395abd",
+        "formal_kernel": false,
+        "kind": "uniform_spectral_inequality",
+        "scope": {
+          "amplitudes": "all_real",
+          "analytic_dependency": "classical sharp S2 log-Sobolev theorem (not proved by this program)",
+          "claim": "lambda_1(-Delta+a*p(t)) >= a*mean(p)-coefficient*a^2",
+          "eigenvalue_index": 1,
+          "geometry": "unit_sphere",
+          "space": "full_sphere"
+        },
+        "status": "disproved",
+        "target": "1/7",
+        "task": "goal:ec017f8272c87e8c9d834b33",
+        "verified": true
+      },
+      "status": "disproved",
+      "seconds_including_verification_and_budget": 0.0014396670000000333,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 14,
+          "cl100k_base": 14
+        },
+        "receipt": {
+          "o200k_base": 192,
+          "cl100k_base": 189
+        },
+        "actual_tool_response": {
+          "o200k_base": 221,
+          "cl100k_base": 222
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 185,
+          "cl100k_base": 180
+        },
+        "full_compact_proof": {
+          "o200k_base": 460,
+          "cl100k_base": 451
+        },
+        "retrieval_request": {
+          "o200k_base": 21,
+          "cl100k_base": 21
+        },
+        "retrieval_response": {
+          "o200k_base": 460,
+          "cl100k_base": 451
+        }
+      },
+      "certificate": "results/service_certificates/uniform_counterexample_seventh.json",
+      "exact_evidence_retrieved": true
+    },
+    {
+      "case": "uniform_barta_fifth",
+      "request": {
+        "op": "uniform",
+        "rule": "barta",
+        "spec": {
+          "coefficient": "1/5",
+          "all_real": true
+        }
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {
+          "coefficient_upper": "0.2"
+        },
+        "diagnostics": [],
+        "evidence": "proof:44020ad5e80380d2242df1ea",
+        "formal_kernel": false,
+        "kind": "uniform_spectral_inequality",
+        "scope": {
+          "amplitudes": "all_real",
+          "claim": "lambda_1(-Delta+a*p(t)) >= a*mean(p)-coefficient*a^2",
+          "eigenvalue_index": 1,
+          "geometry": "unit_sphere",
+          "space": "full_sphere"
+        },
+        "status": "proved",
+        "target": "1/5",
+        "task": "goal:bdcae58c690329b666fdf39f",
+        "verified": true
+      },
+      "status": "proved",
+      "seconds_including_verification_and_budget": 0.070786917,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 24,
+          "cl100k_base": 24
+        },
+        "receipt": {
+          "o200k_base": 139,
+          "cl100k_base": 134
+        },
+        "actual_tool_response": {
+          "o200k_base": 167,
+          "cl100k_base": 165
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 138,
+          "cl100k_base": 133
+        },
+        "full_compact_proof": {
+          "o200k_base": 596,
+          "cl100k_base": 588
+        },
+        "retrieval_request": {
+          "o200k_base": 23,
+          "cl100k_base": 23
+        },
+        "retrieval_response": {
+          "o200k_base": 596,
+          "cl100k_base": 588
+        }
+      },
+      "certificate": "results/service_certificates/uniform_barta_fifth.json",
+      "exact_evidence_retrieved": true
+    },
+    {
+      "case": "uniform_barta_obstruction",
+      "request": {
+        "op": "uniform",
+        "rule": "barta",
+        "spec": {
+          "coefficient": "1/5",
+          "order": 1
+        }
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {},
+        "diagnostics": [],
+        "evidence": "proof:a64d85a27d187059f1a8e97d",
+        "formal_kernel": false,
+        "kind": "uniform_spectral_inequality",
+        "scope": {
+          "amplitudes": [
+            "-2",
+            "2"
+          ],
+          "claim": "lambda_1(-Delta+a*p(t)) >= a*mean(p)-coefficient*a^2",
+          "eigenvalue_index": 1,
+          "geometry": "unit_sphere",
+          "space": "full_sphere"
+        },
+        "status": "ansatz_obstruction",
+        "target": "1/5",
+        "task": "goal:2d86e584ac04f649b87e9a28",
+        "verified": true
+      },
+      "status": "ansatz_obstruction",
+      "seconds_including_verification_and_budget": 0.002920416999999953,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 23,
+          "cl100k_base": 23
+        },
+        "receipt": {
+          "o200k_base": 142,
+          "cl100k_base": 139
+        },
+        "actual_tool_response": {
+          "o200k_base": 172,
+          "cl100k_base": 172
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 140,
+          "cl100k_base": 134
+        },
+        "full_compact_proof": {
+          "o200k_base": 304,
+          "cl100k_base": 299
+        },
+        "retrieval_request": {
+          "o200k_base": 25,
+          "cl100k_base": 25
+        },
+        "retrieval_response": {
+          "o200k_base": 304,
+          "cl100k_base": 299
+        }
+      },
+      "certificate": "results/service_certificates/uniform_barta_obstruction.json",
+      "exact_evidence_retrieved": true
+    },
+    {
+      "case": "positive_quadratic",
+      "request": {
+        "op": "positive",
+        "spec": {
+          "potential": [
+            0,
+            0,
+            6
+          ]
+        },
+        "options": {
+          "degree": 2
+        }
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {
+          "ansatz_gap": "9255369e-11",
+          "ansatz_lower": "1.438089",
+          "ansatz_upper": "1.438183",
+          "spectral_gap": "1330663e-7",
+          "spectral_lower": "1.438089",
+          "spectral_upper": "1.571156"
+        },
+        "diagnostics": [],
+        "evidence": "proof:b539b7dd96638f03c00b4d2a",
+        "formal_kernel": false,
+        "kind": "positive_function_optimization",
+        "scope": {
+          "ansatz_upper_is_spectral_upper": false,
+          "eigenvalue_index": 1,
+          "geometry": "unit_sphere",
+          "objective": "best Barta lower in specified log-polynomial basis",
+          "space": "full_sphere"
+        },
+        "status": "ansatz_gap_closed",
+        "target": "1/10000",
+        "task": "goal:ef4648453716acf868ced699",
+        "verified": true
+      },
+      "status": "ansatz_gap_closed",
+      "seconds_including_verification_and_budget": 0.03755091700000007,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 22,
+          "cl100k_base": 22
+        },
+        "receipt": {
+          "o200k_base": 182,
+          "cl100k_base": 179
+        },
+        "actual_tool_response": {
+          "o200k_base": 210,
+          "cl100k_base": 210
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 384,
+          "cl100k_base": 379
+        },
+        "full_compact_proof": {
+          "o200k_base": 2173,
+          "cl100k_base": 2158
+        },
+        "retrieval_request": {
+          "o200k_base": 25,
+          "cl100k_base": 25
+        },
+        "retrieval_response": {
+          "o200k_base": 2173,
+          "cl100k_base": 2158
+        }
+      },
+      "certificate": "results/service_certificates/positive_quadratic.json",
+      "exact_evidence_retrieved": true
+    },
+    {
+      "case": "positive_sixth",
+      "request": {
+        "op": "positive",
+        "spec": {
+          "potential": [
+            0,
+            0,
+            6
+          ]
+        },
+        "options": {
+          "degree": 6
+        }
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {
+          "ansatz_gap": "8291686e-11",
+          "ansatz_lower": "1.567438",
+          "ansatz_upper": "1.567522",
+          "spectral_gap": "3717466e-9",
+          "spectral_lower": "1.567438",
+          "spectral_upper": "1.571156"
+        },
+        "diagnostics": [],
+        "evidence": "proof:a55b94ffd90db895a8bf3d29",
+        "formal_kernel": false,
+        "kind": "positive_function_optimization",
+        "scope": {
+          "ansatz_upper_is_spectral_upper": false,
+          "eigenvalue_index": 1,
+          "geometry": "unit_sphere",
+          "objective": "best Barta lower in specified log-polynomial basis",
+          "space": "full_sphere"
+        },
+        "status": "ansatz_gap_closed",
+        "target": "1/10000",
+        "task": "goal:0235f2535e63a2bc6791b156",
+        "verified": true
+      },
+      "status": "ansatz_gap_closed",
+      "seconds_including_verification_and_budget": 0.13708425000000002,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 22,
+          "cl100k_base": 22
+        },
+        "receipt": {
+          "o200k_base": 185,
+          "cl100k_base": 182
+        },
+        "actual_tool_response": {
+          "o200k_base": 213,
+          "cl100k_base": 213
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 602,
+          "cl100k_base": 595
+        },
+        "full_compact_proof": {
+          "o200k_base": 4157,
+          "cl100k_base": 4126
+        },
+        "retrieval_request": {
+          "o200k_base": 23,
+          "cl100k_base": 23
+        },
+        "retrieval_response": {
+          "o200k_base": 4157,
+          "cl100k_base": 4126
+        }
+      },
+      "certificate": "results/service_certificates/positive_sixth.json",
+      "exact_evidence_retrieved": true
+    },
+    {
+      "case": "positive_sturm",
+      "request": {
+        "op": "positive",
+        "spec": {
+          "potential": [
+            0,
+            0,
+            6
+          ]
+        },
+        "options": {
+          "degree": 6,
+          "range_backend": "exact_sturm_minimum_v1"
+        }
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {
+          "ansatz_gap": "6567846e-10",
+          "ansatz_lower": "1.567009",
+          "ansatz_upper": "1.567666",
+          "spectral_gap": "4146704e-9",
+          "spectral_lower": "1.567009",
+          "spectral_upper": "1.571156"
+        },
+        "diagnostics": [],
+        "evidence": "proof:441db0f5937bf6e3918ad709",
+        "formal_kernel": false,
+        "kind": "positive_function_optimization",
+        "scope": {
+          "ansatz_upper_is_spectral_upper": false,
+          "eigenvalue_index": 1,
+          "geometry": "unit_sphere",
+          "objective": "best Barta lower in specified log-polynomial basis",
+          "space": "full_sphere"
+        },
+        "status": "ansatz_gap_open",
+        "target": "1/10000",
+        "task": "goal:0235f2535e63a2bc6791b156",
+        "verified": true
+      },
+      "status": "ansatz_gap_open",
+      "seconds_including_verification_and_budget": 0.10426970800000002,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 34,
+          "cl100k_base": 32
+        },
+        "receipt": {
+          "o200k_base": 185,
+          "cl100k_base": 182
+        },
+        "actual_tool_response": {
+          "o200k_base": 213,
+          "cl100k_base": 213
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 425,
+          "cl100k_base": 418
+        },
+        "full_compact_proof": {
+          "o200k_base": 4570,
+          "cl100k_base": 4517
+        },
+        "retrieval_request": {
+          "o200k_base": 23,
+          "cl100k_base": 23
+        },
+        "retrieval_response": {
+          "o200k_base": 4570,
+          "cl100k_base": 4517
+        }
+      },
+      "certificate": "results/service_certificates/positive_sturm.json",
+      "exact_evidence_retrieved": true
+    },
+    {
+      "case": "matrix_precise_scalar",
+      "request": {
+        "op": "refine",
+        "spec": {
+          "directions": [
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "budget": 0
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {
+          "gap": "0",
+          "lower": "0.25",
+          "upper": "0.25"
+        },
+        "diagnostics": [],
+        "evidence": "proof:c765ee576d674fdc0ebcbc12",
+        "formal_kernel": false,
+        "kind": "matrix_envelope",
+        "scope": {
+          "amplitudes": "all_real",
+          "ansatz": "poisson_exponential",
+          "geometry": "unit_sphere",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "objective": "trace(C G)"
+        },
+        "status": "global_gap_closed",
+        "target": "1/1000000",
+        "task": "goal:2da221f024830d9ef4cc7236",
+        "verified": true
+      },
+      "status": "global_gap_closed",
+      "seconds_including_verification_and_budget": 0.011040917000000094,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 21,
+          "cl100k_base": 21
+        },
+        "receipt": {
+          "o200k_base": 133,
+          "cl100k_base": 129
+        },
+        "actual_tool_response": {
+          "o200k_base": 164,
+          "cl100k_base": 164
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 118,
+          "cl100k_base": 115
+        },
+        "full_compact_proof": {
+          "o200k_base": 1152,
+          "cl100k_base": 1137
+        },
+        "retrieval_request": {
+          "o200k_base": 21,
+          "cl100k_base": 20
+        },
+        "retrieval_response": {
+          "o200k_base": 1152,
+          "cl100k_base": 1137
+        }
+      },
+      "certificate": "results/service_certificates/matrix_precise_scalar.json",
+      "exact_evidence_retrieved": true
+    },
+    {
+      "case": "matrix_precise_odd_even",
+      "request": {
+        "op": "refine",
+        "spec": {
+          "directions": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        "budget": 8
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {
+          "gap": "1624424e-13",
+          "lower": "3373662e-7",
+          "upper": "3373664e-7"
+        },
+        "diagnostics": [],
+        "evidence": "proof:b33ea251d3f4290270a99a54",
+        "formal_kernel": false,
+        "kind": "matrix_envelope",
+        "scope": {
+          "amplitudes": "all_real",
+          "ansatz": "poisson_exponential",
+          "geometry": "unit_sphere",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "objective": "trace(C G)"
+        },
+        "status": "global_gap_closed",
+        "target": "1/1000000",
+        "task": "goal:104119f939ec588f26488a24",
+        "verified": true
+      },
+      "status": "global_gap_closed",
+      "seconds_including_verification_and_budget": 0.24599745900000003,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 27,
+          "cl100k_base": 27
+        },
+        "receipt": {
+          "o200k_base": 144,
+          "cl100k_base": 141
+        },
+        "actual_tool_response": {
+          "o200k_base": 175,
+          "cl100k_base": 176
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 246,
+          "cl100k_base": 241
+        },
+        "full_compact_proof": {
+          "o200k_base": 5785,
+          "cl100k_base": 5703
+        },
+        "retrieval_request": {
+          "o200k_base": 23,
+          "cl100k_base": 23
+        },
+        "retrieval_response": {
+          "o200k_base": 5785,
+          "cl100k_base": 5703
+        }
+      },
+      "certificate": "results/service_certificates/matrix_precise_odd_even.json",
+      "exact_evidence_retrieved": true
+    },
+    {
+      "case": "original_goal_sharp",
+      "request": {
+        "op": "research",
+        "goal": {
+          "profile": "sphere_ground",
+          "parameters": [
+            "a"
+          ],
+          "potential": "a*t",
+          "penalty": "a*a/5",
+          "domain": {
+            "kind": "all_real"
+          },
+          "threshold": "0"
+        }
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {
+          "lower": "0",
+          "upper": "0"
+        },
+        "diagnostics": [],
+        "evidence": "proof:4a02b8731bcfd60d8dd0272e",
+        "formal_kernel": false,
+        "kind": "ground_goal",
+        "scope": {
+          "analytic_dependency": "classical sharp S2 log-Sobolev theorem (not proved by this program)",
+          "domain": {
+            "kind": "all_real"
+          },
+          "eigenvalue_index": 1,
+          "geometry": "unit_sphere",
+          "objective": "inf_parameters(lambda_1(-Delta+q)+penalty)",
+          "space": "full_sphere"
+        },
+        "status": "proved",
+        "target": "0",
+        "task": "goal:cf7510a382b8d98cb6d7fae1",
+        "verified": true
+      },
+      "status": "proved",
+      "seconds_including_verification_and_budget": 0.0061697080000000515,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 43,
+          "cl100k_base": 40
+        },
+        "receipt": {
+          "o200k_base": 154,
+          "cl100k_base": 149
+        },
+        "actual_tool_response": {
+          "o200k_base": 185,
+          "cl100k_base": 186
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 167,
+          "cl100k_base": 157
+        },
+        "full_compact_proof": {
+          "o200k_base": 1288,
+          "cl100k_base": 1233
+        },
+        "retrieval_request": {
+          "o200k_base": 25,
+          "cl100k_base": 25
+        },
+        "retrieval_response": {
+          "o200k_base": 1288,
+          "cl100k_base": 1233
+        }
+      },
+      "certificate": "results/service_certificates/original_goal_sharp.json",
+      "exact_evidence_retrieved": true
+    },
+    {
+      "case": "original_goal_barta",
+      "request": {
+        "op": "research",
+        "goal": {
+          "profile": "sphere_ground",
+          "parameters": [
+            "a"
+          ],
+          "potential": "a*t",
+          "penalty": "a*a/5",
+          "domain": {
+            "kind": "all_real"
+          },
+          "threshold": "0"
+        },
+        "rule": "barta"
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {
+          "lower": "0",
+          "upper": "0"
+        },
+        "diagnostics": [],
+        "evidence": "proof:864cc723bd93b9c4cc0069a7",
+        "formal_kernel": false,
+        "kind": "ground_goal",
+        "scope": {
+          "domain": {
+            "kind": "all_real"
+          },
+          "eigenvalue_index": 1,
+          "geometry": "unit_sphere",
+          "objective": "inf_parameters(lambda_1(-Delta+q)+penalty)",
+          "space": "full_sphere"
+        },
+        "status": "proved",
+        "target": "0",
+        "task": "goal:cf7510a382b8d98cb6d7fae1",
+        "verified": true
+      },
+      "status": "proved",
+      "seconds_including_verification_and_budget": 0.09766591599999996,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 48,
+          "cl100k_base": 45
+        },
+        "receipt": {
+          "o200k_base": 131,
+          "cl100k_base": 126
+        },
+        "actual_tool_response": {
+          "o200k_base": 161,
+          "cl100k_base": 161
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 145,
+          "cl100k_base": 135
+        },
+        "full_compact_proof": {
+          "o200k_base": 1407,
+          "cl100k_base": 1356
+        },
+        "retrieval_request": {
+          "o200k_base": 24,
+          "cl100k_base": 24
+        },
+        "retrieval_response": {
+          "o200k_base": 1407,
+          "cl100k_base": 1356
+        }
+      },
+      "certificate": "results/service_certificates/original_goal_barta.json",
+      "exact_evidence_retrieved": true
+    },
+    {
+      "case": "original_goal_open",
+      "request": {
+        "op": "research",
+        "goal": {
+          "profile": "sphere_ground",
+          "parameters": [
+            "a"
+          ],
+          "potential": "a*t",
+          "penalty": "a*a/7",
+          "domain": {
+            "kind": "all_real"
+          },
+          "threshold": "0"
+        }
+      },
+      "receipt": {
+        "bound_display": "outward",
+        "bounds": {
+          "lower": null,
+          "upper": "0"
+        },
+        "diagnostics": [],
+        "evidence": "proof:518de71dde446e57d1703569",
+        "formal_kernel": false,
+        "kind": "ground_goal",
+        "scope": {
+          "analytic_dependency": "classical sharp S2 log-Sobolev theorem (not proved by this program)",
+          "domain": {
+            "kind": "all_real"
+          },
+          "eigenvalue_index": 1,
+          "geometry": "unit_sphere",
+          "objective": "inf_parameters(lambda_1(-Delta+q)+penalty)",
+          "space": "full_sphere"
+        },
+        "status": "unresolved",
+        "target": "0",
+        "task": "goal:123f12fcf5d42208d540f094",
+        "verified": true
+      },
+      "status": "unresolved",
+      "seconds_including_verification_and_budget": 0.004538041000000215,
+      "text_tokens": {
+        "request": {
+          "o200k_base": 43,
+          "cl100k_base": 40
+        },
+        "receipt": {
+          "o200k_base": 148,
+          "cl100k_base": 143
+        },
+        "actual_tool_response": {
+          "o200k_base": 179,
+          "cl100k_base": 180
+        },
+        "sufficient_exact_baseline": {
+          "o200k_base": 168,
+          "cl100k_base": 158
+        },
+        "full_compact_proof": {
+          "o200k_base": 1328,
+          "cl100k_base": 1275
+        },
+        "retrieval_request": {
+          "o200k_base": 21,
+          "cl100k_base": 21
+        },
+        "retrieval_response": {
+          "o200k_base": 1328,
+          "cl100k_base": 1275
+        }
+      },
+      "certificate": "results/service_certificates/original_goal_open.json",
+      "exact_evidence_retrieved": true
+    }
+  ],
+  "size_gate": {
+    "o200k_base": {
+      "median_receipt": 146.0,
+      "p90_receipt": 185,
+      "median_request_and_actual_response": 213.0,
+      "numeric_size_gate": true
+    },
+    "cl100k_base": {
+      "median_receipt": 142.0,
+      "p90_receipt": 182,
+      "median_request_and_actual_response": 212.0,
+      "numeric_size_gate": true
+    }
+  },
+  "session": {
+    "encodings": {
+      "o200k_base": 3253,
+      "cl100k_base": 3240
+    },
+    "items": 30,
+    "basis": "sum of explicit text item encodings; excludes unknown API framing and hidden reasoning",
+    "model_mapping_asserted": false,
+    "actual_api_usage": null
+  },
+  "limitations": [
+    "Timing is one local tool execution per case, not a model timing result",
+    "Full proof retrieval and first-use capabilities cost tokens",
+    "Stored references require their originating store; exported certificate files are portable",
+    "All request and response fields are counted; unknown API framing and hidden reasoning are unavailable"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "lower": {
+    "basis": [
+      [
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "candidate_infimum_upper": "1",
+    "formal_assistant_checked": false,
+    "local_energy_coefficients": [
+      "2",
+      "0",
+      "-4",
+      "0",
+      "4"
+    ],
+    "method": "positive_exponential_lower_v1",
+    "model": "unit_sphere_positive_exponential_fixed_potential_v1",
+    "q_coefficients": [
+      "0",
+      "0",
+      "6"
+    ],
+    "range_backend": "rational_adaptive_bernstein_minimum_v1",
+    "range_gap": "0",
+    "range_proof": {
+      "coordinate": "t_squared",
+      "intervals": null,
+      "maximum_lower": "-1",
+      "maximum_upper": "-1",
+      "method": "polynomial_maximum",
+      "polynomial": [
+        "-2",
+        "0",
+        "4",
+        "0",
+        "-4"
+      ],
+      "status": "scale_enclosed",
+      "tolerance": "1/1000000",
+      "witness": "1/2"
+    },
+    "s_coefficients": [
+      "0",
+      "0",
+      "-1"
+    ],
+    "scope": "ground energy of -Delta+q(t) on the full unit two-sphere, t=x_3",
+    "spectral_lower": "1",
+    "theta": [
+      "-1",
+      "0",
+      "0"
+    ]
+  },
+  "rayleigh": {
+    "formal_assistant_checked": false,
+    "kinetic_numerator": "9325963454444494299349753/26589874777607896081367040",
+    "method": "positive_search_rayleigh_upper_v1",
+    "model": "unit_sphere_positive_exponential_fixed_potential_v1",
+    "norm_squared": "14400443307700593943598656981/13614015886135242793659924480",
+    "potential_numerator": "2975074558416378979552960711/2269002647689207132276654080",
+    "q_coefficients": [
+      "0",
+      "0",
+      "6"
+    ],
+    "scope": "ground energy of -Delta+q(t) on the full unit two-sphere, t=x_3",
+    "spectral_upper": "22625340639173854958584837802/14400443307700593943598656981",
+    "trial_power_coefficients": [
+      "177022899071/137438953472",
+      "0",
+      "-555982041487/549755813888",
+      "0",
+      "147174816565/549755813888",
+      "0",
+      "-17103789825/549755813888"
+    ]
+  }
+}

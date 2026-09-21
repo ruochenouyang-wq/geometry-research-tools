@@ -1,0 +1,25 @@
+{
+  "version": 312,
+  "recorded_at": "2026-09-18T18:37:48.461088+00:00",
+  "hypothesis": "Exact duplicate local deterministic requests waste computation; overly broad caching can change the mathematical task.",
+  "change": "Added namespaced full-request keys and copy-isolated successful-result caching, with cache disable support.",
+  "source_sha256": {
+    "interaction.py": "eb9f44eda4d86ccd58720da50e19cad62e26a31c3f009028c336b8c35eef3695",
+    "test_interaction.py": "b7d817529b3a71a4c87756caa01bcd318e280fcf69828d376b64ba4a03face88"
+  },
+  "validation": {
+    "unittest_tests": 15,
+    "passed": true
+  },
+  "comparison": {
+    "identical_requests": 2,
+    "uncached_executor_calls": 2,
+    "new_executor_calls": 1,
+    "scope_target_function_namespace_changes": "distinct keys"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Conservative exact-input deduplication only; runner is sequential and caching is inappropriate for fresh stochastic runs."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

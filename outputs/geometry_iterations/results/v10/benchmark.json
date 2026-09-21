@@ -1,0 +1,348 @@
+{
+  "version": 10,
+  "repetitions": 3,
+  "rows": [
+    {
+      "case": "weak_linear",
+      "q": [
+        0,
+        "1/2"
+      ],
+      "k": 1,
+      "max_modes": 24,
+      "tolerance": "1/10000000000",
+      "method": "fixed_grid",
+      "baseline": "V5",
+      "status": "target_met",
+      "visited_modes": [
+        4
+      ],
+      "exact_width": "2646786927427/175921860444160000000000",
+      "median_seconds": 0.0013472910000000005,
+      "samples": [
+        0.0020071660000000047,
+        0.001301874999999994,
+        0.0013472910000000005
+      ]
+    },
+    {
+      "case": "weak_linear",
+      "q": [
+        0,
+        "1/2"
+      ],
+      "k": 1,
+      "max_modes": 24,
+      "tolerance": "1/10000000000",
+      "method": "adaptive",
+      "baseline": "V5",
+      "status": "target_met",
+      "visited_modes": [
+        4
+      ],
+      "exact_width": "2646786927427/175921860444160000000000",
+      "median_seconds": 0.0015746660000000023,
+      "samples": [
+        0.0017109590000000119,
+        0.0015746660000000023,
+        0.001566790999999998
+      ]
+    },
+    {
+      "case": "cubic",
+      "q": [
+        2,
+        -7,
+        12,
+        -3
+      ],
+      "k": 1,
+      "max_modes": 28,
+      "tolerance": "1/10000000000",
+      "method": "fixed_grid",
+      "baseline": "V5",
+      "status": "target_met",
+      "visited_modes": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "exact_width": "299100336111/5497558138880000000000",
+      "median_seconds": 0.03704162500000001,
+      "samples": [
+        0.037656041,
+        0.03704162500000001,
+        0.03701558299999999
+      ]
+    },
+    {
+      "case": "cubic",
+      "q": [
+        2,
+        -7,
+        12,
+        -3
+      ],
+      "k": 1,
+      "max_modes": 28,
+      "tolerance": "1/10000000000",
+      "method": "adaptive",
+      "baseline": "V5",
+      "status": "target_met",
+      "visited_modes": [
+        4,
+        6,
+        12
+      ],
+      "exact_width": "137956531597/10995116277760000000000",
+      "median_seconds": 0.03633558299999995,
+      "samples": [
+        0.03625837499999998,
+        0.036385792,
+        0.03633558299999995
+      ]
+    },
+    {
+      "case": "asymmetric_quartic",
+      "q": [
+        5,
+        8,
+        -70,
+        2,
+        4
+      ],
+      "k": 2,
+      "max_modes": 28,
+      "tolerance": "1/10000000000",
+      "method": "fixed_grid",
+      "baseline": "V5",
+      "status": "target_met",
+      "visited_modes": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "exact_width": "9771575217/687194767360000000000",
+      "median_seconds": 0.14303566700000003,
+      "samples": [
+        0.14303566700000003,
+        0.14336091699999998,
+        0.1426075
+      ]
+    },
+    {
+      "case": "asymmetric_quartic",
+      "q": [
+        5,
+        8,
+        -70,
+        2,
+        4
+      ],
+      "k": 2,
+      "max_modes": 28,
+      "tolerance": "1/10000000000",
+      "method": "adaptive",
+      "baseline": "V5",
+      "status": "target_met",
+      "visited_modes": [
+        4,
+        6,
+        14,
+        16
+      ],
+      "exact_width": "9771575217/687194767360000000000",
+      "median_seconds": 0.10197391600000005,
+      "samples": [
+        0.10275275000000006,
+        0.10197391600000005,
+        0.10112487499999989
+      ]
+    },
+    {
+      "case": "even_sextic",
+      "q": [
+        0,
+        0,
+        -40,
+        0,
+        10,
+        0,
+        2
+      ],
+      "k": 3,
+      "max_modes": 28,
+      "tolerance": "1/10000000000",
+      "method": "fixed_grid",
+      "baseline": "V6",
+      "status": "target_met",
+      "visited_modes": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "exact_width": "24166106467/687194767360000000000",
+      "median_seconds": 0.07680375000000006,
+      "samples": [
+        0.07685583299999998,
+        0.076172833,
+        0.07680375000000006
+      ]
+    },
+    {
+      "case": "even_sextic",
+      "q": [
+        0,
+        0,
+        -40,
+        0,
+        10,
+        0,
+        2
+      ],
+      "k": 3,
+      "max_modes": 28,
+      "tolerance": "1/10000000000",
+      "method": "adaptive",
+      "baseline": "V6",
+      "status": "target_met",
+      "visited_modes": [
+        5,
+        7,
+        13
+      ],
+      "exact_width": "24166106467/687194767360000000000",
+      "median_seconds": 0.054306125000000094,
+      "samples": [
+        0.054535250000000035,
+        0.054306125000000094,
+        0.05389212499999996
+      ]
+    },
+    {
+      "case": "near_pair",
+      "q": [
+        0,
+        "1/10000",
+        -150
+      ],
+      "k": 2,
+      "max_modes": 28,
+      "tolerance": "1/10000000000",
+      "method": "fixed_grid",
+      "baseline": "V5",
+      "status": "target_met",
+      "visited_modes": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "exact_width": "1327886537/42949672960000000000",
+      "median_seconds": 0.083060417,
+      "samples": [
+        0.08361658299999997,
+        0.08262508300000015,
+        0.083060417
+      ]
+    },
+    {
+      "case": "near_pair",
+      "q": [
+        0,
+        "1/10000",
+        -150
+      ],
+      "k": 2,
+      "max_modes": 28,
+      "tolerance": "1/10000000000",
+      "method": "adaptive",
+      "baseline": "V5",
+      "status": "target_met",
+      "visited_modes": [
+        4,
+        6,
+        14,
+        22
+      ],
+      "exact_width": "4324264171/343597383680000000000",
+      "median_seconds": 0.04754741600000001,
+      "samples": [
+        0.04784495799999999,
+        0.0469519169999999,
+        0.04754741600000001
+      ]
+    },
+    {
+      "case": "budget_failure",
+      "q": [
+        0,
+        40,
+        -400,
+        0,
+        5
+      ],
+      "k": 1,
+      "max_modes": 12,
+      "tolerance": "1/10000000000",
+      "method": "fixed_grid",
+      "baseline": "V5",
+      "status": "target_not_met",
+      "visited_modes": [
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "exact_width": "22600440309491949037/42949672960000000000",
+      "median_seconds": 0.07772666699999986,
+      "samples": [
+        0.07809545799999995,
+        0.077326958,
+        0.07772666699999986
+      ]
+    },
+    {
+      "case": "budget_failure",
+      "q": [
+        0,
+        40,
+        -400,
+        0,
+        5
+      ],
+      "k": 1,
+      "max_modes": 12,
+      "tolerance": "1/10000000000",
+      "method": "adaptive",
+      "baseline": "V5",
+      "status": "target_not_met",
+      "visited_modes": [
+        4,
+        6,
+        12
+      ],
+      "exact_width": "22600440309491949037/42949672960000000000",
+      "median_seconds": 0.0557125420000002,
+      "samples": [
+        0.056051249999999886,
+        0.0557125420000002,
+        0.0555389169999998
+      ]
+    }
+  ],
+  "case_selection": "New fixed potentials after the scheduling rule was written; no tuning on these results. Small diagnostic suite, not a broad performance guarantee."
+}

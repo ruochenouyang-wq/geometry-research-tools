@@ -1,0 +1,99 @@
+[
+  {
+    "callable": "wide_potential.cheap_ground_enclosure; wide_potential.verify_cheap_ground",
+    "capability": "Cheap certified full-sphere ground enclosure for rational potentials through degree 24",
+    "evidence": [
+      "round03/results/certs/degree24_cheap_mean_zero.json",
+      "round03/results/certs/degree24_cheap_unconstrained.json",
+      "round03/results/certs/constant_cheap_exact.json"
+    ],
+    "outcome": "q=t^24 mean-zero ground in [2,451/225], unconstrained ground in [0,1/25]; real harmonic Rayleigh upper and whole-domain lower, both independently replayed",
+    "version": 115
+  },
+  {
+    "callable": "wide_potential.q_times_basis; wide_potential.assemble",
+    "capability": "Complete broad-band associated-Legendre multiplication and assembly",
+    "evidence": [
+      "round03/results/certs/associated_degree12_assembly.json"
+    ],
+    "outcome": "Intermediate degrees retained; projected matrix and analytic moments agree",
+    "version": 116
+  },
+  {
+    "callable": "wide_potential.sturm_range; wide_potential.verify_range",
+    "capability": "Whole-domain Sturm polynomial range evidence",
+    "evidence": [
+      "round03/results/certs/degree12_sturm_range.json"
+    ],
+    "outcome": "t^12 range exactly [0,1], independent replay",
+    "version": 117
+  },
+  {
+    "callable": "wide_potential.bernstein_range; wide_potential.potential_range",
+    "capability": "Bounded-cost Bernstein enclosure and explicit range strategy dispatch",
+    "evidence": [
+      "round03/results/certs/asymmetric_degree12_bernstein_range.json"
+    ],
+    "outcome": "Degree-based cost heuristic chooses Bernstein for degree 12",
+    "version": 118
+  },
+  {
+    "callable": "wide_potential.reuse_range; wide_potential.range_bounds",
+    "capability": "Input-bound reusable range evidence without a new extrema search",
+    "evidence": [
+      "round03/results/certs/reused_sturm_sector.json"
+    ],
+    "outcome": "Replayed Sturm certificate with search functions disabled",
+    "version": 119
+  },
+  {
+    "callable": "wide_potential.kernel_certificate; wide_potential.verify_kernel",
+    "capability": "Wide-band Schur kernel with all tail columns and associated masses",
+    "evidence": [
+      "round03/results/certs/degree24_schur_kernel.json"
+    ],
+    "outcome": "All 24 omitted coupling degrees retained for a degree 24 multiplier",
+    "version": 120
+  },
+  {
+    "callable": "wide_potential.certify_sector; wide_potential.verify_sector",
+    "capability": "Certified high-degree azimuth-sector spectrum",
+    "evidence": [
+      "round03/results/certs/degree12_sector.json"
+    ],
+    "outcome": "Degree 12 sector certified with dense exact verifier",
+    "version": 121
+  },
+  {
+    "callable": "wide_potential.full_ground; wide_potential.verify_full",
+    "capability": "Full mean-zero sphere combination including all angular tail sectors",
+    "evidence": [
+      "round03/results/certs/degree12_full.json",
+      "round03/results/certs/asymmetric_degree12_full.json",
+      "round03/results/certs/finite_budget_open.json",
+      "round03/results/certs/quadratic_cross_new.json"
+    ],
+    "outcome": "Global bounds certified; finite budgets may retain an open gap",
+    "version": 122
+  },
+  {
+    "callable": "wide_potential.exponential_approximation; wide_potential.verify_approximation",
+    "capability": "Uniform rational Taylor enclosure of exp(a*t), |a|<=3, degree<=24",
+    "evidence": [
+      "round03/results/certs/exp_t_taylor.json"
+    ],
+    "outcome": "Remainder recomputed from a and degree; classical exp assumptions explicit",
+    "version": 123
+  },
+  {
+    "callable": "wide_potential.exponential_ground; wide_potential.perturb_certificate; wide_potential.verify_exponential",
+    "capability": "Original exponential-potential spectrum via uniform minmax perturbation",
+    "evidence": [
+      "round03/results/certs/exp_plus.json",
+      "round03/results/certs/exp_minus.json",
+      "round03/results/certs/tampered_delta_rejected.json"
+    ],
+    "outcome": "Original exp potentials bound; reflection intervals identical; zeroed delta rejected",
+    "version": 124
+  }
+]

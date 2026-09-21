@@ -1,0 +1,58 @@
+{
+  "failure_cause": "General moments previously acted on one real m component; adding a global quantifier was unsupported. The old value near 6 is correct only in the separately declared axisymmetric subspace.",
+  "old_axisymmetric_certificate": "C12/baseline/axisymmetric_only.json",
+  "old_axisymmetric_decimal_enclosure": [
+    "5.999999999993",
+    "6.000000000000"
+  ],
+  "old_axisymmetric_scope": "single_real_cosine_azimuth_component_only",
+  "old_full_request": {
+    "cutoff": -1,
+    "m": 0,
+    "op": "constraints",
+    "q": [
+      "0"
+    ],
+    "rows": [
+      [
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "scope": "all_real_H1_functions_on_unit_S2",
+    "threshold": "2"
+  },
+  "old_full_response": {
+    "exception": "ValueError",
+    "message": "Unknown fields for constraints",
+    "status": "rejected"
+  },
+  "original_case": {
+    "acceptance": [
+      "In the full sphere the ground is exactly 2, with admissible x and y.",
+      "For the separately declared axisymmetric space the same constraints give ground 6; scope binding must distinguish the two."
+    ],
+    "category": 6,
+    "frozen_v94_baseline": "No extra-constraint API; full and axisymmetric meanings must not be conflated.",
+    "id": "C12",
+    "input": {
+      "orthogonality": [
+        "1",
+        "z"
+      ],
+      "q": [
+        "0"
+      ]
+    },
+    "origin": "exact_calibration",
+    "source_ids": [
+      "sphere"
+    ],
+    "status": "fixed_challenge_not_claimed_solved",
+    "title": "只删除常数和z仍保留横向模"
+  },
+  "retested_utc": "2026-09-11T14:36:16.813977+00:00"
+}

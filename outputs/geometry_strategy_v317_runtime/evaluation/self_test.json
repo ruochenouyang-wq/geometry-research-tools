@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "name": "BaseException alarm not swallowed by except Exception",
+      "passed": true
+    },
+    {
+      "name": "Non-main-thread evaluation rejected",
+      "passed": true
+    },
+    {
+      "name": "Real exact constant certificate independently accepted",
+      "passed": true
+    },
+    {
+      "name": "Correct proof of wrong original task rejected",
+      "passed": true
+    },
+    {
+      "name": "Wrong conclusion kind rejected",
+      "passed": true
+    },
+    {
+      "name": "Forged status, wrong original space/function, impossible bound rejected",
+      "passed": true
+    },
+    {
+      "name": "Timed-out solver never counted successful; partial attempt retained",
+      "passed": true
+    },
+    {
+      "name": "Independent replay charged to same whole-task deadline",
+      "passed": true
+    },
+    {
+      "name": "Unknown format cannot use solver success flags",
+      "passed": true
+    },
+    {
+      "name": "Old private seed cannot be read by helper",
+      "passed": true
+    },
+    {
+      "name": "Known-task duplicates retained and labelled, never resampled",
+      "passed": true
+    },
+    {
+      "name": "first_release loads its frozen file, not same-name new source",
+      "passed": true
+    },
+    {
+      "name": "Loading a second release version in the same interpreter is rejected",
+      "passed": true
+    },
+    {
+      "name": "Missing explicit release authorization rejected before seed read",
+      "passed": true
+    },
+    {
+      "name": "Wrong freeze authorization rejected before seed read",
+      "passed": true
+    },
+    {
+      "name": "Gate tests created no holdout",
+      "passed": true
+    }
+  ],
+  "created_utc": "2026-09-19T23:48:57.588418+00:00",
+  "holdout_generated_or_read": false,
+  "old_private_seed_read": false,
+  "passed": 16,
+  "timeout_probe": {
+    "cpu_seconds": 5.300000000000443e-05,
+    "error_type": "EvaluationTimeout",
+    "execution_ok": false,
+    "hard_timeout_enforced": true,
+    "reason": "whole-stage wall budget exhausted",
+    "timed_out": true,
+    "wall_seconds": 0.03454270795919001
+  }
+}

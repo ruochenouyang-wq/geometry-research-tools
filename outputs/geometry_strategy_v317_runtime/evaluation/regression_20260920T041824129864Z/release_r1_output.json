@@ -1,0 +1,1929 @@
+{
+  "actual_model_identity": null,
+  "actual_model_usage": null,
+  "cache_condition": "cold interpreter per session, session-local caches permitted",
+  "complete": true,
+  "configuration": null,
+  "expected_cases": [
+    "OLD_H01",
+    "OLD_H02",
+    "OLD_H03",
+    "OLD_H04",
+    "OLD_H05",
+    "OLD_H06"
+  ],
+  "first_task_case_id": "OLD_H02",
+  "first_task_latency_seconds": 0.05461591691710055,
+  "implementation_root": "/PROJECT/outputs/geometry_strategy_v317_runtime",
+  "max_rss_native_units": 38010880,
+  "max_rss_unit": "bytes",
+  "method": "release",
+  "process": {
+    "cpu_seconds": 0.10999299999999983,
+    "parent_watchdog_timeout": false,
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "",
+    "wall_seconds": 0.11190762498881668
+  },
+  "release_modules_loaded": {
+    "release_backend": "/PROJECT/outputs/geometry_strategy_v317_runtime/release_backend.py",
+    "release_service": "/PROJECT/outputs/geometry_strategy_v317_runtime/release_service.py",
+    "request_runtime": "/PROJECT/outputs/geometry_strategy_v317_runtime/request_runtime.py"
+  },
+  "reliability_probes": [
+    {
+      "accepted": false,
+      "case_id": "OLD_H02",
+      "execution": {
+        "cpu_seconds": 1.2999999999999123e-05,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "response": {
+          "certificate_valid": false,
+          "reason": "original_function_mismatch",
+          "target_met": false
+        },
+        "timed_out": false,
+        "wall_seconds": 1.2833974324166775e-05
+      },
+      "kind": "spectrum",
+      "mutation": "wrong_original_function"
+    },
+    {
+      "accepted": false,
+      "case_id": "OLD_H02",
+      "execution": {
+        "cpu_seconds": 9.000000000009e-06,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "response": {
+          "certificate_valid": false,
+          "reason": "original_space_mismatch",
+          "target_met": false
+        },
+        "timed_out": false,
+        "wall_seconds": 8.792034350335598e-06
+      },
+      "kind": "spectrum",
+      "mutation": "wrong_original_space"
+    },
+    {
+      "accepted": false,
+      "case_id": "OLD_H02",
+      "execution": {
+        "cpu_seconds": 5.2999999999997494e-05,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "response": {
+          "certificate_valid": false,
+          "reason": "independent_replay_rejected",
+          "target_met": false
+        },
+        "timed_out": false,
+        "wall_seconds": 5.2416929975152016e-05
+      },
+      "kind": "spectrum",
+      "mutation": "impossible_bound"
+    },
+    {
+      "accepted": false,
+      "case_id": "OLD_H02",
+      "execution": {
+        "cpu_seconds": 2.6999999999999247e-05,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "response": {
+          "certificate_valid": false,
+          "reason": "independent_replay_rejected",
+          "target_met": false
+        },
+        "timed_out": false,
+        "wall_seconds": 2.687494270503521e-05
+      },
+      "kind": "spectrum",
+      "mutation": "status_only_forgery"
+    },
+    {
+      "accepted": false,
+      "case_id": "OLD_H03",
+      "execution": {
+        "cpu_seconds": 7.999999999994123e-06,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "response": {
+          "certificate_valid": false,
+          "reason": "original_function_mismatch",
+          "target_met": false
+        },
+        "timed_out": false,
+        "wall_seconds": 7.708906196057796e-06
+      },
+      "kind": "approximation",
+      "mutation": "wrong_original_function"
+    },
+    {
+      "accepted": false,
+      "case_id": "OLD_H03",
+      "execution": {
+        "cpu_seconds": 5.8000000000002494e-05,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "response": {
+          "certificate_valid": false,
+          "reason": "independent_replay_rejected",
+          "target_met": false
+        },
+        "timed_out": false,
+        "wall_seconds": 5.7333032600581646e-05
+      },
+      "kind": "approximation",
+      "mutation": "impossible_bound"
+    },
+    {
+      "accepted": false,
+      "case_id": "OLD_H03",
+      "execution": {
+        "cpu_seconds": 2.4999999999997247e-05,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "response": {
+          "certificate_valid": false,
+          "reason": "independent_replay_rejected",
+          "target_met": false
+        },
+        "timed_out": false,
+        "wall_seconds": 2.4250010028481483e-05
+      },
+      "kind": "approximation",
+      "mutation": "status_only_forgery"
+    }
+  ],
+  "repetition": 1,
+  "result_file": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260920T041824129864Z/release_r1_output.json",
+  "rows": [
+    {
+      "accounted_cpu_seconds": 0.0039949999999999986,
+      "accounted_wall_seconds": 0.003994707949459553,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "spectral_interval_width",
+        "reason": "replayed",
+        "target_met": true,
+        "tolerance": "1/1000",
+        "value": "0"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "spectral_interval_width",
+            "reason": "replayed",
+            "target_met": true,
+            "tolerance": "1/1000",
+            "value": "0"
+          },
+          "configuration": "method_default",
+          "execution_ok": true,
+          "replay_cpu_seconds": 6.299999999999362e-05,
+          "replay_wall_seconds": 6.308406591415405e-05,
+          "response": {
+            "attempts": [],
+            "budget_scope": "whole_service_call_including_replay_and_storage; cooperative",
+            "certificate": {
+              "eigenvalue_index": 1,
+              "exact_width": "0",
+              "formal_proof_assistant_checked": false,
+              "format": "geometry_proof_transport_v1",
+              "full_infinite_space_covered": true,
+              "function": {
+                "amplitude": "0",
+                "axis": 2,
+                "kind": "axis_profile",
+                "offset": "-3/7",
+                "profile": "step"
+              },
+              "geometry": "unit_S2",
+              "kind": "spectrum",
+              "lower": "11/7",
+              "mean_zero": true,
+              "measure": "d_sigma/(4*pi)_on_unit_S2",
+              "operation": "constant_spectrum",
+              "parameters": {
+                "function": {
+                  "amplitude": "0",
+                  "axis": 2,
+                  "kind": "axis_profile",
+                  "offset": "-3/7",
+                  "profile": "step"
+                },
+                "mean_zero": true
+              },
+              "scope": "all_real_mean_zero_H1_on_unit_S2",
+              "sources": [],
+              "upper": "11/7"
+            },
+            "certificate_valid": true,
+            "cost": {
+              "elapsed_seconds": 3.233295865356922e-05,
+              "solver_calls": 0
+            },
+            "execution_ok": true,
+            "function": {
+              "amplitude": "0",
+              "axis": 2,
+              "kind": "axis_profile",
+              "offset": "-3/7",
+              "profile": "step"
+            },
+            "kind": "spectrum",
+            "ok": true,
+            "quantity": "spectral_interval_width",
+            "replay_reuse": {
+              "canonical_key_bytes": 916,
+              "enabled": true,
+              "entries": 1,
+              "hits": 0,
+              "key_seconds": 1.879199407994747e-05,
+              "memory_limit_scope": "canonical keys, excludes Python object overhead",
+              "misses": 1,
+              "rejected": 0,
+              "replay_seconds": 5.050003528594971e-05,
+              "requests": 1,
+              "scope": "current request only; complete content and bindings; successful replays only",
+              "storage_skips": 0,
+              "timing_note": "Nested checker times overlap; use complete service/evaluator elapsed time for totals.",
+              "uncacheable": 0,
+              "version": "geometry-v317-runtime:25c0b24827c4381311af89eaaadc0321b276f62c2737ead302d3af5ff44114ed"
+            },
+            "route": "exact_constant_spectrum",
+            "status": "target_met",
+            "target_met": true,
+            "tolerance": "1/1000",
+            "total_elapsed_seconds": 0.003880999982357025,
+            "value": "0",
+            "within_budget": true
+          },
+          "solver_cpu_seconds": 0.0038949999999999957,
+          "solver_wall_seconds": 0.0038943750550970435
+        }
+      ],
+      "budget_seconds": 3.0,
+      "case_id": "OLD_H02",
+      "classification": "old_disclosed_holdout_now_regression",
+      "execution": {
+        "cpu_seconds": 0.0039949999999999986,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.003994707949459553
+      },
+      "family": "old_disclosed_regression",
+      "last_stage": "serialization_and_selection",
+      "method": "release",
+      "selected_attempt": 0,
+      "success": true,
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "-3/7",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.0030989999999999907,
+      "accounted_wall_seconds": 0.0031062079360708594,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "function_L2_error_upper",
+        "reason": "replayed",
+        "target_met": true,
+        "tolerance": "1/1000000",
+        "value": "0"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "function_L2_error_upper",
+            "reason": "replayed",
+            "target_met": true,
+            "tolerance": "1/1000000",
+            "value": "0"
+          },
+          "configuration": "method_default",
+          "execution_ok": true,
+          "replay_cpu_seconds": 5.8999999999989616e-05,
+          "replay_wall_seconds": 5.9959013015031815e-05,
+          "response": {
+            "attempts": [],
+            "certificate": {
+              "axis_zero_convention": "step(0)=0; singular_power(0)=0 as an a.e. representative",
+              "bound_statement": "probability_L2_norm(original_function-piecewise_model)<=error_upper",
+              "cells": [
+                {
+                  "left": "-1",
+                  "polynomial_in_t": [
+                    "0"
+                  ],
+                  "right": "0"
+                },
+                {
+                  "left": "0",
+                  "polynomial_in_t": [
+                    "3/7"
+                  ],
+                  "right": "1"
+                }
+              ],
+              "degree": 0,
+              "endpoint_convention": "at nonzero seams choose the cell starting at abs(t); final endpoint included",
+              "error_squared": "0",
+              "error_upper": "0",
+              "expanded_polynomial_coefficient_slots": 2,
+              "formal_assistant_checked": false,
+              "format": "sphere_structured_piecewise_L2_v1",
+              "function": {
+                "amplitude": "3/7",
+                "axis": 2,
+                "kind": "axis_profile",
+                "offset": "0",
+                "profile": "step"
+              },
+              "global_polynomial": false,
+              "levels": 1,
+              "norm": "L2_probability",
+              "representation": "two_halves_with_separate_value_at_zero",
+              "root_ratio": "1/2",
+              "scope": "unit_S2_probability_measure",
+              "shape_coefficient_count": 2,
+              "shape_proof": null,
+              "shape_rule": "t=R^4*x scales centered profile coefficients by 1/R and squared residual integral by R^2",
+              "source_norm_squared": "9/98",
+              "source_value_at_axis_zero": "0",
+              "spectral_transfer_claimed": false,
+              "sqrt_bits": 40,
+              "sqrt_upper_squared": "0"
+            },
+            "certificate_valid": true,
+            "cost": {
+              "certificate_builds": 1,
+              "certificate_replays": 1,
+              "level_comparisons": 0,
+              "planning_cache_supplied": true,
+              "shape_cache_hits": 0,
+              "shape_evaluations": 0,
+              "shape_requests": 0
+            },
+            "diagnostics": {
+              "selection": "exact_step"
+            },
+            "execution_ok": true,
+            "format": "adaptive_piecewise_search_v1",
+            "function": {
+              "amplitude": "3/7",
+              "axis": 2,
+              "kind": "axis_profile",
+              "offset": "0",
+              "profile": "step"
+            },
+            "kind": "approximation",
+            "ok": true,
+            "quantity": "function_L2_error_upper",
+            "replay_reuse": {
+              "canonical_key_bytes": 1441,
+              "enabled": true,
+              "entries": 1,
+              "hits": 0,
+              "key_seconds": 1.6040983609855175e-05,
+              "memory_limit_scope": "canonical keys, excludes Python object overhead",
+              "misses": 1,
+              "rejected": 0,
+              "replay_seconds": 4.383397754281759e-05,
+              "requests": 1,
+              "scope": "current request only; complete content and bindings; successful replays only",
+              "storage_skips": 0,
+              "timing_note": "Nested checker times overlap; use complete service/evaluator elapsed time for totals.",
+              "uncacheable": 0,
+              "version": "geometry-v317-runtime:25c0b24827c4381311af89eaaadc0321b276f62c2737ead302d3af5ff44114ed"
+            },
+            "route": "automatic_function_approximation",
+            "spectral_transfer_claimed": false,
+            "status": "target_met",
+            "target_met": true,
+            "tolerance": "1/1000000",
+            "total_elapsed_seconds": 0.003005083999596536,
+            "value": "0"
+          },
+          "solver_cpu_seconds": 0.0030050000000000077,
+          "solver_wall_seconds": 0.0030127500649541616
+        }
+      ],
+      "budget_seconds": 3.0,
+      "case_id": "OLD_H03",
+      "classification": "old_disclosed_holdout_now_regression",
+      "execution": {
+        "cpu_seconds": 0.0030989999999999907,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.0031062079360708594
+      },
+      "family": "old_disclosed_regression",
+      "last_stage": "serialization_and_selection",
+      "method": "release",
+      "selected_attempt": 0,
+      "success": true,
+      "task": {
+        "function": {
+          "amplitude": "3/7",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "approximation",
+        "tolerance": "1/1000000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.005677999999999989,
+      "accounted_wall_seconds": 0.005677958019077778,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "spectral_interval_width",
+        "reason": "replayed",
+        "target_met": true,
+        "tolerance": "1/1000",
+        "value": "36977063/60129542144"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "spectral_interval_width",
+            "reason": "replayed",
+            "target_met": true,
+            "tolerance": "1/1000",
+            "value": "36977063/60129542144"
+          },
+          "configuration": "method_default",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.0006030000000000063,
+          "replay_wall_seconds": 0.0006030830554664135,
+          "response": {
+            "attempts": [
+              {
+                "action": {
+                  "bits": 20,
+                  "function": {
+                    "amplitude": "2/7",
+                    "axis": 2,
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "step"
+                  },
+                  "max_m": 2,
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "op": "spectrum",
+                  "route": "spectrum",
+                  "tolerance": "1/1000"
+                },
+                "best_metric": "36977063/60129542144",
+                "diagnosis": {
+                  "angular_tail_lower": "6",
+                  "best_upper_m": 1,
+                  "bottleneck": "radial_sector",
+                  "evidence": "exact_minimum_of_proven_bounds",
+                  "hypothesis": "Radial sector width mixes representation, tail inequality and endpoint resolution; these causes are not strictly separated",
+                  "kind": "spectral_lower_budget",
+                  "limiting_m": [
+                    1
+                  ],
+                  "sector_min_lower": "128596559449/60129542144"
+                },
+                "diagnosis_seconds": 1.0709045454859734e-05,
+                "elapsed_seconds": 0.0023188330233097076,
+                "meaningful_gain": true,
+                "metric": "36977063/60129542144",
+                "solver_seconds": 0.00164583302102983,
+                "verification_seconds": 0.0006186250830069184,
+                "verified": true,
+                "work_units_charged": 960
+              }
+            ],
+            "budget_scope": "whole_service_call_including_replay_and_storage; cooperative",
+            "certificate": {
+              "angular_form_bound": {
+                "energy_factor": "1",
+                "mass_offset": "0",
+                "measure": "d_sigma/(4*pi)_on_unit_S2",
+                "method": "pointwise_step",
+                "pointwise_lower": "0"
+              },
+              "angular_tail_cannot_improve_best_upper": true,
+              "angular_tail_lower": "6",
+              "eigenvalue_index": 1,
+              "exact_width": "36977063/60129542144",
+              "formal_proof_assistant_checked": false,
+              "format": "direct_axis_moment_full_v1",
+              "full_infinite_space_covered": true,
+              "function": {
+                "amplitude": "2/7",
+                "axis": 2,
+                "kind": "axis_profile",
+                "offset": "0",
+                "profile": "step"
+              },
+              "function_approximation_error": "0",
+              "geometry": "unit_S2",
+              "lower": "128596559449/60129542144",
+              "mean_zero": true,
+              "measure": "d_sigma/(4*pi)_on_unit_S2",
+              "omitted_azimuth_m_start": 2,
+              "original_function_moments_exact": true,
+              "scope": "all_real_mean_zero_H1_on_unit_S2",
+              "sectors": [
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 0,
+                  "eigenvalue_index": 1,
+                  "exact_width": "579855/17179869184",
+                  "form_bound": {
+                    "energy_factor": "1",
+                    "mass_offset": "0",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "pointwise_step",
+                    "pointwise_lower": "0"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "2/7",
+                    "axis": 2,
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "step"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "10/7",
+                        "1/28"
+                      ],
+                      [
+                        "1/28",
+                        "86/35"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "1/4704",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "1/160"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "4/147",
+                        "1/98"
+                      ],
+                      [
+                        "1/98",
+                        "4/245"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "2/21",
+                        "1/28"
+                      ],
+                      [
+                        "1/28",
+                        "2/35"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "2/3",
+                      "2/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": {
+                      "column": [
+                        "1/7",
+                        "0"
+                      ],
+                      "mass": "2"
+                    }
+                  },
+                  "lower": "36792903409/17179869184",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "remove_l0",
+                  "radial_tail_lower": "12",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "12",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 40,
+                  "upper": "35089/16384",
+                  "upper_inertia": [
+                    1,
+                    0,
+                    1
+                  ]
+                },
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 1,
+                  "eigenvalue_index": 1,
+                  "exact_width": "36977063/60129542144",
+                  "form_bound": {
+                    "energy_factor": "1",
+                    "mass_offset": "0",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "pointwise_step",
+                    "pointwise_lower": "0"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "2/7",
+                    "axis": 2,
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "step"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "20/7",
+                        "3/14"
+                      ],
+                      [
+                        "3/14",
+                        "516/35"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "19/2352",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "57/3920"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "8/147",
+                        "3/49"
+                      ],
+                      [
+                        "3/49",
+                        "24/245"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "4/21",
+                        "3/14"
+                      ],
+                      [
+                        "3/14",
+                        "12/35"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "4/3",
+                      "12/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": null
+                  },
+                  "lower": "128596559449/60129542144",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "none",
+                  "radial_tail_lower": "12",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "12",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 40,
+                  "upper": "245349/114688",
+                  "upper_inertia": [
+                    1,
+                    0,
+                    1
+                  ]
+                }
+              ],
+              "status": "target_met",
+              "tolerance": "1/1000",
+              "upper": "245349/114688"
+            },
+            "certificate_valid": true,
+            "cost": {
+              "backend_model_tokens": null,
+              "controller_model_calls": 0,
+              "controller_overhead_seconds": 0.0026431658770889044,
+              "diagnosis_seconds": 1.0709045454859734e-05,
+              "elapsed_seconds": 0.0049183330265805125,
+              "failed_attempts": 0,
+              "reported_backend_attempts": 0,
+              "solver_calls": 1,
+              "solver_seconds": 0.00164583302102983,
+              "unreported_backend_work_included_in_wall_time": true,
+              "verification_seconds": 0.0006186250830069184,
+              "verified_attempts": 1,
+              "wall_budget_is_cooperative": true,
+              "work_is_proxy_not_runtime": true,
+              "work_units_charged": 960
+            },
+            "diagnosis": {
+              "angular_tail_lower": "6",
+              "best_upper_m": 1,
+              "bottleneck": "radial_sector",
+              "evidence": "exact_minimum_of_proven_bounds",
+              "hypothesis": "Radial sector width mixes representation, tail inequality and endpoint resolution; these causes are not strictly separated",
+              "kind": "spectral_lower_budget",
+              "limiting_m": [
+                1
+              ],
+              "sector_min_lower": "128596559449/60129542144"
+            },
+            "execution_ok": true,
+            "function": {
+              "amplitude": "2/7",
+              "axis": 2,
+              "kind": "axis_profile",
+              "offset": "0",
+              "profile": "step"
+            },
+            "initial_route_policy": "direct_first_for_loose_target",
+            "kind": "spectrum",
+            "mathematical_target_met": true,
+            "ok": true,
+            "quantity": "spectral_interval_width",
+            "rejected_actions": [],
+            "replay_reuse": {
+              "canonical_key_bytes": 3372,
+              "enabled": true,
+              "entries": 1,
+              "hits": 1,
+              "key_seconds": 7.554201874881983e-05,
+              "memory_limit_scope": "canonical keys, excludes Python object overhead",
+              "misses": 1,
+              "rejected": 0,
+              "replay_seconds": 0.0005542499711737037,
+              "requests": 2,
+              "scope": "current request only; complete content and bindings; successful replays only",
+              "storage_skips": 0,
+              "timing_note": "Nested checker times overlap; use complete service/evaluator elapsed time for totals.",
+              "uncacheable": 0,
+              "version": "geometry-v317-runtime:25c0b24827c4381311af89eaaadc0321b276f62c2737ead302d3af5ff44114ed"
+            },
+            "route": "evidence_driven_spectral_controller",
+            "route_comparison": {
+              "spectrum": {
+                "best_metric": "36977063/60129542144",
+                "stale_attempts": 0
+              }
+            },
+            "status": "target_met",
+            "stop_reason": "target_met",
+            "target_met": true,
+            "tolerance": "1/1000",
+            "total_elapsed_seconds": 0.005010582972317934,
+            "value": "36977063/60129542144",
+            "within_budget": true
+          },
+          "solver_cpu_seconds": 0.0050180000000000086,
+          "solver_wall_seconds": 0.005018458003178239
+        }
+      ],
+      "budget_seconds": 3.0,
+      "case_id": "OLD_H04",
+      "classification": "old_disclosed_holdout_now_regression",
+      "execution": {
+        "cpu_seconds": 0.005677999999999989,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.005677958019077778
+      },
+      "family": "old_disclosed_regression",
+      "last_stage": "serialization_and_selection",
+      "method": "release",
+      "selected_attempt": 0,
+      "success": true,
+      "task": {
+        "function": {
+          "amplitude": "2/7",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.00401399999999999,
+      "accounted_wall_seconds": 0.004022417007945478,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "spectral_interval_width",
+        "reason": "replayed",
+        "target_met": true,
+        "tolerance": "1/1000",
+        "value": "26051871639785/2594073385365405696"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "spectral_interval_width",
+            "reason": "replayed",
+            "target_met": true,
+            "tolerance": "1/1000",
+            "value": "26051871639785/2594073385365405696"
+          },
+          "configuration": "method_default",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.000893999999999992,
+          "replay_wall_seconds": 0.00089366699103266,
+          "response": {
+            "attempts": [
+              {
+                "action": {
+                  "bits": 20,
+                  "function": {
+                    "amplitude": "-1/6",
+                    "axis": 2,
+                    "exponent": "1/5",
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "abs_power"
+                  },
+                  "max_m": 2,
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "op": "spectrum",
+                  "route": "spectrum",
+                  "tolerance": "1/1000"
+                },
+                "best_metric": "26051871639785/2594073385365405696",
+                "diagnosis": {
+                  "angular_tail_lower": "28186519368527/4947802324992",
+                  "best_upper_m": 0,
+                  "bottleneck": "radial_sector",
+                  "evidence": "exact_minimum_of_proven_bounds",
+                  "hypothesis": "Radial sector width mixes representation, tail inequality and endpoint resolution; these causes are not strictly separated",
+                  "kind": "spectral_lower_budget",
+                  "limiting_m": [
+                    0
+                  ],
+                  "sector_min_lower": "4782796752395826967/2594073385365405696"
+                },
+                "diagnosis_seconds": 1.1415919288992882e-05,
+                "elapsed_seconds": 0.0028509580297395587,
+                "meaningful_gain": true,
+                "metric": "26051871639785/2594073385365405696",
+                "solver_seconds": 0.001863416051492095,
+                "verification_seconds": 0.0009266659617424011,
+                "verified": true,
+                "work_units_charged": 960
+              }
+            ],
+            "budget_scope": "whole_service_call_including_replay_and_storage; cooperative",
+            "certificate": {
+              "angular_form_bound": {
+                "center": "-5/36",
+                "embedding": {
+                  "domain": "all_real_H1_functions_on_unit_S2",
+                  "energy_coefficient": "1",
+                  "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                  "mass_coefficient": "1",
+                  "measure": "d_sigma/(4*pi)_on_unit_S2",
+                  "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                },
+                "energy_factor": "536849467633/549755813888",
+                "eta_upper": "12906346255/549755813888",
+                "mass_offset": "-803351883655/4947802324992",
+                "measure": "d_sigma/(4*pi)_on_unit_S2",
+                "method": "centered_probability_L2",
+                "sqrt_bits": 40,
+                "variance": "5/9072"
+              },
+              "angular_tail_cannot_improve_best_upper": true,
+              "angular_tail_lower": "28186519368527/4947802324992",
+              "eigenvalue_index": 1,
+              "exact_width": "26051871639785/2594073385365405696",
+              "formal_proof_assistant_checked": false,
+              "format": "direct_axis_moment_full_v1",
+              "full_infinite_space_covered": true,
+              "function": {
+                "amplitude": "-1/6",
+                "axis": 2,
+                "exponent": "1/5",
+                "kind": "axis_profile",
+                "offset": "0",
+                "profile": "abs_power"
+              },
+              "function_approximation_error": "0",
+              "geometry": "unit_S2",
+              "lower": "4782796752395826967/2594073385365405696",
+              "mean_zero": true,
+              "measure": "d_sigma/(4*pi)_on_unit_S2",
+              "omitted_azimuth_m_start": 2,
+              "original_function_moments_exact": true,
+              "scope": "all_real_mean_zero_H1_on_unit_S2",
+              "sectors": [
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 0,
+                  "eigenvalue_index": 1,
+                  "exact_width": "26051871639785/2594073385365405696",
+                  "form_bound": {
+                    "center": "-5/36",
+                    "embedding": {
+                      "domain": "all_real_H1_functions_on_unit_S2",
+                      "energy_coefficient": "1",
+                      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                      "mass_coefficient": "1",
+                      "measure": "d_sigma/(4*pi)_on_unit_S2",
+                      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                    },
+                    "energy_factor": "536849467633/549755813888",
+                    "eta_upper": "12906346255/549755813888",
+                    "mass_offset": "-803351883655/4947802324992",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "centered_probability_L2",
+                    "sqrt_bits": 40,
+                    "variance": "5/9072"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "-1/6",
+                    "axis": 2,
+                    "exponent": "1/5",
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "abs_power"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "59/48",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "43853/18720"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "5/78336",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "91265/556028928"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "5/306",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "55/6426"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-5/48",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "-215/3744"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "2/3",
+                      "2/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": {
+                      "column": [
+                        "0",
+                        "-5/288"
+                      ],
+                      "mass": "2"
+                    }
+                  },
+                  "lower": "4782796752395826967/2594073385365405696",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "remove_l0",
+                  "radial_tail_lower": "57176390620709/4947802324992",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "57176390620709/4947802324992",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 40,
+                  "upper": "59/32",
+                  "upper_inertia": [
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 1,
+                  "eigenvalue_index": 1,
+                  "exact_width": "37374563427859/648518346341351424",
+                  "form_bound": {
+                    "center": "-5/36",
+                    "embedding": {
+                      "domain": "all_real_H1_functions_on_unit_S2",
+                      "energy_coefficient": "1",
+                      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                      "mass_coefficient": "1",
+                      "measure": "d_sigma/(4*pi)_on_unit_S2",
+                      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                    },
+                    "energy_factor": "536849467633/549755813888",
+                    "eta_upper": "12906346255/549755813888",
+                    "mass_offset": "-803351883655/4947802324992",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "centered_probability_L2",
+                    "sqrt_bits": 40,
+                    "variance": "5/9072"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "-1/6",
+                    "axis": 2,
+                    "exponent": "1/5",
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "abs_power"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "359/144",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "14601/1040"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "2425/3290112",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "23275/79432704"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "25/1071",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "25/459"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-25/144",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "-75/208"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "4/3",
+                      "12/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": null
+                  },
+                  "lower": "1212556825106078189/648518346341351424",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "none",
+                  "radial_tail_lower": "57176390620709/4947802324992",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "57176390620709/4947802324992",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 40,
+                  "upper": "359/192",
+                  "upper_inertia": [
+                    0,
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "status": "target_met",
+              "tolerance": "1/1000",
+              "upper": "59/32"
+            },
+            "certificate_valid": true,
+            "cost": {
+              "backend_model_tokens": null,
+              "controller_model_calls": 0,
+              "controller_overhead_seconds": 0.00015816802624613047,
+              "diagnosis_seconds": 1.1415919288992882e-05,
+              "elapsed_seconds": 0.0029596659587696195,
+              "failed_attempts": 0,
+              "reported_backend_attempts": 0,
+              "solver_calls": 1,
+              "solver_seconds": 0.001863416051492095,
+              "unreported_backend_work_included_in_wall_time": true,
+              "verification_seconds": 0.0009266659617424011,
+              "verified_attempts": 1,
+              "wall_budget_is_cooperative": true,
+              "work_is_proxy_not_runtime": true,
+              "work_units_charged": 960
+            },
+            "diagnosis": {
+              "angular_tail_lower": "28186519368527/4947802324992",
+              "best_upper_m": 0,
+              "bottleneck": "radial_sector",
+              "evidence": "exact_minimum_of_proven_bounds",
+              "hypothesis": "Radial sector width mixes representation, tail inequality and endpoint resolution; these causes are not strictly separated",
+              "kind": "spectral_lower_budget",
+              "limiting_m": [
+                0
+              ],
+              "sector_min_lower": "4782796752395826967/2594073385365405696"
+            },
+            "execution_ok": true,
+            "function": {
+              "amplitude": "-1/6",
+              "axis": 2,
+              "exponent": "1/5",
+              "kind": "axis_profile",
+              "offset": "0",
+              "profile": "abs_power"
+            },
+            "initial_route_policy": "direct_first_for_loose_target",
+            "kind": "spectrum",
+            "mathematical_target_met": true,
+            "ok": true,
+            "quantity": "spectral_interval_width",
+            "rejected_actions": [],
+            "replay_reuse": {
+              "canonical_key_bytes": 4879,
+              "enabled": true,
+              "entries": 1,
+              "hits": 1,
+              "key_seconds": 9.049999061971903e-05,
+              "memory_limit_scope": "canonical keys, excludes Python object overhead",
+              "misses": 1,
+              "rejected": 0,
+              "replay_seconds": 0.0008465000428259373,
+              "requests": 2,
+              "scope": "current request only; complete content and bindings; successful replays only",
+              "storage_skips": 0,
+              "timing_note": "Nested checker times overlap; use complete service/evaluator elapsed time for totals.",
+              "uncacheable": 0,
+              "version": "geometry-v317-runtime:25c0b24827c4381311af89eaaadc0321b276f62c2737ead302d3af5ff44114ed"
+            },
+            "route": "evidence_driven_spectral_controller",
+            "route_comparison": {
+              "spectrum": {
+                "best_metric": "26051871639785/2594073385365405696",
+                "stale_attempts": 0
+              }
+            },
+            "status": "target_met",
+            "stop_reason": "target_met",
+            "target_met": true,
+            "tolerance": "1/1000",
+            "total_elapsed_seconds": 0.0030627090018242598,
+            "value": "26051871639785/2594073385365405696",
+            "within_budget": true
+          },
+          "solver_cpu_seconds": 0.00306300000000001,
+          "solver_wall_seconds": 0.0030709579586982727
+        }
+      ],
+      "budget_seconds": 3.0,
+      "case_id": "OLD_H05",
+      "classification": "old_disclosed_holdout_now_regression",
+      "execution": {
+        "cpu_seconds": 0.00401399999999999,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.004022417007945478
+      },
+      "family": "old_disclosed_regression",
+      "last_stage": "serialization_and_selection",
+      "method": "release",
+      "selected_attempt": 0,
+      "success": true,
+      "task": {
+        "function": {
+          "amplitude": "-1/6",
+          "axis": 2,
+          "exponent": "1/5",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.003925999999999999,
+      "accounted_wall_seconds": 0.003926540957763791,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "spectral_interval_width",
+        "reason": "replayed",
+        "target_met": true,
+        "tolerance": "1/1000",
+        "value": "87960325267135/1152921504606846976"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "spectral_interval_width",
+            "reason": "replayed",
+            "target_met": true,
+            "tolerance": "1/1000",
+            "value": "87960325267135/1152921504606846976"
+          },
+          "configuration": "method_default",
+          "execution_ok": true,
+          "replay_cpu_seconds": 0.0008789999999999909,
+          "replay_wall_seconds": 0.0008787920232862234,
+          "response": {
+            "attempts": [
+              {
+                "action": {
+                  "bits": 20,
+                  "function": {
+                    "amplitude": "-1/8",
+                    "axis": 2,
+                    "exponent": "-1/7",
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "abs_power"
+                  },
+                  "max_m": 2,
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "op": "spectrum",
+                  "route": "spectrum",
+                  "tolerance": "1/1000"
+                },
+                "best_metric": "87960325267135/1152921504606846976",
+                "diagnosis": {
+                  "angular_tail_lower": "18741003092981/3298534883328",
+                  "best_upper_m": 1,
+                  "bottleneck": "radial_sector",
+                  "evidence": "exact_minimum_of_proven_bounds",
+                  "hypothesis": "Radial sector width mixes representation, tail inequality and endpoint resolution; these causes are not strictly separated",
+                  "kind": "spectral_lower_budget",
+                  "limiting_m": [
+                    1
+                  ],
+                  "sector_min_lower": "10646069717477516869/5764607523034234880"
+                },
+                "diagnosis_seconds": 1.0958989150822163e-05,
+                "elapsed_seconds": 0.002700290991924703,
+                "meaningful_gain": true,
+                "metric": "87960325267135/1152921504606846976",
+                "solver_seconds": 0.0017520830733701587,
+                "verification_seconds": 0.0008892089826986194,
+                "verified": true,
+                "work_units_charged": 960
+              }
+            ],
+            "budget_scope": "whole_service_call_including_replay_and_storage; cooperative",
+            "certificate": {
+              "angular_form_bound": {
+                "center": "-7/48",
+                "embedding": {
+                  "domain": "all_real_H1_functions_on_unit_S2",
+                  "energy_coefficient": "1",
+                  "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                  "mass_coefficient": "1",
+                  "measure": "d_sigma/(4*pi)_on_unit_S2",
+                  "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                },
+                "energy_factor": "1072408300641/1099511627776",
+                "eta_upper": "27103327135/1099511627776",
+                "mass_offset": "-562346318557/3298534883328",
+                "measure": "d_sigma/(4*pi)_on_unit_S2",
+                "method": "centered_probability_L2",
+                "sqrt_bits": 40,
+                "variance": "7/11520"
+              },
+              "angular_tail_cannot_improve_best_upper": true,
+              "angular_tail_lower": "18741003092981/3298534883328",
+              "eigenvalue_index": 1,
+              "exact_width": "87960325267135/1152921504606846976",
+              "formal_proof_assistant_checked": false,
+              "format": "direct_axis_moment_full_v1",
+              "full_infinite_space_covered": true,
+              "function": {
+                "amplitude": "-1/8",
+                "axis": 2,
+                "exponent": "-1/7",
+                "kind": "axis_profile",
+                "offset": "0",
+                "profile": "abs_power"
+              },
+              "function_approximation_error": "0",
+              "geometry": "unit_S2",
+              "lower": "10646069717477516869/5764607523034234880",
+              "mean_zero": true,
+              "measure": "d_sigma/(4*pi)_on_unit_S2",
+              "omitted_azimuth_m_start": 2,
+              "original_function_moments_exact": true,
+              "scope": "all_real_mean_zero_H1_on_unit_S2",
+              "sectors": [
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 0,
+                  "eigenvalue_index": 1,
+                  "exact_width": "17952842306291/3458764513820540928",
+                  "form_bound": {
+                    "center": "-7/48",
+                    "embedding": {
+                      "domain": "all_real_H1_functions_on_unit_S2",
+                      "energy_coefficient": "1",
+                      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                      "mass_coefficient": "1",
+                      "measure": "d_sigma/(4*pi)_on_unit_S2",
+                      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                    },
+                    "energy_factor": "1072408300641/1099511627776",
+                    "eta_upper": "27103327135/1099511627776",
+                    "mass_offset": "-562346318557/3298534883328",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "centered_probability_L2",
+                    "sqrt_bits": 40,
+                    "variance": "7/11520"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "-1/8",
+                    "axis": 2,
+                    "exponent": "-1/7",
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "abs_power"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "299/240",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "3823/1632"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "7/243200",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "336497/1546265600"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "7/608",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "287/33440"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-7/80",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "-469/8160"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "2/3",
+                      "2/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": {
+                      "column": [
+                        "0",
+                        "7/480"
+                      ],
+                      "mass": "2"
+                    }
+                  },
+                  "lower": "32317741161799147841/17293822569102704640",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "remove_l0",
+                  "radial_tail_lower": "38044352504519/3298534883328",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "38044352504519/3298534883328",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 40,
+                  "upper": "299/160",
+                  "upper_inertia": [
+                    0,
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+                  "azimuth_m": 1,
+                  "eigenvalue_index": 1,
+                  "exact_width": "87960325267135/1152921504606846976",
+                  "form_bound": {
+                    "center": "-7/48",
+                    "embedding": {
+                      "domain": "all_real_H1_functions_on_unit_S2",
+                      "energy_coefficient": "1",
+                      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+                      "mass_coefficient": "1",
+                      "measure": "d_sigma/(4*pi)_on_unit_S2",
+                      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+                    },
+                    "energy_factor": "1072408300641/1099511627776",
+                    "eta_upper": "27103327135/1099511627776",
+                    "mass_offset": "-562346318557/3298534883328",
+                    "measure": "d_sigma/(4*pi)_on_unit_S2",
+                    "method": "centered_probability_L2",
+                    "sqrt_bits": 40,
+                    "variance": "7/11520"
+                  },
+                  "formal_proof_assistant_checked": false,
+                  "format": "direct_axis_moment_sector_v1",
+                  "function": {
+                    "amplitude": "-1/8",
+                    "axis": 2,
+                    "exponent": "-1/7",
+                    "kind": "axis_profile",
+                    "offset": "0",
+                    "profile": "abs_power"
+                  },
+                  "function_approximation_error": "0",
+                  "geometry": "unit_S2",
+                  "kernel_evidence": {
+                    "A": [
+                      [
+                        "197/80",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "19143/1360"
+                      ]
+                    ],
+                    "C": [
+                      [
+                        "1421/1459200",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "45717/309253120"
+                      ]
+                    ],
+                    "T": [
+                      [
+                        "49/1520",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "147/3344"
+                      ]
+                    ],
+                    "V": [
+                      [
+                        "-49/240",
+                        "0"
+                      ],
+                      [
+                        "0",
+                        "-441/1360"
+                      ]
+                    ],
+                    "degrees": [
+                      1,
+                      2
+                    ],
+                    "mass": [
+                      "4/3",
+                      "12/5"
+                    ],
+                    "near_tail": [],
+                    "removed_constant": null
+                  },
+                  "lower": "10646069717477516869/5764607523034234880",
+                  "lower_inertia": [
+                    0,
+                    0,
+                    2
+                  ],
+                  "mean_zero": true,
+                  "modes": 2,
+                  "near_tail": 0,
+                  "original_function_moments_exact": true,
+                  "projection": "none",
+                  "radial_tail_lower": "38044352504519/3298534883328",
+                  "radial_tail_start": 3,
+                  "remainder_tail_lower": "38044352504519/3298534883328",
+                  "scope": "single_azimuth_sector_only",
+                  "sqrt_bits": 40,
+                  "upper": "591/320",
+                  "upper_inertia": [
+                    0,
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "status": "target_met",
+              "tolerance": "1/1000",
+              "upper": "591/320"
+            },
+            "certificate_valid": true,
+            "cost": {
+              "backend_model_tokens": null,
+              "controller_model_calls": 0,
+              "controller_overhead_seconds": 0.00022908300161361694,
+              "diagnosis_seconds": 1.0958989150822163e-05,
+              "elapsed_seconds": 0.002881334046833217,
+              "failed_attempts": 0,
+              "reported_backend_attempts": 0,
+              "solver_calls": 1,
+              "solver_seconds": 0.0017520830733701587,
+              "unreported_backend_work_included_in_wall_time": true,
+              "verification_seconds": 0.0008892089826986194,
+              "verified_attempts": 1,
+              "wall_budget_is_cooperative": true,
+              "work_is_proxy_not_runtime": true,
+              "work_units_charged": 960
+            },
+            "diagnosis": {
+              "angular_tail_lower": "18741003092981/3298534883328",
+              "best_upper_m": 1,
+              "bottleneck": "radial_sector",
+              "evidence": "exact_minimum_of_proven_bounds",
+              "hypothesis": "Radial sector width mixes representation, tail inequality and endpoint resolution; these causes are not strictly separated",
+              "kind": "spectral_lower_budget",
+              "limiting_m": [
+                1
+              ],
+              "sector_min_lower": "10646069717477516869/5764607523034234880"
+            },
+            "execution_ok": true,
+            "function": {
+              "amplitude": "-1/8",
+              "axis": 2,
+              "exponent": "-1/7",
+              "kind": "axis_profile",
+              "offset": "0",
+              "profile": "abs_power"
+            },
+            "initial_route_policy": "direct_first_for_loose_target",
+            "kind": "spectrum",
+            "mathematical_target_met": true,
+            "ok": true,
+            "quantity": "spectral_interval_width",
+            "rejected_actions": [],
+            "replay_reuse": {
+              "canonical_key_bytes": 4913,
+              "enabled": true,
+              "entries": 1,
+              "hits": 1,
+              "key_seconds": 8.274998981505632e-05,
+              "memory_limit_scope": "canonical keys, excludes Python object overhead",
+              "misses": 1,
+              "rejected": 0,
+              "replay_seconds": 0.0008209580555558205,
+              "requests": 2,
+              "scope": "current request only; complete content and bindings; successful replays only",
+              "storage_skips": 0,
+              "timing_note": "Nested checker times overlap; use complete service/evaluator elapsed time for totals.",
+              "uncacheable": 0,
+              "version": "geometry-v317-runtime:25c0b24827c4381311af89eaaadc0321b276f62c2737ead302d3af5ff44114ed"
+            },
+            "route": "evidence_driven_spectral_controller",
+            "route_comparison": {
+              "spectrum": {
+                "best_metric": "87960325267135/1152921504606846976",
+                "stale_attempts": 0
+              }
+            },
+            "status": "target_met",
+            "stop_reason": "target_met",
+            "target_met": true,
+            "tolerance": "1/1000",
+            "total_elapsed_seconds": 0.002981833997182548,
+            "value": "87960325267135/1152921504606846976",
+            "within_budget": true
+          },
+          "solver_cpu_seconds": 0.0029909999999999937,
+          "solver_wall_seconds": 0.002990292035974562
+        }
+      ],
+      "budget_seconds": 3.0,
+      "case_id": "OLD_H06",
+      "classification": "old_disclosed_holdout_now_regression",
+      "execution": {
+        "cpu_seconds": 0.003925999999999999,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.003926540957763791
+      },
+      "family": "old_disclosed_regression",
+      "last_stage": "serialization_and_selection",
+      "method": "release",
+      "selected_attempt": 0,
+      "success": true,
+      "task": {
+        "function": {
+          "amplitude": "-1/8",
+          "axis": 2,
+          "exponent": "-1/7",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      },
+      "within_budget": true
+    },
+    {
+      "accounted_cpu_seconds": 0.00021000000000000185,
+      "accounted_wall_seconds": 0.00020987505558878183,
+      "assessment": {
+        "certificate_valid": true,
+        "quantity": "spectral_interval_width",
+        "reason": "replayed",
+        "target_met": true,
+        "tolerance": "1/1000",
+        "value": "0"
+      },
+      "attempts": [
+        {
+          "assessment": {
+            "certificate_valid": true,
+            "quantity": "spectral_interval_width",
+            "reason": "replayed",
+            "target_met": true,
+            "tolerance": "1/1000",
+            "value": "0"
+          },
+          "configuration": "method_default",
+          "execution_ok": true,
+          "replay_cpu_seconds": 5.2999999999997494e-05,
+          "replay_wall_seconds": 5.304196383804083e-05,
+          "response": {
+            "attempts": [],
+            "budget_scope": "whole_service_call_including_replay_and_storage; cooperative",
+            "certificate": {
+              "eigenvalue_index": 1,
+              "exact_width": "0",
+              "formal_proof_assistant_checked": false,
+              "format": "geometry_proof_transport_v1",
+              "full_infinite_space_covered": true,
+              "function": {
+                "amplitude": "0",
+                "axis": 2,
+                "kind": "axis_profile",
+                "offset": "-3/7",
+                "profile": "step"
+              },
+              "geometry": "unit_S2",
+              "kind": "spectrum",
+              "lower": "-3/7",
+              "mean_zero": false,
+              "measure": "d_sigma/(4*pi)_on_unit_S2",
+              "operation": "constant_spectrum",
+              "parameters": {
+                "function": {
+                  "amplitude": "0",
+                  "axis": 2,
+                  "kind": "axis_profile",
+                  "offset": "-3/7",
+                  "profile": "step"
+                },
+                "mean_zero": false
+              },
+              "scope": "all_real_H1_on_unit_S2",
+              "sources": [],
+              "upper": "-3/7"
+            },
+            "certificate_valid": true,
+            "cost": {
+              "elapsed_seconds": 2.4082954041659832e-05,
+              "solver_calls": 0
+            },
+            "execution_ok": true,
+            "function": {
+              "amplitude": "0",
+              "axis": 2,
+              "kind": "axis_profile",
+              "offset": "-3/7",
+              "profile": "step"
+            },
+            "kind": "spectrum",
+            "ok": true,
+            "quantity": "spectral_interval_width",
+            "replay_reuse": {
+              "canonical_key_bytes": 909,
+              "enabled": true,
+              "entries": 1,
+              "hits": 0,
+              "key_seconds": 1.12500274553895e-05,
+              "memory_limit_scope": "canonical keys, excludes Python object overhead",
+              "misses": 1,
+              "rejected": 0,
+              "replay_seconds": 3.7499936297535896e-05,
+              "requests": 1,
+              "scope": "current request only; complete content and bindings; successful replays only",
+              "storage_skips": 0,
+              "timing_note": "Nested checker times overlap; use complete service/evaluator elapsed time for totals.",
+              "uncacheable": 0,
+              "version": "geometry-v317-runtime:25c0b24827c4381311af89eaaadc0321b276f62c2737ead302d3af5ff44114ed"
+            },
+            "route": "exact_constant_spectrum",
+            "status": "target_met",
+            "target_met": true,
+            "tolerance": "1/1000",
+            "total_elapsed_seconds": 0.00012250000145286322,
+            "value": "0",
+            "within_budget": true
+          },
+          "solver_cpu_seconds": 0.0001300000000000051,
+          "solver_wall_seconds": 0.00013025000225752592
+        }
+      ],
+      "budget_seconds": 3.0,
+      "case_id": "OLD_H01",
+      "classification": "old_disclosed_holdout_now_regression",
+      "execution": {
+        "cpu_seconds": 0.00021000000000000185,
+        "execution_ok": true,
+        "hard_timeout_enforced": true,
+        "timed_out": false,
+        "wall_seconds": 0.00020987505558878183
+      },
+      "family": "old_disclosed_regression",
+      "last_stage": "serialization_and_selection",
+      "method": "release",
+      "selected_attempt": 0,
+      "success": true,
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "-3/7",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": false,
+        "tolerance": "1/1000"
+      },
+      "within_budget": true
+    }
+  ],
+  "session_cpu_seconds": 0.07584300000000001,
+  "session_wall_seconds": 0.07590308296494186,
+  "setup": {
+    "cpu_seconds": 0.050578,
+    "execution_ok": true,
+    "hard_timeout_enforced": true,
+    "timed_out": false,
+    "wall_seconds": 0.050621208967640996
+  },
+  "token_proxy_used": false
+}

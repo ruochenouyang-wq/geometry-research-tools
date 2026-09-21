@@ -1,0 +1,163 @@
+{
+  "actual_trial_upper": "110061696873619575834/46192615306066958755",
+  "certificate": {
+    "azimuth_integral_factor": "pi",
+    "azimuth_m": 1,
+    "basis_convention": "standard_Condon_Shortley_P_l^m(t)*cos(m*phi)",
+    "coefficients": [
+      "-32/35",
+      "15507819/671088640"
+    ],
+    "degrees": [
+      1,
+      3
+    ],
+    "energy_divided_by_azimuth_factor": "18343616145603262639/6896136929411072000",
+    "formal_assistant_checked": false,
+    "format": "explicit_sector_rayleigh_v95",
+    "full_space": "all_mean_zero_H1_functions_on_unit_S2",
+    "full_space_spectral_upper": "110061696873619575834/46192615306066958755",
+    "geometry": "unit_S2",
+    "harmonic_terms": [
+      {
+        "coefficient": "-32/35",
+        "l": 1,
+        "m": 1,
+        "real_component": "cos"
+      },
+      {
+        "coefficient": "15507819/671088640",
+        "l": 3,
+        "m": 1,
+        "real_component": "cos"
+      }
+    ],
+    "kinetic_divided_by_azimuth_factor": "4657139091503235733/2068841078823321600",
+    "mean_zero": true,
+    "norm_squared_divided_by_azimuth_factor": "9238523061213391751/8275364315293286400",
+    "potential_divided_by_azimuth_factor": "8459457521777430587/20688410788233216000",
+    "q_coefficients": [
+      "0",
+      "0",
+      "2"
+    ],
+    "rayleigh_quotient": "110061696873619575834/46192615306066958755",
+    "scope": "explicit_real_spherical_harmonic_trial_on_unit_S2",
+    "status": "strict_counterexample",
+    "strict_margin": "800579860941125178/46192615306066958755",
+    "threshold": "12/5"
+  },
+  "first": {
+    "azimuth_integral_factor": "pi",
+    "azimuth_m": 1,
+    "basis_convention": "standard_Condon_Shortley_P_l^m(t)*cos(m*phi)",
+    "coefficients": [
+      "1"
+    ],
+    "degrees": [
+      1
+    ],
+    "energy_divided_by_azimuth_factor": "16/5",
+    "formal_assistant_checked": false,
+    "format": "explicit_sector_rayleigh_v95",
+    "full_space": "all_mean_zero_H1_functions_on_unit_S2",
+    "full_space_spectral_upper": "12/5",
+    "geometry": "unit_S2",
+    "harmonic_terms": [
+      {
+        "coefficient": "1",
+        "l": 1,
+        "m": 1,
+        "real_component": "cos"
+      }
+    ],
+    "kinetic_divided_by_azimuth_factor": "8/3",
+    "mean_zero": true,
+    "norm_squared_divided_by_azimuth_factor": "4/3",
+    "potential_divided_by_azimuth_factor": "8/15",
+    "q_coefficients": [
+      "0",
+      "0",
+      "2"
+    ],
+    "rayleigh_quotient": "12/5",
+    "scope": "explicit_real_spherical_harmonic_trial_on_unit_S2",
+    "status": "no_strict_violation",
+    "strict_margin": "0",
+    "threshold": "12/5"
+  },
+  "form_matrix": [
+    [
+      "16/5",
+      "32/35"
+    ],
+    [
+      "32/35",
+      "1552/35"
+    ]
+  ],
+  "formal_assistant_checked": false,
+  "format": "two_trial_ritz_v102",
+  "limitation": "ritz_lower is not a lower bound for the full sphere or the full projected sector.",
+  "lower_inertia": [
+    0,
+    0,
+    2
+  ],
+  "mass_matrix": [
+    [
+      "4/3",
+      "0"
+    ],
+    [
+      "0",
+      "24/7"
+    ]
+  ],
+  "mixing_coefficients": [
+    "-32/35",
+    "15507819/671088640"
+  ],
+  "ritz_gap": "1666943655261147399/9919788602813330911945293824",
+  "ritz_lower": "12791854971/5368709120",
+  "scope": "minimum_Rayleigh_quotient_in_the_span_of_the_two_stated_trials_only",
+  "second": {
+    "azimuth_integral_factor": "pi",
+    "azimuth_m": 1,
+    "basis_convention": "standard_Condon_Shortley_P_l^m(t)*cos(m*phi)",
+    "coefficients": [
+      "1"
+    ],
+    "degrees": [
+      3
+    ],
+    "energy_divided_by_azimuth_factor": "1552/35",
+    "formal_assistant_checked": false,
+    "format": "explicit_sector_rayleigh_v95",
+    "full_space": "all_mean_zero_H1_functions_on_unit_S2",
+    "full_space_spectral_upper": "194/15",
+    "geometry": "unit_S2",
+    "harmonic_terms": [
+      {
+        "coefficient": "1",
+        "l": 3,
+        "m": 1,
+        "real_component": "cos"
+      }
+    ],
+    "kinetic_divided_by_azimuth_factor": "288/7",
+    "mean_zero": true,
+    "norm_squared_divided_by_azimuth_factor": "24/7",
+    "potential_divided_by_azimuth_factor": "16/5",
+    "q_coefficients": [
+      "0",
+      "0",
+      "2"
+    ],
+    "rayleigh_quotient": "194/15",
+    "scope": "explicit_real_spherical_harmonic_trial_on_unit_S2",
+    "status": "no_strict_violation",
+    "strict_margin": "-158/15",
+    "threshold": "12/5"
+  }
+}

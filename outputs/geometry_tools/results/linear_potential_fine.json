@@ -1,0 +1,34 @@
+{
+  "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+  "q_coefficients": [
+    "0",
+    "1"
+  ],
+  "eigenvalue_index": 1,
+  "modes": 8,
+  "bisection_steps": 36,
+  "lower": "-186136187089688819393/1180591620717411303424",
+  "upper": "-2708638015/17179869184",
+  "evidence": {
+    "analytic_potential_lower": "-1",
+    "tail_lower": "71",
+    "lower_schur_inertia": [
+      0,
+      0,
+      8
+    ],
+    "upper_finite_inertia": [
+      1,
+      0,
+      7
+    ]
+  },
+  "decimal_enclosure": [
+    "-0.157663483142",
+    "-0.157663483114"
+  ],
+  "exact_width": "31651100353/1180591620717411303424",
+  "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+  "verification": "exact_rational_with_analytic_tail",
+  "formal_assistant_checked": false
+}

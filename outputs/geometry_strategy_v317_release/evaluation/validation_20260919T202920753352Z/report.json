@@ -1,0 +1,2903 @@
+{
+  "cases": [
+    {
+      "budget_seconds": 3.0,
+      "classification": "public_validation",
+      "family": "easy",
+      "id": "V01",
+      "independent_exact_value": "-2/5",
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "-2/5",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": false,
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "public_validation",
+      "family": "easy",
+      "id": "V02",
+      "independent_exact_value": "13/5",
+      "task": {
+        "function": {
+          "amplitude": "0",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "3/5",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "public_validation",
+      "family": "easy",
+      "id": "V03",
+      "task": {
+        "function": {
+          "amplitude": "1/3",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000"
+      }
+    },
+    {
+      "budget_seconds": 3.0,
+      "classification": "public_validation",
+      "family": "easy",
+      "id": "V04",
+      "task": {
+        "function": {
+          "amplitude": "3/4",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "1/5",
+          "profile": "step"
+        },
+        "kind": "approximation",
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "public_validation",
+      "family": "negative_power_spectrum",
+      "id": "V05",
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/8",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/1000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "public_validation",
+      "family": "negative_power_spectrum",
+      "id": "V06",
+      "task": {
+        "function": {
+          "amplitude": "-1/2",
+          "axis": 2,
+          "exponent": "-1/3",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/100000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "known_failed_structure_regression",
+      "family": "negative_power_spectrum",
+      "id": "V07",
+      "task": {
+        "function": {
+          "amplitude": "-1/2",
+          "axis": 2,
+          "exponent": "-3/8",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "full_space_support_challenge",
+      "family": "negative_power_spectrum",
+      "id": "V08",
+      "task": {
+        "function": {
+          "amplitude": "-1/3",
+          "axis": 2,
+          "exponent": "-1/5",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "spectrum",
+        "mean_zero": false,
+        "tolerance": "1/100000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "known_failed_structure_regression",
+      "family": "step_spectrum_hard",
+      "id": "V09",
+      "task": {
+        "function": {
+          "amplitude": "-1/2",
+          "axis": 2,
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "step"
+        },
+        "kind": "spectrum",
+        "mean_zero": true,
+        "tolerance": "1/100000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "fixed_minus_quarter_regression",
+      "family": "negative_power_approximation",
+      "id": "V10",
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/1000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "fixed_minus_quarter_regression",
+      "family": "negative_power_approximation",
+      "id": "V11",
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/100000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "fixed_minus_quarter_regression",
+      "family": "negative_power_approximation",
+      "id": "V12",
+      "task": {
+        "function": {
+          "amplitude": "-1",
+          "axis": 2,
+          "exponent": "-1/4",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/10000000000"
+      }
+    },
+    {
+      "budget_seconds": 10.0,
+      "classification": "outside_current_approximation_support",
+      "family": "negative_power_approximation",
+      "id": "V13",
+      "task": {
+        "function": {
+          "amplitude": "-1/3",
+          "axis": 2,
+          "exponent": "-1/5",
+          "kind": "axis_profile",
+          "offset": "0",
+          "profile": "abs_power"
+        },
+        "kind": "approximation",
+        "tolerance": "1/100000000"
+      }
+    }
+  ],
+  "created_utc": "2026-09-19T20:29:46.281841+00:00",
+  "environment": {
+    "actual_model_input_output_reasoning_tokens": null,
+    "concurrent_other_activity": "unknown, shared host",
+    "development_model_usage": null,
+    "executable": "/PYTHON/bin/python3",
+    "external_model_calls_by_evaluator": 0,
+    "financial_cost": null,
+    "logical_cpus": 18,
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]"
+  },
+  "limitations": [
+    "Only known-family parameter transfer; no new mathematical families.",
+    "Five repetitions quantify machine timing variation, not five independent mathematical tasks.",
+    "Independent evaluation orchestration shares trusted frozen mathematical replay code with solver backends.",
+    "All failures/unsupported cases remain; faster failure is not a benefit.",
+    "Development/model/human costs unknown; preparation, setup, online, replay, exceptions and probes retained.",
+    "Any algorithm change after reveal requires a fresh protocol and untouched seed."
+  ],
+  "phase": "validation",
+  "protocol_digest": "3db0618d0e3ade17d6fcff8bc1ab2f3cbd0964c95a32261ea461b982f33dd841",
+  "results": {
+    "methods": {
+      "fixed_increasing": {
+        "actual_model_usage": null,
+        "attempted_task_runs": 65,
+        "cases": 13,
+        "false_accepts": 0,
+        "family_breakdown": {
+          "easy": {
+            "cases": 4,
+            "robust_successes": 2,
+            "successful_runs": 10
+          },
+          "negative_power_approximation": {
+            "cases": 4,
+            "robust_successes": 0,
+            "successful_runs": 0
+          },
+          "negative_power_spectrum": {
+            "cases": 4,
+            "robust_successes": 0,
+            "successful_runs": 0
+          },
+          "step_spectrum_hard": {
+            "cases": 1,
+            "robust_successes": 0,
+            "successful_runs": 0
+          }
+        },
+        "first_task_latency_seconds": {
+          "max": 0.07618458301294595,
+          "median": 0.05310466710943729,
+          "min": 0.04568837594706565,
+          "values": [
+            0.05310466710943729,
+            0.05499333399347961,
+            0.051957583986222744,
+            0.04568837594706565,
+            0.07618458301294595
+          ]
+        },
+        "full_session_cpu_seconds": {
+          "max": 0.303489000000002,
+          "median": 0.29477899999999957,
+          "min": 0.29006799999999994,
+          "values": [
+            0.29006799999999994,
+            0.2930620000000006,
+            0.29477899999999957,
+            0.2998980000000015,
+            0.303489000000002
+          ]
+        },
+        "full_session_wall_seconds": {
+          "max": 0.30612704111263156,
+          "median": 0.2974600410088897,
+          "min": 0.2924656249815598,
+          "values": [
+            0.2924656249815598,
+            0.2957879590103403,
+            0.2974600410088897,
+            0.3026471670018509,
+            0.30612704111263156
+          ]
+        },
+        "model_tokenizer": null,
+        "online_wall_seconds": {
+          "max": 0.17531391570810229,
+          "median": 0.17507808399386704,
+          "min": 0.17453274922445416,
+          "values": [
+            0.17453274922445416,
+            0.17507808399386704,
+            0.17531391570810229,
+            0.17515108408406377,
+            0.1746719159418717
+          ]
+        },
+        "per_case": [
+          {
+            "case_id": "V01",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": false,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "1/67108864",
+              "1/67108864",
+              "1/67108864",
+              "1/67108864",
+              "1/67108864"
+            ],
+            "wall_seconds": {
+              "max": 0.007904750062152743,
+              "median": 0.007449625059962273,
+              "min": 0.007360375020653009,
+              "values": [
+                0.007904750062152743,
+                0.007534791948273778,
+                0.007449625059962273,
+                0.0074385839980095625,
+                0.007360375020653009
+              ]
+            }
+          },
+          {
+            "case_id": "V02",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "1/67108864",
+              "1/67108864",
+              "1/67108864",
+              "1/67108864",
+              "1/67108864"
+            ],
+            "wall_seconds": {
+              "max": 0.009836749988608062,
+              "median": 0.009277707897126675,
+              "min": 0.009232499985955656,
+              "values": [
+                0.009446499985642731,
+                0.009836749988608062,
+                0.009277707897126675,
+                0.009232499985955656,
+                0.009256958030164242
+              ]
+            }
+          },
+          {
+            "case_id": "V03",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "7994595/17179869184",
+              "7994595/17179869184",
+              "7994595/17179869184",
+              "7994595/17179869184",
+              "7994595/17179869184"
+            ],
+            "wall_seconds": {
+              "max": 0.006669583963230252,
+              "median": 0.006423583021387458,
+              "min": 0.006193166016601026,
+              "values": [
+                0.006461333017796278,
+                0.006423583021387458,
+                0.006669583963230252,
+                0.006193166016601026,
+                0.006258707959204912
+              ]
+            }
+          },
+          {
+            "case_id": "V04",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.00020220899023115635,
+              "median": 0.00011629110667854548,
+              "min": 0.00010708405170589685,
+              "values": [
+                0.00011629110667854548,
+                0.0001169170718640089,
+                0.00011595792602747679,
+                0.00020220899023115635,
+                0.00010708405170589685
+              ]
+            }
+          },
+          {
+            "case_id": "V05",
+            "classification": "public_validation",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "1397182620932329885018605/3114192911327284754043109376",
+              "1397182620932329885018605/3114192911327284754043109376",
+              "1397182620932329885018605/3114192911327284754043109376",
+              "1397182620932329885018605/3114192911327284754043109376",
+              "1397182620932329885018605/3114192911327284754043109376"
+            ],
+            "wall_seconds": {
+              "max": 0.0310447079828009,
+              "median": 0.030800958047620952,
+              "min": 0.030451957951299846,
+              "values": [
+                0.030451957951299846,
+                0.0306205409578979,
+                0.030800958047620952,
+                0.03098233393393457,
+                0.0310447079828009
+              ]
+            }
+          },
+          {
+            "case_id": "V06",
+            "classification": "public_validation",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "21026083683846940326575/2417851639229258349412352",
+              "21026083683846940326575/2417851639229258349412352",
+              "21026083683846940326575/2417851639229258349412352",
+              "21026083683846940326575/2417851639229258349412352",
+              "21026083683846940326575/2417851639229258349412352"
+            ],
+            "wall_seconds": {
+              "max": 0.029811208019964397,
+              "median": 0.029590749996714294,
+              "min": 0.02934304194059223,
+              "values": [
+                0.02934304194059223,
+                0.029400542029179633,
+                0.029695124947465956,
+                0.029811208019964397,
+                0.029590749996714294
+              ]
+            }
+          },
+          {
+            "case_id": "V07",
+            "classification": "known_failed_structure_regression",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "481578248048596315747427/16924961474604808445886464",
+              "481578248048596315747427/16924961474604808445886464",
+              "481578248048596315747427/16924961474604808445886464",
+              "481578248048596315747427/16924961474604808445886464",
+              "481578248048596315747427/16924961474604808445886464"
+            ],
+            "wall_seconds": {
+              "max": 0.04656258306931704,
+              "median": 0.046369750052690506,
+              "min": 0.04631974990479648,
+              "values": [
+                0.04633400007151067,
+                0.04631974990479648,
+                0.046371915959753096,
+                0.04656258306931704,
+                0.046369750052690506
+              ]
+            }
+          },
+          {
+            "case_id": "V08",
+            "classification": "full_space_support_challenge",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": false,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "127899734217967177255/604462909807314587353088",
+              "127899734217967177255/604462909807314587353088",
+              "127899734217967177255/604462909807314587353088",
+              "127899734217967177255/604462909807314587353088",
+              "127899734217967177255/604462909807314587353088"
+            ],
+            "wall_seconds": {
+              "max": 0.012716875062324107,
+              "median": 0.012661167071200907,
+              "min": 0.012556666042655706,
+              "values": [
+                0.012556666042655706,
+                0.012587167089805007,
+                0.012716875062324107,
+                0.012661167071200907,
+                0.012661791988648474
+              ]
+            }
+          },
+          {
+            "case_id": "V09",
+            "classification": "known_failed_structure_regression",
+            "family": "step_spectrum_hard",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "2533765878495/9007199254740992",
+              "2533765878495/9007199254740992",
+              "2533765878495/9007199254740992",
+              "2533765878495/9007199254740992",
+              "2533765878495/9007199254740992"
+            ],
+            "wall_seconds": {
+              "max": 0.023248624987900257,
+              "median": 0.023081249906681478,
+              "min": 0.02299079205840826,
+              "values": [
+                0.02299079205840826,
+                0.023248624987900257,
+                0.02319433295633644,
+                0.023067499976605177,
+                0.023081249906681478
+              ]
+            }
+          },
+          {
+            "case_id": "V10",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "29844301/2147483648",
+              "29844301/2147483648",
+              "29844301/2147483648",
+              "29844301/2147483648",
+              "29844301/2147483648"
+            ],
+            "wall_seconds": {
+              "max": 0.0031229169107973576,
+              "median": 0.003060957998968661,
+              "min": 0.0030233749421313405,
+              "values": [
+                0.0030233749421313405,
+                0.0030566249042749405,
+                0.0031229169107973576,
+                0.003060957998968661,
+                0.0030895000090822577
+              ]
+            }
+          },
+          {
+            "case_id": "V11",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "29844301/2147483648",
+              "29844301/2147483648",
+              "29844301/2147483648",
+              "29844301/2147483648",
+              "29844301/2147483648"
+            ],
+            "wall_seconds": {
+              "max": 0.0029378330800682306,
+              "median": 0.0028696670196950436,
+              "min": 0.0028393749380484223,
+              "values": [
+                0.0028696670196950436,
+                0.002867041970603168,
+                0.002934416988864541,
+                0.0029378330800682306,
+                0.0028393749380484223
+              ]
+            }
+          },
+          {
+            "case_id": "V12",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "29844301/2147483648",
+              "29844301/2147483648",
+              "29844301/2147483648",
+              "29844301/2147483648",
+              "29844301/2147483648"
+            ],
+            "wall_seconds": {
+              "max": 0.0029979581013321877,
+              "median": 0.0029457079945132136,
+              "min": 0.0028988339472562075,
+              "values": [
+                0.0029689579969272017,
+                0.0029979581013321877,
+                0.0028988339472562075,
+                0.002933083917014301,
+                0.0029457079945132136
+              ]
+            }
+          },
+          {
+            "case_id": "V13",
+            "classification": "outside_current_approximation_support",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 0,
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "wall_seconds": {
+              "max": 6.795802619308233e-05,
+              "median": 6.595801096409559e-05,
+              "min": 6.541702896356583e-05,
+              "values": [
+                6.541702896356583e-05,
+                6.779201794415712e-05,
+                6.566604133695364e-05,
+                6.795802619308233e-05,
+                6.595801096409559e-05
+              ]
+            }
+          }
+        ],
+        "preparation_cpu_seconds_charged_once": 0,
+        "preparation_wall_seconds_charged_once": 0,
+        "probe_execution_failures": 0,
+        "probes": 35,
+        "robust_successes": 2,
+        "scope_breakdown": {
+          "full_space_spectrum": {
+            "cases": 2,
+            "robust_successes": 0,
+            "successful_runs": 0
+          },
+          "function_approximation": {
+            "cases": 5,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "mean_zero_spectrum": {
+            "cases": 6,
+            "robust_successes": 1,
+            "successful_runs": 5
+          }
+        },
+        "setup_wall_seconds": {
+          "max": 0.045486166956834495,
+          "median": 0.045199917047284544,
+          "min": 0.04513987503014505,
+          "values": [
+            0.045199917047284544,
+            0.04515658400487155,
+            0.04528800002299249,
+            0.045486166956834495,
+            0.04513987503014505
+          ]
+        },
+        "successful_runs": 10,
+        "timeouts": 0,
+        "total_experiment_cpu_seconds": 1.4812960000000035,
+        "total_experiment_wall_seconds": 1.4944878331152722,
+        "worker_failures": 0
+      },
+      "frozen_v317": {
+        "actual_model_usage": null,
+        "attempted_task_runs": 65,
+        "cases": 13,
+        "false_accepts": 0,
+        "family_breakdown": {
+          "easy": {
+            "cases": 4,
+            "robust_successes": 4,
+            "successful_runs": 20
+          },
+          "negative_power_approximation": {
+            "cases": 4,
+            "robust_successes": 3,
+            "successful_runs": 15
+          },
+          "negative_power_spectrum": {
+            "cases": 4,
+            "robust_successes": 2,
+            "successful_runs": 10
+          },
+          "step_spectrum_hard": {
+            "cases": 1,
+            "robust_successes": 0,
+            "successful_runs": 0
+          }
+        },
+        "first_task_latency_seconds": {
+          "max": 0.14398295909631997,
+          "median": 0.05817879200913012,
+          "min": 0.05544775095768273,
+          "values": [
+            0.05703675001859665,
+            0.05544775095768273,
+            0.06361233303323388,
+            0.05817879200913012,
+            0.14398295909631997
+          ]
+        },
+        "full_session_cpu_seconds": {
+          "max": 2.160350000000001,
+          "median": 2.1052090000000003,
+          "min": 2.052201,
+          "values": [
+            2.052201,
+            2.1052090000000003,
+            2.1008999999999993,
+            2.1182,
+            2.160350000000001
+          ]
+        },
+        "full_session_wall_seconds": {
+          "max": 2.165590125019662,
+          "median": 2.110171833075583,
+          "min": 2.0570651250891387,
+          "values": [
+            2.0570651250891387,
+            2.110171833075583,
+            2.109485166030936,
+            2.123797583975829,
+            2.165590125019662
+          ]
+        },
+        "model_tokenizer": null,
+        "online_wall_seconds": {
+          "max": 1.8855706678004935,
+          "median": 1.8532799150561914,
+          "min": 1.8474603327922523,
+          "values": [
+            1.8552732098614797,
+            1.8855706678004935,
+            1.8532799150561914,
+            1.8474603327922523,
+            1.851306711207144
+          ]
+        },
+        "per_case": [
+          {
+            "case_id": "V01",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": false,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.003047542064450681,
+              "median": 0.0002628329675644636,
+              "min": 0.00025783292949199677,
+              "values": [
+                0.003047542064450681,
+                0.0002628329675644636,
+                0.0002585829934105277,
+                0.00025783292949199677,
+                0.00026470795273780823
+              ]
+            }
+          },
+          {
+            "case_id": "V02",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.003025208949111402,
+              "median": 0.00023191701620817184,
+              "min": 0.00017670798115432262,
+              "values": [
+                0.00017670798115432262,
+                0.003025208949111402,
+                0.00024016702082008123,
+                0.00022941594943404198,
+                0.00023191701620817184
+              ]
+            }
+          },
+          {
+            "case_id": "V03",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "5533178707/6597069766656",
+              "5533178707/6597069766656",
+              "5533178707/6597069766656",
+              "5533178707/6597069766656",
+              "5533178707/6597069766656"
+            ],
+            "wall_seconds": {
+              "max": 0.011629458051174879,
+              "median": 0.008657083963043988,
+              "min": 0.0033955839462578297,
+              "values": [
+                0.008849125006236136,
+                0.008657083963043988,
+                0.011629458051174879,
+                0.0033955839462578297,
+                0.0034181670052930713
+              ]
+            }
+          },
+          {
+            "case_id": "V04",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.00585433398373425,
+              "median": 0.00021970889065414667,
+              "min": 0.0002075409283861518,
+              "values": [
+                0.00021970889065414667,
+                0.0002075409283861518,
+                0.0002180830342695117,
+                0.00585433398373425,
+                0.0002536250976845622
+              ]
+            }
+          },
+          {
+            "case_id": "V05",
+            "classification": "public_validation",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "137250939224894562975718140989207522262875353133505852259636463276101471225437253988091878774019382031075604157288468125137068488934957327183325948983019457858519958881944788388544512/12610054292614823016656292615260454806919558042665580645743523404905708190239288211346552102292637288765268666664718130344666636365593210396530205510074020914370665900988759327485840813373101",
+              "137250939224894562975718140989207522262875353133505852259636463276101471225437253988091878774019382031075604157288468125137068488934957327183325948983019457858519958881944788388544512/12610054292614823016656292615260454806919558042665580645743523404905708190239288211346552102292637288765268666664718130344666636365593210396530205510074020914370665900988759327485840813373101",
+              "137250939224894562975718140989207522262875353133505852259636463276101471225437253988091878774019382031075604157288468125137068488934957327183325948983019457858519958881944788388544512/12610054292614823016656292615260454806919558042665580645743523404905708190239288211346552102292637288765268666664718130344666636365593210396530205510074020914370665900988759327485840813373101",
+              "137250939224894562975718140989207522262875353133505852259636463276101471225437253988091878774019382031075604157288468125137068488934957327183325948983019457858519958881944788388544512/12610054292614823016656292615260454806919558042665580645743523404905708190239288211346552102292637288765268666664718130344666636365593210396530205510074020914370665900988759327485840813373101",
+              "137250939224894562975718140989207522262875353133505852259636463276101471225437253988091878774019382031075604157288468125137068488934957327183325948983019457858519958881944788388544512/12610054292614823016656292615260454806919558042665580645743523404905708190239288211346552102292637288765268666664718130344666636365593210396530205510074020914370665900988759327485840813373101"
+            ],
+            "wall_seconds": {
+              "max": 0.09160529205109924,
+              "median": 0.08443950000219047,
+              "min": 0.0835560830309987,
+              "values": [
+                0.0835560830309987,
+                0.08443950000219047,
+                0.0836676670005545,
+                0.08558341593015939,
+                0.09160529205109924
+              ]
+            }
+          },
+          {
+            "case_id": "V06",
+            "classification": "public_validation",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "129585937490067892542116798246386541791937767023257846488313060347635470602432837302866597960199987257672582306050936628488592489204741751937547163937261151818360154610466816/5174537988343193243705121279533207241604365774412067889807303275713024200226334538550137465992608950864056892647413603400879298275657495656778043234712673372607983172585439136305934385",
+              "129585937490067892542116798246386541791937767023257846488313060347635470602432837302866597960199987257672582306050936628488592489204741751937547163937261151818360154610466816/5174537988343193243705121279533207241604365774412067889807303275713024200226334538550137465992608950864056892647413603400879298275657495656778043234712673372607983172585439136305934385",
+              "129585937490067892542116798246386541791937767023257846488313060347635470602432837302866597960199987257672582306050936628488592489204741751937547163937261151818360154610466816/5174537988343193243705121279533207241604365774412067889807303275713024200226334538550137465992608950864056892647413603400879298275657495656778043234712673372607983172585439136305934385",
+              "129585937490067892542116798246386541791937767023257846488313060347635470602432837302866597960199987257672582306050936628488592489204741751937547163937261151818360154610466816/5174537988343193243705121279533207241604365774412067889807303275713024200226334538550137465992608950864056892647413603400879298275657495656778043234712673372607983172585439136305934385",
+              "129585937490067892542116798246386541791937767023257846488313060347635470602432837302866597960199987257672582306050936628488592489204741751937547163937261151818360154610466816/5174537988343193243705121279533207241604365774412067889807303275713024200226334538550137465992608950864056892647413603400879298275657495656778043234712673372607983172585439136305934385"
+            ],
+            "wall_seconds": {
+              "max": 0.14144450007006526,
+              "median": 0.14016770804300904,
+              "min": 0.13883341709151864,
+              "values": [
+                0.1399762911023572,
+                0.14105041697621346,
+                0.14016770804300904,
+                0.13883341709151864,
+                0.14144450007006526
+              ]
+            }
+          },
+          {
+            "case_id": "V07",
+            "classification": "known_failed_structure_regression",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "25436133160438386535917/4231240368651202111471616",
+              "25436133160438386535917/4231240368651202111471616",
+              "25436133160438386535917/4231240368651202111471616",
+              "25436133160438386535917/4231240368651202111471616",
+              "25436133160438386535917/4231240368651202111471616"
+            ],
+            "wall_seconds": {
+              "max": 0.3974486250663176,
+              "median": 0.39050220802892,
+              "min": 0.3893706670496613,
+              "values": [
+                0.39044383401051164,
+                0.3974486250663176,
+                0.39050220802892,
+                0.39060679101385176,
+                0.3893706670496613
+              ]
+            }
+          },
+          {
+            "case_id": "V08",
+            "classification": "full_space_support_challenge",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": false,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "3827941955400667575/151115727451828646838272",
+              "3827941955400667575/151115727451828646838272",
+              "3827941955400667575/151115727451828646838272",
+              "3827941955400667575/151115727451828646838272",
+              "3827941955400667575/151115727451828646838272"
+            ],
+            "wall_seconds": {
+              "max": 0.2521685000974685,
+              "median": 0.24461304198484868,
+              "min": 0.2434147079475224,
+              "values": [
+                0.2521685000974685,
+                0.2493329169228673,
+                0.24461304198484868,
+                0.24390024994499981,
+                0.2434147079475224
+              ]
+            }
+          },
+          {
+            "case_id": "V09",
+            "classification": "known_failed_structure_regression",
+            "family": "step_spectrum_hard",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "29869985/1099511627776",
+              "29869985/1099511627776",
+              "29869985/1099511627776",
+              "29869985/1099511627776",
+              "29869985/1099511627776"
+            ],
+            "wall_seconds": {
+              "max": 0.4764264579862356,
+              "median": 0.46718704199884087,
+              "min": 0.46530674991663545,
+              "values": [
+                0.46530674991663545,
+                0.4764264579862356,
+                0.46702783298678696,
+                0.47063037496991456,
+                0.46718704199884087
+              ]
+            }
+          },
+          {
+            "case_id": "V10",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "518215/549755813888",
+              "518215/549755813888",
+              "518215/549755813888",
+              "518215/549755813888",
+              "518215/549755813888"
+            ],
+            "wall_seconds": {
+              "max": 0.10535145900212228,
+              "median": 0.10245533392298967,
+              "min": 0.10128833400085568,
+              "values": [
+                0.10245533392298967,
+                0.10535145900212228,
+                0.10206079098861665,
+                0.10128833400085568,
+                0.10256070899777114
+              ]
+            }
+          },
+          {
+            "case_id": "V11",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "2731/274877906944",
+              "2731/274877906944",
+              "2731/274877906944",
+              "2731/274877906944",
+              "2731/274877906944"
+            ],
+            "wall_seconds": {
+              "max": 0.14586287504062057,
+              "median": 0.13904283405281603,
+              "min": 0.13848520803730935,
+              "values": [
+                0.13875366689171642,
+                0.14586287504062057,
+                0.1405986249446869,
+                0.13848520803730935,
+                0.13904283405281603
+              ]
+            }
+          },
+          {
+            "case_id": "V12",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "41/549755813888",
+              "41/549755813888",
+              "41/549755813888",
+              "41/549755813888",
+              "41/549755813888"
+            ],
+            "wall_seconds": {
+              "max": 0.27336379198823124,
+              "median": 0.2721785419853404,
+              "min": 0.26829091703984886,
+              "values": [
+                0.27023070794530213,
+                0.27336379198823124,
+                0.2721785419853404,
+                0.26829091703984886,
+                0.27240408398211
+              ]
+            }
+          },
+          {
+            "case_id": "V13",
+            "classification": "outside_current_approximation_support",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 0,
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "wall_seconds": {
+              "max": 0.00014195800758898258,
+              "median": 0.00010845798533409834,
+              "min": 8.895900100469589e-05,
+              "values": [
+                8.895900100469589e-05,
+                0.00014195800758898258,
+                0.00011720799375325441,
+                0.00010445795487612486,
+                0.00010845798533409834
+              ]
+            }
+          }
+        ],
+        "preparation_cpu_seconds_charged_once": 0,
+        "preparation_wall_seconds_charged_once": 0,
+        "probe_execution_failures": 0,
+        "probes": 35,
+        "robust_successes": 9,
+        "scope_breakdown": {
+          "full_space_spectrum": {
+            "cases": 2,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "function_approximation": {
+            "cases": 5,
+            "robust_successes": 4,
+            "successful_runs": 20
+          },
+          "mean_zero_spectrum": {
+            "cases": 6,
+            "robust_successes": 4,
+            "successful_runs": 20
+          }
+        },
+        "setup_wall_seconds": {
+          "max": 0.05398920795414597,
+          "median": 0.05237766704522073,
+          "min": 0.051982874982059,
+          "values": [
+            0.05398920795414597,
+            0.05242254200857133,
+            0.051982874982059,
+            0.05232445802539587,
+            0.05237766704522073
+          ]
+        },
+        "successful_runs": 45,
+        "timeouts": 0,
+        "total_experiment_cpu_seconds": 10.53686,
+        "total_experiment_wall_seconds": 10.566109833191149,
+        "worker_failures": 0
+      },
+      "old_default": {
+        "actual_model_usage": null,
+        "attempted_task_runs": 65,
+        "cases": 13,
+        "false_accepts": 0,
+        "family_breakdown": {
+          "easy": {
+            "cases": 4,
+            "robust_successes": 2,
+            "successful_runs": 10
+          },
+          "negative_power_approximation": {
+            "cases": 4,
+            "robust_successes": 0,
+            "successful_runs": 0
+          },
+          "negative_power_spectrum": {
+            "cases": 4,
+            "robust_successes": 0,
+            "successful_runs": 0
+          },
+          "step_spectrum_hard": {
+            "cases": 1,
+            "robust_successes": 0,
+            "successful_runs": 0
+          }
+        },
+        "first_task_latency_seconds": {
+          "max": 0.12725458305794746,
+          "median": 0.06979979202151299,
+          "min": 0.0476038750493899,
+          "values": [
+            0.06333029200322926,
+            0.06979979202151299,
+            0.12725458305794746,
+            0.0476038750493899,
+            0.12622837501112372
+          ]
+        },
+        "full_session_cpu_seconds": {
+          "max": 0.6529169999999972,
+          "median": 0.6328089999999993,
+          "min": 0.612878,
+          "values": [
+            0.612878,
+            0.6364620000000002,
+            0.6328089999999993,
+            0.6529169999999972,
+            0.6302319999999967
+          ]
+        },
+        "full_session_wall_seconds": {
+          "max": 0.6578680000966415,
+          "median": 0.6362890830496326,
+          "min": 0.6154065419686958,
+          "values": [
+            0.6154065419686958,
+            0.6412493329262361,
+            0.6362890830496326,
+            0.6578680000966415,
+            0.6334162499988452
+          ]
+        },
+        "model_tokenizer": null,
+        "online_wall_seconds": {
+          "max": 0.5264217527583241,
+          "median": 0.5125603765482083,
+          "min": 0.5065849190577865,
+          "values": [
+            0.5065849190577865,
+            0.5228629154153168,
+            0.5125603765482083,
+            0.5264217527583241,
+            0.5076356650097296
+          ]
+        },
+        "per_case": [
+          {
+            "case_id": "V01",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": false,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "1/4294967296",
+              "1/4294967296",
+              "1/4294967296",
+              "1/4294967296",
+              "1/4294967296"
+            ],
+            "wall_seconds": {
+              "max": 0.017990916967391968,
+              "median": 0.017093374975956976,
+              "min": 0.016904750023968518,
+              "values": [
+                0.017990916967391968,
+                0.017031250055879354,
+                0.017093374975956976,
+                0.017462417017668486,
+                0.016904750023968518
+              ]
+            }
+          },
+          {
+            "case_id": "V02",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "1/4294967296",
+              "1/4294967296",
+              "1/4294967296",
+              "1/4294967296",
+              "1/4294967296"
+            ],
+            "wall_seconds": {
+              "max": 0.02397787501104176,
+              "median": 0.02084825001657009,
+              "min": 0.020109666977077723,
+              "values": [
+                0.02084825001657009,
+                0.02397787501104176,
+                0.020259374985471368,
+                0.021158249932341278,
+                0.020109666977077723
+              ]
+            }
+          },
+          {
+            "case_id": "V03",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "1776448230303019/55340232221128654848",
+              "1776448230303019/55340232221128654848",
+              "1776448230303019/55340232221128654848",
+              "1776448230303019/55340232221128654848",
+              "1776448230303019/55340232221128654848"
+            ],
+            "wall_seconds": {
+              "max": 0.08161724999081343,
+              "median": 0.07843074994161725,
+              "min": 0.07684533309657127,
+              "values": [
+                0.07843074994161725,
+                0.08161724999081343,
+                0.0808701670030132,
+                0.07733304193243384,
+                0.07684533309657127
+              ]
+            }
+          },
+          {
+            "case_id": "V04",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.0002299170009791851,
+              "median": 0.00013458298053592443,
+              "min": 0.00012383295688778162,
+              "values": [
+                0.00013458298053592443,
+                0.00013741699513047934,
+                0.0001265419414266944,
+                0.0002299170009791851,
+                0.00012383295688778162
+              ]
+            }
+          },
+          {
+            "case_id": "V05",
+            "classification": "public_validation",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "38385635713065325282619438307/233247710441994209875393389789184",
+              "38385635713065325282619438307/233247710441994209875393389789184",
+              "38385635713065325282619438307/233247710441994209875393389789184",
+              "38385635713065325282619438307/233247710441994209875393389789184",
+              "38385635713065325282619438307/233247710441994209875393389789184"
+            ],
+            "wall_seconds": {
+              "max": 0.08278112497646362,
+              "median": 0.08111912501044571,
+              "min": 0.07785420794971287,
+              "values": [
+                0.07785420794971287,
+                0.08232437504921108,
+                0.0788573749596253,
+                0.08278112497646362,
+                0.08111912501044571
+              ]
+            }
+          },
+          {
+            "case_id": "V06",
+            "classification": "public_validation",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "35612031403575742028926927605/10141204801825835211973625643008",
+              "35612031403575742028926927605/10141204801825835211973625643008",
+              "35612031403575742028926927605/10141204801825835211973625643008",
+              "35612031403575742028926927605/10141204801825835211973625643008",
+              "35612031403575742028926927605/10141204801825835211973625643008"
+            ],
+            "wall_seconds": {
+              "max": 0.07592829200439155,
+              "median": 0.07560066692531109,
+              "min": 0.07485204201657325,
+              "values": [
+                0.07485204201657325,
+                0.07592829200439155,
+                0.07560066692531109,
+                0.07579625002108514,
+                0.07517795800231397
+              ]
+            }
+          },
+          {
+            "case_id": "V07",
+            "classification": "known_failed_structure_regression",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "809654443586970237737513638695/70988433612780846483815379501056",
+              "809654443586970237737513638695/70988433612780846483815379501056",
+              "809654443586970237737513638695/70988433612780846483815379501056",
+              "809654443586970237737513638695/70988433612780846483815379501056",
+              "809654443586970237737513638695/70988433612780846483815379501056"
+            ],
+            "wall_seconds": {
+              "max": 0.1273529160534963,
+              "median": 0.12488495896104723,
+              "min": 0.1228874169755727,
+              "values": [
+                0.1228874169755727,
+                0.1273529160534963,
+                0.12488495896104723,
+                0.12646908301394433,
+                0.12298254098277539
+              ]
+            }
+          },
+          {
+            "case_id": "V08",
+            "classification": "full_space_support_challenge",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": false,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "185571739949547400622314785/2535301200456458802993406410752",
+              "185571739949547400622314785/2535301200456458802993406410752",
+              "185571739949547400622314785/2535301200456458802993406410752",
+              "185571739949547400622314785/2535301200456458802993406410752",
+              "185571739949547400622314785/2535301200456458802993406410752"
+            ],
+            "wall_seconds": {
+              "max": 0.03613891697023064,
+              "median": 0.033636415959335864,
+              "min": 0.033335834043100476,
+              "values": [
+                0.033335834043100476,
+                0.033636415959335864,
+                0.03375191695522517,
+                0.03613891697023064,
+                0.03359558305237442
+              ]
+            }
+          },
+          {
+            "case_id": "V09",
+            "classification": "known_failed_structure_regression",
+            "family": "step_spectrum_hard",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "5322368401681005/73786976294838206464",
+              "5322368401681005/73786976294838206464",
+              "5322368401681005/73786976294838206464",
+              "5322368401681005/73786976294838206464",
+              "5322368401681005/73786976294838206464"
+            ],
+            "wall_seconds": {
+              "max": 0.08563233399763703,
+              "median": 0.0774847079301253,
+              "min": 0.07700879208277911,
+              "values": [
+                0.07700879208277911,
+                0.07748270803131163,
+                0.0778035830007866,
+                0.08563233399763703,
+                0.0774847079301253
+              ]
+            }
+          },
+          {
+            "case_id": "V10",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "20488777907/549755813888",
+              "20488777907/549755813888",
+              "20488777907/549755813888",
+              "20488777907/549755813888",
+              "20488777907/549755813888"
+            ],
+            "wall_seconds": {
+              "max": 0.0011737090535461903,
+              "median": 0.0011273749405518174,
+              "min": 0.001124582951888442,
+              "values": [
+                0.001124582951888442,
+                0.0011690420797094703,
+                0.0011273749405518174,
+                0.0011737090535461903,
+                0.001126082963310182
+              ]
+            }
+          },
+          {
+            "case_id": "V11",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "20488777907/549755813888",
+              "20488777907/549755813888",
+              "20488777907/549755813888",
+              "20488777907/549755813888",
+              "20488777907/549755813888"
+            ],
+            "wall_seconds": {
+              "max": 0.0011325839441269636,
+              "median": 0.0010619170498102903,
+              "min": 0.0010481249773874879,
+              "values": [
+                0.001050500082783401,
+                0.0010619170498102903,
+                0.0010859169997274876,
+                0.0011325839441269636,
+                0.0010481249773874879
+              ]
+            }
+          },
+          {
+            "case_id": "V12",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "20488777907/549755813888",
+              "20488777907/549755813888",
+              "20488777907/549755813888",
+              "20488777907/549755813888",
+              "20488777907/549755813888"
+            ],
+            "wall_seconds": {
+              "max": 0.001107666059397161,
+              "median": 0.0010667919414117932,
+              "min": 0.001022959011606872,
+              "values": [
+                0.001022959011606872,
+                0.001107666059397161,
+                0.0010667919414117932,
+                0.0010644999565556645,
+                0.0010786670027300715
+              ]
+            }
+          },
+          {
+            "case_id": "V13",
+            "classification": "outside_current_approximation_support",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 0,
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "wall_seconds": {
+              "max": 4.962494131177664e-05,
+              "median": 3.929203376173973e-05,
+              "min": 3.233295865356922e-05,
+              "values": [
+                4.408403765410185e-05,
+                3.579107578843832e-05,
+                3.233295865356922e-05,
+                4.962494131177664e-05,
+                3.929203376173973e-05
+              ]
+            }
+          }
+        ],
+        "preparation_cpu_seconds_charged_once": 0,
+        "preparation_wall_seconds_charged_once": 0,
+        "probe_execution_failures": 0,
+        "probes": 35,
+        "robust_successes": 2,
+        "scope_breakdown": {
+          "full_space_spectrum": {
+            "cases": 2,
+            "robust_successes": 0,
+            "successful_runs": 0
+          },
+          "function_approximation": {
+            "cases": 5,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "mean_zero_spectrum": {
+            "cases": 6,
+            "robust_successes": 1,
+            "successful_runs": 5
+          }
+        },
+        "setup_wall_seconds": {
+          "max": 0.047373958048410714,
+          "median": 0.045821917010471225,
+          "min": 0.045109250000678,
+          "values": [
+            0.04533937503583729,
+            0.045821917010471225,
+            0.04638441605493426,
+            0.047373958048410714,
+            0.045109250000678
+          ]
+        },
+        "successful_runs": 10,
+        "timeouts": 0,
+        "total_experiment_cpu_seconds": 3.1652979999999933,
+        "total_experiment_wall_seconds": 3.184229208040051,
+        "worker_failures": 0
+      },
+      "release": {
+        "actual_model_usage": null,
+        "attempted_task_runs": 65,
+        "cases": 13,
+        "false_accepts": 0,
+        "family_breakdown": {
+          "easy": {
+            "cases": 4,
+            "robust_successes": 4,
+            "successful_runs": 20
+          },
+          "negative_power_approximation": {
+            "cases": 4,
+            "robust_successes": 3,
+            "successful_runs": 15
+          },
+          "negative_power_spectrum": {
+            "cases": 4,
+            "robust_successes": 2,
+            "successful_runs": 10
+          },
+          "step_spectrum_hard": {
+            "cases": 1,
+            "robust_successes": 0,
+            "successful_runs": 0
+          }
+        },
+        "first_task_latency_seconds": {
+          "max": 0.10529424995183945,
+          "median": 0.06323262490332127,
+          "min": 0.05967641691677272,
+          "values": [
+            0.05967641691677272,
+            0.06053899903781712,
+            0.06812683201860636,
+            0.06323262490332127,
+            0.10529424995183945
+          ]
+        },
+        "full_session_cpu_seconds": {
+          "max": 1.8905309999999997,
+          "median": 1.8223200000000008,
+          "min": 1.7446359999999992,
+          "values": [
+            1.7446359999999992,
+            1.8223200000000008,
+            1.8007389999999999,
+            1.8905309999999997,
+            1.881388000000001
+          ]
+        },
+        "full_session_wall_seconds": {
+          "max": 1.9044137089513242,
+          "median": 1.831587666994892,
+          "min": 1.7491747500607744,
+          "values": [
+            1.7491747500607744,
+            1.831587666994892,
+            1.8088501249440014,
+            1.9044137089513242,
+            1.889461415936239
+          ]
+        },
+        "model_tokenizer": null,
+        "online_wall_seconds": {
+          "max": 1.607316042180173,
+          "median": 1.563457710086368,
+          "min": 1.547217498649843,
+          "values": [
+            1.547217498649843,
+            1.5910044149495661,
+            1.5479577499208972,
+            1.607316042180173,
+            1.563457710086368
+          ]
+        },
+        "per_case": [
+          {
+            "case_id": "V01",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": false,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.0032639579148963094,
+              "median": 0.00031016592402011156,
+              "min": 0.0002792919985949993,
+              "values": [
+                0.0032639579148963094,
+                0.0003005830803886056,
+                0.00031016592402011156,
+                0.00033599999733269215,
+                0.0002792919985949993
+              ]
+            }
+          },
+          {
+            "case_id": "V02",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.003044791053980589,
+              "median": 0.00027545797638595104,
+              "min": 0.00021070800721645355,
+              "values": [
+                0.00021070800721645355,
+                0.003044791053980589,
+                0.00027545797638595104,
+                0.0003481250023469329,
+                0.0002667499938979745
+              ]
+            }
+          },
+          {
+            "case_id": "V03",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "5533178707/6597069766656",
+              "5533178707/6597069766656",
+              "5533178707/6597069766656",
+              "5533178707/6597069766656",
+              "5533178707/6597069766656"
+            ],
+            "wall_seconds": {
+              "max": 0.011018290999345481,
+              "median": 0.008157667005434632,
+              "min": 0.002927707973867655,
+              "values": [
+                0.008171457913704216,
+                0.008157667005434632,
+                0.011018290999345481,
+                0.0030942499870434403,
+                0.002927707973867655
+              ]
+            }
+          },
+          {
+            "case_id": "V04",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.005900457967072725,
+              "median": 0.0002549169585108757,
+              "min": 0.00023979204706847668,
+              "values": [
+                0.00023979204706847668,
+                0.0002429999876767397,
+                0.0002549169585108757,
+                0.005900457967072725,
+                0.0002885420108214021
+              ]
+            }
+          },
+          {
+            "case_id": "V05",
+            "classification": "public_validation",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "137250939224894562975718140989207522262875353133505852259636463276101471225437253988091878774019382031075604157288468125137068488934957327183325948983019457858519958881944788388544512/12610054292614823016656292615260454806919558042665580645743523404905708190239288211346552102292637288765268666664718130344666636365593210396530205510074020914370665900988759327485840813373101",
+              "137250939224894562975718140989207522262875353133505852259636463276101471225437253988091878774019382031075604157288468125137068488934957327183325948983019457858519958881944788388544512/12610054292614823016656292615260454806919558042665580645743523404905708190239288211346552102292637288765268666664718130344666636365593210396530205510074020914370665900988759327485840813373101",
+              "137250939224894562975718140989207522262875353133505852259636463276101471225437253988091878774019382031075604157288468125137068488934957327183325948983019457858519958881944788388544512/12610054292614823016656292615260454806919558042665580645743523404905708190239288211346552102292637288765268666664718130344666636365593210396530205510074020914370665900988759327485840813373101",
+              "137250939224894562975718140989207522262875353133505852259636463276101471225437253988091878774019382031075604157288468125137068488934957327183325948983019457858519958881944788388544512/12610054292614823016656292615260454806919558042665580645743523404905708190239288211346552102292637288765268666664718130344666636365593210396530205510074020914370665900988759327485840813373101",
+              "137250939224894562975718140989207522262875353133505852259636463276101471225437253988091878774019382031075604157288468125137068488934957327183325948983019457858519958881944788388544512/12610054292614823016656292615260454806919558042665580645743523404905708190239288211346552102292637288765268666664718130344666636365593210396530205510074020914370665900988759327485840813373101"
+            ],
+            "wall_seconds": {
+              "max": 0.049203666974790394,
+              "median": 0.041339750052429736,
+              "min": 0.04102600004989654,
+              "values": [
+                0.041104957927018404,
+                0.041339750052429736,
+                0.04102600004989654,
+                0.043811000068672,
+                0.049203666974790394
+              ]
+            }
+          },
+          {
+            "case_id": "V06",
+            "classification": "public_validation",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "129585937490067892542116798246386541791937767023257846488313060347635470602432837302866597960199987257672582306050936628488592489204741751937547163937261151818360154610466816/5174537988343193243705121279533207241604365774412067889807303275713024200226334538550137465992608950864056892647413603400879298275657495656778043234712673372607983172585439136305934385",
+              "129585937490067892542116798246386541791937767023257846488313060347635470602432837302866597960199987257672582306050936628488592489204741751937547163937261151818360154610466816/5174537988343193243705121279533207241604365774412067889807303275713024200226334538550137465992608950864056892647413603400879298275657495656778043234712673372607983172585439136305934385",
+              "129585937490067892542116798246386541791937767023257846488313060347635470602432837302866597960199987257672582306050936628488592489204741751937547163937261151818360154610466816/5174537988343193243705121279533207241604365774412067889807303275713024200226334538550137465992608950864056892647413603400879298275657495656778043234712673372607983172585439136305934385",
+              "129585937490067892542116798246386541791937767023257846488313060347635470602432837302866597960199987257672582306050936628488592489204741751937547163937261151818360154610466816/5174537988343193243705121279533207241604365774412067889807303275713024200226334538550137465992608950864056892647413603400879298275657495656778043234712673372607983172585439136305934385",
+              "129585937490067892542116798246386541791937767023257846488313060347635470602432837302866597960199987257672582306050936628488592489204741751937547163937261151818360154610466816/5174537988343193243705121279533207241604365774412067889807303275713024200226334538550137465992608950864056892647413603400879298275657495656778043234712673372607983172585439136305934385"
+            ],
+            "wall_seconds": {
+              "max": 0.07731712504755706,
+              "median": 0.07076033402699977,
+              "min": 0.07021749997511506,
+              "values": [
+                0.07076033402699977,
+                0.07088529097381979,
+                0.07021749997511506,
+                0.07731712504755706,
+                0.07059691706672311
+              ]
+            }
+          },
+          {
+            "case_id": "V07",
+            "classification": "known_failed_structure_regression",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "25436133160438386535917/4231240368651202111471616",
+              "25436133160438386535917/4231240368651202111471616",
+              "25436133160438386535917/4231240368651202111471616",
+              "25436133160438386535917/4231240368651202111471616",
+              "25436133160438386535917/4231240368651202111471616"
+            ],
+            "wall_seconds": {
+              "max": 0.2798220419790596,
+              "median": 0.2520744999637827,
+              "min": 0.25037679204251617,
+              "values": [
+                0.2521953749237582,
+                0.2520744999637827,
+                0.25037679204251617,
+                0.2798220419790596,
+                0.2516055000014603
+              ]
+            }
+          },
+          {
+            "case_id": "V08",
+            "classification": "full_space_support_challenge",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": false,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "3827941955400667575/151115727451828646838272",
+              "3827941955400667575/151115727451828646838272",
+              "3827941955400667575/151115727451828646838272",
+              "3827941955400667575/151115727451828646838272",
+              "3827941955400667575/151115727451828646838272"
+            ],
+            "wall_seconds": {
+              "max": 0.234494874952361,
+              "median": 0.2208287080284208,
+              "min": 0.21936458407435566,
+              "values": [
+                0.2208287080284208,
+                0.234494874952361,
+                0.21936458407435566,
+                0.22913808305747807,
+                0.2199665829539299
+              ]
+            }
+          },
+          {
+            "case_id": "V09",
+            "classification": "known_failed_structure_regression",
+            "family": "step_spectrum_hard",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "29869985/1099511627776",
+              "29869985/1099511627776",
+              "29869985/1099511627776",
+              "29869985/1099511627776",
+              "29869985/1099511627776"
+            ],
+            "wall_seconds": {
+              "max": 0.447144916979596,
+              "median": 0.4326870000222698,
+              "min": 0.4276629169471562,
+              "values": [
+                0.42939208389725536,
+                0.447144916979596,
+                0.4276629169471562,
+                0.4326870000222698,
+                0.4400232080370188
+              ]
+            }
+          },
+          {
+            "case_id": "V10",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "518215/549755813888",
+              "518215/549755813888",
+              "518215/549755813888",
+              "518215/549755813888",
+              "518215/549755813888"
+            ],
+            "wall_seconds": {
+              "max": 0.10580145800486207,
+              "median": 0.10445645800791681,
+              "min": 0.1033339579589665,
+              "values": [
+                0.10436066600959748,
+                0.10580145800486207,
+                0.1033339579589665,
+                0.10445645800791681,
+                0.10469529195688665
+              ]
+            }
+          },
+          {
+            "case_id": "V11",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "2731/274877906944",
+              "2731/274877906944",
+              "2731/274877906944",
+              "2731/274877906944",
+              "2731/274877906944"
+            ],
+            "wall_seconds": {
+              "max": 0.14498537499457598,
+              "median": 0.1427188339876011,
+              "min": 0.141194666037336,
+              "values": [
+                0.141194666037336,
+                0.14498537499457598,
+                0.14177616697270423,
+                0.1427188339876011,
+                0.14397983404342085
+              ]
+            }
+          },
+          {
+            "case_id": "V12",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "41/549755813888",
+              "41/549755813888",
+              "41/549755813888",
+              "41/549755813888",
+              "41/549755813888"
+            ],
+            "wall_seconds": {
+              "max": 0.2875540000386536,
+              "median": 0.28223479201551527,
+              "min": 0.27538345800712705,
+              "values": [
+                0.27538345800712705,
+                0.28241412492934614,
+                0.28223479201551527,
+                0.2875540000386536,
+                0.2795201250119135
+              ]
+            }
+          },
+          {
+            "case_id": "V13",
+            "classification": "outside_current_approximation_support",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 0,
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "wall_seconds": {
+              "max": 0.00013266701716929674,
+              "median": 0.00011133390944451094,
+              "min": 0.00010429206304252148,
+              "values": [
+                0.00011133390944451094,
+                0.00011808297131210566,
+                0.00010620802640914917,
+                0.00013266701716929674,
+                0.00010429206304252148
+              ]
+            }
+          }
+        ],
+        "preparation_cpu_seconds_charged_once": 0,
+        "preparation_wall_seconds_charged_once": 0,
+        "probe_execution_failures": 0,
+        "probes": 35,
+        "robust_successes": 9,
+        "scope_breakdown": {
+          "full_space_spectrum": {
+            "cases": 2,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "function_approximation": {
+            "cases": 5,
+            "robust_successes": 4,
+            "successful_runs": 20
+          },
+          "mean_zero_spectrum": {
+            "cases": 6,
+            "robust_successes": 4,
+            "successful_runs": 20
+          }
+        },
+        "setup_wall_seconds": {
+          "max": 0.05749420798383653,
+          "median": 0.05710854101926088,
+          "min": 0.05609058297704905,
+          "values": [
+            0.056412459001876414,
+            0.05749420798383653,
+            0.05710854101926088,
+            0.05733216693624854,
+            0.05609058297704905
+          ]
+        },
+        "successful_runs": 45,
+        "timeouts": 0,
+        "total_experiment_cpu_seconds": 9.139614,
+        "total_experiment_wall_seconds": 9.183487666887231,
+        "worker_failures": 0
+      },
+      "validation_selected_fixed": {
+        "actual_model_usage": null,
+        "attempted_task_runs": 65,
+        "cases": 13,
+        "false_accepts": 0,
+        "family_breakdown": {
+          "easy": {
+            "cases": 4,
+            "robust_successes": 2,
+            "successful_runs": 10
+          },
+          "negative_power_approximation": {
+            "cases": 4,
+            "robust_successes": 0,
+            "successful_runs": 0
+          },
+          "negative_power_spectrum": {
+            "cases": 4,
+            "robust_successes": 0,
+            "successful_runs": 0
+          },
+          "step_spectrum_hard": {
+            "cases": 1,
+            "robust_successes": 0,
+            "successful_runs": 0
+          }
+        },
+        "first_task_latency_seconds": {
+          "max": 0.05183537502307445,
+          "median": 0.047375874943099916,
+          "min": 0.04541154205799103,
+          "values": [
+            0.047107124933972955,
+            0.047375874943099916,
+            0.05012212507426739,
+            0.04541154205799103,
+            0.05183537502307445
+          ]
+        },
+        "full_session_cpu_seconds": {
+          "max": 0.13874500000000028,
+          "median": 0.1367650000000014,
+          "min": 0.13402199999999972,
+          "values": [
+            0.1342850000000001,
+            0.13402199999999972,
+            0.13703600000000055,
+            0.1367650000000014,
+            0.13874500000000028
+          ]
+        },
+        "full_session_wall_seconds": {
+          "max": 0.1412244999082759,
+          "median": 0.13928020792081952,
+          "min": 0.13631383306346834,
+          "values": [
+            0.136374874971807,
+            0.13631383306346834,
+            0.1393806249834597,
+            0.13928020792081952,
+            0.1412244999082759
+          ]
+        },
+        "model_tokenizer": null,
+        "online_wall_seconds": {
+          "max": 0.04100441501941532,
+          "median": 0.04081858217250556,
+          "min": 0.04043399984948337,
+          "values": [
+            0.040669581037946045,
+            0.04043399984948337,
+            0.04100441501941532,
+            0.04081858217250556,
+            0.04088116774801165
+          ]
+        },
+        "per_case": [
+          {
+            "case_id": "V01",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": false,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "1/262144",
+              "1/262144",
+              "1/262144",
+              "1/262144",
+              "1/262144"
+            ],
+            "wall_seconds": {
+              "max": 0.0019123749807476997,
+              "median": 0.001706375041976571,
+              "min": 0.0016409580130130053,
+              "values": [
+                0.0019123749807476997,
+                0.001705499948002398,
+                0.0016409580130130053,
+                0.0017229999648407102,
+                0.001706375041976571
+              ]
+            }
+          },
+          {
+            "case_id": "V02",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "1/262144",
+              "1/262144",
+              "1/262144",
+              "1/262144",
+              "1/262144"
+            ],
+            "wall_seconds": {
+              "max": 0.0023364999797195196,
+              "median": 0.0020813329610973597,
+              "min": 0.0019901670748367906,
+              "values": [
+                0.0020813329610973597,
+                0.0023364999797195196,
+                0.0020627499325200915,
+                0.0019901670748367906,
+                0.0020925839198753238
+              ]
+            }
+          },
+          {
+            "case_id": "V03",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "7994595/17179869184",
+              "7994595/17179869184",
+              "7994595/17179869184",
+              "7994595/17179869184",
+              "7994595/17179869184"
+            ],
+            "wall_seconds": {
+              "max": 0.004755667061544955,
+              "median": 0.004376207944005728,
+              "min": 0.0043750000186264515,
+              "values": [
+                0.004405208048410714,
+                0.004376207944005728,
+                0.004755667061544955,
+                0.0043750000186264515,
+                0.004376125056296587
+              ]
+            }
+          },
+          {
+            "case_id": "V04",
+            "classification": "public_validation",
+            "family": "easy",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": true,
+            "runs": 5,
+            "successes": 5,
+            "valid_certificates": 5,
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "wall_seconds": {
+              "max": 0.00020233402028679848,
+              "median": 0.00011504103895276785,
+              "min": 0.00010987499263137579,
+              "values": [
+                0.00011504103895276785,
+                0.00010987499263137579,
+                0.00011950009502470493,
+                0.00020233402028679848,
+                0.00011491694021970034
+              ]
+            }
+          },
+          {
+            "case_id": "V05",
+            "classification": "public_validation",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "4040505862454020167/2969925795867237810176",
+              "4040505862454020167/2969925795867237810176",
+              "4040505862454020167/2969925795867237810176",
+              "4040505862454020167/2969925795867237810176",
+              "4040505862454020167/2969925795867237810176"
+            ],
+            "wall_seconds": {
+              "max": 0.0065854169661179185,
+              "median": 0.00632425001822412,
+              "min": 0.006201958982273936,
+              "values": [
+                0.006303375004790723,
+                0.00632425001822412,
+                0.006201958982273936,
+                0.0064659579657018185,
+                0.0065854169661179185
+              ]
+            }
+          },
+          {
+            "case_id": "V06",
+            "classification": "public_validation",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "430891736058318821/18446744073709551616",
+              "430891736058318821/18446744073709551616",
+              "430891736058318821/18446744073709551616",
+              "430891736058318821/18446744073709551616",
+              "430891736058318821/18446744073709551616"
+            ],
+            "wall_seconds": {
+              "max": 0.006139167002402246,
+              "median": 0.006116874981671572,
+              "min": 0.006072334013879299,
+              "values": [
+                0.006129375076852739,
+                0.006072334013879299,
+                0.006139167002402246,
+                0.006104749976657331,
+                0.006116874981671572
+              ]
+            }
+          },
+          {
+            "case_id": "V07",
+            "classification": "known_failed_structure_regression",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "25687983201683411051/322818021289917153280",
+              "25687983201683411051/322818021289917153280",
+              "25687983201683411051/322818021289917153280",
+              "25687983201683411051/322818021289917153280",
+              "25687983201683411051/322818021289917153280"
+            ],
+            "wall_seconds": {
+              "max": 0.010038166074082255,
+              "median": 0.010010708007030189,
+              "min": 0.009783416986465454,
+              "values": [
+                0.009827667032368481,
+                0.009783416986465454,
+                0.010038166074082255,
+                0.010010708007030189,
+                0.010013624909333885
+              ]
+            }
+          },
+          {
+            "case_id": "V08",
+            "classification": "full_space_support_challenge",
+            "family": "negative_power_spectrum",
+            "kind": "spectrum",
+            "mean_zero": false,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "6425717345075325/9223372036854775808",
+              "6425717345075325/9223372036854775808",
+              "6425717345075325/9223372036854775808",
+              "6425717345075325/9223372036854775808",
+              "6425717345075325/9223372036854775808"
+            ],
+            "wall_seconds": {
+              "max": 0.0027083330787718296,
+              "median": 0.0026112080086022615,
+              "min": 0.0025613749166950583,
+              "values": [
+                0.0025613749166950583,
+                0.0026005000108852983,
+                0.0027083330787718296,
+                0.0026112080086022615,
+                0.002613541902974248
+              ]
+            }
+          },
+          {
+            "case_id": "V09",
+            "classification": "known_failed_structure_regression",
+            "family": "step_spectrum_hard",
+            "kind": "spectrum",
+            "mean_zero": true,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "143564915/137438953472",
+              "143564915/137438953472",
+              "143564915/137438953472",
+              "143564915/137438953472",
+              "143564915/137438953472"
+            ],
+            "wall_seconds": {
+              "max": 0.004502625088207424,
+              "median": 0.004439208074472845,
+              "min": 0.004292999976314604,
+              "values": [
+                0.004443958052434027,
+                0.004292999976314604,
+                0.004328624927438796,
+                0.004502625088207424,
+                0.004439208074472845
+              ]
+            }
+          },
+          {
+            "case_id": "V10",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "8474877/134217728",
+              "8474877/134217728",
+              "8474877/134217728",
+              "8474877/134217728",
+              "8474877/134217728"
+            ],
+            "wall_seconds": {
+              "max": 0.0010599159868434072,
+              "median": 0.0009794159559533,
+              "min": 0.0009587910026311874,
+              "values": [
+                0.0010599159868434072,
+                0.0009587910026311874,
+                0.0009794159559533,
+                0.0009797909297049046,
+                0.0009793329518288374
+              ]
+            }
+          },
+          {
+            "case_id": "V11",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "8474877/134217728",
+              "8474877/134217728",
+              "8474877/134217728",
+              "8474877/134217728",
+              "8474877/134217728"
+            ],
+            "wall_seconds": {
+              "max": 0.0009916659910231829,
+              "median": 0.0009278750512748957,
+              "min": 0.0009059999138116837,
+              "values": [
+                0.0009059999138116837,
+                0.0009412500075995922,
+                0.0009916659910231829,
+                0.0009278750512748957,
+                0.0009172919671982527
+              ]
+            }
+          },
+          {
+            "case_id": "V12",
+            "classification": "fixed_minus_quarter_regression",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 5,
+            "values": [
+              "8474877/134217728",
+              "8474877/134217728",
+              "8474877/134217728",
+              "8474877/134217728",
+              "8474877/134217728"
+            ],
+            "wall_seconds": {
+              "max": 0.001005499972961843,
+              "median": 0.0008945410372689366,
+              "min": 0.0008835000917315483,
+              "values": [
+                0.0008835000917315483,
+                0.0009024579776450992,
+                0.001005499972961843,
+                0.0008940830593928695,
+                0.0008945410372689366
+              ]
+            }
+          },
+          {
+            "case_id": "V13",
+            "classification": "outside_current_approximation_support",
+            "family": "negative_power_approximation",
+            "kind": "approximation",
+            "mean_zero": null,
+            "robust_success": false,
+            "runs": 5,
+            "successes": 0,
+            "valid_certificates": 0,
+            "values": [
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "wall_seconds": {
+              "max": 4.045793320983648e-05,
+              "median": 3.1333998776972294e-05,
+              "min": 2.9916991479694843e-05,
+              "values": [
+                4.045793320983648e-05,
+                2.9916991479694843e-05,
+                3.270793240517378e-05,
+                3.108300734311342e-05,
+                3.1333998776972294e-05
+              ]
+            }
+          }
+        ],
+        "preparation_cpu_seconds_charged_once": 2.5290659999999994,
+        "preparation_wall_seconds_charged_once": 2.565422623883933,
+        "probe_execution_failures": 0,
+        "probes": 35,
+        "robust_successes": 2,
+        "scope_breakdown": {
+          "full_space_spectrum": {
+            "cases": 2,
+            "robust_successes": 0,
+            "successful_runs": 0
+          },
+          "function_approximation": {
+            "cases": 5,
+            "robust_successes": 1,
+            "successful_runs": 5
+          },
+          "mean_zero_spectrum": {
+            "cases": 6,
+            "robust_successes": 1,
+            "successful_runs": 5
+          }
+        },
+        "setup_wall_seconds": {
+          "max": 0.04536645801272243,
+          "median": 0.04520920803770423,
+          "min": 0.045039374963380396,
+          "values": [
+            0.045194749953225255,
+            0.045039374963380396,
+            0.04536645801272243,
+            0.04520920803770423,
+            0.04524995805695653
+          ]
+        },
+        "successful_runs": 10,
+        "timeouts": 0,
+        "total_experiment_cpu_seconds": 3.2099190000000015,
+        "total_experiment_wall_seconds": 3.2579966647317633,
+        "worker_failures": 0
+      }
+    },
+    "release_against_every_baseline": {
+      "fixed_increasing": {
+        "median_full_session_cpu_ratio_release_over_baseline": 6.181987183618927,
+        "median_full_session_wall_ratio_release_over_baseline": 6.157424240186112,
+        "median_online_wall_ratio": 8.93005951642203,
+        "robust_success_gains": [
+          "V01",
+          "V02",
+          "V05",
+          "V06",
+          "V10",
+          "V11",
+          "V12"
+        ],
+        "robust_success_losses": [],
+        "total_experiment_cpu_ratio_including_preparation": 6.170011935494309,
+        "total_experiment_wall_ratio_including_preparation": 6.144906277185393,
+        "warning": "Ratio includes all successes and failures. Faster failure is not a runtime benefit. Repeated timings are descriptive on a shared host."
+      },
+      "frozen_v317": {
+        "median_full_session_cpu_ratio_release_over_baseline": 0.8656242681842993,
+        "median_full_session_wall_ratio_release_over_baseline": 0.8679803408831149,
+        "median_online_wall_ratio": 0.8436166050172534,
+        "robust_success_gains": [],
+        "robust_success_losses": [],
+        "total_experiment_cpu_ratio_including_preparation": 0.8673944609684479,
+        "total_experiment_wall_ratio_including_preparation": 0.8691455807168775,
+        "warning": "Ratio includes all successes and failures. Faster failure is not a runtime benefit. Repeated timings are descriptive on a shared host."
+      },
+      "old_default": {
+        "median_full_session_cpu_ratio_release_over_baseline": 2.879731482959318,
+        "median_full_session_wall_ratio_release_over_baseline": 2.878546427696642,
+        "median_online_wall_ratio": 3.0502898421749514,
+        "robust_success_gains": [
+          "V01",
+          "V02",
+          "V05",
+          "V06",
+          "V10",
+          "V11",
+          "V12"
+        ],
+        "robust_success_losses": [],
+        "total_experiment_cpu_ratio_including_preparation": 2.887441877510433,
+        "total_experiment_wall_ratio_including_preparation": 2.8840535862491596,
+        "warning": "Ratio includes all successes and failures. Faster failure is not a runtime benefit. Repeated timings are descriptive on a shared host."
+      },
+      "validation_selected_fixed": {
+        "median_full_session_cpu_ratio_release_over_baseline": 13.324461667824238,
+        "median_full_session_wall_ratio_release_over_baseline": 13.150380045642562,
+        "median_online_wall_ratio": 38.30259717201732,
+        "robust_success_gains": [
+          "V01",
+          "V02",
+          "V05",
+          "V06",
+          "V10",
+          "V11",
+          "V12"
+        ],
+        "robust_success_losses": [],
+        "total_experiment_cpu_ratio_including_preparation": 2.847303623549378,
+        "total_experiment_wall_ratio_including_preparation": 2.8187529368276145,
+        "warning": "Ratio includes all successes and failures. Faster failure is not a runtime benefit. Repeated timings are descriptive on a shared host."
+      }
+    }
+  },
+  "session_files": [
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/old_default_r0_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/fixed_increasing_r0_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/validation_selected_fixed_1_r0_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/frozen_v317_r0_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/release_r0_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/fixed_increasing_r1_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/validation_selected_fixed_1_r1_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/frozen_v317_r1_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/release_r1_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/old_default_r1_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/validation_selected_fixed_1_r2_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/frozen_v317_r2_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/release_r2_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/old_default_r2_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/fixed_increasing_r2_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/frozen_v317_r3_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/release_r3_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/old_default_r3_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/fixed_increasing_r3_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/validation_selected_fixed_1_r3_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/release_r4_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/old_default_r4_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/fixed_increasing_r4_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/validation_selected_fixed_1_r4_output.json",
+    "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/frozen_v317_r4_output.json"
+  ],
+  "version": "geometry_release_preregistered_v2"
+}

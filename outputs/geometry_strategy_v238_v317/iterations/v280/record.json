@@ -1,0 +1,23 @@
+{
+  "version": 280,
+  "recorded_at": "2026-09-18T18:35:14.754252+00:00",
+  "hypothesis": "Different exact L2 error contributions require different refinements",
+  "change": "Partition core, annular and rounding error budgets and choose depth, degree or precision separately",
+  "source_sha256": {
+    "research_controller.py": "a47528a7e31c8c75b817f221f53719412edd004e7f06ee1ad22faf7f8fd58876",
+    "test_research_controller.py": "125799ee3728418ce4357b7bdebff48c44448b6f22cc7d278053283069d47cb6"
+  },
+  "validation": {
+    "tests": 6,
+    "passed": true
+  },
+  "comparison": {
+    "high_degree_shallow_partition": "core -> more levels",
+    "deep_degree_zero_partition": "annuli -> higher degree"
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Largest contribution heuristic does not prove cheapest refinement"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

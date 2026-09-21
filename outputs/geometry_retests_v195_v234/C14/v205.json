@@ -1,0 +1,60 @@
+{
+  "formal_assistant_checked": false,
+  "format": "two_scope_initial_spectrum_v205",
+  "geometry": "unit_S2",
+  "k": 4,
+  "l0_multiplicity": 1,
+  "mean_zero": false,
+  "measure": "standard_sphere_area",
+  "operator": "-Delta+q",
+  "ordered": [
+    {
+      "index": 1,
+      "laplace_level": "0",
+      "lower": "-1",
+      "upper": "1",
+      "width": "2"
+    },
+    {
+      "index": 2,
+      "laplace_level": "2",
+      "lower": "1",
+      "upper": "3",
+      "width": "2"
+    },
+    {
+      "index": 3,
+      "laplace_level": "2",
+      "lower": "1",
+      "upper": "3",
+      "width": "2"
+    },
+    {
+      "index": 4,
+      "laplace_level": "2",
+      "lower": "1",
+      "upper": "3",
+      "width": "2"
+    }
+  ],
+  "q": [
+    "0",
+    "1"
+  ],
+  "range": {
+    "lower": "-1",
+    "proof": {
+      "kind": "quadratic_range_v5",
+      "lower": "-1",
+      "upper": "1"
+    },
+    "upper": "1"
+  },
+  "real_angular_multiplicity": {
+    "m=0": 1,
+    "m>0": 2
+  },
+  "rule": "complete Laplace ordered spectrum plus inf(q)/sup(q)",
+  "schur_computations": 0,
+  "space": "full_unprojected"
+}

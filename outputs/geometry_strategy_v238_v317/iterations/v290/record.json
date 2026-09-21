@@ -1,0 +1,22 @@
+{
+  "version": 290,
+  "recorded_at": "2026-09-18T18:35:07.863608+00:00",
+  "hypothesis": "Adding a constant potential shifts every constrained Rayleigh quotient by exactly the same constant.",
+  "change": "Transport full spectrum bounds under arbitrary allowed rational constant shifts while preserving space and width.",
+  "source_sha256": {
+    "proof_transport.py": "870bb55730b345622d273aade39b0a75b039bae46249ef96f8ba7e5784d3686a",
+    "test_proof_transport.py": "7832852c1f53c6c00ab8fb66335aa3231d8e11795bd567f903b979e81f0fd03e"
+  },
+  "validation": {
+    "tests_passed": 4
+  },
+  "comparison": {
+    "before": "Shifted input repeated spectrum search.",
+    "after": "Two exact endpoint additions after source replay."
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Potential scaling is not spectral scaling; only additive constants."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

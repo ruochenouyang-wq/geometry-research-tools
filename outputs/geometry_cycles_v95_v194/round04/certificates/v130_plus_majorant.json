@@ -1,0 +1,130 @@
+{
+  "claim": "lambda(parameter) <= intercept + sum(slopes_i * parameter_i) for every parameter",
+  "direction_trials": [
+    {
+      "azimuth_integral_factor": "pi",
+      "azimuth_m": 1,
+      "basis_convention": "standard_Condon_Shortley_P_l^m(t)*cos(m*phi)",
+      "coefficients": [
+        "1",
+        "1/8"
+      ],
+      "degrees": [
+        1,
+        2
+      ],
+      "energy_divided_by_azimuth_factor": "371/120",
+      "formal_assistant_checked": false,
+      "format": "explicit_sector_rayleigh_v95",
+      "full_space": "all_mean_zero_H1_functions_on_unit_S2",
+      "full_space_spectral_upper": "106/47",
+      "geometry": "unit_S2",
+      "harmonic_terms": [
+        {
+          "coefficient": "1",
+          "l": 1,
+          "m": 1,
+          "real_component": "cos"
+        },
+        {
+          "coefficient": "1/8",
+          "l": 2,
+          "m": 1,
+          "real_component": "cos"
+        }
+      ],
+      "kinetic_divided_by_azimuth_factor": "347/120",
+      "mean_zero": true,
+      "norm_squared_divided_by_azimuth_factor": "329/240",
+      "potential_divided_by_azimuth_factor": "1/5",
+      "q_coefficients": [
+        "0",
+        "1"
+      ],
+      "rayleigh_quotient": "106/47",
+      "scope": "explicit_real_spherical_harmonic_trial_on_unit_S2",
+      "status": "rayleigh_certified",
+      "strict_margin": null,
+      "threshold": null
+    }
+  ],
+  "family": {
+    "box": [
+      [
+        "-1",
+        "1"
+      ]
+    ],
+    "directions": [
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "formal_assistant_checked": false,
+    "format": "affine_sphere_family_representation_v125",
+    "function_space": "all_mean_zero_H1_functions_on_unit_S2",
+    "geometry": "unit_S2",
+    "mean_zero": true,
+    "parameter_dimension": 1,
+    "parameters_quantifier": "every_real_point_in_closed_box",
+    "potential_degree_limit": 6,
+    "q0": [
+      "0",
+      "0",
+      "2"
+    ]
+  },
+  "format": "affine_sphere_family_affine_rayleigh_v130",
+  "intercept": "5808/2303",
+  "slopes": [
+    "48/329"
+  ],
+  "trial_at_q0": {
+    "azimuth_integral_factor": "pi",
+    "azimuth_m": 1,
+    "basis_convention": "standard_Condon_Shortley_P_l^m(t)*cos(m*phi)",
+    "coefficients": [
+      "1",
+      "1/8"
+    ],
+    "degrees": [
+      1,
+      2
+    ],
+    "energy_divided_by_azimuth_factor": "121/35",
+    "formal_assistant_checked": false,
+    "format": "explicit_sector_rayleigh_v95",
+    "full_space": "all_mean_zero_H1_functions_on_unit_S2",
+    "full_space_spectral_upper": "5808/2303",
+    "geometry": "unit_S2",
+    "harmonic_terms": [
+      {
+        "coefficient": "1",
+        "l": 1,
+        "m": 1,
+        "real_component": "cos"
+      },
+      {
+        "coefficient": "1/8",
+        "l": 2,
+        "m": 1,
+        "real_component": "cos"
+      }
+    ],
+    "kinetic_divided_by_azimuth_factor": "347/120",
+    "mean_zero": true,
+    "norm_squared_divided_by_azimuth_factor": "329/240",
+    "potential_divided_by_azimuth_factor": "95/168",
+    "q_coefficients": [
+      "0",
+      "0",
+      "2"
+    ],
+    "rayleigh_quotient": "5808/2303",
+    "scope": "explicit_real_spherical_harmonic_trial_on_unit_S2",
+    "status": "rayleigh_certified",
+    "strict_margin": null,
+    "threshold": null
+  }
+}

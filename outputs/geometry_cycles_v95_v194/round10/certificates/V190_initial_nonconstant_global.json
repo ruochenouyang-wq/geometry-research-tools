@@ -1,0 +1,670 @@
+{
+  "best_feasible_radius": "2",
+  "cells": [
+    {
+      "anchor": {
+        "eigenvalue_index": 1,
+        "formal_assistant_checked": false,
+        "format": "sphere_radius_ground_v185",
+        "lower": "349939204115677787/324259173170675712",
+        "problem": {
+          "coordinates": "normalized_t",
+          "geometry": "round_two_sphere",
+          "mean_zero": true,
+          "measure": "natural_area_on_S2_R",
+          "q_coefficients": [
+            "0",
+            "0",
+            "1"
+          ],
+          "scope": "all_real_mean_zero_H1_on_S2_radius_R"
+        },
+        "radius": "3/2",
+        "rule": "C_R(q)=R^-2*C_unit(R^2*q(R*t)) for ambient; q(t) for normalized",
+        "scale_factor": "4/9",
+        "unit_backend": "projected_v94",
+        "unit_certificate": {
+          "angular_tail_cannot_improve_best_upper": true,
+          "angular_tail_lower": "6",
+          "decimal_enclosure": [
+            "2.428191010176",
+            "2.428191015497"
+          ],
+          "eigenvalue_index_in_constrained_space": 1,
+          "exact_width": "766754213/144115188075855872",
+          "formal_assistant_checked": false,
+          "format": "projected_full_sphere_ground_v93",
+          "geometry": "unit_S2",
+          "lower": "349939204115677787/144115188075855872",
+          "mean_zero": true,
+          "omitted_azimuth_m_start": 2,
+          "potential_symmetry": "axisymmetric_polynomial_degree_at_most_6",
+          "q_coefficients": [
+            "0",
+            "0",
+            "9/4"
+          ],
+          "range_proof": {
+            "kind": "quadratic_range_v5",
+            "lower": "0",
+            "upper": "9/4"
+          },
+          "scope": "all_mean_zero_H1_functions_on_unit_S2",
+          "sectors": [
+            {
+              "azimuth_m": 0,
+              "decimal_enclosure": [
+                "3.314662586656",
+                "3.314662595280"
+              ],
+              "degree_start": 1,
+              "eigenvalue_index": 1,
+              "exact_width": "2485350037/288230376151711744",
+              "formal_assistant_checked": false,
+              "format": "projected_sphere_sector_v91_v92",
+              "geometry": "unit_S2",
+              "lower": "955386444168073579/288230376151711744",
+              "lower_inertia": [
+                0,
+                0,
+                8
+              ],
+              "mean_zero": true,
+              "modes": 8,
+              "projection": "remove_l0",
+              "q_coefficients": [
+                "0",
+                "0",
+                "9/4"
+              ],
+              "radial_tail_lower": "90",
+              "radial_tail_start": 9,
+              "range_proof": {
+                "kind": "quadratic_range_v5",
+                "lower": "0",
+                "upper": "9/4"
+              },
+              "scope": "single_azimuth_sector_only",
+              "upper": "3559091861/1073741824",
+              "upper_inertia": [
+                1,
+                0,
+                7
+              ],
+              "upper_kind": "upper_tail"
+            },
+            {
+              "azimuth_m": 1,
+              "decimal_enclosure": [
+                "2.428191010176",
+                "2.428191015497"
+              ],
+              "degree_start": 1,
+              "eigenvalue_index": 1,
+              "exact_width": "766754213/144115188075855872",
+              "formal_assistant_checked": false,
+              "format": "projected_sphere_sector_v91_v92",
+              "geometry": "unit_S2",
+              "lower": "349939204115677787/144115188075855872",
+              "lower_inertia": [
+                0,
+                0,
+                8
+              ],
+              "mean_zero": true,
+              "modes": 8,
+              "projection": "none",
+              "q_coefficients": [
+                "0",
+                "0",
+                "9/4"
+              ],
+              "radial_tail_lower": "90",
+              "radial_tail_start": 9,
+              "range_proof": {
+                "kind": "quadratic_range_v5",
+                "lower": "0",
+                "upper": "9/4"
+              },
+              "scope": "single_azimuth_sector_only",
+              "upper": "1303625125/536870912",
+              "upper_inertia": [
+                1,
+                0,
+                7
+              ],
+              "upper_kind": "upper_tail"
+            }
+          ],
+          "status": "certified_target_met",
+          "tolerance": "9/400000000",
+          "upper": "1303625125/536870912"
+        },
+        "unit_q_coefficients": [
+          "0",
+          "0",
+          "9/4"
+        ],
+        "upper": "1303625125/1207959552",
+        "width": "766754213/324259173170675712"
+      },
+      "bound_quantity": "ground_eigenvalue_at_each_R",
+      "coefficient_deviations": [
+        "0",
+        "0",
+        "7/4"
+      ],
+      "constant_potential_analytic_intersection": null,
+      "formal_assistant_checked": false,
+      "format": "uniform_radius_cell_v189",
+      "four_signed_products": [
+        "97737624982930011/576460752303423488",
+        "97737624982930011/144115188075855872",
+        "2243149221/2147483648",
+        "2243149221/536870912"
+      ],
+      "interval": [
+        "1",
+        "2"
+      ],
+      "inverse_radius_squared_interval": [
+        "1/4",
+        "1"
+      ],
+      "lower": "97737624982930011/576460752303423488",
+      "lower_bound_inequality_quantifier": "for_every_nonzero_real_mean_zero_H1_function",
+      "problem": {
+        "coordinates": "normalized_t",
+        "geometry": "round_two_sphere",
+        "mean_zero": true,
+        "measure": "natural_area_on_S2_R",
+        "q_coefficients": [
+          "0",
+          "0",
+          "1"
+        ],
+        "scope": "all_real_mean_zero_H1_on_S2_radius_R"
+      },
+      "quantifier": "for_every_R_in_closed_interval",
+      "uniform_potential_perturbation": "7/4",
+      "unit_eigenvalue_interval": [
+        "97737624982930011/144115188075855872",
+        "2243149221/536870912"
+      ],
+      "upper": "2243149221/536870912"
+    }
+  ],
+  "domain": [
+    "1",
+    "2"
+  ],
+  "feasible_points": [
+    {
+      "eigenvalue_index": 1,
+      "formal_assistant_checked": false,
+      "format": "sphere_radius_ground_v185",
+      "lower": "9887870736003211/4503599627370496",
+      "problem": {
+        "coordinates": "normalized_t",
+        "geometry": "round_two_sphere",
+        "mean_zero": true,
+        "measure": "natural_area_on_S2_R",
+        "q_coefficients": [
+          "0",
+          "0",
+          "1"
+        ],
+        "scope": "all_real_mean_zero_H1_on_S2_radius_R"
+      },
+      "radius": "1",
+      "rule": "C_R(q)=R^-2*C_unit(R^2*q(R*t)) for ambient; q(t) for normalized",
+      "scale_factor": "1",
+      "unit_backend": "projected_v94",
+      "unit_certificate": {
+        "angular_tail_cannot_improve_best_upper": true,
+        "angular_tail_lower": "6",
+        "decimal_enclosure": [
+          "2.195548351125",
+          "2.195548355580"
+        ],
+        "eigenvalue_index_in_constrained_space": 1,
+        "exact_width": "20057973/4503599627370496",
+        "formal_assistant_checked": false,
+        "format": "projected_full_sphere_ground_v93",
+        "geometry": "unit_S2",
+        "lower": "9887870736003211/4503599627370496",
+        "mean_zero": true,
+        "omitted_azimuth_m_start": 2,
+        "potential_symmetry": "axisymmetric_polynomial_degree_at_most_6",
+        "q_coefficients": [
+          "0",
+          "0",
+          "1"
+        ],
+        "range_proof": {
+          "kind": "quadratic_range_v5",
+          "lower": "0",
+          "upper": "1"
+        },
+        "scope": "all_mean_zero_H1_functions_on_unit_S2",
+        "sectors": [
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "2.593084576777",
+              "2.593084588647"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "106910097/9007199254740992",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "23356429467430511/9007199254740992",
+            "lower_inertia": [
+              0,
+              0,
+              8
+            ],
+            "mean_zero": true,
+            "modes": 8,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "0",
+              "0",
+              "1"
+            ],
+            "radial_tail_lower": "90",
+            "radial_tail_start": 9,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "0",
+              "upper": "1"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "174018961/67108864",
+            "upper_inertia": [
+              1,
+              0,
+              7
+            ],
+            "upper_kind": "upper_tail"
+          },
+          {
+            "azimuth_m": 1,
+            "decimal_enclosure": [
+              "2.195548351125",
+              "2.195548355580"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "20057973/4503599627370496",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "9887870736003211/4503599627370496",
+            "lower_inertia": [
+              0,
+              0,
+              8
+            ],
+            "mean_zero": true,
+            "modes": 8,
+            "projection": "none",
+            "q_coefficients": [
+              "0",
+              "0",
+              "1"
+            ],
+            "radial_tail_lower": "90",
+            "radial_tail_start": 9,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "0",
+              "upper": "1"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "36835189/16777216",
+            "upper_inertia": [
+              1,
+              0,
+              7
+            ],
+            "upper_kind": "upper_tail"
+          }
+        ],
+        "status": "certified_target_met",
+        "tolerance": "1/100000000",
+        "upper": "36835189/16777216"
+      },
+      "unit_q_coefficients": [
+        "0",
+        "0",
+        "1"
+      ],
+      "upper": "36835189/16777216",
+      "width": "20057973/4503599627370496"
+    },
+    {
+      "eigenvalue_index": 1,
+      "formal_assistant_checked": false,
+      "format": "sphere_radius_ground_v185",
+      "lower": "349939204115677787/324259173170675712",
+      "problem": {
+        "coordinates": "normalized_t",
+        "geometry": "round_two_sphere",
+        "mean_zero": true,
+        "measure": "natural_area_on_S2_R",
+        "q_coefficients": [
+          "0",
+          "0",
+          "1"
+        ],
+        "scope": "all_real_mean_zero_H1_on_S2_radius_R"
+      },
+      "radius": "3/2",
+      "rule": "C_R(q)=R^-2*C_unit(R^2*q(R*t)) for ambient; q(t) for normalized",
+      "scale_factor": "4/9",
+      "unit_backend": "projected_v94",
+      "unit_certificate": {
+        "angular_tail_cannot_improve_best_upper": true,
+        "angular_tail_lower": "6",
+        "decimal_enclosure": [
+          "2.428191010176",
+          "2.428191015497"
+        ],
+        "eigenvalue_index_in_constrained_space": 1,
+        "exact_width": "766754213/144115188075855872",
+        "formal_assistant_checked": false,
+        "format": "projected_full_sphere_ground_v93",
+        "geometry": "unit_S2",
+        "lower": "349939204115677787/144115188075855872",
+        "mean_zero": true,
+        "omitted_azimuth_m_start": 2,
+        "potential_symmetry": "axisymmetric_polynomial_degree_at_most_6",
+        "q_coefficients": [
+          "0",
+          "0",
+          "9/4"
+        ],
+        "range_proof": {
+          "kind": "quadratic_range_v5",
+          "lower": "0",
+          "upper": "9/4"
+        },
+        "scope": "all_mean_zero_H1_functions_on_unit_S2",
+        "sectors": [
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "3.314662586656",
+              "3.314662595280"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "2485350037/288230376151711744",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "955386444168073579/288230376151711744",
+            "lower_inertia": [
+              0,
+              0,
+              8
+            ],
+            "mean_zero": true,
+            "modes": 8,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "0",
+              "0",
+              "9/4"
+            ],
+            "radial_tail_lower": "90",
+            "radial_tail_start": 9,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "0",
+              "upper": "9/4"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "3559091861/1073741824",
+            "upper_inertia": [
+              1,
+              0,
+              7
+            ],
+            "upper_kind": "upper_tail"
+          },
+          {
+            "azimuth_m": 1,
+            "decimal_enclosure": [
+              "2.428191010176",
+              "2.428191015497"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "766754213/144115188075855872",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "349939204115677787/144115188075855872",
+            "lower_inertia": [
+              0,
+              0,
+              8
+            ],
+            "mean_zero": true,
+            "modes": 8,
+            "projection": "none",
+            "q_coefficients": [
+              "0",
+              "0",
+              "9/4"
+            ],
+            "radial_tail_lower": "90",
+            "radial_tail_start": 9,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "0",
+              "upper": "9/4"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "1303625125/536870912",
+            "upper_inertia": [
+              1,
+              0,
+              7
+            ],
+            "upper_kind": "upper_tail"
+          }
+        ],
+        "status": "certified_target_met",
+        "tolerance": "9/400000000",
+        "upper": "1303625125/536870912"
+      },
+      "unit_q_coefficients": [
+        "0",
+        "0",
+        "9/4"
+      ],
+      "upper": "1303625125/1207959552",
+      "width": "766754213/324259173170675712"
+    },
+    {
+      "eigenvalue_index": 1,
+      "formal_assistant_checked": false,
+      "format": "sphere_radius_ground_v185",
+      "lower": "49253365473887539/72057594037927936",
+      "problem": {
+        "coordinates": "normalized_t",
+        "geometry": "round_two_sphere",
+        "mean_zero": true,
+        "measure": "natural_area_on_S2_R",
+        "q_coefficients": [
+          "0",
+          "0",
+          "1"
+        ],
+        "scope": "all_real_mean_zero_H1_on_S2_radius_R"
+      },
+      "radius": "2",
+      "rule": "C_R(q)=R^-2*C_unit(R^2*q(R*t)) for ambient; q(t) for normalized",
+      "scale_factor": "1/4",
+      "unit_backend": "projected_v94",
+      "unit_certificate": {
+        "angular_tail_cannot_improve_best_upper": true,
+        "angular_tail_lower": "6",
+        "decimal_enclosure": [
+          "2.734111019469",
+          "2.734111025930"
+        ],
+        "eigenvalue_index_in_constrained_space": 1,
+        "exact_width": "116374221/18014398509481984",
+        "formal_assistant_checked": false,
+        "format": "projected_full_sphere_ground_v93",
+        "geometry": "unit_S2",
+        "lower": "49253365473887539/18014398509481984",
+        "mean_zero": true,
+        "omitted_azimuth_m_start": 2,
+        "potential_symmetry": "axisymmetric_polynomial_degree_at_most_6",
+        "q_coefficients": [
+          "0",
+          "0",
+          "4"
+        ],
+        "range_proof": {
+          "kind": "quadratic_range_v5",
+          "lower": "0",
+          "upper": "4"
+        },
+        "scope": "all_mean_zero_H1_functions_on_unit_S2",
+        "sectors": [
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "4.287128540548",
+              "4.287128552795"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "220595463/18014398509481984",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "77230041990822649/18014398509481984",
+            "lower_inertia": [
+              0,
+              0,
+              8
+            ],
+            "mean_zero": true,
+            "modes": 8,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "0",
+              "0",
+              "4"
+            ],
+            "radial_tail_lower": "90",
+            "radial_tail_start": 9,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "0",
+              "upper": "4"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "287704327/67108864",
+            "upper_inertia": [
+              1,
+              0,
+              7
+            ],
+            "upper_kind": "upper_tail"
+          },
+          {
+            "azimuth_m": 1,
+            "decimal_enclosure": [
+              "2.734111019469",
+              "2.734111025930"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "116374221/18014398509481984",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "49253365473887539/18014398509481984",
+            "lower_inertia": [
+              0,
+              0,
+              8
+            ],
+            "mean_zero": true,
+            "modes": 8,
+            "projection": "none",
+            "q_coefficients": [
+              "0",
+              "0",
+              "4"
+            ],
+            "radial_tail_lower": "90",
+            "radial_tail_start": 9,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "0",
+              "upper": "4"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "183483085/67108864",
+            "upper_inertia": [
+              1,
+              0,
+              7
+            ],
+            "upper_kind": "upper_tail"
+          }
+        ],
+        "status": "certified_target_met",
+        "tolerance": "1/25000000",
+        "upper": "183483085/67108864"
+      },
+      "unit_q_coefficients": [
+        "0",
+        "0",
+        "4"
+      ],
+      "upper": "183483085/268435456",
+      "width": "116374221/72057594037927936"
+    }
+  ],
+  "formal_assistant_checked": false,
+  "format": "radius_global_minimum_v190",
+  "full_domain_coverage": true,
+  "lower": "97737624982930011/576460752303423488",
+  "maximum_lower": "9887870736003211/4503599627370496",
+  "maximum_upper": "2243149221/536870912",
+  "possible_minimizer_cells": [
+    [
+      "1",
+      "2"
+    ]
+  ],
+  "problem": {
+    "coordinates": "normalized_t",
+    "geometry": "round_two_sphere",
+    "mean_zero": true,
+    "measure": "natural_area_on_S2_R",
+    "q_coefficients": [
+      "0",
+      "0",
+      "1"
+    ],
+    "scope": "all_real_mean_zero_H1_on_S2_radius_R"
+  },
+  "status": "certified_global_bound_open_gap",
+  "tolerance": "1/10000",
+  "uniqueness_claimed": false,
+  "upper": "183483085/268435456",
+  "width": "296289299739164069/576460752303423488"
+}

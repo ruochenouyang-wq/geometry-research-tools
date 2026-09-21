@@ -1,0 +1,26 @@
+{
+  "version": 313,
+  "recorded_at": "2026-09-18T18:39:03.767513+00:00",
+  "hypothesis": "Independent requests should survive neighboring invalid requests and legitimate certificates should not need irrelevant fields.",
+  "change": "Added failure-isolated ordered batches; summaries accept upper-only L2 certificates and request-bound targets, never claiming target success without a target.",
+  "source_sha256": {
+    "interaction.py": "91998e894f49d2a53477d5134156711648600c8ed4329d8f8855df36df604d2c",
+    "test_interaction.py": "5c69e61b59705f906af9102085daede8dca37ddf6ec0c580b7a3f6f714b275d0"
+  },
+  "validation": {
+    "unittest_tests": 18,
+    "passed": true
+  },
+  "comparison": {
+    "batch_items": 5,
+    "valid_results_delivered": 3,
+    "isolated_failures": 2,
+    "sequential_abort_would_lose_valid_results": 2,
+    "transport_contract": "optional squared error and optional internal tolerance accepted"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Batch is sequential; bound summaries require an injected verifier for mathematical acceptance."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

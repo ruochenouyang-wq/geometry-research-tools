@@ -1,0 +1,63 @@
+{
+  "algorithm_version": 10,
+  "route": "function",
+  "status": "target_met",
+  "tolerance": "1/1000000000000",
+  "max_modes": 24,
+  "coefficient_bits": 160,
+  "certificate": {
+    "method": "rational_trial_refinement_v7",
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "eigenvalue_index": 1,
+    "q_coefficients": [
+      "0",
+      "1"
+    ],
+    "trial_legendre_coefficients": [
+      "1",
+      "-4160467991655/8796093022208",
+      "903984180747/17592186044416",
+      "-22329677507/8796093022208",
+      "633263841/8796093022208",
+      "-5834055/4398046511104",
+      "150983/8796093022208",
+      "-2895/17592186044416"
+    ],
+    "gap_proof": {
+      "kind": "range_minmax_v7",
+      "sector": "all",
+      "range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "-1",
+        "upper": "1"
+      }
+    },
+    "rayleigh_quotient": "-43759602971422249608076673555/277550654727000924963899242974",
+    "gap_lower": "1",
+    "inside_residual_squared": "16149284449592387159453945368652923/77034365939386880893200667453442267491098766557850288364676",
+    "outside_residual_squared": "2982899920/7077541695538523586579430695837",
+    "excited_weight_upper": "552211755023055524524871420241403874411/1755084788937860851652747012329624980470929898080222781933297",
+    "formal_assistant_checked": false,
+    "lower": "-23252432528049387078956798503723/147481408283576237128536945686811",
+    "upper": "-43759602971422249608076673555/277550654727000924963899242974",
+    "exact_width": "552211755023055524524871420241403874411/1516057830709878604111959538989069858979840188632269533193182",
+    "decimal_enclosure": [
+      "-0.157663483138",
+      "-0.157663483137"
+    ]
+  },
+  "attempts": [
+    {
+      "modes": 4,
+      "action": "initial_trial",
+      "exact_width": "955142344823611616672618217985895242618397684491/5094923798073781686708345827678690857588596350450271936"
+    },
+    {
+      "modes": 8,
+      "action": "initial_trial",
+      "exact_width": "552211755023055524524871420241403874411/1516057830709878604111959538989069858979840188632269533193182"
+    }
+  ],
+  "seconds": 0.002828459000000283
+}

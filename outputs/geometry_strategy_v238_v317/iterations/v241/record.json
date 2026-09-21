@@ -1,0 +1,23 @@
+{
+  "version": 241,
+  "recorded_at": "2026-09-18T18:12:12.481096+00:00",
+  "hypothesis": "合法函数逼近证书不能满足谱结论请求",
+  "change": "增加 expected_kind 并按证书格式绑定；转交时剥离元数据",
+  "source_sha256": {
+    "request_contract.py": "41f717ec942fa04fc4d59c953e5aecb21eea7e0486df372c8d0e370012039d08",
+    "test_request_contract.py": "24833c1a8e9e42d62d52e2d13c8d64b1c014b699952d01caf0aa6b9a27681f59"
+  },
+  "validation": {
+    "tests": 7,
+    "passed": true
+  },
+  "comparison": {
+    "legacy": "同函数合法逼近证书返回 verified=true",
+    "new": "期待谱时拒绝绑定，期待逼近时仍通过"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "结论类型限两类；新格式后续需明确注册，不能信任返回 kind 文本"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

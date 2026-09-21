@@ -1,0 +1,51 @@
+{
+  "all_failed_branches_retained": true,
+  "candidates": [
+    {
+      "index": 0,
+      "name": "small",
+      "session_files": [
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_0_r0_output.json",
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_0_r1_output.json",
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_0_r2_output.json",
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_0_r3_output.json",
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_0_r4_output.json"
+      ],
+      "successes": 5,
+      "valid": 60
+    },
+    {
+      "index": 1,
+      "name": "medium",
+      "session_files": [
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_1_r0_output.json",
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_1_r1_output.json",
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_1_r2_output.json",
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_1_r3_output.json",
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_1_r4_output.json"
+      ],
+      "successes": 10,
+      "valid": 60
+    },
+    {
+      "index": 2,
+      "name": "large",
+      "session_files": [
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_2_r0_output.json",
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_2_r1_output.json",
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_2_r2_output.json",
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_2_r3_output.json",
+        "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/selection_sessions/validation_candidate_2_r4_output.json"
+      ],
+      "successes": 10,
+      "valid": 60
+    }
+  ],
+  "created_utc": "2026-09-19T20:26:20.199241+00:00",
+  "preparation_cpu_seconds": 2.5290659999999994,
+  "preparation_wall_seconds": 2.565422623883933,
+  "protocol_digest": "3db0618d0e3ade17d6fcff8bc1ab2f3cbd0964c95a32261ea461b982f33dd841",
+  "selected_config_index": 1,
+  "selected_name": "medium",
+  "selection_rule": "5 independent cold sessions/configuration on all 13 validation cases; maximize total budget-valid successes, then replay-valid certificates, then smallest predeclared configuration; never timing or per-task oracle"
+}

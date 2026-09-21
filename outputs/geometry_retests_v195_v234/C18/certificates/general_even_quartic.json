@@ -1,0 +1,1530 @@
+{
+  "certificate": {
+    "characters": [
+      {
+        "format": "reflection_analytic_floor_v230",
+        "lower": "35/6",
+        "lowest_degree": 2,
+        "mean_zero": true,
+        "parity": [
+          0,
+          0,
+          0
+        ],
+        "potential": {
+          "0,0,2": "1",
+          "2,2,0": "-1/3",
+          "4,0,0": "1/2"
+        },
+        "range_proof": {
+          "Bernstein_coefficients": [
+            {
+              "coefficient": "1",
+              "powers": [
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "coefficient": "0",
+              "powers": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient": "-1/6",
+              "powers": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                2,
+                0,
+                0
+              ]
+            }
+          ],
+          "effective_potential": {
+            "0,0,0": "1",
+            "0,2,0": "-1",
+            "2,0,0": "-1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "lower": "-1/6",
+          "potential": {
+            "0,0,2": "1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "rule": "convex_hull_of_exact_simplex_Bernstein_coefficients",
+          "simplex_degree": 2,
+          "sphere_identity": {
+            "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+            "original": {
+              "0,0,2": "1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            },
+            "quotient": {
+              "0,0,0": "1"
+            },
+            "reduced": {
+              "0,0,0": "1",
+              "0,2,0": "-1",
+              "2,0,0": "-1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            }
+          },
+          "upper": "1"
+        },
+        "rule": "entire_character_Laplace_floor_plus_global_potential_lower"
+      },
+      {
+        "basis": [
+          {
+            "degree": 1,
+            "m": 0,
+            "part": "real"
+          },
+          {
+            "degree": 3,
+            "m": 0,
+            "part": "real"
+          },
+          {
+            "degree": 3,
+            "m": 2,
+            "part": "real"
+          }
+        ],
+        "complete_tail": {
+          "columns": [
+            {
+              "degree": 5,
+              "entries": [
+                "1/594",
+                "668/27027",
+                "30/1001"
+              ],
+              "m": 0,
+              "mass": "1/11",
+              "part": "real"
+            },
+            {
+              "degree": 5,
+              "entries": [
+                "-2/33",
+                "18/143",
+                "1180/429"
+              ],
+              "m": 2,
+              "mass": "420/11",
+              "part": "real"
+            },
+            {
+              "degree": 5,
+              "entries": [
+                "20/11",
+                "-240/143",
+                "3600/143"
+              ],
+              "m": 4,
+              "mass": "181440/11",
+              "part": "real"
+            },
+            {
+              "degree": 7,
+              "entries": [
+                "0",
+                "7/7722",
+                "-2/429"
+              ],
+              "m": 0,
+              "mass": "1/15",
+              "part": "real"
+            },
+            {
+              "degree": 7,
+              "entries": [
+                "0",
+                "-8/143",
+                "38/143"
+              ],
+              "m": 2,
+              "mass": "504/5",
+              "part": "real"
+            },
+            {
+              "degree": 7,
+              "entries": [
+                "0",
+                "100/39",
+                "-240/13"
+              ],
+              "m": 4,
+              "mass": "221760",
+              "part": "real"
+            },
+            {
+              "degree": 7,
+              "entries": [
+                "0",
+                "0",
+                "1200"
+              ],
+              "m": 6,
+              "mass": "207567360",
+              "part": "real"
+            }
+          ],
+          "first_omitted_degree": 5,
+          "last_potentially_coupled_degree": 7,
+          "last_retained_degree": 3
+        },
+        "decimal_enclosure": [
+          "2.627726368174",
+          "2.627727889268"
+        ],
+        "exact_width": "5516667857705944541/3626777458843887524118528",
+        "finite_form": [
+          [
+            "79/90",
+            "47/945",
+            "2/21"
+          ],
+          [
+            "47/945",
+            "37319/20790",
+            "-6/77"
+          ],
+          [
+            "2/21",
+            "-6/77",
+            "24610/231"
+          ]
+        ],
+        "formal_assistant_checked": false,
+        "format": "reflection_block_ground_v230",
+        "geometry": "unit_S2",
+        "lower": "9530178760103262766971427/3626777458843887524118528",
+        "lower_inertia": [
+          0,
+          0,
+          3
+        ],
+        "lowest_degree": 1,
+        "mass": [
+          "1/3",
+          "1/7",
+          "60/7"
+        ],
+        "mean_zero": true,
+        "parity": [
+          0,
+          0,
+          1
+        ],
+        "potential": {
+          "0,0,2": "1",
+          "2,2,0": "-1/3",
+          "4,0,0": "1/2"
+        },
+        "projection": "remove_l0_constant_in_000",
+        "range_proof": {
+          "Bernstein_coefficients": [
+            {
+              "coefficient": "1",
+              "powers": [
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "coefficient": "0",
+              "powers": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient": "-1/6",
+              "powers": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                2,
+                0,
+                0
+              ]
+            }
+          ],
+          "effective_potential": {
+            "0,0,0": "1",
+            "0,2,0": "-1",
+            "2,0,0": "-1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "lower": "-1/6",
+          "potential": {
+            "0,0,2": "1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "rule": "convex_hull_of_exact_simplex_Bernstein_coefficients",
+          "simplex_degree": 2,
+          "sphere_identity": {
+            "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+            "original": {
+              "0,0,2": "1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            },
+            "quotient": {
+              "0,0,0": "1"
+            },
+            "reduced": {
+              "0,0,0": "1",
+              "0,2,0": "-1",
+              "2,0,0": "-1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            }
+          },
+          "upper": "1"
+        },
+        "retained_degree": 3,
+        "scope": "one_reflection_character_in_mean_zero_H1",
+        "tail_lower": "179/6",
+        "upper": "2889217368881/1099511627776",
+        "upper_inertia": [
+          1,
+          0,
+          2
+        ],
+        "upper_kind": "upper_tail"
+      },
+      {
+        "basis": [
+          {
+            "degree": 1,
+            "m": 1,
+            "part": "imag"
+          },
+          {
+            "degree": 3,
+            "m": 1,
+            "part": "imag"
+          },
+          {
+            "degree": 3,
+            "m": 3,
+            "part": "imag"
+          },
+          {
+            "degree": 5,
+            "m": 1,
+            "part": "imag"
+          },
+          {
+            "degree": 5,
+            "m": 3,
+            "part": "imag"
+          },
+          {
+            "degree": 5,
+            "m": 5,
+            "part": "imag"
+          }
+        ],
+        "complete_tail": {
+          "columns": [
+            {
+              "degree": 7,
+              "entries": [
+                "0",
+                "2/1287",
+                "-14/1287",
+                "8386/21879",
+                "10976/21879",
+                "-2800/2431"
+              ],
+              "m": 1,
+              "mass": "28/15",
+              "part": "imag"
+            },
+            {
+              "degree": 7,
+              "entries": [
+                "0",
+                "-70/143",
+                "280/143",
+                "4900/2431",
+                "76720/221",
+                "544320/2431"
+              ],
+              "m": 3,
+              "mass": "5040",
+              "part": "imag"
+            },
+            {
+              "degree": 7,
+              "entries": [
+                "0",
+                "600/13",
+                "-2880/13",
+                "-16800/221",
+                "1169280/221",
+                "18748800/221"
+              ],
+              "m": 5,
+              "mass": "7983360",
+              "part": "imag"
+            },
+            {
+              "degree": 7,
+              "entries": [
+                "0",
+                "0",
+                "16800",
+                "0",
+                "-470400/17",
+                "40642560/17"
+              ],
+              "m": 7,
+              "mass": "2905943040",
+              "part": "imag"
+            },
+            {
+              "degree": 9,
+              "entries": [
+                "0",
+                "0",
+                "0",
+                "105/46189",
+                "-4410/46189",
+                "6300/46189"
+              ],
+              "m": 1,
+              "mass": "45/19",
+              "part": "imag"
+            },
+            {
+              "degree": 9,
+              "entries": [
+                "0",
+                "0",
+                "0",
+                "-4410/4199",
+                "105840/4199",
+                "-181440/4199"
+              ],
+              "m": 3,
+              "mass": "332640/19",
+              "part": "imag"
+            },
+            {
+              "degree": 9,
+              "entries": [
+                "0",
+                "0",
+                "0",
+                "44100/323",
+                "-1270080/323",
+                "2963520/323"
+              ],
+              "m": 5,
+              "mass": "1816214400/19",
+              "part": "imag"
+            },
+            {
+              "degree": 9,
+              "entries": [
+                "0",
+                "0",
+                "0",
+                "0",
+                "127008000/323",
+                "-609638400/323"
+              ],
+              "m": 7,
+              "mass": "5230697472000/19",
+              "part": "imag"
+            },
+            {
+              "degree": 9,
+              "entries": [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "4572288000/19"
+              ],
+              "m": 9,
+              "mass": "3201186852864000/19",
+              "part": "imag"
+            }
+          ],
+          "first_omitted_degree": 7,
+          "last_potentially_coupled_degree": 9,
+          "last_retained_degree": 5
+        },
+        "decimal_enclosure": [
+          "2.209725913595",
+          "2.209725913731"
+        ],
+        "exact_width": "81721420912683/604462909807314587353088",
+        "finite_form": [
+          [
+            "31/42",
+            "1/9",
+            "2/9",
+            "1/1386",
+            "-14/99",
+            "100/11"
+          ],
+          [
+            "1/9",
+            "2470/231",
+            "-2/11",
+            "109/429",
+            "112/143",
+            "-1200/143"
+          ],
+          [
+            "2/9",
+            "-2/11",
+            "145280/231",
+            "10/143",
+            "880/39",
+            "43200/143"
+          ],
+          [
+            "1/1386",
+            "109/429",
+            "10/143",
+            "22705/546",
+            "-140/143",
+            "600/143"
+          ],
+          [
+            "-14/99",
+            "112/143",
+            "880/39",
+            "-140/143",
+            "11958800/429",
+            "-60480/143"
+          ],
+          [
+            "100/11",
+            "-1200/143",
+            "43200/143",
+            "600/143",
+            "-60480/143",
+            "712393920/143"
+          ]
+        ],
+        "formal_assistant_checked": false,
+        "format": "reflection_block_ground_v230",
+        "geometry": "unit_S2",
+        "lower": "1335697355608371595339733/604462909807314587353088",
+        "lower_inertia": [
+          0,
+          0,
+          6
+        ],
+        "lowest_degree": 1,
+        "mass": [
+          "1/3",
+          "6/7",
+          "360/7",
+          "15/11",
+          "10080/11",
+          "1814400/11"
+        ],
+        "mean_zero": true,
+        "parity": [
+          0,
+          1,
+          0
+        ],
+        "potential": {
+          "0,0,2": "1",
+          "2,2,0": "-1/3",
+          "4,0,0": "1/2"
+        },
+        "projection": "remove_l0_constant_in_000",
+        "range_proof": {
+          "Bernstein_coefficients": [
+            {
+              "coefficient": "1",
+              "powers": [
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "coefficient": "0",
+              "powers": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient": "-1/6",
+              "powers": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                2,
+                0,
+                0
+              ]
+            }
+          ],
+          "effective_potential": {
+            "0,0,0": "1",
+            "0,2,0": "-1",
+            "2,0,0": "-1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "lower": "-1/6",
+          "potential": {
+            "0,0,2": "1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "rule": "convex_hull_of_exact_simplex_Bernstein_coefficients",
+          "simplex_degree": 2,
+          "sphere_identity": {
+            "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+            "original": {
+              "0,0,2": "1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            },
+            "quotient": {
+              "0,0,0": "1"
+            },
+            "reduced": {
+              "0,0,0": "1",
+              "0,2,0": "-1",
+              "2,0,0": "-1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            }
+          },
+          "upper": "1"
+        },
+        "retained_degree": 5,
+        "scope": "one_reflection_character_in_mean_zero_H1",
+        "tail_lower": "335/6",
+        "upper": "4859238672689/2199023255552",
+        "upper_inertia": [
+          1,
+          0,
+          5
+        ],
+        "upper_kind": "upper_tail"
+      },
+      {
+        "format": "reflection_analytic_floor_v230",
+        "lower": "35/6",
+        "lowest_degree": 2,
+        "mean_zero": true,
+        "parity": [
+          0,
+          1,
+          1
+        ],
+        "potential": {
+          "0,0,2": "1",
+          "2,2,0": "-1/3",
+          "4,0,0": "1/2"
+        },
+        "range_proof": {
+          "Bernstein_coefficients": [
+            {
+              "coefficient": "1",
+              "powers": [
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "coefficient": "0",
+              "powers": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient": "-1/6",
+              "powers": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                2,
+                0,
+                0
+              ]
+            }
+          ],
+          "effective_potential": {
+            "0,0,0": "1",
+            "0,2,0": "-1",
+            "2,0,0": "-1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "lower": "-1/6",
+          "potential": {
+            "0,0,2": "1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "rule": "convex_hull_of_exact_simplex_Bernstein_coefficients",
+          "simplex_degree": 2,
+          "sphere_identity": {
+            "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+            "original": {
+              "0,0,2": "1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            },
+            "quotient": {
+              "0,0,0": "1"
+            },
+            "reduced": {
+              "0,0,0": "1",
+              "0,2,0": "-1",
+              "2,0,0": "-1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            }
+          },
+          "upper": "1"
+        },
+        "rule": "entire_character_Laplace_floor_plus_global_potential_lower"
+      },
+      {
+        "basis": [
+          {
+            "degree": 1,
+            "m": 1,
+            "part": "real"
+          },
+          {
+            "degree": 3,
+            "m": 1,
+            "part": "real"
+          },
+          {
+            "degree": 3,
+            "m": 3,
+            "part": "real"
+          }
+        ],
+        "complete_tail": {
+          "columns": [
+            {
+              "degree": 5,
+              "entries": [
+                "13/1386",
+                "43/231",
+                "170/1001"
+              ],
+              "m": 1,
+              "mass": "15/11",
+              "part": "real"
+            },
+            {
+              "degree": 5,
+              "entries": [
+                "-34/99",
+                "272/143",
+                "880/39"
+              ],
+              "m": 3,
+              "mass": "10080/11",
+              "part": "real"
+            },
+            {
+              "degree": 5,
+              "entries": [
+                "100/11",
+                "-1200/143",
+                "43200/143"
+              ],
+              "m": 5,
+              "mass": "1814400/11",
+              "part": "real"
+            },
+            {
+              "degree": 7,
+              "entries": [
+                "0",
+                "2/99",
+                "-34/1287"
+              ],
+              "m": 1,
+              "mass": "28/15",
+              "part": "real"
+            },
+            {
+              "degree": 7,
+              "entries": [
+                "0",
+                "-170/143",
+                "280/143"
+              ],
+              "m": 3,
+              "mass": "5040",
+              "part": "real"
+            },
+            {
+              "degree": 7,
+              "entries": [
+                "0",
+                "600/13",
+                "-2880/13"
+              ],
+              "m": 5,
+              "mass": "7983360",
+              "part": "real"
+            },
+            {
+              "degree": 7,
+              "entries": [
+                "0",
+                "0",
+                "16800"
+              ],
+              "m": 7,
+              "mass": "2905943040",
+              "part": "real"
+            }
+          ],
+          "first_omitted_degree": 5,
+          "last_potentially_coupled_degree": 7,
+          "last_retained_degree": 3
+        },
+        "decimal_enclosure": [
+          "2.382059903409",
+          "2.382062917841"
+        ],
+        "exact_width": "10932670982992018403/3626777458843887524118528",
+        "finite_form": [
+          [
+            "167/210",
+            "23/315",
+            "34/63"
+          ],
+          [
+            "23/315",
+            "1778/165",
+            "-34/77"
+          ],
+          [
+            "34/63",
+            "-34/77",
+            "145280/231"
+          ]
+        ],
+        "formal_assistant_checked": false,
+        "format": "reflection_block_ground_v230",
+        "geometry": "unit_S2",
+        "lower": "8639201163300326045533213/3626777458843887524118528",
+        "lower_inertia": [
+          0,
+          0,
+          3
+        ],
+        "lowest_degree": 1,
+        "mass": [
+          "1/3",
+          "6/7",
+          "360/7"
+        ],
+        "mean_zero": true,
+        "parity": [
+          1,
+          0,
+          0
+        ],
+        "potential": {
+          "0,0,2": "1",
+          "2,2,0": "-1/3",
+          "4,0,0": "1/2"
+        },
+        "projection": "remove_l0_constant_in_000",
+        "range_proof": {
+          "Bernstein_coefficients": [
+            {
+              "coefficient": "1",
+              "powers": [
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "coefficient": "0",
+              "powers": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient": "-1/6",
+              "powers": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                2,
+                0,
+                0
+              ]
+            }
+          ],
+          "effective_potential": {
+            "0,0,0": "1",
+            "0,2,0": "-1",
+            "2,0,0": "-1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "lower": "-1/6",
+          "potential": {
+            "0,0,2": "1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "rule": "convex_hull_of_exact_simplex_Bernstein_coefficients",
+          "simplex_degree": 2,
+          "sphere_identity": {
+            "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+            "original": {
+              "0,0,2": "1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            },
+            "quotient": {
+              "0,0,0": "1"
+            },
+            "reduced": {
+              "0,0,0": "1",
+              "0,2,0": "-1",
+              "2,0,0": "-1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            }
+          },
+          "upper": "1"
+        },
+        "retained_degree": 3,
+        "scope": "one_reflection_character_in_mean_zero_H1",
+        "tail_lower": "179/6",
+        "upper": "5238211752519/2199023255552",
+        "upper_inertia": [
+          1,
+          0,
+          2
+        ],
+        "upper_kind": "upper_tail"
+      },
+      {
+        "format": "reflection_analytic_floor_v230",
+        "lower": "35/6",
+        "lowest_degree": 2,
+        "mean_zero": true,
+        "parity": [
+          1,
+          0,
+          1
+        ],
+        "potential": {
+          "0,0,2": "1",
+          "2,2,0": "-1/3",
+          "4,0,0": "1/2"
+        },
+        "range_proof": {
+          "Bernstein_coefficients": [
+            {
+              "coefficient": "1",
+              "powers": [
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "coefficient": "0",
+              "powers": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient": "-1/6",
+              "powers": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                2,
+                0,
+                0
+              ]
+            }
+          ],
+          "effective_potential": {
+            "0,0,0": "1",
+            "0,2,0": "-1",
+            "2,0,0": "-1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "lower": "-1/6",
+          "potential": {
+            "0,0,2": "1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "rule": "convex_hull_of_exact_simplex_Bernstein_coefficients",
+          "simplex_degree": 2,
+          "sphere_identity": {
+            "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+            "original": {
+              "0,0,2": "1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            },
+            "quotient": {
+              "0,0,0": "1"
+            },
+            "reduced": {
+              "0,0,0": "1",
+              "0,2,0": "-1",
+              "2,0,0": "-1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            }
+          },
+          "upper": "1"
+        },
+        "rule": "entire_character_Laplace_floor_plus_global_potential_lower"
+      },
+      {
+        "format": "reflection_analytic_floor_v230",
+        "lower": "35/6",
+        "lowest_degree": 2,
+        "mean_zero": true,
+        "parity": [
+          1,
+          1,
+          0
+        ],
+        "potential": {
+          "0,0,2": "1",
+          "2,2,0": "-1/3",
+          "4,0,0": "1/2"
+        },
+        "range_proof": {
+          "Bernstein_coefficients": [
+            {
+              "coefficient": "1",
+              "powers": [
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "coefficient": "0",
+              "powers": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient": "-1/6",
+              "powers": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                2,
+                0,
+                0
+              ]
+            }
+          ],
+          "effective_potential": {
+            "0,0,0": "1",
+            "0,2,0": "-1",
+            "2,0,0": "-1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "lower": "-1/6",
+          "potential": {
+            "0,0,2": "1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "rule": "convex_hull_of_exact_simplex_Bernstein_coefficients",
+          "simplex_degree": 2,
+          "sphere_identity": {
+            "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+            "original": {
+              "0,0,2": "1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            },
+            "quotient": {
+              "0,0,0": "1"
+            },
+            "reduced": {
+              "0,0,0": "1",
+              "0,2,0": "-1",
+              "2,0,0": "-1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            }
+          },
+          "upper": "1"
+        },
+        "rule": "entire_character_Laplace_floor_plus_global_potential_lower"
+      },
+      {
+        "format": "reflection_analytic_floor_v230",
+        "lower": "71/6",
+        "lowest_degree": 3,
+        "mean_zero": true,
+        "parity": [
+          1,
+          1,
+          1
+        ],
+        "potential": {
+          "0,0,2": "1",
+          "2,2,0": "-1/3",
+          "4,0,0": "1/2"
+        },
+        "range_proof": {
+          "Bernstein_coefficients": [
+            {
+              "coefficient": "1",
+              "powers": [
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "coefficient": "0",
+              "powers": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "coefficient": "-1/6",
+              "powers": [
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "coefficient": "1/2",
+              "powers": [
+                2,
+                0,
+                0
+              ]
+            }
+          ],
+          "effective_potential": {
+            "0,0,0": "1",
+            "0,2,0": "-1",
+            "2,0,0": "-1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "lower": "-1/6",
+          "potential": {
+            "0,0,2": "1",
+            "2,2,0": "-1/3",
+            "4,0,0": "1/2"
+          },
+          "rule": "convex_hull_of_exact_simplex_Bernstein_coefficients",
+          "simplex_degree": 2,
+          "sphere_identity": {
+            "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+            "original": {
+              "0,0,2": "1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            },
+            "quotient": {
+              "0,0,0": "1"
+            },
+            "reduced": {
+              "0,0,0": "1",
+              "0,2,0": "-1",
+              "2,0,0": "-1",
+              "2,2,0": "-1/3",
+              "4,0,0": "1/2"
+            }
+          },
+          "upper": "1"
+        },
+        "rule": "entire_character_Laplace_floor_plus_global_potential_lower"
+      }
+    ],
+    "decimal_enclosure": [
+      "2.209725913595",
+      "2.209725913731"
+    ],
+    "eigenvalue_index_in_constrained_space": 1,
+    "exact_width": "81721420912683/604462909807314587353088",
+    "formal_assistant_checked": false,
+    "format": "eight_reflection_blocks_ground_v231",
+    "geometry": "unit_S2",
+    "lower": "1335697355608371595339733/604462909807314587353088",
+    "mean_zero": true,
+    "potential": {
+      "0,0,2": "1",
+      "2,2,0": "-1/3",
+      "4,0,0": "1/2"
+    },
+    "scope": "all_real_mean_zero_H1_functions_on_unit_S2",
+    "status": "target_met",
+    "symmetry_proof": {
+      "all_eight_reflections": true,
+      "checks": [
+        {
+          "difference": {},
+          "flip": [
+            0,
+            0,
+            0
+          ],
+          "invariant": true
+        },
+        {
+          "difference": {},
+          "flip": [
+            0,
+            0,
+            1
+          ],
+          "invariant": true
+        },
+        {
+          "difference": {},
+          "flip": [
+            0,
+            1,
+            0
+          ],
+          "invariant": true
+        },
+        {
+          "difference": {},
+          "flip": [
+            0,
+            1,
+            1
+          ],
+          "invariant": true
+        },
+        {
+          "difference": {},
+          "flip": [
+            1,
+            0,
+            0
+          ],
+          "invariant": true
+        },
+        {
+          "difference": {},
+          "flip": [
+            1,
+            0,
+            1
+          ],
+          "invariant": true
+        },
+        {
+          "difference": {},
+          "flip": [
+            1,
+            1,
+            0
+          ],
+          "invariant": true
+        },
+        {
+          "difference": {},
+          "flip": [
+            1,
+            1,
+            1
+          ],
+          "invariant": true
+        }
+      ],
+      "effective_potential": {
+        "0,0,0": "1",
+        "0,2,0": "-1",
+        "2,0,0": "-1",
+        "2,2,0": "-1/3",
+        "4,0,0": "1/2"
+      },
+      "potential": {
+        "0,0,2": "1",
+        "2,2,0": "-1/3",
+        "4,0,0": "1/2"
+      }
+    },
+    "target_width": "1/10000000",
+    "upper": "4859238672689/2199023255552"
+  },
+  "elapsed_seconds": 0.27030325,
+  "formal_assistant_checked": false,
+  "format": "adaptive_reflection_ground_v234",
+  "limit_reason": null,
+  "potential": {
+    "0,0,2": "1",
+    "2,2,0": "-1/3",
+    "4,0,0": "1/2"
+  },
+  "requested_limits": {
+    "initial_bits": 40,
+    "max_L": 7,
+    "start_L": 3
+  },
+  "requested_width": "1/10000000",
+  "scope": "all_real_mean_zero_H1_functions_on_unit_S2",
+  "status": "target_met",
+  "trace": [
+    {
+      "action": "initial_all_character_coverage",
+      "elapsed_seconds": 0.09728179199999998,
+      "lower": "8014181190974927003508115/3626777458843887524118528",
+      "upper": "2429621013655/1099511627776",
+      "width": "8475832825516335725/3626777458843887524118528"
+    },
+    {
+      "action": "increase_competing_character_degree",
+      "bits": 40,
+      "dimension": 6,
+      "elapsed_seconds": 0.23050012500000028,
+      "lower": "1335697355608371595339733/604462909807314587353088",
+      "parity": [
+        0,
+        1,
+        0
+      ],
+      "retained_degree": 5,
+      "upper": "4859238672689/2199023255552",
+      "width": "81721420912683/604462909807314587353088"
+    }
+  ],
+  "wall_budget_seconds": 90,
+  "within_wall_budget": true,
+  "work": {
+    "built_dimensions": [
+      3,
+      3,
+      3,
+      6
+    ],
+    "form_builds": 4,
+    "form_hits": 0,
+    "inertia_calls": 332,
+    "range_builds": 1,
+    "range_hits": 3
+  }
+}

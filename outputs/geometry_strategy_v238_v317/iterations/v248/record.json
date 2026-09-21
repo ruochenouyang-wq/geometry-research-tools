@@ -1,0 +1,32 @@
+{
+  "version": 248,
+  "recorded_at": "2026-09-18T18:13:36.008499+00:00",
+  "hypothesis": "Repeated geometry can share an immutable unit-shape proof.",
+  "change": "Added cached canonical shape and legacy-compatible piecewise_model.",
+  "source_sha256": {
+    "fast_math.py": "9280f793dbcd52d26e86133744548b559ce845ea1a074a66efd933f11dd96d66",
+    "test_fast_math.py": "19d0e706927d6d76c21e9310405551c9d164c309fdee4543e872da76b7f39367"
+  },
+  "validation": {
+    "tests_run": 2,
+    "failures": 0,
+    "frozen_verifiers_retained": true
+  },
+  "comparison": {
+    "fixed_input": "same ratio=1/2,degree=3; levels2 then4",
+    "baseline_cell_integrations": 4,
+    "new_counters": {
+      "shape_integrations": 1,
+      "cell_integrations": 3,
+      "scaled_cells": 6
+    },
+    "exact_wire_equal": true,
+    "cache_regime": "one cold shape followed by reuse"
+  },
+  "outcome": "implemented_exact_checks_passed",
+  "limitations": [
+    "Small serial probes; no claim of universal speedup.",
+    "Caches are process-local; cold and warm costs are identified."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

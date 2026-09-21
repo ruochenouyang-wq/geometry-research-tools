@@ -1,0 +1,40 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {},
+  "certificates": [
+    {
+      "format": "explicit_sector_rayleigh_v95",
+      "path": "certs/C01_original_explicit_trial.json",
+      "sha256": "ac3e8881f3562b808e0ee9b37bae9a05457e5705815152bc92e5b35918b8932b",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 0.000782,
+  "id": "C01",
+  "notes": [],
+  "original_acceptance": [
+    "Return an exact nonzero mean-zero trial and directly replay its moments: mass=1/3, energy=2/3, Rayleigh=2.",
+    "Verify threshold*mass-energy=1/30>0; spectral existence alone is insufficient."
+  ],
+  "original_input": {
+    "q": [
+      "0"
+    ],
+    "threshold": "21/10",
+    "trial": "u=z"
+  },
+  "probability_energy": "2/3",
+  "probability_mass": "1/3",
+  "probability_violation_margin": "1/30",
+  "rayleigh": "2",
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "solved",
+  "title": "零势显式违反者"
+}

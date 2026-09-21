@@ -1,0 +1,77 @@
+{
+  "algorithm_version": 10,
+  "route": "spectral",
+  "status": "target_met",
+  "tolerance": "1/10000000000",
+  "max_modes": 24,
+  "parity_blocks": true,
+  "certificate": {
+    "method": "modewise_schur_v3",
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "q_coefficients": [
+      "0",
+      "0",
+      "-100"
+    ],
+    "modes": 20,
+    "eigenvalue_index": 1,
+    "tail_policy": "sandwich",
+    "range_proof": {
+      "kind": "quadratic_range_v5",
+      "lower": "-100",
+      "upper": "0"
+    },
+    "upper_kind": "upper_tail",
+    "tail_lower": "320",
+    "lower_inertia": [
+      0,
+      0,
+      20
+    ],
+    "upper_inertia": [
+      1,
+      0,
+      19
+    ],
+    "formal_assistant_checked": false,
+    "lower": "-13920494772229677257449/171798691840000000000",
+    "upper": "-27840989544455010719477/343597383680000000000",
+    "exact_width": "4343795421/343597383680000000000",
+    "decimal_enclosure": [
+      "-81.027943944965",
+      "-81.027943944951"
+    ]
+  },
+  "attempts": [
+    {
+      "modes": 4,
+      "exact_width": "1814418488895849132449/85899345920000000000",
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.0010579170000000193
+    },
+    {
+      "modes": 6,
+      "exact_width": "1429876517568894576671/343597383680000000000",
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.001585124999999965
+    },
+    {
+      "modes": 14,
+      "exact_width": "478262078170421/343597383680000000000",
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.00459116599999998
+    },
+    {
+      "modes": 20,
+      "exact_width": "4343795421/343597383680000000000",
+      "path": "guided",
+      "exact_count_calls": 4,
+      "seconds": 0.007215500000000041
+    }
+  ],
+  "seconds": 0.023408915999999946
+}

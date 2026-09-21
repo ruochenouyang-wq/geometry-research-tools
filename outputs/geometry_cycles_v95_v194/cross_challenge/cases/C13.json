@@ -1,0 +1,47 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {},
+  "certificates": [
+    {
+      "format": "full_ordered_spectrum_v159",
+      "path": "certs/C13_ordered_full.json",
+      "sha256": "b33333176dd66a964b30ed9bb053619486a7b00dd52b417ce61b994d493aa63f",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "eigenvalues": [
+    "2",
+    "2",
+    "2",
+    "6",
+    "6",
+    "6",
+    "6",
+    "6",
+    "12"
+  ],
+  "elapsed_seconds": 0.005359,
+  "id": "C13",
+  "notes": [],
+  "original_acceptance": [
+    "Return [2,2,2,6,6,6,6,6,12], including real angular multiplicities.",
+    "Each sector may be certified independently, but a full-spectrum merge must also exclude omitted levels/sectors."
+  ],
+  "original_input": {
+    "mean_zero": true,
+    "ordered_full_eigenvalues_k": "1..9",
+    "q": [
+      "0"
+    ]
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "solved",
+  "title": "完整高阶谱与重数"
+}

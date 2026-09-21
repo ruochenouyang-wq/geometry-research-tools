@@ -1,0 +1,27 @@
+{
+  "version": 316,
+  "recorded_at": "2026-09-18T18:55:22.023922+00:00",
+  "hypothesis": "Unbounded caching hides preparation costs and grows with every unique proof.",
+  "change": "Added payload/entry-bounded LRU caching, cold-miss versus warm-hit labels, eviction and oversized-result accounting.",
+  "source_sha256": {
+    "interaction.py": "92337db1a94a4ced1890df847aa63c50d31321468bffc1393f7a7fd815e4b84f",
+    "test_interaction.py": "218e6cdfe0006874a7069ad0aa58d649c327617e417f64572f6165259c8880b9"
+  },
+  "validation": {
+    "unittest_tests": 24,
+    "passed": true
+  },
+  "comparison": {
+    "sequence": "A B A C",
+    "without_cache_executor_calls": 4,
+    "bounded_cache_executor_calls": 3,
+    "retained_entries": 2,
+    "unbounded_distinct_entries": 3,
+    "oversized_results_served_without_caching": 2
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Cache byte cap measures serialized payload, not total RSS; warm-cache advantage is separate from first-use execution."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

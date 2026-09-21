@@ -1,0 +1,55 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {},
+  "certificates": [
+    {
+      "format": "explicit_sector_rayleigh_v95",
+      "path": "certs/C02_original_explicit_trial.json",
+      "sha256": "e93d3e71ad77991007bea05628d307eede1410b6af898ec6d81ada237ec3ecc9",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 0.001016,
+  "id": "C02",
+  "independent_cartesian_integrals": {
+    "mass": "1121/3500",
+    "mean": "0",
+    "numerator": "6019/7875",
+    "potential": {
+      "0,0,2": "2"
+    },
+    "trial": {
+      "1,0,0": "1",
+      "1,0,2": "-1/10"
+    },
+    "upper": "24076/10089"
+  },
+  "notes": [],
+  "original_acceptance": [
+    "Independently integrate the displayed polynomial trial on S2 and prove mass>0, mean=0 and Rayleigh<12/5.",
+    "Report the actual positive violation margin with original potential and full-sphere scope."
+  ],
+  "original_input": {
+    "q": [
+      "0",
+      "0",
+      "2"
+    ],
+    "threshold": "12/5",
+    "trial": "u=x*(1-z^2/10)"
+  },
+  "probability_energy": "6019/7875",
+  "probability_mass": "1121/3500",
+  "probability_violation_margin": "172/39375",
+  "rayleigh": "24076/10089",
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "solved",
+  "title": "椭球势的严格有理违反者"
+}

@@ -1,0 +1,88 @@
+{
+  "certificate": {
+    "method": "poisson_matrix_v30",
+    "directions": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "weight": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "poisson_solutions": [
+      [
+        "0",
+        "-1/2"
+      ],
+      [
+        "0",
+        "0",
+        "-1/10",
+        "0",
+        "-1/20"
+      ]
+    ],
+    "means": [
+      "0",
+      "1/5"
+    ],
+    "scale": "1/4",
+    "quadratic_bound": [
+      [
+        "1/4",
+        "0"
+      ],
+      [
+        "0",
+        "1/4"
+      ]
+    ],
+    "range_proof": {
+      "method": "polynomial_maximum",
+      "polynomial": [
+        "1/4",
+        "0",
+        "-21/100",
+        "0",
+        "1/25",
+        "0",
+        "-1/25",
+        "0",
+        "-1/25"
+      ],
+      "coordinate": "t_squared",
+      "intervals": [
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "witness": "0",
+      "maximum_lower": "1/4",
+      "maximum_upper": "1/4",
+      "tolerance": "1/1000000",
+      "status": "scale_enclosed"
+    },
+    "scope": "ground energy on the full unit sphere, all real amplitude vectors, axisymmetric polynomial potentials",
+    "formal_assistant_checked": false,
+    "template_id": "ae423f2295ac362f32adfb4a63d2b6cb7ea1b7c83d01c8b694b03a21880fa3d9"
+  },
+  "statistics": {
+    "model_calls": 0
+  }
+}

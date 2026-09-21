@@ -1,0 +1,26 @@
+{
+  "version": 306,
+  "recorded_at": "2026-09-18T18:45:47.084719+00:00",
+  "hypothesis": "A proposed lemma must not gain credibility by depending on the target it is meant to prove.",
+  "change": "Add bounded iterative topological dependency checking before relation publication, reject self and multi-node cycles, retain unchanged graph on rejection.",
+  "source_sha256": {
+    "evidence_store.py": "ab956784006489e4f9b998b8b25bb4a2c83aa3fcb827b04a67abbeef83b91c6f",
+    "test_evidence_store.py": "297a8d74448470b308c1b862cd1943415bd9b7f269fcba49b353afc201e6f349"
+  },
+  "validation": {
+    "tests_run": 9,
+    "passed": true,
+    "log": "test_298_full_content_dedup (test_evidence_store.EvidenceTests) ... ok\ntest_299_strict_json_and_complete_summary (test_evidence_store.EvidenceTests) ... ok\ntest_300_tamper_and_failed_atomic_publish (test_evidence_store.EvidenceTests) ... ok\ntest_301_paths_sizes_and_unknown_format (test_evidence_store.EvidenceTests) ... ok\ntest_302_default_math_replay_and_callback_boundary (test_evidence_store.EvidenceTests) ... ok\ntest_303_cache_binds_full_content_version_and_integrity (test_evidence_store.EvidenceTests) ... ok\ntest_304_problem_binding_including_cached_results (test_evidence_store.EvidenceTests) ... ok\ntest_305_typed_graph_does_not_promote_claims (test_evidence_store.EvidenceTests) ... ok\ntest_306_cycles_cannot_justify_the_original_claim (test_evidence_store.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.155s\n\nOK\n"
+  },
+  "comparison": {
+    "A_to_B_to_C": "valid topological order",
+    "C_to_A_B_to_A_self_and_multi_source_cycle": "rejected before publication",
+    "malformed_unhashable_endpoints": "controlled rejection"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Edges encode directed proof dependencies; an equivalent edge is not automatically expanded into a reverse proof dependency.",
+    "Cycle freedom is necessary, not sufficient for a sound argument."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

@@ -1,0 +1,307 @@
+{
+  "version": "0.2.0",
+  "problem": {
+    "title": "合成基准：旋转耦合三次系统，无二次 Lyapunov 函数",
+    "dimension": 2,
+    "vector_field": [
+      [
+        {
+          "powers": [
+            3,
+            0
+          ],
+          "coefficient": "-1"
+        },
+        {
+          "powers": [
+            0,
+            3
+          ],
+          "coefficient": "-5"
+        }
+      ],
+      [
+        {
+          "powers": [
+            3,
+            0
+          ],
+          "coefficient": "5"
+        },
+        {
+          "powers": [
+            0,
+            3
+          ],
+          "coefficient": "-1"
+        }
+      ]
+    ]
+  },
+  "provider": "baseline",
+  "model": null,
+  "status": "certified_global_asymptotic_stability",
+  "novelty": "not_assessed",
+  "formal_assistant_checked": false,
+  "budget": {
+    "rounds": 5,
+    "iterations_per_round": 2500,
+    "seconds_per_round_soft": 12
+  },
+  "history": [
+    {
+      "round": 1,
+      "plan": {
+        "family": "polynomial",
+        "degree": 2,
+        "log_indices": [],
+        "explanation": "扩大多项式搜索空间。"
+      },
+      "status": "search_failed",
+      "iterations": 2500,
+      "elapsed_seconds": 0.036,
+      "search_variables": 12,
+      "best_numerical_residual": 2.0,
+      "feedback": "预算内没有找到能精确复核的证书。可换表示或提高预算；不能据此断言不稳定。",
+      "counterexample": {
+        "point": [
+          -3,
+          -3
+        ],
+        "candidate_coefficients": [
+          "3/55",
+          "0",
+          "3/55"
+        ],
+        "violated_margin_value": "-936/55",
+        "scope": "仅反驳该近似候选的所需裕量，不反驳系统稳定性"
+      }
+    },
+    {
+      "round": 2,
+      "plan": {
+        "family": "polynomial",
+        "degree": 4,
+        "log_indices": [],
+        "explanation": "扩大多项式搜索空间。"
+      },
+      "status": "certified",
+      "certificate": {
+        "plan": {
+          "family": "polynomial",
+          "degree": 4,
+          "log_indices": [],
+          "explanation": "扩大多项式搜索空间。"
+        },
+        "coefficients": [
+          "5531/1872",
+          "-295/468",
+          "137/312",
+          "295/468",
+          "5531/1872"
+        ],
+        "grams": [
+          [
+            [
+              "3659/1872",
+              "-295/936",
+              "-1981/1872"
+            ],
+            [
+              "-295/936",
+              "5/9",
+              "295/936"
+            ],
+            [
+              "-1981/1872",
+              "295/936",
+              "3659/1872"
+            ]
+          ],
+          [
+            [
+              "23/3",
+              "5/4",
+              "22/9",
+              "0"
+            ],
+            [
+              "5/4",
+              "22/9",
+              "0",
+              "22/9"
+            ],
+            [
+              "22/9",
+              "0",
+              "22/9",
+              "-5/4"
+            ],
+            [
+              "0",
+              "22/9",
+              "-5/4",
+              "23/3"
+            ]
+          ]
+        ]
+      },
+      "iterations": 25,
+      "elapsed_seconds": 0.002,
+      "search_variables": 21
+    }
+  ],
+  "certificate": {
+    "plan": {
+      "family": "polynomial",
+      "degree": 4,
+      "log_indices": [],
+      "explanation": "扩大多项式搜索空间。"
+    },
+    "coefficients": [
+      "5531/1872",
+      "-295/468",
+      "137/312",
+      "295/468",
+      "5531/1872"
+    ],
+    "grams": [
+      [
+        [
+          "3659/1872",
+          "-295/936",
+          "-1981/1872"
+        ],
+        [
+          "-295/936",
+          "5/9",
+          "295/936"
+        ],
+        [
+          "-1981/1872",
+          "295/936",
+          "3659/1872"
+        ]
+      ],
+      [
+        [
+          "23/3",
+          "5/4",
+          "22/9",
+          "0"
+        ],
+        [
+          "5/4",
+          "22/9",
+          "0",
+          "22/9"
+        ],
+        [
+          "22/9",
+          "0",
+          "22/9",
+          "-5/4"
+        ],
+        [
+          "0",
+          "22/9",
+          "-5/4",
+          "23/3"
+        ]
+      ]
+    ]
+  },
+  "readable_result": {
+    "V_polynomial": [
+      {
+        "powers": [
+          0,
+          4
+        ],
+        "coefficient": "5531/1872"
+      },
+      {
+        "powers": [
+          1,
+          3
+        ],
+        "coefficient": "-295/468"
+      },
+      {
+        "powers": [
+          2,
+          2
+        ],
+        "coefficient": "137/312"
+      },
+      {
+        "powers": [
+          3,
+          1
+        ],
+        "coefficient": "295/468"
+      },
+      {
+        "powers": [
+          4,
+          0
+        ],
+        "coefficient": "5531/1872"
+      }
+    ],
+    "V_lower_bound": [
+      {
+        "powers": [
+          0,
+          4
+        ],
+        "coefficient": "1"
+      },
+      {
+        "powers": [
+          2,
+          2
+        ],
+        "coefficient": "2"
+      },
+      {
+        "powers": [
+          4,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ],
+    "negative_derivative_lower_bound": [
+      {
+        "powers": [
+          0,
+          6
+        ],
+        "coefficient": "1"
+      },
+      {
+        "powers": [
+          2,
+          4
+        ],
+        "coefficient": "3"
+      },
+      {
+        "powers": [
+          4,
+          2
+        ],
+        "coefficient": "3"
+      },
+      {
+        "powers": [
+          6,
+          0
+        ],
+        "coefficient": "1"
+      }
+    ]
+  },
+  "api_usage": []
+}

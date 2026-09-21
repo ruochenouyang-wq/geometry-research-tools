@@ -1,0 +1,374 @@
+{
+  "approximation_request": {
+    "function": {
+      "kind": "axis_profile",
+      "profile": "step"
+    },
+    "op": "approximate"
+  },
+  "approximation_response": {
+    "certificate": {
+      "axis_zero_convention": "step(0)=0; singular_power(0)=0 as an a.e. representative",
+      "bound_statement": "probability_L2_norm(original_function-piecewise_model)<=error_upper",
+      "cells": [
+        {
+          "left": "-1",
+          "polynomial_in_t": [
+            "0"
+          ],
+          "right": "0"
+        },
+        {
+          "left": "0",
+          "polynomial_in_t": [
+            "1"
+          ],
+          "right": "1"
+        }
+      ],
+      "degree": 3,
+      "endpoint_convention": "at nonzero seams choose the cell starting at abs(t); final endpoint included",
+      "error_squared": "0",
+      "error_upper": "0",
+      "expanded_polynomial_coefficient_slots": 2,
+      "formal_assistant_checked": false,
+      "format": "sphere_structured_piecewise_L2_v1",
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "global_polynomial": false,
+      "levels": 4,
+      "norm": "L2_probability",
+      "representation": "two_halves_with_separate_value_at_zero",
+      "root_ratio": "1/2",
+      "scope": "unit_S2_probability_measure",
+      "shape_coefficient_count": 2,
+      "shape_proof": null,
+      "shape_rule": "t=R^4*x scales centered profile coefficients by 1/R and squared residual integral by R^2",
+      "source_norm_squared": "1/2",
+      "source_value_at_axis_zero": "0",
+      "spectral_transfer_claimed": false,
+      "sqrt_bits": 40,
+      "sqrt_upper_squared": "0"
+    },
+    "kind": "function_L2_approximation_only",
+    "ok": true
+  },
+  "both_replayed": true,
+  "spectrum_request": {
+    "bits": 16,
+    "function": {
+      "kind": "axis_profile",
+      "profile": "step"
+    },
+    "modes": 3,
+    "op": "spectrum"
+  },
+  "spectrum_response": {
+    "certificate": {
+      "angular_form_bound": {
+        "energy_factor": "1",
+        "mass_offset": "0",
+        "measure": "d_sigma/(4*pi)_on_unit_S2",
+        "method": "pointwise_step",
+        "pointwise_lower": "0"
+      },
+      "angular_tail_cannot_improve_best_upper": true,
+      "angular_tail_lower": "6",
+      "eigenvalue_index": 1,
+      "exact_width": "4486197/1073741824",
+      "formal_proof_assistant_checked": false,
+      "format": "direct_axis_moment_full_v1",
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "function_approximation_error": "0",
+      "geometry": "unit_S2",
+      "lower": "2633124811/1073741824",
+      "mean_zero": true,
+      "measure": "d_sigma/(4*pi)_on_unit_S2",
+      "omitted_azimuth_m_start": 2,
+      "original_function_moments_exact": true,
+      "scope": "all_real_mean_zero_H1_on_unit_S2",
+      "sectors": [
+        {
+          "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+          "azimuth_m": 0,
+          "eigenvalue_index": 1,
+          "exact_width": "2141601/8589934592",
+          "form_bound": {
+            "energy_factor": "1",
+            "mass_offset": "0",
+            "measure": "d_sigma/(4*pi)_on_unit_S2",
+            "method": "pointwise_step",
+            "pointwise_lower": "0"
+          },
+          "formal_proof_assistant_checked": false,
+          "format": "direct_axis_moment_sector_v1",
+          "function": {
+            "amplitude": "1",
+            "axis": 2,
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "step"
+          },
+          "function_approximation_error": "0",
+          "geometry": "unit_S2",
+          "kernel_evidence": {
+            "A": [
+              [
+                "5/3",
+                "1/8",
+                "0"
+              ],
+              [
+                "1/8",
+                "13/5",
+                "1/8"
+              ],
+              [
+                "0",
+                "1/8",
+                "25/7"
+              ]
+            ],
+            "C": [
+              [
+                "1/384",
+                "0",
+                "-1/128"
+              ],
+              [
+                "0",
+                "7/320",
+                "0"
+              ],
+              [
+                "-1/128",
+                "0",
+                "11/448"
+              ]
+            ],
+            "T": [
+              [
+                "1/3",
+                "1/8",
+                "0"
+              ],
+              [
+                "1/8",
+                "1/5",
+                "1/8"
+              ],
+              [
+                "0",
+                "1/8",
+                "1/7"
+              ]
+            ],
+            "V": [
+              [
+                "1/3",
+                "1/8",
+                "0"
+              ],
+              [
+                "1/8",
+                "1/5",
+                "1/8"
+              ],
+              [
+                "0",
+                "1/8",
+                "1/7"
+              ]
+            ],
+            "degrees": [
+              1,
+              2,
+              3
+            ],
+            "mass": [
+              "2/3",
+              "2/5",
+              "2/7"
+            ],
+            "near_tail": [],
+            "removed_constant": {
+              "column": [
+                "1/2",
+                "0",
+                "-1/8"
+              ],
+              "mass": "2"
+            }
+          },
+          "lower": "21347062367/8589934592",
+          "lower_inertia": [
+            0,
+            0,
+            3
+          ],
+          "mean_zero": true,
+          "modes": 3,
+          "near_tail": 0,
+          "original_function_moments_exact": true,
+          "projection": "remove_l0",
+          "radial_tail_lower": "20",
+          "radial_tail_start": 4,
+          "remainder_tail_lower": "20",
+          "scope": "single_azimuth_sector_only",
+          "sqrt_bits": 40,
+          "upper": "325763/131072",
+          "upper_inertia": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "axis_isometry": "coordinate_permutation_preserves_energy_mass_and_mean",
+          "azimuth_m": 1,
+          "eigenvalue_index": 1,
+          "exact_width": "4486197/1073741824",
+          "form_bound": {
+            "energy_factor": "1",
+            "mass_offset": "0",
+            "measure": "d_sigma/(4*pi)_on_unit_S2",
+            "method": "pointwise_step",
+            "pointwise_lower": "0"
+          },
+          "formal_proof_assistant_checked": false,
+          "format": "direct_axis_moment_sector_v1",
+          "function": {
+            "amplitude": "1",
+            "axis": 2,
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "step"
+          },
+          "function_approximation_error": "0",
+          "geometry": "unit_S2",
+          "kernel_evidence": {
+            "A": [
+              [
+                "10/3",
+                "3/4",
+                "0"
+              ],
+              [
+                "3/4",
+                "78/5",
+                "3/4"
+              ],
+              [
+                "0",
+                "3/4",
+                "300/7"
+              ]
+            ],
+            "C": [
+              [
+                "19/192",
+                "0",
+                "-15/64"
+              ],
+              [
+                "0",
+                "9/640",
+                "0"
+              ],
+              [
+                "-15/64",
+                "0",
+                "279/448"
+              ]
+            ],
+            "T": [
+              [
+                "2/3",
+                "3/4",
+                "0"
+              ],
+              [
+                "3/4",
+                "6/5",
+                "3/4"
+              ],
+              [
+                "0",
+                "3/4",
+                "12/7"
+              ]
+            ],
+            "V": [
+              [
+                "2/3",
+                "3/4",
+                "0"
+              ],
+              [
+                "3/4",
+                "6/5",
+                "3/4"
+              ],
+              [
+                "0",
+                "3/4",
+                "12/7"
+              ]
+            ],
+            "degrees": [
+              1,
+              2,
+              3
+            ],
+            "mass": [
+              "4/3",
+              "12/5",
+              "24/7"
+            ],
+            "near_tail": [],
+            "removed_constant": null
+          },
+          "lower": "2633124811/1073741824",
+          "lower_inertia": [
+            0,
+            0,
+            3
+          ],
+          "mean_zero": true,
+          "modes": 3,
+          "near_tail": 0,
+          "original_function_moments_exact": true,
+          "projection": "none",
+          "radial_tail_lower": "20",
+          "radial_tail_start": 4,
+          "remainder_tail_lower": "20",
+          "scope": "single_azimuth_sector_only",
+          "sqrt_bits": 40,
+          "upper": "160987/65536",
+          "upper_inertia": [
+            1,
+            0,
+            2
+          ]
+        }
+      ],
+      "status": "certified_open",
+      "tolerance": "1/100000000",
+      "upper": "160987/65536"
+    },
+    "kind": "original_function_spectrum",
+    "ok": true
+  }
+}

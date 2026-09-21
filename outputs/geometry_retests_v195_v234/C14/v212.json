@@ -1,0 +1,92 @@
+{
+  "V": [
+    "1/100"
+  ],
+  "area_normalization": "integral_S2(V^2)=4*pi*mean(V^2)",
+  "claim": "fixed_potential_ratio_only",
+  "finite_universal_L2_trace_inequality_compatible_with_scope": false,
+  "formal_assistant_checked": false,
+  "format": "two_scope_fixed_potential_trace_quotient_v212",
+  "lower": "25",
+  "mean_V_squared": "1/10000",
+  "nonnegative_range": {
+    "lower": "1/100",
+    "proof": {
+      "kind": "quadratic_range_v5",
+      "lower": "1/100",
+      "upper": "1/100"
+    },
+    "upper": "1/100"
+  },
+  "not_a_universal_upper_bound": true,
+  "quantity": "pi*negative_trace/integral_S2(V^2)",
+  "rational_divisor": "1/2500",
+  "trace": {
+    "definition": "sum_with_multiplicity max(0,-lambda)",
+    "formal_assistant_checked": false,
+    "format": "two_scope_complete_negative_trace_v209",
+    "lower": "1/100",
+    "model": {
+      "entries": [],
+      "format": "two_scope_verified_model_v206",
+      "geometry": "unit_S2",
+      "groups": [],
+      "mean_zero": false,
+      "measure": "standard_sphere_area",
+      "operator": "-Delta+q",
+      "q": [
+        "-1/100"
+      ],
+      "real_angular_multiplicity": {
+        "m=0": 1,
+        "m>0": 2
+      },
+      "space": "full_unprojected"
+    },
+    "omitted_negative_trace_lower": "1/100",
+    "omitted_negative_trace_upper": "1/100",
+    "slots": [
+      {
+        "j": 1,
+        "l": 0,
+        "lower": "-1/100",
+        "m": 0,
+        "multiplicity": 1,
+        "uncomputed": true,
+        "upper": "-1/100"
+      }
+    ],
+    "tails": {
+      "angular_floor": "-1/100",
+      "cutoff": "0",
+      "degree_cutoff": 0,
+      "every_unlisted_eigenvalue_strictly_above_cutoff": true,
+      "next_uncomputed_m": 0,
+      "potential_range": {
+        "lower": "-1/100",
+        "proof": {
+          "kind": "quadratic_range_v5",
+          "lower": "-1/100",
+          "upper": "-1/100"
+        },
+        "upper": "-1/100"
+      },
+      "radial_floors": [],
+      "rule": "sector minmax: l(l+1)+inf(q) <= lambda_m,j <= l(l+1)+sup(q)",
+      "unlisted_floor": "199/100"
+    },
+    "target_met": true,
+    "tolerance": "1/100000000",
+    "upper": "1/100",
+    "width": "0"
+  },
+  "unprojected_constant_mode_obstruction": {
+    "limit_as_epsilon_to_zero_positive": "positive_infinity",
+    "negative_count": 1,
+    "negative_trace": "epsilon",
+    "pi_scaled_trace_quotient": "1/(4*epsilon)",
+    "potential": "V=epsilon constant with 0<epsilon<2",
+    "reason": "the unprojected constant spherical harmonic is an eigenfunction"
+  },
+  "upper": "25"
+}

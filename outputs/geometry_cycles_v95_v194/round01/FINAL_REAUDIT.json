@@ -1,0 +1,119 @@
+{
+  "all_passed": true,
+  "certificate_replay": [
+    {
+      "certificate_format": "complete_projected_residual_v100",
+      "file": "round01/certs/V100_candidate_residual.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "complete_projected_residual_v100",
+      "file": "round01/certs/V100_projection_calibration.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V101_enriched_trial.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "complete_projected_residual_v100",
+      "file": "round01/certs/V101_zero_residual.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V102_actual_trial.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "two_trial_ritz_v102",
+      "file": "round01/certs/V102_ritz.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V103_exact_root_trial.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V103_line_trial.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sphere_counterexample_v104",
+      "file": "round01/certs/V104_counterexample.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sphere_counterexample_v104",
+      "file": "round01/certs/V104_honest_not_found.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V95_rayleigh.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "candidate_sector_selection_v96",
+      "file": "round01/certs/V96_selection.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V97_rationalized_trial.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V98_bits16.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V98_bits2.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V98_bits24.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V98_bits4.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V98_bits8.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V99_keep1.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V99_keep2.json",
+      "verified": true
+    },
+    {
+      "certificate_format": "explicit_sector_rayleigh_v95",
+      "file": "round01/certs/V99_noisy_baseline.json",
+      "verified": true
+    }
+  ],
+  "current_file_sha256": {
+    "test_witness.py": "50bff17e9cad30833926eee89d5ba0ac26c4f71a1bb3db4ab185b94dce69fdeb",
+    "witness.py": "0eb77871448b509e4bccd43a92469ad7a8f43baf0c992f2779d46168cfa469e7"
+  },
+  "evidence_of_tests": "INTEGRATION_TESTS.json",
+  "initial_completed_sha256": "03972a3bd9881ce27d651a4970beebf3bf9f41fad8db6a7e48ba347fa53e130b",
+  "original_completed_record_preserved": true,
+  "reason": "Final source and test files differed from the first acceptance snapshot. Precise ordering of author finishing edits and that snapshot could not be reconstructed; the final files were therefore reviewed and revalidated, with every saved proof replayed.",
+  "tests": 27
+}

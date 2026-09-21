@@ -1,0 +1,43 @@
+{
+  "acceptance": [
+    "Replay a full-sphere certificate for x^2+2y^2+3z^2, which has no rotation making it a function of one axis alone.",
+    "Independent coarse guard is 3 <= ground <=18/5: q>=1 and the trial u=x has potential quotient 8/5 and Dirichlet quotient 2."
+  ],
+  "category": 9,
+  "frozen_v94_baseline": "Nonaxisymmetric coefficients/couplings are outside V94 input scope.",
+  "id": "C18",
+  "input": {
+    "mean_zero": true,
+    "q_xyz": [
+      {
+        "coefficient": "1",
+        "powers": [
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "coefficient": "2",
+        "powers": [
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "coefficient": "3",
+        "powers": [
+          0,
+          0,
+          2
+        ]
+      }
+    ],
+    "target_width": "1/100000000"
+  },
+  "origin": "constructed_stress_case",
+  "source_ids": [],
+  "status": "fixed_challenge_not_claimed_solved",
+  "title": "真正三轴二次势"
+}

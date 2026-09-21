@@ -1,0 +1,77 @@
+{
+  "after": {
+    "lower": "1",
+    "q": {
+      "0,0,2": "1",
+      "0,2,0": "1",
+      "2,0,0": "1"
+    },
+    "reduction_enabled": true,
+    "rule": "constant plus/minus sum of absolute nonconstant coefficients on unit sphere",
+    "sphere_identity": {
+      "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+      "original": {
+        "0,0,2": "1",
+        "0,2,0": "1",
+        "2,0,0": "1"
+      },
+      "quotient": {
+        "0,0,0": "1"
+      },
+      "reduced": {
+        "0,0,0": "1"
+      }
+    },
+    "upper": "1",
+    "used": {
+      "0,0,0": "1"
+    }
+  },
+  "before": {
+    "lower": "-3",
+    "q": {
+      "0,0,2": "1",
+      "0,2,0": "1",
+      "2,0,0": "1"
+    },
+    "reduction_enabled": false,
+    "rule": "constant plus/minus sum of absolute nonconstant coefficients on unit sphere",
+    "sphere_identity": {
+      "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+      "original": {
+        "0,0,2": "1",
+        "0,2,0": "1",
+        "2,0,0": "1"
+      },
+      "quotient": {
+        "0,0,0": "1"
+      },
+      "reduced": {
+        "0,0,0": "1"
+      }
+    },
+    "upper": "3",
+    "used": {
+      "0,0,2": "1",
+      "0,2,0": "1",
+      "2,0,0": "1"
+    }
+  },
+  "certificate": "round09/certificates/radius_identity.json",
+  "identity": {
+    "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+    "original": {
+      "0,0,2": "1",
+      "0,2,0": "1",
+      "2,0,0": "1"
+    },
+    "quotient": {
+      "0,0,0": "1"
+    },
+    "reduced": {
+      "0,0,0": "1"
+    }
+  },
+  "spectral_lower": "3",
+  "spectral_upper": "3"
+}

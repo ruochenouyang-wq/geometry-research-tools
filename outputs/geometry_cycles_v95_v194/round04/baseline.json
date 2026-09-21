@@ -1,0 +1,29 @@
+{
+  "existing_signature": "(q, threshold, **kwargs)",
+  "input": {
+    "box": [
+      [
+        -1,
+        1
+      ]
+    ],
+    "directions": [
+      [
+        0,
+        1
+      ]
+    ],
+    "q0": [
+      0,
+      0,
+      2
+    ]
+  },
+  "interpretation": "The existing point API expects one rational polynomial. Its rejection is a missing continuum interface, not a failure of its fixed-potential spectral mathematics.",
+  "observed": {
+    "exception_type": "ValueError",
+    "message": "Potential must be a list of rational power coefficients",
+    "status": "unsupported_family_input"
+  },
+  "problem": "For every real s in [-1,1], weighted Poincare for q_s(t)=2t^2+s*t on all mean-zero H1(S2)."
+}

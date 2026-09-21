@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-21",
+  "scope": "Primary-source review for sphere spectral inequalities, singular Liouville equations, symmetry, and certifiable numerical subproblems. Not an exhaustive literature review or proof audit.",
+  "holdout_parameters_generated_or_read": false,
+  "problem_statuses": [
+    {"id": "Q1", "name": "Sharp scalar mean-zero L4 interpolation constant on S2", "status": "unresolved_in_reviewed_sources_no_complete_resolution_found", "confidence": "medium", "sources": ["S1", "S3"], "qualification": "Optimal-constant research question, not a named conjecture explicitly quoted from an author."},
+    {"id": "Q2", "name": "Sharp scalar mean-zero orthonormal-family Lieb-Thirring constant on S2", "status": "gap_between_verified_published_bounds_no_complete_resolution_found", "confidence": "medium", "sources": ["S2", "S3", "S4"], "qualification": "Do not transfer a result for Dirac operators, n>=5, or the real line to S2."},
+    {"id": "Q3", "name": "Supercritical nonexistence for multiple negative singular sources on S2", "status": "explicit_open_problem_in_2018_2019_source_no_complete_resolution_found", "confidence": "medium", "sources": ["S6", "S7"], "qualification": "Recent author confirmation is desirable; no exhaustive citation database was searched."},
+    {"id": "Q4", "name": "Axial symmetry of spherical Onsager vortex mean-field equation", "status": "explicit_conjecture_in_2018_2019_source_no_complete_resolution_found", "confidence": "medium", "sources": ["S6", "S7"], "qualification": "Plane-reflection symmetry is weaker than axial symmetry. This is not the Doi-Onsager liquid crystal model or Euler energy conservation conjecture."},
+    {"id": "C1", "name": "Chang-Yang inequality on S2", "status": "solved_published", "sources": ["S5"]},
+    {"id": "C2", "name": "Parameterized spherical spectral sum inequality Ip(m)<1", "status": "solved_in_primary_source", "sources": ["S1"]},
+    {"id": "X1", "name": "Generalized Chang-Yang conjecture for N>=3", "status": "recent_preprint_claims_solution_not_independently_audited", "sources": ["S8"]},
+    {"id": "X2", "name": "Benguria-Loss ovals conjecture", "status": "do_not_label_confirmed_open_due_to_september_2026_related_proof_claim", "sources": ["S9", "S10", "S11"], "qualification": "2025 explicitly open; 2026 one-dimensional gamma=1 LT claim may change this through the 2004 connection. Domain and endpoint implications were not fully audited."}
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "On a class of interpolation inequalities on the 2D sphere",
+      "authors": ["Alexei Ilyin", "Sergey Zelik"],
+      "arxiv_submitted": "2022-04-26",
+      "publication": "Sbornik: Mathematics 214:3 (2023), 396-410",
+      "primary_urls": ["https://arxiv.org/abs/2204.12414", "https://arxiv.org/pdf/2204.12414", "https://www.mathnet.ru/php/archive.phtml?jrnid=sm&option_lang=eng&paperid=9786&wshow=paper"],
+      "reviewed_content": ["Introduction", "Theorem 1.1", "Equations (1.6) and (1.8)", "Remark 2.1"],
+      "supports": ["Mean-zero multiplicative interpolation framework", "Distinguishing known bounds from sharp constants", "Ip(m)<1 for p>1 and m>0"],
+      "limitations": "Proof was not independently reproduced. Exact sharp scalar C_* not identified by this source."
+    },
+    {
+      "id": "S2",
+      "title": "Lieb-Thirring inequalities on the sphere",
+      "authors": ["Alexei Ilyin", "Ari Laptev"],
+      "arxiv_year": 2018,
+      "primary_urls": ["https://arxiv.org/abs/1804.09632", "https://arxiv.org/pdf/1804.09632"],
+      "reviewed_content": ["Introduction", "Scalar orthonormal-family inequality", "Remark 2.4"],
+      "supports": ["Historical scalar sphere inequality", "N=1 connection with Ladyzhenskaya inequality"],
+      "limitations": "Historical 9/(4*pi) upper bound superseded by S3."
+    },
+    {
+      "id": "S3",
+      "title": "Lieb-Thirring constant on the sphere and on the torus",
+      "authors": ["Alexei Ilyin", "Ari Laptev", "Sergey Zelik"],
+      "arxiv_submitted": "2020-09-01",
+      "primary_urls": ["https://arxiv.org/abs/2009.00527", "https://arxiv.org/pdf/2009.00527", "https://www.ma.ic.ac.uk/~alaptev/Papers/YJFAN-S-20-00336.pdf"],
+      "reviewed_content": ["Theorem 1.1", "Remark 1.2", "Remark 2.1", "Scalar versus vector hypotheses"],
+      "supports": ["1/(2*pi)<=K_*<=3*pi/32 for the stated scalar mean-zero sphere setting", "N=1 upper bound"],
+      "limitations": "No claim that this search proves the bound is the latest result everywhere."
+    },
+    {
+      "id": "S4",
+      "title": "Lieb-Thirring inequalities for the Dirac operator on spheres",
+      "authors": ["Uwe Kähler", "André Pedroso Kowacs", "Michael Ruzhansky"],
+      "arxiv_submitted": "2026-01-31",
+      "arxiv_last_revised": "2026-02-11",
+      "primary_urls": ["https://arxiv.org/abs/2602.00725"],
+      "reviewed_content": ["Abstract", "Version metadata"],
+      "supports": ["Recent related result explicitly advertises classical sphere bound improvements for n>=5"],
+      "limitations": "Abstract-level scope check only; not a proof review or S2 sharp-constant result."
+    },
+    {
+      "id": "S5",
+      "title": "The Sphere Covering Inequality and Its Applications",
+      "authors": ["Changfeng Gui", "Amir Moradifam"],
+      "arxiv_year": 2016,
+      "publication": "Inventiones mathematicae 214 (2018), 1169-1204",
+      "doi": "10.1007/s00222-018-0820-2",
+      "primary_urls": ["https://arxiv.org/abs/1605.06481", "https://arxiv.org/pdf/1605.06481", "https://par.nsf.gov/servlets/purl/10080967"],
+      "reviewed_content": ["Equation (1.7)", "Constraint M", "Theorem 1.2", "Sphere covering and nodal-set proof overview"],
+      "supports": ["Published solution of the S2 Chang-Yang problem", "Nonlinear center-of-mass constraint", "Geometric intermediate inequality as a reusable proof mechanism"],
+      "limitations": "The report does not claim the project reproduces this proof. For Onsager parameters the later S6 statement is used."
+    },
+    {
+      "id": "S6",
+      "title": "A singular Sphere Covering Inequality: uniqueness and symmetry of solutions to singular Liouville-type equations",
+      "authors": ["Daniele Bartolucci", "Changfeng Gui", "Aleks Jevnikar", "Amir Moradifam"],
+      "arxiv_submitted": "2018-02-26",
+      "publication": "Mathematische Annalen 374 (2019), 1883-1922",
+      "primary_urls": ["https://arxiv.org/abs/1802.09475", "https://cvgmt.sns.it/paper/3783/", "https://cvgmt.sns.it/media/doc/paper/3783/Uniqueness-singular-final.pdf"],
+      "reviewed_content": ["Section 1.2, equation (15)", "Page 8 Open problem", "Section 1.4, equation (22)", "Conjecture B", "Theorem E", "Theorem 1.11"],
+      "supports": ["Exact Q3 hypotheses and interval", "Exact Q4 equation and conjectural range", "Distinction between axial and plane-reflection symmetry"],
+      "limitations": "Explicit open status is historical; later searches found no full resolution but cannot establish absence of one."
+    },
+    {
+      "id": "S7",
+      "title": "A Generalization of the Sphere Covering Inequality",
+      "authors": ["Changfeng Gui", "Amir Moradifam"],
+      "arxiv_submitted": "2025-10-21",
+      "primary_urls": ["https://arxiv.org/abs/2510.18681", "https://arxiv.org/html/2510.18681v1"],
+      "reviewed_content": ["Introduction", "Theorem 1.2", "Remark 1.3", "References to S5 and S6"],
+      "supports": ["Follow-up result allowing a constant boundary gap"],
+      "limitations": "Reviewed statements do not directly claim a complete resolution of Q3 or Q4."
+    },
+    {
+      "id": "S8",
+      "title": "A positive answer to the generalized Chang-Yang conjecture on S^N",
+      "authors": ["Changfeng Gui", "Tuoxin Li", "Juncheng Wei", "Zikai Ye"],
+      "arxiv_submitted": "2026-08-13",
+      "primary_urls": ["https://arxiv.org/abs/2608.13497"],
+      "reviewed_content": ["Abstract", "Submission metadata"],
+      "supports": ["Recent preprint claims the generalized conjecture for all integer N>=3 and alpha>=1/2"],
+      "limitations": "Proof not read in full or independently verified; recorded as a proof claim, not a mature consensus assessment."
+    },
+    {
+      "id": "S9",
+      "title": "An improved bound for the ground state of a Schrödinger operator on a loop",
+      "authors": ["Helmut Linde"],
+      "arxiv_submitted": "2025-04-28",
+      "arxiv_last_revised": "2025-05-24",
+      "primary_urls": ["https://arxiv.org/abs/2504.20229", "https://arxiv.org/pdf/2504.20229"],
+      "reviewed_content": ["Introduction", "Theorem 2.1 and equations (2)-(6)", "Theorem 2.2", "Closure-condition discussion"],
+      "supports": ["2025 open status of ovals", "Explicit two-variable lower-bound problem", "Numerical 0.8246 versus analytic 0.81 distinction"],
+      "limitations": "2025 open status cannot be assumed current after S10; no numerical result has been re-certified by this task."
+    },
+    {
+      "id": "S10",
+      "title": "The sharp one-dimensional Lieb-Thirring inequality for the sum of eigenvalues",
+      "authors": ["Larry Read", "Marvin R. Schulz"],
+      "arxiv_submitted": "2026-09-09",
+      "arxiv_last_revised": "2026-09-14",
+      "latest_version_checked": "v2",
+      "primary_urls": ["https://arxiv.org/abs/2609.10478", "https://arxiv.org/html/2609.10478v1"],
+      "reviewed_content": ["v1: Abstract, Theorem 1, introduction and ovals connection, displayed dual kinetic inequality", "v2: Abstract, authors, submission and revision metadata only"],
+      "supports": ["Very recent preprint claims a solution of the one-dimensional gamma=1 Lieb-Thirring conjecture", "v2 abstract additionally claims an extension to operator-valued potentials and improved higher-dimensional constants"],
+      "limitations": "New preprint proof claims, not independent confirmation. The reviewed body is v1; v2 proof was not reviewed. Do not transfer the real-line or Euclidean higher-dimensional theorem to S2. Its full implication for the ovals formulation was not audited."
+    },
+    {
+      "id": "S11",
+      "title": "Connection between the Lieb-Thirring conjecture for Schrödinger operators and an isoperimetric problem for ovals on the plane",
+      "authors": ["Rafael D. Benguria", "Michael Loss"],
+      "arxiv_submitted": "2004-02-17",
+      "publication": "Contemporary Mathematics 362 (2004), 53-61",
+      "primary_urls": ["https://arxiv.org/abs/math-ph/0402048", "https://loss.math.gatech.edu/papertalks/Blind.pdf"],
+      "reviewed_content": ["Section 3", "Equations (3.4), (3.11)-(3.17)", "Orthogonality and curve closure transformation"],
+      "supports": ["Original connection between the two-function kinetic problem and ovals"],
+      "limitations": "The task did not independently establish the converse domain and endpoint conditions needed to combine this with S10."
+    }
+  ],
+  "targeted_search_queries": [
+    "sharp Ladyzhenskaya sphere 2025 2026",
+    "Lieb-Thirring constant sphere sharp 2025 2026",
+    "singular Sphere Covering non-degenerate sphere 2024 2025 2026",
+    "Bartolucci Gui Jevnikar open problem sphere nonexistence",
+    "singular Liouville supercritical nonexistence sphere 2024 2025 2026",
+    "singular Liouville non-degeneracy sphere negative sources",
+    "Onsager sphere symmetry conjecture 2025 2026",
+    "spherical Onsager vortex symmetry 2025 2026",
+    "Onsager vortex Conjecture symmetry",
+    "ovals conjecture 2026 Read",
+    "ovals Read 2609.10478",
+    "Benguria Loss Connection Lieb Thirring conjecture isoperimetric ovals 2004 pdf"
+  ],
+  "exclusions": [
+    "Secondary summaries and search snippets were used only to discover primary sources, not to assert current open status.",
+    "Publication crawl dates were not used as paper dates.",
+    "Doi-Onsager liquid crystal results and Euler Onsager energy-conservation results were not treated as results about Q4.",
+    "No actual solve, benchmark pass, new theorem, model-token saving or model-speedup is claimed."
+  ]
+}

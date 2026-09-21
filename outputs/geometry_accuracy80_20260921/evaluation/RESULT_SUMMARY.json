@@ -1,0 +1,147 @@
+{
+  "complete": true,
+  "formal_acceptance": true,
+  "source_unchanged": true,
+  "error": null,
+  "whole_evaluation_wall_seconds": 83.36884175008163,
+  "methods": {
+    "current": {
+      "cases": 20,
+      "stable_success": 20,
+      "successful_runs": 100,
+      "breakdown": {
+        "family": {
+          "negative_power_spectrum": {
+            "cases": 12,
+            "robust_successes": 12
+          },
+          "power_approximation": {
+            "cases": 6,
+            "robust_successes": 6
+          },
+          "step_spectrum": {
+            "cases": 2,
+            "robust_successes": 2
+          }
+        },
+        "mean_zero": {
+          "False": {
+            "cases": 7,
+            "robust_successes": 7
+          },
+          "None": {
+            "cases": 6,
+            "robust_successes": 6
+          },
+          "True": {
+            "cases": 7,
+            "robust_successes": 7
+          }
+        },
+        "strong_eta_ge_one": {
+          "False": {
+            "cases": 10,
+            "robust_successes": 10
+          },
+          "None": {
+            "cases": 2,
+            "robust_successes": 2
+          },
+          "True": {
+            "cases": 8,
+            "robust_successes": 8
+          }
+        },
+        "tolerance": {
+          "1/1000000": {
+            "cases": 6,
+            "robust_successes": 6
+          },
+          "1/100000000": {
+            "cases": 8,
+            "robust_successes": 8
+          },
+          "1/10000000000": {
+            "cases": 6,
+            "robust_successes": 6
+          }
+        }
+      },
+      "total_cold_wall": 63.79314157622866,
+      "cold_median_per_run": 0.4646656250115484,
+      "cold_max_per_run": 2.2452709999633953,
+      "online_median_per_run": 0.42988804198103026,
+      "online_max_per_run": 2.208014582982287,
+      "cold_cpu_total": 63.529118000000004
+    },
+    "frozen_runtime": {
+      "cases": 20,
+      "stable_success": 3,
+      "successful_runs": 15,
+      "breakdown": {
+        "family": {
+          "negative_power_spectrum": {
+            "cases": 12,
+            "robust_successes": 3
+          },
+          "power_approximation": {
+            "cases": 6,
+            "robust_successes": 0
+          },
+          "step_spectrum": {
+            "cases": 2,
+            "robust_successes": 0
+          }
+        },
+        "mean_zero": {
+          "False": {
+            "cases": 7,
+            "robust_successes": 0
+          },
+          "None": {
+            "cases": 6,
+            "robust_successes": 0
+          },
+          "True": {
+            "cases": 7,
+            "robust_successes": 3
+          }
+        },
+        "strong_eta_ge_one": {
+          "False": {
+            "cases": 10,
+            "robust_successes": 3
+          },
+          "None": {
+            "cases": 2,
+            "robust_successes": 0
+          },
+          "True": {
+            "cases": 8,
+            "robust_successes": 0
+          }
+        },
+        "tolerance": {
+          "1/1000000": {
+            "cases": 6,
+            "robust_successes": 1
+          },
+          "1/100000000": {
+            "cases": 8,
+            "robust_successes": 1
+          },
+          "1/10000000000": {
+            "cases": 6,
+            "robust_successes": 1
+          }
+        }
+      },
+      "total_cold_wall": 16.69575758173596,
+      "cold_median_per_run": 0.09047018800629303,
+      "cold_max_per_run": 0.5343167909886688,
+      "online_median_per_run": 0.007284291496034712,
+      "online_max_per_run": 0.4500570830423385,
+      "cold_cpu_total": 16.45591100000001
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 242,
+  "recorded_at": "2026-09-18T18:14:31.960515+00:00",
+  "hypothesis": "奇异路线的无效搜索预算在来源计算前可直接识别",
+  "change": "前置固定原函数及项数、精度位、迭代数和容差检查",
+  "source_sha256": {
+    "request_contract.py": "fdece2a8899082d9a608cdbe3de71745e91b1b0a5c37fd86751a0dfb024e6d52",
+    "test_request_contract.py": "25082380a5d90d16a26a9f659689bb38862e9577c33f658c9f591225d3f7d98a"
+  },
+  "validation": {
+    "tests": 9,
+    "passed": true,
+    "development_failure": "插入补丁导致一次 SyntaxError，修正后全测通过"
+  },
+  "comparison": {
+    "legacy_source_calls_for_four_invalid_requests": 4,
+    "new_source_calls": 0,
+    "valid_zero_iteration": "保留并验证证书"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "仅节省无效请求；不宣称有效求解加速"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

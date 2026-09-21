@@ -1,0 +1,83 @@
+{
+  "algorithm_version": 8,
+  "modes": 16,
+  "cluster_size": 1,
+  "certificate": {
+    "method": "first_cluster_projector_v8",
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "cluster_indices": [
+      1
+    ],
+    "q_coefficients": [
+      "0",
+      "1/1000000",
+      "-100"
+    ],
+    "trial_columns": [
+      [
+        "1229502021719/4398046511104",
+        "-1033266322147/8796093022208",
+        "1",
+        "-1387982930465/8796093022208",
+        "14786578549793/17592186044416",
+        "-834034765923/8796093022208",
+        "6757529924433/17592186044416",
+        "-300859282725/8796093022208",
+        "1974548873977/17592186044416",
+        "-36314370541/4398046511104",
+        "400103928367/17592186044416",
+        "-6258893301/4398046511104",
+        "3707187761/1099511627776",
+        "-1612237705/8796093022208",
+        "3318504717/8796093022208",
+        "-319143701/17592186044416"
+      ]
+    ],
+    "ritz_upper": "-35636466669880215062590910041/439804651110400000000000000",
+    "external_lower": "-17400617162214295853/214748364800000000",
+    "gap_certificate": {
+      "method": "modewise_schur_v3",
+      "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+      "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+      "q_coefficients": [
+        "0",
+        "1/1000000",
+        "-100"
+      ],
+      "modes": 16,
+      "eigenvalue_index": 2,
+      "tail_policy": "sandwich",
+      "range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "-100000001/1000000",
+        "upper": "1/400000000000000"
+      },
+      "upper_kind": "upper_tail",
+      "tail_lower": "171999999/1000000",
+      "lower_inertia": [
+        1,
+        0,
+        15
+      ],
+      "upper_inertia": [
+        2,
+        0,
+        14
+      ],
+      "formal_assistant_checked": false,
+      "lower": "-17400617162214295853/214748364800000000",
+      "upper": "-1113639498352437799783/13743895347200000000",
+      "exact_width": "29277134809/13743895347200000000",
+      "decimal_enclosure": [
+        "-81.027937877059",
+        "-81.027937874928"
+      ]
+    },
+    "full_residual_frobenius_squared": "2270142915432549786606636280488748354709222545690933634530821188568348330804767264979/278423722513943256314480251948798591691520713382301243301726974305127866116929000000000000",
+    "projector_hilbert_schmidt_squared_upper": "2",
+    "nontrivial_bound": false,
+    "formal_assistant_checked": false
+  },
+  "seconds": 0.025425249999999955
+}

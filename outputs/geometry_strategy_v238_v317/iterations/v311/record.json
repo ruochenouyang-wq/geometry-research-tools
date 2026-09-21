@@ -1,0 +1,24 @@
+{
+  "version": 311,
+  "recorded_at": "2026-09-18T18:35:19.384577+00:00",
+  "hypothesis": "A small reference is useful only if later reads detect substitution and keep integrity separate from proof validity.",
+  "change": "Added lazy retrieval with SHA-256 and byte validation before optional mathematical replay.",
+  "source_sha256": {
+    "interaction.py": "bc838fb83369a1a281223f4f9c72208c181ebdce5c443bbc841a98492c4b6995",
+    "test_interaction.py": "524aa84a596fa8de2be2910298250c4dd59076f1e47f71db30ff528dcfcf681c"
+  },
+  "validation": {
+    "unittest_tests": 12,
+    "passed": true
+  },
+  "comparison": {
+    "altered_payload_rejected_before_verifier": true,
+    "hash_only_state": "unchecked",
+    "strict_replay_rejects_missing_or_false_verifier": true
+  },
+  "outcome": "passed",
+  "limitations": [
+    "A matching hash establishes content identity only, never mathematical soundness."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

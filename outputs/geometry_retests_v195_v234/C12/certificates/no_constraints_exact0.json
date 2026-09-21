@@ -1,0 +1,114 @@
+{
+  "constraints": [],
+  "decimal_enclosure": [
+    "0.000000000000",
+    "0.000000000000"
+  ],
+  "eigenvalue_index_in_constrained_space": 1,
+  "exact_level_verified_by_inertia": true,
+  "exact_width": "0",
+  "formal_assistant_checked": false,
+  "format": "global_moment_schur_v200",
+  "forms": {
+    "constraint_system": {
+      "T": [
+        [
+          "1"
+        ]
+      ],
+      "constant_in_row_span": false,
+      "constant_span_coefficients": null,
+      "constraint_projections": [],
+      "constraints": [],
+      "dimension": 1,
+      "free_columns": [
+        0
+      ],
+      "pivots": [],
+      "rank": 0,
+      "retained_degree": 0,
+      "rref": [],
+      "weighted_rows": []
+    },
+    "harmonics": {
+      "L": 0,
+      "basis": [
+        {
+          "degree": 0,
+          "m": 0,
+          "part": "real",
+          "polynomial": {
+            "0,0,0": "1"
+          }
+        }
+      ],
+      "dimension": 1,
+      "gram": [
+        [
+          "1"
+        ]
+      ],
+      "includes_all_real_sine_cosine_components": true,
+      "includes_constant": true,
+      "kinetic": [
+        [
+          "0"
+        ]
+      ],
+      "mass": [
+        "1"
+      ]
+    },
+    "mass_is_diagonal": true,
+    "reduced_A": [
+      [
+        "0"
+      ]
+    ],
+    "reduced_mass": [
+      [
+        "1"
+      ]
+    ],
+    "retained_degree": 0
+  },
+  "geometry": "unit_S2",
+  "infinite_tail_lower": "2",
+  "lower": "0",
+  "lower_inertia": [
+    0,
+    1,
+    0
+  ],
+  "potential": {},
+  "range_proof": {
+    "lower": "0",
+    "q": {},
+    "reduction_enabled": true,
+    "rule": "constant plus/minus sum of absolute nonconstant coefficients on unit sphere",
+    "sphere_identity": {
+      "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+      "original": {},
+      "quotient": {},
+      "reduced": {}
+    },
+    "upper": "0",
+    "used": {}
+  },
+  "retained_degree": 0,
+  "scope": "all_real_H1_functions_on_unit_S2_satisfying_all_recorded_moments",
+  "tail": {
+    "L": 0,
+    "columns": [],
+    "complete_real_components": true,
+    "far_tail_rule": "all degrees >L+degree(q) have zero head coupling; all degrees >L remain bounded",
+    "potential_degree": 0
+  },
+  "upper": "0",
+  "upper_inertia": [
+    0,
+    1,
+    0
+  ],
+  "upper_kind": "upper_ritz"
+}

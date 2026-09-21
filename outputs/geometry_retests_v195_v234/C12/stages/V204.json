@@ -1,0 +1,757 @@
+{
+  "callable": "global_constraints.inequality",
+  "outcome": "The overstrong threshold 3 is refuted with an explicitly verified admissible real polynomial trial.",
+  "output": {
+    "constraints": [
+      {
+        "0,0,0": "1"
+      },
+      {
+        "0,0,1": "1"
+      }
+    ],
+    "formal_assistant_checked": false,
+    "format": "global_moment_inequality_v204",
+    "geometry": "unit_S2",
+    "potential": {},
+    "scope": "all_real_H1_functions_on_unit_S2_satisfying_all_recorded_moments",
+    "spectral_certificate": {
+      "constraints": [
+        {
+          "0,0,0": "1"
+        },
+        {
+          "0,0,1": "1"
+        }
+      ],
+      "decimal_enclosure": [
+        "2.000000000000",
+        "2.000000000000"
+      ],
+      "eigenvalue_index_in_constrained_space": 1,
+      "exact_level_verified_by_inertia": true,
+      "exact_width": "0",
+      "formal_assistant_checked": false,
+      "format": "global_moment_schur_v200",
+      "forms": {
+        "constraint_system": {
+          "T": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          "constant_in_row_span": true,
+          "constant_span_coefficients": [
+            "1",
+            "0"
+          ],
+          "constraint_projections": [
+            {
+              "coefficients": [
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "omitted_L2_norm_squared": "0"
+            },
+            {
+              "coefficients": [
+                "0",
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "omitted_L2_norm_squared": "0"
+            }
+          ],
+          "constraints": [
+            {
+              "0,0,0": "1"
+            },
+            {
+              "0,0,1": "1"
+            }
+          ],
+          "dimension": 7,
+          "free_columns": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "pivots": [
+            0,
+            1
+          ],
+          "rank": 2,
+          "retained_degree": 2,
+          "rref": [
+            [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "weighted_rows": [
+            [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1/3",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "harmonics": {
+          "L": 2,
+          "basis": [
+            {
+              "degree": 0,
+              "m": 0,
+              "part": "real",
+              "polynomial": {
+                "0,0,0": "1"
+              }
+            },
+            {
+              "degree": 1,
+              "m": 0,
+              "part": "real",
+              "polynomial": {
+                "0,0,1": "1"
+              }
+            },
+            {
+              "degree": 1,
+              "m": 1,
+              "part": "real",
+              "polynomial": {
+                "1,0,0": "1"
+              }
+            },
+            {
+              "degree": 1,
+              "m": 1,
+              "part": "imag",
+              "polynomial": {
+                "0,1,0": "1"
+              }
+            },
+            {
+              "degree": 2,
+              "m": 0,
+              "part": "real",
+              "polynomial": {
+                "0,0,2": "1",
+                "0,2,0": "-1/2",
+                "2,0,0": "-1/2"
+              }
+            },
+            {
+              "degree": 2,
+              "m": 1,
+              "part": "real",
+              "polynomial": {
+                "1,0,1": "3"
+              }
+            },
+            {
+              "degree": 2,
+              "m": 1,
+              "part": "imag",
+              "polynomial": {
+                "0,1,1": "3"
+              }
+            },
+            {
+              "degree": 2,
+              "m": 2,
+              "part": "real",
+              "polynomial": {
+                "0,2,0": "-3",
+                "2,0,0": "3"
+              }
+            },
+            {
+              "degree": 2,
+              "m": 2,
+              "part": "imag",
+              "polynomial": {
+                "1,1,0": "6"
+              }
+            }
+          ],
+          "dimension": 9,
+          "gram": [
+            [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1/3",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1/3",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "1/3",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1/5",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "3/5",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "12/5",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "12/5"
+            ]
+          ],
+          "includes_all_real_sine_cosine_components": true,
+          "includes_constant": true,
+          "kinetic": [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "2/3",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "2/3",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "2/3",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "6/5",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "18/5",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "18/5",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "72/5",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "72/5"
+            ]
+          ],
+          "mass": [
+            "1",
+            "1/3",
+            "1/3",
+            "1/3",
+            "1/5",
+            "3/5",
+            "3/5",
+            "12/5",
+            "12/5"
+          ]
+        },
+        "mass_is_diagonal": true,
+        "reduced_A": [
+          [
+            "2/3",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "2/3",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "6/5",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "18/5",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "18/5",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "72/5",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "72/5"
+          ]
+        ],
+        "reduced_mass": [
+          [
+            "1/3",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/3",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1/5",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "3/5",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "3/5",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "12/5",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "12/5"
+          ]
+        ],
+        "retained_degree": 2
+      },
+      "geometry": "unit_S2",
+      "infinite_tail_lower": "12",
+      "lower": "2",
+      "lower_inertia": [
+        0,
+        2,
+        5
+      ],
+      "potential": {},
+      "range_proof": {
+        "lower": "0",
+        "q": {},
+        "reduction_enabled": true,
+        "rule": "constant plus/minus sum of absolute nonconstant coefficients on unit sphere",
+        "sphere_identity": {
+          "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+          "original": {},
+          "quotient": {},
+          "reduced": {}
+        },
+        "upper": "0",
+        "used": {}
+      },
+      "retained_degree": 2,
+      "scope": "all_real_H1_functions_on_unit_S2_satisfying_all_recorded_moments",
+      "tail": {
+        "L": 2,
+        "columns": [],
+        "complete_real_components": true,
+        "far_tail_rule": "all degrees >L+degree(q) have zero head coupling; all degrees >L remain bounded",
+        "potential_degree": 0
+      },
+      "upper": "2",
+      "upper_inertia": [
+        0,
+        2,
+        5
+      ],
+      "upper_kind": "upper_ritz"
+    },
+    "spectral_existence_below_threshold": true,
+    "statement": "integral(grad_u_squared+q*u_squared)>=threshold*integral(u_squared)",
+    "status": "refuted_with_trial",
+    "threshold": "3",
+    "trial_certificate": {
+      "constant_in_row_span": true,
+      "constant_span_coefficients": [
+        "1",
+        "0"
+      ],
+      "constraints": [
+        {
+          "0,0,0": "1"
+        },
+        {
+          "0,0,1": "1"
+        }
+      ],
+      "decimal_enclosure": [
+        "2.000000000000",
+        "2.000000000000"
+      ],
+      "energy": "2/3",
+      "exact_width": "0",
+      "formal_assistant_checked": false,
+      "format": "global_moment_trial_enclosure_v195",
+      "geometry": "unit_S2",
+      "laplace_lower": 2,
+      "lower": "2",
+      "mass": "1/3",
+      "moment_inner_products": [
+        "0",
+        "0"
+      ],
+      "potential": {},
+      "range_proof": {
+        "lower": "0",
+        "q": {},
+        "reduction_enabled": true,
+        "rule": "constant plus/minus sum of absolute nonconstant coefficients on unit sphere",
+        "sphere_identity": {
+          "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+          "original": {},
+          "quotient": {},
+          "reduced": {}
+        },
+        "upper": "0",
+        "used": {}
+      },
+      "scope": "all_real_H1_functions_on_unit_S2_satisfying_all_recorded_moments",
+      "support_L": 2,
+      "trial": {
+        "1,0,0": "1"
+      },
+      "upper": "2"
+    }
+  },
+  "version": 204,
+  "wall_seconds": 0.017799458000000018
+}

@@ -1,0 +1,70 @@
+{
+  "version": 257,
+  "recorded_at": "2026-09-18T19:03:21.486048+00:00",
+  "hypothesis": "All three exact residual statistics can share each symmetric coefficient product.",
+  "change": "Fuse symmetric M/H/R contractions, skip zero coefficients, and verify complete enriched results against the frozen search.",
+  "source_sha256": {
+    "fast_math.py": "d7f6ac0d1f024bfd270abe278f8c10e655613c5723b2ff9e0bf9a0559ebcef19",
+    "test_fast_math.py": "43a814893d9755f23c1475aba9441379c0732e1e34c2d2720fb7029de5bd9764"
+  },
+  "validation": {
+    "tests_run": 12,
+    "failures": 0,
+    "frozen_verifiers_retained": true
+  },
+  "comparison": {
+    "fixed_input": "10 alternating rational coefficients; full six-term run112bits14iterations",
+    "exact_statistics_equal": true,
+    "baseline_full_quadratic_passes": 3,
+    "baseline_gram_contractions": 300,
+    "candidate_statistics_counters": {
+      "statistics_coefficient_products": 55,
+      "statistics_gram_contractions": 165
+    },
+    "baseline_warm_statistics": {
+      "serial_seconds": [
+        0.00028024998027831316,
+        0.0002649170346558094,
+        0.00026070792227983475
+      ],
+      "median_seconds": 0.0002649170346558094,
+      "not_a_model_speed_claim": true
+    },
+    "candidate_warm_statistics": {
+      "serial_seconds": [
+        0.00015883299056440592,
+        0.0001525420229882002,
+        0.0001502919476479292
+      ],
+      "median_seconds": 0.0001525420229882002,
+      "not_a_model_speed_claim": true
+    },
+    "exact_integrated_final_certificate_equal": true,
+    "all_attempt_widths_equal": true,
+    "baseline_warm_enrich": {
+      "serial_seconds": [
+        0.019756624940782785,
+        0.01913445896934718,
+        0.02002187503967434
+      ],
+      "median_seconds": 0.019756624940782785,
+      "not_a_model_speed_claim": true
+    },
+    "candidate_warm_enrich": {
+      "serial_seconds": [
+        0.009547083056531847,
+        0.009870499954558909,
+        0.0097279999172315
+      ],
+      "median_seconds": 0.0097279999172315,
+      "not_a_model_speed_claim": true
+    },
+    "cache_regime": "both Gram caches warm; candidate LDL warm; each enriched run starts new context and finishes frozen replay"
+  },
+  "outcome": "implemented_exact_checks_passed",
+  "limitations": [
+    "Small serial probes; no claim of universal speedup.",
+    "Caches are process-local; cold and warm costs are identified."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

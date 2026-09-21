@@ -1,0 +1,35 @@
+{
+  "version": 263,
+  "recorded_at": "2026-09-18T18:38:48.673859+00:00",
+  "hypothesis": "Outward rounding can hide an already accurate approximation, so basis growth is the wrong repair.",
+  "change": "Select the least sufficient square-root bit precision by exact search; distinguish rounding-budget failure.",
+  "source_sha256": {
+    "adaptive_approx.py": "f1d78ea15a8a73530c5bbd2e37ed4f6c088615d2f4c48c4825379a602d53d707",
+    "test_adaptive_approx.py": "6ca53cab9c874423c182c3d3aa795e605d0cd6453df86e8a56b474b33a63ca96"
+  },
+  "validation": {
+    "unit_tests_passed": 9,
+    "one_less_bit_fails_target": true
+  },
+  "comparison": {
+    "target": "3/100",
+    "unchanged_model_degree": 3,
+    "unchanged_model_levels": 5,
+    "original_bits": 0,
+    "original_rounded_error": "1",
+    "new_bits": 8,
+    "new_rounded_error": "7/256",
+    "cost": {
+      "shape_evaluations": 4,
+      "level_comparisons": 7,
+      "sqrt_comparisons": 11,
+      "certificate_builds": 1,
+      "certificate_replays": 1
+    }
+  },
+  "outcome": "retained",
+  "limitations": [
+    "A finite bit cap can still prevent reporting the requested tolerance."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

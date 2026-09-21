@@ -1,0 +1,92 @@
+[
+  {
+    "callable": "constraints.analytic_exclusion_bound",
+    "capability": "Analytic full-sphere harmonic-exclusion lower bound and actual harmonic Ritz upper",
+    "evidence": [
+      "round06/evidence/v145.json"
+    ],
+    "outcome": "For q=2t² and cutoff 1 the full-space analytic enclosure is [6,148/21], with an actual P2 Ritz witness; q=0 calibrates exactly to 6 and 12.",
+    "version": 145
+  },
+  {
+    "callable": "constraints.sector_assembly",
+    "capability": "Assemble constrained sectors with degree start max(m,cutoff+1)",
+    "evidence": [
+      "round06/evidence/v146.json"
+    ],
+    "outcome": "Starts are 2,2,3; projection follows complete multiplication by q.",
+    "version": 146
+  },
+  {
+    "callable": "constraints.tail_floors",
+    "capability": "Constraint-aware lower bounds for radial and omitted angular tails",
+    "evidence": [
+      "round06/evidence/v147.json"
+    ],
+    "outcome": "The omitted m>=1 floor is 12 under cutoff 2, and radial tail floor is 56.",
+    "version": 147
+  },
+  {
+    "callable": "constraints.certify_exclusion_sector",
+    "capability": "Exact Schur eigenvalue certificate for a low-harmonic constrained sector",
+    "evidence": [
+      "round06/evidence/v148.json"
+    ],
+    "outcome": "Radial tail included; dense exact inertia independently replays the endpoints.",
+    "version": 148
+  },
+  {
+    "callable": "constraints.full_exclusion_ground",
+    "capability": "Full sphere aggregation with complete harmonic exclusion",
+    "evidence": [
+      "round06/evidence/v149.json"
+    ],
+    "outcome": "All nonaxisymmetric sectors and infinite angular tail are controlled.",
+    "version": 149
+  },
+  {
+    "callable": "constraints.analytic_moment_bound",
+    "capability": "Infinite-radial-space analytic variational bracket for arbitrary finite moments",
+    "evidence": [
+      "round06/evidence/v150.json"
+    ],
+    "outcome": "A codimension bound leaves a nonzero trial vector in the first two harmonic modes, giving the rigorous pre-Schur bracket [0,4].",
+    "version": 150
+  },
+  {
+    "callable": "constraints.mass_nullspace",
+    "capability": "Mass-weighted exact constraint nullspace with redundancy removal",
+    "evidence": [
+      "round06/evidence/v151.json"
+    ],
+    "outcome": "Duplicate/scaled rows have rank 1; free coordinates use exact L2 mass weighting.",
+    "version": 151
+  },
+  {
+    "callable": "constraints.constrained_forms",
+    "capability": "Generalized reduced energy, non-diagonal mass, and transformed tail couplings",
+    "evidence": [
+      "round06/evidence/v152.json"
+    ],
+    "outcome": "Reduced mass contains off-diagonal 2/15; all entries participate in A-xM and the Schur correction.",
+    "version": 152
+  },
+  {
+    "callable": "constraints.certify_moment_sector",
+    "capability": "Infinite-dimensional arbitrary finite-moment single-sector spectrum",
+    "evidence": [
+      "round06/evidence/v153.json"
+    ],
+    "outcome": "The moment-constrained quotient is certified with its full radial tail and single-sector scope.",
+    "version": 153
+  },
+  {
+    "callable": "constraints.constrained_inequality",
+    "capability": "Three-way constrained weighted inequality with bound quantifier",
+    "evidence": [
+      "round06/evidence/v154.json"
+    ],
+    "outcome": "The sharp q=0 threshold 6 is proved for all functions orthogonal to degrees 0 and 1.",
+    "version": 154
+  }
+]

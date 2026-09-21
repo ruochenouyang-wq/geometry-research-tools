@@ -1,0 +1,37 @@
+{
+  "absolute_error_bound": "1/2075673600",
+  "analytic_dependencies": [
+    "Taylor theorem with Lagrange remainder for real exp",
+    "exp monotonicity and exp(x+y)=exp(x)*exp(y)",
+    "e<3: sum_(k>=2) 1/k! < sum_(k>=2) 1/2^(k-1)=1"
+  ],
+  "bound_statement": "sup_on_interval_abs(exp(a*t)-polynomial)<=absolute_error_bound",
+  "degree": 12,
+  "envelope_exponent": 1,
+  "exponential_envelope": "3",
+  "formal_assistant_checked": false,
+  "format": "exp_linear_taylor_v123",
+  "interval": [
+    "-1",
+    "1"
+  ],
+  "original_potential": {
+    "a": "1",
+    "kind": "exp_linear"
+  },
+  "polynomial_coefficients": [
+    "1",
+    "1",
+    "1/2",
+    "1/6",
+    "1/24",
+    "1/120",
+    "1/720",
+    "1/5040",
+    "1/40320",
+    "1/362880",
+    "1/3628800",
+    "1/39916800",
+    "1/479001600"
+  ]
+}

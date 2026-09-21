@@ -1,0 +1,92 @@
+[
+  {
+    "callable": "global_constraints.trial_enclosure",
+    "capability": "Validate all global moments of a real trial and a justified Poincare lower bound",
+    "evidence": [
+      "C12/stages/V195.json"
+    ],
+    "outcome": "The original full-sphere problem is sharply enclosed by [2,2]; x is orthogonal to both 1 and z.",
+    "version": 195
+  },
+  {
+    "callable": "global_constraints.full_harmonics",
+    "capability": "Assemble every real harmonic including constant and sine/cosine modes",
+    "evidence": [
+      "C12/stages/V196.json"
+    ],
+    "outcome": "All 9 real harmonics of degrees 0..2 have exact Gram and independently integrated gradient matrices.",
+    "version": 196
+  },
+  {
+    "callable": "global_constraints.constraint_nullspace",
+    "capability": "Mass-weighted nullspace of complete cross-m and cross-component moments",
+    "evidence": [
+      "C12/stages/V197.json"
+    ],
+    "outcome": "The x+z moment couples different m blocks; no constraint support is dropped.",
+    "version": 197
+  },
+  {
+    "callable": "global_constraints.reduced_forms",
+    "capability": "Congruence of the full coupled energy and non-diagonal mass matrix",
+    "evidence": [
+      "C12/stages/V198.json"
+    ],
+    "outcome": "Dense T^T M T retains every off-diagonal entry; mixed xyz potential is integrated exactly.",
+    "version": 198
+  },
+  {
+    "callable": "global_constraints.transformed_tail",
+    "capability": "Transform every finite-to-tail harmonic coupling through the global nullspace",
+    "evidence": [
+      "C12/stages/V199.json"
+    ],
+    "outcome": "All 7 real degree-3 tail modes are represented, including sine components.",
+    "version": 199
+  },
+  {
+    "callable": "global_constraints.certify",
+    "capability": "Full-sphere constrained Schur spectral enclosure with entire infinite tail",
+    "evidence": [
+      "C12/stages/V200.json"
+    ],
+    "outcome": "A nonconstant, nonaxisymmetric problem is certified on the complete constrained H1 space.",
+    "version": 200
+  },
+  {
+    "callable": "global_constraints.exact_level",
+    "capability": "Snap to an exact Laplace level only when both exact inertia inequalities hold",
+    "evidence": [
+      "C12/stages/V201.json"
+    ],
+    "outcome": "Original C12 full-space sharp value is exactly 2; no axisymmetric certificate is reused as global evidence.",
+    "version": 201
+  },
+  {
+    "callable": "global_constraints.equivalent_constraints",
+    "capability": "Transfer verified spectra between identical global constraint row spaces",
+    "evidence": [
+      "C12/stages/V202.json"
+    ],
+    "outcome": "Scaling, duplicates and zero rows preserve the complete constrained function space and reuse the spectral proof.",
+    "version": 202
+  },
+  {
+    "callable": "global_constraints.adaptive",
+    "capability": "Increase the complete harmonic head while preserving all constraint support",
+    "evidence": [
+      "C12/stages/V203.json"
+    ],
+    "outcome": "L=1 has no admissible head direction; L=2 resolves the unchanged problem and certifies exact 6.",
+    "version": 203
+  },
+  {
+    "callable": "global_constraints.inequality",
+    "capability": "Prove a global weighted inequality or provide an explicit rational violating function",
+    "evidence": [
+      "C12/stages/V204.json"
+    ],
+    "outcome": "The overstrong threshold 3 is refuted with an explicitly verified admissible real polynomial trial.",
+    "version": 204
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "Bernstein_coefficients": [
+    {
+      "coefficient": "3",
+      "powers": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "coefficient": "2",
+      "powers": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "coefficient": "1",
+      "powers": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "effective_potential": {
+    "0,0,0": "3",
+    "0,2,0": "-1",
+    "2,0,0": "-2"
+  },
+  "lower": "1",
+  "potential": {
+    "0,0,2": "3",
+    "0,2,0": "2",
+    "2,0,0": "1"
+  },
+  "rule": "convex_hull_of_exact_simplex_Bernstein_coefficients",
+  "simplex_degree": 1,
+  "sphere_identity": {
+    "identity": "original-reduced=(x²+y²+z²-1)*quotient",
+    "original": {
+      "0,0,2": "3",
+      "0,2,0": "2",
+      "2,0,0": "1"
+    },
+    "quotient": {
+      "0,0,0": "3"
+    },
+    "reduced": {
+      "0,0,0": "3",
+      "0,2,0": "-1",
+      "2,0,0": "-2"
+    }
+  },
+  "upper": "3"
+}

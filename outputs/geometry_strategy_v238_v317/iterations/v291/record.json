@@ -1,0 +1,22 @@
+{
+  "version": 291,
+  "recorded_at": "2026-09-18T18:35:37.796790+00:00",
+  "hypothesis": "Rotation preserves probability L2 approximation error without implying spectral accuracy.",
+  "change": "Separate approximation-axis transport with source replay and explicit no-spectrum scope.",
+  "source_sha256": {
+    "proof_transport.py": "733b965d4bad8ca440163bd42420ce16eb1ee4159e9100a9c62cada3a9ddd663",
+    "test_proof_transport.py": "b3d52107c3d15c01b504b8fa6c9f3b4ac36f40407e3d9b3cde99573c603271a0"
+  },
+  "validation": {
+    "tests_passed": 5
+  },
+  "comparison": {
+    "before": "Rotated approximation recomputed projection cells.",
+    "after": "Existing representative composed with rotation; same proven L2 bound."
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Axis-coordinate rotations only; L2 conclusions remain separate from spectrum."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

@@ -1,0 +1,67 @@
+{
+  "allowance_seconds_per_attempt": 90,
+  "attempts": [
+    {
+      "L": 3,
+      "bits": 40,
+      "certificate": "C18/certificates/baseline_L3_bits40.json",
+      "dimension": 15,
+      "lower": "8458364896409780694401/2361183241434822606848",
+      "seconds": 0.162595667,
+      "solver": "frozen_V182",
+      "target": "1/100000000",
+      "target_met": false,
+      "upper": "61542745045/17179869184",
+      "verified": true,
+      "wall_budget_seconds": 90,
+      "width": "5576369132851839/2361183241434822606848",
+      "width_decimal": 2.3616841907887e-06,
+      "within_wall_budget": true
+    },
+    {
+      "L": 4,
+      "bits": 40,
+      "certificate": "C18/certificates/baseline_L4_bits40.json",
+      "dimension": 24,
+      "lower": "8458364896409780694401/2361183241434822606848",
+      "seconds": 0.514852458,
+      "solver": "frozen_V182",
+      "target": "1/100000000",
+      "target_met": false,
+      "upper": "61542745045/17179869184",
+      "verified": true,
+      "wall_budget_seconds": 90,
+      "width": "5576369132851839/2361183241434822606848",
+      "width_decimal": 2.3616841907887e-06,
+      "within_wall_budget": true
+    },
+    {
+      "L": 4,
+      "bits": 48,
+      "certificate": "C18/certificates/baseline_L4_bits48.json",
+      "dimension": 24,
+      "lower": "1108654803702386446712342173/309485009821345068724781056",
+      "seconds": 0.571583417,
+      "solver": "frozen_V182",
+      "target": "1/100000000",
+      "target_met": false,
+      "upper": "15754942731517/4398046511104",
+      "verified": true,
+      "wall_budget_seconds": 90,
+      "width": "730905480203387894115/309485009821345068724781056",
+      "width_decimal": 2.361682979816419e-06,
+      "within_wall_budget": true
+    }
+  ],
+  "bits80": {
+    "exception": "ValueError",
+    "interpretation": "unsupported precision request, not a measured accuracy failure",
+    "reason": "Require bits in 8..48",
+    "rejected": true
+  },
+  "case": "C18",
+  "diagnosis": "L3 and L4 retain the same competing odd-parity harmonics; 40 to48 bits does not remove the finite-tail comparison gap",
+  "old_degree_cap": 4,
+  "original_input_preserved": true,
+  "target_width": "1/100000000"
+}

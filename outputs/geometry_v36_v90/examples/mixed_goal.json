@@ -1,0 +1,15 @@
+{
+  "geometry": "unit_sphere",
+  "function_space": "full_sphere",
+  "eigenvalue_index": 1,
+  "parameters": [
+    "a",
+    "b"
+  ],
+  "potential": "(a+2*b)*t+(b-a)*(t*t-1/3)",
+  "penalty": "(a+2*b)**2/4+(b-a)**2/9",
+  "domain": {
+    "kind": "all_real"
+  },
+  "threshold": "0"
+}

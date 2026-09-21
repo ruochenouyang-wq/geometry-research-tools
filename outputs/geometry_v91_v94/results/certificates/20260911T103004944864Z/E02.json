@@ -1,0 +1,71 @@
+{
+  "format": "projected_full_sphere_ground_v93",
+  "geometry": "unit_S2",
+  "scope": "all_mean_zero_H1_functions_on_unit_S2",
+  "q_coefficients": [
+    "3/2"
+  ],
+  "mean_zero": true,
+  "potential_symmetry": "axisymmetric_polynomial_degree_at_most_6",
+  "eigenvalue_index_in_constrained_space": 1,
+  "sectors": [
+    {
+      "format": "projected_sphere_sector_v91_v92",
+      "geometry": "unit_S2",
+      "q_coefficients": [
+        "3/2"
+      ],
+      "azimuth_m": 0,
+      "mean_zero": true,
+      "projection": "remove_l0",
+      "scope": "single_azimuth_sector_only",
+      "degree_start": 1,
+      "modes": 8,
+      "eigenvalue_index": 1,
+      "range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "3/2",
+        "upper": "3/2"
+      },
+      "radial_tail_start": 9,
+      "radial_tail_lower": "183/2",
+      "upper_kind": "upper_ritz",
+      "lower_inertia": [
+        0,
+        1,
+        7
+      ],
+      "upper_inertia": [
+        0,
+        1,
+        7
+      ],
+      "formal_assistant_checked": false,
+      "lower": "7/2",
+      "upper": "7/2",
+      "exact_width": "0",
+      "decimal_enclosure": [
+        "3.500000000000",
+        "3.500000000000"
+      ]
+    }
+  ],
+  "range_proof": {
+    "kind": "quadratic_range_v5",
+    "lower": "3/2",
+    "upper": "3/2"
+  },
+  "omitted_azimuth_m_start": 1,
+  "angular_tail_lower": "7/2",
+  "angular_tail_cannot_improve_best_upper": true,
+  "tolerance": "1/10000000000",
+  "status": "certified_target_met",
+  "formal_assistant_checked": false,
+  "lower": "7/2",
+  "upper": "7/2",
+  "exact_width": "0",
+  "decimal_enclosure": [
+    "3.500000000000",
+    "3.500000000000"
+  ]
+}

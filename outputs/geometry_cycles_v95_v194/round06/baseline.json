@@ -1,0 +1,19 @@
+{
+  "exact_calibration": "q=0; orthogonality to all degrees <=1 gives sharp value 6",
+  "external_problem": "sphere interpolation with low spherical harmonic orthogonality",
+  "interpretation": "V94 correctly rejects the unsupported additional constraint; its ordinary mean-zero value 2 is not a wrong answer to its own different problem",
+  "observed_response": {
+    "error": "ValueError",
+    "mathematical_verdict": null,
+    "message": "Unknown fields: exclude_harmonic_degrees_leq",
+    "status": "invalid_request"
+  },
+  "request": {
+    "exclude_harmonic_degrees_leq": 1,
+    "op": "mean_zero_ground",
+    "q": [
+      0
+    ]
+  },
+  "timestamp_utc": "2026-09-11T11:16:37.114874+00:00"
+}

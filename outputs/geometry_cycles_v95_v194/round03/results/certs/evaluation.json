@@ -1,0 +1,91 @@
+{
+  "artifacts": {
+    "assembly": "round03/results/certs/associated_degree12_assembly.json",
+    "asymmetric_degree12_full": "round03/results/certs/asymmetric_degree12_full.json",
+    "bernstein": "round03/results/certs/asymmetric_degree12_bernstein_range.json",
+    "degree12_full": "round03/results/certs/degree12_full.json",
+    "exp_minus": "round03/results/certs/exp_minus.json",
+    "exp_plus": "round03/results/certs/exp_plus.json",
+    "input": "round03/results/certs/degree24_input.json",
+    "kernel": "round03/results/certs/degree24_schur_kernel.json",
+    "open": "round03/results/certs/finite_budget_open.json",
+    "quadratic": "round03/results/certs/quadratic_cross_new.json",
+    "quadratic_old": "round03/results/certs/quadratic_cross_old.json",
+    "reuse": "round03/results/certs/reused_sturm_sector.json",
+    "sector": "round03/results/certs/degree12_sector.json",
+    "sturm": "round03/results/certs/degree12_sturm_range.json",
+    "tamper": "round03/results/certs/tampered_delta_rejected.json",
+    "taylor": "round03/results/certs/exp_t_taylor.json"
+  },
+  "cases": [
+    {
+      "case": "degree12_full",
+      "decimal_enclosure": [
+        "2.015146253687",
+        "2.015146374703"
+      ],
+      "exact_width": "8515665/70368744177664",
+      "seconds": 0.364901,
+      "status": "certified_bound_open_gap"
+    },
+    {
+      "case": "asymmetric_degree12_full",
+      "decimal_enclosure": [
+        "2.027631817601",
+        "2.027631878853"
+      ],
+      "exact_width": "8620401/140737488355328",
+      "seconds": 1.033063,
+      "status": "certified_bound_open_gap"
+    },
+    {
+      "case": "exp_plus",
+      "decimal_enclosure": [
+        "3.048191488429",
+        "3.048191589548"
+      ],
+      "exact_width": "7384772634123427/73031272277365437235200",
+      "seconds": 1.606192,
+      "status": "certified_bound_open_gap"
+    },
+    {
+      "case": "exp_minus",
+      "decimal_enclosure": [
+        "3.048191488429",
+        "3.048191589548"
+      ],
+      "exact_width": "7384772634123427/73031272277365437235200",
+      "seconds": 1.609891,
+      "status": "certified_bound_open_gap"
+    }
+  ],
+  "cheap_full_sphere_cases": [
+    {
+      "case": "degree24_cheap_mean_zero",
+      "lower": "2",
+      "path": "round03/results/certs/degree24_cheap_mean_zero.json",
+      "status": "certified_bound_open_gap",
+      "upper": "451/225"
+    },
+    {
+      "case": "degree24_cheap_unconstrained",
+      "lower": "0",
+      "path": "round03/results/certs/degree24_cheap_unconstrained.json",
+      "status": "certified_bound_open_gap",
+      "upper": "1/25"
+    },
+    {
+      "case": "constant_cheap_exact",
+      "lower": "-1",
+      "path": "round03/results/certs/constant_cheap_exact.json",
+      "status": "certified_exact",
+      "upper": "-1"
+    }
+  ],
+  "finite_budget_status": "certified_bound_open_gap",
+  "old_quadratic_interval_intersects": true,
+  "range_reuse_without_search": true,
+  "reflection_intervals_identical": true,
+  "tampered_delta_rejected": true,
+  "tests": 56
+}

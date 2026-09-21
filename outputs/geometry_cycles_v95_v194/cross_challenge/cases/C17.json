@@ -1,0 +1,60 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {
+    "bits": 50,
+    "max_m": 8,
+    "max_modes": 16,
+    "modes": 8,
+    "tolerance": "1/1000000000000"
+  },
+  "certificates": [
+    {
+      "format": "projected_full_sphere_ground_v93",
+      "path": "certs/C17_qz_full_source.json",
+      "sha256": "3a29c21d30105730fa105293d012e1c280611bae7358dd1e3824ecfdc742d191",
+      "verified": true
+    },
+    {
+      "format": "sphere_rotation_transfer_v184",
+      "path": "certs/C17_qx_rotated_full.json",
+      "sha256": "4e9bde51c7b7d11223f3c8d6e7bd1b2006d9827cc4fd140939199c3574c3e355",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 0.030657,
+  "id": "C17",
+  "lower": "306454569612145056801835349445/158456325028528675187087900672",
+  "notes": [],
+  "original_acceptance": [
+    "Certify the full mean-zero ground and reproduce the q=z result under an explicit rotation of S2.",
+    "Preserve the mean-zero constraint and full-space scope; comparing only the old m=0 sector is not a rotation test."
+  ],
+  "original_input": {
+    "mean_zero": true,
+    "q_xyz": [
+      {
+        "coefficient": "1",
+        "powers": [
+          1,
+          0,
+          0
+        ]
+      }
+    ],
+    "target_width": "1/1000000000000"
+  },
+  "rotation_identity": "(R*x)_3=x1; determinant=1; all mean-zero H1 preserved",
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "narrow_target_met",
+  "target": "1/1000000000000",
+  "title": "旋转等价的非轴输入q=x",
+  "upper": "544372670695995/281474976710656",
+  "width": "544372670695995/158456325028528675187087900672"
+}

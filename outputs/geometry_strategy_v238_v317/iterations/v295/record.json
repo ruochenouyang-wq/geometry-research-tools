@@ -1,0 +1,22 @@
+{
+  "version": 295,
+  "recorded_at": "2026-09-18T18:39:06.122059+00:00",
+  "hypothesis": "Several certified approximants to the identical function can be selected by their error bound, provided the chosen witness is preserved.",
+  "change": "Replay candidate L2 certificates, bind their original function, choose the smallest bound with its exact source representative.",
+  "source_sha256": {
+    "proof_transport.py": "544c85cf6db0241e7a42acea14055d11e4d4a740a67ce52ad9322124901d7901",
+    "test_proof_transport.py": "ca172f35e4028f19e29639f564a3699c153e654bcf73133df7efe52730775110"
+  },
+  "validation": {
+    "tests_passed": 9
+  },
+  "comparison": {
+    "before": "A smaller error number could become disconnected from the actual approximant.",
+    "after": "Selected source index is independently recomputed and evaluation follows that source."
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Does not combine different approximants into an unproved better function."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

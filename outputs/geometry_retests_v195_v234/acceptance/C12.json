@@ -1,0 +1,77 @@
+{
+  "case": "C12",
+  "detail": {
+    "admissible_trials": [
+      "x",
+      "y"
+    ],
+    "full_ground": "2",
+    "separately_axisymmetric_ground": "6"
+  },
+  "elapsed_including_store_and_replay_seconds": 0.041663833,
+  "original": {
+    "acceptance": [
+      "In the full sphere the ground is exactly 2, with admissible x and y.",
+      "For the separately declared axisymmetric space the same constraints give ground 6; scope binding must distinguish the two."
+    ],
+    "category": 6,
+    "frozen_v94_baseline": "No extra-constraint API; full and axisymmetric meanings must not be conflated.",
+    "id": "C12",
+    "input": {
+      "orthogonality": [
+        "1",
+        "z"
+      ],
+      "q": [
+        "0"
+      ]
+    },
+    "origin": "exact_calibration",
+    "source_ids": [
+      "sphere"
+    ],
+    "status": "fixed_challenge_not_claimed_solved",
+    "title": "只删除常数和z仍保留横向模"
+  },
+  "original_target_met": true,
+  "outer_process_limit_seconds": 90,
+  "service_calls": [
+    {
+      "request": {
+        "L": 2,
+        "constraints": [
+          {
+            "0,0,0": "1"
+          },
+          {
+            "0,0,1": "1"
+          }
+        ],
+        "op": "constraints",
+        "q": {}
+      },
+      "result": {
+        "certificate_id": "d729ed37ddc00dc5c90fe5f1cfbe7629f5c53fc4224a070776c63afd582c95bb",
+        "constraints": [
+          {
+            "0,0,0": "1"
+          },
+          {
+            "0,0,1": "1"
+          }
+        ],
+        "exact_width": "0",
+        "formal_proof_assistant_checked": false,
+        "lower": "2",
+        "mathematical_proof_verified": true,
+        "operation": "constraints",
+        "original_request_bound": true,
+        "potential": {},
+        "scope": "all_real_H1_functions_on_unit_S2_satisfying_all_recorded_moments",
+        "status": "certified_ground_enclosure",
+        "upper": "2"
+      }
+    }
+  ],
+  "unchanged_input_scope_and_target": true
+}

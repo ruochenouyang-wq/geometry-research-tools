@@ -1,0 +1,23 @@
+{
+  "version": 245,
+  "recorded_at": "2026-09-18T18:42:20.898806+00:00",
+  "hypothesis": "执行成功或solver自报verified不能替代原题对应的数学验收",
+  "change": "真实证书重放，分离execution_ok/certificate_valid/bindings_match/target_met；暴露未绑定重放与verifier注入",
+  "source_sha256": {
+    "request_contract.py": "1985de1898555b45d777ff2b7847aa79495086952add3b29371a4f5daf2a5e54",
+    "test_request_contract.py": "1d237039d1e144759a2c5210530e04fe662aa8608481649b670db0559b291582"
+  },
+  "validation": {
+    "tests": 20,
+    "passed": true
+  },
+  "comparison": {
+    "legacy": "未达1e-8仍ok/verified；省略条件不表明未绑定",
+    "new": "有效未达标保持certified_open；伪造solver状态无效；错题与坏证明区分"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "自有验证器而非形式化证明；新证书格式必须显式登记类型并提供可靠verifier；没有目标的逼近返回target_met=null"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

@@ -1,0 +1,24 @@
+{
+  "version": 308,
+  "recorded_at": "2026-09-18T18:12:52.268354+00:00",
+  "hypothesis": "A short response can preserve mathematical target and evidence state instead of returning a bare answer.",
+  "change": "Added scope-aware summaries with explicit verifier acceptance and separate approximation/spectrum targets.",
+  "source_sha256": {
+    "interaction.py": "015f817e655bbfbeea12d0b9cf8561ffd391af150cea5223ee43681c99f7fcda",
+    "test_interaction.py": "c77a794ca9153b5eeb7b36168bcbafeda186ba595d9e49b0d8bda4f33e357f1f"
+  },
+  "validation": {
+    "unittest_tests": 5,
+    "passed": true,
+    "real_fixture": "frozen step approximation replay"
+  },
+  "comparison": {
+    "bare_bound_missing_target_scope_verification": true,
+    "new_required_dimensions_preserved": 3
+  },
+  "outcome": "passed",
+  "limitations": [
+    "No model comprehension test; verifier is injected and mathematical trust remains with that verifier."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

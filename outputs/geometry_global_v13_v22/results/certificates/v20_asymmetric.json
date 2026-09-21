@@ -1,0 +1,228 @@
+{
+  "algorithm_version": 20,
+  "certificate": {
+    "method": "robust_spectral_dual_v20",
+    "problem": {
+      "q0": [
+        "0"
+      ],
+      "directions": [
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "box": [
+        [
+          "-1",
+          "1"
+        ]
+      ],
+      "penalty": {
+        "constant": "0",
+        "linear": [
+          "0"
+        ],
+        "hessian": [
+          [
+            "1"
+          ]
+        ]
+      }
+    },
+    "uncertainty_directions": [
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "uncertainty_box": [
+      [
+        "-1",
+        "2"
+      ]
+    ],
+    "cuts": [
+      {
+        "scenario": 1,
+        "trial_legendre": [
+          "1",
+          "-11902670633051/17592186044416",
+          "1914685895709/17592186044416",
+          "-70683562159/8796093022208"
+        ],
+        "constant": "722088248446719482199148485/1340420969707995788410651967",
+        "linear": [
+          "546448870569717898265729996/1340420969707995788410651967"
+        ]
+      },
+      {
+        "scenario": 0,
+        "trial_legendre": [
+          "1",
+          "11185707164407/17592186044416",
+          "838846852945/8796093022208",
+          "7201086437/1099511627776"
+        ],
+        "constant": "1037633261711628090810362914/7386886900676627910193556731",
+        "linear": [
+          "-2860721125597849867670461224/7386886900676627910193556731"
+        ]
+      },
+      {
+        "scenario": 1,
+        "trial_legendre": [
+          "1",
+          "-12362117799401/17592186044416",
+          "1038168973399/8796093022208",
+          "-160327519015/17592186044416"
+        ],
+        "constant": "10325375377036296716241287587/18967807423308230307203315587",
+        "linear": [
+          "7974030795112099021616846262/18967807423308230307203315587"
+        ]
+      }
+    ],
+    "weights": [
+      "0",
+      "0",
+      "1"
+    ],
+    "candidate_parameters": [
+      "-427473/1048576"
+    ],
+    "scenario_records": [
+      {
+        "at": [
+          "-427473/1048576"
+        ],
+        "spectral_certificate": {
+          "method": "modewise_schur_v3",
+          "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+          "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+          "q_coefficients": [
+            "0",
+            "-1476049/1048576"
+          ],
+          "modes": 4,
+          "eigenvalue_index": 1,
+          "tail_policy": "sandwich",
+          "range_proof": {
+            "kind": "quadratic_range_v5",
+            "lower": "-1476049/1048576",
+            "upper": "1476049/1048576"
+          },
+          "upper_kind": "upper_tail",
+          "tail_lower": "19495471/1048576",
+          "lower_inertia": [
+            0,
+            0,
+            4
+          ],
+          "upper_inertia": [
+            1,
+            0,
+            3
+          ],
+          "formal_assistant_checked": false,
+          "lower": "-335912433396561677/1125899906842624000",
+          "upper": "-335908014290304823/1125899906842624000",
+          "exact_width": "2209553128427/562949953421312000",
+          "decimal_enclosure": [
+            "-0.298350174252",
+            "-0.298346249296"
+          ]
+        },
+        "trial_legendre": [
+          "1",
+          "11185707164407/17592186044416",
+          "838846852945/8796093022208",
+          "7201086437/1099511627776"
+        ],
+        "rayleigh_quotient": "-288864797094402726679032771714677/968214039845486973444889867845632"
+      },
+      {
+        "at": [
+          "-427473/1048576"
+        ],
+        "spectral_certificate": {
+          "method": "modewise_schur_v3",
+          "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+          "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+          "q_coefficients": [
+            "0",
+            "1669679/1048576"
+          ],
+          "modes": 4,
+          "eigenvalue_index": 1,
+          "tail_policy": "sandwich",
+          "range_proof": {
+            "kind": "quadratic_range_v5",
+            "lower": "-1669679/1048576",
+            "upper": "1669679/1048576"
+          },
+          "upper_kind": "upper_tail",
+          "tail_lower": "19301841/1048576",
+          "lower_inertia": [
+            0,
+            0,
+            4
+          ],
+          "upper_inertia": [
+            1,
+            0,
+            3
+          ],
+          "formal_assistant_checked": false,
+          "lower": "-419940102363386427/1125899906842624000",
+          "upper": "-419935647132771573/1125899906842624000",
+          "exact_width": "2227615307427/562949953421312000",
+          "decimal_enclosure": [
+            "-0.372981736486",
+            "-0.372977779446"
+          ]
+        },
+        "trial_legendre": [
+          "1",
+          "-12362117799401/17592186044416",
+          "1038168973399/8796093022208",
+          "-160327519015/17592186044416"
+        ],
+        "rayleigh_quotient": "-3709128972636128780230903125335093/9944593818351425451303011922477056"
+      }
+    ],
+    "global_lower": "164057148164295039156237081715251617874417109870915032247/359777718447706807147024245444899054902639127645917154569",
+    "candidate_upper": "513499483216634427/1125899906842624000",
+    "global_gap": "33744660710900331799355963814641772370551145156484408611532582429618963/405073699684324900311675226791586931888132854206741517906537866965549056000",
+    "tolerance": "1/1000",
+    "status": "epsilon_global",
+    "optimization_scope": "all real design parameters; every real uncertainty vector in its box; ground spectrum on the axisymmetric sphere model",
+    "formal_assistant_checked": false
+  },
+  "steps": 3,
+  "history": [
+    {
+      "step": 0,
+      "lower": "715591621957268993330905118688939451376292295358845075908/1620771786027339376209090109326320824519097622637164294001",
+      "upper": "156862477305020763/281474976710656000",
+      "active_cuts": 2
+    },
+    {
+      "step": 1,
+      "lower": "818599046124239760073290400783885262836908367703239987/1796728376032923762999908195463012716108465030000969089",
+      "upper": "129002799163034263/281474976710656000",
+      "active_cuts": 3
+    },
+    {
+      "step": 2,
+      "lower": "164057148164295039156237081715251617874417109870915032247/359777718447706807147024245444899054902639127645917154569",
+      "upper": "513499483216634427/1125899906842624000",
+      "active_cuts": 3
+    }
+  ],
+  "statistics": {
+    "spectral_searches": 6,
+    "points": 6
+  },
+  "seconds": 0.019132458000001407
+}

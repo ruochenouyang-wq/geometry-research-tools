@@ -1,0 +1,107 @@
+{
+  "status": "target_met",
+  "tolerance": "1/10000000000",
+  "requested_method": "baseline",
+  "size": 20,
+  "seconds": 1.9216570419999996,
+  "attempts": [
+    {
+      "method": "baseline",
+      "size": 4,
+      "seconds": 0.01010966700000182,
+      "exact_width": "104594104710155719147200167337/4951760157141521099596496896",
+      "status": "certified"
+    },
+    {
+      "method": "baseline",
+      "size": 6,
+      "seconds": 0.02507866599999886,
+      "exact_width": "89359756507390433501284213005/19807040628566084398385987584",
+      "status": "certified"
+    },
+    {
+      "method": "baseline",
+      "size": 8,
+      "seconds": 0.05123887500000279,
+      "exact_width": "281099022333034541143534605/1237940039285380274899124224",
+      "status": "certified"
+    },
+    {
+      "method": "baseline",
+      "size": 10,
+      "seconds": 0.09115091600000369,
+      "exact_width": "31308556745364262744221623/4951760157141521099596496896",
+      "status": "certified"
+    },
+    {
+      "method": "baseline",
+      "size": 12,
+      "seconds": 0.14702841700000135,
+      "exact_width": "281014115030721491561649/2475880078570760549798248448",
+      "status": "certified"
+    },
+    {
+      "method": "baseline",
+      "size": 14,
+      "seconds": 0.2235566249999934,
+      "exact_width": "158575108478914732250961/39614081257132168796771975168",
+      "status": "certified"
+    },
+    {
+      "method": "baseline",
+      "size": 16,
+      "seconds": 0.3241423749999939,
+      "exact_width": "329701105573911339149/9903520314283042199192993792",
+      "status": "certified"
+    },
+    {
+      "method": "baseline",
+      "size": 18,
+      "seconds": 0.4471719579999984,
+      "exact_width": "3583791683288253525/19807040628566084398385987584",
+      "status": "certified"
+    },
+    {
+      "method": "baseline",
+      "size": 20,
+      "seconds": 0.6021134169999982,
+      "exact_width": "8432451019435719/9903520314283042199192993792",
+      "status": "certified"
+    }
+  ],
+  "certificate": {
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "q_coefficients": [
+      "0",
+      "0",
+      "-100"
+    ],
+    "eigenvalue_index": 1,
+    "modes": 20,
+    "bisection_steps": 48,
+    "lower": "-802461888883477657008190615239/9903520314283042199192993792",
+    "upper": "-11403669317409555/140737488355328",
+    "evidence": {
+      "analytic_potential_lower": "-100",
+      "tail_lower": "320",
+      "lower_schur_inertia": [
+        0,
+        0,
+        20
+      ],
+      "upper_finite_inertia": [
+        1,
+        0,
+        19
+      ]
+    },
+    "decimal_enclosure": [
+      "-81.027943944958",
+      "-81.027943944956"
+    ],
+    "exact_width": "8432451019435719/9903520314283042199192993792",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "verification": "exact_rational_with_analytic_tail",
+    "formal_assistant_checked": false
+  }
+}

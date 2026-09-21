@@ -1,0 +1,23 @@
+{
+  "version": 246,
+  "recorded_at": "2026-09-18T18:47:04.195354+00:00",
+  "hypothesis": "稳定区分输入、证据、目标和精度失败才能指导下一动作",
+  "change": "ContractError结构码及证据状态reason_code，验证失败不再只有布尔值",
+  "source_sha256": {
+    "request_contract.py": "c06b6c6fa09da026c58396e48bded502fdf92a195c14d2695cdbb1aa5c511038",
+    "test_request_contract.py": "3779966ec7d9a15f39c2ed19d9b88a7510307a8f97dbe56dd0676b11a1c01a14"
+  },
+  "validation": {
+    "tests": 22,
+    "passed": true
+  },
+  "comparison": {
+    "before": "多类失败共享verified=false或错误文本",
+    "after": "六种输入拒绝和四种证据/目标情形有独立稳定分类"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "invalid_evidence尚不定位证书内部具体数学步骤；本步没有自动选择修复策略"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

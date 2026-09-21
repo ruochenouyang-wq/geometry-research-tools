@@ -1,0 +1,26 @@
+{
+  "version": 310,
+  "recorded_at": "2026-09-18T18:14:37.187318+00:00",
+  "hypothesis": "Persisting full evidence while returning its reference reduces transport without discarding the proof.",
+  "change": "Added injected evidence storage and compact references, retaining full certificates if no store exists.",
+  "source_sha256": {
+    "interaction.py": "2a23d2e0b6ec7ea5c66439df6a7c66238f00986f5a4dd1b339a659460ba6e853",
+    "test_interaction.py": "34b01e9967ef108ad01d1eac39c0d0b51bafeee7ef2e27b36a196d72b746a034"
+  },
+  "validation": {
+    "unittest_tests": 10,
+    "passed": true,
+    "store_roundtrip_fixture": "same25slots_half"
+  },
+  "comparison": {
+    "certificate_bytes": 10536,
+    "summary_bytes": 859,
+    "saved_bytes": 9677,
+    "measurement": "canonical UTF-8 bytes, not model tokens"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Storage durability belongs to callback; hash checking on retrieval is the next step."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

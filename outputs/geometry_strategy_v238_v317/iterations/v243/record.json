@@ -1,0 +1,25 @@
+{
+  "version": 243,
+  "recorded_at": "2026-09-18T18:35:31.834413+00:00",
+  "hypothesis": "各路由预算和类型统一前置检查可防止浪费与布尔整数混淆",
+  "change": "统一已知字段、操作、原函数、布尔类型及有界整数/有理预算检查",
+  "source_sha256": {
+    "request_contract.py": "599a8ce1f9aa0a53675f21c279f0e16863fc0a6e6bf112f5cc30fca134fbe27a",
+    "test_request_contract.py": "37f2ae594af7a3eb6b9c916a98476806ad8d8cb3fbe9f5653343e90b688d4f30"
+  },
+  "validation": {
+    "tests": 12,
+    "passed": true
+  },
+  "comparison": {
+    "invalid_cases_before_executor": 15,
+    "legacy_sector_calls_bad_tolerance": 1,
+    "new_sector_calls": 0,
+    "valid_boundary": "合法零次搜索和零逼近次数未误拒"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "校验上限沿用旧后端，不是墙钟超时或内存隔离"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

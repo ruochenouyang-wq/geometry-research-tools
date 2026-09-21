@@ -1,0 +1,101 @@
+{
+  "actual_reuse": "verified previous full-space bounds and certificate ancestry",
+  "all_saved_mathematical_artifacts_verified": true,
+  "ancestry_digest": "9e4a590256b4e6f514a7f868fd7a8bb139118234e38fdb0b9d1afd4d47fef6b5",
+  "binding_checks": [
+    {
+      "exception": "ValueError",
+      "message": "Checkpoint q/projection binding failed",
+      "rejected": true
+    },
+    {
+      "exception": "ValueError",
+      "message": "Checkpoint q/projection binding failed",
+      "rejected": true
+    }
+  ],
+  "budget": {
+    "continuation": {
+      "max_m": 8,
+      "max_modes": 32,
+      "max_steps": 24,
+      "modes": 4,
+      "tolerance": "1/100000000000000000000"
+    },
+    "first": {
+      "bits": 60,
+      "max_m": 0,
+      "max_modes": 4,
+      "modes": 4,
+      "tolerance": "1/100000000000000000000"
+    }
+  },
+  "certificates": [
+    {
+      "format": "projected_full_sphere_ground_v93",
+      "path": "certs/C20_original_first_budget.json",
+      "sha256": "043b59e5129e11e5687a6e81860f1d656dad7e1a2fb84ac6e583149227b07b27",
+      "verified": true
+    },
+    {
+      "format": "precision_full_ground_v114",
+      "path": "certs/C20_precision_ancestry_bridge.json",
+      "sha256": "6eba704de9e61d4d5d3999b5ebea199990c2f669132701456d16a6e9a42b4707",
+      "verified": true
+    },
+    {
+      "format": "precision_checkpoint_v112",
+      "path": "certs/C20_bound_checkpoint.json",
+      "sha256": "876ce4fa4b0a03b817fea68c04eef401a50f241340b2151a12b3d1e1bc234c74",
+      "verified": true
+    },
+    {
+      "format": "precision_full_ground_v114",
+      "path": "certs/C20_continued_full.json",
+      "sha256": "661e87c6dd1d1f89cf709fd301b91c83333108d3bc7fd26c2e38178d6d532980",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 1.470467,
+  "first_width": "19809218377480628263/576460752303423488",
+  "id": "C20",
+  "iteration_vector_reuse": false,
+  "lower": "2448482963996277873462364944476013257794061643402992207355473164340998466426054176991767245666131201025801675436966962402976995778/237999416526262664709186280139959976908738048963512886167625511249562435116904854891294857094600739291528828626770388701154299545",
+  "notes": [
+    "This is bound reuse. New finite matrices/trials are recomputed; no warm iteration-vector reuse is claimed."
+  ],
+  "original_acceptance": [
+    "First preserve and replay the honest open certificate. A resumed result must keep best lower=max(old lower,new lower) and best upper=min(old upper,new upper) for the same operator.",
+    "Record actual reused work and certificate ancestry; a fresh full recomputation may be a correct fallback but is not evidence of warm-start reuse.",
+    "If the larger budget still cannot close 1e-20, retain open status. Reject an inherited certificate with changed coefficients or projection."
+  ],
+  "original_input": {
+    "continuation_budget": "explicitly recorded larger mode/angular budget",
+    "first_budget": {
+      "bits": 60,
+      "max_m": 0,
+      "max_modes": 4,
+      "modes": 4,
+      "tolerance": "1/100000000000000000000"
+    },
+    "q": [
+      "0",
+      "0",
+      "100"
+    ],
+    "target_width": "1/100000000000000000000"
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "narrow_target_met",
+  "target": "1/100000000000000000000",
+  "title": "开放证书的预算续算",
+  "upper": "596189852977072951700263005480404580193960445689108790607901118512278589090814/57951327100855984051210439237365333734540305031166728748860146542969558590791",
+  "width": "10517268686696176588842432941048675171640052592647312052532666754109920994088087609089180279828248660197269268835313267925377191082367461482292715365400664181050135076936860127199232/13792382036926317127823551574558059533015490429922963368707777776487700735141667737291882676431315338852072878947872314102386535811628753886754807368210406337995433971969946689570999588682394891900892490095"
+}

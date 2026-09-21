@@ -1,0 +1,75 @@
+{
+  "format": "projected_full_sphere_ground_v93",
+  "geometry": "unit_S2",
+  "scope": "all_mean_zero_H1_functions_on_unit_S2",
+  "q_coefficients": [
+    "0",
+    "0",
+    "2"
+  ],
+  "mean_zero": true,
+  "potential_symmetry": "axisymmetric_polynomial_degree_at_most_6",
+  "eigenvalue_index_in_constrained_space": 1,
+  "sectors": [
+    {
+      "format": "projected_sphere_sector_v91_v92",
+      "geometry": "unit_S2",
+      "q_coefficients": [
+        "0",
+        "0",
+        "2"
+      ],
+      "azimuth_m": 0,
+      "mean_zero": true,
+      "projection": "remove_l0",
+      "scope": "single_azimuth_sector_only",
+      "degree_start": 1,
+      "modes": 8,
+      "eigenvalue_index": 1,
+      "range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "0",
+        "upper": "2"
+      },
+      "radial_tail_start": 9,
+      "radial_tail_lower": "90",
+      "upper_kind": "upper_tail",
+      "lower_inertia": [
+        0,
+        0,
+        8
+      ],
+      "upper_inertia": [
+        1,
+        0,
+        7
+      ],
+      "formal_assistant_checked": false,
+      "lower": "245431510091477011106290069/77371252455336267181195264",
+      "upper": "13951166129771/4398046511104",
+      "exact_width": "9553119618667/77371252455336267181195264",
+      "decimal_enclosure": [
+        "3.172127919645",
+        "3.172127919646"
+      ]
+    }
+  ],
+  "range_proof": {
+    "kind": "quadratic_range_v5",
+    "lower": "0",
+    "upper": "2"
+  },
+  "omitted_azimuth_m_start": 1,
+  "angular_tail_lower": "2",
+  "angular_tail_cannot_improve_best_upper": false,
+  "tolerance": "1/10000000000",
+  "status": "certified_bound_open_gap",
+  "formal_assistant_checked": false,
+  "lower": "2",
+  "upper": "13951166129771/4398046511104",
+  "exact_width": "5155073107563/4398046511104",
+  "decimal_enclosure": [
+    "2.000000000000",
+    "3.172127919646"
+  ]
+}

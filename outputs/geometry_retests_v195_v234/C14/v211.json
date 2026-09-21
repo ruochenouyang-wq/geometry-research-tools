@@ -1,0 +1,207 @@
+{
+  "formal_assistant_checked": false,
+  "format": "projection_preserving_shifted_count_and_trace_v211",
+  "model": {
+    "entries": [],
+    "format": "two_scope_verified_model_v206",
+    "geometry": "unit_S2",
+    "groups": [],
+    "mean_zero": false,
+    "measure": "standard_sphere_area",
+    "operator": "-Delta+q",
+    "q": [
+      "0"
+    ],
+    "real_angular_multiplicity": {
+      "m=0": 1,
+      "m>0": 2
+    },
+    "space": "full_unprojected"
+  },
+  "rule": "P(H-T*I)P=PHP-T*I_on_range(P); projection remains unchanged",
+  "shifted_mean_zero": false,
+  "shifted_negative_trace_lower": "18",
+  "shifted_negative_trace_upper": "18",
+  "shifted_q": [
+    "-6"
+  ],
+  "slots": [
+    {
+      "j": 1,
+      "l": 0,
+      "lower": "0",
+      "m": 0,
+      "multiplicity": 1,
+      "uncomputed": true,
+      "upper": "0"
+    },
+    {
+      "j": 2,
+      "l": 1,
+      "lower": "2",
+      "m": 0,
+      "multiplicity": 1,
+      "uncomputed": true,
+      "upper": "2"
+    },
+    {
+      "j": 3,
+      "l": 2,
+      "lower": "6",
+      "m": 0,
+      "multiplicity": 1,
+      "uncomputed": true,
+      "upper": "6"
+    },
+    {
+      "j": 1,
+      "l": 1,
+      "lower": "2",
+      "m": 1,
+      "multiplicity": 2,
+      "uncomputed": true,
+      "upper": "2"
+    },
+    {
+      "j": 2,
+      "l": 2,
+      "lower": "6",
+      "m": 1,
+      "multiplicity": 2,
+      "uncomputed": true,
+      "upper": "6"
+    },
+    {
+      "j": 1,
+      "l": 2,
+      "lower": "6",
+      "m": 2,
+      "multiplicity": 2,
+      "uncomputed": true,
+      "upper": "6"
+    }
+  ],
+  "strict_negative_count_for_shifted_operator": {
+    "comparison": "lambda < threshold",
+    "count_lower": 4,
+    "count_upper": 4,
+    "exact_tie_multiplicity": 5,
+    "formal_assistant_checked": false,
+    "format": "two_scope_strict_spectral_count_v208",
+    "model": {
+      "entries": [],
+      "format": "two_scope_verified_model_v206",
+      "geometry": "unit_S2",
+      "groups": [],
+      "mean_zero": false,
+      "measure": "standard_sphere_area",
+      "operator": "-Delta+q",
+      "q": [
+        "0"
+      ],
+      "real_angular_multiplicity": {
+        "m=0": 1,
+        "m>0": 2
+      },
+      "space": "full_unprojected"
+    },
+    "slots": [
+      {
+        "j": 1,
+        "l": 0,
+        "lower": "0",
+        "m": 0,
+        "multiplicity": 1,
+        "uncomputed": true,
+        "upper": "0"
+      },
+      {
+        "j": 2,
+        "l": 1,
+        "lower": "2",
+        "m": 0,
+        "multiplicity": 1,
+        "uncomputed": true,
+        "upper": "2"
+      },
+      {
+        "j": 3,
+        "l": 2,
+        "lower": "6",
+        "m": 0,
+        "multiplicity": 1,
+        "uncomputed": true,
+        "upper": "6"
+      },
+      {
+        "j": 1,
+        "l": 1,
+        "lower": "2",
+        "m": 1,
+        "multiplicity": 2,
+        "uncomputed": true,
+        "upper": "2"
+      },
+      {
+        "j": 2,
+        "l": 2,
+        "lower": "6",
+        "m": 1,
+        "multiplicity": 2,
+        "uncomputed": true,
+        "upper": "6"
+      },
+      {
+        "j": 1,
+        "l": 2,
+        "lower": "6",
+        "m": 2,
+        "multiplicity": 2,
+        "uncomputed": true,
+        "upper": "6"
+      }
+    ],
+    "tails": {
+      "angular_floor": "0",
+      "cutoff": "6",
+      "degree_cutoff": 2,
+      "every_unlisted_eigenvalue_strictly_above_cutoff": true,
+      "next_uncomputed_m": 0,
+      "potential_range": {
+        "lower": "0",
+        "proof": {
+          "kind": "quadratic_range_v5",
+          "lower": "0",
+          "upper": "0"
+        },
+        "upper": "0"
+      },
+      "radial_floors": [],
+      "rule": "sector minmax: l(l+1)+inf(q) <= lambda_m,j <= l(l+1)+sup(q)",
+      "unlisted_floor": "12"
+    },
+    "target_met": true,
+    "threshold": "6",
+    "unresolved": []
+  },
+  "tails": {
+    "angular_floor": "0",
+    "cutoff": "6",
+    "degree_cutoff": 2,
+    "every_unlisted_eigenvalue_strictly_above_cutoff": true,
+    "next_uncomputed_m": 0,
+    "potential_range": {
+      "lower": "0",
+      "proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "0",
+        "upper": "0"
+      },
+      "upper": "0"
+    },
+    "radial_floors": [],
+    "rule": "sector minmax: l(l+1)+inf(q) <= lambda_m,j <= l(l+1)+sup(q)",
+    "unlisted_floor": "12"
+  },
+  "threshold": "6"
+}

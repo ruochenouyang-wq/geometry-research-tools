@@ -1,0 +1,368 @@
+{
+  "source": "q(t)=-|t|^(-1/4) almost everywhere; probability S2 measure",
+  "frozen_module_sha256": "68b7c95936641f8e52582a9c9ad9714d479f13e603da2e9783abf1ff84acec46",
+  "not_a_model_speed_benchmark": true,
+  "execution": "serial subprocesses; 25 second limit each; full_ground plus independent verify_full; python -B",
+  "parameters": {
+    "mean_zero": true,
+    "modes": 4,
+    "max_modes": 4,
+    "bits": 12,
+    "max_m": 2,
+    "tolerance": "1/1000",
+    "range_strategy": "default auto"
+  },
+  "projection_formula": "a_l=(2l+1)*<q,P_l>; <q,t^j>=-4/(4j+3) for even j, zero for odd j; rational Rodrigues coefficients",
+  "probes": [
+    {
+      "degree": 4,
+      "power_coefficients": [
+        "-765/418",
+        "0",
+        "595/209",
+        "0",
+        "-945/418"
+      ],
+      "legendre_coefficients": [
+        "-4/3",
+        "0",
+        "20/33",
+        "0",
+        "-108/209"
+      ],
+      "max_absolute_power_coefficient": "595/209",
+      "l2_error_squared": "5202/43681",
+      "distance_to_p0_squared": "40544/393129",
+      "uniform_theta_squared_upper": "2/9",
+      "outcome": "returned",
+      "elapsed_seconds_including_verify": 0.018178458999999994,
+      "verified": true,
+      "certificate_path": "outputs/geometry_general_v235_v237/SOURCE_PROBE_degree4.json",
+      "lower": "1337148173/2491416576",
+      "upper": "1129147/2101248",
+      "width": "31608329/47336914944",
+      "status": "certified_target_met",
+      "sector_count": 2,
+      "angular_tail_closed": true,
+      "error_upper_40bits": "23714759885/68719476736",
+      "simple_l2_shift": "1183/418",
+      "simple_l2_transferred_interval": [
+        "-2033691120647561971403/3252968025248218742784",
+        "899798417571250279/529454431192743936"
+      ],
+      "fixed_reference": {
+        "p0": "-4/3",
+        "c0": "7/3",
+        "uniform_theta": "1/2",
+        "rho": "23714759885/34359738368",
+        "interval": [
+          "-4578786179295539403/3170534137668829184",
+          "181846026296165311/72198331526283264"
+        ]
+      }
+    },
+    {
+      "degree": 8,
+      "power_coefficients": [
+        "-1275/608",
+        "0",
+        "4675/456",
+        "0",
+        "-10725/304",
+        "0",
+        "7293/152",
+        "0",
+        "-93925/4256"
+      ],
+      "legendre_coefficients": [
+        "-4/3",
+        "0",
+        "20/33",
+        "0",
+        "-108/209",
+        "0",
+        "884/1881",
+        "0",
+        "-5780/13167"
+      ],
+      "max_absolute_power_coefficient": "7293/152",
+      "l2_error_squared": "14450/159201",
+      "distance_to_p0_squared": "6976/53067",
+      "uniform_theta_squared_upper": "2/9",
+      "outcome": "returned",
+      "elapsed_seconds_including_verify": 0.06958424999999999,
+      "verified": true,
+      "certificate_path": "outputs/geometry_general_v235_v237/SOURCE_PROBE_degree8.json",
+      "lower": "27680292799672998515661032136739154475407/51722919771982646446432940329628768141312",
+      "upper": "6762917178923460179676178632709527153/12627665959956700792586167072663273472",
+      "width": "1085050799868125278557660149424670699/2722258935367507707706996859454145691648",
+      "status": "certified_target_met",
+      "sector_count": 2,
+      "angular_tail_closed": true,
+      "error_upper_40bits": "165626894435/549755813888",
+      "simple_l2_shift": "1883/608",
+      "simple_l2_transferred_interval": [
+        "-15898627452596953659812381194402840439842703514102349/28434975855910047176570892105328002430425823556141056",
+        "11315473523217622260651602535239405995096412898739/6942132777321788861467502955402344343365679579136"
+      ],
+      "fixed_reference": {
+        "p0": "-4/3",
+        "c0": "7/3",
+        "uniform_theta": "1/2",
+        "rho": "165626894435/274877906944",
+        "interval": [
+          "-50894645965879436199614869868850325493572896035192551/42652463783865070764856338157992003645638735334211584",
+          "23577660144304257429886861634115212940939176530201/10413199165982683292201254433103516515048519368704"
+        ]
+      }
+    },
+    {
+      "degree": 12,
+      "power_coefficients": [
+        "-1436435/627456",
+        "0",
+        "7182175/313728",
+        "0",
+        "-35910875/209152",
+        "0",
+        "4883879/8256",
+        "0",
+        "-11099725/11008",
+        "0",
+        "13698685/16512",
+        "0",
+        "-26050375/99072"
+      ],
+      "legendre_coefficients": [
+        "-4/3",
+        "0",
+        "20/33",
+        "0",
+        "-108/209",
+        "0",
+        "884/1881",
+        "0",
+        "-5780/13167",
+        "0",
+        "340/817",
+        "0",
+        "-20500/51471"
+      ],
+      "max_absolute_power_coefficient": "11099725/11008",
+      "l2_error_squared": "4118450/54066609",
+      "distance_to_p0_squared": "7896352/54066609",
+      "uniform_theta_squared_upper": "2/9",
+      "outcome": "returned",
+      "elapsed_seconds_including_verify": 0.08181933300000001,
+      "verified": true,
+      "certificate_path": "outputs/geometry_general_v235_v237/SOURCE_PROBE_degree12.json",
+      "lower": "181284735491/339247890432",
+      "upper": "44484095/82824192",
+      "width": "307372543/113082630144",
+      "status": "certified_bound_open_gap",
+      "sector_count": 2,
+      "angular_tail_closed": true,
+      "error_upper_40bits": "303460493315/1099511627776",
+      "simple_l2_shift": "418493/80883",
+      "simple_l2_transferred_interval": [
+        "-1003483974862696411267/963842377851324071936",
+        "192453943559330825725/91066162165151956992"
+      ],
+      "fixed_reference": {
+        "p0": "-4/3",
+        "c0": "7/3",
+        "uniform_theta": "1/2",
+        "rho": "303460493315/549755813888",
+        "interval": [
+          "-65187731019748050285059/62167833371410402639872",
+          "96600252311552081405/45533081082575978496"
+        ]
+      }
+    },
+    {
+      "degree": 24,
+      "power_coefficients": [
+        "-436697008704775/162729376612352",
+        "0",
+        "3930273078342975/40682344153088",
+        "0",
+        "-20113750459755225/7396789846016",
+        "0",
+        "141332619897213381/3698394923008",
+        "0",
+        "-4542834210981858675/14793579692032",
+        "0",
+        "2843888083297586325/1849197461504",
+        "0",
+        "-18676096200703196775/3698394923008",
+        "0",
+        "20642001063935112225/1849197461504",
+        "0",
+        "-247386443520083883435/14793579692032",
+        "0",
+        "1439709806500622475/86009184256",
+        "0",
+        "-1843838874992025275/172018368512",
+        "0",
+        "3755748848097720825/946101026816",
+        "0",
+        "-2447156839467228525/3784404107264"
+      ],
+      "legendre_coefficients": [
+        "-4/3",
+        "0",
+        "20/33",
+        "0",
+        "-108/209",
+        "0",
+        "884/1881",
+        "0",
+        "-5780/13167",
+        "0",
+        "340/817",
+        "0",
+        "-20500/51471",
+        "0",
+        "166460/433827",
+        "0",
+        "-63140/169979",
+        "0",
+        "552188/1529811",
+        "0",
+        "-44667532/126974313",
+        "0",
+        "4848660/14108257",
+        "0",
+        "-52209892/155190827"
+      ],
+      "max_absolute_power_coefficient": "1439709806500622475/86009184256",
+      "l2_error_squared": "1335263295935522/24084192784943929",
+      "distance_to_p0_squared": "36151015906468160/216757735064495361",
+      "uniform_theta_squared_upper": "2/9",
+      "outcome": "rejected",
+      "elapsed_seconds_including_verify": 0.0001252500000000073,
+      "error_type": "ValueError",
+      "error": "Coefficient magnitude or denominator exceeds budget",
+      "error_upper_40bits": "258891167901/1099511627776"
+    }
+  ],
+  "transfer_diagnostic_note": "These rational intervals are independent mathematical calculations from frozen source certificates and exact projection residuals, not certificates of the new transfer verifier. A uniform theta=1/2 is deliberately used. No claim of high precision.",
+  "fixed_reference_comparison": [
+    {
+      "label": "constant_p0_minus4over3",
+      "reference_degree": 0,
+      "shift": "7/3",
+      "theta": "129578687999/274877906944",
+      "uniform_theta_squared": "2/9",
+      "sequence": [
+        {
+          "degree": 4,
+          "rho": "18971807908/29059843789",
+          "accepted_relative_error": true,
+          "interval": [
+            "-2933324653014553483/2193944742784401408",
+            "147251900072540555/61061938641948672"
+          ],
+          "width": "468771396570392605171/125054850338710880256",
+          "width_decimal_display": 3.7485263090613916
+        },
+        {
+          "degree": 8,
+          "rho": "33125378887/58119687578",
+          "accepted_relative_error": true,
+          "interval": [
+            "-9917839853444927028815337180958920069838273123371497/9018359813308771227312943213457821023282159585067008",
+            "4779322018138752250809371178695763041850493572083/2201748001296086725418199026723100835762245992448"
+          ],
+          "width": "29493942839741256248130521528896765489257894794623465/9018359813308771227312943213457821023282159585067008",
+          "width_decimal_display": 3.2704331441972196
+        },
+        {
+          "degree": 12,
+          "rho": "60692098663/116239375156",
+          "accepted_relative_error": true,
+          "interval": [
+            "-4219186854902150463249/4381551422978536767488",
+            "19599775899131337829/9627432325880573952"
+          ],
+          "width": "118253363776961313916825/39433962806806830907392",
+          "width_decimal_display": 2.9987694707808874
+        }
+      ]
+    },
+    {
+      "label": "fixed_projection_p4",
+      "reference_degree": 4,
+      "shift": "1183/418",
+      "theta": "23714759885/68719476736",
+      "uniform_theta_squared": "5202/43681",
+      "sequence": [
+        {
+          "degree": 4,
+          "rho": "23714759885/45004716851",
+          "accepted_relative_error": true,
+          "interval": [
+            "-146454662770079407411/118354691869699473408",
+            "1174239894011329/507923234380386"
+          ],
+          "width": "198981658270334805353/56062748780383961088",
+          "width_decimal_display": 3.5492668946685213
+        },
+        {
+          "degree": 8,
+          "rho": "165626894435/360037734808",
+          "accepted_relative_error": true,
+          "interval": [
+            "-10921066482107588183630857303062707043712573348843821/10781275347156106672960384843552646095823342009319424",
+            "104216398751447405688955219719432002347197548508089/50010798729483893258361160162963934526524291547136"
+          ],
+          "width": "634370632445972749190946868728984915444660052317165143/204844231595966026786247312027500275820643498177069056",
+          "width_decimal_display": 3.0968440141248545
+        },
+        {
+          "degree": 12,
+          "rho": "303460493315/720075469616",
+          "accepted_relative_error": true,
+          "interval": [
+            "-71944207193411162660563/81428028006353237704704",
+            "116663531304041989325/59639668949965750272"
+          ],
+          "width": "63062404163780861477899/22207644001732701192192",
+          "width_decimal_display": 2.839671068162861
+        }
+      ]
+    },
+    {
+      "label": "fixed_projection_p8",
+      "reference_degree": 8,
+      "shift": "1883/608",
+      "theta": "165626894435/549755813888",
+      "uniform_theta_squared": "14450/159201",
+      "sequence": [
+        {
+          "degree": 8,
+          "rho": "165626894435/384128919453",
+          "accepted_relative_error": true,
+          "interval": [
+            "-10241614193029141993742841329178839431636048253381197/9934134641482951561467807807522962173372824884871168",
+            "18545238260324219144472317501559559793/8823284006960598057272278367267192832"
+          ],
+          "width": "545994670573727135120965944845241135410706144252597/174283063885665816867856277324964248655663594471424",
+          "width_decimal_display": 3.1328039477887177
+        },
+        {
+          "degree": 12,
+          "rho": "303460493315/768257838906",
+          "accepted_relative_error": true,
+          "interval": [
+            "-234574384679371823735899/260629851156707794747392",
+            "125515008124208565475/63630334755055613952"
+          ],
+          "width": "748683857956130107921499/260629851156707794747392",
+          "width_decimal_display": 2.8725944270519195
+        }
+      ]
+    }
+  ],
+  "fixed_reference_comparison_note": "Reference chosen once per listed sequence. Uniform theta bounds use orthogonality: ||p_n-p_r||²=error_r²-error_n²≤error_r² for n≥r. Constant reference uses ||p_n+4/3||²≤2/9. All square-root upper bounds are rounded upward to 40 dyadic bits. Direct-shift widths are in each row; fixed-reference need not improve small-degree cases."
+}

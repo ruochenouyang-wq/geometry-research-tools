@@ -1,0 +1,23 @@
+{
+  "version": 281,
+  "recorded_at": "2026-09-18T18:35:58.075068+00:00",
+  "hypothesis": "Complete residuals distinguish coefficient optimization from representation omissions",
+  "change": "Compute exact M-orthogonal residual decomposition and select coefficient iteration or basis enrichment",
+  "source_sha256": {
+    "research_controller.py": "ae588f77ce836a7d0d5011d0ad6fad8b55ab25f5d39d98595516b7fc983b6590",
+    "test_research_controller.py": "20c84b25f039b564a3bee430c21f76c25b5fed2d0c3eba77755c85b4cfaac5ab"
+  },
+  "validation": {
+    "tests": 7,
+    "passed": true
+  },
+  "comparison": {
+    "same_three_term_basis_zero_iterations": "coefficient residual dominates",
+    "same_basis_fourteen_iterations": "outside-trial residual dominates"
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Residual split is exact; recommended spectral benefit remains a hypothesis"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

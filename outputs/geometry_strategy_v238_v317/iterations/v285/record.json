@@ -1,0 +1,23 @@
+{
+  "version": 285,
+  "recorded_at": "2026-09-18T18:42:57.986402+00:00",
+  "hypothesis": "A non-improving branch should not consume the whole budget or overwrite better evidence",
+  "change": "Add exact relative-gain early stopping, duplicate-action rejection, and permanent best verified certificate retention",
+  "source_sha256": {
+    "research_controller.py": "00ad64abf5c33493df45aca1b85ac5c74726ef1f1dde593ebad8afba55fd0270",
+    "test_research_controller.py": "ab1c13ce3ddf4e9530602537efb69403be0e576474d673a355ce33f909fd3bcf"
+  },
+  "validation": {
+    "tests": 13,
+    "passed": true
+  },
+  "comparison": {
+    "valid_but_worse_followups": "stopped after two non-improving actions",
+    "returned_certificate": "earlier narrowest replayed result"
+  },
+  "outcome": "retained",
+  "limitations": [
+    "No-gain is a policy decision, not a proof that further work cannot help"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

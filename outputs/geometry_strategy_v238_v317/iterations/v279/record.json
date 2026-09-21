@@ -1,0 +1,23 @@
+{
+  "version": 279,
+  "recorded_at": "2026-09-18T18:13:42.273990+00:00",
+  "hypothesis": "Preflight applicability avoids costly invalid research actions",
+  "change": "Add action schema, function/space/target binding, exact supported-profile filters and operator-form preconditions",
+  "source_sha256": {
+    "research_controller.py": "c87e4533cc8046dec755e998e8b427c4f0559ed9eefd65160ab0551a29526fa2",
+    "test_research_controller.py": "66fddb28ecb70c0d14aa6345e3cd69e7f3c20d3091272fd7faf56d3ccb58afcb"
+  },
+  "validation": {
+    "tests": 5,
+    "passed": true
+  },
+  "comparison": {
+    "unsupported_alpha_approximation_calls": 0,
+    "scope_or_domain_changes_rejected": 3
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Applicability limited to existing certified backends"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

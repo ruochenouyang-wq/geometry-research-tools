@@ -1,0 +1,222 @@
+{
+  "algorithm_version": 5,
+  "status": "target_met",
+  "tolerance": "1/10000000000",
+  "certificate": {
+    "method": "modewise_schur_v3",
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "q_coefficients": [
+      "0",
+      "0",
+      "100",
+      "0",
+      "-200",
+      "0",
+      "100"
+    ],
+    "modes": 19,
+    "eigenvalue_index": 3,
+    "tail_policy": "sandwich",
+    "range_proof": {
+      "kind": "adaptive_bernstein_v5",
+      "intervals": [
+        [
+          "-1",
+          "-3/4"
+        ],
+        [
+          "-3/4",
+          "-5/8"
+        ],
+        [
+          "-5/8",
+          "-19/32"
+        ],
+        [
+          "-19/32",
+          "-37/64"
+        ],
+        [
+          "-37/64",
+          "-1183/2048"
+        ],
+        [
+          "-1183/2048",
+          "-2365/4096"
+        ],
+        [
+          "-2365/4096",
+          "-591/1024"
+        ],
+        [
+          "-591/1024",
+          "-295/512"
+        ],
+        [
+          "-295/512",
+          "-147/256"
+        ],
+        [
+          "-147/256",
+          "-73/128"
+        ],
+        [
+          "-73/128",
+          "-9/16"
+        ],
+        [
+          "-9/16",
+          "-1/2"
+        ],
+        [
+          "-1/2",
+          "0"
+        ],
+        [
+          "0",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "9/16"
+        ],
+        [
+          "9/16",
+          "73/128"
+        ],
+        [
+          "73/128",
+          "147/256"
+        ],
+        [
+          "147/256",
+          "295/512"
+        ],
+        [
+          "295/512",
+          "591/1024"
+        ],
+        [
+          "591/1024",
+          "2365/4096"
+        ],
+        [
+          "2365/4096",
+          "1183/2048"
+        ],
+        [
+          "1183/2048",
+          "37/64"
+        ],
+        [
+          "37/64",
+          "19/32"
+        ],
+        [
+          "19/32",
+          "5/8"
+        ],
+        [
+          "5/8",
+          "3/4"
+        ],
+        [
+          "3/4",
+          "1"
+        ]
+      ],
+      "lower": "0",
+      "upper": "4372561623268993028875/295147905179352825856",
+      "requested_tolerance": "1/1000000",
+      "minimum_witness": {
+        "at": "-1",
+        "value": "0"
+      },
+      "maximum_witness": {
+        "at": "-2365/4096",
+        "value": "17490245951068546280625/1180591620717411303424"
+      },
+      "range_target_met": true
+    },
+    "upper_kind": "upper_tail",
+    "tail_lower": "380",
+    "lower_inertia": [
+      2,
+      0,
+      17
+    ],
+    "upper_inertia": [
+      3,
+      0,
+      16
+    ],
+    "formal_assistant_checked": false,
+    "lower": "783552022877031488463/85899345920000000000",
+    "upper": "25073664732120099791059/2748779069440000000000",
+    "exact_width": "55092160243/2748779069440000000000",
+    "decimal_enclosure": [
+      "9.121746091137",
+      "9.121746091158"
+    ]
+  },
+  "attempts": [
+    {
+      "modes": 5,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.01078391699999992,
+      "exact_width": "141610817273791197309/1374389534720000000000"
+    },
+    {
+      "modes": 7,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.013254249999999912,
+      "exact_width": "14479554075502316493/2748779069440000000000"
+    },
+    {
+      "modes": 9,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.01574316599999981,
+      "exact_width": "63703829142759809/1374389534720000000000"
+    },
+    {
+      "modes": 11,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.018935375000000088,
+      "exact_width": "15009892252043967/687194767360000000000"
+    },
+    {
+      "modes": 13,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.022673749999999826,
+      "exact_width": "980614017941493/2748779069440000000000"
+    },
+    {
+      "modes": 15,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.02681016700000005,
+      "exact_width": "9560705259809/1374389534720000000000"
+    },
+    {
+      "modes": 17,
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.030919791999999946,
+      "exact_width": "1993217160243/2748779069440000000000"
+    },
+    {
+      "modes": 19,
+      "path": "guided",
+      "exact_count_calls": 4,
+      "seconds": 0.03163041700000013,
+      "exact_width": "55092160243/2748779069440000000000"
+    }
+  ],
+  "seconds": 0.269083792
+}

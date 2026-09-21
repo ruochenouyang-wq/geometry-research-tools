@@ -1,0 +1,1674 @@
+{
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "completed_cases": 20,
+  "format": "immutable_twenty_challenge_replay",
+  "module_hashes": {
+    "anisotropic.py": "9b64b383d8eca971ed5c3ade15a2b8f0183cbfe2ac3d63b681761ef1bf74e7f2",
+    "common.py": "9e8799f348e56940c522d48d749513c0c62c18629b64c342048e0b75bd48e61b",
+    "constraints.py": "1510fb105dc4cff90a43beb54a2704640bdea1e1bd1b52b18bdbb31dee3d44d1",
+    "global_parameter.py": "384cbc2748c2e9628d1af3db0c8cf6a3eb1221c9269155cdddb9acfcb8ceef02",
+    "gn_variation.py": "6efda06153b53806e7f127943f506e307cd918539f7928ed536c95b931d0c6cb",
+    "journal.py": "96cde0d34743e8570ceddb9ff0928420f6e411273657eb1c66dda4acdf77aaba",
+    "ordered_spectrum.py": "a602c61cf1549397870d6de766c80511629eb082677deadafc3d40be6cab2fc7",
+    "parameter_family.py": "caa137fc6f9587d6ad4a80c1d8b5a8868e37e5b52189b87b98a2c564d4d03b17",
+    "portal.py": "56970742f27287a267ebdf7bf509707c462bc91b9cd316458b6b451ae74f0ccf",
+    "precision.py": "f32e11374128b84186936b139c6992d315ace5bb71c6df936251fcb3ed97bb5e",
+    "sphere_scale.py": "6b821c39ec004e0e014eae27bf9912176db9ce1b5d4e3d5accad921b8ad291ad",
+    "test_anisotropic.py": "d9326cd7566de0b5919f1aef19af69f7b17b2ae3c9bdbd6c0a34b218b971b58e",
+    "test_anisotropic_review.py": "b5b385e19118254dd8d735ca8066838fda96b2e2840ce99b717a574016cfcabf",
+    "test_constraints.py": "90311479f8baa7d4073a3c42ad03f5006b04b2bbbb544c954b3271d0a69d88a0",
+    "test_constraints_review.py": "76340e78595623a6ae9c11cd2d224abbf3359fab47534a927e6c0d33734aabaa",
+    "test_family_review.py": "a145fe591017a5e94f998fe666f7a3691a9270c36aecd6e357db8bb0551e4ad7",
+    "test_global_parameter.py": "2a69dcebaa8b848457dfc4c3a5fa1de35759cab12d7f04a09e86f4c2042785e9",
+    "test_global_review.py": "367dc3d77b2267d4ae1e329e41f24d27264ed7985e627ffcd6a2a324e97ef41f",
+    "test_gn_review.py": "327d01d072433cf68fd9633bae7978bac62c166038b797f118bd9ab4acf856d9",
+    "test_gn_variation.py": "a3ea0a607976361292a3f85cee91edcb566e762304fb4d5662f8ec933355a4c1",
+    "test_ordered_spectrum.py": "776afd5693e67cfe00e48fcaae5b3f945244a59cfd2e031881b89ac450a27d3a",
+    "test_parameter_family.py": "b0a5713e406906c2a198a0360fc1c4e321abe8da7f7ae134006e5d7eed6961f7",
+    "test_portal.py": "1f75c86b97ede6c91aa3006342cd1cfb257c0af4724c1b266f6fa203335cf80d",
+    "test_precision.py": "f1804a8c32ed40037f00b61af4034b5937c666546015445e1a1cb63716e7a730",
+    "test_precision_review.py": "1dce98955da825d130f0baeea3ab1897f00a70cb238874edbacffd28201ee683",
+    "test_scale_review.py": "4774b95b6cae4e907e691d77203c0133304b5f6fb788e578c26710a89df934f0",
+    "test_spectrum_review.py": "80f4ddf1295eb90c7d5b3c5ecb5a0fdc41fca2f9b2a40e6f28aed3dd21c984a0",
+    "test_sphere_scale.py": "e13e01167340b15b784f76b5727e3497a40a1a2a9473b93f5f2066bda9d3df1a",
+    "test_wide_potential.py": "fc5ae7a16c65b72e9b96d14b6766009ecfb0d9b22588fbe04272632545fb6105",
+    "test_wide_review.py": "64df7bad93716b2531e8cfe42ae7f8d2bfcad0780e4543e3d34ec980394fb0f0",
+    "test_witness.py": "50bff17e9cad30833926eee89d5ba0ac26c4f71a1bb3db4ab185b94dce69fdeb",
+    "wide_potential.py": "68b7c95936641f8e52582a9c9ad9714d479f13e603da2e9783abf1ff84acec46",
+    "witness.py": "0eb77871448b509e4bccd43a92469ad7a8f43baf0c992f2779d46168cfa469e7"
+  },
+  "requested_cases": 20,
+  "results": [
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {},
+      "certificates": [
+        {
+          "format": "explicit_sector_rayleigh_v95",
+          "path": "certs/C01_original_explicit_trial.json",
+          "sha256": "ac3e8881f3562b808e0ee9b37bae9a05457e5705815152bc92e5b35918b8932b",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 0.000782,
+      "id": "C01",
+      "notes": [],
+      "original_acceptance": [
+        "Return an exact nonzero mean-zero trial and directly replay its moments: mass=1/3, energy=2/3, Rayleigh=2.",
+        "Verify threshold*mass-energy=1/30>0; spectral existence alone is insufficient."
+      ],
+      "original_input": {
+        "q": [
+          "0"
+        ],
+        "threshold": "21/10",
+        "trial": "u=z"
+      },
+      "probability_energy": "2/3",
+      "probability_mass": "1/3",
+      "probability_violation_margin": "1/30",
+      "rayleigh": "2",
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "solved",
+      "title": "零势显式违反者",
+      "wall_time_budget_seconds": 90
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {},
+      "certificates": [
+        {
+          "format": "explicit_sector_rayleigh_v95",
+          "path": "certs/C02_original_explicit_trial.json",
+          "sha256": "e93d3e71ad77991007bea05628d307eede1410b6af898ec6d81ada237ec3ecc9",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 0.001016,
+      "id": "C02",
+      "independent_cartesian_integrals": {
+        "mass": "1121/3500",
+        "mean": "0",
+        "numerator": "6019/7875",
+        "potential": {
+          "0,0,2": "2"
+        },
+        "trial": {
+          "1,0,0": "1",
+          "1,0,2": "-1/10"
+        },
+        "upper": "24076/10089"
+      },
+      "notes": [],
+      "original_acceptance": [
+        "Independently integrate the displayed polynomial trial on S2 and prove mass>0, mean=0 and Rayleigh<12/5.",
+        "Report the actual positive violation margin with original potential and full-sphere scope."
+      ],
+      "original_input": {
+        "q": [
+          "0",
+          "0",
+          "2"
+        ],
+        "threshold": "12/5",
+        "trial": "u=x*(1-z^2/10)"
+      },
+      "probability_energy": "6019/7875",
+      "probability_mass": "1121/3500",
+      "probability_violation_margin": "172/39375",
+      "rayleigh": "24076/10089",
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "solved",
+      "title": "椭球势的严格有理违反者",
+      "wall_time_budget_seconds": 90
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {
+        "Temple_second_eigenvalue_same_m": true,
+        "bits": 100,
+        "coefficient_bits": 140,
+        "initial_modes": 8,
+        "mode_ladder": [
+          8,
+          12,
+          18,
+          27,
+          32
+        ]
+      },
+      "certificates": [
+        {
+          "format": "projected_sphere_sector_v91_v92",
+          "path": "certs/C03_schur_N8.json",
+          "sha256": "79be7c37a0aa480b25adc35efa86b1d074e4c3306f16cf7858d644fe04a6bebd",
+          "verified": true
+        },
+        {
+          "format": "explicit_sector_rayleigh_v95",
+          "path": "certs/C03_trial_N8.json",
+          "sha256": "b77ba93164f8ec7e63fe026c988763f32aad96600643012d19d3940a432077d5",
+          "verified": true
+        },
+        {
+          "format": "same_sector_temple_v107",
+          "path": "certs/C03_temple_N8.json",
+          "sha256": "c82390813ce08d29a1cb0662ec980f4f0c71db4928ea8d1e7732407c8f574006",
+          "verified": true
+        },
+        {
+          "format": "precision_sector_intersection_v111",
+          "path": "certs/C03_combined_N8.json",
+          "sha256": "9a655e6909ff5df374d87787a6cd5c96f956ea7da7998a36232cc2111673dd4f",
+          "verified": true
+        },
+        {
+          "format": "projected_sphere_sector_v91_v92",
+          "path": "certs/C03_schur_N12.json",
+          "sha256": "f55f2465bc046653ece885c1f1aa32af248737be4e0779d2c1f552ca99648125",
+          "verified": true
+        },
+        {
+          "format": "explicit_sector_rayleigh_v95",
+          "path": "certs/C03_trial_N12.json",
+          "sha256": "223537c00ea063ecbf576f50920b777f43b336ec71d3621ba838a40145d36823",
+          "verified": true
+        },
+        {
+          "format": "same_sector_temple_v107",
+          "path": "certs/C03_temple_N12.json",
+          "sha256": "37364ee8f4538e346717772758774f55faed6da52188b39326b108df4befb75e",
+          "verified": true
+        },
+        {
+          "format": "precision_sector_intersection_v111",
+          "path": "certs/C03_combined_N12.json",
+          "sha256": "5de80ed436fd955eda80cc62e2865760be346c2e9621afb3f0d6526d6e00b253",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 0.232638,
+      "id": "C03",
+      "lower": "957194904627851871326546826589826382903004576385630559310951/401734511064747568885490523085290650630550748445698208825344",
+      "notes": [
+        "Usov decimal rounding is compatibility only, not a 24-digit proof."
+      ],
+      "original_acceptance": [
+        "Replay an exact interval of width <=1e-24, or report the remaining open width and resource budget.",
+        "The independent Usov rounding band [2.382655406155,2.382655406165] is a compatibility check only; it cannot certify 24 digits."
+      ],
+      "original_input": {
+        "bits": 100,
+        "initial_modes": 8,
+        "k": 1,
+        "m": 1,
+        "mean_zero": true,
+        "q": [
+          "0",
+          "0",
+          "2"
+        ],
+        "target_width": "1/1000000000000000000000000"
+      },
+      "scope": "single m=1 projected sector, k=1",
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "narrow_target_met",
+      "target": "1/1000000000000000000000000",
+      "title": "固定m=1势的二十四位证书宽度",
+      "upper": "755093638937667289423312241593/316912650057057350374175801344",
+      "usov_rounding_band_compatible": true,
+      "wall_time_budget_seconds": 90,
+      "width": "103074628557352517792345512249093017/401734511064747568885490523085290650630550748445698208825344"
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {
+        "initial": {
+          "bits": 100,
+          "max_m": 4,
+          "max_modes": 8,
+          "modes": 8
+        },
+        "refinement": {
+          "max_m": 8,
+          "max_modes": 32,
+          "max_steps": 24,
+          "modes": 8,
+          "tolerance": "1/100000000000000000000"
+        }
+      },
+      "certificates": [
+        {
+          "format": "projected_full_sphere_ground_v93",
+          "path": "certs/C04_original_budget.json",
+          "sha256": "5f79c161acf0abc62c5b27d222ca5c1ad6ddd2933c80ac76e686d9dc756f52bb",
+          "verified": true
+        },
+        {
+          "format": "precision_full_ground_v114",
+          "path": "certs/C04_refined_full.json",
+          "sha256": "f70942822de67305bf894df3116d3b6ad6c06a2a1199829baf0eea85f03c14af",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 1.361299,
+      "id": "C04",
+      "initial_width": "5522826437052279078105867631462129534060592373909967648592756420347570086754086997918725/509258994083621521567111422102344540262867098416484062659035112338595324940834176545849344",
+      "lower": "2448482963996277873462364944476013257794061643402992207355473164340998466426054176991767245666131201025801675436966962402976995778/237999416526262664709186280139959976908738048963512886167625511249562435116904854891294857094600739291528828626770388701154299545",
+      "notes": [],
+      "original_acceptance": [
+        "Replay a full-space interval of width <=1e-20 including an explicit omitted-angular-sector lower bound, or keep certified_bound_open_gap.",
+        "Do not infer high precision merely from bits=100 or reuse an m=0-only interval as a full-space result."
+      ],
+      "original_input": {
+        "bits": 100,
+        "initial_max_m": 4,
+        "initial_max_modes": 8,
+        "initial_modes": 8,
+        "q": [
+          "0",
+          "0",
+          "100"
+        ],
+        "target_width": "1/100000000000000000000"
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "narrow_target_met",
+      "target": "1/100000000000000000000",
+      "title": "强势全角向二十位闭合",
+      "upper": "596189852977072951700263005480404580193960445689108790607901118512278589090814/57951327100855984051210439237365333734540305031166728748860146542969558590791",
+      "wall_time_budget_seconds": 90,
+      "width": "10517268686696176588842432941048675171640052592647312052532666754109920994088087609089180279828248660197269268835313267925377191082367461482292715365400664181050135076936860127199232/13792382036926317127823551574558059533015490429922963368707777776487700735141667737291882676431315338852072878947872314102386535811628753886754807368210406337995433971969946689570999588682394891900892490095"
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {
+        "bits": 40,
+        "max_m": 8,
+        "max_modes": 12,
+        "modes": 6,
+        "tolerance": "1/100000000"
+      },
+      "certificates": [
+        {
+          "format": "wide_cheap_sphere_ground_v115",
+          "path": "certs/C05_cheap_global.json",
+          "sha256": "9e6c810411225f9c26ba2d55cead1d1b895c1c63c8c41e37efcb085020315c1f",
+          "verified": true
+        },
+        {
+          "format": "wide_full_sphere_ground_v122",
+          "path": "certs/C05_wide_full.json",
+          "sha256": "9de707d1e64125ff129f71f162c92f1d47287652c32989e0f792aa40dd920967",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 0.286102,
+      "id": "C05",
+      "independent_guard": {
+        "lower": "2",
+        "trial": "x",
+        "upper": "67/33"
+      },
+      "lower": "2453771654697437826707731/1208925819614629174706176",
+      "notes": [],
+      "original_acceptance": [
+        "Accept degree 8 with exact coefficient binding and global potential range.",
+        "Coarse independent guard: 2 <= full mean-zero ground <=67/33, using u=x and E(z^(2r))=1/(2r+1); requested narrow result must independently replay."
+      ],
+      "original_input": {
+        "q": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "target_width": "1/100000000"
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "narrow_target_met",
+      "target": "1/100000000",
+      "title": "八次非负势",
+      "upper": "2231692319311/1099511627776",
+      "wall_time_budget_seconds": 90,
+      "width": "3396542074605/1208925819614629174706176"
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {
+        "bits": 40,
+        "max_m": 8,
+        "max_modes": 12,
+        "modes": 6,
+        "tolerance": "1/100000000"
+      },
+      "certificates": [
+        {
+          "format": "wide_cheap_sphere_ground_v115",
+          "path": "certs/C06_cheap_global.json",
+          "sha256": "9cb663b0d31136ca780d27589d2278c5fde6b88977474b156fe1b251a3a02b61",
+          "verified": true
+        },
+        {
+          "format": "wide_full_sphere_ground_v122",
+          "path": "certs/C06_wide_full.json",
+          "sha256": "7fa939c0dfb14811f110614f0e6824d6f970b0c16d5375e7d3c5f25b9c438881",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 0.542893,
+      "factorization_exactly_checked": true,
+      "id": "C06",
+      "independent_guard": {
+        "q_lower": "-36/49",
+        "rule": "q=-(t^6-1/7)^2; t^6 in [0,1]",
+        "spectral_lower": "62/49"
+      },
+      "lower": "1733087538328357888036867/925583830642450461884416",
+      "notes": [],
+      "original_acceptance": [
+        "Bind the expanded degree-12 polynomial exactly to the factored trial square.",
+        "Independent guard q>=-36/49 gives full mean-zero ground >=62/49; a successful spectral certificate must cover the whole interval, not samples."
+      ],
+      "original_input": {
+        "construction": "q=-(t^6-1/7)^2",
+        "q": [
+          "-1/49",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2/7",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1"
+        ],
+        "target_width": "1/100000000"
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "narrow_target_met",
+      "target": "1/100000000",
+      "title": "GN六次试探平方产生十二次势",
+      "upper": "6304935735293/3367254360064",
+      "wall_time_budget_seconds": 90,
+      "width": "773083219675/132226261520350065983488"
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {
+        "bits": 40,
+        "modes": 8,
+        "parameter_cover": [
+          [
+            -4,
+            4
+          ]
+        ]
+      },
+      "certificates": [
+        {
+          "format": "affine_sphere_family_cheap_enclosure_v125",
+          "path": "certs/C07_whole_box_cheap.json",
+          "sha256": "283e544c15f1cd4129a6015c2dac70ed0f41bfae8682aa5845d931aa080d5963",
+          "verified": true
+        },
+        {
+          "format": "affine_sphere_family_universal_inequality_v134",
+          "path": "certs/C07_whole_box_concavity.json",
+          "sha256": "ff6fea63864f6f71e08013c688599e888be7ecfa88f0ca36463e3c8aae0591f2",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "decision": "proved",
+      "elapsed_seconds": 0.055514,
+      "id": "C07",
+      "notes": [],
+      "original_acceptance": [
+        "Prove lambda_mean_zero(a*t)>=1 for every a in [-4,4].",
+        "One admissible proof uses concavity of the constrained ground energy in a plus verified endpoint lower bounds; a finite grid without a remainder is insufficient."
+      ],
+      "original_input": {
+        "claimed_uniform_threshold": "1",
+        "parameter_box": {
+          "a": [
+            "-4",
+            "4"
+          ]
+        },
+        "q(a,t)": "a*t"
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "solved",
+      "title": "整个线性参数区间的统一正下界",
+      "uniform_lower": "321256371447156064140993/302231454903657293676544",
+      "wall_time_budget_seconds": 90
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {
+        "bits": 40,
+        "modes": 8,
+        "parameter_cover": [
+          [
+            0,
+            100
+          ]
+        ]
+      },
+      "certificates": [
+        {
+          "format": "affine_sphere_family_cheap_enclosure_v125",
+          "path": "certs/C08_whole_box_cheap.json",
+          "sha256": "66143771c8ff99d07c3c993d3fb8dc13feb441e6e3ecac8e8df1e0c08a01b4a7",
+          "verified": true
+        },
+        {
+          "format": "explicit_sector_rayleigh_v95",
+          "path": "certs/C08_equality_a0_x.json",
+          "sha256": "b059e0652abc6e9cf2015dfd2be7202f71b900aba22bb438557ba6d05f76d3a5",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 0.001299,
+      "equality_parameter": "0",
+      "equality_trial": "x",
+      "id": "C08",
+      "notes": [
+        "Whole box proof uses q>=0; equality at a=0. No grid inference."
+      ],
+      "original_acceptance": [
+        "Prove the uniform threshold 2 from q>=0 and Poincare, with equality at a=0 and u=x.",
+        "Bind the full parameter box; sampling the endpoints must not be presented as the general proof."
+      ],
+      "original_input": {
+        "claimed_uniform_threshold": "2",
+        "parameter_box": {
+          "a": [
+            "0",
+            "100"
+          ]
+        },
+        "q(a,t)": "a*t^2"
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "solved",
+      "title": "非负参数盒与端点精确达到",
+      "uniform_lower": "2",
+      "wall_time_budget_seconds": 90
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {
+        "bits": 40,
+        "max_leaves": 32,
+        "modes": 6,
+        "strategy": "concavity",
+        "tolerance": "1/100000000"
+      },
+      "certificates": [
+        {
+          "format": "cheap_global_affine_sphere_v135",
+          "path": "certs/C09_cheap_objective.json",
+          "sha256": "1532758a0f6cf88107ab11aa472949be706f6cf8e5b5164020f0054235b2d3a0",
+          "verified": true
+        },
+        {
+          "format": "global_affine_projected_sphere_v144",
+          "path": "certs/C09_global_objective.json",
+          "sha256": "e3ace0845f6db95fefb182c39adeb6dd73fb3f3df73a895f4b24dcfd117982a6",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 2.211369,
+      "id": "C09",
+      "lower": "13458672197949556823821974757400672922784120438020307595/6129982163463555433433388108601236734474956488734408704",
+      "minimizer_enclosure": {
+        "all_minimizers_in": [
+          [
+            "-1/512",
+            "0"
+          ],
+          [
+            "0",
+            "1/512"
+          ]
+        ],
+        "excluded_intervals": [
+          [
+            "-4",
+            "-2"
+          ],
+          [
+            "-2",
+            "-1"
+          ],
+          [
+            "-1",
+            "-1/2"
+          ],
+          [
+            "-1/2",
+            "-1/4"
+          ],
+          [
+            "-1/4",
+            "-1/8"
+          ],
+          [
+            "-1/8",
+            "-1/16"
+          ],
+          [
+            "-1/16",
+            "-1/32"
+          ],
+          [
+            "-1/32",
+            "-1/64"
+          ],
+          [
+            "-1/64",
+            "-1/128"
+          ],
+          [
+            "-1/128",
+            "-1/256"
+          ],
+          [
+            "-1/256",
+            "-1/512"
+          ],
+          [
+            "1/512",
+            "1/256"
+          ],
+          [
+            "1/256",
+            "1/128"
+          ],
+          [
+            "1/128",
+            "1/64"
+          ],
+          [
+            "1/64",
+            "1/32"
+          ],
+          [
+            "1/32",
+            "1/16"
+          ],
+          [
+            "1/16",
+            "1/8"
+          ],
+          [
+            "1/8",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "1"
+          ],
+          [
+            "1",
+            "2"
+          ],
+          [
+            "2",
+            "4"
+          ]
+        ],
+        "uniqueness_claimed": false
+      },
+      "notes": [
+        "Global objective over the full interval; feasible-point spectral upper is not an asserted exact minimizer."
+      ],
+      "original_acceptance": [
+        "Return rigorous lower and attained/trial upper bounds for the global objective with gap <=1e-8, or retain an explicit open gap.",
+        "Cover the whole parameter interval and all relevant angular branches; attach proof to any reported minimizer enclosure. No optimal parameter/value is assumed in advance."
+      ],
+      "original_input": {
+        "objective": "lambda_full_mean_zero(q(a,t))+a^2/5",
+        "parameter_box": {
+          "a": [
+            "-4",
+            "4"
+          ]
+        },
+        "q(a,t)": "a*t+t^2",
+        "target_global_gap": "1/100000000"
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "narrow_target_met",
+      "target": "1/100000000",
+      "title": "带惩罚的参数全局最优",
+      "upper": "603507736531/274877906944",
+      "wall_time_budget_seconds": 90,
+      "width": "59770225775415215028614636856575950842153469301/6129982163463555433433388108601236734474956488734408704"
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {},
+      "certificates": [
+        {
+          "format": "projected_sphere_sector_v91_v92",
+          "path": "certs/C10_a-2_m0.json",
+          "sha256": "302d87a65d7826c302765ed8415b01c9e5dfe14185db3be134f6f2a0bd4b0d6b",
+          "verified": true
+        },
+        {
+          "format": "projected_sphere_sector_v91_v92",
+          "path": "certs/C10_a-2_m1.json",
+          "sha256": "abea9129958d867ee7b7f54cdc5b0c0fce8eb869943a735057ab89bd999d480b",
+          "verified": true
+        },
+        {
+          "format": "projected_full_sphere_ground_v93",
+          "path": "certs/C10_a-2_full.json",
+          "sha256": "3e483bb088cfdeeab04e6229863d40e7f9304c6e8ed6101fa29d3e4c359a7be8",
+          "verified": true
+        },
+        {
+          "format": "projected_sphere_sector_v91_v92",
+          "path": "certs/C10_a0_m0.json",
+          "sha256": "f88fdaeab38d0a8922353b644abc5e074063bf7eae8ade13b7152885db11368a",
+          "verified": true
+        },
+        {
+          "format": "projected_sphere_sector_v91_v92",
+          "path": "certs/C10_a0_m1.json",
+          "sha256": "2e62b5fa207095f19df25487f474ac3f2f9058b7951642e310cb0605b76a6dfd",
+          "verified": true
+        },
+        {
+          "format": "projected_full_sphere_ground_v93",
+          "path": "certs/C10_a0_full.json",
+          "sha256": "710cfb56bf45e5a22b25a1bdbc18be8bb811c96c53bed69e0f6187d51564add8",
+          "verified": true
+        },
+        {
+          "format": "projected_sphere_sector_v91_v92",
+          "path": "certs/C10_a2_m0.json",
+          "sha256": "fc654afe50a336e917d2ee197076c7b58e29960e63bc04ab54f228223b77e0d9",
+          "verified": true
+        },
+        {
+          "format": "projected_sphere_sector_v91_v92",
+          "path": "certs/C10_a2_m1.json",
+          "sha256": "529923488e97d88a8ffd0a5e4ce6a3065626ee5d1e6e03b4da0dd753d9d6b1e9",
+          "verified": true
+        },
+        {
+          "format": "projected_full_sphere_ground_v93",
+          "path": "certs/C10_a2_full.json",
+          "sha256": "9eb0cb36e9667e81bcedcc7c036757c122aa6dff3ad968cfcfe910e63dfd4c94",
+          "verified": true
+        },
+        {
+          "format": "full_ordered_spectrum_v159",
+          "path": "certs/C10_zero_multiplicity.json",
+          "sha256": "f01a80d85ca001913fc30ab2125d121ba8330af003793d592f6ffee941614ddc",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "comparisons": [
+        {
+          "a": -2,
+          "full_interval": [
+            "29206801786807782906709/37778931862957161709568",
+            "26563431481/34359738368"
+          ],
+          "sectors": [
+            {
+              "azimuth_m": 0,
+              "lower": "29206801786807782906709/37778931862957161709568",
+              "upper": "26563431481/34359738368"
+            },
+            {
+              "azimuth_m": 1,
+              "lower": "477739158329738017461581/302231454903657293676544",
+              "upper": "434501233331/274877906944"
+            }
+          ],
+          "separated_winner": 0
+        },
+        {
+          "a": 0,
+          "full_interval": [
+            "2",
+            "2"
+          ],
+          "sectors": [
+            {
+              "azimuth_m": 0,
+              "lower": "2",
+              "upper": "2"
+            },
+            {
+              "azimuth_m": 1,
+              "lower": "2",
+              "upper": "2"
+            }
+          ],
+          "separated_winner": null
+        },
+        {
+          "a": 2,
+          "full_interval": [
+            "720113409936248047593019/302231454903657293676544",
+            "654939331013/274877906944"
+          ],
+          "sectors": [
+            {
+              "azimuth_m": 0,
+              "lower": "958716836294615918914969/302231454903657293676544",
+              "upper": "871947883111/274877906944"
+            },
+            {
+              "azimuth_m": 1,
+              "lower": "720113409936248047593019/302231454903657293676544",
+              "upper": "654939331013/274877906944"
+            }
+          ],
+          "separated_winner": 1
+        }
+      ],
+      "elapsed_seconds": 0.113781,
+      "id": "C10",
+      "notes": [
+        "Only the three prescribed parameters; no whole-box branch ordering or uniqueness claim."
+      ],
+      "original_acceptance": [
+        "At a=-2 and a=2 establish competing m=0/m=1 intervals and identify a winning branch only after separation; retain undecided labels if they overlap.",
+        "At a=0 prove full mean-zero eigenvalue 2 with real multiplicity 3 (one m=0 plus two m=1). Do not infer uniqueness or a whole-box branch ordering from only these three points."
+      ],
+      "original_input": {
+        "parameter_box_for_optional_global_search": {
+          "a": [
+            "-2",
+            "2"
+          ]
+        },
+        "parameters_to_compare": [
+          "-2",
+          "0",
+          "2"
+        ],
+        "q(a,t)": "a*t^2"
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "solved",
+      "title": "正负椭球势的角分支竞争",
+      "wall_time_budget_seconds": 90,
+      "zero_real_multiplicity": 3
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {},
+      "certificates": [
+        {
+          "format": "harmonic_exclusion_full_ground_v149",
+          "path": "certs/C11_full_l01_excluded.json",
+          "sha256": "6287edf20f988f4ca66275ec8e8f363e2d3006bd7c7d3b4f33894ef3e9381eed",
+          "verified": true
+        },
+        {
+          "format": "explicit_sector_rayleigh_v95",
+          "path": "certs/C11_trial_3z2_minus1.json",
+          "sha256": "8560ab8cc7f0068076a1ca009dbdecea46ee1d7a70aaf535e7766f8f5efcd0ac",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "constraints_checked": [
+        "1",
+        "x",
+        "y",
+        "z"
+      ],
+      "elapsed_seconds": 0.003798,
+      "id": "C11",
+      "lower": "6",
+      "notes": [],
+      "original_acceptance": [
+        "Ground energy is exactly 6; prove all constraints and accept an l=2 trial such as 3z^2-1.",
+        "Excluding only m=0,l=1 is insufficient because the x/y modes remain."
+      ],
+      "original_input": {
+        "orthogonality": [
+          "1",
+          "x",
+          "y",
+          "z"
+        ],
+        "q": [
+          "0"
+        ]
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "solved",
+      "title": "删除完整l=0和l=1空间",
+      "transverse_orthogonality_rule": "azimuthal integral of x or y times an axisymmetric function is zero",
+      "trial": "3z²-1",
+      "upper": "6",
+      "wall_time_budget_seconds": 90
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "axisymmetric_ground": "6",
+      "budget": {},
+      "certificates": [
+        {
+          "format": "finite_moment_sector_v153",
+          "path": "certs/C12_axisymmetric_1z_constraints.json",
+          "sha256": "d523a5741671ee6552d856e82e8f4480767af5fdd54a8801fd4cb264bdccdfd0",
+          "verified": true
+        },
+        {
+          "format": "finite_moment_sector_v153",
+          "path": "certs/C12_axisymmetric_exact_6.json",
+          "sha256": "626bf82b1a2483774fccaafbfe30806758c85508bb7f2999a66a528edcf4449d",
+          "verified": true
+        },
+        {
+          "format": "explicit_sector_rayleigh_v95",
+          "path": "certs/C12_full_transverse_trial.json",
+          "sha256": "b059e0652abc6e9cf2015dfd2be7202f71b900aba22bb438557ba6d05f76d3a5",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 0.003116,
+      "full_space_analytic_calibration": "2 by Poincare lower and admissible x/y",
+      "id": "C12",
+      "missing_capability": "No full-space assembly API for arbitrary constraints distributed across m sectors.",
+      "notes": [],
+      "original_acceptance": [
+        "In the full sphere the ground is exactly 2, with admissible x and y.",
+        "For the separately declared axisymmetric space the same constraints give ground 6; scope binding must distinguish the two."
+      ],
+      "original_input": {
+        "orthogonality": [
+          "1",
+          "z"
+        ],
+        "q": [
+          "0"
+        ]
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "partially_supported",
+      "title": "只删除常数和z仍保留横向模",
+      "transverse_trial_rayleigh": "2",
+      "wall_time_budget_seconds": 90
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {},
+      "certificates": [
+        {
+          "format": "full_ordered_spectrum_v159",
+          "path": "certs/C13_ordered_full.json",
+          "sha256": "b33333176dd66a964b30ed9bb053619486a7b00dd52b417ce61b994d493aa63f",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "eigenvalues": [
+        "2",
+        "2",
+        "2",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "12"
+      ],
+      "elapsed_seconds": 0.005359,
+      "id": "C13",
+      "notes": [],
+      "original_acceptance": [
+        "Return [2,2,2,6,6,6,6,6,12], including real angular multiplicities.",
+        "Each sector may be certified independently, but a full-spectrum merge must also exclude omitted levels/sectors."
+      ],
+      "original_input": {
+        "mean_zero": true,
+        "ordered_full_eigenvalues_k": "1..9",
+        "q": [
+          "0"
+        ]
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "solved",
+      "title": "完整高阶谱与重数",
+      "wall_time_budget_seconds": 90
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {},
+      "certificates": [
+        {
+          "format": "full_ordered_spectrum_v159",
+          "path": "certs/C14_ordered_full.json",
+          "sha256": "90ba9b8d538c2fde2961bd42766ef1e9c210b106d2e8fd8deca1f17f77fb0199",
+          "verified": true
+        },
+        {
+          "format": "strict_full_spectral_count_v161",
+          "path": "certs/C14_negative_count.json",
+          "sha256": "6314e75d6788736f2b0b2c5273e141733f1fa0349103c1b1031e44baa9b9c07c",
+          "verified": true
+        },
+        {
+          "format": "full_negative_trace_v162",
+          "path": "certs/C14_negative_trace.json",
+          "sha256": "8b2057cf5e889af3a3829ebd8f8aa6cbaeada62cc0a84a120889f1f17ec4f58d",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 0.011444,
+      "full_unprojected": {
+        "expected_count": 9,
+        "expected_trace": "27",
+        "rejection": {
+          "exception": "ValueError",
+          "message": "This full spectrum interface requires mean_zero=True",
+          "rejected": true
+        },
+        "status": "unsupported"
+      },
+      "id": "C14",
+      "mean_zero_negative_count": 8,
+      "mean_zero_negative_trace": "20",
+      "notes": [],
+      "original_acceptance": [
+        "Mean-zero result: negative count 8 and negative-part trace 20 (l=1:3*5; l=2:5*1).",
+        "Unprojected result: negative count 9 and trace 27; prove no omitted negative eigenvalues. These are exact test identities, not a new Lieb-Thirring bound."
+      ],
+      "original_input": {
+        "q": [
+          "-7"
+        ],
+        "quantity": "sum_j max(0,-lambda_j), with multiplicity",
+        "spaces": [
+          "full_mean_zero",
+          "full_unprojected"
+        ]
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "partially_supported",
+      "title": "负谱个数及负部迹",
+      "wall_time_budget_seconds": 90
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "area_ratio": "9/(40*pi)",
+      "budget": {},
+      "certificates": [
+        {
+          "format": "gn_ratio_v167",
+          "path": "certs/C15_original_z_GN.json",
+          "sha256": "3ef81a727bf1b296c4b033618f969d01f9f3ba4287ed73b0c29336b6919b72a2",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 0.000844,
+      "id": "C15",
+      "notes": [],
+      "original_acceptance": [
+        "Direct moments are E(u^2)=1/3, E(|grad u|^2)=2/3, E(u^4)=1/5; quotient=9/10>4/5.",
+        "If using area d_sigma instead, the same trial quotient is 9/(40*pi), not 9/10. A weighted linear spectral threshold is not a GN certificate."
+      ],
+      "original_input": {
+        "C": "4/5",
+        "inequality": "E_mu(u^4)<=C*E_mu(u^2)*E_mu(|grad u|^2)",
+        "mean_zero": true,
+        "trial": "u=z"
+      },
+      "probability_ratio": "9/10",
+      "probability_violation_margin": "1/45",
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "solved",
+      "title": "GN候选常数的直接反例",
+      "wall_time_budget_seconds": 90
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {},
+      "certificates": [
+        {
+          "format": "gn_ratio_v167",
+          "path": "certs/C16_n4_original_moments.json",
+          "sha256": "5790cb662d94d6d864ab76589cb374622e4f6f795acefc867de0de09960bb49d",
+          "verified": true
+        },
+        {
+          "format": "gn_ratio_v167",
+          "path": "certs/C16_n16_original_moments.json",
+          "sha256": "7bcca8f2cd17568f43082156e57c0483aa6bf9c3e6c6b572223ae29ac77d7a1a",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 0.007978,
+      "id": "C16",
+      "notes": [
+        "n=64 retained and actually submitted; rejected at degree cap 36. Closed-form reference is not claimed as a GN module certificate or sharp-constant result."
+      ],
+      "original_acceptance": [
+        "For each prescribed n, independently integrate mean, M2, M4 and Dirichlet energy and return the exact rational GN quotient.",
+        "M2=2^(2n)*(1/(2n+1)-1/(n+1)^2); energy=n*2^(2n-1)/(2n+1). M4 follows binomial expansion with E((1+t)^j)=2^j/(j+1).",
+        "All three cases stay in the record even if a resource limit is reached. No claim that these trials are globally optimal or attain the sharp constant."
+      ],
+      "original_input": {
+        "mean_zero": true,
+        "n_values": [
+          4,
+          16,
+          64
+        ],
+        "normalization": "mu=d_sigma/(4*pi)",
+        "trial_family": "u_n(t)=(1+t)^n-2^n/(n+1)"
+      },
+      "prescribed_cases": [
+        {
+          "independent_formula_reference": {
+            "energy": "512/9",
+            "mass": "4096/225",
+            "mean": "0",
+            "probability_ratio": "6696/5525",
+            "quartic": "520093696/414375"
+          },
+          "n": 4,
+          "original_polynomial_coefficients": [
+            "-11/5",
+            "4",
+            "6",
+            "4",
+            "1"
+          ],
+          "status": "solved"
+        },
+        {
+          "independent_formula_reference": {
+            "energy": "34359738368/33",
+            "mass": "1099511627776/9537",
+            "mean": "0",
+            "probability_ratio": "1580832/920465",
+            "quartic": "603253983987699958178381824/2926158235"
+          },
+          "n": 16,
+          "original_polynomial_coefficients": [
+            "-65519/17",
+            "16",
+            "120",
+            "560",
+            "1820",
+            "4368",
+            "8008",
+            "11440",
+            "12870",
+            "11440",
+            "8008",
+            "4368",
+            "1820",
+            "560",
+            "120",
+            "16",
+            "1"
+          ],
+          "status": "solved"
+        },
+        {
+          "exception": "Polynomial degree budget exceeded",
+          "independent_formula_reference": {
+            "energy": "10889035741470030830827987437816582766592/129",
+            "mass": "1393796574908163946345982392040522594123776/545025",
+            "mean": "0",
+            "probability_ratio": "402777216/209564225",
+            "quartic": "15795840762687403075646144764382032229909410008332946447298486703587030743003550298669056/38072580576875"
+          },
+          "n": 64,
+          "original_polynomial_coefficients": [
+            "-18446744073709551551/65",
+            "64",
+            "2016",
+            "41664",
+            "635376",
+            "7624512",
+            "74974368",
+            "621216192",
+            "4426165368",
+            "27540584512",
+            "151473214816",
+            "743595781824",
+            "3284214703056",
+            "13136858812224",
+            "47855699958816",
+            "159518999862720",
+            "488526937079580",
+            "1379370175283520",
+            "3601688791018080",
+            "8719878125622720",
+            "19619725782651120",
+            "41107996877935680",
+            "80347448443237920",
+            "146721427591999680",
+            "250649105469666120",
+            "401038568751465792",
+            "601557853127198688",
+            "846636978475316672",
+            "1118770292985239888",
+            "1388818294740297792",
+            "1620288010530347424",
+            "1777090076065542336",
+            "1832624140942590534",
+            "1777090076065542336",
+            "1620288010530347424",
+            "1388818294740297792",
+            "1118770292985239888",
+            "846636978475316672",
+            "601557853127198688",
+            "401038568751465792",
+            "250649105469666120",
+            "146721427591999680",
+            "80347448443237920",
+            "41107996877935680",
+            "19619725782651120",
+            "8719878125622720",
+            "3601688791018080",
+            "1379370175283520",
+            "488526937079580",
+            "159518999862720",
+            "47855699958816",
+            "13136858812224",
+            "3284214703056",
+            "743595781824",
+            "151473214816",
+            "27540584512",
+            "4426165368",
+            "621216192",
+            "74974368",
+            "7624512",
+            "635376",
+            "41664",
+            "2016",
+            "64",
+            "1"
+          ],
+          "status": "unsupported",
+          "supported_trial_degree": 36
+        }
+      ],
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "partially_supported",
+      "title": "明确集中序列的有理矩与GN试探",
+      "wall_time_budget_seconds": 90
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {
+        "bits": 50,
+        "max_m": 8,
+        "max_modes": 16,
+        "modes": 8,
+        "tolerance": "1/1000000000000"
+      },
+      "certificates": [
+        {
+          "format": "projected_full_sphere_ground_v93",
+          "path": "certs/C17_qz_full_source.json",
+          "sha256": "3a29c21d30105730fa105293d012e1c280611bae7358dd1e3824ecfdc742d191",
+          "verified": true
+        },
+        {
+          "format": "sphere_rotation_transfer_v184",
+          "path": "certs/C17_qx_rotated_full.json",
+          "sha256": "4e9bde51c7b7d11223f3c8d6e7bd1b2006d9827cc4fd140939199c3574c3e355",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 0.030657,
+      "id": "C17",
+      "lower": "306454569612145056801835349445/158456325028528675187087900672",
+      "notes": [],
+      "original_acceptance": [
+        "Certify the full mean-zero ground and reproduce the q=z result under an explicit rotation of S2.",
+        "Preserve the mean-zero constraint and full-space scope; comparing only the old m=0 sector is not a rotation test."
+      ],
+      "original_input": {
+        "mean_zero": true,
+        "q_xyz": [
+          {
+            "coefficient": "1",
+            "powers": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "target_width": "1/1000000000000"
+      },
+      "rotation_identity": "(R*x)_3=x1; determinant=1; all mean-zero H1 preserved",
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "narrow_target_met",
+      "target": "1/1000000000000",
+      "title": "旋转等价的非轴输入q=x",
+      "upper": "544372670695995/281474976710656",
+      "wall_time_budget_seconds": 90,
+      "width": "544372670695995/158456325028528675187087900672"
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {
+        "bits": 40,
+        "maximum_supported_L": 4,
+        "retained_degree_ladder": [
+          3,
+          4
+        ],
+        "target": "1/100000000"
+      },
+      "certificates": [
+        {
+          "format": "anisotropic_cheap_ground_v175",
+          "path": "certs/C18_cheap_full.json",
+          "sha256": "9edf3d219b2a52ffaa856878deaa0b773f8a7d61d275fac72a98937cd73723d0",
+          "verified": true
+        },
+        {
+          "format": "anisotropic_mean_zero_sphere_v182",
+          "path": "certs/C18_coupled_L3.json",
+          "sha256": "de8ce607f6afe85afb0be6121a5390dccf6d6f842f12b52ab2b42044ff95892b",
+          "verified": true
+        },
+        {
+          "format": "anisotropic_mean_zero_sphere_v182",
+          "path": "certs/C18_coupled_L4.json",
+          "sha256": "ef721bdf3438c64103a3297b00451ec81baa27c20f4d98da0c2203ca4cf4643b",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 0.812132,
+      "id": "C18",
+      "independent_guard": {
+        "lower": "3",
+        "rule": "q>=1 on S²; actual trial x",
+        "upper": "18/5"
+      },
+      "lower": "8458364896409780694401/2361183241434822606848",
+      "notes": [],
+      "original_acceptance": [
+        "Replay a full-sphere certificate for x^2+2y^2+3z^2, which has no rotation making it a function of one axis alone.",
+        "Independent coarse guard is 3 <= ground <=18/5: q>=1 and the trial u=x has potential quotient 8/5 and Dirichlet quotient 2."
+      ],
+      "original_input": {
+        "mean_zero": true,
+        "q_xyz": [
+          {
+            "coefficient": "1",
+            "powers": [
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "coefficient": "2",
+            "powers": [
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "coefficient": "3",
+            "powers": [
+              0,
+              0,
+              2
+            ]
+          }
+        ],
+        "target_width": "1/100000000"
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "certified_open",
+      "target": "1/100000000",
+      "title": "真正三轴二次势",
+      "upper": "61542745045/17179869184",
+      "wall_time_budget_seconds": 90,
+      "width": "5576369132851839/2361183241434822606848"
+    },
+    {
+      "all_saved_mathematical_artifacts_verified": true,
+      "budget": {},
+      "certificates": [
+        {
+          "format": "projected_full_sphere_ground_v93",
+          "path": "certs/C19_one_original_spectrum.json",
+          "sha256": "11c2d4112dcef2fc27bf4c68bfa8ed88c3276c6f39a27790ed18c06bf6df6d57",
+          "verified": true
+        },
+        {
+          "format": "reused_sphere_threshold",
+          "path": "certs/C19_reused_decision_0.json",
+          "sha256": "733aeb6c2ba364b9adcf5f7b757bd2ee8d07149a9e109e55af33445efe2babb0",
+          "verified": true
+        },
+        {
+          "format": "reused_sphere_threshold",
+          "path": "certs/C19_reused_decision_1.json",
+          "sha256": "7f36a6f3f108eef75fe1733f073e48b0fcc749cdf55286c6fdef5debdc73200e",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "decisions": [
+        "proved",
+        "refuted_by_spectral_existence"
+      ],
+      "elapsed_seconds": 0.047194,
+      "id": "C19",
+      "negative_checks": {
+        "corrupt_hash": {
+          "exception": "ValueError",
+          "message": "Certificate content hash mismatch",
+          "rejected": true
+        },
+        "wrong_q": {
+          "exception": "ValueError",
+          "message": "The reused proof belongs to a different potential",
+          "rejected": true
+        },
+        "wrong_scope": {
+          "exception": "ValueError",
+          "message": "Verified full mean-zero evidence is required",
+          "rejected": true
+        }
+      },
+      "new_downstream_spectral_solves": 0,
+      "notes": [],
+      "original_acceptance": [
+        "One replayed full-space certificate with L>=119/50 and U<12/5 yields proved and refuted-by-spectral-existence respectively.",
+        "Preserve certificate identity and avoid recomputing the spectrum in both downstream steps; any explicit violating-function extension must be separately checked.",
+        "Reject changed q or scope bindings and corrupt content hashes."
+      ],
+      "original_input": {
+        "q": [
+          "0",
+          "0",
+          "2"
+        ],
+        "thresholds": [
+          "119/50",
+          "12/5"
+        ],
+        "workflow": [
+          "certify",
+          "persist_by_content_hash",
+          "reload_and_verify",
+          "derive_two_threshold_decisions"
+        ]
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "solved",
+      "stored_certificate_id": "1b212d9754ecc1c6527c03e050592b82566780577d2fd57ff502911495e84b85",
+      "title": "同一谱证书支持两个后续判定",
+      "wall_time_budget_seconds": 90
+    },
+    {
+      "actual_reuse": "verified previous full-space bounds and certificate ancestry",
+      "all_saved_mathematical_artifacts_verified": true,
+      "ancestry_digest": "9e4a590256b4e6f514a7f868fd7a8bb139118234e38fdb0b9d1afd4d47fef6b5",
+      "binding_checks": [
+        {
+          "exception": "ValueError",
+          "message": "Checkpoint q/projection binding failed",
+          "rejected": true
+        },
+        {
+          "exception": "ValueError",
+          "message": "Checkpoint q/projection binding failed",
+          "rejected": true
+        }
+      ],
+      "budget": {
+        "continuation": {
+          "max_m": 8,
+          "max_modes": 32,
+          "max_steps": 24,
+          "modes": 4,
+          "tolerance": "1/100000000000000000000"
+        },
+        "first": {
+          "bits": 60,
+          "max_m": 0,
+          "max_modes": 4,
+          "modes": 4,
+          "tolerance": "1/100000000000000000000"
+        }
+      },
+      "certificates": [
+        {
+          "format": "projected_full_sphere_ground_v93",
+          "path": "certs/C20_original_first_budget.json",
+          "sha256": "043b59e5129e11e5687a6e81860f1d656dad7e1a2fb84ac6e583149227b07b27",
+          "verified": true
+        },
+        {
+          "format": "precision_full_ground_v114",
+          "path": "certs/C20_precision_ancestry_bridge.json",
+          "sha256": "6eba704de9e61d4d5d3999b5ebea199990c2f669132701456d16a6e9a42b4707",
+          "verified": true
+        },
+        {
+          "format": "precision_checkpoint_v112",
+          "path": "certs/C20_bound_checkpoint.json",
+          "sha256": "876ce4fa4b0a03b817fea68c04eef401a50f241340b2151a12b3d1e1bc234c74",
+          "verified": true
+        },
+        {
+          "format": "precision_full_ground_v114",
+          "path": "certs/C20_continued_full.json",
+          "sha256": "661e87c6dd1d1f89cf709fd301b91c83333108d3bc7fd26c2e38178d6d532980",
+          "verified": true
+        }
+      ],
+      "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+      "elapsed_seconds": 1.470467,
+      "first_width": "19809218377480628263/576460752303423488",
+      "id": "C20",
+      "iteration_vector_reuse": false,
+      "lower": "2448482963996277873462364944476013257794061643402992207355473164340998466426054176991767245666131201025801675436966962402976995778/237999416526262664709186280139959976908738048963512886167625511249562435116904854891294857094600739291528828626770388701154299545",
+      "notes": [
+        "This is bound reuse. New finite matrices/trials are recomputed; no warm iteration-vector reuse is claimed."
+      ],
+      "original_acceptance": [
+        "First preserve and replay the honest open certificate. A resumed result must keep best lower=max(old lower,new lower) and best upper=min(old upper,new upper) for the same operator.",
+        "Record actual reused work and certificate ancestry; a fresh full recomputation may be a correct fallback but is not evidence of warm-start reuse.",
+        "If the larger budget still cannot close 1e-20, retain open status. Reject an inherited certificate with changed coefficients or projection."
+      ],
+      "original_input": {
+        "continuation_budget": "explicitly recorded larger mode/angular budget",
+        "first_budget": {
+          "bits": 60,
+          "max_m": 0,
+          "max_modes": 4,
+          "modes": 4,
+          "tolerance": "1/100000000000000000000"
+        },
+        "q": [
+          "0",
+          "0",
+          "100"
+        ],
+        "target_width": "1/100000000000000000000"
+      },
+      "scope_default": {
+        "geometry": "unit_S2",
+        "measure": "mu=d_sigma/(4*pi)",
+        "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+        "space": "all real H1 functions with E_mu(u)=0",
+        "t": "z=cos(theta)"
+      },
+      "status": "narrow_target_met",
+      "target": "1/100000000000000000000",
+      "title": "开放证书的预算续算",
+      "upper": "596189852977072951700263005480404580193960445689108790607901118512278589090814/57951327100855984051210439237365333734540305031166728748860146542969558590791",
+      "wall_time_budget_seconds": 90,
+      "width": "10517268686696176588842432941048675171640052592647312052532666754109920994088087609089180279828248660197269268835313267925377191082367461482292715365400664181050135076936860127199232/13792382036926317127823551574558059533015490429922963368707777776487700735141667737291882676431315338852072878947872314102386535811628753886754807368210406337995433971969946689570999588682394891900892490095"
+    }
+  ],
+  "status_counts": {
+    "certified_open": 1,
+    "narrow_target_met": 7,
+    "partially_supported": 3,
+    "solved": 9,
+    "unsupported": 0
+  }
+}

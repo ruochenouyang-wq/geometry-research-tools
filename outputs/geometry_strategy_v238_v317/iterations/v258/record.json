@@ -1,0 +1,31 @@
+{
+  "version": 258,
+  "recorded_at": "2026-09-18T18:11:51.261310+00:00",
+  "hypothesis": "The old fixed approximation hides whether the core or annulus controls precision.",
+  "change": "Add exact core/annulus error decomposition and a source-bound replayed approximation entry point.",
+  "source_sha256": {
+    "adaptive_approx.py": "034d9ee029a5a1c05666a0cba2fca95d8f54b03d29db8f2c8c850ff7661ecfe2",
+    "test_adaptive_approx.py": "93d5e9bb2db0a5b8308aea3b15a934a68237991a27bf32968f51f2b91ae0da80"
+  },
+  "validation": {
+    "unit_tests_passed": 3,
+    "decomposition_equal_to_full_certificate": true
+  },
+  "comparison": {
+    "baseline": "fixed levels=4, degree=3, root_ratio=1/2",
+    "new_error_upper": "20488777907/549755813888",
+    "exact_diagnostics": {
+      "shape_error_squared": "650169239/1657677656250",
+      "core_error_squared": "1/1152",
+      "annulus_error_squared": "11052877063/21218274000000",
+      "error_squared": "3683939711/2652284250000",
+      "dominant_component": "core"
+    },
+    "status": "open"
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Diagnostics do not improve precision by themselves; no spectral conclusion."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

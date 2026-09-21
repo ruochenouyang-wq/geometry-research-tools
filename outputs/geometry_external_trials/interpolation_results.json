@@ -1,0 +1,85 @@
+{
+  "analytic_dependencies": [
+    "area measure d_sigma = 4*pi*d_mu",
+    "axisymmetric energy density (1-t^2)*(u_prime)^2",
+    "homogeneous ratio: two charts cover every real projective direction"
+  ],
+  "cases": [
+    {
+      "K4_area_approximation_only": 0.08803565715843768,
+      "basis": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "-3/2",
+          "0",
+          "5/2"
+        ]
+      ],
+      "case": "legendre_P1_P3",
+      "certificate": "certificates/interpolation/legendre_P1_P3.json",
+      "decimal_conversion_is_not_an_outward_rounded_certificate": true,
+      "pi_K4_gap": "1/10000000000",
+      "pi_K4_lower": "4898062993161441456761543594854741510236569/17709890789686972638369057915759967978802640",
+      "pi_K4_upper": "612257874366553816966280107336455912726570724735033/2213736348710871579796132239469995997350330000000000",
+      "search": {
+        "requested_gap": "1/10000000000",
+        "target_met": true,
+        "upper_sign_proof_attempts": 2
+      },
+      "seconds_including_json_replay": 0.035229791999999996,
+      "verified": true,
+      "witness": {
+        "chart": 0,
+        "parameter": "3769445917/9698542890"
+      }
+    },
+    {
+      "K4_area_approximation_only": 0.11568117246619537,
+      "basis": [
+        [
+          "-13/96",
+          "5/32",
+          "5/16",
+          "5/16",
+          "5/32",
+          "1/32"
+        ],
+        [
+          "-57/448",
+          "3/32",
+          "15/64",
+          "5/16",
+          "15/64",
+          "3/32",
+          "1/64"
+        ]
+      ],
+      "case": "centered_caps_5_6",
+      "certificate": "certificates/interpolation/centered_caps_5_6.json",
+      "decimal_conversion_is_not_an_outward_rounded_certificate": true,
+      "pi_K4_gap": "1/10000000000",
+      "pi_K4_lower": "181192117755820414793443713416354190553902426359/498570693490413848451378601801980298198406836200",
+      "pi_K4_upper": "9059605890283874207124254913074602536705022808942034181/24928534674520692422568930090099014909920341810000000000",
+      "search": {
+        "requested_gap": "1/10000000000",
+        "target_met": true,
+        "upper_sign_proof_attempts": 2
+      },
+      "seconds_including_json_replay": 0.04594991599999999,
+      "verified": true,
+      "witness": {
+        "chart": 1,
+        "parameter": "-1839951205/2812599258"
+      }
+    }
+  ],
+  "global_scope": "all_nonzero_real_combinations_of_the_two_recorded_basis_functions",
+  "no_change_to_frozen_v90": true,
+  "no_claim_of_universal_upper_bound_or_open_problem_solution": true,
+  "problem": "zero-mean unit S2 q=4 Gagliardo-Nirenberg ratio",
+  "source": "https://arxiv.org/abs/2204.12414"
+}

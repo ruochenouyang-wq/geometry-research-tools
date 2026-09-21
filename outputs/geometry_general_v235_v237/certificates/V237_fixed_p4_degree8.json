@@ -1,0 +1,2844 @@
+{
+  "approximant": {
+    "0,0,0": "-1275/608",
+    "0,0,2": "4675/456",
+    "0,0,4": "-10725/304",
+    "0,0,6": "7293/152",
+    "0,0,8": "-93925/4256"
+  },
+  "coercivity": {
+    "coercivity_factor": "457231863639/549755813888",
+    "distance_squared": "545632/19263321",
+    "distance_upper": "92523950249/549755813888",
+    "embedding": {
+      "domain": "all_real_H1_functions_on_unit_S2",
+      "energy_coefficient": "1",
+      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+      "mass_coefficient": "1",
+      "measure": "d_sigma/(4*pi)_on_unit_S2",
+      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+    },
+    "format": "fixed_reference_coercivity_v237",
+    "inequality": "a_p + shift*M >= (1-theta)*(E+M)",
+    "measure": "d_sigma/(4*pi)_on_unit_S2",
+    "polynomial": {
+      "0,0,0": "-1275/608",
+      "0,0,2": "4675/456",
+      "0,0,4": "-10725/304",
+      "0,0,6": "7293/152",
+      "0,0,8": "-93925/4256"
+    },
+    "range_evidence": {
+      "axis": 2,
+      "identity": "coordinate_permutation_isometry_of_full_S2",
+      "kind": "axis_isometry",
+      "lower": "-765/418",
+      "polynomial": {
+        "0,0,0": "-765/418",
+        "0,0,2": "595/209",
+        "0,0,4": "-945/418"
+      },
+      "proof": {
+        "format": "wide_potential_range_v117_v119",
+        "interval": [
+          "-1",
+          "1"
+        ],
+        "lower": "-765/418",
+        "method": "sturm",
+        "proof": {
+          "negative": {
+            "budget_exhausted": false,
+            "coefficient_order": "ascending",
+            "constant_polynomial": false,
+            "coordinate": "x_squared",
+            "critical_remainder": [
+              "5270/5643"
+            ],
+            "critical_square_free": [
+              "-17/27",
+              "1"
+            ],
+            "derivative": [
+              "-595/209",
+              "945/209"
+            ],
+            "derivative_gcd": [
+              "1"
+            ],
+            "error_bound": "0",
+            "formal_assistant_checked": false,
+            "format": "exact_sturm_extrema_v1",
+            "interior_critical_count": 1,
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "isolation_complete": true,
+            "lower_source": {
+              "at": "0",
+              "coordinate": "x_squared",
+              "kind": "rational_coordinate",
+              "value": "765/418"
+            },
+            "max_nodes": 64,
+            "maximum_lower": "765/418",
+            "maximum_upper": "765/418",
+            "partition": [
+              {
+                "bounds": {
+                  "bernstein": [
+                    "85/209",
+                    "765/418"
+                  ],
+                  "critical_remainder": [
+                    "5270/5643",
+                    "5270/5643"
+                  ],
+                  "rational_root": [
+                    "5270/5643",
+                    "5270/5643"
+                  ],
+                  "stationary_taylor": [
+                    "85/209",
+                    "1625/1672"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "5270/5643",
+                  "5270/5643"
+                ],
+                "exact_root": "17/27",
+                "interval": [
+                  "0",
+                  "1"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              }
+            ],
+            "partition_cells": 1,
+            "polynomial": [
+              "765/418",
+              "0",
+              "-595/209",
+              "0",
+              "945/418"
+            ],
+            "rational_critical_points": [
+              {
+                "at": "17/27",
+                "derivative_multiplicity": 1,
+                "value": "5270/5643"
+              }
+            ],
+            "refinement_nodes": 0,
+            "sample_witness": {
+              "at": "0",
+              "coordinate": "x_squared",
+              "value": "765/418"
+            },
+            "status": "exact",
+            "sturm_sequence": [
+              [
+                "-17/27",
+                "1"
+              ],
+              [
+                "1"
+              ]
+            ],
+            "target_met": true,
+            "tolerance": "1/10000000000",
+            "working_interval": [
+              "0",
+              "1"
+            ],
+            "working_polynomial": [
+              "765/418",
+              "-595/209",
+              "945/418"
+            ]
+          },
+          "positive": {
+            "budget_exhausted": false,
+            "coefficient_order": "ascending",
+            "constant_polynomial": false,
+            "coordinate": "x_squared",
+            "critical_remainder": [
+              "-5270/5643"
+            ],
+            "critical_square_free": [
+              "-17/27",
+              "1"
+            ],
+            "derivative": [
+              "595/209",
+              "-945/209"
+            ],
+            "derivative_gcd": [
+              "1"
+            ],
+            "error_bound": "0",
+            "formal_assistant_checked": false,
+            "format": "exact_sturm_extrema_v1",
+            "interior_critical_count": 1,
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "isolation_complete": true,
+            "lower_source": {
+              "at": "17/27",
+              "coordinate": "x_squared",
+              "kind": "rational_coordinate",
+              "value": "-5270/5643"
+            },
+            "max_nodes": 64,
+            "maximum_lower": "-5270/5643",
+            "maximum_upper": "-5270/5643",
+            "partition": [
+              {
+                "bounds": {
+                  "bernstein": [
+                    "-765/418",
+                    "-85/209"
+                  ],
+                  "critical_remainder": [
+                    "-5270/5643",
+                    "-5270/5643"
+                  ],
+                  "rational_root": [
+                    "-5270/5643",
+                    "-5270/5643"
+                  ],
+                  "stationary_taylor": [
+                    "-1625/1672",
+                    "-85/209"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "-5270/5643",
+                  "-5270/5643"
+                ],
+                "exact_root": "17/27",
+                "interval": [
+                  "0",
+                  "1"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              }
+            ],
+            "partition_cells": 1,
+            "polynomial": [
+              "-765/418",
+              "0",
+              "595/209",
+              "0",
+              "-945/418"
+            ],
+            "rational_critical_points": [
+              {
+                "at": "17/27",
+                "derivative_multiplicity": 1,
+                "value": "-5270/5643"
+              }
+            ],
+            "refinement_nodes": 0,
+            "sample_witness": {
+              "at": "17/27",
+              "coordinate": "x_squared",
+              "value": "-5270/5643"
+            },
+            "status": "exact",
+            "sturm_sequence": [
+              [
+                "-17/27",
+                "1"
+              ],
+              [
+                "1"
+              ]
+            ],
+            "target_met": true,
+            "tolerance": "1/10000000000",
+            "working_interval": [
+              "0",
+              "1"
+            ],
+            "working_polynomial": [
+              "-765/418",
+              "595/209",
+              "-945/418"
+            ]
+          }
+        },
+        "q_coefficients": [
+          "-765/418",
+          "0",
+          "595/209",
+          "0",
+          "-945/418"
+        ],
+        "upper": "-5270/5643"
+      },
+      "upper": "-5270/5643"
+    },
+    "reference": {
+      "0,0,0": "-765/418",
+      "0,0,2": "595/209",
+      "0,0,4": "-945/418"
+    },
+    "shift": "1183/418",
+    "sqrt_bits": 40
+  },
+  "eigenvalue_index": 1,
+  "error_budget": {
+    "lower_widening": "317125712262625223484683476314126864052292943690568015/260143037002135170099367514998301090889079074532098048",
+    "representation_widening": "211429661555485432787176818252833088550964700236363205/86714345667378390033122504999433696963026358177366016",
+    "source_width": "1085050799868125278557660149424670699/2722258935367507707706996859454145691648",
+    "upper_widening": "77432439551716571014855219346770605859521766850225/63511483643099406762540897216382102267841570930688"
+  },
+  "error_evidence": {
+    "coercivity_shifted_floor": "457231863639/549755813888",
+    "embedding": {
+      "domain": "all_real_H1_functions_on_unit_S2",
+      "energy_coefficient": "1",
+      "inequality": "norm_L4_squared <= Dirichlet_energy + L2_mass",
+      "mass_coefficient": "1",
+      "measure": "d_sigma/(4*pi)_on_unit_S2",
+      "source": "https://arxiv.org/pdf/1210.1853; equation (1), d=2,p=4"
+    },
+    "probability_L2_error": "165626894435/549755813888",
+    "relative_form_error": "165626894435/457231863639",
+    "rule": "minmax_relative_closed_form_comparison",
+    "shift": "1183/418",
+    "source_shifted_lower_used": "1914699381066283792780959995871257875839269/568952117491809110910762343625916449554432"
+  },
+  "exact_width": "52866056142043661390305749679525980045078313241095397/21678586416844597508280626249858424240756589544341504",
+  "formal_proof_assistant_checked": false,
+  "format": "fixed_energy_function_spectrum_v237",
+  "full_infinite_space_covered": true,
+  "function": {
+    "amplitude": "-1",
+    "axis": 2,
+    "exponent": "-1/4",
+    "kind": "axis_profile",
+    "offset": "0",
+    "profile": "abs_power"
+  },
+  "geometry": "unit_S2",
+  "lower": "-44476570442770191368137689335830052839741748414320303/65035759250533792524841878749575272722269768633024512",
+  "mean_zero": true,
+  "measure": "d_sigma/(4*pi)_on_unit_S2",
+  "model": {
+    "axis_power_coefficients": [
+      "-1275/608",
+      "0",
+      "4675/456",
+      "0",
+      "-10725/304",
+      "0",
+      "7293/152",
+      "0",
+      "-93925/4256"
+    ],
+    "bound_statement": "probability_L2_norm(source_function-polynomial)<=error_upper",
+    "degree": 8,
+    "error_squared": "14450/159201",
+    "error_upper": "165626894435/549755813888",
+    "formal_assistant_checked": false,
+    "format": "sphere_axis_profile_projection_v1",
+    "function": {
+      "amplitude": "-1",
+      "axis": 2,
+      "exponent": "-1/4",
+      "kind": "axis_profile",
+      "offset": "0",
+      "profile": "abs_power"
+    },
+    "legendre_projection": [
+      {
+        "basis_mass": "1",
+        "degree": 0,
+        "legendre_coefficients": [
+          "1"
+        ],
+        "norm_squared_contribution": "16/9",
+        "projection_coefficient": "-4/3",
+        "source_inner_product": "-4/3"
+      },
+      {
+        "basis_mass": "1/3",
+        "degree": 1,
+        "legendre_coefficients": [
+          "0",
+          "1"
+        ],
+        "norm_squared_contribution": "0",
+        "projection_coefficient": "0",
+        "source_inner_product": "0"
+      },
+      {
+        "basis_mass": "1/5",
+        "degree": 2,
+        "legendre_coefficients": [
+          "-1/2",
+          "0",
+          "3/2"
+        ],
+        "norm_squared_contribution": "80/1089",
+        "projection_coefficient": "20/33",
+        "source_inner_product": "4/33"
+      },
+      {
+        "basis_mass": "1/7",
+        "degree": 3,
+        "legendre_coefficients": [
+          "0",
+          "-3/2",
+          "0",
+          "5/2"
+        ],
+        "norm_squared_contribution": "0",
+        "projection_coefficient": "0",
+        "source_inner_product": "0"
+      },
+      {
+        "basis_mass": "1/9",
+        "degree": 4,
+        "legendre_coefficients": [
+          "3/8",
+          "0",
+          "-15/4",
+          "0",
+          "35/8"
+        ],
+        "norm_squared_contribution": "1296/43681",
+        "projection_coefficient": "-108/209",
+        "source_inner_product": "-12/209"
+      },
+      {
+        "basis_mass": "1/11",
+        "degree": 5,
+        "legendre_coefficients": [
+          "0",
+          "15/8",
+          "0",
+          "-35/4",
+          "0",
+          "63/8"
+        ],
+        "norm_squared_contribution": "0",
+        "projection_coefficient": "0",
+        "source_inner_product": "0"
+      },
+      {
+        "basis_mass": "1/13",
+        "degree": 6,
+        "legendre_coefficients": [
+          "-5/16",
+          "0",
+          "105/16",
+          "0",
+          "-315/16",
+          "0",
+          "231/16"
+        ],
+        "norm_squared_contribution": "60112/3538161",
+        "projection_coefficient": "884/1881",
+        "source_inner_product": "68/1881"
+      },
+      {
+        "basis_mass": "1/15",
+        "degree": 7,
+        "legendre_coefficients": [
+          "0",
+          "-35/16",
+          "0",
+          "315/16",
+          "0",
+          "-693/16",
+          "0",
+          "429/16"
+        ],
+        "norm_squared_contribution": "0",
+        "projection_coefficient": "0",
+        "source_inner_product": "0"
+      },
+      {
+        "basis_mass": "1/17",
+        "degree": 8,
+        "legendre_coefficients": [
+          "35/128",
+          "0",
+          "-315/32",
+          "0",
+          "3465/64",
+          "0",
+          "-3003/32",
+          "0",
+          "6435/128"
+        ],
+        "norm_squared_contribution": "1965200/173369889",
+        "projection_coefficient": "-5780/13167",
+        "source_inner_product": "-340/13167"
+      }
+    ],
+    "monomial_source_moments": [
+      "-4/3",
+      "0",
+      "-4/11",
+      "0",
+      "-4/19",
+      "0",
+      "-4/27",
+      "0",
+      "-4/35"
+    ],
+    "norm": "L2_probability",
+    "point_convention": "step(0)=0;negative_abs_power_at0_is_set_to0_as_an_L2_equivalent_representative",
+    "point_value_at_axis_zero": "0",
+    "polynomial": {
+      "0,0,0": "-1275/608",
+      "0,0,2": "4675/456",
+      "0,0,4": "-10725/304",
+      "0,0,6": "7293/152",
+      "0,0,8": "-93925/4256"
+    },
+    "projection_identity": "exact_error_squared=target_norm_squared-sum_l(2l+1)*source_inner_product_l^2",
+    "projection_norm_squared": "303952/159201",
+    "scope": "unit_S2_probability_measure",
+    "spectral_transfer_claimed": false,
+    "sqrt_bits": 40,
+    "sqrt_upper_squared": "27432268160182633969225/302231454903657293676544",
+    "target_norm_squared": "2"
+  },
+  "requested_width": "1/100000000",
+  "scope": "all_real_mean_zero_H1_on_unit_S2",
+  "source": {
+    "backend": "axis_isometry_wide",
+    "conversion": {
+      "axis": 2,
+      "identity": "coordinate_permutation_preserves_L2_energy_and_mean"
+    },
+    "eigenvalue_index": 1,
+    "exact_width": "1085050799868125278557660149424670699/2722258935367507707706996859454145691648",
+    "format": "full_sphere_polynomial_source_v235",
+    "full_infinite_space_covered": true,
+    "geometry": "unit_S2",
+    "lower": "27680292799672998515661032136739154475407/51722919771982646446432940329628768141312",
+    "mean_zero": true,
+    "measure": "d_sigma/(4*pi)_on_unit_S2",
+    "pointwise_range": {
+      "axis": 2,
+      "identity": "coordinate_permutation_isometry_of_full_S2",
+      "kind": "axis_isometry",
+      "lower": "-1275/608",
+      "polynomial": {
+        "0,0,0": "-1275/608",
+        "0,0,2": "4675/456",
+        "0,0,4": "-10725/304",
+        "0,0,6": "7293/152",
+        "0,0,8": "-93925/4256"
+      },
+      "proof": {
+        "format": "wide_potential_range_v117_v119",
+        "interval": [
+          "-1",
+          "1"
+        ],
+        "lower": "-1275/608",
+        "method": "sturm",
+        "proof": {
+          "negative": {
+            "budget_exhausted": false,
+            "coefficient_order": "ascending",
+            "constant_polynomial": false,
+            "coordinate": "x_squared",
+            "critical_remainder": [
+              "107/152",
+              "2453/1292",
+              "-7293/3800"
+            ],
+            "critical_square_free": [
+              "-77/663",
+              "231/289",
+              "-693/425",
+              "1"
+            ],
+            "derivative": [
+              "-4675/456",
+              "10725/152",
+              "-21879/152",
+              "93925/1064"
+            ],
+            "derivative_gcd": [
+              "1"
+            ],
+            "error_bound": "0",
+            "formal_assistant_checked": false,
+            "format": "exact_sturm_extrema_v1",
+            "interior_critical_count": 3,
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "isolation_complete": true,
+            "lower_source": {
+              "at": "0",
+              "coordinate": "x_squared",
+              "kind": "rational_coordinate",
+              "value": "1275/608"
+            },
+            "max_nodes": 64,
+            "maximum_lower": "1275/608",
+            "maximum_upper": "1275/608",
+            "partition": [
+              {
+                "bounds": {
+                  "bernstein": [
+                    "2975/3648",
+                    "1275/608"
+                  ],
+                  "critical_remainder": [
+                    "107/152",
+                    "6091/5168"
+                  ],
+                  "stationary_taylor": [
+                    "-425/912",
+                    "46331/24576"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "2975/3648",
+                  "6091/5168"
+                ],
+                "exact_root": null,
+                "interval": [
+                  "0",
+                  "1/2"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              },
+              {
+                "bounds": {
+                  "bernstein": [
+                    "1082693/1089536",
+                    "160353/136192"
+                  ],
+                  "critical_remainder": [
+                    "1083571/1033600",
+                    "303219/258400"
+                  ],
+                  "stationary_taylor": [
+                    "28234621/26148864",
+                    "62671373/52297728"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "28234621/26148864",
+                  "303219/258400"
+                ],
+                "exact_root": null,
+                "interval": [
+                  "1/2",
+                  "3/4"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              },
+              {
+                "bounds": {
+                  "bernstein": [
+                    "11239/12768",
+                    "484/399"
+                  ],
+                  "critical_remainder": [
+                    "5518/8075",
+                    "1083571/1033600"
+                  ],
+                  "stationary_taylor": [
+                    "505/798",
+                    "7806865/7471104"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "11239/12768",
+                  "7806865/7471104"
+                ],
+                "exact_root": null,
+                "interval": [
+                  "3/4",
+                  "1"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              }
+            ],
+            "partition_cells": 3,
+            "polynomial": [
+              "1275/608",
+              "0",
+              "-4675/456",
+              "0",
+              "10725/304",
+              "0",
+              "-7293/152",
+              "0",
+              "93925/4256"
+            ],
+            "rational_critical_points": [],
+            "refinement_nodes": 2,
+            "sample_witness": {
+              "at": "0",
+              "coordinate": "x_squared",
+              "value": "1275/608"
+            },
+            "status": "exact",
+            "sturm_sequence": [
+              [
+                "-77/663",
+                "231/289",
+                "-693/425",
+                "1"
+              ],
+              [
+                "77/289",
+                "-462/425",
+                "1"
+              ],
+              [
+                "-5575/11271",
+                "1"
+              ],
+              [
+                "1"
+              ]
+            ],
+            "target_met": true,
+            "tolerance": "1/10000000000",
+            "working_interval": [
+              "0",
+              "1"
+            ],
+            "working_polynomial": [
+              "1275/608",
+              "-4675/456",
+              "10725/304",
+              "-7293/152",
+              "93925/4256"
+            ]
+          },
+          "positive": {
+            "budget_exhausted": false,
+            "coefficient_order": "ascending",
+            "constant_polynomial": false,
+            "coordinate": "x_squared",
+            "critical_remainder": [
+              "-107/152",
+              "-2453/1292",
+              "7293/3800"
+            ],
+            "critical_square_free": [
+              "-77/663",
+              "231/289",
+              "-693/425",
+              "1"
+            ],
+            "derivative": [
+              "4675/456",
+              "-10725/152",
+              "21879/152",
+              "-93925/1064"
+            ],
+            "derivative_gcd": [
+              "1"
+            ],
+            "error_bound": "227137210737131323733/1381150964370264149189112023572545536",
+            "formal_assistant_checked": false,
+            "format": "exact_sturm_extrema_v1",
+            "interior_critical_count": 3,
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "isolation_complete": true,
+            "lower_source": {
+              "at": "114560741/134217728",
+              "coordinate": "x_squared",
+              "kind": "rational_coordinate",
+              "value": "-3837977672833525380926610940454377919/4143452893110792447567336070717636608"
+            },
+            "max_nodes": 64,
+            "maximum_lower": "-3837977672833525380926610940454377919/4143452893110792447567336070717636608",
+            "maximum_upper": "-8566914448289117632845934663081265/9248778779265161713319946586423296",
+            "partition": [
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "0",
+                  "1/4"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": {
+                  "bernstein": [
+                    "-239551/204288",
+                    "-1734233/1634304"
+                  ],
+                  "critical_remainder": [
+                    "-607769/516800",
+                    "-1094219/1033600"
+                  ],
+                  "stationary_taylor": [
+                    "-20556463/17432576",
+                    "-479669/458752"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "-239551/204288",
+                  "-1734233/1634304"
+                ],
+                "exact_root": null,
+                "interval": [
+                  "1/4",
+                  "1/2"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              },
+              {
+                "bounds": {
+                  "bernstein": [
+                    "-160353/136192",
+                    "-1082693/1089536"
+                  ],
+                  "critical_remainder": [
+                    "-303219/258400",
+                    "-1083571/1033600"
+                  ],
+                  "stationary_taylor": [
+                    "-62671373/52297728",
+                    "-28234621/26148864"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "-303219/258400",
+                  "-28234621/26148864"
+                ],
+                "exact_root": null,
+                "interval": [
+                  "1/2",
+                  "3/4"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "3/4",
+                  "97/128"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "97/128",
+                  "431/512"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "431/512",
+                  "6991/8192"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "6991/8192",
+                  "28640185/33554432"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": {
+                  "bernstein": [
+                    "-79957868184031823495038963970608309/86321935273141509324319501473284096",
+                    "-8566914448289117632845934663081265/9248778779265161713319946586423296"
+                  ],
+                  "critical_remainder": [
+                    "-2694835969083478587/2909325359281340416",
+                    "-269483590935894798379/290932535928134041600"
+                  ],
+                  "stationary_taylor": [
+                    "-3837977672833525380926704736495169047/4143452893110792447567336070717636608",
+                    "-239873604552095208543226281889373909/258965805819424527972958504419852288"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "-3837977672833525380926704736495169047/4143452893110792447567336070717636608",
+                  "-8566914448289117632845934663081265/9248778779265161713319946586423296"
+                ],
+                "exact_root": null,
+                "interval": [
+                  "28640185/33554432",
+                  "57280371/67108864"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "57280371/67108864",
+                  "13987/16384"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "13987/16384",
+                  "111/128"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "111/128",
+                  "1"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              }
+            ],
+            "partition_cells": 11,
+            "polynomial": [
+              "-1275/608",
+              "0",
+              "4675/456",
+              "0",
+              "-10725/304",
+              "0",
+              "7293/152",
+              "0",
+              "-93925/4256"
+            ],
+            "rational_critical_points": [],
+            "refinement_nodes": 10,
+            "sample_witness": {
+              "at": "114560741/134217728",
+              "coordinate": "x_squared",
+              "value": "-3837977672833525380926610940454377919/4143452893110792447567336070717636608"
+            },
+            "status": "enclosed",
+            "sturm_sequence": [
+              [
+                "-77/663",
+                "231/289",
+                "-693/425",
+                "1"
+              ],
+              [
+                "77/289",
+                "-462/425",
+                "1"
+              ],
+              [
+                "-5575/11271",
+                "1"
+              ],
+              [
+                "1"
+              ]
+            ],
+            "target_met": true,
+            "tolerance": "1/10000000000",
+            "working_interval": [
+              "0",
+              "1"
+            ],
+            "working_polynomial": [
+              "-1275/608",
+              "4675/456",
+              "-10725/304",
+              "7293/152",
+              "-93925/4256"
+            ]
+          }
+        },
+        "q_coefficients": [
+          "-1275/608",
+          "0",
+          "4675/456",
+          "0",
+          "-10725/304",
+          "0",
+          "7293/152",
+          "0",
+          "-93925/4256"
+        ],
+        "upper": "-8566914448289117632845934663081265/9248778779265161713319946586423296"
+      },
+      "upper": "-8566914448289117632845934663081265/9248778779265161713319946586423296"
+    },
+    "polynomial": {
+      "0,0,0": "-1275/608",
+      "0,0,2": "4675/456",
+      "0,0,4": "-10725/304",
+      "0,0,6": "7293/152",
+      "0,0,8": "-93925/4256"
+    },
+    "scope": "all_real_mean_zero_H1_on_unit_S2",
+    "source_proof": {
+      "angular_tail_cannot_improve_best_upper": true,
+      "angular_tail_lower": "2373/608",
+      "decimal_enclosure": [
+        "0.535164931169",
+        "0.535563515885"
+      ],
+      "eigenvalue_index_in_constrained_space": 1,
+      "exact_width": "1085050799868125278557660149424670699/2722258935367507707706996859454145691648",
+      "formal_assistant_checked": false,
+      "format": "wide_full_sphere_ground_v122",
+      "geometry": "unit_S2",
+      "lower": "27680292799672998515661032136739154475407/51722919771982646446432940329628768141312",
+      "mean_zero": true,
+      "omitted_azimuth_m_start": 2,
+      "potential_symmetry": "axisymmetric_polynomial_degree_at_most_24",
+      "q_coefficients": [
+        "-1275/608",
+        "0",
+        "4675/456",
+        "0",
+        "-10725/304",
+        "0",
+        "7293/152",
+        "0",
+        "-93925/4256"
+      ],
+      "range_proof": {
+        "format": "wide_potential_range_v117_v119",
+        "interval": [
+          "-1",
+          "1"
+        ],
+        "lower": "-1275/608",
+        "method": "sturm",
+        "proof": {
+          "negative": {
+            "budget_exhausted": false,
+            "coefficient_order": "ascending",
+            "constant_polynomial": false,
+            "coordinate": "x_squared",
+            "critical_remainder": [
+              "107/152",
+              "2453/1292",
+              "-7293/3800"
+            ],
+            "critical_square_free": [
+              "-77/663",
+              "231/289",
+              "-693/425",
+              "1"
+            ],
+            "derivative": [
+              "-4675/456",
+              "10725/152",
+              "-21879/152",
+              "93925/1064"
+            ],
+            "derivative_gcd": [
+              "1"
+            ],
+            "error_bound": "0",
+            "formal_assistant_checked": false,
+            "format": "exact_sturm_extrema_v1",
+            "interior_critical_count": 3,
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "isolation_complete": true,
+            "lower_source": {
+              "at": "0",
+              "coordinate": "x_squared",
+              "kind": "rational_coordinate",
+              "value": "1275/608"
+            },
+            "max_nodes": 64,
+            "maximum_lower": "1275/608",
+            "maximum_upper": "1275/608",
+            "partition": [
+              {
+                "bounds": {
+                  "bernstein": [
+                    "2975/3648",
+                    "1275/608"
+                  ],
+                  "critical_remainder": [
+                    "107/152",
+                    "6091/5168"
+                  ],
+                  "stationary_taylor": [
+                    "-425/912",
+                    "46331/24576"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "2975/3648",
+                  "6091/5168"
+                ],
+                "exact_root": null,
+                "interval": [
+                  "0",
+                  "1/2"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              },
+              {
+                "bounds": {
+                  "bernstein": [
+                    "1082693/1089536",
+                    "160353/136192"
+                  ],
+                  "critical_remainder": [
+                    "1083571/1033600",
+                    "303219/258400"
+                  ],
+                  "stationary_taylor": [
+                    "28234621/26148864",
+                    "62671373/52297728"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "28234621/26148864",
+                  "303219/258400"
+                ],
+                "exact_root": null,
+                "interval": [
+                  "1/2",
+                  "3/4"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              },
+              {
+                "bounds": {
+                  "bernstein": [
+                    "11239/12768",
+                    "484/399"
+                  ],
+                  "critical_remainder": [
+                    "5518/8075",
+                    "1083571/1033600"
+                  ],
+                  "stationary_taylor": [
+                    "505/798",
+                    "7806865/7471104"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "11239/12768",
+                  "7806865/7471104"
+                ],
+                "exact_root": null,
+                "interval": [
+                  "3/4",
+                  "1"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              }
+            ],
+            "partition_cells": 3,
+            "polynomial": [
+              "1275/608",
+              "0",
+              "-4675/456",
+              "0",
+              "10725/304",
+              "0",
+              "-7293/152",
+              "0",
+              "93925/4256"
+            ],
+            "rational_critical_points": [],
+            "refinement_nodes": 2,
+            "sample_witness": {
+              "at": "0",
+              "coordinate": "x_squared",
+              "value": "1275/608"
+            },
+            "status": "exact",
+            "sturm_sequence": [
+              [
+                "-77/663",
+                "231/289",
+                "-693/425",
+                "1"
+              ],
+              [
+                "77/289",
+                "-462/425",
+                "1"
+              ],
+              [
+                "-5575/11271",
+                "1"
+              ],
+              [
+                "1"
+              ]
+            ],
+            "target_met": true,
+            "tolerance": "1/10000000000",
+            "working_interval": [
+              "0",
+              "1"
+            ],
+            "working_polynomial": [
+              "1275/608",
+              "-4675/456",
+              "10725/304",
+              "-7293/152",
+              "93925/4256"
+            ]
+          },
+          "positive": {
+            "budget_exhausted": false,
+            "coefficient_order": "ascending",
+            "constant_polynomial": false,
+            "coordinate": "x_squared",
+            "critical_remainder": [
+              "-107/152",
+              "-2453/1292",
+              "7293/3800"
+            ],
+            "critical_square_free": [
+              "-77/663",
+              "231/289",
+              "-693/425",
+              "1"
+            ],
+            "derivative": [
+              "4675/456",
+              "-10725/152",
+              "21879/152",
+              "-93925/1064"
+            ],
+            "derivative_gcd": [
+              "1"
+            ],
+            "error_bound": "227137210737131323733/1381150964370264149189112023572545536",
+            "formal_assistant_checked": false,
+            "format": "exact_sturm_extrema_v1",
+            "interior_critical_count": 3,
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "isolation_complete": true,
+            "lower_source": {
+              "at": "114560741/134217728",
+              "coordinate": "x_squared",
+              "kind": "rational_coordinate",
+              "value": "-3837977672833525380926610940454377919/4143452893110792447567336070717636608"
+            },
+            "max_nodes": 64,
+            "maximum_lower": "-3837977672833525380926610940454377919/4143452893110792447567336070717636608",
+            "maximum_upper": "-8566914448289117632845934663081265/9248778779265161713319946586423296",
+            "partition": [
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "0",
+                  "1/4"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": {
+                  "bernstein": [
+                    "-239551/204288",
+                    "-1734233/1634304"
+                  ],
+                  "critical_remainder": [
+                    "-607769/516800",
+                    "-1094219/1033600"
+                  ],
+                  "stationary_taylor": [
+                    "-20556463/17432576",
+                    "-479669/458752"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "-239551/204288",
+                  "-1734233/1634304"
+                ],
+                "exact_root": null,
+                "interval": [
+                  "1/4",
+                  "1/2"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              },
+              {
+                "bounds": {
+                  "bernstein": [
+                    "-160353/136192",
+                    "-1082693/1089536"
+                  ],
+                  "critical_remainder": [
+                    "-303219/258400",
+                    "-1083571/1033600"
+                  ],
+                  "stationary_taylor": [
+                    "-62671373/52297728",
+                    "-28234621/26148864"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "-303219/258400",
+                  "-28234621/26148864"
+                ],
+                "exact_root": null,
+                "interval": [
+                  "1/2",
+                  "3/4"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "3/4",
+                  "97/128"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "97/128",
+                  "431/512"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "431/512",
+                  "6991/8192"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "6991/8192",
+                  "28640185/33554432"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": {
+                  "bernstein": [
+                    "-79957868184031823495038963970608309/86321935273141509324319501473284096",
+                    "-8566914448289117632845934663081265/9248778779265161713319946586423296"
+                  ],
+                  "critical_remainder": [
+                    "-2694835969083478587/2909325359281340416",
+                    "-269483590935894798379/290932535928134041600"
+                  ],
+                  "stationary_taylor": [
+                    "-3837977672833525380926704736495169047/4143452893110792447567336070717636608",
+                    "-239873604552095208543226281889373909/258965805819424527972958504419852288"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "-3837977672833525380926704736495169047/4143452893110792447567336070717636608",
+                  "-8566914448289117632845934663081265/9248778779265161713319946586423296"
+                ],
+                "exact_root": null,
+                "interval": [
+                  "28640185/33554432",
+                  "57280371/67108864"
+                ],
+                "kind": "isolated",
+                "root_count": 1
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "57280371/67108864",
+                  "13987/16384"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "13987/16384",
+                  "111/128"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              },
+              {
+                "bounds": null,
+                "critical_value_bounds": null,
+                "exact_root": null,
+                "interval": [
+                  "111/128",
+                  "1"
+                ],
+                "kind": "empty",
+                "root_count": 0
+              }
+            ],
+            "partition_cells": 11,
+            "polynomial": [
+              "-1275/608",
+              "0",
+              "4675/456",
+              "0",
+              "-10725/304",
+              "0",
+              "7293/152",
+              "0",
+              "-93925/4256"
+            ],
+            "rational_critical_points": [],
+            "refinement_nodes": 10,
+            "sample_witness": {
+              "at": "114560741/134217728",
+              "coordinate": "x_squared",
+              "value": "-3837977672833525380926610940454377919/4143452893110792447567336070717636608"
+            },
+            "status": "enclosed",
+            "sturm_sequence": [
+              [
+                "-77/663",
+                "231/289",
+                "-693/425",
+                "1"
+              ],
+              [
+                "77/289",
+                "-462/425",
+                "1"
+              ],
+              [
+                "-5575/11271",
+                "1"
+              ],
+              [
+                "1"
+              ]
+            ],
+            "target_met": true,
+            "tolerance": "1/10000000000",
+            "working_interval": [
+              "0",
+              "1"
+            ],
+            "working_polynomial": [
+              "-1275/608",
+              "4675/456",
+              "-10725/304",
+              "7293/152",
+              "-93925/4256"
+            ]
+          }
+        },
+        "q_coefficients": [
+          "-1275/608",
+          "0",
+          "4675/456",
+          "0",
+          "-10725/304",
+          "0",
+          "7293/152",
+          "0",
+          "-93925/4256"
+        ],
+        "upper": "-8566914448289117632845934663081265/9248778779265161713319946586423296"
+      },
+      "scope": "all_mean_zero_H1_functions_on_unit_S2",
+      "sectors": [
+        {
+          "azimuth_m": 0,
+          "decimal_enclosure": [
+            "0.907706320522",
+            "0.908685678508"
+          ],
+          "degree_start": 1,
+          "eigenvalue_index": 1,
+          "exact_width": "75982881688062502614672903977278967057/77584379657973969669649410494443152211968",
+          "formal_assistant_checked": false,
+          "format": "wide_sphere_sector_v121",
+          "geometry": "unit_S2",
+          "kernel_evidence": {
+            "A": [
+              [
+                "20/33",
+                "0",
+                "8/209",
+                "0"
+              ],
+              [
+                "0",
+                "5884/3135",
+                "0",
+                "136/1881"
+              ],
+              [
+                "8/209",
+                "0",
+                "122384/39501",
+                "0"
+              ],
+              [
+                "0",
+                "136/1881",
+                "0",
+                "2608/627"
+              ]
+            ],
+            "mass": [
+              "2/3",
+              "2/5",
+              "2/7",
+              "2/9"
+            ],
+            "tail_couplings": [
+              {
+                "column": [
+                  [
+                    2,
+                    "8/297"
+                  ],
+                  [
+                    0,
+                    "-8/627"
+                  ]
+                ],
+                "degree": 5,
+                "mass": "2/11"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "12808/464607"
+                  ],
+                  [
+                    1,
+                    "-376/9405"
+                  ]
+                ],
+                "degree": 6,
+                "mass": "2/13"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "-1528/59565"
+                  ],
+                  [
+                    0,
+                    "136/21945"
+                  ]
+                ],
+                "degree": 7,
+                "mass": "2/15"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "-9648/472549"
+                  ],
+                  [
+                    1,
+                    "13472/1250865"
+                  ]
+                ],
+                "degree": 8,
+                "mass": "2/17"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "5536/583737"
+                  ],
+                  [
+                    0,
+                    "-680/27797"
+                  ]
+                ],
+                "degree": 9,
+                "mass": "2/19"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "36880/4475317"
+                  ],
+                  [
+                    1,
+                    "-3400/194579"
+                  ]
+                ],
+                "degree": 10,
+                "mass": "2/21"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "-17000/1220541"
+                  ]
+                ],
+                "degree": 11,
+                "mass": "2/23"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "-680/58121"
+                  ]
+                ],
+                "degree": 12,
+                "mass": "2/25"
+              }
+            ]
+          },
+          "lower": "70423831789364209678458860757619021675247/77584379657973969669649410494443152211968",
+          "lower_inertia": [
+            0,
+            0,
+            4
+          ],
+          "mean_zero": true,
+          "modes": 4,
+          "projection": "remove_l0",
+          "q_coefficients": [
+            "-1275/608",
+            "0",
+            "4675/456",
+            "0",
+            "-10725/304",
+            "0",
+            "7293/152",
+            "0",
+            "-93925/4256"
+          ],
+          "radial_tail_lower": "16965/608",
+          "radial_tail_start": 5,
+          "range_proof": {
+            "format": "wide_potential_range_v117_v119",
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "lower": "-1275/608",
+            "method": "sturm",
+            "proof": {
+              "negative": {
+                "budget_exhausted": false,
+                "coefficient_order": "ascending",
+                "constant_polynomial": false,
+                "coordinate": "x_squared",
+                "critical_remainder": [
+                  "107/152",
+                  "2453/1292",
+                  "-7293/3800"
+                ],
+                "critical_square_free": [
+                  "-77/663",
+                  "231/289",
+                  "-693/425",
+                  "1"
+                ],
+                "derivative": [
+                  "-4675/456",
+                  "10725/152",
+                  "-21879/152",
+                  "93925/1064"
+                ],
+                "derivative_gcd": [
+                  "1"
+                ],
+                "error_bound": "0",
+                "formal_assistant_checked": false,
+                "format": "exact_sturm_extrema_v1",
+                "interior_critical_count": 3,
+                "interval": [
+                  "-1",
+                  "1"
+                ],
+                "isolation_complete": true,
+                "lower_source": {
+                  "at": "0",
+                  "coordinate": "x_squared",
+                  "kind": "rational_coordinate",
+                  "value": "1275/608"
+                },
+                "max_nodes": 64,
+                "maximum_lower": "1275/608",
+                "maximum_upper": "1275/608",
+                "partition": [
+                  {
+                    "bounds": {
+                      "bernstein": [
+                        "2975/3648",
+                        "1275/608"
+                      ],
+                      "critical_remainder": [
+                        "107/152",
+                        "6091/5168"
+                      ],
+                      "stationary_taylor": [
+                        "-425/912",
+                        "46331/24576"
+                      ]
+                    },
+                    "critical_value_bounds": [
+                      "2975/3648",
+                      "6091/5168"
+                    ],
+                    "exact_root": null,
+                    "interval": [
+                      "0",
+                      "1/2"
+                    ],
+                    "kind": "isolated",
+                    "root_count": 1
+                  },
+                  {
+                    "bounds": {
+                      "bernstein": [
+                        "1082693/1089536",
+                        "160353/136192"
+                      ],
+                      "critical_remainder": [
+                        "1083571/1033600",
+                        "303219/258400"
+                      ],
+                      "stationary_taylor": [
+                        "28234621/26148864",
+                        "62671373/52297728"
+                      ]
+                    },
+                    "critical_value_bounds": [
+                      "28234621/26148864",
+                      "303219/258400"
+                    ],
+                    "exact_root": null,
+                    "interval": [
+                      "1/2",
+                      "3/4"
+                    ],
+                    "kind": "isolated",
+                    "root_count": 1
+                  },
+                  {
+                    "bounds": {
+                      "bernstein": [
+                        "11239/12768",
+                        "484/399"
+                      ],
+                      "critical_remainder": [
+                        "5518/8075",
+                        "1083571/1033600"
+                      ],
+                      "stationary_taylor": [
+                        "505/798",
+                        "7806865/7471104"
+                      ]
+                    },
+                    "critical_value_bounds": [
+                      "11239/12768",
+                      "7806865/7471104"
+                    ],
+                    "exact_root": null,
+                    "interval": [
+                      "3/4",
+                      "1"
+                    ],
+                    "kind": "isolated",
+                    "root_count": 1
+                  }
+                ],
+                "partition_cells": 3,
+                "polynomial": [
+                  "1275/608",
+                  "0",
+                  "-4675/456",
+                  "0",
+                  "10725/304",
+                  "0",
+                  "-7293/152",
+                  "0",
+                  "93925/4256"
+                ],
+                "rational_critical_points": [],
+                "refinement_nodes": 2,
+                "sample_witness": {
+                  "at": "0",
+                  "coordinate": "x_squared",
+                  "value": "1275/608"
+                },
+                "status": "exact",
+                "sturm_sequence": [
+                  [
+                    "-77/663",
+                    "231/289",
+                    "-693/425",
+                    "1"
+                  ],
+                  [
+                    "77/289",
+                    "-462/425",
+                    "1"
+                  ],
+                  [
+                    "-5575/11271",
+                    "1"
+                  ],
+                  [
+                    "1"
+                  ]
+                ],
+                "target_met": true,
+                "tolerance": "1/10000000000",
+                "working_interval": [
+                  "0",
+                  "1"
+                ],
+                "working_polynomial": [
+                  "1275/608",
+                  "-4675/456",
+                  "10725/304",
+                  "-7293/152",
+                  "93925/4256"
+                ]
+              },
+              "positive": {
+                "budget_exhausted": false,
+                "coefficient_order": "ascending",
+                "constant_polynomial": false,
+                "coordinate": "x_squared",
+                "critical_remainder": [
+                  "-107/152",
+                  "-2453/1292",
+                  "7293/3800"
+                ],
+                "critical_square_free": [
+                  "-77/663",
+                  "231/289",
+                  "-693/425",
+                  "1"
+                ],
+                "derivative": [
+                  "4675/456",
+                  "-10725/152",
+                  "21879/152",
+                  "-93925/1064"
+                ],
+                "derivative_gcd": [
+                  "1"
+                ],
+                "error_bound": "227137210737131323733/1381150964370264149189112023572545536",
+                "formal_assistant_checked": false,
+                "format": "exact_sturm_extrema_v1",
+                "interior_critical_count": 3,
+                "interval": [
+                  "-1",
+                  "1"
+                ],
+                "isolation_complete": true,
+                "lower_source": {
+                  "at": "114560741/134217728",
+                  "coordinate": "x_squared",
+                  "kind": "rational_coordinate",
+                  "value": "-3837977672833525380926610940454377919/4143452893110792447567336070717636608"
+                },
+                "max_nodes": 64,
+                "maximum_lower": "-3837977672833525380926610940454377919/4143452893110792447567336070717636608",
+                "maximum_upper": "-8566914448289117632845934663081265/9248778779265161713319946586423296",
+                "partition": [
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "0",
+                      "1/4"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": {
+                      "bernstein": [
+                        "-239551/204288",
+                        "-1734233/1634304"
+                      ],
+                      "critical_remainder": [
+                        "-607769/516800",
+                        "-1094219/1033600"
+                      ],
+                      "stationary_taylor": [
+                        "-20556463/17432576",
+                        "-479669/458752"
+                      ]
+                    },
+                    "critical_value_bounds": [
+                      "-239551/204288",
+                      "-1734233/1634304"
+                    ],
+                    "exact_root": null,
+                    "interval": [
+                      "1/4",
+                      "1/2"
+                    ],
+                    "kind": "isolated",
+                    "root_count": 1
+                  },
+                  {
+                    "bounds": {
+                      "bernstein": [
+                        "-160353/136192",
+                        "-1082693/1089536"
+                      ],
+                      "critical_remainder": [
+                        "-303219/258400",
+                        "-1083571/1033600"
+                      ],
+                      "stationary_taylor": [
+                        "-62671373/52297728",
+                        "-28234621/26148864"
+                      ]
+                    },
+                    "critical_value_bounds": [
+                      "-303219/258400",
+                      "-28234621/26148864"
+                    ],
+                    "exact_root": null,
+                    "interval": [
+                      "1/2",
+                      "3/4"
+                    ],
+                    "kind": "isolated",
+                    "root_count": 1
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "3/4",
+                      "97/128"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "97/128",
+                      "431/512"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "431/512",
+                      "6991/8192"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "6991/8192",
+                      "28640185/33554432"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": {
+                      "bernstein": [
+                        "-79957868184031823495038963970608309/86321935273141509324319501473284096",
+                        "-8566914448289117632845934663081265/9248778779265161713319946586423296"
+                      ],
+                      "critical_remainder": [
+                        "-2694835969083478587/2909325359281340416",
+                        "-269483590935894798379/290932535928134041600"
+                      ],
+                      "stationary_taylor": [
+                        "-3837977672833525380926704736495169047/4143452893110792447567336070717636608",
+                        "-239873604552095208543226281889373909/258965805819424527972958504419852288"
+                      ]
+                    },
+                    "critical_value_bounds": [
+                      "-3837977672833525380926704736495169047/4143452893110792447567336070717636608",
+                      "-8566914448289117632845934663081265/9248778779265161713319946586423296"
+                    ],
+                    "exact_root": null,
+                    "interval": [
+                      "28640185/33554432",
+                      "57280371/67108864"
+                    ],
+                    "kind": "isolated",
+                    "root_count": 1
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "57280371/67108864",
+                      "13987/16384"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "13987/16384",
+                      "111/128"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "111/128",
+                      "1"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  }
+                ],
+                "partition_cells": 11,
+                "polynomial": [
+                  "-1275/608",
+                  "0",
+                  "4675/456",
+                  "0",
+                  "-10725/304",
+                  "0",
+                  "7293/152",
+                  "0",
+                  "-93925/4256"
+                ],
+                "rational_critical_points": [],
+                "refinement_nodes": 10,
+                "sample_witness": {
+                  "at": "114560741/134217728",
+                  "coordinate": "x_squared",
+                  "value": "-3837977672833525380926610940454377919/4143452893110792447567336070717636608"
+                },
+                "status": "enclosed",
+                "sturm_sequence": [
+                  [
+                    "-77/663",
+                    "231/289",
+                    "-693/425",
+                    "1"
+                  ],
+                  [
+                    "77/289",
+                    "-462/425",
+                    "1"
+                  ],
+                  [
+                    "-5575/11271",
+                    "1"
+                  ],
+                  [
+                    "1"
+                  ]
+                ],
+                "target_met": true,
+                "tolerance": "1/10000000000",
+                "working_interval": [
+                  "0",
+                  "1"
+                ],
+                "working_polynomial": [
+                  "-1275/608",
+                  "4675/456",
+                  "-10725/304",
+                  "7293/152",
+                  "-93925/4256"
+                ]
+              }
+            },
+            "q_coefficients": [
+              "-1275/608",
+              "0",
+              "4675/456",
+              "0",
+              "-10725/304",
+              "0",
+              "7293/152",
+              "0",
+              "-93925/4256"
+            ],
+            "upper": "-8566914448289117632845934663081265/9248778779265161713319946586423296"
+          },
+          "scope": "single_azimuth_sector_only",
+          "upper": "34423737632349742275914811358201318673/37882997879870102377758501217989820416",
+          "upper_inertia": [
+            1,
+            0,
+            3
+          ],
+          "upper_kind": "upper_tail"
+        },
+        {
+          "azimuth_m": 1,
+          "decimal_enclosure": [
+            "0.535164931169",
+            "0.535563515885"
+          ],
+          "degree_start": 1,
+          "eigenvalue_index": 1,
+          "exact_width": "1085050799868125278557660149424670699/2722258935367507707706996859454145691648",
+          "formal_assistant_checked": false,
+          "format": "wide_sphere_sector_v121",
+          "geometry": "unit_S2",
+          "kernel_evidence": {
+            "A": [
+              [
+                "8/11",
+                "0",
+                "128/209",
+                "0"
+              ],
+              [
+                "0",
+                "12168/1045",
+                "0",
+                "640/1881"
+              ],
+              [
+                "128/209",
+                "0",
+                "14624/399",
+                "0"
+              ],
+              [
+                "0",
+                "640/1881",
+                "0",
+                "472160/5643"
+              ]
+            ],
+            "mass": [
+              "4/3",
+              "12/5",
+              "24/7",
+              "40/9"
+            ],
+            "tail_couplings": [
+              {
+                "column": [
+                  [
+                    2,
+                    "640/627"
+                  ],
+                  [
+                    0,
+                    "-320/627"
+                  ]
+                ],
+                "degree": 5,
+                "mass": "60/11"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "467200/464607"
+                  ],
+                  [
+                    1,
+                    "-192/1045"
+                  ]
+                ],
+                "degree": 6,
+                "mass": "84/13"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "-2624/5415"
+                  ],
+                  [
+                    0,
+                    "4352/9405"
+                  ]
+                ],
+                "degree": 7,
+                "mass": "112/15"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "-308160/472549"
+                  ],
+                  [
+                    1,
+                    "54144/138985"
+                  ]
+                ],
+                "degree": 8,
+                "mass": "144/17"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "82560/194579"
+                  ],
+                  [
+                    0,
+                    "-6800/27797"
+                  ]
+                ],
+                "degree": 9,
+                "mass": "180/19"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "578560/1220541"
+                  ],
+                  [
+                    1,
+                    "-6800/17689"
+                  ]
+                ],
+                "degree": 10,
+                "mass": "220/21"
+              },
+              {
+                "column": [
+                  [
+                    2,
+                    "-204000/406847"
+                  ]
+                ],
+                "degree": 11,
+                "mass": "264/23"
+              },
+              {
+                "column": [
+                  [
+                    3,
+                    "-35360/58121"
+                  ]
+                ],
+                "degree": 12,
+                "mass": "312/25"
+              }
+            ]
+          },
+          "lower": "27680292799672998515661032136739154475407/51722919771982646446432940329628768141312",
+          "lower_inertia": [
+            0,
+            0,
+            4
+          ],
+          "mean_zero": true,
+          "modes": 4,
+          "projection": "none",
+          "q_coefficients": [
+            "-1275/608",
+            "0",
+            "4675/456",
+            "0",
+            "-10725/304",
+            "0",
+            "7293/152",
+            "0",
+            "-93925/4256"
+          ],
+          "radial_tail_lower": "16965/608",
+          "radial_tail_start": 5,
+          "range_proof": {
+            "format": "wide_potential_range_v117_v119",
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "lower": "-1275/608",
+            "method": "sturm",
+            "proof": {
+              "negative": {
+                "budget_exhausted": false,
+                "coefficient_order": "ascending",
+                "constant_polynomial": false,
+                "coordinate": "x_squared",
+                "critical_remainder": [
+                  "107/152",
+                  "2453/1292",
+                  "-7293/3800"
+                ],
+                "critical_square_free": [
+                  "-77/663",
+                  "231/289",
+                  "-693/425",
+                  "1"
+                ],
+                "derivative": [
+                  "-4675/456",
+                  "10725/152",
+                  "-21879/152",
+                  "93925/1064"
+                ],
+                "derivative_gcd": [
+                  "1"
+                ],
+                "error_bound": "0",
+                "formal_assistant_checked": false,
+                "format": "exact_sturm_extrema_v1",
+                "interior_critical_count": 3,
+                "interval": [
+                  "-1",
+                  "1"
+                ],
+                "isolation_complete": true,
+                "lower_source": {
+                  "at": "0",
+                  "coordinate": "x_squared",
+                  "kind": "rational_coordinate",
+                  "value": "1275/608"
+                },
+                "max_nodes": 64,
+                "maximum_lower": "1275/608",
+                "maximum_upper": "1275/608",
+                "partition": [
+                  {
+                    "bounds": {
+                      "bernstein": [
+                        "2975/3648",
+                        "1275/608"
+                      ],
+                      "critical_remainder": [
+                        "107/152",
+                        "6091/5168"
+                      ],
+                      "stationary_taylor": [
+                        "-425/912",
+                        "46331/24576"
+                      ]
+                    },
+                    "critical_value_bounds": [
+                      "2975/3648",
+                      "6091/5168"
+                    ],
+                    "exact_root": null,
+                    "interval": [
+                      "0",
+                      "1/2"
+                    ],
+                    "kind": "isolated",
+                    "root_count": 1
+                  },
+                  {
+                    "bounds": {
+                      "bernstein": [
+                        "1082693/1089536",
+                        "160353/136192"
+                      ],
+                      "critical_remainder": [
+                        "1083571/1033600",
+                        "303219/258400"
+                      ],
+                      "stationary_taylor": [
+                        "28234621/26148864",
+                        "62671373/52297728"
+                      ]
+                    },
+                    "critical_value_bounds": [
+                      "28234621/26148864",
+                      "303219/258400"
+                    ],
+                    "exact_root": null,
+                    "interval": [
+                      "1/2",
+                      "3/4"
+                    ],
+                    "kind": "isolated",
+                    "root_count": 1
+                  },
+                  {
+                    "bounds": {
+                      "bernstein": [
+                        "11239/12768",
+                        "484/399"
+                      ],
+                      "critical_remainder": [
+                        "5518/8075",
+                        "1083571/1033600"
+                      ],
+                      "stationary_taylor": [
+                        "505/798",
+                        "7806865/7471104"
+                      ]
+                    },
+                    "critical_value_bounds": [
+                      "11239/12768",
+                      "7806865/7471104"
+                    ],
+                    "exact_root": null,
+                    "interval": [
+                      "3/4",
+                      "1"
+                    ],
+                    "kind": "isolated",
+                    "root_count": 1
+                  }
+                ],
+                "partition_cells": 3,
+                "polynomial": [
+                  "1275/608",
+                  "0",
+                  "-4675/456",
+                  "0",
+                  "10725/304",
+                  "0",
+                  "-7293/152",
+                  "0",
+                  "93925/4256"
+                ],
+                "rational_critical_points": [],
+                "refinement_nodes": 2,
+                "sample_witness": {
+                  "at": "0",
+                  "coordinate": "x_squared",
+                  "value": "1275/608"
+                },
+                "status": "exact",
+                "sturm_sequence": [
+                  [
+                    "-77/663",
+                    "231/289",
+                    "-693/425",
+                    "1"
+                  ],
+                  [
+                    "77/289",
+                    "-462/425",
+                    "1"
+                  ],
+                  [
+                    "-5575/11271",
+                    "1"
+                  ],
+                  [
+                    "1"
+                  ]
+                ],
+                "target_met": true,
+                "tolerance": "1/10000000000",
+                "working_interval": [
+                  "0",
+                  "1"
+                ],
+                "working_polynomial": [
+                  "1275/608",
+                  "-4675/456",
+                  "10725/304",
+                  "-7293/152",
+                  "93925/4256"
+                ]
+              },
+              "positive": {
+                "budget_exhausted": false,
+                "coefficient_order": "ascending",
+                "constant_polynomial": false,
+                "coordinate": "x_squared",
+                "critical_remainder": [
+                  "-107/152",
+                  "-2453/1292",
+                  "7293/3800"
+                ],
+                "critical_square_free": [
+                  "-77/663",
+                  "231/289",
+                  "-693/425",
+                  "1"
+                ],
+                "derivative": [
+                  "4675/456",
+                  "-10725/152",
+                  "21879/152",
+                  "-93925/1064"
+                ],
+                "derivative_gcd": [
+                  "1"
+                ],
+                "error_bound": "227137210737131323733/1381150964370264149189112023572545536",
+                "formal_assistant_checked": false,
+                "format": "exact_sturm_extrema_v1",
+                "interior_critical_count": 3,
+                "interval": [
+                  "-1",
+                  "1"
+                ],
+                "isolation_complete": true,
+                "lower_source": {
+                  "at": "114560741/134217728",
+                  "coordinate": "x_squared",
+                  "kind": "rational_coordinate",
+                  "value": "-3837977672833525380926610940454377919/4143452893110792447567336070717636608"
+                },
+                "max_nodes": 64,
+                "maximum_lower": "-3837977672833525380926610940454377919/4143452893110792447567336070717636608",
+                "maximum_upper": "-8566914448289117632845934663081265/9248778779265161713319946586423296",
+                "partition": [
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "0",
+                      "1/4"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": {
+                      "bernstein": [
+                        "-239551/204288",
+                        "-1734233/1634304"
+                      ],
+                      "critical_remainder": [
+                        "-607769/516800",
+                        "-1094219/1033600"
+                      ],
+                      "stationary_taylor": [
+                        "-20556463/17432576",
+                        "-479669/458752"
+                      ]
+                    },
+                    "critical_value_bounds": [
+                      "-239551/204288",
+                      "-1734233/1634304"
+                    ],
+                    "exact_root": null,
+                    "interval": [
+                      "1/4",
+                      "1/2"
+                    ],
+                    "kind": "isolated",
+                    "root_count": 1
+                  },
+                  {
+                    "bounds": {
+                      "bernstein": [
+                        "-160353/136192",
+                        "-1082693/1089536"
+                      ],
+                      "critical_remainder": [
+                        "-303219/258400",
+                        "-1083571/1033600"
+                      ],
+                      "stationary_taylor": [
+                        "-62671373/52297728",
+                        "-28234621/26148864"
+                      ]
+                    },
+                    "critical_value_bounds": [
+                      "-303219/258400",
+                      "-28234621/26148864"
+                    ],
+                    "exact_root": null,
+                    "interval": [
+                      "1/2",
+                      "3/4"
+                    ],
+                    "kind": "isolated",
+                    "root_count": 1
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "3/4",
+                      "97/128"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "97/128",
+                      "431/512"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "431/512",
+                      "6991/8192"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "6991/8192",
+                      "28640185/33554432"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": {
+                      "bernstein": [
+                        "-79957868184031823495038963970608309/86321935273141509324319501473284096",
+                        "-8566914448289117632845934663081265/9248778779265161713319946586423296"
+                      ],
+                      "critical_remainder": [
+                        "-2694835969083478587/2909325359281340416",
+                        "-269483590935894798379/290932535928134041600"
+                      ],
+                      "stationary_taylor": [
+                        "-3837977672833525380926704736495169047/4143452893110792447567336070717636608",
+                        "-239873604552095208543226281889373909/258965805819424527972958504419852288"
+                      ]
+                    },
+                    "critical_value_bounds": [
+                      "-3837977672833525380926704736495169047/4143452893110792447567336070717636608",
+                      "-8566914448289117632845934663081265/9248778779265161713319946586423296"
+                    ],
+                    "exact_root": null,
+                    "interval": [
+                      "28640185/33554432",
+                      "57280371/67108864"
+                    ],
+                    "kind": "isolated",
+                    "root_count": 1
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "57280371/67108864",
+                      "13987/16384"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "13987/16384",
+                      "111/128"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  },
+                  {
+                    "bounds": null,
+                    "critical_value_bounds": null,
+                    "exact_root": null,
+                    "interval": [
+                      "111/128",
+                      "1"
+                    ],
+                    "kind": "empty",
+                    "root_count": 0
+                  }
+                ],
+                "partition_cells": 11,
+                "polynomial": [
+                  "-1275/608",
+                  "0",
+                  "4675/456",
+                  "0",
+                  "-10725/304",
+                  "0",
+                  "7293/152",
+                  "0",
+                  "-93925/4256"
+                ],
+                "rational_critical_points": [],
+                "refinement_nodes": 10,
+                "sample_witness": {
+                  "at": "114560741/134217728",
+                  "coordinate": "x_squared",
+                  "value": "-3837977672833525380926610940454377919/4143452893110792447567336070717636608"
+                },
+                "status": "enclosed",
+                "sturm_sequence": [
+                  [
+                    "-77/663",
+                    "231/289",
+                    "-693/425",
+                    "1"
+                  ],
+                  [
+                    "77/289",
+                    "-462/425",
+                    "1"
+                  ],
+                  [
+                    "-5575/11271",
+                    "1"
+                  ],
+                  [
+                    "1"
+                  ]
+                ],
+                "target_met": true,
+                "tolerance": "1/10000000000",
+                "working_interval": [
+                  "0",
+                  "1"
+                ],
+                "working_polynomial": [
+                  "-1275/608",
+                  "4675/456",
+                  "-10725/304",
+                  "7293/152",
+                  "-93925/4256"
+                ]
+              }
+            },
+            "q_coefficients": [
+              "-1275/608",
+              "0",
+              "4675/456",
+              "0",
+              "-10725/304",
+              "0",
+              "7293/152",
+              "0",
+              "-93925/4256"
+            ],
+            "upper": "-8566914448289117632845934663081265/9248778779265161713319946586423296"
+          },
+          "scope": "single_azimuth_sector_only",
+          "upper": "6762917178923460179676178632709527153/12627665959956700792586167072663273472",
+          "upper_inertia": [
+            1,
+            0,
+            3
+          ],
+          "upper_kind": "upper_tail"
+        }
+      ],
+      "status": "certified_target_met",
+      "tolerance": "1/1000",
+      "upper": "6762917178923460179676178632709527153/12627665959956700792586167072663273472"
+    },
+    "upper": "6762917178923460179676178632709527153/12627665959956700792586167072663273472"
+  },
+  "status": "certified_open",
+  "upper": "55723436515312887110732206886107366843502534818831/31755741821549703381270448608191051133920785465344"
+}

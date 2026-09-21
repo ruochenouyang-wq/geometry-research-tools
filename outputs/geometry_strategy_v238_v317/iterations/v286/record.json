@@ -1,0 +1,28 @@
+{
+  "version": 286,
+  "recorded_at": "2026-09-18T18:43:54.840800+00:00",
+  "hypothesis": "A small comparison of applicable methods avoids blindly enlarging one representation",
+  "change": "Probe both singular and direct routes, keep route-specific gain histories, then continue the narrowest verified branch with other branches retained",
+  "source_sha256": {
+    "research_controller.py": "0592714864a6614d3d8f44a328259f2663adda046b614b949ab3a9dbbfb865f3",
+    "test_research_controller.py": "505ba911f8f4a761a8c08d62d3299916bcdc147d68dfadb554de5d8020e81fd2"
+  },
+  "validation": {
+    "tests": 14,
+    "passed": true
+  },
+  "comparison": {
+    "real_singular_three_action_sequence": [
+      "singular",
+      "spectrum",
+      "singular"
+    ],
+    "decision_basis": "replayed interval widths; work proxy breaks ties"
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Greedy observed-width policy is not globally optimal or a statistical bandit guarantee",
+    "Probe calls may cost more on easy tasks"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

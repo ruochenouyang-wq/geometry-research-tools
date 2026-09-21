@@ -1,0 +1,101 @@
+[
+  {
+    "classification": "within_family_parameter_transfer_constant",
+    "id": "H01",
+    "independent_exact_value": "-3/7",
+    "task": {
+      "function": {
+        "amplitude": "0",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "-3/7",
+        "profile": "step"
+      },
+      "kind": "spectrum",
+      "mean_zero": false,
+      "tolerance": "1/1000"
+    }
+  },
+  {
+    "classification": "within_family_parameter_transfer_constant",
+    "id": "H02",
+    "independent_exact_value": "11/7",
+    "task": {
+      "function": {
+        "amplitude": "0",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "-3/7",
+        "profile": "step"
+      },
+      "kind": "spectrum",
+      "mean_zero": true,
+      "tolerance": "1/1000"
+    }
+  },
+  {
+    "classification": "within_family_parameter_transfer_step",
+    "id": "H03",
+    "task": {
+      "function": {
+        "amplitude": "3/7",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "kind": "approximation",
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "classification": "within_family_parameter_transfer_step",
+    "id": "H04",
+    "task": {
+      "function": {
+        "amplitude": "2/7",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "kind": "spectrum",
+      "mean_zero": true,
+      "tolerance": "1/1000"
+    }
+  },
+  {
+    "classification": "within_family_parameter_transfer_abs_power",
+    "id": "H05",
+    "task": {
+      "function": {
+        "amplitude": "-1/6",
+        "axis": 2,
+        "exponent": "1/5",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "spectrum",
+      "mean_zero": true,
+      "tolerance": "1/1000"
+    }
+  },
+  {
+    "classification": "within_family_parameter_transfer_abs_power",
+    "id": "H06",
+    "task": {
+      "function": {
+        "amplitude": "-1/8",
+        "axis": 2,
+        "exponent": "-1/7",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "spectrum",
+      "mean_zero": true,
+      "tolerance": "1/1000"
+    }
+  }
+]

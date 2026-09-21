@@ -1,0 +1,77 @@
+{
+  "algorithm_version": 10,
+  "route": "spectral",
+  "status": "target_met",
+  "tolerance": "1/10000000000",
+  "max_modes": 28,
+  "parity_blocks": false,
+  "certificate": {
+    "method": "modewise_schur_v3",
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "q_coefficients": [
+      "0",
+      "1/10000",
+      "-150"
+    ],
+    "modes": 22,
+    "eigenvalue_index": 2,
+    "tail_policy": "sandwich",
+    "range_proof": {
+      "kind": "quadratic_range_v5",
+      "lower": "-1500001/10000",
+      "upper": "1/60000000000"
+    },
+    "upper_kind": "upper_tail",
+    "tail_lower": "3559999/10000",
+    "lower_inertia": [
+      1,
+      0,
+      21
+    ],
+    "upper_inertia": [
+      2,
+      0,
+      20
+    ],
+    "formal_assistant_checked": false,
+    "lower": "-43474454747374950218023/343597383680000000000",
+    "upper": "-10868613686842656488463/85899345920000000000",
+    "exact_width": "4324264171/343597383680000000000",
+    "decimal_enclosure": [
+      "-126.527316016655",
+      "-126.527316016641"
+    ]
+  },
+  "attempts": [
+    {
+      "modes": 4,
+      "exact_width": "6666777296172958030523/171798691840000000000",
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.001428792000000012
+    },
+    {
+      "modes": 6,
+      "exact_width": "148547626014750857331/21474836480000000000",
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.002274416999999973
+    },
+    {
+      "modes": 14,
+      "exact_width": "2077322528819949/85899345920000000000",
+      "path": "tail_bound_limited",
+      "exact_count_calls": 6,
+      "seconds": 0.008675792000000015
+    },
+    {
+      "modes": 22,
+      "exact_width": "4324264171/343597383680000000000",
+      "path": "guided",
+      "exact_count_calls": 4,
+      "seconds": 0.016161209000000065
+    }
+  ],
+  "seconds": 0.040972457999999934
+}

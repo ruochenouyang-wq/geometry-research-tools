@@ -1,0 +1,243 @@
+{
+  "all_real": true,
+  "amplitude_box": [
+    "-6",
+    "6"
+  ],
+  "certified_reduced_lower": "-14309/151200",
+  "certified_reduced_upper": "1991/27000",
+  "claim": "lambda_1(-Delta+a*p(t)) >= a*mean(p)-coefficient*a^2",
+  "coefficient": "1/6",
+  "correctors": [
+    [
+      "0"
+    ],
+    [
+      "0",
+      "-1/2"
+    ],
+    [
+      "0",
+      "0",
+      "-1/24"
+    ],
+    [
+      "0",
+      "1/48",
+      "0",
+      "-1/144"
+    ],
+    [
+      "0",
+      "0",
+      "23/4320",
+      "0",
+      "-1/720"
+    ]
+  ],
+  "direction": [
+    "0",
+    "1"
+  ],
+  "energy_series": [
+    "0",
+    "0",
+    "-1/6",
+    "0",
+    "11/1080"
+  ],
+  "extracted_amplitude_power": 4,
+  "failure_witness": {
+    "amplitude": "6",
+    "meaning": "This local-energy ansatz fails; this is not a spectral counterexample.",
+    "reduced_value": "-47/8640",
+    "residual_value": "-141/20",
+    "t": "0"
+  },
+  "formal_assistant_checked": false,
+  "leaf_count": 1,
+  "max_leaves": 256,
+  "method": "parameter_poisson_tensor_bernstein_v1",
+  "order": 4,
+  "proof_amplitude_box": [
+    "0",
+    "6"
+  ],
+  "reduced_residual": [
+    [
+      0,
+      0,
+      "11/1080"
+    ],
+    [
+      1,
+      1,
+      "61/4320"
+    ],
+    [
+      1,
+      3,
+      "-5/216"
+    ],
+    [
+      1,
+      5,
+      "13/1440"
+    ],
+    [
+      2,
+      0,
+      "-1/2304"
+    ],
+    [
+      2,
+      2,
+      "319/103680"
+    ],
+    [
+      2,
+      4,
+      "-83/20736"
+    ],
+    [
+      2,
+      6,
+      "47/34560"
+    ],
+    [
+      3,
+      1,
+      "-23/51840"
+    ],
+    [
+      3,
+      3,
+      "29/25920"
+    ],
+    [
+      3,
+      5,
+      "-47/51840"
+    ],
+    [
+      3,
+      7,
+      "1/4320"
+    ],
+    [
+      4,
+      2,
+      "-529/4665600"
+    ],
+    [
+      4,
+      4,
+      "1081/4665600"
+    ],
+    [
+      4,
+      6,
+      "-29/194400"
+    ],
+    [
+      4,
+      8,
+      "1/32400"
+    ]
+  ],
+  "reflection_used": true,
+  "requested_symmetry": true,
+  "residual": [
+    [
+      4,
+      0,
+      "11/1080"
+    ],
+    [
+      5,
+      1,
+      "61/4320"
+    ],
+    [
+      5,
+      3,
+      "-5/216"
+    ],
+    [
+      5,
+      5,
+      "13/1440"
+    ],
+    [
+      6,
+      0,
+      "-1/2304"
+    ],
+    [
+      6,
+      2,
+      "319/103680"
+    ],
+    [
+      6,
+      4,
+      "-83/20736"
+    ],
+    [
+      6,
+      6,
+      "47/34560"
+    ],
+    [
+      7,
+      1,
+      "-23/51840"
+    ],
+    [
+      7,
+      3,
+      "29/25920"
+    ],
+    [
+      7,
+      5,
+      "-47/51840"
+    ],
+    [
+      7,
+      7,
+      "1/4320"
+    ],
+    [
+      8,
+      2,
+      "-529/4665600"
+    ],
+    [
+      8,
+      4,
+      "1081/4665600"
+    ],
+    [
+      8,
+      6,
+      "-29/194400"
+    ],
+    [
+      8,
+      8,
+      "1/32400"
+    ]
+  ],
+  "scope": "full unit sphere; all real amplitudes",
+  "status": "ansatz_obstruction",
+  "tail": {
+    "centered_potential_abs_upper": "1",
+    "radius": "6",
+    "rule": "lambda_1-a*mean(p) >= -B*abs(a); c*abs(a)>=B outside radius"
+  },
+  "tree": {
+    "lower": "-14309/151200",
+    "upper": "1991/27000"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "version": 297,
+  "recorded_at": "2026-09-18T18:47:04.850560+00:00",
+  "hypothesis": "Reusable proofs must remain bound to the caller target and reject unsupported conversions or malformed proof graphs.",
+  "change": "Add expected function/space/accuracy checks, replay tree limits, cycle refusal, trusted extension callback contract, and constant shortcut retaining the original profile.",
+  "source_sha256": {
+    "proof_transport.py": "f5868e18797af42a97407673975145c51426933b5eb04ef586aa1efb7ecf1fff",
+    "test_proof_transport.py": "451a05670e5014b0ee4091f224fc1474882f81cf093cf6d9b7cd09ab053329ca"
+  },
+  "validation": {
+    "tests_passed": 14,
+    "rejected_cases": [
+      "Tampered source endpoints",
+      "Unknown transform parameters",
+      "Wrong coordinate axis",
+      "Wrong mean-zero space",
+      "Accuracy target below certified bound",
+      "L2 evidence used as a spectral premise",
+      "Potential scaling passed as spectral scaling",
+      "Cyclic or oversized source list",
+      "Unverified external source format"
+    ]
+  },
+  "comparison": {
+    "before": "Correct transport could still be checked without matching the intended request; constant convenience API used step encoding.",
+    "after": "Optional exact target bindings checked; constant_for_function preserves input profile and axis."
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Callback is part of the mathematical trust boundary; no hash-only validation.",
+    "Expected tolerance judges the new conclusion and does not rewrite source target claims.",
+    "Transport tree capped at depth 32, 256 transport nodes, 32 direct sources."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

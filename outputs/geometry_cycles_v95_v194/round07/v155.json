@@ -1,0 +1,105 @@
+{
+  "formal_assistant_checked": false,
+  "format": "full_ordered_initial_minmax_v155",
+  "laplace_multiplicity": "2*l+1, l>=1",
+  "ordered_intervals": [
+    {
+      "index": 1,
+      "laplace_eigenvalue": "2",
+      "lower": "-4",
+      "target_met": false,
+      "upper": "-2",
+      "width": "2"
+    },
+    {
+      "index": 2,
+      "laplace_eigenvalue": "2",
+      "lower": "-4",
+      "target_met": false,
+      "upper": "-2",
+      "width": "2"
+    },
+    {
+      "index": 3,
+      "laplace_eigenvalue": "2",
+      "lower": "-4",
+      "target_met": false,
+      "upper": "-2",
+      "width": "2"
+    },
+    {
+      "index": 4,
+      "laplace_eigenvalue": "6",
+      "lower": "0",
+      "target_met": false,
+      "upper": "2",
+      "width": "2"
+    },
+    {
+      "index": 5,
+      "laplace_eigenvalue": "6",
+      "lower": "0",
+      "target_met": false,
+      "upper": "2",
+      "width": "2"
+    },
+    {
+      "index": 6,
+      "laplace_eigenvalue": "6",
+      "lower": "0",
+      "target_met": false,
+      "upper": "2",
+      "width": "2"
+    },
+    {
+      "index": 7,
+      "laplace_eigenvalue": "6",
+      "lower": "0",
+      "target_met": false,
+      "upper": "2",
+      "width": "2"
+    },
+    {
+      "index": 8,
+      "laplace_eigenvalue": "6",
+      "lower": "0",
+      "target_met": false,
+      "upper": "2",
+      "width": "2"
+    }
+  ],
+  "potential_range_proof": {
+    "kind": "quadratic_range_v5",
+    "lower": "-6",
+    "upper": "-4"
+  },
+  "projection": "mean_zero",
+  "q_lower": "-6",
+  "q_upper": "-4",
+  "request": {
+    "bits": 36,
+    "format": "full_mean_zero_ordered_request_v155",
+    "function_space": "all_real_mean_zero_H1_S2",
+    "geometry": "unit_S2",
+    "k": 8,
+    "max_m": 4,
+    "max_modes": 16,
+    "max_radial": 6,
+    "mean_zero": true,
+    "modes": 8,
+    "multiplicity": {
+      "m=0": 1,
+      "m>0": 2
+    },
+    "operator": "P_mean_zero*(-Delta+q)*P_mean_zero",
+    "q_coefficients": [
+      "-6",
+      "0",
+      "2"
+    ],
+    "tolerance": "1/100000000"
+  },
+  "rule": "lambda_k(-Delta)+inf(q) <= lambda_k(P*(-Delta+q)*P) <= lambda_k(-Delta)+sup(q)",
+  "schur_computations": 0,
+  "status": "certified_bound_open_gap"
+}

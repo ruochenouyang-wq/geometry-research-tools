@@ -1,0 +1,457 @@
+{
+  "claim": "fixed_potential_witness_lower_bound_only",
+  "formal_assistant_checked": false,
+  "format": "fixed_potential_LT_witness_v163",
+  "lower": "9/80",
+  "mean_V_squared": "400",
+  "measure": "standard_area; integral(V^2)=4*pi*mean(V^2)",
+  "not_an_upper_bound_for_any_universal_constant": true,
+  "orthonormal_constant_relation": "k_LT=4*L_trace in dimension two",
+  "potential_coefficients": [
+    "20"
+  ],
+  "potential_nonnegative_proof": {
+    "kind": "quadratic_range_v5",
+    "lower": "20",
+    "upper": "20"
+  },
+  "quantity": "pi * Tr(P_mean_zero*(-Delta-V)*P_mean_zero)_- / integral_S2(V^2)",
+  "rational_divisor": "1600",
+  "trace_certificate": {
+    "assembly": {
+      "entries": [
+        {
+          "laplace_degree": 1,
+          "lower": "-18",
+          "m": 0,
+          "multiplicity": 1,
+          "radial_index": 1,
+          "upper": "-18"
+        },
+        {
+          "laplace_degree": 2,
+          "lower": "-14",
+          "m": 0,
+          "multiplicity": 1,
+          "radial_index": 2,
+          "upper": "-14"
+        },
+        {
+          "laplace_degree": 3,
+          "lower": "-8",
+          "m": 0,
+          "multiplicity": 1,
+          "radial_index": 3,
+          "upper": "-8"
+        },
+        {
+          "laplace_degree": 4,
+          "lower": "0",
+          "m": 0,
+          "multiplicity": 1,
+          "radial_index": 4,
+          "upper": "0"
+        }
+      ],
+      "format": "angular_multiplicity_assembly_v157",
+      "mean_zero": true,
+      "q_coefficients": [
+        "-20"
+      ],
+      "represented_eigenvalues_with_multiplicity": 4,
+      "sector_lists": [
+        [
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "-18.000000000000",
+              "-18.000000000000"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "0",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "-18",
+            "lower_inertia": [
+              0,
+              1,
+              7
+            ],
+            "mean_zero": true,
+            "modes": 8,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "-20"
+            ],
+            "radial_tail_lower": "70",
+            "radial_tail_start": 9,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-20",
+              "upper": "-20"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "-18",
+            "upper_inertia": [
+              0,
+              1,
+              7
+            ],
+            "upper_kind": "upper_ritz"
+          },
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "-14.000000000000",
+              "-14.000000000000"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 2,
+            "exact_width": "0",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "-14",
+            "lower_inertia": [
+              1,
+              1,
+              6
+            ],
+            "mean_zero": true,
+            "modes": 8,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "-20"
+            ],
+            "radial_tail_lower": "70",
+            "radial_tail_start": 9,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-20",
+              "upper": "-20"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "-14",
+            "upper_inertia": [
+              1,
+              1,
+              6
+            ],
+            "upper_kind": "upper_ritz"
+          },
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "-8.000000000000",
+              "-8.000000000000"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 3,
+            "exact_width": "0",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "-8",
+            "lower_inertia": [
+              2,
+              1,
+              5
+            ],
+            "mean_zero": true,
+            "modes": 8,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "-20"
+            ],
+            "radial_tail_lower": "70",
+            "radial_tail_start": 9,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-20",
+              "upper": "-20"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "-8",
+            "upper_inertia": [
+              2,
+              1,
+              5
+            ],
+            "upper_kind": "upper_ritz"
+          },
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "0.000000000000",
+              "0.000000000000"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 4,
+            "exact_width": "0",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "0",
+            "lower_inertia": [
+              3,
+              1,
+              4
+            ],
+            "mean_zero": true,
+            "modes": 8,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "-20"
+            ],
+            "radial_tail_lower": "70",
+            "radial_tail_start": 9,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-20",
+              "upper": "-20"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "0",
+            "upper_inertia": [
+              3,
+              1,
+              4
+            ],
+            "upper_kind": "upper_ritz"
+          }
+        ]
+      ]
+    },
+    "cutoff_proof": {
+      "cutoff": "0",
+      "degree_cutoff": 4,
+      "every_unlisted_mode_above_cutoff": true,
+      "unlisted_floor": "10"
+    },
+    "floors": {
+      "all_unenumerated_angular_eigenvalues_at_least": "-18",
+      "format": "omitted_sector_floors_v158",
+      "omitted_azimuth_m_start": 1,
+      "potential_range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "-20",
+        "upper": "-20"
+      },
+      "q_coefficients": [
+        "-20"
+      ],
+      "q_lower": "-20",
+      "q_upper": "-20",
+      "radial": [
+        {
+          "all_unenumerated_radial_eigenvalues_at_least": "10",
+          "m": 0,
+          "multiplicity": 1,
+          "next_laplace_degree": 5,
+          "next_radial_index": 5
+        }
+      ],
+      "rule": "minmax: l(l+1)+inf(q) <= lambda_m,j <= l(l+1)+sup(q)"
+    },
+    "formal_assistant_checked": false,
+    "format": "full_negative_trace_v162",
+    "lower": "180",
+    "omitted_negative_modes": [
+      {
+        "laplace_degree": 1,
+        "lower": "-18",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-18"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "-14",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 2,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-14"
+      },
+      {
+        "laplace_degree": 3,
+        "lower": "-8",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 3,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-8"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "-14",
+        "m": 2,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-14"
+      },
+      {
+        "laplace_degree": 3,
+        "lower": "-8",
+        "m": 2,
+        "multiplicity": 2,
+        "radial_index": 2,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-8"
+      },
+      {
+        "laplace_degree": 3,
+        "lower": "-8",
+        "m": 3,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-8"
+      }
+    ],
+    "omitted_negative_tail_resolved": true,
+    "omitted_negative_trace_lower": "140",
+    "omitted_negative_trace_upper": "140",
+    "slots": [
+      {
+        "laplace_degree": 1,
+        "lower": "-18",
+        "m": 0,
+        "multiplicity": 1,
+        "radial_index": 1,
+        "source": "certified_sector_and_minmax",
+        "upper": "-18"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "-14",
+        "m": 0,
+        "multiplicity": 1,
+        "radial_index": 2,
+        "source": "certified_sector_and_minmax",
+        "upper": "-14"
+      },
+      {
+        "laplace_degree": 3,
+        "lower": "-8",
+        "m": 0,
+        "multiplicity": 1,
+        "radial_index": 3,
+        "source": "certified_sector_and_minmax",
+        "upper": "-8"
+      },
+      {
+        "laplace_degree": 4,
+        "lower": "0",
+        "m": 0,
+        "multiplicity": 1,
+        "radial_index": 4,
+        "source": "certified_sector_and_minmax",
+        "upper": "0"
+      },
+      {
+        "laplace_degree": 1,
+        "lower": "-18",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-18"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "-14",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 2,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-14"
+      },
+      {
+        "laplace_degree": 3,
+        "lower": "-8",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 3,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-8"
+      },
+      {
+        "laplace_degree": 4,
+        "lower": "0",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 4,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "0"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "-14",
+        "m": 2,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-14"
+      },
+      {
+        "laplace_degree": 3,
+        "lower": "-8",
+        "m": 2,
+        "multiplicity": 2,
+        "radial_index": 2,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-8"
+      },
+      {
+        "laplace_degree": 4,
+        "lower": "0",
+        "m": 2,
+        "multiplicity": 2,
+        "radial_index": 3,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "0"
+      },
+      {
+        "laplace_degree": 3,
+        "lower": "-8",
+        "m": 3,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-8"
+      },
+      {
+        "laplace_degree": 4,
+        "lower": "0",
+        "m": 3,
+        "multiplicity": 2,
+        "radial_index": 2,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "0"
+      },
+      {
+        "laplace_degree": 4,
+        "lower": "0",
+        "m": 4,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "0"
+      }
+    ],
+    "status": "certified_trace_target_met",
+    "sum_convention": "sum_multiplicity*max(0,-lambda)",
+    "tolerance": "1/100000000",
+    "upper": "180",
+    "width": "0"
+  },
+  "universal_trace_constant_pi_lower_bound": "9/80",
+  "upper": "9/80",
+  "width": "0"
+}

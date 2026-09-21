@@ -1,0 +1,52 @@
+{
+  "certificate": {
+    "method": "expression_compiler_v23",
+    "source": {
+      "geometry": "unit_sphere",
+      "function_space": "full_sphere",
+      "eigenvalue_index": 1,
+      "parameters": [
+        "a"
+      ],
+      "potential": "(a+1)*t-a*t+t*t",
+      "penalty": "(a+1)**2-a*a",
+      "domain": {
+        "kind": "all_real"
+      },
+      "threshold": "0"
+    },
+    "problem": {
+      "geometry": "unit_sphere",
+      "function_space": "full_sphere",
+      "eigenvalue_index": 1,
+      "q0": [
+        "0",
+        "1",
+        "1"
+      ],
+      "directions": [
+        [
+          "0"
+        ]
+      ],
+      "penalty": {
+        "constant": "1",
+        "linear": [
+          "2"
+        ],
+        "hessian": [
+          [
+            "0"
+          ]
+        ]
+      },
+      "domain": {
+        "kind": "all_real"
+      }
+    },
+    "threshold": "0",
+    "relation": ">="
+  },
+  "statistics": {},
+  "seconds": 0.00010887499999999439
+}

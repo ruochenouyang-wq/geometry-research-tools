@@ -1,0 +1,65 @@
+{
+  "axisymmetric_acceptance_separately_verified": true,
+  "certificate_content_sha256": "a10246349f5d28856cbae2c456164892c5f84614a7c4bdd73cc8479646cc4823",
+  "certificate_path": "C12/certificates/C12_original_full_exact.json",
+  "full_scope": "all_real_H1_functions_on_unit_S2_satisfying_all_recorded_moments",
+  "original_acceptance_met": true,
+  "original_case": {
+    "acceptance": [
+      "In the full sphere the ground is exactly 2, with admissible x and y.",
+      "For the separately declared axisymmetric space the same constraints give ground 6; scope binding must distinguish the two."
+    ],
+    "category": 6,
+    "frozen_v94_baseline": "No extra-constraint API; full and axisymmetric meanings must not be conflated.",
+    "id": "C12",
+    "input": {
+      "orthogonality": [
+        "1",
+        "z"
+      ],
+      "q": [
+        "0"
+      ]
+    },
+    "origin": "exact_calibration",
+    "source_ids": [
+      "sphere"
+    ],
+    "status": "fixed_challenge_not_claimed_solved",
+    "title": "只删除常数和z仍保留横向模"
+  },
+  "original_moment_mapping": [
+    {
+      "harmonic": {
+        "coefficient": "1",
+        "degree": 0,
+        "m": 0,
+        "part": "real"
+      },
+      "original_name": "1",
+      "xyz_polynomial": {
+        "0,0,0": "1"
+      }
+    },
+    {
+      "harmonic": {
+        "coefficient": "1",
+        "degree": 1,
+        "m": 0,
+        "part": "real"
+      },
+      "original_name": "z",
+      "xyz_polynomial": {
+        "0,0,1": "1"
+      }
+    }
+  ],
+  "original_potential_to_xyz": {
+    "original_q": [
+      "0"
+    ],
+    "xyz_potential": {}
+  },
+  "source_challenge_book": "/PROJECT/outputs/geometry_cycles_v95_v194/challenges.json",
+  "source_challenge_book_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05"
+}

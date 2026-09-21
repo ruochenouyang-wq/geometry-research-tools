@@ -1,0 +1,6 @@
+{
+  "change": "Rename only metadata format fields to certificate_format; proof objects and verifier rules unchanged.",
+  "first_failed_run": "INTEGRATION_FIRST_RUN.json",
+  "issue": "Two recursive saved-certificate tests mistook acceptance-index metadata for mathematical certificates because the metadata reused the reserved format key.",
+  "scope": "acceptance logs only"
+}

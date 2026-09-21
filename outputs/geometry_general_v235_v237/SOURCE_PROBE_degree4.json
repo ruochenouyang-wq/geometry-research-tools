@@ -1,0 +1,1011 @@
+{
+  "format": "wide_full_sphere_ground_v122",
+  "geometry": "unit_S2",
+  "scope": "all_mean_zero_H1_functions_on_unit_S2",
+  "q_coefficients": [
+    "-765/418",
+    "0",
+    "595/209",
+    "0",
+    "-945/418"
+  ],
+  "mean_zero": true,
+  "potential_symmetry": "axisymmetric_polynomial_degree_at_most_24",
+  "eigenvalue_index_in_constrained_space": 1,
+  "sectors": [
+    {
+      "format": "wide_sphere_sector_v121",
+      "geometry": "unit_S2",
+      "q_coefficients": [
+        "-765/418",
+        "0",
+        "595/209",
+        "0",
+        "-945/418"
+      ],
+      "azimuth_m": 0,
+      "mean_zero": true,
+      "projection": "remove_l0",
+      "scope": "single_azimuth_sector_only",
+      "degree_start": 1,
+      "modes": 4,
+      "eigenvalue_index": 1,
+      "range_proof": {
+        "format": "wide_potential_range_v117_v119",
+        "q_coefficients": [
+          "-765/418",
+          "0",
+          "595/209",
+          "0",
+          "-945/418"
+        ],
+        "interval": [
+          "-1",
+          "1"
+        ],
+        "method": "sturm",
+        "proof": {
+          "positive": {
+            "format": "exact_sturm_extrema_v1",
+            "coefficient_order": "ascending",
+            "polynomial": [
+              "-765/418",
+              "0",
+              "595/209",
+              "0",
+              "-945/418"
+            ],
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "coordinate": "x_squared",
+            "working_polynomial": [
+              "-765/418",
+              "595/209",
+              "-945/418"
+            ],
+            "working_interval": [
+              "0",
+              "1"
+            ],
+            "derivative": [
+              "595/209",
+              "-945/209"
+            ],
+            "derivative_gcd": [
+              "1"
+            ],
+            "critical_square_free": [
+              "-17/27",
+              "1"
+            ],
+            "critical_remainder": [
+              "-5270/5643"
+            ],
+            "sturm_sequence": [
+              [
+                "-17/27",
+                "1"
+              ],
+              [
+                "1"
+              ]
+            ],
+            "partition": [
+              {
+                "interval": [
+                  "0",
+                  "1"
+                ],
+                "root_count": 1,
+                "kind": "isolated",
+                "exact_root": "17/27",
+                "bounds": {
+                  "bernstein": [
+                    "-765/418",
+                    "-85/209"
+                  ],
+                  "stationary_taylor": [
+                    "-1625/1672",
+                    "-85/209"
+                  ],
+                  "critical_remainder": [
+                    "-5270/5643",
+                    "-5270/5643"
+                  ],
+                  "rational_root": [
+                    "-5270/5643",
+                    "-5270/5643"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "-5270/5643",
+                  "-5270/5643"
+                ]
+              }
+            ],
+            "rational_critical_points": [
+              {
+                "at": "17/27",
+                "value": "-5270/5643",
+                "derivative_multiplicity": 1
+              }
+            ],
+            "interior_critical_count": 1,
+            "constant_polynomial": false,
+            "maximum_lower": "-5270/5643",
+            "maximum_upper": "-5270/5643",
+            "error_bound": "0",
+            "sample_witness": {
+              "coordinate": "x_squared",
+              "at": "17/27",
+              "value": "-5270/5643"
+            },
+            "lower_source": {
+              "kind": "rational_coordinate",
+              "coordinate": "x_squared",
+              "at": "17/27",
+              "value": "-5270/5643"
+            },
+            "tolerance": "1/10000000000",
+            "target_met": true,
+            "isolation_complete": true,
+            "status": "exact",
+            "max_nodes": 64,
+            "refinement_nodes": 0,
+            "partition_cells": 1,
+            "budget_exhausted": false,
+            "formal_assistant_checked": false
+          },
+          "negative": {
+            "format": "exact_sturm_extrema_v1",
+            "coefficient_order": "ascending",
+            "polynomial": [
+              "765/418",
+              "0",
+              "-595/209",
+              "0",
+              "945/418"
+            ],
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "coordinate": "x_squared",
+            "working_polynomial": [
+              "765/418",
+              "-595/209",
+              "945/418"
+            ],
+            "working_interval": [
+              "0",
+              "1"
+            ],
+            "derivative": [
+              "-595/209",
+              "945/209"
+            ],
+            "derivative_gcd": [
+              "1"
+            ],
+            "critical_square_free": [
+              "-17/27",
+              "1"
+            ],
+            "critical_remainder": [
+              "5270/5643"
+            ],
+            "sturm_sequence": [
+              [
+                "-17/27",
+                "1"
+              ],
+              [
+                "1"
+              ]
+            ],
+            "partition": [
+              {
+                "interval": [
+                  "0",
+                  "1"
+                ],
+                "root_count": 1,
+                "kind": "isolated",
+                "exact_root": "17/27",
+                "bounds": {
+                  "bernstein": [
+                    "85/209",
+                    "765/418"
+                  ],
+                  "stationary_taylor": [
+                    "85/209",
+                    "1625/1672"
+                  ],
+                  "critical_remainder": [
+                    "5270/5643",
+                    "5270/5643"
+                  ],
+                  "rational_root": [
+                    "5270/5643",
+                    "5270/5643"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "5270/5643",
+                  "5270/5643"
+                ]
+              }
+            ],
+            "rational_critical_points": [
+              {
+                "at": "17/27",
+                "value": "5270/5643",
+                "derivative_multiplicity": 1
+              }
+            ],
+            "interior_critical_count": 1,
+            "constant_polynomial": false,
+            "maximum_lower": "765/418",
+            "maximum_upper": "765/418",
+            "error_bound": "0",
+            "sample_witness": {
+              "coordinate": "x_squared",
+              "at": "0",
+              "value": "765/418"
+            },
+            "lower_source": {
+              "kind": "rational_coordinate",
+              "coordinate": "x_squared",
+              "at": "0",
+              "value": "765/418"
+            },
+            "tolerance": "1/10000000000",
+            "target_met": true,
+            "isolation_complete": true,
+            "status": "exact",
+            "max_nodes": 64,
+            "refinement_nodes": 0,
+            "partition_cells": 1,
+            "budget_exhausted": false,
+            "formal_assistant_checked": false
+          }
+        },
+        "lower": "-765/418",
+        "upper": "-5270/5643"
+      },
+      "kernel_evidence": {
+        "A": [
+          [
+            "20/33",
+            "0",
+            "8/209",
+            "0"
+          ],
+          [
+            "0",
+            "5884/3135",
+            "0",
+            "272/6897"
+          ],
+          [
+            "8/209",
+            "0",
+            "444208/144837",
+            "0"
+          ],
+          [
+            "0",
+            "272/6897",
+            "0",
+            "1120192/268983"
+          ]
+        ],
+        "mass": [
+          "2/3",
+          "2/5",
+          "2/7",
+          "2/9"
+        ],
+        "tail_couplings": [
+          {
+            "degree": 5,
+            "mass": "2/11",
+            "column": [
+              [
+                2,
+                "8560/268983"
+              ],
+              [
+                0,
+                "-120/2299"
+              ]
+            ]
+          },
+          {
+            "degree": 6,
+            "mass": "2/13",
+            "column": [
+              [
+                3,
+                "2360/89661"
+              ],
+              [
+                1,
+                "-1080/29887"
+              ]
+            ]
+          },
+          {
+            "degree": 7,
+            "mass": "2/15",
+            "column": [
+              [
+                2,
+                "-840/29887"
+              ]
+            ]
+          },
+          {
+            "degree": 8,
+            "mass": "2/17",
+            "column": [
+              [
+                3,
+                "-11760/508079"
+              ]
+            ]
+          }
+        ]
+      },
+      "radial_tail_start": 5,
+      "radial_tail_lower": "11775/418",
+      "upper_kind": "upper_tail",
+      "lower_inertia": [
+        0,
+        0,
+        4
+      ],
+      "upper_inertia": [
+        1,
+        0,
+        3
+      ],
+      "formal_assistant_checked": false,
+      "lower": "9545866037/10519314432",
+      "upper": "20984611/23113728",
+      "exact_width": "40172323/94673829888",
+      "decimal_enclosure": [
+        "0.907460852007",
+        "0.907885175425"
+      ]
+    },
+    {
+      "format": "wide_sphere_sector_v121",
+      "geometry": "unit_S2",
+      "q_coefficients": [
+        "-765/418",
+        "0",
+        "595/209",
+        "0",
+        "-945/418"
+      ],
+      "azimuth_m": 1,
+      "mean_zero": true,
+      "projection": "none",
+      "scope": "single_azimuth_sector_only",
+      "degree_start": 1,
+      "modes": 4,
+      "eigenvalue_index": 1,
+      "range_proof": {
+        "format": "wide_potential_range_v117_v119",
+        "q_coefficients": [
+          "-765/418",
+          "0",
+          "595/209",
+          "0",
+          "-945/418"
+        ],
+        "interval": [
+          "-1",
+          "1"
+        ],
+        "method": "sturm",
+        "proof": {
+          "positive": {
+            "format": "exact_sturm_extrema_v1",
+            "coefficient_order": "ascending",
+            "polynomial": [
+              "-765/418",
+              "0",
+              "595/209",
+              "0",
+              "-945/418"
+            ],
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "coordinate": "x_squared",
+            "working_polynomial": [
+              "-765/418",
+              "595/209",
+              "-945/418"
+            ],
+            "working_interval": [
+              "0",
+              "1"
+            ],
+            "derivative": [
+              "595/209",
+              "-945/209"
+            ],
+            "derivative_gcd": [
+              "1"
+            ],
+            "critical_square_free": [
+              "-17/27",
+              "1"
+            ],
+            "critical_remainder": [
+              "-5270/5643"
+            ],
+            "sturm_sequence": [
+              [
+                "-17/27",
+                "1"
+              ],
+              [
+                "1"
+              ]
+            ],
+            "partition": [
+              {
+                "interval": [
+                  "0",
+                  "1"
+                ],
+                "root_count": 1,
+                "kind": "isolated",
+                "exact_root": "17/27",
+                "bounds": {
+                  "bernstein": [
+                    "-765/418",
+                    "-85/209"
+                  ],
+                  "stationary_taylor": [
+                    "-1625/1672",
+                    "-85/209"
+                  ],
+                  "critical_remainder": [
+                    "-5270/5643",
+                    "-5270/5643"
+                  ],
+                  "rational_root": [
+                    "-5270/5643",
+                    "-5270/5643"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "-5270/5643",
+                  "-5270/5643"
+                ]
+              }
+            ],
+            "rational_critical_points": [
+              {
+                "at": "17/27",
+                "value": "-5270/5643",
+                "derivative_multiplicity": 1
+              }
+            ],
+            "interior_critical_count": 1,
+            "constant_polynomial": false,
+            "maximum_lower": "-5270/5643",
+            "maximum_upper": "-5270/5643",
+            "error_bound": "0",
+            "sample_witness": {
+              "coordinate": "x_squared",
+              "at": "17/27",
+              "value": "-5270/5643"
+            },
+            "lower_source": {
+              "kind": "rational_coordinate",
+              "coordinate": "x_squared",
+              "at": "17/27",
+              "value": "-5270/5643"
+            },
+            "tolerance": "1/10000000000",
+            "target_met": true,
+            "isolation_complete": true,
+            "status": "exact",
+            "max_nodes": 64,
+            "refinement_nodes": 0,
+            "partition_cells": 1,
+            "budget_exhausted": false,
+            "formal_assistant_checked": false
+          },
+          "negative": {
+            "format": "exact_sturm_extrema_v1",
+            "coefficient_order": "ascending",
+            "polynomial": [
+              "765/418",
+              "0",
+              "-595/209",
+              "0",
+              "945/418"
+            ],
+            "interval": [
+              "-1",
+              "1"
+            ],
+            "coordinate": "x_squared",
+            "working_polynomial": [
+              "765/418",
+              "-595/209",
+              "945/418"
+            ],
+            "working_interval": [
+              "0",
+              "1"
+            ],
+            "derivative": [
+              "-595/209",
+              "945/209"
+            ],
+            "derivative_gcd": [
+              "1"
+            ],
+            "critical_square_free": [
+              "-17/27",
+              "1"
+            ],
+            "critical_remainder": [
+              "5270/5643"
+            ],
+            "sturm_sequence": [
+              [
+                "-17/27",
+                "1"
+              ],
+              [
+                "1"
+              ]
+            ],
+            "partition": [
+              {
+                "interval": [
+                  "0",
+                  "1"
+                ],
+                "root_count": 1,
+                "kind": "isolated",
+                "exact_root": "17/27",
+                "bounds": {
+                  "bernstein": [
+                    "85/209",
+                    "765/418"
+                  ],
+                  "stationary_taylor": [
+                    "85/209",
+                    "1625/1672"
+                  ],
+                  "critical_remainder": [
+                    "5270/5643",
+                    "5270/5643"
+                  ],
+                  "rational_root": [
+                    "5270/5643",
+                    "5270/5643"
+                  ]
+                },
+                "critical_value_bounds": [
+                  "5270/5643",
+                  "5270/5643"
+                ]
+              }
+            ],
+            "rational_critical_points": [
+              {
+                "at": "17/27",
+                "value": "5270/5643",
+                "derivative_multiplicity": 1
+              }
+            ],
+            "interior_critical_count": 1,
+            "constant_polynomial": false,
+            "maximum_lower": "765/418",
+            "maximum_upper": "765/418",
+            "error_bound": "0",
+            "sample_witness": {
+              "coordinate": "x_squared",
+              "at": "0",
+              "value": "765/418"
+            },
+            "lower_source": {
+              "kind": "rational_coordinate",
+              "coordinate": "x_squared",
+              "at": "0",
+              "value": "765/418"
+            },
+            "tolerance": "1/10000000000",
+            "target_met": true,
+            "isolation_complete": true,
+            "status": "exact",
+            "max_nodes": 64,
+            "refinement_nodes": 0,
+            "partition_cells": 1,
+            "budget_exhausted": false,
+            "formal_assistant_checked": false
+          }
+        },
+        "lower": "-765/418",
+        "upper": "-5270/5643"
+      },
+      "kernel_evidence": {
+        "A": [
+          [
+            "8/11",
+            "0",
+            "128/209",
+            "0"
+          ],
+          [
+            "0",
+            "12168/1045",
+            "0",
+            "4160/6897"
+          ],
+          [
+            "128/209",
+            "0",
+            "594368/16093",
+            "0"
+          ],
+          [
+            "0",
+            "4160/6897",
+            "0",
+            "7475200/89661"
+          ]
+        ],
+        "mass": [
+          "4/3",
+          "12/5",
+          "24/7",
+          "40/9"
+        ],
+        "tail_couplings": [
+          {
+            "degree": 5,
+            "mass": "60/11",
+            "column": [
+              [
+                2,
+                "21440/29887"
+              ],
+              [
+                0,
+                "-720/2299"
+              ]
+            ]
+          },
+          {
+            "degree": 6,
+            "mass": "84/13",
+            "column": [
+              [
+                3,
+                "76160/89661"
+              ],
+              [
+                1,
+                "-15120/29887"
+              ]
+            ]
+          },
+          {
+            "degree": 7,
+            "mass": "112/15",
+            "column": [
+              [
+                2,
+                "-20160/29887"
+              ]
+            ]
+          },
+          {
+            "degree": 8,
+            "mass": "144/17",
+            "column": [
+              [
+                3,
+                "-423360/508079"
+              ]
+            ]
+          }
+        ]
+      },
+      "radial_tail_start": 5,
+      "radial_tail_lower": "11775/418",
+      "upper_kind": "upper_tail",
+      "lower_inertia": [
+        0,
+        0,
+        4
+      ],
+      "upper_inertia": [
+        1,
+        0,
+        3
+      ],
+      "formal_assistant_checked": false,
+      "lower": "1337148173/2491416576",
+      "upper": "1129147/2101248",
+      "exact_width": "31608329/47336914944",
+      "decimal_enclosure": [
+        "0.536701965412",
+        "0.537369696486"
+      ]
+    }
+  ],
+  "range_proof": {
+    "format": "wide_potential_range_v117_v119",
+    "q_coefficients": [
+      "-765/418",
+      "0",
+      "595/209",
+      "0",
+      "-945/418"
+    ],
+    "interval": [
+      "-1",
+      "1"
+    ],
+    "method": "sturm",
+    "proof": {
+      "positive": {
+        "format": "exact_sturm_extrema_v1",
+        "coefficient_order": "ascending",
+        "polynomial": [
+          "-765/418",
+          "0",
+          "595/209",
+          "0",
+          "-945/418"
+        ],
+        "interval": [
+          "-1",
+          "1"
+        ],
+        "coordinate": "x_squared",
+        "working_polynomial": [
+          "-765/418",
+          "595/209",
+          "-945/418"
+        ],
+        "working_interval": [
+          "0",
+          "1"
+        ],
+        "derivative": [
+          "595/209",
+          "-945/209"
+        ],
+        "derivative_gcd": [
+          "1"
+        ],
+        "critical_square_free": [
+          "-17/27",
+          "1"
+        ],
+        "critical_remainder": [
+          "-5270/5643"
+        ],
+        "sturm_sequence": [
+          [
+            "-17/27",
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ],
+        "partition": [
+          {
+            "interval": [
+              "0",
+              "1"
+            ],
+            "root_count": 1,
+            "kind": "isolated",
+            "exact_root": "17/27",
+            "bounds": {
+              "bernstein": [
+                "-765/418",
+                "-85/209"
+              ],
+              "stationary_taylor": [
+                "-1625/1672",
+                "-85/209"
+              ],
+              "critical_remainder": [
+                "-5270/5643",
+                "-5270/5643"
+              ],
+              "rational_root": [
+                "-5270/5643",
+                "-5270/5643"
+              ]
+            },
+            "critical_value_bounds": [
+              "-5270/5643",
+              "-5270/5643"
+            ]
+          }
+        ],
+        "rational_critical_points": [
+          {
+            "at": "17/27",
+            "value": "-5270/5643",
+            "derivative_multiplicity": 1
+          }
+        ],
+        "interior_critical_count": 1,
+        "constant_polynomial": false,
+        "maximum_lower": "-5270/5643",
+        "maximum_upper": "-5270/5643",
+        "error_bound": "0",
+        "sample_witness": {
+          "coordinate": "x_squared",
+          "at": "17/27",
+          "value": "-5270/5643"
+        },
+        "lower_source": {
+          "kind": "rational_coordinate",
+          "coordinate": "x_squared",
+          "at": "17/27",
+          "value": "-5270/5643"
+        },
+        "tolerance": "1/10000000000",
+        "target_met": true,
+        "isolation_complete": true,
+        "status": "exact",
+        "max_nodes": 64,
+        "refinement_nodes": 0,
+        "partition_cells": 1,
+        "budget_exhausted": false,
+        "formal_assistant_checked": false
+      },
+      "negative": {
+        "format": "exact_sturm_extrema_v1",
+        "coefficient_order": "ascending",
+        "polynomial": [
+          "765/418",
+          "0",
+          "-595/209",
+          "0",
+          "945/418"
+        ],
+        "interval": [
+          "-1",
+          "1"
+        ],
+        "coordinate": "x_squared",
+        "working_polynomial": [
+          "765/418",
+          "-595/209",
+          "945/418"
+        ],
+        "working_interval": [
+          "0",
+          "1"
+        ],
+        "derivative": [
+          "-595/209",
+          "945/209"
+        ],
+        "derivative_gcd": [
+          "1"
+        ],
+        "critical_square_free": [
+          "-17/27",
+          "1"
+        ],
+        "critical_remainder": [
+          "5270/5643"
+        ],
+        "sturm_sequence": [
+          [
+            "-17/27",
+            "1"
+          ],
+          [
+            "1"
+          ]
+        ],
+        "partition": [
+          {
+            "interval": [
+              "0",
+              "1"
+            ],
+            "root_count": 1,
+            "kind": "isolated",
+            "exact_root": "17/27",
+            "bounds": {
+              "bernstein": [
+                "85/209",
+                "765/418"
+              ],
+              "stationary_taylor": [
+                "85/209",
+                "1625/1672"
+              ],
+              "critical_remainder": [
+                "5270/5643",
+                "5270/5643"
+              ],
+              "rational_root": [
+                "5270/5643",
+                "5270/5643"
+              ]
+            },
+            "critical_value_bounds": [
+              "5270/5643",
+              "5270/5643"
+            ]
+          }
+        ],
+        "rational_critical_points": [
+          {
+            "at": "17/27",
+            "value": "5270/5643",
+            "derivative_multiplicity": 1
+          }
+        ],
+        "interior_critical_count": 1,
+        "constant_polynomial": false,
+        "maximum_lower": "765/418",
+        "maximum_upper": "765/418",
+        "error_bound": "0",
+        "sample_witness": {
+          "coordinate": "x_squared",
+          "at": "0",
+          "value": "765/418"
+        },
+        "lower_source": {
+          "kind": "rational_coordinate",
+          "coordinate": "x_squared",
+          "at": "0",
+          "value": "765/418"
+        },
+        "tolerance": "1/10000000000",
+        "target_met": true,
+        "isolation_complete": true,
+        "status": "exact",
+        "max_nodes": 64,
+        "refinement_nodes": 0,
+        "partition_cells": 1,
+        "budget_exhausted": false,
+        "formal_assistant_checked": false
+      }
+    },
+    "lower": "-765/418",
+    "upper": "-5270/5643"
+  },
+  "omitted_azimuth_m_start": 2,
+  "angular_tail_lower": "1743/418",
+  "angular_tail_cannot_improve_best_upper": true,
+  "tolerance": "1/1000",
+  "status": "certified_target_met",
+  "formal_assistant_checked": false,
+  "lower": "1337148173/2491416576",
+  "upper": "1129147/2101248",
+  "exact_width": "31608329/47336914944",
+  "decimal_enclosure": [
+    "0.536701965412",
+    "0.537369696486"
+  ]
+}

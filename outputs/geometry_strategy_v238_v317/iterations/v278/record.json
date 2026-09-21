@@ -1,0 +1,24 @@
+{
+  "version": 278,
+  "recorded_at": "2026-09-18T18:12:40.003299+00:00",
+  "hypothesis": "Separating approximation and spectrum prevents accepting the wrong error metric",
+  "change": "Add explicit target binding, exact target acceptance, and replay-only certificate admission",
+  "source_sha256": {
+    "research_controller.py": "f228179bbf181fef1769157c2f09ac06a9af77a74bd7ceba932d6d60c4a69923",
+    "test_research_controller.py": "65bcf7521a6a979fd47397cdd9867828aac6619b4709736513e63f46e53e4eb9"
+  },
+  "validation": {
+    "tests": 3,
+    "passed": true
+  },
+  "comparison": {
+    "step_L2": "exact zero",
+    "step_spectral": "separate complete interval",
+    "forged_verified_flag": "rejected"
+  },
+  "outcome": "retained",
+  "limitations": [
+    "One action only; no policy adaptation yet"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

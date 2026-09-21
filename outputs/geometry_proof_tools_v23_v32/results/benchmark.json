@@ -1,0 +1,552 @@
+{
+  "python": "3.9.6",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "repeats": 3,
+  "model_calls": 0,
+  "protocol": "Sequential structured-goal/component ablations. Timing includes compile, reductions and proof reconstruction where applicable. This does not measure model reasoning time.",
+  "cases": [
+    {
+      "case": "v23_expression_compilation",
+      "version": 23,
+      "median_seconds": 0.00011283399999999222,
+      "seconds_runs": [
+        0.0002355409999999919,
+        0.00011283399999999222,
+        0.00010887499999999439
+      ],
+      "status": "verified_component",
+      "lower_bound": null,
+      "upper_bound": null,
+      "statistics": {},
+      "proof": "proofs/v23_expression_compilation.json"
+    },
+    {
+      "case": "v24_full_sphere_ground",
+      "version": 24,
+      "median_seconds": 0.007567541000000011,
+      "seconds_runs": [
+        0.00769745799999999,
+        0.007567541000000011,
+        0.007544708000000011
+      ],
+      "status": "proved",
+      "lower_bound": "10754354878611639237/17592186044416000000",
+      "upper_bound": "330602505817682016864934694719/540806049634322711267836239971",
+      "statistics": {
+        "points": 1,
+        "parameter_splits": 0
+      },
+      "proof": "proofs/v24_full_sphere_ground.json"
+    },
+    {
+      "case": "v25_without_elimination",
+      "version": 25,
+      "median_seconds": 3.031632417,
+      "seconds_runs": [
+        3.031822167,
+        3.031632417,
+        3.019777875
+      ],
+      "status": "proved",
+      "lower_bound": "-45443423225618349497609/576460752303423488000000",
+      "upper_bound": "0",
+      "statistics": {
+        "points": 195,
+        "spectral_searches": 6,
+        "orbit_reuses": 190,
+        "modes_histogram": {
+          "4": 141,
+          "6": 54
+        },
+        "maximum_point_width": "454976993596117177058787566575173239242167/1755911269722095094473533514679084168249344000000",
+        "parameter_splits": 31
+      },
+      "proof": "proofs/v25_without_elimination.json"
+    },
+    {
+      "case": "v25_with_elimination",
+      "version": 25,
+      "median_seconds": 0.017502166999999957,
+      "seconds_runs": [
+        0.017475541999999678,
+        0.017544666999999237,
+        0.017502166999999957
+      ],
+      "status": "proved",
+      "lower_bound": "-1651257866593813078657238440946709788187913/21267647932558653966460912964485513216000000",
+      "upper_bound": "0",
+      "statistics": {
+        "points": 3,
+        "spectral_searches": 3,
+        "orbit_reuses": 1,
+        "modes_histogram": {
+          "4": 1,
+          "6": 2
+        },
+        "maximum_point_width": "973896016256262381690766566945238844598903/31162639410037302669341088916647477715664896000000",
+        "parameter_splits": 0
+      },
+      "proof": "proofs/v25_with_elimination.json"
+    },
+    {
+      "case": "v26_full_box",
+      "version": 26,
+      "median_seconds": 0.057311000000000334,
+      "seconds_runs": [
+        0.057413457999999196,
+        0.057311000000000334,
+        0.05711454199999899
+      ],
+      "status": "proved",
+      "lower_bound": "-4442360207774820316785218051210501/22282920707136844948184236032000000",
+      "upper_bound": "-2454283908193164264418549002667/12738305093161599122144825883970",
+      "statistics": {
+        "points": 13,
+        "spectral_searches": 11,
+        "orbit_reuses": 6,
+        "modes_histogram": {
+          "4": 5,
+          "6": 8
+        },
+        "maximum_point_width": "454976993596117177058787566575173239242167/1755911269722095094473533514679084168249344000000",
+        "parameter_splits": 5
+      },
+      "proof": "proofs/v26_full_box.json"
+    },
+    {
+      "case": "v26_half_box",
+      "version": 26,
+      "median_seconds": 0.0374114169999995,
+      "seconds_runs": [
+        0.03713595900000044,
+        0.03746933300000066,
+        0.0374114169999995
+      ],
+      "status": "proved",
+      "lower_bound": "-4442360207774820316785218051210501/22282920707136844948184236032000000",
+      "upper_bound": "-2454283908193164264418549002667/12738305093161599122144825883970",
+      "statistics": {
+        "points": 7,
+        "spectral_searches": 11,
+        "orbit_reuses": 0,
+        "modes_histogram": {
+          "4": 3,
+          "6": 4
+        },
+        "maximum_point_width": "454976993596117177058787566575173239242167/1755911269722095094473533514679084168249344000000",
+        "parameter_splits": 2
+      },
+      "proof": "proofs/v26_half_box.json"
+    },
+    {
+      "case": "v27_four_parameters",
+      "version": 27,
+      "median_seconds": 0.6060391249999988,
+      "seconds_runs": [
+        0.6060391249999988,
+        0.6072665829999995,
+        0.6042775000000002
+      ],
+      "status": "proved",
+      "lower_bound": "-8731339845569511349539/2251799813685248000000",
+      "upper_bound": "-141309401239732269333315683064782420166878660709047111039342003/50231497585262980822353581662197695857314729489225273560121032",
+      "statistics": {
+        "points": 27,
+        "spectral_searches": 24,
+        "orbit_reuses": 16,
+        "modes_histogram": {
+          "4": 1,
+          "6": 18,
+          "8": 8
+        },
+        "maximum_point_width": "2422804714768589567794225000934909818659897/7278988540094403273660354006340106876616704000000",
+        "parameter_splits": 1
+      },
+      "proof": "proofs/v27_four_parameters.json"
+    },
+    {
+      "case": "v27_one_effective_parameter",
+      "version": 27,
+      "median_seconds": 0.027497332999999458,
+      "seconds_runs": [
+        0.027497332999999458,
+        0.027745084000001086,
+        0.02730154099999993
+      ],
+      "status": "proved",
+      "lower_bound": "-35703053691899053097035257409320125552220519/10633823966279326983230456482242756608000000",
+      "upper_bound": "-277041243962152090062529642097614890674739996088945514966397874/99381695775628322384023487697802309432770449108989536959350561",
+      "statistics": {
+        "points": 3,
+        "spectral_searches": 4,
+        "orbit_reuses": 1,
+        "modes_histogram": {
+          "4": 1,
+          "8": 2
+        },
+        "maximum_point_width": "1005901944835086494353180282172229313413241/21922143875108857567373606921166749236723712000000",
+        "parameter_splits": 0
+      },
+      "proof": "proofs/v27_one_effective_parameter.json"
+    },
+    {
+      "case": "v28_optimize_then_decide",
+      "version": 28,
+      "median_seconds": 0.23635629199999997,
+      "seconds_runs": [
+        0.23664704199999953,
+        0.2359377079999998,
+        0.23635629199999997
+      ],
+      "status": "refuted",
+      "lower_bound": "-610919940902343053222638364693/2417851639229258349412352000000",
+      "upper_bound": "-8046455534457150529368096389263/31845762732903997805362064709925",
+      "statistics": {
+        "points": 37,
+        "spectral_searches": 64,
+        "orbit_reuses": 4,
+        "modes_histogram": {
+          "4": 3,
+          "6": 34
+        },
+        "maximum_point_width": "427540880006709441207638605408312549113271/1755911269722095094473533514679084168249344000000"
+      },
+      "proof": "proofs/v28_optimize_then_decide.json"
+    },
+    {
+      "case": "v28_targeted_decision",
+      "version": 28,
+      "median_seconds": 0.02372400000000141,
+      "seconds_runs": [
+        0.02384466700000054,
+        0.02372400000000141,
+        0.023580541999999483
+      ],
+      "status": "refuted",
+      "lower_bound": "-35321503125133813543571068288453758734725421/95704415696513942849074108340184809472000000",
+      "upper_bound": "-8046455534457150529368096389263/31845762732903997805362064709925",
+      "statistics": {
+        "points": 5,
+        "spectral_searches": 5,
+        "orbit_reuses": 2,
+        "modes_histogram": {
+          "4": 1,
+          "6": 4
+        },
+        "maximum_point_width": "33903123573885276067288224889069622862001/298689612772317102794679351643953831084032000000",
+        "parameter_splits": 1
+      },
+      "proof": "proofs/v28_targeted_decision.json"
+    },
+    {
+      "case": "v29_scalar_linear_lemma",
+      "version": 29,
+      "median_seconds": 0.00019304100000105961,
+      "seconds_runs": [
+        0.00023549999999872284,
+        0.00019304100000105961,
+        0.00019204199999833804
+      ],
+      "status": "scale_enclosed",
+      "lower_bound": null,
+      "upper_bound": null,
+      "statistics": {},
+      "proof": "proofs/v29_scalar_linear_lemma.json"
+    },
+    {
+      "case": "v29_scalar_quadratic_lemma",
+      "version": 29,
+      "median_seconds": 0.00033024999999931026,
+      "seconds_runs": [
+        0.00034458400000048073,
+        0.00033024999999931026,
+        0.0003227089999988664
+      ],
+      "status": "scale_enclosed",
+      "lower_bound": null,
+      "upper_bound": null,
+      "statistics": {},
+      "proof": "proofs/v29_scalar_quadratic_lemma.json"
+    },
+    {
+      "case": "v29_scalar_degree_six_lemma",
+      "version": 29,
+      "median_seconds": 0.0039873750000012365,
+      "seconds_runs": [
+        0.004025416999999365,
+        0.0039441670000002205,
+        0.0039873750000012365
+      ],
+      "status": "scale_enclosed",
+      "lower_bound": null,
+      "upper_bound": null,
+      "statistics": {},
+      "proof": "proofs/v29_scalar_degree_six_lemma.json"
+    },
+    {
+      "case": "v30_matrix_lemma",
+      "version": 30,
+      "median_seconds": 0.0005118339999992116,
+      "seconds_runs": [
+        0.0005408330000005179,
+        0.0005118339999992116,
+        0.0005061250000011341
+      ],
+      "status": "scale_enclosed",
+      "lower_bound": null,
+      "upper_bound": null,
+      "statistics": {},
+      "proof": "proofs/v30_matrix_lemma.json"
+    },
+    {
+      "case": "v30_nonidentity_weight",
+      "version": 30,
+      "median_seconds": 0.0029336670000006393,
+      "seconds_runs": [
+        0.0029336670000006393,
+        0.0029049170000003954,
+        0.0029753750000001133
+      ],
+      "status": "scale_enclosed",
+      "lower_bound": null,
+      "upper_bound": null,
+      "statistics": {},
+      "proof": "proofs/v30_nonidentity_weight.json"
+    },
+    {
+      "case": "v30_scale_budget_open",
+      "version": 30,
+      "median_seconds": 0.0014868750000012199,
+      "seconds_runs": [
+        0.0015044580000012076,
+        0.0014868750000012199,
+        0.0014718750000000114
+      ],
+      "status": "scale_gap_open",
+      "lower_bound": null,
+      "upper_bound": null,
+      "statistics": {},
+      "proof": "proofs/v30_scale_budget_open.json"
+    },
+    {
+      "case": "v31_affine_dominance_transfer",
+      "version": 31,
+      "median_seconds": 0.0047762500000008146,
+      "seconds_runs": [
+        0.004948667000000739,
+        0.004734874999998695,
+        0.0047762500000008146
+      ],
+      "status": "proved",
+      "lower_bound": "0",
+      "upper_bound": null,
+      "statistics": {
+        "expanded_states": 4,
+        "template_attempts": 2,
+        "template_syntheses": 0,
+        "points": 0,
+        "spectral_searches": 0,
+        "model_calls": 0
+      },
+      "proof": "proofs/v31_affine_dominance_transfer.json"
+    },
+    {
+      "case": "v32_uniform_linear",
+      "version": 32,
+      "median_seconds": 0.0010460840000003913,
+      "seconds_runs": [
+        0.0010635829999987578,
+        0.001018582999998685,
+        0.0010460840000003913
+      ],
+      "status": "proved",
+      "lower_bound": "0",
+      "upper_bound": null,
+      "statistics": {
+        "expanded_states": 2,
+        "template_attempts": 1,
+        "template_syntheses": 1,
+        "points": 0,
+        "spectral_searches": 0,
+        "model_calls": 0
+      },
+      "proof": "proofs/v32_uniform_linear.json"
+    },
+    {
+      "case": "v32_no_lemmas_uniform_linear",
+      "version": 32,
+      "median_seconds": 0.5632852499999998,
+      "seconds_runs": [
+        0.5625294169999986,
+        0.5649730000000002,
+        0.5632852499999998
+      ],
+      "status": "unresolved",
+      "lower_bound": "-166291048366464496933467362485308697/5316911983139663491615228241121378304000000",
+      "upper_bound": "0",
+      "statistics": {
+        "expanded_states": 2,
+        "template_attempts": 0,
+        "template_syntheses": 0,
+        "points": 65,
+        "spectral_searches": 34,
+        "model_calls": 0
+      },
+      "proof": "proofs/v32_no_lemmas_uniform_linear.json"
+    },
+    {
+      "case": "v32_uniform_two_directions",
+      "version": 32,
+      "median_seconds": 0.0027572500000001554,
+      "seconds_runs": [
+        0.0027696249999991096,
+        0.0027572500000001554,
+        0.002680708999999837
+      ],
+      "status": "proved",
+      "lower_bound": "0",
+      "upper_bound": null,
+      "statistics": {
+        "expanded_states": 4,
+        "template_attempts": 1,
+        "template_syntheses": 1,
+        "points": 0,
+        "spectral_searches": 0,
+        "model_calls": 0
+      },
+      "proof": "proofs/v32_uniform_two_directions.json"
+    },
+    {
+      "case": "v32_no_lemmas_uniform_two_directions",
+      "version": 32,
+      "median_seconds": 1.7593416669999993,
+      "seconds_runs": [
+        1.7593416669999993,
+        1.7568445420000014,
+        1.7645020000000002
+      ],
+      "status": "unresolved",
+      "lower_bound": "-813626774605584485071948622602721/91270843216432516907762630787072000000",
+      "upper_bound": "99743204172347623008854693229135448274722395357542/65999110880582856284787079325903367143232167428216640361",
+      "statistics": {
+        "expanded_states": 4,
+        "template_attempts": 0,
+        "template_syntheses": 0,
+        "points": 94,
+        "spectral_searches": 62,
+        "model_calls": 0
+      },
+      "proof": "proofs/v32_no_lemmas_uniform_two_directions.json"
+    },
+    {
+      "case": "v32_counterexample",
+      "version": 32,
+      "median_seconds": 0.01834974999999872,
+      "seconds_runs": [
+        0.018352417000002674,
+        0.01808158299999718,
+        0.01834974999999872
+      ],
+      "status": "refuted",
+      "lower_bound": "-590190738576273753183777486616653461/2535301200456458802993406410752000000",
+      "upper_bound": "-348267311250421163952582153812/2214238705991341949850059401445",
+      "statistics": {
+        "expanded_states": 4,
+        "template_attempts": 4,
+        "template_syntheses": 1,
+        "points": 3,
+        "spectral_searches": 5,
+        "model_calls": 0
+      },
+      "proof": "proofs/v32_counterexample.json"
+    },
+    {
+      "case": "v32_too_weak_lemma",
+      "version": 32,
+      "median_seconds": 0.16908366699999888,
+      "seconds_runs": [
+        0.16908366699999888,
+        0.1688662499999971,
+        0.16921500000000123
+      ],
+      "status": "unresolved",
+      "lower_bound": "-664614669519066198653613250147500413/21267647932558653966460912964485513216000000",
+      "upper_bound": "0",
+      "statistics": {
+        "expanded_states": 4,
+        "template_attempts": 4,
+        "template_syntheses": 1,
+        "points": 43,
+        "spectral_searches": 44,
+        "model_calls": 0
+      },
+      "proof": "proofs/v32_too_weak_lemma.json"
+    },
+    {
+      "case": "v32_four_parameter_counterexample",
+      "version": 32,
+      "median_seconds": 0.037615583999997426,
+      "seconds_runs": [
+        0.037615583999997426,
+        0.03771462499999956,
+        0.03752187499999948
+      ],
+      "status": "refuted",
+      "lower_bound": "-1651257534286814131851809462691521230101769/10633823966279326983230456482242756608000000",
+      "upper_bound": "-11373196306097861829274954884515510948593252932326521132926/196114121884408498259163992319592861870444816743801266723521",
+      "statistics": {
+        "expanded_states": 4,
+        "template_attempts": 4,
+        "template_syntheses": 1,
+        "points": 5,
+        "spectral_searches": 5,
+        "model_calls": 0
+      },
+      "proof": "proofs/v32_four_parameter_counterexample.json"
+    },
+    {
+      "case": "v32_generic_asymmetric",
+      "version": 32,
+      "median_seconds": 0.03509324999999919,
+      "seconds_runs": [
+        0.03509324999999919,
+        0.03507141700000105,
+        0.035103124999999125
+      ],
+      "status": "proved",
+      "lower_bound": "52773314353467335853769426917414366811/60847228810955011271841753858048000000",
+      "upper_bound": "48003261933798988608895452755036/35100661305750720996529684256825",
+      "statistics": {
+        "expanded_states": 4,
+        "template_attempts": 4,
+        "template_syntheses": 1,
+        "points": 3,
+        "spectral_searches": 6,
+        "model_calls": 0
+      },
+      "proof": "proofs/v32_generic_asymmetric.json"
+    },
+    {
+      "case": "v32_no_lemmas_generic_asymmetric",
+      "version": 32,
+      "median_seconds": 0.03350929199999797,
+      "seconds_runs": [
+        0.03350929199999797,
+        0.03337716700000115,
+        0.03376787499999878
+      ],
+      "status": "proved",
+      "lower_bound": "52773314353467335853769426917414366811/60847228810955011271841753858048000000",
+      "upper_bound": "48003261933798988608895452755036/35100661305750720996529684256825",
+      "statistics": {
+        "expanded_states": 4,
+        "template_attempts": 0,
+        "template_syntheses": 0,
+        "points": 3,
+        "spectral_searches": 6,
+        "model_calls": 0
+      },
+      "proof": "proofs/v32_no_lemmas_generic_asymmetric.json"
+    }
+  ]
+}

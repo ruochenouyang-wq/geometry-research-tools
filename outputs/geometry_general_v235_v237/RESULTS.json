@@ -1,0 +1,522 @@
+{
+  "all_original_function_bindings_verified": true,
+  "certificates": [
+    {
+      "certificate_format": "linf_function_spectrum_v235",
+      "path": "certificates/V235_analytic_order4.json",
+      "sha256": "fc02456291b5e628a566893430e0e074ece01653c29b5e3de30c071b1c3f9263",
+      "verified": true
+    },
+    {
+      "certificate_format": "linf_function_spectrum_v235",
+      "path": "certificates/V235_analytic_order8.json",
+      "sha256": "ecb7edbeeae9268473291a43c2067a8489330bb0bfcc0f8dc465013f38c9771c",
+      "verified": true
+    },
+    {
+      "certificate_format": "linf_function_spectrum_v235",
+      "path": "certificates/V235_analytic_order12.json",
+      "sha256": "0d74917ad1d52dd6adc3fc6df27686a76a7fa3e666e3993c23ab62d00cfaac39",
+      "verified": true
+    },
+    {
+      "certificate_format": "linf_function_spectrum_v235",
+      "path": "certificates/V235_multiaxis_original_function.json",
+      "sha256": "62fcd20323cc13a696e044746e7e2fc743c709030ba7cb7f07d224999fdace74",
+      "verified": true
+    },
+    {
+      "certificate_format": "l2_function_spectrum_v236",
+      "path": "certificates/V236_step_degree0.json",
+      "sha256": "cabc748a8a846b7ea3d5dacd8672a6c5d71c4343e108a0f3660aa7f9d60fa241",
+      "verified": true
+    },
+    {
+      "certificate_format": "l2_function_spectrum_v236",
+      "path": "certificates/V236_step_degree4.json",
+      "sha256": "1802f4d80f8ee99e5571f0d7f6d395a7b0b4f0d0438521570101f57a8a387810",
+      "verified": true
+    },
+    {
+      "certificate_format": "l2_function_spectrum_v236",
+      "path": "certificates/V236_step_degree8.json",
+      "sha256": "f2fa0d829ee1270d6617f728bf1ade798de0fa328039965aba7f17c4da5fc3f1",
+      "verified": true
+    },
+    {
+      "certificate_format": "l2_function_spectrum_v236",
+      "path": "certificates/V236_step_degree12.json",
+      "sha256": "c58dfcdc38b0cf0bc01b1dc14474110b99dbc928e45b7782b22bf478aea8c29b",
+      "verified": true
+    },
+    {
+      "certificate_format": "l2_function_spectrum_v236",
+      "path": "certificates/V236_negative_singularity_degree4.json",
+      "sha256": "82e58276912bc98d7aac1568b8bfe1685f88e3ec6076c6f830da61a062e57c80",
+      "verified": true
+    },
+    {
+      "certificate_format": "fixed_energy_function_spectrum_v237",
+      "path": "certificates/V237_fixed_p4_degree4.json",
+      "sha256": "11f91acc9a3b6d6320d3393da17111a04c412dc2807c137655568fe63f329b81",
+      "verified": true
+    },
+    {
+      "certificate_format": "l2_function_spectrum_v236",
+      "path": "certificates/V236_negative_singularity_degree8.json",
+      "sha256": "67c687599c85b240e2f6061a8cd7c0993f19fdc091ae0e23c9c48797b436e358",
+      "verified": true
+    },
+    {
+      "certificate_format": "fixed_energy_function_spectrum_v237",
+      "path": "certificates/V237_fixed_p4_degree8.json",
+      "sha256": "bed682b734f84f6e5f0199bcc0243c272ea7076b26f4fda45b2c73266b1b7a01",
+      "verified": true
+    },
+    {
+      "certificate_format": "l2_function_spectrum_v236",
+      "path": "certificates/V236_negative_singularity_degree12.json",
+      "sha256": "6aa68aa698d90d6e3af5be3624e169c1b368d7d185eb2def755ba7e7fcc8dafd",
+      "verified": true
+    },
+    {
+      "certificate_format": "fixed_energy_function_spectrum_v237",
+      "path": "certificates/V237_fixed_p4_degree12.json",
+      "sha256": "3a53f3512c6472b3be62eba28780074b9070f08a4866db631ddb9517e0d6b360",
+      "verified": true
+    }
+  ],
+  "interpretation": "Rough potential intervals remain open; function errors are included, not sampled.",
+  "preserved_failures": 5,
+  "results": [
+    {
+      "case": "V235_analytic_order4",
+      "error_budget": {
+        "lower_widening": "5941/10264320",
+        "representation_widening": "5941/5132160",
+        "source_width": "1402238958911585/783383931110279705209602048",
+        "upper_widening": "5941/10264320"
+      },
+      "function": {
+        "kind": "analytic_sum",
+        "polynomial": {},
+        "terms": [
+          {
+            "argument": {
+              "0,0,1": "1/2"
+            },
+            "coefficient": "1",
+            "function": "exp"
+          },
+          {
+            "argument": {
+              "0,0,1": "1/4"
+            },
+            "coefficient": "1",
+            "function": "log1p"
+          },
+          {
+            "argument": {
+              "0,0,1": "1/3"
+            },
+            "coefficient": "1",
+            "function": "sin"
+          }
+        ]
+      },
+      "lower": "1147696563496469141834144973937/387775045899588454078753013760",
+      "method": "linf_function_spectrum_v235",
+      "seconds_before_final_saved_replay": 0.11215487499999999,
+      "status": "certified_open",
+      "upper": "1044232206154955663/352679349725429760",
+      "width": "448889269089765280094321551/387775045899588454078753013760",
+      "width_decimal": 0.0011576022589292708
+    },
+    {
+      "case": "V235_analytic_order8",
+      "error_budget": {
+        "lower_widening": "39670973/69482892165120",
+        "representation_widening": "39670973/34741446082560",
+        "source_width": "54533104921702592921/10152655747189224979516442542080",
+        "upper_widening": "39670973/69482892165120"
+      },
+      "function": {
+        "kind": "analytic_sum",
+        "polynomial": {},
+        "terms": [
+          {
+            "argument": {
+              "0,0,1": "1/2"
+            },
+            "coefficient": "1",
+            "function": "exp"
+          },
+          {
+            "argument": {
+              "0,0,1": "1/4"
+            },
+            "coefficient": "1",
+            "function": "log1p"
+          },
+          {
+            "argument": {
+              "0,0,1": "1/3"
+            },
+            "coefficient": "1",
+            "function": "sin"
+          }
+        ]
+      },
+      "lower": "138761694389332884488262940667887519/46874811584772651730427415216783360",
+      "method": "linf_function_spectrum_v235",
+      "seconds_before_final_saved_replay": 0.47633316699999995,
+      "status": "certified_open",
+      "upper": "883421521765593863973773/298426749480685031915520",
+      "width": "74936701786294256018065421243/65624736218681712422598381303496704",
+      "width_decimal": 1.141897188532419e-06
+    },
+    {
+      "case": "V235_analytic_order12",
+      "error_budget": {
+        "lower_widening": "248598136903/162658426600135065600",
+        "representation_widening": "248598136903/81329213300067532800",
+        "source_width": "8358864552899387626944875383/1556204271088906965743469825268603944960",
+        "upper_widening": "248598136903/162658426600135065600"
+      },
+      "function": {
+        "kind": "analytic_sum",
+        "polynomial": {},
+        "terms": [
+          {
+            "argument": {
+              "0,0,1": "1/2"
+            },
+            "coefficient": "1",
+            "function": "exp"
+          },
+          {
+            "argument": {
+              "0,0,1": "1/4"
+            },
+            "coefficient": "1",
+            "function": "log1p"
+          },
+          {
+            "argument": {
+              "0,0,1": "1/3"
+            },
+            "coefficient": "1",
+            "function": "sin"
+          }
+        ]
+      },
+      "lower": "72763968110365670450820414525678830951456971/24580246461849285523918105890117599310643200",
+      "method": "linf_function_spectrum_v235",
+      "seconds_before_final_saved_replay": 1.2912189170000001,
+      "status": "target_met",
+      "upper": "66178443544806100652718420789863/22355603925324690429914067763200",
+      "width": "75266204868145312396363555818577717/24580246461849285523918105890117599310643200",
+      "width_decimal": 3.0620606259975917e-09
+    },
+    {
+      "case": "V235_multiaxis_original_function",
+      "error_budget": {
+        "lower_widening": "9/500000",
+        "representation_widening": "9/250000",
+        "source_width": "109022020831798767/46116860184273879040000",
+        "upper_widening": "9/500000"
+      },
+      "function": {
+        "kind": "analytic_sum",
+        "polynomial": {
+          "0,0,2": "3",
+          "0,2,0": "2",
+          "2,0,0": "1"
+        },
+        "terms": [
+          {
+            "argument": {
+              "0,0,1": "1",
+              "0,1,0": "1",
+              "1,0,0": "1"
+            },
+            "coefficient": "1/1000000",
+            "function": "exp"
+          }
+        ]
+      },
+      "lower": "826008392202142548525653/230584300921369395200000",
+      "method": "linf_function_spectrum_v235",
+      "seconds_before_final_saved_replay": 1.253551625,
+      "status": "certified_open",
+      "upper": "3846442505470849/1073741824000000",
+      "width": "44230724686641460311/1152921504606846976000000",
+      "width_decimal": 3.8364038236691923e-05
+    },
+    {
+      "case": "V236_step_degree0",
+      "error_budget": {
+        "lower_widening": "3/2",
+        "representation_widening": "3",
+        "source_width": "0",
+        "upper_widening": "3/2"
+      },
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "lower": "1",
+      "method": "l2_function_spectrum_v236",
+      "seconds_before_final_saved_replay": 0.004915291000000099,
+      "status": "certified_open",
+      "upper": "4",
+      "width": "3",
+      "width_decimal": 3.0
+    },
+    {
+      "case": "V236_step_degree4",
+      "error_budget": {
+        "lower_widening": "7287713935672151720058664783195487682387/10889035741470030830827987437816582766592",
+        "representation_widening": "14575427872836433793285457862968485691219/10889035741470030830827987437816582766592",
+        "source_width": "497376784389376098859170108815/680564733841876926926749214863536422912",
+        "upper_widening": "3393606253510472398822565134509/5070602400912917605986812821504"
+      },
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "lower": "19452562833051127317177664370055070967741/10889035741470030830827987437816582766592",
+      "method": "l2_function_spectrum_v236",
+      "seconds_before_final_saved_replay": 0.07670237499999999,
+      "status": "certified_open",
+      "upper": "15845517960305134607801744628125/5070602400912917605986812821504",
+      "width": "14575427880794462343515475444715207432259/10889035741470030830827987437816582766592",
+      "width_decimal": 1.338541651147778
+    },
+    {
+      "case": "V236_step_degree8",
+      "error_budget": {
+        "lower_widening": "1523313339838800975590427229410445889072249473729946923805/3138550867693340381917894711603833208051177722232017256448",
+        "representation_widening": "3046626944796912128424478193873608997109516286870902223645/3138550867693340381917894711603833208051177722232017256448",
+        "source_width": "7574837433635532106715791920541857638268885953601/12259964326927110866866776217202473468949912977468817408",
+        "upper_widening": "5674785394065496149786006526884299174089978684265/11692013098647223345629478661730264157247460343808"
+      },
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "lower": "6180319420159514369194781518249759754066504425563474398179/3138550867693340381917894711603833208051177722232017256448",
+      "method": "l2_function_spectrum_v236",
+      "seconds_before_final_saved_replay": 0.5629080420000001,
+      "status": "certified_open",
+      "upper": "34373061001728510515076961485170201994074792076905/11692013098647223345629478661730264157247460343808",
+      "width": "3046628883955295139120697513116340655825071683705706345501/3138550867693340381917894711603833208051177722232017256448",
+      "width_decimal": 0.9707119662503343
+    },
+    {
+      "case": "V236_step_degree12",
+      "error_budget": {
+        "lower_widening": "1262730025530009483544713/2417851639229258349412352",
+        "representation_widening": "2525460438854317629835401/2417851639229258349412352",
+        "source_width": "1678763197674225/1180591620717411303424",
+        "upper_widening": "588004669791231/1125899906842624"
+      },
+      "function": {
+        "amplitude": "1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "lower": "4671666666169913204240247/2417851639229258349412352",
+      "method": "l2_function_spectrum_v236",
+      "seconds_before_final_saved_replay": 0.2853824170000001,
+      "status": "certified_open",
+      "upper": "3351425073636351/1125899906842624",
+      "width": "2525463876961346466648201/2417851639229258349412352",
+      "width_decimal": 1.0445073783627152
+    },
+    {
+      "case": "V236_negative_singularity_degree4",
+      "error_budget": {
+        "lower_widening": "3779565453221671634635/3252968025248218742784",
+        "representation_widening": "839986721152882705715/361440891694246526976",
+        "source_width": "31608329/47336914944",
+        "upper_widening": "1845856951735484725/1588363293578231808"
+      },
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "lower": "-2033691120647561971403/3252968025248218742784",
+      "method": "l2_function_spectrum_v236",
+      "seconds_before_final_saved_replay": 0.02458079099999999,
+      "status": "certified_open",
+      "upper": "899798417571250279/529454431192743936",
+      "width": "7562052598205323685579/3252968025248218742784",
+      "width_decimal": 2.324662443501362
+    },
+    {
+      "case": "V237_fixed_p4_degree4",
+      "error_budget": {
+        "lower_widening": "3779565453221671634635/3252968025248218742784",
+        "representation_widening": "839986721152882705715/361440891694246526976",
+        "source_width": "31608329/47336914944",
+        "upper_widening": "1845856951735484725/1588363293578231808"
+      },
+      "fixed_reference": {
+        "0,0,0": "-765/418",
+        "0,0,2": "595/209",
+        "0,0,4": "-945/418"
+      },
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "lower": "-2033691120647561971403/3252968025248218742784",
+      "method": "fixed_energy_function_spectrum_v237",
+      "seconds_before_final_saved_replay": 0.008293000000000106,
+      "shift": "1183/418",
+      "status": "certified_open",
+      "theta": "0",
+      "upper": "899798417571250279/529454431192743936",
+      "width": "7562052598205323685579/3252968025248218742784",
+      "width_decimal": 2.324662443501362
+    },
+    {
+      "case": "V236_negative_singularity_degree8",
+      "error_budget": {
+        "lower_widening": "1637685755228385742055106727950631474464580867323935/1496577676626844588240573268701473812127674924007424",
+        "representation_widening": "3275551224051057854407646480447892315189009645307935/1496577676626844588240573268701473812127674924007424",
+        "source_width": "1085050799868125278557660149424670699/2722258935367507707706996859454145691648",
+        "upper_widening": "399869499224285183679819275512026572442487494625/365375409332725729550921208179070754913983135744"
+      },
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "lower": "-15898627452596953659812381194402840439842703514102349/28434975855910047176570892105328002430425823556141056",
+      "method": "l2_function_spectrum_v236",
+      "seconds_before_final_saved_replay": 0.09383920800000034,
+      "status": "certified_open",
+      "upper": "11315473523217622260651602535239405995096412898739/6942132777321788861467502955402344343365679579136",
+      "width": "3276147737036649181023228693618076178724084776175647/1496577676626844588240573268701473812127674924007424",
+      "width_decimal": 2.1890930141499907
+    },
+    {
+      "case": "V237_fixed_p4_degree8",
+      "error_budget": {
+        "lower_widening": "317125712262625223484683476314126864052292943690568015/260143037002135170099367514998301090889079074532098048",
+        "representation_widening": "211429661555485432787176818252833088550964700236363205/86714345667378390033122504999433696963026358177366016",
+        "source_width": "1085050799868125278557660149424670699/2722258935367507707706996859454145691648",
+        "upper_widening": "77432439551716571014855219346770605859521766850225/63511483643099406762540897216382102267841570930688"
+      },
+      "fixed_reference": {
+        "0,0,0": "-765/418",
+        "0,0,2": "595/209",
+        "0,0,4": "-945/418"
+      },
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "lower": "-44476570442770191368137689335830052839741748414320303/65035759250533792524841878749575272722269768633024512",
+      "method": "fixed_energy_function_spectrum_v237",
+      "seconds_before_final_saved_replay": 0.021917667000000307,
+      "shift": "1183/418",
+      "status": "certified_open",
+      "theta": "92523950249/549755813888",
+      "upper": "55723436515312887110732206886107366843502534818831/31755741821549703381270448608191051133920785465344",
+      "width": "52866056142043661390305749679525980045078313241095397/21678586416844597508280626249858424240756589544341504",
+      "width_decimal": 2.4386302282590675
+    },
+    {
+      "case": "V236_negative_singularity_degree12",
+      "error_budget": {
+        "lower_widening": "587672972882514519758345/373007000228462415839232",
+        "representation_widening": "61875040633453675666675/19631947380445390307328",
+        "source_width": "307372543/113082630144",
+        "upper_widening": "143543163855738603005/91066162165151956992"
+      },
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "lower": "-1003483974862696411267/963842377851324071936",
+      "method": "l2_function_spectrum_v236",
+      "seconds_before_final_saved_replay": 0.10011804200000007,
+      "status": "certified_open",
+      "upper": "192453943559330825725/91066162165151956992",
+      "width": "1176639651090882573329929/373007000228462415839232",
+      "width_decimal": 3.154470694571964
+    },
+    {
+      "case": "V237_fixed_p4_degree12",
+      "error_budget": {
+        "lower_widening": "49481616089018236474735/42247609376924409790464",
+        "representation_widening": "99003207359549444113775/42247609376924409790464",
+        "source_width": "307372543/113082630144",
+        "upper_widening": "12090232243782033115/10314357758038185984"
+      },
+      "fixed_reference": {
+        "0,0,0": "-765/418",
+        "0,0,2": "595/209",
+        "0,0,4": "-945/418"
+      },
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "lower": "-26905656423447380978953/42247609376924409790464",
+      "method": "fixed_energy_function_spectrum_v237",
+      "seconds_before_final_saved_replay": 0.023152209000000035,
+      "shift": "1183/418",
+      "status": "certified_open",
+      "theta": "113889779081/549755813888",
+      "upper": "409999461480830635/239868785070655488",
+      "width": "99118041575143119060233/42247609376924409790464",
+      "width_decimal": 2.3461218998413025
+    }
+  ],
+  "saved_certificates_verified": 14,
+  "timing_scope": "local Python observations; not a model or universal speed benchmark",
+  "versions": [
+    235,
+    236,
+    237
+  ],
+  "wall_seconds": 5.217920875
+}

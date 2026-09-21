@@ -1,0 +1,48 @@
+{
+  "axis_zero_convention": "step(0)=0; singular_power(0)=0 as an a.e. representative",
+  "bound_statement": "probability_L2_norm(original_function-piecewise_model)<=error_upper",
+  "cells": [
+    {
+      "left": "-1",
+      "polynomial_in_t": [
+        "0"
+      ],
+      "right": "0"
+    },
+    {
+      "left": "0",
+      "polynomial_in_t": [
+        "1"
+      ],
+      "right": "1"
+    }
+  ],
+  "degree": 3,
+  "endpoint_convention": "at nonzero seams choose the cell starting at abs(t); final endpoint included",
+  "error_squared": "0",
+  "error_upper": "0",
+  "expanded_polynomial_coefficient_slots": 2,
+  "formal_assistant_checked": false,
+  "format": "sphere_structured_piecewise_L2_v1",
+  "function": {
+    "amplitude": "1",
+    "axis": 2,
+    "kind": "axis_profile",
+    "offset": "0",
+    "profile": "step"
+  },
+  "global_polynomial": false,
+  "levels": 4,
+  "norm": "L2_probability",
+  "representation": "two_halves_with_separate_value_at_zero",
+  "root_ratio": "1/2",
+  "scope": "unit_S2_probability_measure",
+  "shape_coefficient_count": 2,
+  "shape_proof": null,
+  "shape_rule": "t=R^4*x scales centered profile coefficients by 1/R and squared residual integral by R^2",
+  "source_norm_squared": "1/2",
+  "source_value_at_axis_zero": "0",
+  "spectral_transfer_claimed": false,
+  "sqrt_bits": 40,
+  "sqrt_upper_squared": "0"
+}

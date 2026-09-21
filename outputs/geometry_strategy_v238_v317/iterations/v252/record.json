@@ -1,0 +1,94 @@
+{
+  "version": 252,
+  "recorded_at": "2026-09-18T18:57:16.178696+00:00",
+  "hypothesis": "Symmetry and proved parity zeros remove duplicate exact contractions.",
+  "change": "Assemble upper triangles, mirror exact entries, and use profile-aware parity zeros including a step counterexample.",
+  "source_sha256": {
+    "fast_math.py": "83443da54fd3e9f01f15910cf09ccd63077f447fc54814311fb4ed46a9d32211",
+    "test_fast_math.py": "95c1aaed0e17fc5b9d4917db2b05c7beaf76247d4acc76b2385894538866710f"
+  },
+  "validation": {
+    "tests_run": 6,
+    "failures": 0,
+    "frozen_verifiers_retained": true
+  },
+  "comparison": {
+    "fixed_input": "m1 modes6 near6; singular and non-even step",
+    "rows": [
+      {
+        "source": "singular",
+        "exact_assembly_equal": true,
+        "baseline_integral_calls": 108,
+        "candidate_cold_counters": {
+          "moment_source_normalizations": 1,
+          "radial_integral_requests": 78,
+          "raw_moment_requests": 222,
+          "raw_moment_computations": 17,
+          "proven_zero_integrals": 36
+        },
+        "baseline": {
+          "serial_seconds": [
+            0.006281375070102513,
+            0.006320834043435752,
+            0.006335709011182189
+          ],
+          "median_seconds": 0.006320834043435752,
+          "not_a_model_speed_claim": true
+        },
+        "candidate_cold": {
+          "serial_seconds": [
+            0.0005722919013351202,
+            0.0005505000008270144,
+            0.0005400830414146185
+          ],
+          "median_seconds": 0.0005505000008270144,
+          "not_a_model_speed_claim": true
+        }
+      },
+      {
+        "source": "step",
+        "exact_assembly_equal": true,
+        "baseline_integral_calls": 108,
+        "candidate_cold_counters": {
+          "moment_source_normalizations": 1,
+          "radial_integral_requests": 78,
+          "raw_moment_requests": 246,
+          "raw_moment_computations": 29,
+          "proven_zero_integrals": 30
+        },
+        "baseline": {
+          "serial_seconds": [
+            0.004432958085089922,
+            0.004285999923013151,
+            0.004357374971732497
+          ],
+          "median_seconds": 0.004357374971732497,
+          "not_a_model_speed_claim": true
+        },
+        "candidate_cold": {
+          "serial_seconds": [
+            0.0005587090272456408,
+            0.0005442079855129123,
+            0.000538166961632669
+          ],
+          "median_seconds": 0.0005442079855129123,
+          "not_a_model_speed_claim": true
+        }
+      }
+    ],
+    "prior_v251_singular_counters": {
+      "moment_source_normalizations": 1,
+      "radial_integral_requests": 108,
+      "raw_moment_requests": 540,
+      "raw_moment_computations": 32
+    },
+    "proof": "radial product parity is l+k; step same-parity off-diagonal integrates its constant even part; odd step couplings are retained",
+    "cache_regime": "candidate raw moments cold, shared legacy radial polynomials warm"
+  },
+  "outcome": "implemented_exact_checks_passed",
+  "limitations": [
+    "Small serial probes; no claim of universal speedup.",
+    "Caches are process-local; cold and warm costs are identified."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

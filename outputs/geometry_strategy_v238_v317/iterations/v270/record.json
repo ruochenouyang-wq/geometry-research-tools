@@ -1,0 +1,42 @@
+{
+  "version": 270,
+  "recorded_at": "2026-09-18T18:35:55.089925+00:00",
+  "hypothesis": "Exact cancellation of the leading singularity can improve full residuals before adding many powers.",
+  "change": "Added a rational constrained basis preserving the Frobenius leading coefficient through coefficient rounding.",
+  "source_sha256": {
+    "adaptive_singular.py": "cef0f0bd1da1fe1001a7a3d241ad0ba0373b43c56c9858a831f7d603027bba23",
+    "test_adaptive_singular.py": "b8cf33e06b8d6fc4811e64b79fb41d941f6ff16dcb53f9f086bdbb170a747d26"
+  },
+  "validation": {
+    "tests_passed": 7,
+    "replayed": true
+  },
+  "comparison": {
+    "False": {
+      "width": "1270594304738190250536865293249600195470757611802944120273899200616606678671949062868375973465701333005011554246335178421300943222735684612432912128769971826204868608/1420921684384654220857516658359407544512121424150295435526475006984601303329301979172437412888173835036785989619068882944178958473418720069680244357575484496753066412067",
+      "seconds": 0.038080167,
+      "powers": [
+        "0",
+        "7/4",
+        "2",
+        "7/2"
+      ]
+    },
+    "True": {
+      "width": "121105355716325562230383074510507574656274383787349221682324208724475237895950384389978043214187786454750205318378754550264303763585929698024509074865419124785962549248/244724872026944668506133463497952865501342472034538416708097394603332621964053874445033465408508797290538738833232608198634438866377587563270675345838621674754413839608213",
+      "seconds": 0.029548667,
+      "powers": [
+        "0",
+        "7/4",
+        "2",
+        "7/2"
+      ]
+    }
+  },
+  "outcome": "constraint_tradeoff_measured",
+  "limitations": [
+    "At equal power count the cancellation constraint removes one free coefficient.",
+    "v269 residual greedy selection was worse than nested selection at four terms."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

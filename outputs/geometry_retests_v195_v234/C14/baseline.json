@@ -1,0 +1,49 @@
+{
+  "actual_retest": [
+    {
+      "count": [
+        8,
+        8
+      ],
+      "mean_zero": true,
+      "status": "accepted",
+      "trace": [
+        "20",
+        "20"
+      ]
+    },
+    {
+      "exception": "ValueError",
+      "mean_zero": false,
+      "message": "This full spectrum interface requires mean_zero=True",
+      "status": "rejected"
+    }
+  ],
+  "diagnosis": "The mean-zero half is already solved; the original unprojected half is rejected. Nonconstant q requires genuinely different m=0 radial compression.",
+  "original_case": {
+    "acceptance": [
+      "Mean-zero result: negative count 8 and negative-part trace 20 (l=1:3*5; l=2:5*1).",
+      "Unprojected result: negative count 9 and trace 27; prove no omitted negative eigenvalues. These are exact test identities, not a new Lieb-Thirring bound."
+    ],
+    "category": 7,
+    "frozen_v94_baseline": "Sector energies are available; full counting and negative-trace sum API are absent.",
+    "id": "C14",
+    "input": {
+      "q": [
+        "-7"
+      ],
+      "quantity": "sum_j max(0,-lambda_j), with multiplicity",
+      "spaces": [
+        "full_mean_zero",
+        "full_unprojected"
+      ]
+    },
+    "origin": "exact_calibration",
+    "source_ids": [
+      "sphere",
+      "gn"
+    ],
+    "status": "fixed_challenge_not_claimed_solved",
+    "title": "负谱个数及负部迹"
+  }
+}

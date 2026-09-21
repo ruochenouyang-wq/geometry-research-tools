@@ -1,0 +1,781 @@
+{
+  "formal_assistant_checked": false,
+  "format": "sphere_radius_ordered_v188",
+  "multiplicities_unchanged_by_positive_dilation": true,
+  "negative_count_lower": 3,
+  "negative_count_upper": 3,
+  "negative_trace_lower": "3",
+  "negative_trace_upper": "3",
+  "ordered_intervals": [
+    {
+      "index": 1,
+      "lower": "-1",
+      "upper": "-1"
+    },
+    {
+      "index": 2,
+      "lower": "-1",
+      "upper": "-1"
+    },
+    {
+      "index": 3,
+      "lower": "-1",
+      "upper": "-1"
+    },
+    {
+      "index": 4,
+      "lower": "0",
+      "upper": "0"
+    },
+    {
+      "index": 5,
+      "lower": "0",
+      "upper": "0"
+    },
+    {
+      "index": 6,
+      "lower": "0",
+      "upper": "0"
+    },
+    {
+      "index": 7,
+      "lower": "0",
+      "upper": "0"
+    },
+    {
+      "index": 8,
+      "lower": "0",
+      "upper": "0"
+    }
+  ],
+  "problem": {
+    "coordinates": "normalized_t",
+    "geometry": "round_two_sphere",
+    "mean_zero": true,
+    "measure": "natural_area_on_S2_R",
+    "q_coefficients": [
+      "-3/2"
+    ],
+    "scope": "all_real_mean_zero_H1_on_S2_radius_R"
+  },
+  "radius": "2",
+  "unit_negative_trace": {
+    "assembly": {
+      "entries": [
+        {
+          "laplace_degree": 1,
+          "lower": "-4",
+          "m": 0,
+          "multiplicity": 1,
+          "radial_index": 1,
+          "upper": "-4"
+        },
+        {
+          "laplace_degree": 2,
+          "lower": "0",
+          "m": 0,
+          "multiplicity": 1,
+          "radial_index": 2,
+          "upper": "0"
+        }
+      ],
+      "format": "angular_multiplicity_assembly_v157",
+      "mean_zero": true,
+      "q_coefficients": [
+        "-6"
+      ],
+      "represented_eigenvalues_with_multiplicity": 2,
+      "sector_lists": [
+        [
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "-4.000000000000",
+              "-4.000000000000"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "0",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "-4",
+            "lower_inertia": [
+              0,
+              1,
+              1
+            ],
+            "mean_zero": true,
+            "modes": 2,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "-6"
+            ],
+            "radial_tail_lower": "6",
+            "radial_tail_start": 3,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-6",
+              "upper": "-6"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "-4",
+            "upper_inertia": [
+              0,
+              1,
+              1
+            ],
+            "upper_kind": "upper_ritz"
+          },
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "0.000000000000",
+              "0.000000000000"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 2,
+            "exact_width": "0",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "0",
+            "lower_inertia": [
+              1,
+              1,
+              0
+            ],
+            "mean_zero": true,
+            "modes": 2,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "-6"
+            ],
+            "radial_tail_lower": "6",
+            "radial_tail_start": 3,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-6",
+              "upper": "-6"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "0",
+            "upper_inertia": [
+              1,
+              1,
+              0
+            ],
+            "upper_kind": "upper_ritz"
+          }
+        ]
+      ]
+    },
+    "cutoff_proof": {
+      "cutoff": "0",
+      "degree_cutoff": 2,
+      "every_unlisted_mode_above_cutoff": true,
+      "unlisted_floor": "6"
+    },
+    "floors": {
+      "all_unenumerated_angular_eigenvalues_at_least": "-4",
+      "format": "omitted_sector_floors_v158",
+      "omitted_azimuth_m_start": 1,
+      "potential_range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "-6",
+        "upper": "-6"
+      },
+      "q_coefficients": [
+        "-6"
+      ],
+      "q_lower": "-6",
+      "q_upper": "-6",
+      "radial": [
+        {
+          "all_unenumerated_radial_eigenvalues_at_least": "6",
+          "m": 0,
+          "multiplicity": 1,
+          "next_laplace_degree": 3,
+          "next_radial_index": 3
+        }
+      ],
+      "rule": "minmax: l(l+1)+inf(q) <= lambda_m,j <= l(l+1)+sup(q)"
+    },
+    "formal_assistant_checked": false,
+    "format": "full_negative_trace_v162",
+    "lower": "12",
+    "omitted_negative_modes": [
+      {
+        "laplace_degree": 1,
+        "lower": "-4",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-4"
+      }
+    ],
+    "omitted_negative_tail_resolved": true,
+    "omitted_negative_trace_lower": "8",
+    "omitted_negative_trace_upper": "8",
+    "slots": [
+      {
+        "laplace_degree": 1,
+        "lower": "-4",
+        "m": 0,
+        "multiplicity": 1,
+        "radial_index": 1,
+        "source": "certified_sector_and_minmax",
+        "upper": "-4"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "0",
+        "m": 0,
+        "multiplicity": 1,
+        "radial_index": 2,
+        "source": "certified_sector_and_minmax",
+        "upper": "0"
+      },
+      {
+        "laplace_degree": 1,
+        "lower": "-4",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-4"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "0",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 2,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "0"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "0",
+        "m": 2,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "0"
+      }
+    ],
+    "status": "certified_trace_target_met",
+    "sum_convention": "sum_multiplicity*max(0,-lambda)",
+    "tolerance": "1/100000000",
+    "upper": "12",
+    "width": "0"
+  },
+  "unit_ordered": {
+    "analytical_dependencies": [
+      "complete real spherical harmonic decomposition",
+      "quadratic form minmax under bounded multiplication",
+      "verified sector radial Schur comparison"
+    ],
+    "assembly": {
+      "entries": [
+        {
+          "laplace_degree": 1,
+          "lower": "-4",
+          "m": 0,
+          "multiplicity": 1,
+          "radial_index": 1,
+          "upper": "-4"
+        },
+        {
+          "laplace_degree": 2,
+          "lower": "0",
+          "m": 0,
+          "multiplicity": 1,
+          "radial_index": 2,
+          "upper": "0"
+        }
+      ],
+      "format": "angular_multiplicity_assembly_v157",
+      "mean_zero": true,
+      "q_coefficients": [
+        "-6"
+      ],
+      "represented_eigenvalues_with_multiplicity": 2,
+      "sector_lists": [
+        [
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "-4.000000000000",
+              "-4.000000000000"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "0",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "-4",
+            "lower_inertia": [
+              0,
+              1,
+              1
+            ],
+            "mean_zero": true,
+            "modes": 2,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "-6"
+            ],
+            "radial_tail_lower": "6",
+            "radial_tail_start": 3,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-6",
+              "upper": "-6"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "-4",
+            "upper_inertia": [
+              0,
+              1,
+              1
+            ],
+            "upper_kind": "upper_ritz"
+          },
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "0.000000000000",
+              "0.000000000000"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 2,
+            "exact_width": "0",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "0",
+            "lower_inertia": [
+              1,
+              1,
+              0
+            ],
+            "mean_zero": true,
+            "modes": 2,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "-6"
+            ],
+            "radial_tail_lower": "6",
+            "radial_tail_start": 3,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-6",
+              "upper": "-6"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "0",
+            "upper_inertia": [
+              1,
+              1,
+              0
+            ],
+            "upper_kind": "upper_ritz"
+          }
+        ]
+      ]
+    },
+    "cutoff_proof": {
+      "cutoff": "0",
+      "degree_cutoff": 2,
+      "every_unlisted_mode_above_cutoff": true,
+      "unlisted_floor": "6"
+    },
+    "first_k_resolved_without_enumerating_all_modes": true,
+    "floors": {
+      "all_unenumerated_angular_eigenvalues_at_least": "-4",
+      "format": "omitted_sector_floors_v158",
+      "omitted_azimuth_m_start": 1,
+      "potential_range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "-6",
+        "upper": "-6"
+      },
+      "q_coefficients": [
+        "-6"
+      ],
+      "q_lower": "-6",
+      "q_upper": "-6",
+      "radial": [
+        {
+          "all_unenumerated_radial_eigenvalues_at_least": "6",
+          "m": 0,
+          "multiplicity": 1,
+          "next_laplace_degree": 3,
+          "next_radial_index": 3
+        }
+      ],
+      "rule": "minmax: l(l+1)+inf(q) <= lambda_m,j <= l(l+1)+sup(q)"
+    },
+    "formal_assistant_checked": false,
+    "format": "full_ordered_spectrum_v159",
+    "ordered_intervals": [
+      {
+        "index": 1,
+        "lower": "-4",
+        "target_met": true,
+        "upper": "-4",
+        "width": "0"
+      },
+      {
+        "index": 2,
+        "lower": "-4",
+        "target_met": true,
+        "upper": "-4",
+        "width": "0"
+      },
+      {
+        "index": 3,
+        "lower": "-4",
+        "target_met": true,
+        "upper": "-4",
+        "width": "0"
+      },
+      {
+        "index": 4,
+        "lower": "0",
+        "target_met": true,
+        "upper": "0",
+        "width": "0"
+      },
+      {
+        "index": 5,
+        "lower": "0",
+        "target_met": true,
+        "upper": "0",
+        "width": "0"
+      },
+      {
+        "index": 6,
+        "lower": "0",
+        "target_met": true,
+        "upper": "0",
+        "width": "0"
+      },
+      {
+        "index": 7,
+        "lower": "0",
+        "target_met": true,
+        "upper": "0",
+        "width": "0"
+      },
+      {
+        "index": 8,
+        "lower": "0",
+        "target_met": true,
+        "upper": "0",
+        "width": "0"
+      }
+    ],
+    "request": {
+      "bits": 20,
+      "format": "full_mean_zero_ordered_request_v155",
+      "function_space": "all_real_mean_zero_H1_S2",
+      "geometry": "unit_S2",
+      "k": 8,
+      "max_m": 4,
+      "max_modes": 3,
+      "max_radial": 3,
+      "mean_zero": true,
+      "modes": 2,
+      "multiplicity": {
+        "m=0": 1,
+        "m>0": 2
+      },
+      "operator": "P_mean_zero*(-Delta+q)*P_mean_zero",
+      "q_coefficients": [
+        "-6"
+      ],
+      "tolerance": "1/100000000"
+    },
+    "slots": [
+      {
+        "laplace_degree": 1,
+        "lower": "-4",
+        "m": 0,
+        "multiplicity": 1,
+        "radial_index": 1,
+        "source": "certified_sector_and_minmax",
+        "upper": "-4"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "0",
+        "m": 0,
+        "multiplicity": 1,
+        "radial_index": 2,
+        "source": "certified_sector_and_minmax",
+        "upper": "0"
+      },
+      {
+        "laplace_degree": 1,
+        "lower": "-4",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-4"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "0",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 2,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "0"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "0",
+        "m": 2,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "0"
+      }
+    ],
+    "status": "certified_target_met",
+    "uncomputed_modes_may_touch_first_k": [
+      {
+        "laplace_degree": 1,
+        "lower": "-4",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-4"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "0",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 2,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "0"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "0",
+        "m": 2,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "0"
+      }
+    ]
+  },
+  "unit_strict_negative_count": {
+    "assembly": {
+      "entries": [
+        {
+          "laplace_degree": 1,
+          "lower": "-4",
+          "m": 0,
+          "multiplicity": 1,
+          "radial_index": 1,
+          "upper": "-4"
+        },
+        {
+          "laplace_degree": 2,
+          "lower": "0",
+          "m": 0,
+          "multiplicity": 1,
+          "radial_index": 2,
+          "upper": "0"
+        }
+      ],
+      "format": "angular_multiplicity_assembly_v157",
+      "mean_zero": true,
+      "q_coefficients": [
+        "-6"
+      ],
+      "represented_eigenvalues_with_multiplicity": 2,
+      "sector_lists": [
+        [
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "-4.000000000000",
+              "-4.000000000000"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "0",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "-4",
+            "lower_inertia": [
+              0,
+              1,
+              1
+            ],
+            "mean_zero": true,
+            "modes": 2,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "-6"
+            ],
+            "radial_tail_lower": "6",
+            "radial_tail_start": 3,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-6",
+              "upper": "-6"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "-4",
+            "upper_inertia": [
+              0,
+              1,
+              1
+            ],
+            "upper_kind": "upper_ritz"
+          },
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "0.000000000000",
+              "0.000000000000"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 2,
+            "exact_width": "0",
+            "formal_assistant_checked": false,
+            "format": "projected_sphere_sector_v91_v92",
+            "geometry": "unit_S2",
+            "lower": "0",
+            "lower_inertia": [
+              1,
+              1,
+              0
+            ],
+            "mean_zero": true,
+            "modes": 2,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "-6"
+            ],
+            "radial_tail_lower": "6",
+            "radial_tail_start": 3,
+            "range_proof": {
+              "kind": "quadratic_range_v5",
+              "lower": "-6",
+              "upper": "-6"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "0",
+            "upper_inertia": [
+              1,
+              1,
+              0
+            ],
+            "upper_kind": "upper_ritz"
+          }
+        ]
+      ]
+    },
+    "comparison": "strictly_less_than",
+    "count_lower": 3,
+    "count_upper": 3,
+    "cutoff_proof": {
+      "cutoff": "0",
+      "degree_cutoff": 2,
+      "every_unlisted_mode_above_cutoff": true,
+      "unlisted_floor": "6"
+    },
+    "exact_tie_multiplicity": 5,
+    "floors": {
+      "all_unenumerated_angular_eigenvalues_at_least": "-4",
+      "format": "omitted_sector_floors_v158",
+      "omitted_azimuth_m_start": 1,
+      "potential_range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "-6",
+        "upper": "-6"
+      },
+      "q_coefficients": [
+        "-6"
+      ],
+      "q_lower": "-6",
+      "q_upper": "-6",
+      "radial": [
+        {
+          "all_unenumerated_radial_eigenvalues_at_least": "6",
+          "m": 0,
+          "multiplicity": 1,
+          "next_laplace_degree": 3,
+          "next_radial_index": 3
+        }
+      ],
+      "rule": "minmax: l(l+1)+inf(q) <= lambda_m,j <= l(l+1)+sup(q)"
+    },
+    "formal_assistant_checked": false,
+    "format": "strict_full_spectral_count_v161",
+    "slots": [
+      {
+        "laplace_degree": 1,
+        "lower": "-4",
+        "m": 0,
+        "multiplicity": 1,
+        "radial_index": 1,
+        "source": "certified_sector_and_minmax",
+        "upper": "-4"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "0",
+        "m": 0,
+        "multiplicity": 1,
+        "radial_index": 2,
+        "source": "certified_sector_and_minmax",
+        "upper": "0"
+      },
+      {
+        "laplace_degree": 1,
+        "lower": "-4",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "-4"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "0",
+        "m": 1,
+        "multiplicity": 2,
+        "radial_index": 2,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "0"
+      },
+      {
+        "laplace_degree": 2,
+        "lower": "0",
+        "m": 2,
+        "multiplicity": 2,
+        "radial_index": 1,
+        "source": "uncomputed_minmax_placeholder",
+        "upper": "0"
+      }
+    ],
+    "status": "exact_count",
+    "threshold": "0",
+    "unresolved_threshold_clusters": []
+  },
+  "zero_eigenvalues_are_not_negative": true
+}

@@ -1,0 +1,200 @@
+{
+  "request": {
+    "op": "research",
+    "target": "spectrum",
+    "function": {
+      "kind": "axis_profile",
+      "profile": "abs_power",
+      "exponent": "-1/4",
+      "amplitude": "-1",
+      "offset": "0",
+      "axis": 2
+    },
+    "mean_zero": true,
+    "tolerance": "1/100000000"
+  },
+  "response": {
+    "bounds": {
+      "decimal_lower": "0.535142576723",
+      "decimal_upper": "0.535142576745",
+      "exact_width": "3035050377090347060599572012355897015000815815425360916039626518453794799381494676687439830172401017034248786458228304417380125570208771222592502787435820691748733069897928900266164224/144873581657979099575463559993767677750237970538984877246459376559259082144677782818565374710395343210835961447042394911972847068466356914063852144252530579689978753054960478672927055831016182755",
+      "lower": "569498631971015309949218114039163112187932268802753259054815412711119218426450073925196928885499833250721/1064199816539042038954931363961207125805165586384791209989026602376663355837199617015525927582710040211944",
+      "upper": "4662464057487737518884166883382230824959319583336335073480153891577670077794339463628380139/8712564202711931309405603620183142913301117764994782282490487256171451202507520663505708280"
+    },
+    "budget_scope": "whole_service_call_including_replay_and_storage; cooperative",
+    "certificate_format": "adaptive_singular_temple_v1",
+    "certificate_sha256": "10784ab6d8df4b805009393b6d74360f8e8dbf528ffac53058fba695a0bb80b5",
+    "certificate_valid": true,
+    "cost": {
+      "backend_model_tokens": null,
+      "controller_model_calls": 0,
+      "controller_overhead_seconds": 0.0043902507750317454,
+      "diagnosis_seconds": 2.329109702259302e-05,
+      "elapsed_seconds": 0.06172941694967449,
+      "failed_attempts": 0,
+      "reported_backend_attempts": 9,
+      "solver_calls": 4,
+      "solver_seconds": 0.05368137499317527,
+      "unreported_backend_work_included_in_wall_time": true,
+      "verification_seconds": 0.0036345000844448805,
+      "verified_attempts": 4,
+      "wall_budget_is_cooperative": true,
+      "work_is_proxy_not_runtime": true,
+      "work_units_charged": 25088
+    },
+    "evidence_ref": {
+      "bytes": 10596,
+      "locator": "10784ab6d8df4b805009393b6d74360f8e8dbf528ffac53058fba695a0bb80b5",
+      "sha256": "10784ab6d8df4b805009393b6d74360f8e8dbf528ffac53058fba695a0bb80b5"
+    },
+    "evidence_state": "verified",
+    "execution_ok": true,
+    "format": "interaction_summary_v1",
+    "interaction": {
+      "cache": {
+        "entries": 1,
+        "evictions": 0,
+        "hits": 0,
+        "max_entries": 128,
+        "max_payload_bytes": 16777216,
+        "misses": 1,
+        "note": "Payload bounds exclude Python/key overhead. Warm means this runner has cached the exact input, not a fresh-process comparison.",
+        "oversized_skips": 0,
+        "serialized_payload_bytes": 18059,
+        "writes": 1
+      },
+      "cache_condition": "cold_cache_miss",
+      "cache_hit": false,
+      "request_key": "4347494420e3c476334b85ad656bcfecc80e941e965553b74fc735f972179c74",
+      "usage": {
+        "actual_api_usage": null,
+        "counts": {
+          "admitted": 1,
+          "budget_rejections": 0,
+          "cache_hits": 0,
+          "executor_calls": 1,
+          "failures": 0,
+          "received": 1,
+          "successes": 1
+        },
+        "elapsed_wall_seconds": 0.06571800005622208,
+        "limits": {
+          "executions": null,
+          "requests": null,
+          "wall_seconds": null
+        },
+        "model_calls": 0,
+        "stages": {
+          "cache_write": {
+            "calls": 1,
+            "exceptions": 0,
+            "seconds": 8.816702757030725e-05
+          },
+          "execution": {
+            "calls": 1,
+            "exceptions": 0,
+            "seconds": 0.06557529198471457
+          },
+          "request_key": {
+            "calls": 1,
+            "exceptions": 0,
+            "seconds": 1.320790033787489e-05
+          }
+        },
+        "timing_note": "Elapsed wall includes idle time; stages may overlap and must not be summed as wall time. Admission limits do not interrupt an active call."
+      }
+    },
+    "ok": true,
+    "request": {
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "mean_zero": true,
+      "op": "research",
+      "target": "spectrum",
+      "tolerance": "1/100000000"
+    },
+    "request_digest": "1a0c064dac66fdda70a77bf24c6bdea18f9b8f7ea0135998a16afd5fe2d4a258",
+    "scope": {
+      "full_infinite_space_covered": true,
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "geometry": "unit_S2",
+      "mean_zero": true,
+      "measure": "d_sigma/(4*pi)_on_unit_S2",
+      "scope": "all_real_mean_zero_H1_on_unit_S2"
+    },
+    "status": "certified_met",
+    "stop_reason": "target_met",
+    "target": {
+      "quantity": "lowest_spectral_value",
+      "tolerance": "1/100000000"
+    },
+    "target_met": true,
+    "total_elapsed_seconds": 0.07500733307097107,
+    "usage": {
+      "actual_api_usage": null,
+      "counts": {
+        "admitted": 1,
+        "budget_rejections": 0,
+        "cache_hits": 0,
+        "executor_calls": 1,
+        "failures": 0,
+        "received": 1,
+        "successes": 1
+      },
+      "elapsed_wall_seconds": 0.06736175005789846,
+      "limits": {
+        "executions": null,
+        "requests": null,
+        "wall_seconds": null
+      },
+      "model_calls": 0,
+      "stages": {
+        "cache_write": {
+          "calls": 1,
+          "exceptions": 0,
+          "seconds": 8.816702757030725e-05
+        },
+        "execution": {
+          "calls": 1,
+          "exceptions": 0,
+          "seconds": 0.06557529198471457
+        },
+        "request_key": {
+          "calls": 1,
+          "exceptions": 0,
+          "seconds": 1.320790033787489e-05
+        },
+        "store": {
+          "calls": 1,
+          "exceptions": 0,
+          "seconds": 0.001216583070345223
+        },
+        "verification": {
+          "calls": 1,
+          "exceptions": 0,
+          "seconds": 8.629204239696264e-05
+        }
+      },
+      "timing_note": "Elapsed wall includes idle time; stages may overlap and must not be summed as wall time. Admission limits do not interrupt an active call."
+    },
+    "within_budget": true
+  },
+  "process_wall_seconds": 0.1802120419451967,
+  "comparison_claimed": false,
+  "returncode": 0,
+  "stderr": "",
+  "evidence_directory_scope": "temporary; reproduction example, not a retained evidence reference"
+}

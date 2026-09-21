@@ -1,0 +1,576 @@
+{
+  "axis_zero_convention": "step(0)=0; singular_power(0)=0 as an a.e. representative",
+  "bound_statement": "probability_L2_norm(original_function-piecewise_model)<=error_upper",
+  "cells": [
+    {
+      "approximation_norm_squared_dt": "59049/1048576",
+      "coordinate": "s=(abs(t)-left)/(right-left)",
+      "core": true,
+      "cross_integral_dt": "59049/1048576",
+      "degree": 0,
+      "error_squared_dt": "59049/8388608",
+      "left": "0",
+      "left_fourth_root": "0",
+      "polynomial_in_s": [
+        "-16384/2187"
+      ],
+      "projection": [
+        {
+          "basis_mass_dt": "282429536481/281474976710656",
+          "coefficient": "-16384/2187",
+          "degree": 0,
+          "norm_squared_dt": "59049/1048576",
+          "shifted_legendre_in_s": [
+            "1"
+          ],
+          "source_inner_product_dt": "-129140163/17179869184"
+        }
+      ],
+      "right": "282429536481/281474976710656",
+      "right_fourth_root": "729/4096",
+      "source_monomial_moments_dt": [
+        "-129140163/17179869184"
+      ],
+      "source_norm_squared_dt": "531441/8388608"
+    },
+    {
+      "approximation_norm_squared_dt": "1249848738683130168801/25365124400000000000000",
+      "coordinate": "s=(abs(t)-left)/(right-left)",
+      "core": false,
+      "cross_integral_dt": "1249848738683130168801/25365124400000000000000",
+      "degree": 3,
+      "error_squared_dt": "83721343762221597/3246735923200000000000000",
+      "left": "282429536481/281474976710656",
+      "left_fourth_root": "729/4096",
+      "polynomial_in_s": [
+        "-14051592896512/2506981640625",
+        "2263083778048/835660546875",
+        "-1044286799872/501396328125",
+        "387861250048/501396328125"
+      ],
+      "projection": [
+        {
+          "basis_mass_dt": "610187270175/281474976710656",
+          "coefficient": "-606208/127575",
+          "degree": 0,
+          "norm_squared_dt": "8982009/183500800",
+          "shifted_legendre_in_s": [
+            "1"
+          ],
+          "source_inner_product_dt": "-176969853/17179869184"
+        },
+        {
+          "basis_mass_dt": "203395756725/281474976710656",
+          "coefficient": "34422784/52093125",
+          "degree": 1,
+          "norm_squared_dt": "86884718283/275365888000000",
+          "shifted_legendre_in_s": [
+            "-1",
+            "2"
+          ],
+          "source_inner_product_dt": "10049017869/21045339750400"
+        },
+        {
+          "basis_mass_dt": "122037454035/281474976710656",
+          "coefficient": "-9249898496/60167559375",
+          "degree": 2,
+          "norm_squared_dt": "2091241039947921/204080543744000000000",
+          "shifted_legendre_in_s": [
+            "1",
+            "-6",
+            "6"
+          ],
+          "source_inner_product_dt": "-2700316025361/40512279019520000"
+        },
+        {
+          "basis_mass_dt": "87169610025/281474976710656",
+          "coefficient": "96965312512/2506981640625",
+          "degree": 3,
+          "norm_squared_dt": "2068261613406749601/4464261894400000000000000",
+          "shifted_legendre_in_s": [
+            "-1",
+            "12",
+            "-30",
+            "20"
+          ],
+          "source_inner_product_dt": "84921035855751/7089648828416000000"
+        }
+      ],
+      "right": "3486784401/1099511627776",
+      "right_fourth_root": "243/1024",
+      "source_monomial_moments_dt": [
+        "-176969853/17179869184",
+        "-710297845770498840279/33849922949209616891772928",
+        "-700789869149764191197006100388599/14972424144521292392388482726997801304064",
+        "-214797842183291261109579842352900649747054173/1915619426082361072947933783937886479523423902729502720"
+      ],
+      "source_norm_squared_dt": "413343/8388608"
+    },
+    {
+      "approximation_norm_squared_dt": "138872082075903352089/1585320275000000000000",
+      "coordinate": "s=(abs(t)-left)/(right-left)",
+      "core": false,
+      "cross_integral_dt": "138872082075903352089/1585320275000000000000",
+      "degree": 3,
+      "error_squared_dt": "9302371529135733/202920995200000000000000",
+      "left": "3486784401/1099511627776",
+      "left_fourth_root": "243/1024",
+      "polynomial_in_s": [
+        "-3512898224128/835660546875",
+        "565770944512/278553515625",
+        "-261071699968/167132109375",
+        "96965312512/167132109375"
+      ],
+      "projection": [
+        {
+          "basis_mass_dt": "7533176175/1099511627776",
+          "coefficient": "-151552/42525",
+          "degree": 0,
+          "norm_squared_dt": "998001/11468800",
+          "shifted_legendre_in_s": [
+            "1"
+          ],
+          "source_inner_product_dt": "-6554439/268435456"
+        },
+        {
+          "basis_mass_dt": "2511058725/1099511627776",
+          "coefficient": "8605696/17364375",
+          "degree": 1,
+          "norm_squared_dt": "9653857587/17210368000000",
+          "shifted_legendre_in_s": [
+            "-1",
+            "2"
+          ],
+          "source_inner_product_dt": "372185847/328833433600"
+        },
+        {
+          "basis_mass_dt": "1506635235/1099511627776",
+          "coefficient": "-2312474624/20055853125",
+          "degree": 2,
+          "norm_squared_dt": "232360115549769/12755033984000000000",
+          "shifted_legendre_in_s": [
+            "1",
+            "-6",
+            "6"
+          ],
+          "source_inner_product_dt": "-100011704643/633004359680000"
+        },
+        {
+          "basis_mass_dt": "1076168025/1099511627776",
+          "coefficient": "24241328128/835660546875",
+          "degree": 3,
+          "norm_squared_dt": "229806845934083289/279016368400000000000000",
+          "shifted_legendre_in_s": [
+            "-1",
+            "12",
+            "-30",
+            "20"
+          ],
+          "source_inner_product_dt": "3145223550213/110775762944000000"
+        }
+      ],
+      "right": "43046721/4294967296",
+      "right_fourth_root": "81/256",
+      "source_monomial_moments_dt": [
+        "-6554439/268435456",
+        "-324781822483081317/2066035336255469780992",
+        "-3955979323103209149446539317/3569704090242693994614716226338816",
+        "-14969630940063327548891343595223012439/1784059615882449851322857461811868920478433280"
+      ],
+      "source_norm_squared_dt": "45927/524288"
+    },
+    {
+      "approximation_norm_squared_dt": "15430231341767039121/99082517187500000000",
+      "coordinate": "s=(abs(t)-left)/(right-left)",
+      "core": false,
+      "cross_integral_dt": "15430231341767039121/99082517187500000000",
+      "degree": 3,
+      "error_squared_dt": "1033596836570637/12682562200000000000000",
+      "left": "43046721/4294967296",
+      "left_fourth_root": "81/256",
+      "polynomial_in_s": [
+        "-878224556032/278553515625",
+        "141442736128/92851171875",
+        "-65267924992/55710703125",
+        "24241328128/55710703125"
+      ],
+      "projection": [
+        {
+          "basis_mass_dt": "93002175/4294967296",
+          "coefficient": "-37888/14175",
+          "degree": 0,
+          "norm_squared_dt": "110889/716800",
+          "shifted_legendre_in_s": [
+            "1"
+          ],
+          "source_inner_product_dt": "-242757/4194304"
+        },
+        {
+          "basis_mass_dt": "31000725/4294967296",
+          "coefficient": "2151424/5788125",
+          "degree": 1,
+          "norm_squared_dt": "1072650843/1075648000000",
+          "shifted_legendre_in_s": [
+            "-1",
+            "2"
+          ],
+          "source_inner_product_dt": "13784661/5138022400"
+        },
+        {
+          "basis_mass_dt": "18600435/4294967296",
+          "coefficient": "-578118656/6685284375",
+          "degree": 2,
+          "norm_squared_dt": "25817790616641/797189624000000000",
+          "shifted_legendre_in_s": [
+            "1",
+            "-6",
+            "6"
+          ],
+          "source_inner_product_dt": "-3704137209/9890693120000"
+        },
+        {
+          "basis_mass_dt": "13286025/4294967296",
+          "coefficient": "6060332032/278553515625",
+          "degree": 3,
+          "norm_squared_dt": "25534093992675921/17438523025000000000000",
+          "shifted_legendre_in_s": [
+            "-1",
+            "12",
+            "-30",
+            "20"
+          ],
+          "source_inner_product_dt": "116489761119/1730871296000000"
+        }
+      ],
+      "right": "531441/16777216",
+      "right_fourth_root": "27/64",
+      "source_monomial_moments_dt": [
+        "-242757/4194304",
+        "-148505634422991/126100789566373888",
+        "-22331619068362485108111/851083777008698938993147904",
+        "-1043259318641017573595768903877/1661534994731144841129758825350430720"
+      ],
+      "source_norm_squared_dt": "5103/32768"
+    },
+    {
+      "approximation_norm_squared_dt": "1714470149085226569/6192657324218750000",
+      "coordinate": "s=(abs(t)-left)/(right-left)",
+      "core": false,
+      "cross_integral_dt": "1714470149085226569/6192657324218750000",
+      "degree": 3,
+      "error_squared_dt": "114844092952293/792660137500000000000",
+      "left": "531441/16777216",
+      "left_fourth_root": "27/64",
+      "polynomial_in_s": [
+        "-219556139008/92851171875",
+        "35360684032/30950390625",
+        "-16316981248/18570234375",
+        "6060332032/18570234375"
+      ],
+      "projection": [
+        {
+          "basis_mass_dt": "1148175/16777216",
+          "coefficient": "-9472/4725",
+          "degree": 0,
+          "norm_squared_dt": "12321/44800",
+          "shifted_legendre_in_s": [
+            "1"
+          ],
+          "source_inner_product_dt": "-8991/65536"
+        },
+        {
+          "basis_mass_dt": "382725/16777216",
+          "coefficient": "537856/1929375",
+          "degree": 1,
+          "norm_squared_dt": "119183427/67228000000",
+          "shifted_legendre_in_s": [
+            "-1",
+            "2"
+          ],
+          "source_inner_product_dt": "510543/80281600"
+        },
+        {
+          "basis_mass_dt": "229635/16777216",
+          "coefficient": "-144529664/2228428125",
+          "degree": 2,
+          "norm_squared_dt": "2868643401849/49824351500000000",
+          "shifted_legendre_in_s": [
+            "1",
+            "-6",
+            "6"
+          ],
+          "source_inner_product_dt": "-137190267/154542080000"
+        },
+        {
+          "basis_mass_dt": "164025/16777216",
+          "coefficient": "1515083008/92851171875",
+          "degree": 3,
+          "norm_squared_dt": "2837121554741769/1089907689062500000000",
+          "shifted_legendre_in_s": [
+            "-1",
+            "12",
+            "-30",
+            "20"
+          ],
+          "source_inner_product_dt": "4314435597/27044864000000"
+        }
+      ],
+      "right": "6561/65536",
+      "right_fourth_root": "9/16",
+      "source_monomial_moments_dt": [
+        "-8991/65536",
+        "-67903810893/7696581394432",
+        "-126062643275711613/202914184810805067776",
+        "-72706535671394174733711/1547425049106725343623905280"
+      ],
+      "source_norm_squared_dt": "567/2048"
+    },
+    {
+      "approximation_norm_squared_dt": "190496683231691841/387041082763671875",
+      "coordinate": "s=(abs(t)-left)/(right-left)",
+      "core": false,
+      "cross_integral_dt": "190496683231691841/387041082763671875",
+      "degree": 3,
+      "error_squared_dt": "12760454772477/49541258593750000000",
+      "left": "6561/65536",
+      "left_fourth_root": "9/16",
+      "polynomial_in_s": [
+        "-54889034752/30950390625",
+        "8840171008/10316796875",
+        "-4079245312/6190078125",
+        "1515083008/6190078125"
+      ],
+      "projection": [
+        {
+          "basis_mass_dt": "14175/65536",
+          "coefficient": "-2368/1575",
+          "degree": 0,
+          "norm_squared_dt": "1369/2800",
+          "shifted_legendre_in_s": [
+            "1"
+          ],
+          "source_inner_product_dt": "-333/1024"
+        },
+        {
+          "basis_mass_dt": "4725/65536",
+          "coefficient": "134464/643125",
+          "degree": 1,
+          "norm_squared_dt": "13242603/4201750000",
+          "shifted_legendre_in_s": [
+            "-1",
+            "2"
+          ],
+          "source_inner_product_dt": "18909/1254400"
+        },
+        {
+          "basis_mass_dt": "2835/65536",
+          "coefficient": "-36132416/742809375",
+          "degree": 2,
+          "norm_squared_dt": "318738155761/3114021968750000",
+          "shifted_legendre_in_s": [
+            "1",
+            "-6",
+            "6"
+          ],
+          "source_inner_product_dt": "-5081121/2414720000"
+        },
+        {
+          "basis_mass_dt": "2025/65536",
+          "coefficient": "378770752/30950390625",
+          "degree": 3,
+          "norm_squared_dt": "315235728304641/68119230566406250000",
+          "shifted_legendre_in_s": [
+            "-1",
+            "12",
+            "-30",
+            "20"
+          ],
+          "source_inner_product_dt": "159793911/422576000000"
+        }
+      ],
+      "right": "81/256",
+      "right_fourth_root": "3/4",
+      "source_monomial_moments_dt": [
+        "-333/1024",
+        "-31048839/469762048",
+        "-711627311079/48378511622144",
+        "-5067043480830573/1441151880758558720"
+      ],
+      "source_norm_squared_dt": "63/128"
+    },
+    {
+      "approximation_norm_squared_dt": "338660770189674384/387041082763671875",
+      "coordinate": "s=(abs(t)-left)/(right-left)",
+      "core": false,
+      "cross_integral_dt": "338660770189674384/387041082763671875",
+      "degree": 3,
+      "error_squared_dt": "1417828308053/3096328662109375000",
+      "left": "81/256",
+      "left_fourth_root": "3/4",
+      "polynomial_in_s": [
+        "-13722258688/10316796875",
+        "6630128256/10316796875",
+        "-1019811328/2063359375",
+        "378770752/2063359375"
+      ],
+      "projection": [
+        {
+          "basis_mass_dt": "175/256",
+          "coefficient": "-592/525",
+          "degree": 0,
+          "norm_squared_dt": "1369/1575",
+          "shifted_legendre_in_s": [
+            "1"
+          ],
+          "source_inner_product_dt": "-37/48"
+        },
+        {
+          "basis_mass_dt": "175/768",
+          "coefficient": "33616/214375",
+          "degree": 1,
+          "norm_squared_dt": "4414201/787828125",
+          "shifted_legendre_in_s": [
+            "-1",
+            "2"
+          ],
+          "source_inner_product_dt": "2101/58800"
+        },
+        {
+          "basis_mass_dt": "35/256",
+          "coefficient": "-9033104/247603125",
+          "degree": 2,
+          "norm_squared_dt": "318738155761/1751637357421875",
+          "shifted_legendre_in_s": [
+            "1",
+            "-6",
+            "6"
+          ],
+          "source_inner_product_dt": "-564569/113190000"
+        },
+        {
+          "basis_mass_dt": "25/256",
+          "coefficient": "94692688/10316796875",
+          "degree": 3,
+          "norm_squared_dt": "35026192033849/4257451910400390625",
+          "shifted_legendre_in_s": [
+            "-1",
+            "12",
+            "-30",
+            "20"
+          ],
+          "source_inner_product_dt": "5918293/6602750000"
+        }
+      ],
+      "right": "1",
+      "right_fourth_root": "1",
+      "source_monomial_moments_dt": [
+        "-37/48",
+        "-14197/28672",
+        "-4017157/11534336",
+        "-1059392917/4026531840"
+      ],
+      "source_norm_squared_dt": "7/8"
+    }
+  ],
+  "degree": 3,
+  "endpoint_convention": "at nonzero seams choose the cell starting at abs(t); final endpoint included",
+  "error_squared": "114288397137475488253/16233679616000000000000",
+  "error_upper": "46127765429/549755813888",
+  "expanded_polynomial_coefficient_slots": 25,
+  "formal_assistant_checked": false,
+  "format": "sphere_structured_piecewise_L2_v1",
+  "function": {
+    "amplitude": "-1",
+    "axis": 2,
+    "exponent": "-1/4",
+    "kind": "axis_profile",
+    "offset": "0",
+    "profile": "abs_power"
+  },
+  "global_polynomial": false,
+  "levels": 6,
+  "norm": "L2_probability",
+  "representation": "even_reflection_of_positive_half_cells",
+  "root_ratio": "3/4",
+  "scope": "unit_S2_probability_measure",
+  "shape_coefficient_count": 4,
+  "shape_proof": {
+    "approximation_norm_squared_dt": "338660770189674384/387041082763671875",
+    "coordinate": "s=(abs(t)-left)/(right-left)",
+    "core": false,
+    "cross_integral_dt": "338660770189674384/387041082763671875",
+    "degree": 3,
+    "error_squared_dt": "1417828308053/3096328662109375000",
+    "left": "81/256",
+    "left_fourth_root": "3/4",
+    "polynomial_in_s": [
+      "13722258688/10316796875",
+      "-6630128256/10316796875",
+      "1019811328/2063359375",
+      "-378770752/2063359375"
+    ],
+    "projection": [
+      {
+        "basis_mass_dt": "175/256",
+        "coefficient": "592/525",
+        "degree": 0,
+        "norm_squared_dt": "1369/1575",
+        "shifted_legendre_in_s": [
+          "1"
+        ],
+        "source_inner_product_dt": "37/48"
+      },
+      {
+        "basis_mass_dt": "175/768",
+        "coefficient": "-33616/214375",
+        "degree": 1,
+        "norm_squared_dt": "4414201/787828125",
+        "shifted_legendre_in_s": [
+          "-1",
+          "2"
+        ],
+        "source_inner_product_dt": "-2101/58800"
+      },
+      {
+        "basis_mass_dt": "35/256",
+        "coefficient": "9033104/247603125",
+        "degree": 2,
+        "norm_squared_dt": "318738155761/1751637357421875",
+        "shifted_legendre_in_s": [
+          "1",
+          "-6",
+          "6"
+        ],
+        "source_inner_product_dt": "564569/113190000"
+      },
+      {
+        "basis_mass_dt": "25/256",
+        "coefficient": "-94692688/10316796875",
+        "degree": 3,
+        "norm_squared_dt": "35026192033849/4257451910400390625",
+        "shifted_legendre_in_s": [
+          "-1",
+          "12",
+          "-30",
+          "20"
+        ],
+        "source_inner_product_dt": "-5918293/6602750000"
+      }
+    ],
+    "right": "1",
+    "right_fourth_root": "1",
+    "source_monomial_moments_dt": [
+      "37/48",
+      "14197/28672",
+      "4017157/11534336",
+      "1059392917/4026531840"
+    ],
+    "source_norm_squared_dt": "7/8"
+  },
+  "shape_rule": "t=R^4*x scales centered profile coefficients by 1/R and squared residual integral by R^2",
+  "source_norm_squared": "2",
+  "source_value_at_axis_zero": "0",
+  "spectral_transfer_claimed": false,
+  "sqrt_bits": 40,
+  "sqrt_upper_squared": "2127770743472847554041/302231454903657293676544"
+}

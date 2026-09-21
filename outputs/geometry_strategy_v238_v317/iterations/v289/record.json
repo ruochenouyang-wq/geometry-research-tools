@@ -1,0 +1,22 @@
+{
+  "version": 289,
+  "recorded_at": "2026-09-18T18:14:45.283433+00:00",
+  "hypothesis": "Coordinate-axis rotations preserve sphere energy and mean-zero constraints.",
+  "change": "Replay original full spectral evidence, then transfer to a different coordinate axis with unchanged interval.",
+  "source_sha256": {
+    "proof_transport.py": "f64a60b9186217e61833279479df89da7c9a1ce1b7050e84b840dc4078209de3",
+    "test_proof_transport.py": "c740182f1111121f5dc389d631af51badafdc8d7e0a342952c4c467a0b664360"
+  },
+  "validation": {
+    "tests_passed": 3
+  },
+  "comparison": {
+    "before": "Axis changes required solving spectral matrices again.",
+    "after": "Source proof replay and unitary invariance; no new matrix assembly for target."
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Coordinate axes 0,1,2 only; unit sphere and full spectral conclusions."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

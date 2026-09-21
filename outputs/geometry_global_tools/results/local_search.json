@@ -1,0 +1,92 @@
+{
+  "problem": {
+    "q0": [
+      "0"
+    ],
+    "directions": [
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "box": [
+      [
+        "-6",
+        "6"
+      ]
+    ],
+    "penalty": {
+      "constant": "0",
+      "linear": [
+        "1/50"
+      ],
+      "hessian": [
+        [
+          "1/5"
+        ]
+      ]
+    }
+  },
+  "candidate_parameters": [
+    "5589435/2097152"
+  ],
+  "candidate_upper": "-3296701682417430691259871912697488492516939157/23685121294813755829738327838457848085851668480",
+  "point_evaluations": 41,
+  "seconds": 0.1580467499999969,
+  "global_optimality_proved": false,
+  "candidate_record": {
+    "at": [
+      "5589435/2097152"
+    ],
+    "spectral_certificate": {
+      "method": "modewise_schur_v3",
+      "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+      "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+      "q_coefficients": [
+        "0",
+        "5589435/2097152"
+      ],
+      "modes": 10,
+      "eigenvalue_index": 1,
+      "tail_policy": "sandwich",
+      "range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "-5589435/2097152",
+        "upper": "5589435/2097152"
+      },
+      "upper_kind": "upper_tail",
+      "tail_lower": "225097285/2097152",
+      "lower_inertia": [
+        0,
+        0,
+        10
+      ],
+      "upper_inertia": [
+        1,
+        0,
+        9
+      ],
+      "formal_assistant_checked": false,
+      "lower": "-794154943717170267013/879609302220800000000",
+      "upper": "-794154942617658639237/879609302220800000000",
+      "exact_width": "1/800000000",
+      "decimal_enclosure": [
+        "-0.902849642122",
+        "-0.902849640871"
+      ]
+    },
+    "trial_legendre": [
+      "1081934932311/1099511627776",
+      "-1",
+      "4623798822331/17592186044416",
+      "-576933126941/17592186044416",
+      "42153077111/17592186044416",
+      "-1011236809/8796093022208",
+      "68582149/17592186044416",
+      "-216305/2199023255552",
+      "33749/17592186044416",
+      "-131/4398046511104"
+    ],
+    "rayleigh_quotient": "-509836751695487813684787699658440303643/564697296495765586608370014153906061312"
+  }
+}

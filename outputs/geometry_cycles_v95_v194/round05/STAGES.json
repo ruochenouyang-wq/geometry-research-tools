@@ -1,0 +1,92 @@
+[
+  {
+    "callable": "global_parameter.cheap_objective_enclosure",
+    "capability": "Cheap whole-family interval lower bound and feasible spherical-harmonic upper bound",
+    "evidence": [
+      "round05/stage_135.json"
+    ],
+    "outcome": "Certified complete-domain enclosure [0,12/5] with no spectral solver calls",
+    "version": 135
+  },
+  {
+    "callable": "global_parameter.penalty_enclosure",
+    "capability": "Nonconvex polynomial penalty interval extrema",
+    "evidence": [
+      "round05/stage_136.json"
+    ],
+    "outcome": "Penalty minimum -1/4 enclosed independently of endpoint samples",
+    "version": 136
+  },
+  {
+    "callable": "global_parameter.lipschitz_cell",
+    "capability": "Certified spectral Lipschitz lower bound on a complete interval",
+    "evidence": [
+      "round05/stage_137.json"
+    ],
+    "outcome": "Uniform lower bound includes uncovered inter-sample regions",
+    "version": 137
+  },
+  {
+    "callable": "global_parameter.feasible_point",
+    "capability": "Feasible rational parameter with full-sphere spectral incumbent",
+    "evidence": [
+      "round05/stage_138.json"
+    ],
+    "outcome": "Upper bound is tied to an actual parameter",
+    "version": 138
+  },
+  {
+    "callable": "global_parameter.branch_and_bound",
+    "capability": "Best-lower-first complete-domain branch and bound",
+    "evidence": [
+      "round05/stage_139.json"
+    ],
+    "outcome": "Three-point sampling misses quartic minima; certified global bound covers them",
+    "version": 139
+  },
+  {
+    "callable": "global_parameter.concavity_cell",
+    "capability": "Concavity-chord spectral bound plus globally minimized penalty",
+    "evidence": [
+      "round05/stage_140.json"
+    ],
+    "outcome": "Chord bound tightens the whole-cell spectral lower bound",
+    "version": 140
+  },
+  {
+    "callable": "global_parameter.cached_point",
+    "capability": "Validated cache and endpoint/midpoint reuse",
+    "evidence": [
+      "round05/stage_141.json"
+    ],
+    "outcome": "Reused full-spectrum proof without a repeated solve",
+    "version": 141
+  },
+  {
+    "callable": "global_parameter.minimizer_enclosure",
+    "capability": "Strict cell exclusion and enclosure of every minimizer",
+    "evidence": [
+      "round05/stage_142.json"
+    ],
+    "outcome": "Both symmetric minimizers retained; no uniqueness claim",
+    "version": 142
+  },
+  {
+    "callable": "global_parameter.resume",
+    "capability": "Input-bound continuation with monotone global bounds",
+    "evidence": [
+      "round05/stage_143.json"
+    ],
+    "outcome": "Old lower and incumbent upper preserved; remaining gap reported",
+    "version": 143
+  },
+  {
+    "callable": "global_parameter.threshold_certificate",
+    "capability": "Uniform threshold proof/refutation/undetermined and full replay",
+    "evidence": [
+      "round05/stage_144.json"
+    ],
+    "outcome": "All three outcomes supported without equating samples with a proof",
+    "version": 144
+  }
+]

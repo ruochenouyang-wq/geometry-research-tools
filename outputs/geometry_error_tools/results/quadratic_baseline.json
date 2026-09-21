@@ -1,0 +1,65 @@
+{
+  "status": "target_met",
+  "tolerance": "1/10000000000",
+  "requested_method": "baseline",
+  "size": 8,
+  "seconds": 0.09796387500000003,
+  "attempts": [
+    {
+      "method": "baseline",
+      "size": 4,
+      "seconds": 0.01112158299999999,
+      "exact_width": "523281948521709554888715/4951760157141521099596496896",
+      "status": "certified"
+    },
+    {
+      "method": "baseline",
+      "size": 6,
+      "seconds": 0.028305916999999958,
+      "exact_width": "40599989704522272045/2475880078570760549798248448",
+      "status": "certified"
+    },
+    {
+      "method": "baseline",
+      "size": 8,
+      "seconds": 0.05851675000000012,
+      "exact_width": "460226028006525/618970019642690137449562112",
+      "status": "certified"
+    }
+  ],
+  "certificate": {
+    "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+    "q_coefficients": [
+      "1",
+      "-2",
+      "3"
+    ],
+    "eigenvalue_index": 1,
+    "modes": 8,
+    "bisection_steps": 48,
+    "lower": "953340855372787223518090115/618970019642690137449562112",
+    "upper": "108382307118205/70368744177664",
+    "evidence": {
+      "analytic_potential_lower": "-4",
+      "tail_lower": "68",
+      "lower_schur_inertia": [
+        0,
+        0,
+        8
+      ],
+      "upper_finite_inertia": [
+        1,
+        0,
+        7
+      ]
+    },
+    "decimal_enclosure": [
+      "1.540205220154",
+      "1.540205220156"
+    ],
+    "exact_width": "460226028006525/618970019642690137449562112",
+    "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+    "verification": "exact_rational_with_analytic_tail",
+    "formal_assistant_checked": false
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "actual_api_usage": null,
+  "model_mapping_asserted": false,
+  "counter_version": "tiktoken==0.11.0",
+  "scenarios": [
+    {
+      "scenario": "single",
+      "exchanges": 1,
+      "detail_reads": 0,
+      "baseline": {
+        "items": 4,
+        "basis": "Sum of explicit text-item encodings; excludes unknown API framing and hidden reasoning.",
+        "model_mapping_asserted": false,
+        "actual_api_usage": null,
+        "available": true,
+        "encodings": {
+          "o200k_base": 308,
+          "cl100k_base": 305
+        }
+      },
+      "candidate": {
+        "items": 4,
+        "basis": "Sum of explicit text-item encodings; excludes unknown API framing and hidden reasoning.",
+        "model_mapping_asserted": false,
+        "actual_api_usage": null,
+        "available": true,
+        "encodings": {
+          "o200k_base": 308,
+          "cl100k_base": 305
+        }
+      },
+      "saved_visible_tokens": {
+        "o200k_base": 0,
+        "cl100k_base": 0
+      },
+      "selected_strategies": [
+        "standalone"
+      ],
+      "notes": "Predetermined scripted traces, not model-generated behavior. All initial instructions, schema, requests, replies and detail reads counted."
+    },
+    {
+      "scenario": "twelve_no_details",
+      "exchanges": 12,
+      "detail_reads": 0,
+      "baseline": {
+        "items": 26,
+        "basis": "Sum of explicit text-item encodings; excludes unknown API framing and hidden reasoning.",
+        "model_mapping_asserted": false,
+        "actual_api_usage": null,
+        "available": true,
+        "encodings": {
+          "o200k_base": 5922,
+          "cl100k_base": 5878
+        }
+      },
+      "candidate": {
+        "items": 26,
+        "basis": "Sum of explicit text-item encodings; excludes unknown API framing and hidden reasoning.",
+        "model_mapping_asserted": false,
+        "actual_api_usage": null,
+        "available": true,
+        "encodings": {
+          "o200k_base": 5753,
+          "cl100k_base": 5674
+        }
+      },
+      "saved_visible_tokens": {
+        "o200k_base": 169,
+        "cl100k_base": 204
+      },
+      "selected_strategies": [
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound"
+      ],
+      "notes": "Predetermined scripted traces, not model-generated behavior. All initial instructions, schema, requests, replies and detail reads counted."
+    },
+    {
+      "scenario": "twelve_quarter_details",
+      "exchanges": 12,
+      "detail_reads": 3,
+      "baseline": {
+        "items": 32,
+        "basis": "Sum of explicit text-item encodings; excludes unknown API framing and hidden reasoning.",
+        "model_mapping_asserted": false,
+        "actual_api_usage": null,
+        "available": true,
+        "encodings": {
+          "o200k_base": 21064,
+          "cl100k_base": 20825
+        }
+      },
+      "candidate": {
+        "items": 32,
+        "basis": "Sum of explicit text-item encodings; excludes unknown API framing and hidden reasoning.",
+        "model_mapping_asserted": false,
+        "actual_api_usage": null,
+        "available": true,
+        "encodings": {
+          "o200k_base": 20895,
+          "cl100k_base": 20621
+        }
+      },
+      "saved_visible_tokens": {
+        "o200k_base": 169,
+        "cl100k_base": 204
+      },
+      "selected_strategies": [
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound"
+      ],
+      "notes": "Predetermined scripted traces, not model-generated behavior. All initial instructions, schema, requests, replies and detail reads counted."
+    },
+    {
+      "scenario": "twelve_all_details",
+      "exchanges": 12,
+      "detail_reads": 12,
+      "baseline": {
+        "items": 50,
+        "basis": "Sum of explicit text-item encodings; excludes unknown API framing and hidden reasoning.",
+        "model_mapping_asserted": false,
+        "actual_api_usage": null,
+        "available": true,
+        "encodings": {
+          "o200k_base": 66490,
+          "cl100k_base": 65666
+        }
+      },
+      "candidate": {
+        "items": 50,
+        "basis": "Sum of explicit text-item encodings; excludes unknown API framing and hidden reasoning.",
+        "model_mapping_asserted": false,
+        "actual_api_usage": null,
+        "available": true,
+        "encodings": {
+          "o200k_base": 66321,
+          "cl100k_base": 65462
+        }
+      },
+      "saved_visible_tokens": {
+        "o200k_base": 169,
+        "cl100k_base": 204
+      },
+      "selected_strategies": [
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound",
+        "request_bound"
+      ],
+      "notes": "Predetermined scripted traces, not model-generated behavior. All initial instructions, schema, requests, replies and detail reads counted."
+    }
+  ],
+  "ablation_without_locator_deduplication": {
+    "scenario": "twelve_no_details",
+    "measurement": {
+      "items": 26,
+      "basis": "Sum of explicit text-item encodings; excludes unknown API framing and hidden reasoning.",
+      "model_mapping_asserted": false,
+      "actual_api_usage": null,
+      "available": true,
+      "encodings": {
+        "o200k_base": 6185,
+        "cl100k_base": 6110
+      }
+    },
+    "saved_visible_tokens": {
+      "o200k_base": -263,
+      "cl100k_base": -232
+    },
+    "change": "Restore duplicated SHA-256 inside evidence locator in every bound reply; keep other fields and full protocol cost."
+  }
+}

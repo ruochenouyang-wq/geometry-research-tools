@@ -1,0 +1,67 @@
+{
+  "version": 255,
+  "recorded_at": "2026-09-18T19:01:12.813769+00:00",
+  "hypothesis": "Fractional Gram entries reuse few exponent-sum moments and unchanged prefix blocks.",
+  "change": "Cache exact weighted moments and immutable M/H/R prefix extensions with both H orientations checked.",
+  "source_sha256": {
+    "fast_math.py": "e39eebda9da014a90f188a57a5e9c5e91ecc2350709d29eede6fa3f2c6cfcd02",
+    "test_fast_math.py": "c611fecd9d7ea4ed8a2b3fdee9066140137f8eb4abb53c8f74695632339e1bbe"
+  },
+  "validation": {
+    "tests_run": 9,
+    "failures": 0,
+    "frozen_verifiers_retained": true
+  },
+  "comparison": {
+    "fixed_input": "first10 DEFAULT_EXPONENTS and nested1,3,6,10",
+    "exact_all_grams_equal": true,
+    "baseline_weighted_moment_calls": 1231,
+    "candidate_cold_counters": {
+      "gram_border_entries": 165,
+      "weighted_moment_requests": 837,
+      "weighted_moment_computations": 41,
+      "gram_prefix_extensions": 10
+    },
+    "candidate_warm_counters": {},
+    "nested_prefix_counters": {
+      "gram_border_entries": 165,
+      "weighted_moment_requests": 837,
+      "weighted_moment_computations": 41,
+      "gram_prefix_extensions": 10
+    },
+    "baseline_cold": {
+      "serial_seconds": [
+        0.0031957909232005477,
+        0.0032467079581692815,
+        0.0032797500025480986
+      ],
+      "median_seconds": 0.0032467079581692815,
+      "not_a_model_speed_claim": true
+    },
+    "candidate_cold": {
+      "serial_seconds": [
+        0.001202459097839892,
+        0.001173374941572547,
+        0.001181833096779883
+      ],
+      "median_seconds": 0.001181833096779883,
+      "not_a_model_speed_claim": true
+    },
+    "candidate_warm": {
+      "serial_seconds": [
+        1.3125012628734112e-05,
+        1.1708005331456661e-05,
+        1.1292053386569023e-05
+      ],
+      "median_seconds": 1.1708005331456661e-05,
+      "not_a_model_speed_claim": true
+    },
+    "cache_regime": "independent legacy and fast cold caches; immutable prefixes bounded64, moments4096"
+  },
+  "outcome": "implemented_exact_checks_passed",
+  "limitations": [
+    "Small serial probes; no claim of universal speedup.",
+    "Caches are process-local; cold and warm costs are identified."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

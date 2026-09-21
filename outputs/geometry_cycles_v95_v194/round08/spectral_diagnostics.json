@@ -1,0 +1,4266 @@
+[
+  {
+    "case": "fixed_initial",
+    "certificate": {
+      "compiled": {
+        "claim": "fixed_potential_trial_identity_only_not_a_universal_GN_constant",
+        "format": "gn_compile_v174",
+        "potential_energy": "-988/525",
+        "q_coefficients": [
+          "0",
+          "0",
+          "-2825680/3479123",
+          "0",
+          "-14128400/3479123",
+          "0",
+          "-17660500/3479123"
+        ],
+        "q_degree": 6,
+        "ratio": {
+          "claim": "trial_lower_bound_only_not_universal_upper",
+          "format": "gn_ratio_v167",
+          "moments": {
+            "degree": 3,
+            "energy": "494/525",
+            "format": "gn_moments_v165",
+            "mass": "187/525",
+            "mean": "0",
+            "measure": "dt/2",
+            "quartic": "3479123/9384375",
+            "scope": "axisymmetric_polynomial_on_unit_S2_no_mean_constraint",
+            "u": [
+              "0",
+              "2/5",
+              "0",
+              "1"
+            ]
+          },
+          "pi_K_lower": "73061583/264201080",
+          "ratio_convention": "pi_times_area_GN_K4=N/(4*M*E),probability_moments",
+          "scope": "axisymmetric_mean_zero_polynomial_trial_on_unit_S2",
+          "u": [
+            "0",
+            "2/5",
+            "0",
+            "1"
+          ]
+        },
+        "required_identity": "-494/187",
+        "trial_rayleigh": "-494/187",
+        "u": [
+          "0",
+          "2/5",
+          "0",
+          "1"
+        ]
+      },
+      "format": "gn_spectral_diagnostic_v174",
+      "spectral": {
+        "angular_tail_cannot_improve_best_upper": true,
+        "angular_tail_lower": "7134896/3479123",
+        "decimal_enclosure": [
+          "-2.732373888031",
+          "-2.704717814779"
+        ],
+        "eigenvalue_index_in_constrained_space": 1,
+        "exact_width": "3306055561362549/119541756030091264",
+        "formal_assistant_checked": false,
+        "format": "wide_full_sphere_ground_v122",
+        "geometry": "unit_S2",
+        "lower": "-326632772705959029/119541756030091264",
+        "mean_zero": true,
+        "omitted_azimuth_m_start": 3,
+        "potential_symmetry": "axisymmetric_polynomial_degree_at_most_24",
+        "q_coefficients": [
+          "0",
+          "0",
+          "-2825680/3479123",
+          "0",
+          "-14128400/3479123",
+          "0",
+          "-17660500/3479123"
+        ],
+        "range_proof": {
+          "format": "wide_potential_range_v117_v119",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "lower": "-34614580/3479123",
+          "method": "sturm",
+          "proof": {
+            "negative": {
+              "budget_exhausted": false,
+              "coefficient_order": "ascending",
+              "constant_polynomial": false,
+              "coordinate": "x_squared",
+              "critical_remainder": [
+                "-2260544/31312107",
+                "-5651360/31312107"
+              ],
+              "critical_square_free": [
+                "4/75",
+                "8/15",
+                "1"
+              ],
+              "derivative": [
+                "2825680/3479123",
+                "28256800/3479123",
+                "52981500/3479123"
+              ],
+              "derivative_gcd": [
+                "1"
+              ],
+              "error_bound": "0",
+              "formal_assistant_checked": false,
+              "format": "exact_sturm_extrema_v1",
+              "interior_critical_count": 0,
+              "interval": [
+                "-1",
+                "1"
+              ],
+              "isolation_complete": true,
+              "lower_source": {
+                "at": "1",
+                "coordinate": "x_squared",
+                "kind": "rational_coordinate",
+                "value": "34614580/3479123"
+              },
+              "max_nodes": 64,
+              "maximum_lower": "34614580/3479123",
+              "maximum_upper": "34614580/3479123",
+              "partition": [
+                {
+                  "bounds": null,
+                  "critical_value_bounds": null,
+                  "exact_root": null,
+                  "interval": [
+                    "0",
+                    "1"
+                  ],
+                  "kind": "empty",
+                  "root_count": 0
+                }
+              ],
+              "partition_cells": 1,
+              "polynomial": [
+                "0",
+                "0",
+                "2825680/3479123",
+                "0",
+                "14128400/3479123",
+                "0",
+                "17660500/3479123"
+              ],
+              "rational_critical_points": [],
+              "refinement_nodes": 0,
+              "sample_witness": {
+                "at": "1",
+                "coordinate": "x_squared",
+                "value": "34614580/3479123"
+              },
+              "status": "exact",
+              "sturm_sequence": [
+                [
+                  "4/75",
+                  "8/15",
+                  "1"
+                ],
+                [
+                  "4/15",
+                  "1"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "target_met": true,
+              "tolerance": "1/10000000000",
+              "working_interval": [
+                "0",
+                "1"
+              ],
+              "working_polynomial": [
+                "0",
+                "2825680/3479123",
+                "14128400/3479123",
+                "17660500/3479123"
+              ]
+            },
+            "positive": {
+              "budget_exhausted": false,
+              "coefficient_order": "ascending",
+              "constant_polynomial": false,
+              "coordinate": "x_squared",
+              "critical_remainder": [
+                "2260544/31312107",
+                "5651360/31312107"
+              ],
+              "critical_square_free": [
+                "4/75",
+                "8/15",
+                "1"
+              ],
+              "derivative": [
+                "-2825680/3479123",
+                "-28256800/3479123",
+                "-52981500/3479123"
+              ],
+              "derivative_gcd": [
+                "1"
+              ],
+              "error_bound": "0",
+              "formal_assistant_checked": false,
+              "format": "exact_sturm_extrema_v1",
+              "interior_critical_count": 0,
+              "interval": [
+                "-1",
+                "1"
+              ],
+              "isolation_complete": true,
+              "lower_source": {
+                "at": "0",
+                "coordinate": "x_squared",
+                "kind": "rational_coordinate",
+                "value": "0"
+              },
+              "max_nodes": 64,
+              "maximum_lower": "0",
+              "maximum_upper": "0",
+              "partition": [
+                {
+                  "bounds": null,
+                  "critical_value_bounds": null,
+                  "exact_root": null,
+                  "interval": [
+                    "0",
+                    "1"
+                  ],
+                  "kind": "empty",
+                  "root_count": 0
+                }
+              ],
+              "partition_cells": 1,
+              "polynomial": [
+                "0",
+                "0",
+                "-2825680/3479123",
+                "0",
+                "-14128400/3479123",
+                "0",
+                "-17660500/3479123"
+              ],
+              "rational_critical_points": [],
+              "refinement_nodes": 0,
+              "sample_witness": {
+                "at": "0",
+                "coordinate": "x_squared",
+                "value": "0"
+              },
+              "status": "exact",
+              "sturm_sequence": [
+                [
+                  "4/75",
+                  "8/15",
+                  "1"
+                ],
+                [
+                  "4/15",
+                  "1"
+                ],
+                [
+                  "1"
+                ]
+              ],
+              "target_met": true,
+              "tolerance": "1/10000000000",
+              "working_interval": [
+                "0",
+                "1"
+              ],
+              "working_polynomial": [
+                "0",
+                "-2825680/3479123",
+                "-14128400/3479123",
+                "-17660500/3479123"
+              ]
+            }
+          },
+          "q_coefficients": [
+            "0",
+            "0",
+            "-2825680/3479123",
+            "0",
+            "-14128400/3479123",
+            "0",
+            "-17660500/3479123"
+          ],
+          "upper": "0"
+        },
+        "scope": "all_mean_zero_H1_functions_on_unit_S2",
+        "sectors": [
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "-2.732373888031",
+              "-2.704717814779"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "3306055561362549/119541756030091264",
+            "formal_assistant_checked": false,
+            "format": "wide_sphere_sector_v121",
+            "geometry": "unit_S2",
+            "kernel_evidence": {
+              "A": [
+                [
+                  "-280519004/219184749",
+                  "0",
+                  "-268234096/219184749",
+                  "0"
+                ],
+                [
+                  "0",
+                  "287327836/365307915",
+                  "0",
+                  "-169390624/219184749"
+                ],
+                [
+                  "-268234096/219184749",
+                  "0",
+                  "516384112/219184749",
+                  "0"
+                ],
+                [
+                  "0",
+                  "-169390624/219184749",
+                  "0",
+                  "797114720/219184749"
+                ]
+              ],
+              "mass": [
+                "2/3",
+                "2/5",
+                "2/7",
+                "2/9"
+              ],
+              "tail_couplings": [
+                {
+                  "column": [
+                    [
+                      2,
+                      "-124685600/219184749"
+                    ],
+                    [
+                      0,
+                      "-62046400/219184749"
+                    ]
+                  ],
+                  "degree": 5,
+                  "mass": "2/11"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-242356400/532305819"
+                    ],
+                    [
+                      1,
+                      "-1976000/10437369"
+                    ]
+                  ],
+                  "degree": 6,
+                  "mass": "2/13"
+                },
+                {
+                  "column": [
+                    [
+                      2,
+                      "-77854400/532305819"
+                    ],
+                    [
+                      0,
+                      "-790400/31312107"
+                    ]
+                  ],
+                  "degree": 7,
+                  "mass": "2/15"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-63939200/532305819"
+                    ],
+                    [
+                      1,
+                      "-3161600/177435273"
+                    ]
+                  ],
+                  "degree": 8,
+                  "mass": "2/17"
+                },
+                {
+                  "column": [
+                    [
+                      2,
+                      "-832000/59145091"
+                    ]
+                  ],
+                  "degree": 9,
+                  "mass": "2/19"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-2080000/177435273"
+                    ]
+                  ],
+                  "degree": 10,
+                  "mass": "2/21"
+                }
+              ]
+            },
+            "lower": "-326632772705959029/119541756030091264",
+            "lower_inertia": [
+              0,
+              0,
+              4
+            ],
+            "mean_zero": true,
+            "modes": 4,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "0",
+              "0",
+              "-2825680/3479123",
+              "0",
+              "-14128400/3479123",
+              "0",
+              "-17660500/3479123"
+            ],
+            "radial_tail_lower": "69759110/3479123",
+            "radial_tail_start": 5,
+            "range_proof": {
+              "format": "wide_potential_range_v117_v119",
+              "interval": [
+                "-1",
+                "1"
+              ],
+              "lower": "-34614580/3479123",
+              "method": "sturm",
+              "proof": {
+                "negative": {
+                  "budget_exhausted": false,
+                  "coefficient_order": "ascending",
+                  "constant_polynomial": false,
+                  "coordinate": "x_squared",
+                  "critical_remainder": [
+                    "-2260544/31312107",
+                    "-5651360/31312107"
+                  ],
+                  "critical_square_free": [
+                    "4/75",
+                    "8/15",
+                    "1"
+                  ],
+                  "derivative": [
+                    "2825680/3479123",
+                    "28256800/3479123",
+                    "52981500/3479123"
+                  ],
+                  "derivative_gcd": [
+                    "1"
+                  ],
+                  "error_bound": "0",
+                  "formal_assistant_checked": false,
+                  "format": "exact_sturm_extrema_v1",
+                  "interior_critical_count": 0,
+                  "interval": [
+                    "-1",
+                    "1"
+                  ],
+                  "isolation_complete": true,
+                  "lower_source": {
+                    "at": "1",
+                    "coordinate": "x_squared",
+                    "kind": "rational_coordinate",
+                    "value": "34614580/3479123"
+                  },
+                  "max_nodes": 64,
+                  "maximum_lower": "34614580/3479123",
+                  "maximum_upper": "34614580/3479123",
+                  "partition": [
+                    {
+                      "bounds": null,
+                      "critical_value_bounds": null,
+                      "exact_root": null,
+                      "interval": [
+                        "0",
+                        "1"
+                      ],
+                      "kind": "empty",
+                      "root_count": 0
+                    }
+                  ],
+                  "partition_cells": 1,
+                  "polynomial": [
+                    "0",
+                    "0",
+                    "2825680/3479123",
+                    "0",
+                    "14128400/3479123",
+                    "0",
+                    "17660500/3479123"
+                  ],
+                  "rational_critical_points": [],
+                  "refinement_nodes": 0,
+                  "sample_witness": {
+                    "at": "1",
+                    "coordinate": "x_squared",
+                    "value": "34614580/3479123"
+                  },
+                  "status": "exact",
+                  "sturm_sequence": [
+                    [
+                      "4/75",
+                      "8/15",
+                      "1"
+                    ],
+                    [
+                      "4/15",
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ]
+                  ],
+                  "target_met": true,
+                  "tolerance": "1/10000000000",
+                  "working_interval": [
+                    "0",
+                    "1"
+                  ],
+                  "working_polynomial": [
+                    "0",
+                    "2825680/3479123",
+                    "14128400/3479123",
+                    "17660500/3479123"
+                  ]
+                },
+                "positive": {
+                  "budget_exhausted": false,
+                  "coefficient_order": "ascending",
+                  "constant_polynomial": false,
+                  "coordinate": "x_squared",
+                  "critical_remainder": [
+                    "2260544/31312107",
+                    "5651360/31312107"
+                  ],
+                  "critical_square_free": [
+                    "4/75",
+                    "8/15",
+                    "1"
+                  ],
+                  "derivative": [
+                    "-2825680/3479123",
+                    "-28256800/3479123",
+                    "-52981500/3479123"
+                  ],
+                  "derivative_gcd": [
+                    "1"
+                  ],
+                  "error_bound": "0",
+                  "formal_assistant_checked": false,
+                  "format": "exact_sturm_extrema_v1",
+                  "interior_critical_count": 0,
+                  "interval": [
+                    "-1",
+                    "1"
+                  ],
+                  "isolation_complete": true,
+                  "lower_source": {
+                    "at": "0",
+                    "coordinate": "x_squared",
+                    "kind": "rational_coordinate",
+                    "value": "0"
+                  },
+                  "max_nodes": 64,
+                  "maximum_lower": "0",
+                  "maximum_upper": "0",
+                  "partition": [
+                    {
+                      "bounds": null,
+                      "critical_value_bounds": null,
+                      "exact_root": null,
+                      "interval": [
+                        "0",
+                        "1"
+                      ],
+                      "kind": "empty",
+                      "root_count": 0
+                    }
+                  ],
+                  "partition_cells": 1,
+                  "polynomial": [
+                    "0",
+                    "0",
+                    "-2825680/3479123",
+                    "0",
+                    "-14128400/3479123",
+                    "0",
+                    "-17660500/3479123"
+                  ],
+                  "rational_critical_points": [],
+                  "refinement_nodes": 0,
+                  "sample_witness": {
+                    "at": "0",
+                    "coordinate": "x_squared",
+                    "value": "0"
+                  },
+                  "status": "exact",
+                  "sturm_sequence": [
+                    [
+                      "4/75",
+                      "8/15",
+                      "1"
+                    ],
+                    [
+                      "4/15",
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ]
+                  ],
+                  "target_met": true,
+                  "tolerance": "1/10000000000",
+                  "working_interval": [
+                    "0",
+                    "1"
+                  ],
+                  "working_polynomial": [
+                    "0",
+                    "-2825680/3479123",
+                    "-14128400/3479123",
+                    "-17660500/3479123"
+                  ]
+                }
+              },
+              "q_coefficients": [
+                "0",
+                "0",
+                "-2825680/3479123",
+                "0",
+                "-14128400/3479123",
+                "0",
+                "-17660500/3479123"
+              ],
+              "upper": "0"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "-1233393543795/456015609856",
+            "upper_inertia": [
+              1,
+              0,
+              3
+            ],
+            "upper_kind": "upper_tail"
+          },
+          {
+            "azimuth_m": 1,
+            "decimal_enclosure": [
+              "1.017215437443",
+              "1.030463621218"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "49490973517677/3735679875940352",
+            "formal_assistant_checked": false,
+            "format": "wide_sphere_sector_v121",
+            "geometry": "unit_S2",
+            "kernel_evidence": {
+              "A": [
+                [
+                  "364654760/219184749",
+                  "0",
+                  "-194612288/73061583",
+                  "0"
+                ],
+                [
+                  "0",
+                  "1144415512/121769305",
+                  "0",
+                  "-458194880/73061583"
+                ],
+                [
+                  "-194612288/73061583",
+                  "0",
+                  "761634688/24353861",
+                  "0"
+                ],
+                [
+                  "0",
+                  "-458194880/73061583",
+                  "0",
+                  "16390846400/219184749"
+                ]
+              ],
+              "mass": [
+                "4/3",
+                "12/5",
+                "24/7",
+                "40/9"
+              ],
+              "tail_couplings": [
+                {
+                  "column": [
+                    [
+                      2,
+                      "-227240000/24353861"
+                    ],
+                    [
+                      0,
+                      "-100380800/73061583"
+                    ]
+                  ],
+                  "degree": 5,
+                  "mass": "60/11"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-2139217600/177435273"
+                    ],
+                    [
+                      1,
+                      "-8694400/3479123"
+                    ]
+                  ],
+                  "degree": 6,
+                  "mass": "84/13"
+                },
+                {
+                  "column": [
+                    [
+                      2,
+                      "-603865600/177435273"
+                    ],
+                    [
+                      0,
+                      "-6323200/31312107"
+                    ]
+                  ],
+                  "degree": 7,
+                  "mass": "112/15"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-250764800/59145091"
+                    ],
+                    [
+                      1,
+                      "-18969600/59145091"
+                    ]
+                  ],
+                  "degree": 8,
+                  "mass": "144/17"
+                },
+                {
+                  "column": [
+                    [
+                      2,
+                      "-24960000/59145091"
+                    ]
+                  ],
+                  "degree": 9,
+                  "mass": "180/19"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-91520000/177435273"
+                    ]
+                  ],
+                  "degree": 10,
+                  "mass": "220/21"
+                }
+              ]
+            },
+            "lower": "3799991239153811/3735679875940352",
+            "lower_inertia": [
+              0,
+              0,
+              4
+            ],
+            "mean_zero": true,
+            "modes": 4,
+            "projection": "none",
+            "q_coefficients": [
+              "0",
+              "0",
+              "-2825680/3479123",
+              "0",
+              "-14128400/3479123",
+              "0",
+              "-17660500/3479123"
+            ],
+            "radial_tail_lower": "69759110/3479123",
+            "radial_tail_start": 5,
+            "range_proof": {
+              "format": "wide_potential_range_v117_v119",
+              "interval": [
+                "-1",
+                "1"
+              ],
+              "lower": "-34614580/3479123",
+              "method": "sturm",
+              "proof": {
+                "negative": {
+                  "budget_exhausted": false,
+                  "coefficient_order": "ascending",
+                  "constant_polynomial": false,
+                  "coordinate": "x_squared",
+                  "critical_remainder": [
+                    "-2260544/31312107",
+                    "-5651360/31312107"
+                  ],
+                  "critical_square_free": [
+                    "4/75",
+                    "8/15",
+                    "1"
+                  ],
+                  "derivative": [
+                    "2825680/3479123",
+                    "28256800/3479123",
+                    "52981500/3479123"
+                  ],
+                  "derivative_gcd": [
+                    "1"
+                  ],
+                  "error_bound": "0",
+                  "formal_assistant_checked": false,
+                  "format": "exact_sturm_extrema_v1",
+                  "interior_critical_count": 0,
+                  "interval": [
+                    "-1",
+                    "1"
+                  ],
+                  "isolation_complete": true,
+                  "lower_source": {
+                    "at": "1",
+                    "coordinate": "x_squared",
+                    "kind": "rational_coordinate",
+                    "value": "34614580/3479123"
+                  },
+                  "max_nodes": 64,
+                  "maximum_lower": "34614580/3479123",
+                  "maximum_upper": "34614580/3479123",
+                  "partition": [
+                    {
+                      "bounds": null,
+                      "critical_value_bounds": null,
+                      "exact_root": null,
+                      "interval": [
+                        "0",
+                        "1"
+                      ],
+                      "kind": "empty",
+                      "root_count": 0
+                    }
+                  ],
+                  "partition_cells": 1,
+                  "polynomial": [
+                    "0",
+                    "0",
+                    "2825680/3479123",
+                    "0",
+                    "14128400/3479123",
+                    "0",
+                    "17660500/3479123"
+                  ],
+                  "rational_critical_points": [],
+                  "refinement_nodes": 0,
+                  "sample_witness": {
+                    "at": "1",
+                    "coordinate": "x_squared",
+                    "value": "34614580/3479123"
+                  },
+                  "status": "exact",
+                  "sturm_sequence": [
+                    [
+                      "4/75",
+                      "8/15",
+                      "1"
+                    ],
+                    [
+                      "4/15",
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ]
+                  ],
+                  "target_met": true,
+                  "tolerance": "1/10000000000",
+                  "working_interval": [
+                    "0",
+                    "1"
+                  ],
+                  "working_polynomial": [
+                    "0",
+                    "2825680/3479123",
+                    "14128400/3479123",
+                    "17660500/3479123"
+                  ]
+                },
+                "positive": {
+                  "budget_exhausted": false,
+                  "coefficient_order": "ascending",
+                  "constant_polynomial": false,
+                  "coordinate": "x_squared",
+                  "critical_remainder": [
+                    "2260544/31312107",
+                    "5651360/31312107"
+                  ],
+                  "critical_square_free": [
+                    "4/75",
+                    "8/15",
+                    "1"
+                  ],
+                  "derivative": [
+                    "-2825680/3479123",
+                    "-28256800/3479123",
+                    "-52981500/3479123"
+                  ],
+                  "derivative_gcd": [
+                    "1"
+                  ],
+                  "error_bound": "0",
+                  "formal_assistant_checked": false,
+                  "format": "exact_sturm_extrema_v1",
+                  "interior_critical_count": 0,
+                  "interval": [
+                    "-1",
+                    "1"
+                  ],
+                  "isolation_complete": true,
+                  "lower_source": {
+                    "at": "0",
+                    "coordinate": "x_squared",
+                    "kind": "rational_coordinate",
+                    "value": "0"
+                  },
+                  "max_nodes": 64,
+                  "maximum_lower": "0",
+                  "maximum_upper": "0",
+                  "partition": [
+                    {
+                      "bounds": null,
+                      "critical_value_bounds": null,
+                      "exact_root": null,
+                      "interval": [
+                        "0",
+                        "1"
+                      ],
+                      "kind": "empty",
+                      "root_count": 0
+                    }
+                  ],
+                  "partition_cells": 1,
+                  "polynomial": [
+                    "0",
+                    "0",
+                    "-2825680/3479123",
+                    "0",
+                    "-14128400/3479123",
+                    "0",
+                    "-17660500/3479123"
+                  ],
+                  "rational_critical_points": [],
+                  "refinement_nodes": 0,
+                  "sample_witness": {
+                    "at": "0",
+                    "coordinate": "x_squared",
+                    "value": "0"
+                  },
+                  "status": "exact",
+                  "sturm_sequence": [
+                    [
+                      "4/75",
+                      "8/15",
+                      "1"
+                    ],
+                    [
+                      "4/15",
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ]
+                  ],
+                  "target_met": true,
+                  "tolerance": "1/10000000000",
+                  "working_interval": [
+                    "0",
+                    "1"
+                  ],
+                  "working_polynomial": [
+                    "0",
+                    "-2825680/3479123",
+                    "-14128400/3479123",
+                    "-17660500/3479123"
+                  ]
+                }
+              },
+              "q_coefficients": [
+                "0",
+                "0",
+                "-2825680/3479123",
+                "0",
+                "-14128400/3479123",
+                "0",
+                "-17660500/3479123"
+              ],
+              "upper": "0"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "58738437083/57001951232",
+            "upper_inertia": [
+              1,
+              0,
+              3
+            ],
+            "upper_kind": "upper_tail"
+          },
+          {
+            "azimuth_m": 2,
+            "decimal_enclosure": [
+              "5.526638222443",
+              "5.528636716101"
+            ],
+            "degree_start": 2,
+            "eigenvalue_index": 1,
+            "exact_width": "119451720606125/59770878015045632",
+            "formal_assistant_checked": false,
+            "format": "wide_sphere_sector_v121",
+            "geometry": "unit_S2",
+            "kernel_evidence": {
+              "A": [
+                [
+                  "6523784928/121769305",
+                  "0",
+                  "-514866560/24353861",
+                  "0"
+                ],
+                [
+                  "0",
+                  "8934259840/24353861",
+                  "0",
+                  "-337500800/3479123"
+                ],
+                [
+                  "-514866560/24353861",
+                  "0",
+                  "34963987200/24353861",
+                  "0"
+                ],
+                [
+                  "0",
+                  "-337500800/3479123",
+                  "0",
+                  "2730744268000/650596001"
+                ]
+              ],
+              "mass": [
+                "48/5",
+                "240/7",
+                "80",
+                "1680/11"
+              ],
+              "tail_couplings": [
+                {
+                  "column": [
+                    [
+                      2,
+                      "-60070400/247469"
+                    ],
+                    [
+                      0,
+                      "-56908800/3479123"
+                    ]
+                  ],
+                  "degree": 6,
+                  "mass": "3360/13"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-27767201280/59145091"
+                    ],
+                    [
+                      1,
+                      "-3281740800/59145091"
+                    ]
+                  ],
+                  "degree": 7,
+                  "mass": "2016/5"
+                },
+                {
+                  "column": [
+                    [
+                      2,
+                      "-7073664000/59145091"
+                    ],
+                    [
+                      0,
+                      "-189696000/59145091"
+                    ]
+                  ],
+                  "degree": 8,
+                  "mass": "10080/17"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-12574848000/59145091"
+                    ],
+                    [
+                      1,
+                      "-549120000/59145091"
+                    ]
+                  ],
+                  "degree": 9,
+                  "mass": "15840/19"
+                },
+                {
+                  "column": [
+                    [
+                      2,
+                      "-1098240000/59145091"
+                    ]
+                  ],
+                  "degree": 10,
+                  "mass": "7920/7"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-42831360000/1360337093"
+                    ]
+                  ],
+                  "degree": 11,
+                  "mass": "34320/23"
+                }
+              ]
+            },
+            "lower": "330332019026959955/59770878015045632",
+            "lower_inertia": [
+              0,
+              0,
+              4
+            ],
+            "mean_zero": true,
+            "modes": 4,
+            "projection": "none",
+            "q_coefficients": [
+              "0",
+              "0",
+              "-2825680/3479123",
+              "0",
+              "-14128400/3479123",
+              "0",
+              "-17660500/3479123"
+            ],
+            "radial_tail_lower": "111508586/3479123",
+            "radial_tail_start": 6,
+            "range_proof": {
+              "format": "wide_potential_range_v117_v119",
+              "interval": [
+                "-1",
+                "1"
+              ],
+              "lower": "-34614580/3479123",
+              "method": "sturm",
+              "proof": {
+                "negative": {
+                  "budget_exhausted": false,
+                  "coefficient_order": "ascending",
+                  "constant_polynomial": false,
+                  "coordinate": "x_squared",
+                  "critical_remainder": [
+                    "-2260544/31312107",
+                    "-5651360/31312107"
+                  ],
+                  "critical_square_free": [
+                    "4/75",
+                    "8/15",
+                    "1"
+                  ],
+                  "derivative": [
+                    "2825680/3479123",
+                    "28256800/3479123",
+                    "52981500/3479123"
+                  ],
+                  "derivative_gcd": [
+                    "1"
+                  ],
+                  "error_bound": "0",
+                  "formal_assistant_checked": false,
+                  "format": "exact_sturm_extrema_v1",
+                  "interior_critical_count": 0,
+                  "interval": [
+                    "-1",
+                    "1"
+                  ],
+                  "isolation_complete": true,
+                  "lower_source": {
+                    "at": "1",
+                    "coordinate": "x_squared",
+                    "kind": "rational_coordinate",
+                    "value": "34614580/3479123"
+                  },
+                  "max_nodes": 64,
+                  "maximum_lower": "34614580/3479123",
+                  "maximum_upper": "34614580/3479123",
+                  "partition": [
+                    {
+                      "bounds": null,
+                      "critical_value_bounds": null,
+                      "exact_root": null,
+                      "interval": [
+                        "0",
+                        "1"
+                      ],
+                      "kind": "empty",
+                      "root_count": 0
+                    }
+                  ],
+                  "partition_cells": 1,
+                  "polynomial": [
+                    "0",
+                    "0",
+                    "2825680/3479123",
+                    "0",
+                    "14128400/3479123",
+                    "0",
+                    "17660500/3479123"
+                  ],
+                  "rational_critical_points": [],
+                  "refinement_nodes": 0,
+                  "sample_witness": {
+                    "at": "1",
+                    "coordinate": "x_squared",
+                    "value": "34614580/3479123"
+                  },
+                  "status": "exact",
+                  "sturm_sequence": [
+                    [
+                      "4/75",
+                      "8/15",
+                      "1"
+                    ],
+                    [
+                      "4/15",
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ]
+                  ],
+                  "target_met": true,
+                  "tolerance": "1/10000000000",
+                  "working_interval": [
+                    "0",
+                    "1"
+                  ],
+                  "working_polynomial": [
+                    "0",
+                    "2825680/3479123",
+                    "14128400/3479123",
+                    "17660500/3479123"
+                  ]
+                },
+                "positive": {
+                  "budget_exhausted": false,
+                  "coefficient_order": "ascending",
+                  "constant_polynomial": false,
+                  "coordinate": "x_squared",
+                  "critical_remainder": [
+                    "2260544/31312107",
+                    "5651360/31312107"
+                  ],
+                  "critical_square_free": [
+                    "4/75",
+                    "8/15",
+                    "1"
+                  ],
+                  "derivative": [
+                    "-2825680/3479123",
+                    "-28256800/3479123",
+                    "-52981500/3479123"
+                  ],
+                  "derivative_gcd": [
+                    "1"
+                  ],
+                  "error_bound": "0",
+                  "formal_assistant_checked": false,
+                  "format": "exact_sturm_extrema_v1",
+                  "interior_critical_count": 0,
+                  "interval": [
+                    "-1",
+                    "1"
+                  ],
+                  "isolation_complete": true,
+                  "lower_source": {
+                    "at": "0",
+                    "coordinate": "x_squared",
+                    "kind": "rational_coordinate",
+                    "value": "0"
+                  },
+                  "max_nodes": 64,
+                  "maximum_lower": "0",
+                  "maximum_upper": "0",
+                  "partition": [
+                    {
+                      "bounds": null,
+                      "critical_value_bounds": null,
+                      "exact_root": null,
+                      "interval": [
+                        "0",
+                        "1"
+                      ],
+                      "kind": "empty",
+                      "root_count": 0
+                    }
+                  ],
+                  "partition_cells": 1,
+                  "polynomial": [
+                    "0",
+                    "0",
+                    "-2825680/3479123",
+                    "0",
+                    "-14128400/3479123",
+                    "0",
+                    "-17660500/3479123"
+                  ],
+                  "rational_critical_points": [],
+                  "refinement_nodes": 0,
+                  "sample_witness": {
+                    "at": "0",
+                    "coordinate": "x_squared",
+                    "value": "0"
+                  },
+                  "status": "exact",
+                  "sturm_sequence": [
+                    [
+                      "4/75",
+                      "8/15",
+                      "1"
+                    ],
+                    [
+                      "4/15",
+                      "1"
+                    ],
+                    [
+                      "1"
+                    ]
+                  ],
+                  "target_met": true,
+                  "tolerance": "1/10000000000",
+                  "working_interval": [
+                    "0",
+                    "1"
+                  ],
+                  "working_polynomial": [
+                    "0",
+                    "-2825680/3479123",
+                    "-14128400/3479123",
+                    "-17660500/3479123"
+                  ]
+                }
+              },
+              "q_coefficients": [
+                "0",
+                "0",
+                "-2825680/3479123",
+                "0",
+                "-14128400/3479123",
+                "0",
+                "-17660500/3479123"
+              ],
+              "upper": "0"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "2521144643765/456015609856",
+            "upper_inertia": [
+              1,
+              0,
+              3
+            ],
+            "upper_kind": "upper_tail"
+          }
+        ],
+        "status": "certified_bound_open_gap",
+        "tolerance": "1/1000",
+        "upper": "-1233393543795/456015609856"
+      },
+      "status": "lower_spectral_ground_separated",
+      "universal_GN_claim": false
+    },
+    "seconds_including_replay": 0.05549008300000002,
+    "verified": true
+  },
+  {
+    "case": "cap_degree12",
+    "certificate": {
+      "compiled": {
+        "claim": "fixed_potential_trial_identity_only_not_a_universal_GN_constant",
+        "format": "gn_compile_v174",
+        "potential_energy": "-12/25",
+        "q_coefficients": [
+          "-567545597437/2696165720064",
+          "5421082121/337020715008",
+          "19808259653/224680476672",
+          "9507805307/32614907904",
+          "2600275214537/4044248580096",
+          "985087496393/1011062145024",
+          "5795160686315/6066372870144",
+          "43814771/134217728",
+          "-812282039569/898721906688",
+          "-420315098203/168510357504",
+          "-4141766487859/1011062145024",
+          "-2684614665551/505531072512",
+          "-34997880816899/6066372870144",
+          "-2692772179279/505531072512",
+          "-4231499138867/1011062145024",
+          "-4231499138867/1516593217536",
+          "-4231499138867/2696165720064",
+          "-248911714051/337020715008",
+          "-1742381998357/6066372870144",
+          "-91704315703/1011062145024",
+          "-91704315703/4044248580096",
+          "-13100616529/3033186435072",
+          "-1190965139/2022124290048",
+          "-51781093/1011062145024",
+          "-51781093/24265491480576"
+        ],
+        "q_degree": 24,
+        "ratio": {
+          "claim": "trial_lower_bound_only_not_universal_upper",
+          "format": "gn_ratio_v167",
+          "moments": {
+            "degree": 12,
+            "energy": "6/25",
+            "format": "gn_moments_v165",
+            "mass": "144/4225",
+            "mean": "0",
+            "measure": "dt/2",
+            "quartic": "17356032/1294527325",
+            "scope": "axisymmetric_polynomial_on_unit_S2_no_mean_constraint",
+            "u": [
+              "-4083/53248",
+              "3/1024",
+              "33/2048",
+              "55/1024",
+              "495/4096",
+              "99/512",
+              "231/1024",
+              "99/512",
+              "495/4096",
+              "55/1024",
+              "33/2048",
+              "3/1024",
+              "1/4096"
+            ]
+          },
+          "pi_K_lower": "125550/306397",
+          "ratio_convention": "pi_times_area_GN_K4=N/(4*M*E),probability_moments",
+          "scope": "axisymmetric_mean_zero_polynomial_trial_on_unit_S2",
+          "u": [
+            "-4083/53248",
+            "3/1024",
+            "33/2048",
+            "55/1024",
+            "495/4096",
+            "99/512",
+            "231/1024",
+            "99/512",
+            "495/4096",
+            "55/1024",
+            "33/2048",
+            "3/1024",
+            "1/4096"
+          ]
+        },
+        "required_identity": "-169/24",
+        "trial_rayleigh": "-169/24",
+        "u": [
+          "-4083/53248",
+          "3/1024",
+          "33/2048",
+          "55/1024",
+          "495/4096",
+          "99/512",
+          "231/1024",
+          "99/512",
+          "495/4096",
+          "55/1024",
+          "33/2048",
+          "3/1024",
+          "1/4096"
+        ]
+      },
+      "format": "gn_spectral_diagnostic_v174",
+      "spectral": {
+        "angular_tail_cannot_improve_best_upper": false,
+        "angular_tail_lower": "-105517/10044",
+        "decimal_enclosure": [
+          "-10.505475906014",
+          "-7.168925139076"
+        ],
+        "eigenvalue_index_in_constrained_space": 1,
+        "exact_width": "257635489616150944223/77216115567359950848",
+        "formal_assistant_checked": false,
+        "format": "wide_full_sphere_ground_v122",
+        "geometry": "unit_S2",
+        "lower": "-105517/10044",
+        "mean_zero": true,
+        "omitted_azimuth_m_start": 4,
+        "potential_symmetry": "axisymmetric_polynomial_degree_at_most_24",
+        "q_coefficients": [
+          "-567545597437/2696165720064",
+          "5421082121/337020715008",
+          "19808259653/224680476672",
+          "9507805307/32614907904",
+          "2600275214537/4044248580096",
+          "985087496393/1011062145024",
+          "5795160686315/6066372870144",
+          "43814771/134217728",
+          "-812282039569/898721906688",
+          "-420315098203/168510357504",
+          "-4141766487859/1011062145024",
+          "-2684614665551/505531072512",
+          "-34997880816899/6066372870144",
+          "-2692772179279/505531072512",
+          "-4231499138867/1011062145024",
+          "-4231499138867/1516593217536",
+          "-4231499138867/2696165720064",
+          "-248911714051/337020715008",
+          "-1742381998357/6066372870144",
+          "-91704315703/1011062145024",
+          "-91704315703/4044248580096",
+          "-13100616529/3033186435072",
+          "-1190965139/2022124290048",
+          "-51781093/1011062145024",
+          "-51781093/24265491480576"
+        ],
+        "range_proof": {
+          "format": "wide_potential_range_v117_v119",
+          "interval": [
+            "-1",
+            "1"
+          ],
+          "lower": "-306397/10044",
+          "method": "bernstein",
+          "proof": {
+            "cells": [
+              {
+                "interval": [
+                  "-1",
+                  "0"
+                ],
+                "lower": "-306397/1446336",
+                "upper": "-567545597437/2696165720064"
+              },
+              {
+                "interval": [
+                  "0",
+                  "1"
+                ],
+                "lower": "-306397/10044",
+                "upper": "4612806835/26967416832"
+              }
+            ],
+            "depth": 1
+          },
+          "q_coefficients": [
+            "-567545597437/2696165720064",
+            "5421082121/337020715008",
+            "19808259653/224680476672",
+            "9507805307/32614907904",
+            "2600275214537/4044248580096",
+            "985087496393/1011062145024",
+            "5795160686315/6066372870144",
+            "43814771/134217728",
+            "-812282039569/898721906688",
+            "-420315098203/168510357504",
+            "-4141766487859/1011062145024",
+            "-2684614665551/505531072512",
+            "-34997880816899/6066372870144",
+            "-2692772179279/505531072512",
+            "-4231499138867/1011062145024",
+            "-4231499138867/1516593217536",
+            "-4231499138867/2696165720064",
+            "-248911714051/337020715008",
+            "-1742381998357/6066372870144",
+            "-91704315703/1011062145024",
+            "-91704315703/4044248580096",
+            "-13100616529/3033186435072",
+            "-1190965139/2022124290048",
+            "-51781093/1011062145024",
+            "-51781093/24265491480576"
+          ],
+          "upper": "4612806835/26967416832"
+        },
+        "scope": "all_mean_zero_H1_functions_on_unit_S2",
+        "sectors": [
+          {
+            "azimuth_m": 0,
+            "decimal_enclosure": [
+              "-10.051654423543",
+              "-7.168925139076"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "7293932587539641753706715/2530217674911250869387264",
+            "formal_assistant_checked": false,
+            "format": "wide_sphere_sector_v121",
+            "geometry": "unit_S2",
+            "kernel_evidence": {
+              "A": [
+                [
+                  "-9556493/15254325",
+                  "-176703527/108475200",
+                  "-6098482117/4456522800",
+                  "-8043621586/7520382225"
+                ],
+                [
+                  "-176703527/108475200",
+                  "68366612819/80217410400",
+                  "-16653946309/13369568400",
+                  "-45401951231/45256757400"
+                ],
+                [
+                  "-6098482117/4456522800",
+                  "-16653946309/13369568400",
+                  "754047252112087/330736383079200",
+                  "-57553375372493/62997406300800"
+                ],
+                [
+                  "-8043621586/7520382225",
+                  "-45401951231/45256757400",
+                  "-57553375372493/62997406300800",
+                  "11193032789521391/3118371611889600"
+                ]
+              ],
+              "mass": [
+                "2/3",
+                "2/5",
+                "2/7",
+                "2/9"
+              ],
+              "tail_couplings": [
+                {
+                  "column": [
+                    [
+                      3,
+                      "-29948142843073/43310716831800"
+                    ],
+                    [
+                      2,
+                      "-190860072813137/259864300990800"
+                    ],
+                    [
+                      1,
+                      "-15964302294941/20999135433600"
+                    ],
+                    [
+                      0,
+                      "-8107618596077/10499567716800"
+                    ]
+                  ],
+                  "degree": 5,
+                  "mass": "2/11"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-94253565924791/166024414521900"
+                    ],
+                    [
+                      2,
+                      "-4413032533091/7874675787600"
+                    ],
+                    [
+                      1,
+                      "-1640481184433/3048261595200"
+                    ],
+                    [
+                      0,
+                      "-32257355483353/62997406300800"
+                    ]
+                  ],
+                  "degree": 6,
+                  "mass": "2/13"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-2880185558798093/6520231552132800"
+                    ],
+                    [
+                      2,
+                      "-32300751978677/80496685828800"
+                    ],
+                    [
+                      1,
+                      "-173832630881/492167236725"
+                    ],
+                    [
+                      0,
+                      "-5504740714109/17718020522100"
+                    ]
+                  ],
+                  "degree": 7,
+                  "mass": "2/15"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-232965661468813/724470172459200"
+                    ],
+                    [
+                      2,
+                      "-579747850126991/2173410517377600"
+                    ],
+                    [
+                      1,
+                      "-116029072028051/543352629344400"
+                    ],
+                    [
+                      0,
+                      "-23778727063/138152206800"
+                    ]
+                  ],
+                  "degree": 8,
+                  "mass": "2/17"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-39233881139453/181117543114800"
+                    ],
+                    [
+                      2,
+                      "-44357517146033/271676314672200"
+                    ],
+                    [
+                      1,
+                      "-257340004420681/2173410517377600"
+                    ],
+                    [
+                      0,
+                      "-42004302948517/482980114972800"
+                    ]
+                  ],
+                  "degree": 9,
+                  "mass": "2/19"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-218397927650903/1630057888033200"
+                    ],
+                    [
+                      2,
+                      "-1381504493369/15093128592900"
+                    ],
+                    [
+                      1,
+                      "-86993742103177/1448940344918400"
+                    ],
+                    [
+                      0,
+                      "-13744293464447/343170081691200"
+                    ]
+                  ],
+                  "degree": 10,
+                  "mass": "2/21"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-884860927951/11685002781600"
+                    ],
+                    [
+                      2,
+                      "-40733854149989/869364206951040"
+                    ],
+                    [
+                      1,
+                      "-15099957292511/543352629344400"
+                    ],
+                    [
+                      0,
+                      "-608265638071/36223508622960"
+                    ]
+                  ],
+                  "degree": 11,
+                  "mass": "2/23"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-257523394871743/6600728237961600"
+                    ],
+                    [
+                      2,
+                      "-47514364158989/2173410517377600"
+                    ],
+                    [
+                      1,
+                      "-3184206830077/271676314672200"
+                    ],
+                    [
+                      0,
+                      "-5363377747/838507144050"
+                    ]
+                  ],
+                  "degree": 12,
+                  "mass": "2/25"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-45291835197791/2475273089235600"
+                    ],
+                    [
+                      2,
+                      "-2297606436671/247527308923560"
+                    ],
+                    [
+                      1,
+                      "-3254775988373/724470172459200"
+                    ],
+                    [
+                      0,
+                      "-2876773271281/1304046310426560"
+                    ]
+                  ],
+                  "degree": 13,
+                  "mass": "2/27"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-276799091610769/35478914279043600"
+                    ],
+                    [
+                      2,
+                      "-19927229428561/5569364450780100"
+                    ],
+                    [
+                      1,
+                      "-138945820673023/89109831212481600"
+                    ],
+                    [
+                      0,
+                      "-2476019/3611822400"
+                    ]
+                  ],
+                  "degree": 14,
+                  "mass": "2/29"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-42399800465577191/14049650054501265600"
+                    ],
+                    [
+                      2,
+                      "-4780709201429707/3831722742136708800"
+                    ],
+                    [
+                      1,
+                      "-1461912361/2998715547600"
+                    ],
+                    [
+                      0,
+                      "-190653463/999571849200"
+                    ]
+                  ],
+                  "degree": 15,
+                  "mass": "2/31"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-6066176888312723/5747584113205063200"
+                    ],
+                    [
+                      2,
+                      "-123439097509/315198323114400"
+                    ],
+                    [
+                      1,
+                      "-5863566709/42981589515600"
+                    ],
+                    [
+                      0,
+                      "-424106683/8996146642800"
+                    ]
+                  ],
+                  "degree": 16,
+                  "mass": "2/33"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-157022189051/472797484671600"
+                    ],
+                    [
+                      2,
+                      "-14177331077/128944768546800"
+                    ],
+                    [
+                      1,
+                      "-8741408221/257889537093600"
+                    ],
+                    [
+                      0,
+                      "-587523937/57308786020800"
+                    ]
+                  ],
+                  "degree": 17,
+                  "mass": "2/35"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-188765490823/2020134707233200"
+                    ],
+                    [
+                      2,
+                      "-3532356373/128944768546800"
+                    ],
+                    [
+                      1,
+                      "-3819789883/515779074187200"
+                    ],
+                    [
+                      0,
+                      "-55533569/28654393010400"
+                    ]
+                  ],
+                  "degree": 18,
+                  "mass": "2/37"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-109439747599/4691925771638400"
+                    ],
+                    [
+                      2,
+                      "-1795482871/299279215886400"
+                    ],
+                    [
+                      1,
+                      "-60424091/42981589515600"
+                    ],
+                    [
+                      0,
+                      "-121324931/386834305640400"
+                    ]
+                  ],
+                  "degree": 19,
+                  "mass": "2/39"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-6890760877/1346756471488800"
+                    ],
+                    [
+                      2,
+                      "-18441251101/16161077657865600"
+                    ],
+                    [
+                      1,
+                      "-1383664009/6060404121699600"
+                    ],
+                    [
+                      0,
+                      "-1830101/42981589515600"
+                    ]
+                  ],
+                  "degree": 20,
+                  "mass": "2/41"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-984394411/1010067353616600"
+                    ],
+                    [
+                      2,
+                      "-140627773/757550515212450"
+                    ],
+                    [
+                      1,
+                      "-502416551/16161077657865600"
+                    ],
+                    [
+                      0,
+                      "-6351527/1346756471488800"
+                    ]
+                  ],
+                  "degree": 21,
+                  "mass": "2/43"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-24533154217/154540305103339800"
+                    ],
+                    [
+                      2,
+                      "-12784343/505033676808300"
+                    ],
+                    [
+                      1,
+                      "-1162213/336689117872200"
+                    ],
+                    [
+                      0,
+                      "-59532109/145449698920790400"
+                    ]
+                  ],
+                  "degree": 22,
+                  "mass": "2/45"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-744271099/34342290022964400"
+                    ],
+                    [
+                      2,
+                      "-144973439/51513435034446600"
+                    ],
+                    [
+                      1,
+                      "-50531/168344558936100"
+                    ],
+                    [
+                      0,
+                      "-2197/84172279468050"
+                    ]
+                  ],
+                  "degree": 23,
+                  "mass": "2/47"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-2926603927/1213427580811408800"
+                    ],
+                    [
+                      2,
+                      "-1869647/7631620005103200"
+                    ],
+                    [
+                      1,
+                      "-2197/114601635226800"
+                    ],
+                    [
+                      0,
+                      "-2197/2020134707233200"
+                    ]
+                  ],
+                  "degree": 24,
+                  "mass": "2/49"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-137696975/655250893638160752"
+                    ],
+                    [
+                      2,
+                      "-380081/24268551616228176"
+                    ],
+                    [
+                      1,
+                      "-2197/2747383201837152"
+                    ],
+                    [
+                      0,
+                      "-2197/98905795266137472"
+                    ]
+                  ],
+                  "degree": 25,
+                  "mass": "2/51"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-371293/27615938046052752"
+                    ],
+                    [
+                      2,
+                      "-142805/218416964546053584"
+                    ],
+                    [
+                      1,
+                      "-28561/1747335716368428672"
+                    ]
+                  ],
+                  "degree": 26,
+                  "mass": "2/53"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-199927/355938757038013248"
+                    ],
+                    [
+                      2,
+                      "-28561/2135632542228079488"
+                    ]
+                  ],
+                  "degree": 27,
+                  "mass": "2/55"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-1399489/121731054907000530816"
+                    ]
+                  ],
+                  "degree": 28,
+                  "mass": "2/57"
+                }
+              ]
+            },
+            "lower": "-25432873684547354525507803/2530217674911250869387264",
+            "lower_inertia": [
+              0,
+              0,
+              4
+            ],
+            "mean_zero": true,
+            "modes": 4,
+            "projection": "remove_l0",
+            "q_coefficients": [
+              "-567545597437/2696165720064",
+              "5421082121/337020715008",
+              "19808259653/224680476672",
+              "9507805307/32614907904",
+              "2600275214537/4044248580096",
+              "985087496393/1011062145024",
+              "5795160686315/6066372870144",
+              "43814771/134217728",
+              "-812282039569/898721906688",
+              "-420315098203/168510357504",
+              "-4141766487859/1011062145024",
+              "-2684614665551/505531072512",
+              "-34997880816899/6066372870144",
+              "-2692772179279/505531072512",
+              "-4231499138867/1011062145024",
+              "-4231499138867/1516593217536",
+              "-4231499138867/2696165720064",
+              "-248911714051/337020715008",
+              "-1742381998357/6066372870144",
+              "-91704315703/1011062145024",
+              "-91704315703/4044248580096",
+              "-13100616529/3033186435072",
+              "-1190965139/2022124290048",
+              "-51781093/1011062145024",
+              "-51781093/24265491480576"
+            ],
+            "radial_tail_lower": "-5077/10044",
+            "radial_tail_start": 5,
+            "range_proof": {
+              "format": "wide_potential_range_v117_v119",
+              "interval": [
+                "-1",
+                "1"
+              ],
+              "lower": "-306397/10044",
+              "method": "bernstein",
+              "proof": {
+                "cells": [
+                  {
+                    "interval": [
+                      "-1",
+                      "0"
+                    ],
+                    "lower": "-306397/1446336",
+                    "upper": "-567545597437/2696165720064"
+                  },
+                  {
+                    "interval": [
+                      "0",
+                      "1"
+                    ],
+                    "lower": "-306397/10044",
+                    "upper": "4612806835/26967416832"
+                  }
+                ],
+                "depth": 1
+              },
+              "q_coefficients": [
+                "-567545597437/2696165720064",
+                "5421082121/337020715008",
+                "19808259653/224680476672",
+                "9507805307/32614907904",
+                "2600275214537/4044248580096",
+                "985087496393/1011062145024",
+                "5795160686315/6066372870144",
+                "43814771/134217728",
+                "-812282039569/898721906688",
+                "-420315098203/168510357504",
+                "-4141766487859/1011062145024",
+                "-2684614665551/505531072512",
+                "-34997880816899/6066372870144",
+                "-2692772179279/505531072512",
+                "-4231499138867/1011062145024",
+                "-4231499138867/1516593217536",
+                "-4231499138867/2696165720064",
+                "-248911714051/337020715008",
+                "-1742381998357/6066372870144",
+                "-91704315703/1011062145024",
+                "-91704315703/4044248580096",
+                "-13100616529/3033186435072",
+                "-1190965139/2022124290048",
+                "-51781093/1011062145024",
+                "-51781093/24265491480576"
+              ],
+              "upper": "4612806835/26967416832"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "-61506283559189564249/8579568396373327872",
+            "upper_inertia": [
+              1,
+              0,
+              3
+            ],
+            "upper_kind": "upper_tail"
+          },
+          {
+            "azimuth_m": 1,
+            "decimal_enclosure": [
+              "-1.885951178240",
+              "1.522665524470"
+            ],
+            "degree_start": 1,
+            "eigenvalue_index": 1,
+            "exact_width": "394800211861867509775/115824173351039926272",
+            "formal_assistant_checked": false,
+            "format": "wide_sphere_sector_v121",
+            "geometry": "unit_S2",
+            "kernel_evidence": {
+              "A": [
+                [
+                  "13338623/6101730",
+                  "-6259253/10847520",
+                  "-2816094827/2673913680",
+                  "-7066696637/4813044624"
+                ],
+                [
+                  "-6259253/10847520",
+                  "16405881679/1336956840",
+                  "-7692621937/2673913680",
+                  "-1252081054315/314987031504"
+                ],
+                [
+                  "-2816094827/2673913680",
+                  "-7692621937/2673913680",
+                  "22971473398957/648502711920",
+                  "-4322784084619/629974063008"
+                ],
+                [
+                  "-7066696637/4813044624",
+                  "-1252081054315/314987031504",
+                  "-4322784084619/629974063008",
+                  "2447006432199145/31183716118896"
+                ]
+              ],
+              "mass": [
+                "4/3",
+                "12/5",
+                "24/7",
+                "40/9"
+              ],
+              "tail_couplings": [
+                {
+                  "column": [
+                    [
+                      3,
+                      "-19583498413115/1732428673272"
+                    ],
+                    [
+                      2,
+                      "-13870238914259/1732428673272"
+                    ],
+                    [
+                      1,
+                      "-5747427622937/1259948126016"
+                    ],
+                    [
+                      0,
+                      "-1048781654921/629974063008"
+                    ]
+                  ],
+                  "degree": 5,
+                  "mass": "60/11"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-478480023253505/39845859485256"
+                    ],
+                    [
+                      2,
+                      "-6424587753857/787467578760"
+                    ],
+                    [
+                      1,
+                      "-14089368533513/3149870315040"
+                    ],
+                    [
+                      0,
+                      "-9974476432921/6299740630080"
+                    ]
+                  ],
+                  "degree": 6,
+                  "mass": "84/13"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-748621372027711/65202315521328"
+                    ],
+                    [
+                      2,
+                      "-266167711512157/36223508622960"
+                    ],
+                    [
+                      1,
+                      "-1199198332787/314987031504"
+                    ],
+                    [
+                      0,
+                      "-18259929292241/14174416417680"
+                    ]
+                  ],
+                  "degree": 7,
+                  "mass": "112/15"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-2655951715963/268322286096"
+                    ],
+                    [
+                      2,
+                      "-71022209135969/12074502874320"
+                    ],
+                    [
+                      1,
+                      "-34322035129109/12074502874320"
+                    ],
+                    [
+                      0,
+                      "-159222308791/174992795280"
+                    ]
+                  ],
+                  "degree": 8,
+                  "mass": "144/17"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-773420536889/100620857286"
+                    ],
+                    [
+                      2,
+                      "-2535522888535/603725143716"
+                    ],
+                    [
+                      1,
+                      "-9064412912009/4829801149728"
+                    ],
+                    [
+                      0,
+                      "-1816624705259/3219867433152"
+                    ]
+                  ],
+                  "degree": 9,
+                  "mass": "180/19"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-3806869046981/708720820884"
+                    ],
+                    [
+                      2,
+                      "-1214809694098/452793857787"
+                    ],
+                    [
+                      1,
+                      "-159786445221403/144894034491840"
+                    ],
+                    [
+                      0,
+                      "-40387773649223/130404631042656"
+                    ]
+                  ],
+                  "degree": 10,
+                  "mass": "220/21"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-4079220648503/1207450287432"
+                    ],
+                    [
+                      2,
+                      "-557073990842369/362235086229600"
+                    ],
+                    [
+                      1,
+                      "-104947628482697/181117543114800"
+                    ],
+                    [
+                      0,
+                      "-27409485930827/181117543114800"
+                    ]
+                  ],
+                  "degree": 11,
+                  "mass": "264/23"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-3051987909971/1594378801440"
+                    ],
+                    [
+                      2,
+                      "-71802011757931/90558771557400"
+                    ],
+                    [
+                      1,
+                      "-341062435987/1249086504240"
+                    ],
+                    [
+                      0,
+                      "-11951720383057/181117543114800"
+                    ]
+                  ],
+                  "degree": 12,
+                  "mass": "312/25"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-871674884665039/891098312124816"
+                    ],
+                    [
+                      2,
+                      "-53603551605877/145604299366800"
+                    ],
+                    [
+                      1,
+                      "-1549363398947/13416114304800"
+                    ],
+                    [
+                      0,
+                      "-83690689575311/3260115776066400"
+                    ]
+                  ],
+                  "degree": 13,
+                  "mass": "364/27"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-640110824377661/1419156571161744"
+                    ],
+                    [
+                      2,
+                      "-45713154252493/297032770708272"
+                    ],
+                    [
+                      1,
+                      "-130042957619939/2970327707082720"
+                    ],
+                    [
+                      0,
+                      "-17332133/1950384096"
+                    ]
+                  ],
+                  "degree": 14,
+                  "mass": "420/29"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-2195358012096067/11708041712084388"
+                    ],
+                    [
+                      2,
+                      "-92284860111535/1596551142556962"
+                    ],
+                    [
+                      1,
+                      "-148207423/9995718492"
+                    ],
+                    [
+                      0,
+                      "-27236209/9995718492"
+                    ]
+                  ],
+                  "degree": 15,
+                  "mass": "480/31"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-59255626306877/845232957824274"
+                    ],
+                    [
+                      2,
+                      "-91863488353/4727974846716"
+                    ],
+                    [
+                      1,
+                      "-66145079/14821237764"
+                    ],
+                    [
+                      0,
+                      "-66145079/89961466428"
+                    ]
+                  ],
+                  "degree": 16,
+                  "mass": "544/33"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-24665839835/1050661077048"
+                    ],
+                    [
+                      2,
+                      "-1665653353/286543930104"
+                    ],
+                    [
+                      1,
+                      "-679490357/573087860208"
+                    ],
+                    [
+                      0,
+                      "-66145079/382058573472"
+                    ]
+                  ],
+                  "degree": 17,
+                  "mass": "612/35"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-10476866855/1496396079432"
+                    ],
+                    [
+                      2,
+                      "-440346907/286543930104"
+                    ],
+                    [
+                      1,
+                      "-315869281/1146175720416"
+                    ],
+                    [
+                      0,
+                      "-6720623/191029286736"
+                    ]
+                  ],
+                  "degree": 18,
+                  "mass": "684/37"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-2685018917945/1454496989207904"
+                    ],
+                    [
+                      2,
+                      "-28747026581/80805388289328"
+                    ],
+                    [
+                      1,
+                      "-47628763/859631790312"
+                    ],
+                    [
+                      0,
+                      "-47044361/7736686112808"
+                    ]
+                  ],
+                  "degree": 19,
+                  "mass": "760/39"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-34453804385/80805388289328"
+                    ],
+                    [
+                      2,
+                      "-11521131713/161610776578656"
+                    ],
+                    [
+                      1,
+                      "-383567639/40402694144664"
+                    ],
+                    [
+                      0,
+                      "-753571/859631790312"
+                    ]
+                  ],
+                  "degree": 20,
+                  "mass": "840/41"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-6890760877/80805388289328"
+                    ],
+                    [
+                      2,
+                      "-984394411/80805388289328"
+                    ],
+                    [
+                      1,
+                      "-439331893/323221553157312"
+                    ],
+                    [
+                      0,
+                      "-8289281/80805388289328"
+                    ]
+                  ],
+                  "degree": 21,
+                  "mass": "924/43"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-179862921667/12363224408267184"
+                    ],
+                    [
+                      2,
+                      "-140627773/80805388289328"
+                    ],
+                    [
+                      1,
+                      "-12784343/80805388289328"
+                    ],
+                    [
+                      0,
+                      "-27236209/2908993978415808"
+                    ]
+                  ],
+                  "degree": 22,
+                  "mass": "1012/45"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-2850908489/1373691600918576"
+                    ],
+                    [
+                      2,
+                      "-277768907/1373691600918576"
+                    ],
+                    [
+                      1,
+                      "-1162213/80805388289328"
+                    ],
+                    [
+                      0,
+                      "-50531/80805388289328"
+                    ]
+                  ],
+                  "degree": 23,
+                  "mass": "1104/47"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-17534509655/72805654848684528"
+                    ],
+                    [
+                      2,
+                      "-25214969/1373691600918576"
+                    ],
+                    [
+                      1,
+                      "-1316003/1373691600918576"
+                    ],
+                    [
+                      0,
+                      "-2197/80805388289328"
+                    ]
+                  ],
+                  "degree": 24,
+                  "mass": "1200/49"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-14310631855/655250893638160752"
+                    ],
+                    [
+                      2,
+                      "-88910393/72805654848684528"
+                    ],
+                    [
+                      1,
+                      "-28561/686845800459288"
+                    ],
+                    [
+                      0,
+                      "-28561/49452897633068736"
+                    ]
+                  ],
+                  "degree": 25,
+                  "mass": "1300/51"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-129181403/88984689259503312"
+                    ],
+                    [
+                      2,
+                      "-142805/2696505735136464"
+                    ],
+                    [
+                      1,
+                      "-28561/32358068821637568"
+                    ]
+                  ],
+                  "degree": 26,
+                  "mass": "1404/53"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-1399489/22246172314875828"
+                    ],
+                    [
+                      2,
+                      "-199927/177969378519006624"
+                    ]
+                  ],
+                  "degree": 27,
+                  "mass": "1512/55"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-1399489/1049405645750004576"
+                    ]
+                  ],
+                  "degree": 28,
+                  "mass": "1624/57"
+                }
+              ]
+            },
+            "lower": "-24270970688890621271/12869352594559991808",
+            "lower_inertia": [
+              0,
+              0,
+              4
+            ],
+            "mean_zero": true,
+            "modes": 4,
+            "projection": "none",
+            "q_coefficients": [
+              "-567545597437/2696165720064",
+              "5421082121/337020715008",
+              "19808259653/224680476672",
+              "9507805307/32614907904",
+              "2600275214537/4044248580096",
+              "985087496393/1011062145024",
+              "5795160686315/6066372870144",
+              "43814771/134217728",
+              "-812282039569/898721906688",
+              "-420315098203/168510357504",
+              "-4141766487859/1011062145024",
+              "-2684614665551/505531072512",
+              "-34997880816899/6066372870144",
+              "-2692772179279/505531072512",
+              "-4231499138867/1011062145024",
+              "-4231499138867/1516593217536",
+              "-4231499138867/2696165720064",
+              "-248911714051/337020715008",
+              "-1742381998357/6066372870144",
+              "-91704315703/1011062145024",
+              "-91704315703/4044248580096",
+              "-13100616529/3033186435072",
+              "-1190965139/2022124290048",
+              "-51781093/1011062145024",
+              "-51781093/24265491480576"
+            ],
+            "radial_tail_lower": "-5077/10044",
+            "radial_tail_start": 5,
+            "range_proof": {
+              "format": "wide_potential_range_v117_v119",
+              "interval": [
+                "-1",
+                "1"
+              ],
+              "lower": "-306397/10044",
+              "method": "bernstein",
+              "proof": {
+                "cells": [
+                  {
+                    "interval": [
+                      "-1",
+                      "0"
+                    ],
+                    "lower": "-306397/1446336",
+                    "upper": "-567545597437/2696165720064"
+                  },
+                  {
+                    "interval": [
+                      "0",
+                      "1"
+                    ],
+                    "lower": "-306397/10044",
+                    "upper": "4612806835/26967416832"
+                  }
+                ],
+                "depth": 1
+              },
+              "q_coefficients": [
+                "-567545597437/2696165720064",
+                "5421082121/337020715008",
+                "19808259653/224680476672",
+                "9507805307/32614907904",
+                "2600275214537/4044248580096",
+                "985087496393/1011062145024",
+                "5795160686315/6066372870144",
+                "43814771/134217728",
+                "-812282039569/898721906688",
+                "-420315098203/168510357504",
+                "-4141766487859/1011062145024",
+                "-2684614665551/505531072512",
+                "-34997880816899/6066372870144",
+                "-2692772179279/505531072512",
+                "-4231499138867/1011062145024",
+                "-4231499138867/1516593217536",
+                "-4231499138867/2696165720064",
+                "-248911714051/337020715008",
+                "-1742381998357/6066372870144",
+                "-91704315703/1011062145024",
+                "-91704315703/4044248580096",
+                "-13100616529/3033186435072",
+                "-1190965139/2022124290048",
+                "-51781093/1011062145024",
+                "-51781093/24265491480576"
+              ],
+              "upper": "4612806835/26967416832"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "1345531277937713/883668314750976",
+            "upper_inertia": [
+              1,
+              0,
+              3
+            ],
+            "upper_kind": "upper_ritz"
+          },
+          {
+            "azimuth_m": 2,
+            "decimal_enclosure": [
+              "5.745524856061",
+              "5.761746254278"
+            ],
+            "degree_start": 2,
+            "eigenvalue_index": 1,
+            "exact_width": "4299382240060285/265043874945171456",
+            "formal_assistant_checked": false,
+            "format": "wide_sphere_sector_v121",
+            "geometry": "unit_S2",
+            "kernel_evidence": {
+              "A": [
+                [
+                  "74071811197/1336956840",
+                  "-156481325/133695684",
+                  "-101649699697/26248919292",
+                  "-2577141015449/314987031504"
+                ],
+                [
+                  "-156481325/133695684",
+                  "438833164676225/1102454610264",
+                  "-108316373165/6176216304",
+                  "-30510834017755/866214336636"
+                ],
+                [
+                  "-101649699697/26248919292",
+                  "-108316373165/6176216304",
+                  "887796514149605/577476224424",
+                  "-25335074782745/288738112212"
+                ],
+                [
+                  "-2577141015449/314987031504",
+                  "-30510834017755/866214336636",
+                  "-25335074782745/288738112212",
+                  "5636370874713005/1285350305976"
+                ]
+              ],
+              "mass": [
+                "48/5",
+                "240/7",
+                "80",
+                "1680/11"
+              ],
+              "tail_couplings": [
+                {
+                  "column": [
+                    [
+                      3,
+                      "-10125236188979275/39845859485256"
+                    ],
+                    [
+                      2,
+                      "-898640056998775/6640976580876"
+                    ],
+                    [
+                      1,
+                      "-4277695840145/78746757876"
+                    ],
+                    [
+                      0,
+                      "-1983761554957/157493515752"
+                    ]
+                  ],
+                  "degree": 6,
+                  "mass": "3360/13"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-3728635765801219/11068294301460"
+                    ],
+                    [
+                      2,
+                      "-70030753703183/402483429144"
+                    ],
+                    [
+                      1,
+                      "-27190447109189/402483429144"
+                    ],
+                    [
+                      0,
+                      "-663080794831/43748198820"
+                    ]
+                  ],
+                  "degree": 7,
+                  "mass": "2016/5"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-234875923339057/603725143716"
+                    ],
+                    [
+                      2,
+                      "-76611823812433/402483429144"
+                    ],
+                    [
+                      1,
+                      "-84359307071585/1207450287432"
+                    ],
+                    [
+                      0,
+                      "-8986206390889/603725143716"
+                    ]
+                  ],
+                  "degree": 8,
+                  "mass": "10080/17"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-475675477009733/1207450287432"
+                    ],
+                    [
+                      2,
+                      "-36120873021233/201241714572"
+                    ],
+                    [
+                      1,
+                      "-37061910432547/603725143716"
+                    ],
+                    [
+                      0,
+                      "-14830192095719/1207450287432"
+                    ]
+                  ],
+                  "degree": 9,
+                  "mass": "15840/19"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-35327379736649/100620857286"
+                    ],
+                    [
+                      2,
+                      "-88957681221409/603725143716"
+                    ],
+                    [
+                      1,
+                      "-9371311468519/201241714572"
+                    ],
+                    [
+                      0,
+                      "-34989157786583/4024834291440"
+                    ]
+                  ],
+                  "degree": 10,
+                  "mass": "7920/7"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-892284991875277/3228617072916"
+                    ],
+                    [
+                      2,
+                      "-16027600051463/150931285929"
+                    ],
+                    [
+                      1,
+                      "-223638356210269/7244701724592"
+                    ],
+                    [
+                      0,
+                      "-48495619881709/9055877155740"
+                    ]
+                  ],
+                  "degree": 11,
+                  "mass": "34320/23"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-2310507210584573/11977127851140"
+                    ],
+                    [
+                      2,
+                      "-33496499741347643/495054617847120"
+                    ],
+                    [
+                      1,
+                      "-9611472239369/532698656220"
+                    ],
+                    [
+                      0,
+                      "-131243841475747/45279385778700"
+                    ]
+                  ],
+                  "degree": 12,
+                  "mass": "48048/25"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-510446932957900939/4257469713485232"
+                    ],
+                    [
+                      2,
+                      "-167426473592833/4368128981004"
+                    ],
+                    [
+                      1,
+                      "-231532496750737/24752730892356"
+                    ],
+                    [
+                      0,
+                      "-4182923090983/3018625718580"
+                    ]
+                  ],
+                  "degree": 13,
+                  "mass": "7280/3"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-1169311639833451933/17562062568126582"
+                    ],
+                    [
+                      2,
+                      "-5155200728789293/266091857092827"
+                    ],
+                    [
+                      1,
+                      "-80076997546819/18564548169267"
+                    ],
+                    [
+                      0,
+                      "-54398744485267/92822740846335"
+                    ]
+                  ],
+                  "degree": 14,
+                  "mass": "87360/29"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-1554936040236397/46957386545793"
+                    ],
+                    [
+                      2,
+                      "-3013107931990793/344354168002482"
+                    ],
+                    [
+                      1,
+                      "-83092943063221/46957386545793"
+                    ],
+                    [
+                      0,
+                      "-547200199/2498929623"
+                    ]
+                  ],
+                  "degree": 15,
+                  "mass": "114240/31"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-1790462196523/121336916139"
+                    ],
+                    [
+                      2,
+                      "-55222009191622/15652462181931"
+                    ],
+                    [
+                      1,
+                      "-169241204405/262665269262"
+                    ],
+                    [
+                      0,
+                      "-859886027/11939330421"
+                    ]
+                  ],
+                  "degree": 16,
+                  "mass": "48960/11"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-1138913033017396/193596242776515"
+                    ],
+                    [
+                      2,
+                      "-166284284075/131332634631"
+                    ],
+                    [
+                      1,
+                      "-7426288415/35817991263"
+                    ],
+                    [
+                      0,
+                      "-1485257683/71635982526"
+                    ]
+                  ],
+                  "degree": 17,
+                  "mass": "186048/35"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-19986725181605/9557626571856"
+                    ],
+                    [
+                      2,
+                      "-451712064895/1122297059574"
+                    ],
+                    [
+                      1,
+                      "-4197467365/71635982526"
+                    ],
+                    [
+                      0,
+                      "-1485257683/286543930104"
+                    ]
+                  ],
+                  "degree": 18,
+                  "mass": "232560/37"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-370003899265/561148529787"
+                    ],
+                    [
+                      2,
+                      "-1010829912365/8978376476592"
+                    ],
+                    [
+                      1,
+                      "-64747358585/4489188238296"
+                    ],
+                    [
+                      0,
+                      "-26590291/23878660842"
+                    ]
+                  ],
+                  "degree": 19,
+                  "mass": "95760/13"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-1850019496325/10100673536166"
+                    ],
+                    [
+                      2,
+                      "-370003899265/13467564714888"
+                    ],
+                    [
+                      1,
+                      "-247156754845/80805388289328"
+                    ],
+                    [
+                      0,
+                      "-2047452407/10100673536166"
+                    ]
+                  ],
+                  "degree": 20,
+                  "mass": "351120/41"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-30515584744645/686845800459288"
+                    ],
+                    [
+                      2,
+                      "-19473889435/3366891178722"
+                    ],
+                    [
+                      1,
+                      "-2781984205/5050336768083"
+                    ],
+                    [
+                      0,
+                      "-2478495019/80805388289328"
+                    ]
+                  ],
+                  "degree": 21,
+                  "mass": "425040/43"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-2130443504189/228948600153096"
+                    ],
+                    [
+                      2,
+                      "-39504175711/38158100025516"
+                    ],
+                    [
+                      1,
+                      "-556396841/6733782357444"
+                    ],
+                    [
+                      0,
+                      "-50581531/13467564714888"
+                    ]
+                  ],
+                  "degree": 22,
+                  "mass": "56672/5"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-30181746640045/18201413712171132"
+                    ],
+                    [
+                      2,
+                      "-35370942035/228948600153096"
+                    ],
+                    [
+                      1,
+                      "-6900766015/686845800459288"
+                    ],
+                    [
+                      0,
+                      "-7225933/20201347072332"
+                    ]
+                  ],
+                  "degree": 23,
+                  "mass": "607200/47"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-4486834707355/18201413712171132"
+                    ],
+                    [
+                      2,
+                      "-226969840045/12134275808114088"
+                    ],
+                    [
+                      1,
+                      "-653618485/686845800459288"
+                    ],
+                    [
+                      0,
+                      "-8539739/343422900229644"
+                    ]
+                  ],
+                  "degree": 24,
+                  "mass": "717600/49"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-14231803495/478412307846792"
+                    ],
+                    [
+                      2,
+                      "-3570267805/2022379301352348"
+                    ],
+                    [
+                      1,
+                      "-44412355/674126433784116"
+                    ],
+                    [
+                      0,
+                      "-28561/25438733350344"
+                    ]
+                  ],
+                  "degree": 25,
+                  "mass": "280800/17"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-160941235/57483649392444"
+                    ],
+                    [
+                      2,
+                      "-225917510/1853847692906319"
+                    ],
+                    [
+                      1,
+                      "-999635/337063216892058"
+                    ],
+                    [
+                      0,
+                      "-199927/8089517205409392"
+                    ]
+                  ],
+                  "degree": 26,
+                  "mass": "982800/53"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-702543478/3643769603298627"
+                    ],
+                    [
+                      2,
+                      "-1399489/255703130056044"
+                    ],
+                    [
+                      1,
+                      "-199927/3068437560672528"
+                    ]
+                  ],
+                  "degree": 27,
+                  "mass": "1140048/55"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-6997445/809726578510806"
+                    ],
+                    [
+                      2,
+                      "-6997445/58300313652778032"
+                    ]
+                  ],
+                  "degree": 28,
+                  "mass": "438480/19"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-6997445/36986220489396816"
+                    ]
+                  ],
+                  "degree": 29,
+                  "mass": "1510320/59"
+                }
+              ]
+            },
+            "lower": "507605390481475969/88347958315057152",
+            "lower_inertia": [
+              0,
+              0,
+              4
+            ],
+            "mean_zero": true,
+            "modes": 4,
+            "projection": "none",
+            "q_coefficients": [
+              "-567545597437/2696165720064",
+              "5421082121/337020715008",
+              "19808259653/224680476672",
+              "9507805307/32614907904",
+              "2600275214537/4044248580096",
+              "985087496393/1011062145024",
+              "5795160686315/6066372870144",
+              "43814771/134217728",
+              "-812282039569/898721906688",
+              "-420315098203/168510357504",
+              "-4141766487859/1011062145024",
+              "-2684614665551/505531072512",
+              "-34997880816899/6066372870144",
+              "-2692772179279/505531072512",
+              "-4231499138867/1011062145024",
+              "-4231499138867/1516593217536",
+              "-4231499138867/2696165720064",
+              "-248911714051/337020715008",
+              "-1742381998357/6066372870144",
+              "-91704315703/1011062145024",
+              "-91704315703/4044248580096",
+              "-13100616529/3033186435072",
+              "-1190965139/2022124290048",
+              "-51781093/1011062145024",
+              "-51781093/24265491480576"
+            ],
+            "radial_tail_lower": "115451/10044",
+            "radial_tail_start": 6,
+            "range_proof": {
+              "format": "wide_potential_range_v117_v119",
+              "interval": [
+                "-1",
+                "1"
+              ],
+              "lower": "-306397/10044",
+              "method": "bernstein",
+              "proof": {
+                "cells": [
+                  {
+                    "interval": [
+                      "-1",
+                      "0"
+                    ],
+                    "lower": "-306397/1446336",
+                    "upper": "-567545597437/2696165720064"
+                  },
+                  {
+                    "interval": [
+                      "0",
+                      "1"
+                    ],
+                    "lower": "-306397/10044",
+                    "upper": "4612806835/26967416832"
+                  }
+                ],
+                "depth": 1
+              },
+              "q_coefficients": [
+                "-567545597437/2696165720064",
+                "5421082121/337020715008",
+                "19808259653/224680476672",
+                "9507805307/32614907904",
+                "2600275214537/4044248580096",
+                "985087496393/1011062145024",
+                "5795160686315/6066372870144",
+                "43814771/134217728",
+                "-812282039569/898721906688",
+                "-420315098203/168510357504",
+                "-4141766487859/1011062145024",
+                "-2684614665551/505531072512",
+                "-34997880816899/6066372870144",
+                "-2692772179279/505531072512",
+                "-4231499138867/1011062145024",
+                "-4231499138867/1516593217536",
+                "-4231499138867/2696165720064",
+                "-248911714051/337020715008",
+                "-1742381998357/6066372870144",
+                "-91704315703/1011062145024",
+                "-91704315703/4044248580096",
+                "-13100616529/3033186435072",
+                "-1190965139/2022124290048",
+                "-51781093/1011062145024",
+                "-51781093/24265491480576"
+              ],
+              "upper": "4612806835/26967416832"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "46603868215469/8088497160192",
+            "upper_inertia": [
+              1,
+              0,
+              3
+            ],
+            "upper_kind": "upper_tail"
+          },
+          {
+            "azimuth_m": 3,
+            "decimal_enclosure": [
+              "11.795828408223",
+              "11.797022503775"
+            ],
+            "degree_start": 3,
+            "eigenvalue_index": 1,
+            "exact_width": "368813680230299525/308864462269439803392",
+            "formal_assistant_checked": false,
+            "format": "wide_sphere_sector_v121",
+            "geometry": "unit_S2",
+            "kernel_evidence": {
+              "A": [
+                [
+                  "148649547885005/61247478348",
+                  "-219073855/5833093176",
+                  "-1437383394265/48123018702",
+                  "-160381977665/1458273294"
+                ],
+                [
+                  "-219073855/5833093176",
+                  "6389016302788175/288738112212",
+                  "-3371088564935/16041006234",
+                  "-78467136499115/122981047794"
+                ],
+                [
+                  "-1437383394265/48123018702",
+                  "-3371088564935/16041006234",
+                  "7057202791072805/65107613538",
+                  "-382687072447225/184471571691"
+                ],
+                [
+                  "-160381977665/1458273294",
+                  "-78467136499115/122981047794",
+                  "-382687072447225/184471571691",
+                  "613715480319669077/1598753621322"
+                ]
+              ],
+              "mass": [
+                "1440/7",
+                "1120",
+                "40320/11",
+                "120960/13"
+              ],
+              "tail_couplings": [
+                {
+                  "column": [
+                    [
+                      3,
+                      "-17731076501684/1863349209"
+                    ],
+                    [
+                      2,
+                      "-28080069001712/6832280433"
+                    ],
+                    [
+                      1,
+                      "-262300970341865/201241714572"
+                    ],
+                    [
+                      0,
+                      "-569014464655/2484465612"
+                    ]
+                  ],
+                  "degree": 7,
+                  "mass": "20160"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-15063215118952/986478993"
+                    ],
+                    [
+                      2,
+                      "-108676817493244/16770142881"
+                    ],
+                    [
+                      1,
+                      "-44681404670903/22360190508"
+                    ],
+                    [
+                      0,
+                      "-22716425246515/67080571524"
+                    ]
+                  ],
+                  "degree": 8,
+                  "mass": "665280/17"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-697143809244883/33540285762"
+                    ],
+                    [
+                      2,
+                      "-15618737863729/1863349209"
+                    ],
+                    [
+                      1,
+                      "-27244968401651/11180095254"
+                    ],
+                    [
+                      0,
+                      "-13044887692837/33540285762"
+                    ]
+                  ],
+                  "degree": 9,
+                  "mass": "1330560/19"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-1850321584960849/76397317569"
+                    ],
+                    [
+                      2,
+                      "-101602696536341/11180095254"
+                    ],
+                    [
+                      1,
+                      "-739971315035953/301862571858"
+                    ],
+                    [
+                      0,
+                      "-1357989429797/3726698418"
+                    ]
+                  ],
+                  "degree": 10,
+                  "mass": "823680/7"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-3719348137361857/152794635138"
+                    ],
+                    [
+                      2,
+                      "-2037997677959243/242673832278"
+                    ],
+                    [
+                      1,
+                      "-1520403342458/729136647"
+                    ],
+                    [
+                      0,
+                      "-115610347507655/402483429144"
+                    ]
+                  ],
+                  "degree": 11,
+                  "mass": "4324320/23"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-3771494455802926853/177394571395218"
+                    ],
+                    [
+                      2,
+                      "-82979396820316997/12376365446178"
+                    ],
+                    [
+                      1,
+                      "-812854728230545/532316793384"
+                    ],
+                    [
+                      0,
+                      "-29345718517115/150931285929"
+                    ]
+                  ],
+                  "degree": 12,
+                  "mass": "288288"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-480643231477250842/29565761899203"
+                    ],
+                    [
+                      2,
+                      "-414662554066960199/88697285697609"
+                    ],
+                    [
+                      1,
+                      "-18101530775456128/18564548169267"
+                    ],
+                    [
+                      0,
+                      "-236178336353960/2062727574363"
+                    ]
+                  ],
+                  "degree": 13,
+                  "mass": "1281280/3"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-57172553360167427/5217487393977"
+                    ],
+                    [
+                      2,
+                      "-494316670907211334/172177084001241"
+                    ],
+                    [
+                      1,
+                      "-2856543618538792/5217487393977"
+                    ],
+                    [
+                      0,
+                      "-21511258631408/364010748417"
+                    ]
+                  ],
+                  "degree": 14,
+                  "mass": "17821440/29"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-1546543926184166/236182556929"
+                    ],
+                    [
+                      2,
+                      "-8147289144689422/5217487393977"
+                    ],
+                    [
+                      1,
+                      "-5195251321785161/19130787111249"
+                    ],
+                    [
+                      0,
+                      "-139881972560512/5217487393977"
+                    ]
+                  ],
+                  "degree": 15,
+                  "mass": "26732160/31"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-1664593472889802/478015414263"
+                    ],
+                    [
+                      2,
+                      "-253167827725358/335627844057"
+                    ],
+                    [
+                      1,
+                      "-2282467087628/19158460443"
+                    ],
+                    [
+                      0,
+                      "-51984018905/4864171653"
+                    ]
+                  ],
+                  "degree": 16,
+                  "mass": "13023360/11"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-78118063477797707/47323526012037"
+                    ],
+                    [
+                      2,
+                      "-51566624325034/159338471421"
+                    ],
+                    [
+                      1,
+                      "-673532071030/14592514959"
+                    ],
+                    [
+                      0,
+                      "-14852576830/3979776807"
+                    ]
+                  ],
+                  "degree": 17,
+                  "mass": "11162880/7"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-2998521263222758/4302138728367"
+                    ],
+                    [
+                      2,
+                      "-253155391543145/2057544609219"
+                    ],
+                    [
+                      1,
+                      "-31642446290/2011285053"
+                    ],
+                    [
+                      0,
+                      "-4520349470/3979776807"
+                    ]
+                  ],
+                  "degree": 18,
+                  "mass": "78140160/37"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-10864659951145/41566557762"
+                    ],
+                    [
+                      2,
+                      "-571824207955/13855519254"
+                    ],
+                    [
+                      1,
+                      "-21058048005995/4489188238296"
+                    ],
+                    [
+                      0,
+                      "-24861922085/83133115524"
+                    ]
+                  ],
+                  "degree": 19,
+                  "mass": "35814240/13"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-4271863200605/49299870834"
+                    ],
+                    [
+                      2,
+                      "-168183590575/13855519254"
+                    ],
+                    [
+                      1,
+                      "-33636718115/27711038508"
+                    ],
+                    [
+                      0,
+                      "-33636718115/498798693144"
+                    ]
+                  ],
+                  "degree": 20,
+                  "mass": "145363680/41"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-8913730300475/353315740977"
+                    ],
+                    [
+                      2,
+                      "-19744753533505/6359683337586"
+                    ],
+                    [
+                      1,
+                      "-33636718115/124699673286"
+                    ],
+                    [
+                      0,
+                      "-4805245445/374099019858"
+                    ]
+                  ],
+                  "degree": 21,
+                  "mass": "193818240/43"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-1857100910665/290321461578"
+                    ],
+                    [
+                      2,
+                      "-724074616265/1059947222931"
+                    ],
+                    [
+                      1,
+                      "-968383410995/19079050012758"
+                    ],
+                    [
+                      0,
+                      "-252907655/124699673286"
+                    ]
+                  ],
+                  "degree": 22,
+                  "mass": "5667200"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-78472693008710/56177202815343"
+                    ],
+                    [
+                      2,
+                      "-21481470400390/168531608446029"
+                    ],
+                    [
+                      1,
+                      "-33636718115/4239788891724"
+                    ],
+                    [
+                      0,
+                      "-3287799515/12719366675172"
+                    ]
+                  ],
+                  "degree": 23,
+                  "mass": "331531200/47"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-14546742500290/56177202815343"
+                    ],
+                    [
+                      2,
+                      "-1111276236070/56177202815343"
+                    ],
+                    [
+                      1,
+                      "-8345952615/8322548565236"
+                    ],
+                    [
+                      0,
+                      "-36129665/1413262963908"
+                    ]
+                  ],
+                  "degree": 24,
+                  "mass": "426254400/49"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-88034855545/2203027561386"
+                    ],
+                    [
+                      2,
+                      "-511954068535/205983076989591"
+                    ],
+                    [
+                      1,
+                      "-99622624465/1011189650676174"
+                    ],
+                    [
+                      0,
+                      "-22991605/12483822847854"
+                    ]
+                  ],
+                  "degree": 25,
+                  "mass": "180835200/17"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-2022870382715/404863289255403"
+                    ],
+                    [
+                      2,
+                      "-31061658355/127851565028022"
+                    ],
+                    [
+                      1,
+                      "-6997445/991097403318"
+                    ],
+                    [
+                      0,
+                      "-999635/11622869548002"
+                    ]
+                  ],
+                  "degree": 26,
+                  "mass": "684028800/53"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-393823202045/809726578510806"
+                    ],
+                    [
+                      2,
+                      "-42117621455/2429179735532418"
+                    ],
+                    [
+                      1,
+                      "-6997445/21308594171337"
+                    ],
+                    [
+                      0,
+                      "-999635/511406260112088"
+                    ]
+                  ],
+                  "degree": 27,
+                  "mass": "171007200/11"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-17766512855/513697506797178"
+                    ],
+                    [
+                      2,
+                      "-6997445/8706737403342"
+                    ],
+                    [
+                      1,
+                      "-6997445/940327639560936"
+                    ]
+                  ],
+                  "degree": 28,
+                  "mass": "353414880/19"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-111959120/70049660017797"
+                    ],
+                    [
+                      2,
+                      "-13994890/770546260195767"
+                    ]
+                  ],
+                  "degree": 29,
+                  "mass": "1304916480/59"
+                },
+                {
+                  "column": [
+                    [
+                      3,
+                      "-153943790/4273029261085617"
+                    ]
+                  ],
+                  "degree": 30,
+                  "mass": "1594897920/61"
+                }
+              ]
+            },
+            "lower": "3643312198328547248251/308864462269439803392",
+            "lower_inertia": [
+              0,
+              0,
+              4
+            ],
+            "mean_zero": true,
+            "modes": 4,
+            "projection": "none",
+            "q_coefficients": [
+              "-567545597437/2696165720064",
+              "5421082121/337020715008",
+              "19808259653/224680476672",
+              "9507805307/32614907904",
+              "2600275214537/4044248580096",
+              "985087496393/1011062145024",
+              "5795160686315/6066372870144",
+              "43814771/134217728",
+              "-812282039569/898721906688",
+              "-420315098203/168510357504",
+              "-4141766487859/1011062145024",
+              "-2684614665551/505531072512",
+              "-34997880816899/6066372870144",
+              "-2692772179279/505531072512",
+              "-4231499138867/1011062145024",
+              "-4231499138867/1516593217536",
+              "-4231499138867/2696165720064",
+              "-248911714051/337020715008",
+              "-1742381998357/6066372870144",
+              "-91704315703/1011062145024",
+              "-91704315703/4044248580096",
+              "-13100616529/3033186435072",
+              "-1190965139/2022124290048",
+              "-51781093/1011062145024",
+              "-51781093/24265491480576"
+            ],
+            "radial_tail_lower": "256067/10044",
+            "radial_tail_start": 7,
+            "range_proof": {
+              "format": "wide_potential_range_v117_v119",
+              "interval": [
+                "-1",
+                "1"
+              ],
+              "lower": "-306397/10044",
+              "method": "bernstein",
+              "proof": {
+                "cells": [
+                  {
+                    "interval": [
+                      "-1",
+                      "0"
+                    ],
+                    "lower": "-306397/1446336",
+                    "upper": "-567545597437/2696165720064"
+                  },
+                  {
+                    "interval": [
+                      "0",
+                      "1"
+                    ],
+                    "lower": "-306397/10044",
+                    "upper": "4612806835/26967416832"
+                  }
+                ],
+                "depth": 1
+              },
+              "q_coefficients": [
+                "-567545597437/2696165720064",
+                "5421082121/337020715008",
+                "19808259653/224680476672",
+                "9507805307/32614907904",
+                "2600275214537/4044248580096",
+                "985087496393/1011062145024",
+                "5795160686315/6066372870144",
+                "43814771/134217728",
+                "-812282039569/898721906688",
+                "-420315098203/168510357504",
+                "-4141766487859/1011062145024",
+                "-2684614665551/505531072512",
+                "-34997880816899/6066372870144",
+                "-2692772179279/505531072512",
+                "-4231499138867/1011062145024",
+                "-4231499138867/1516593217536",
+                "-4231499138867/2696165720064",
+                "-248911714051/337020715008",
+                "-1742381998357/6066372870144",
+                "-91704315703/1011062145024",
+                "-91704315703/4044248580096",
+                "-13100616529/3033186435072",
+                "-1190965139/2022124290048",
+                "-51781093/1011062145024",
+                "-51781093/24265491480576"
+              ],
+              "upper": "4612806835/26967416832"
+            },
+            "scope": "single_azimuth_sector_only",
+            "upper": "3088786665182137/261827648815104",
+            "upper_inertia": [
+              1,
+              0,
+              3
+            ],
+            "upper_kind": "upper_tail"
+          }
+        ],
+        "status": "certified_bound_open_gap",
+        "tolerance": "1/1000",
+        "upper": "-61506283559189564249/8579568396373327872"
+      },
+      "status": "lower_spectral_ground_separated",
+      "universal_GN_claim": false
+    },
+    "seconds_including_replay": 1.4729700829999999,
+    "verified": true
+  }
+]

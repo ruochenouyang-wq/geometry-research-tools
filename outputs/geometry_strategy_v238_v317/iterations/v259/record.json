@@ -1,0 +1,26 @@
+{
+  "version": 259,
+  "recorded_at": "2026-09-18T18:12:46.807449+00:00",
+  "hypothesis": "A fixed level count misses achievable targets and overallocates loose requests.",
+  "change": "Invert the exact geometric error using monotone rational bisection to select the minimum level count.",
+  "source_sha256": {
+    "adaptive_approx.py": "9479b8f68441f56374d4ea5accba9658ffb9d8cd037bec1ac1f746cc9377bd91",
+    "test_adaptive_approx.py": "d7b9721c69af1397d3594c182c7fa4f96019572f3dbe007f458847c72c6fa61a"
+  },
+  "validation": {
+    "unit_tests_passed": 4,
+    "chosen_previous_level_fails": true
+  },
+  "comparison": {
+    "target": "3/100",
+    "fixed_4_levels_error": "20488777907/549755813888",
+    "new_levels": 5,
+    "new_error": "29899016573/1099511627776",
+    "level_comparisons": 7
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Degree remains fixed at three."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

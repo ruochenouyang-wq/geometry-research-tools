@@ -1,0 +1,119 @@
+{
+  "callable": "global_constraints.transformed_tail",
+  "outcome": "All 7 real degree-3 tail modes are represented, including sine components.",
+  "output": {
+    "L": 2,
+    "columns": [
+      {
+        "degree": 3,
+        "entries": [
+          "0",
+          "0",
+          "3/35",
+          "-3/35",
+          "0",
+          "0",
+          "0"
+        ],
+        "m": 0,
+        "mass": "1/7",
+        "part": "real"
+      },
+      {
+        "degree": 3,
+        "entries": [
+          "0",
+          "0",
+          "6/35",
+          "12/35",
+          "0",
+          "-6/35",
+          "0"
+        ],
+        "m": 1,
+        "mass": "6/7",
+        "part": "real"
+      },
+      {
+        "degree": 3,
+        "entries": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "12/35",
+          "0",
+          "-6/35"
+        ],
+        "m": 1,
+        "mass": "6/7",
+        "part": "imag"
+      },
+      {
+        "degree": 3,
+        "entries": [
+          "0",
+          "0",
+          "0",
+          "6/7",
+          "0",
+          "12/7",
+          "0"
+        ],
+        "m": 2,
+        "mass": "60/7",
+        "part": "real"
+      },
+      {
+        "degree": 3,
+        "entries": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "6/7",
+          "0",
+          "12/7"
+        ],
+        "m": 2,
+        "mass": "60/7",
+        "part": "imag"
+      },
+      {
+        "degree": 3,
+        "entries": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "36/7",
+          "0"
+        ],
+        "m": 3,
+        "mass": "360/7",
+        "part": "real"
+      },
+      {
+        "degree": 3,
+        "entries": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "36/7"
+        ],
+        "m": 3,
+        "mass": "360/7",
+        "part": "imag"
+      }
+    ],
+    "complete_real_components": true,
+    "far_tail_rule": "all degrees >L+degree(q) have zero head coupling; all degrees >L remain bounded",
+    "potential_degree": 1
+  },
+  "version": 199,
+  "wall_seconds": 0.0022792500000000104
+}

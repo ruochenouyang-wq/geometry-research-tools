@@ -1,0 +1,124 @@
+{
+  "tests": {
+    "count": 489,
+    "seconds": 16.308,
+    "passed": true,
+    "log": "results/full_suite.log"
+  },
+  "version_ledger": {
+    "first": 36,
+    "last": 90,
+    "count": 55,
+    "all_completed": true,
+    "symbol_references_checked": 328
+  },
+  "legacy_source_files_unchanged": 36,
+  "math_benchmark": {
+    "cases": 28,
+    "runs": 84,
+    "saved_certificate_artifacts": 105,
+    "all_replayed_and_input_bound": true
+  },
+  "new_service_cases": {
+    "count": 14,
+    "all_evidence_retrieved": true,
+    "size_gate": {
+      "o200k_base": {
+        "median_receipt": 146.0,
+        "p90_receipt": 185,
+        "median_request_and_actual_response": 213.0,
+        "numeric_size_gate": true
+      },
+      "cl100k_base": {
+        "median_receipt": 142.0,
+        "p90_receipt": 182,
+        "median_request_and_actual_response": 212.0,
+        "numeric_size_gate": true
+      }
+    }
+  },
+  "legacy_token_corpus": {
+    "count": 26,
+    "size_gate": {
+      "o200k_base": {
+        "median_receipt": 142.0,
+        "p90_receipt": 157,
+        "median_request_and_receipt": 219.5,
+        "numeric_size_gate": true
+      },
+      "cl100k_base": {
+        "median_receipt": 138.5,
+        "p90_receipt": 154,
+        "median_request_and_receipt": 216.0,
+        "numeric_size_gate": true
+      }
+    }
+  },
+  "token_feature_experiments": {
+    "count": 20,
+    "passed": true
+  },
+  "independent_reviews": [
+    "TOKEN_AUDIT.md",
+    "REVIEW_MATRIX_REFINE.md",
+    "REVIEW_POSITIVE_SEARCH.md",
+    "REVIEW_UNIFORM_REFINE.md",
+    "REVIEW_ORIGINAL_GOAL.md",
+    "REVIEW_INTEGRATION.md"
+  ],
+  "development_subagents": 5,
+  "solver_triggered_model_calls": 0,
+  "model_evaluation_completed": false,
+  "formal_proof_assistant_checked": false,
+  "production_source_sha256": {
+    "algebra.py": "103a7cce5411c0313486a418be3b5cea22ea0d15f8c7d394ac0a223f306d5b6f",
+    "bernstein_v17.py": "50543627d3b89af72343fdc329225b50061c7c8498275bf699ef302486d24f32",
+    "compiler_v23.py": "da78c03aa70f79cce23f38df6258e0bd74efadd419f32d1bc78051a0dc665646",
+    "constrained_v21.py": "483e470e1d66d4ad1da09f96099069f30edf33f42bcff142a30324fe8e52a4a9",
+    "decision_v28.py": "c8d6efee3296a199e0d7f3b428f7e0e6299192f98b941dafcb0bc96c78f5b69a",
+    "dual_v33.py": "67a31af9e3293fc5f878789c0a9d447bf65579e24e02bd8d8fbfb8804ea34c93",
+    "equality_v19.py": "ebe740ad105408832680e4e706544f7193e20046d9b3f21bd98ee867ee2f98d1",
+    "error_bounds.py": "75a106495d97897b9083c505f96d15f6700d54bb40542bbae739a288c451c39c",
+    "exact_extrema.py": "d432c844e5a35f0c4ef980811caf6d93d073f68841c0423af63f5b95ea8091c6",
+    "family_v29.py": "a687d126cf288790a7baee87324f477f962112477ba9462499e195da18fada30",
+    "float_sdp.py": "a9e3bbbeb0069429b67fb3468a52ace73b0f609016691358a6235454521b80ac",
+    "global_core.py": "635aa542e4f711c9cb4a3cb91d6d58aa663f2dfb60bf8d56fb5cc4f4bf279bb8",
+    "global_quadratic.py": "efab8f22f52f1b0f1dcbcad43459f1d6858f9ec6825c004a0c7d983ea238c164",
+    "global_search.py": "0bf9a5a9c710082a8b3aaa9dbf1cbb00afa91afcb51e920fdee21380969d26bf",
+    "legacy_cli.py": "0f0511a757ef9349157c642ee8e99b5512125c57da936cf21ee75b4f49f8a02a",
+    "matrix_refine.py": "6556ceb093bcf4983ac645ecee11726575bd1d128f3b1bbdcfa2c69ec3b9097b",
+    "matrix_v30.py": "9b4f3f225884f31ad418b22ea776a72feb8466e8ebf98d5859b9117398558572",
+    "moment_v12.py": "f635b4328d39d21286fbf388622629ab056621b91885d11c05c56e052ba07b02",
+    "optimize_v34.py": "836268e5f79906734e14e495961532e0a079adb274a882c94045216a0ffa9ca9",
+    "original_goal.py": "0e0718b0dc2aef155ac09a968cc233e111fa03ad6ac56dafeb7677bc4c4a2274",
+    "planner_v32.py": "819739a4fef705b0106cb2423c20982898006df5823bfaab2df2ae54c7066228",
+    "planner_v35.py": "0ac203285b82c9fedf0eb2c95c6db920c64028b74c8c3df72eee276e1cc78a1c",
+    "point_oracle.py": "fcf3586899b3a12bacf81121109b3da26c62a3d7f0dbe150f11be1bc4195bd0a",
+    "positive_search.py": "08667022ba4e55f79638d31d67eb7418c17e50affe5fc309e26e338b27a4b404",
+    "precision_bridge.py": "875b0fb51f83395089cb7c1a072734ebee61eacd3adde9407e0cbdb5dcd6e744",
+    "protocol.py": "73eb1841cb2b88341eab0d0bdc404da1c1f094f3ff37b6618ab2aa49913ae171",
+    "reductions.py": "bb5464ccee0221f99abc9a2e1d7ef6fcaf81970b472a3f32bd7a395bb1426399",
+    "research_registry.py": "780cb1b17f14dce579308c8ec3602f67e96fa0c8890199182e7cb66a1fcf5574",
+    "robust_v20.py": "d943a6624f2a0b6d05fc55a6bd78f72c4509a917deaf944c1330b52638341f6c",
+    "run.py": "ca643a40a0e9c9b5f846da4be42e8d03433318afbe289031082b92676307c680",
+    "simplex_v15.py": "373ef71741849c3fbde78e785f135cbced153497bf6683064160c0b623b1c563",
+    "spectral_certifier.py": "feba4ccaef97ec16fc310ed85d62a74bb20d75e9724dd2b174326cd14a2c5412",
+    "token_meter.py": "f11f46e925810db7cd7173ca71b3384a13c1fea26072fafa3d8093142e9ab9b2",
+    "transport_v31.py": "e3a4d11331d88f4872d946907d1ed12ff177ec930a9db7657834b05ed1d57a6e",
+    "uniform_refine.py": "5784a0170ebe6ab68ad6c79de47271b4709321de706167c627d3284105ec47cd",
+    "v03_tail.py": "12f18077bc38a5d6f711a4364cd92780b80bbf16391f2d40e1f738221517521b",
+    "v04_search.py": "a9e5eb272d9c97de1147c1b8359adda6b8ebaccb31dd5a4418a6f852c702666b",
+    "v05_range.py": "50798da8ee8893a1fda665701f2b0f7134074ec2e547e39cc9cbdf106ed742fa",
+    "v07_precision.py": "1f4a43c9ddda499ae71915808c6045af0560e4e7e44a4003b9a52ec023300b6e"
+  },
+  "packaging": "Fresh archive extraction validation is recorded in sibling geometry-v36-v90-package-check.json.",
+  "fresh_archive_validation": {
+    "all_passed": true,
+    "tests": 489,
+    "new_certificates_replayed": 14,
+    "mathematical_certificate_artifacts_replayed": 105,
+    "token_feature_experiments": 20,
+    "actual_jsonl_original_goal": true,
+    "source_files_unchanged_after_extraction_checks": true
+  }
+}

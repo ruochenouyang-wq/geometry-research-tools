@@ -1,0 +1,132 @@
+{
+  "scope": "Saved full comparison sessions in the two acceptance revisions and their two fixed-configuration selections; NOT total research cost.",
+  "experiments": [
+    {
+      "source": "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/holdout_20260919T233916030745Z/report.json",
+      "phase": "holdout",
+      "methods": 5,
+      "sessions": 25,
+      "wall_seconds_sum_of_all_sessions": 32.05774645507336,
+      "cpu_seconds_sum_of_all_sessions": 31.956683999999996,
+      "includes_all_failed_task_branches_and_probes": true,
+      "selection_preparation_excluded_here_to_avoid_double_counting": true
+    },
+    {
+      "source": "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/regression_20260919T203000014749Z/report.json",
+      "phase": "regression",
+      "methods": 5,
+      "sessions": 25,
+      "wall_seconds_sum_of_all_sessions": 4.10220312664751,
+      "cpu_seconds_sum_of_all_sessions": 4.048227,
+      "includes_all_failed_task_branches_and_probes": true,
+      "selection_preparation_excluded_here_to_avoid_double_counting": true
+    },
+    {
+      "source": "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/regression_20260919T203511743813Z/report.json",
+      "phase": "regression",
+      "methods": 5,
+      "sessions": 25,
+      "wall_seconds_sum_of_all_sessions": 4.157527167815715,
+      "cpu_seconds_sum_of_all_sessions": 4.1022300000000005,
+      "includes_all_failed_task_branches_and_probes": true,
+      "selection_preparation_excluded_here_to_avoid_double_counting": true
+    },
+    {
+      "source": "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T202920753352Z/report.json",
+      "phase": "validation",
+      "methods": 5,
+      "sessions": 25,
+      "wall_seconds_sum_of_all_sessions": 25.120888582081534,
+      "cpu_seconds_sum_of_all_sessions": 25.003921,
+      "includes_all_failed_task_branches_and_probes": true,
+      "selection_preparation_excluded_here_to_avoid_double_counting": true
+    },
+    {
+      "source": "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_20260919T203320830729Z/report.json",
+      "phase": "validation",
+      "methods": 5,
+      "sessions": 25,
+      "wall_seconds_sum_of_all_sessions": 23.820033959229477,
+      "cpu_seconds_sum_of_all_sessions": 23.73594,
+      "includes_all_failed_task_branches_and_probes": true,
+      "selection_preparation_excluded_here_to_avoid_double_counting": true
+    },
+    {
+      "source": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/holdout_20260920T042408501655Z/report.json",
+      "phase": "holdout",
+      "methods": 6,
+      "sessions": 30,
+      "wall_seconds_sum_of_all_sessions": 33.26936332997866,
+      "cpu_seconds_sum_of_all_sessions": 33.157717000000005,
+      "includes_all_failed_task_branches_and_probes": true,
+      "selection_preparation_excluded_here_to_avoid_double_counting": true
+    },
+    {
+      "source": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260919T234950969360Z/report.json",
+      "phase": "regression",
+      "methods": 6,
+      "sessions": 30,
+      "wall_seconds_sum_of_all_sessions": 4.630434916121885,
+      "cpu_seconds_sum_of_all_sessions": 4.5636920000000005,
+      "includes_all_failed_task_branches_and_probes": true,
+      "selection_preparation_excluded_here_to_avoid_double_counting": true
+    },
+    {
+      "source": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/regression_20260920T041824129864Z/report.json",
+      "phase": "regression",
+      "methods": 6,
+      "sessions": 30,
+      "wall_seconds_sum_of_all_sessions": 4.652849001227878,
+      "cpu_seconds_sum_of_all_sessions": 4.584646,
+      "includes_all_failed_task_branches_and_probes": true,
+      "selection_preparation_excluded_here_to_avoid_double_counting": true
+    },
+    {
+      "source": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/validation_20260919T235032762492Z/report.json",
+      "phase": "validation",
+      "methods": 6,
+      "sessions": 30,
+      "wall_seconds_sum_of_all_sessions": 31.738363916170783,
+      "cpu_seconds_sum_of_all_sessions": 31.610749,
+      "includes_all_failed_task_branches_and_probes": true,
+      "selection_preparation_excluded_here_to_avoid_double_counting": true
+    }
+  ],
+  "selection_preparations": [
+    {
+      "source": "/PROJECT/outputs/geometry_strategy_v317_release/evaluation/validation_selection.json",
+      "wall_seconds": 2.565422623883933,
+      "cpu_seconds": 2.5290659999999994,
+      "charged_once_in_this_ledger": true
+    },
+    {
+      "source": "/PROJECT/outputs/geometry_strategy_v317_runtime/evaluation/validation_selection.json",
+      "wall_seconds": 2.475962250144221,
+      "cpu_seconds": 2.4432479999999996,
+      "charged_once_in_this_ledger": true
+    }
+  ],
+  "recorded_wall_seconds": 168.59079532837495,
+  "recorded_cpu_seconds": 167.73612,
+  "not_in_this_timing_total": [
+    "80 original component-development experiments (separate recorded metrics)",
+    "tests and profiling (separate logs, not uniformly accounted)",
+    "model/agent inference, failed sessions and retries",
+    "human time and coordination",
+    "all historical preparation and maintenance"
+  ],
+  "actual_external_model_calls_in_evaluation_programs": 0,
+  "entire_project_model_calls": null,
+  "per_model_actual_tokens": null,
+  "actual_financial_cost": null,
+  "human_hours": null,
+  "historical_cost_completeness": false,
+  "goal_counter_snapshot": "GOAL_USAGE_SNAPSHOT.json",
+  "agent_tree_snapshot": {
+    "visible_children": 15,
+    "including_root": 16,
+    "current_running_children_at_snapshot": 0,
+    "authorized_maximum": 18,
+    "historical_per_agent_resource_ledger": null
+  }
+}

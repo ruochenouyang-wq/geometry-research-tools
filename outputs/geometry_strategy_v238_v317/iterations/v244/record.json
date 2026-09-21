@@ -1,0 +1,23 @@
+{
+  "version": 244,
+  "recorded_at": "2026-09-18T18:37:50.571182+00:00",
+  "hypothesis": "并行汇总必须区别身份和数学请求语义，且防止参数错配",
+  "change": "加入 request_id、归一化请求摘要和期望摘要检查；深拷贝隔离",
+  "source_sha256": {
+    "request_contract.py": "2eafbeecc20aa6276f51243edea914476cf6bf418f194a363524ac8aff9af220",
+    "test_request_contract.py": "c936b4ae8e9f334ce33f057bc3bbc28f4085ce39abf4f5ab400520212630ca37"
+  },
+  "validation": {
+    "tests": 15,
+    "passed": true
+  },
+  "comparison": {
+    "before": "无请求关联且后端可修改调用者嵌套数据",
+    "after": "等价默认值同摘要、不同目标不同摘要、错误摘要不派发、元数据不传旧后端"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "摘要不是身份签名或数学证明；调用方仍应保证 request_id 唯一"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

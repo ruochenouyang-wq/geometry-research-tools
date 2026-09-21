@@ -1,0 +1,70 @@
+{
+  "all_saved_mathematical_artifacts_verified": true,
+  "budget": {
+    "bits": 40,
+    "max_m": 8,
+    "max_modes": 12,
+    "modes": 6,
+    "tolerance": "1/100000000"
+  },
+  "certificates": [
+    {
+      "format": "wide_cheap_sphere_ground_v115",
+      "path": "certs/C06_cheap_global.json",
+      "sha256": "9cb663b0d31136ca780d27589d2278c5fde6b88977474b156fe1b251a3a02b61",
+      "verified": true
+    },
+    {
+      "format": "wide_full_sphere_ground_v122",
+      "path": "certs/C06_wide_full.json",
+      "sha256": "7fa939c0dfb14811f110614f0e6824d6f970b0c16d5375e7d3c5f25b9c438881",
+      "verified": true
+    }
+  ],
+  "challenge_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "elapsed_seconds": 0.542893,
+  "factorization_exactly_checked": true,
+  "id": "C06",
+  "independent_guard": {
+    "q_lower": "-36/49",
+    "rule": "q=-(t^6-1/7)^2; t^6 in [0,1]",
+    "spectral_lower": "62/49"
+  },
+  "lower": "1733087538328357888036867/925583830642450461884416",
+  "notes": [],
+  "original_acceptance": [
+    "Bind the expanded degree-12 polynomial exactly to the factored trial square.",
+    "Independent guard q>=-36/49 gives full mean-zero ground >=62/49; a successful spectral certificate must cover the whole interval, not samples."
+  ],
+  "original_input": {
+    "construction": "q=-(t^6-1/7)^2",
+    "q": [
+      "-1/49",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "2/7",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1"
+    ],
+    "target_width": "1/100000000"
+  },
+  "scope_default": {
+    "geometry": "unit_S2",
+    "measure": "mu=d_sigma/(4*pi)",
+    "operator": "Pi(-Delta+q)Pi as a quadratic-form compression",
+    "space": "all real H1 functions with E_mu(u)=0",
+    "t": "z=cos(theta)"
+  },
+  "status": "narrow_target_met",
+  "target": "1/100000000",
+  "title": "GN六次试探平方产生十二次势",
+  "upper": "6304935735293/3367254360064",
+  "width": "773083219675/132226261520350065983488"
+}

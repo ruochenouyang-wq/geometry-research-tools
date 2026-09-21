@@ -1,0 +1,979 @@
+{
+  "cases": [
+    {
+      "case": "C12",
+      "detail": {
+        "admissible_trials": [
+          "x",
+          "y"
+        ],
+        "full_ground": "2",
+        "separately_axisymmetric_ground": "6"
+      },
+      "elapsed_including_store_and_replay_seconds": 0.041663833,
+      "original": {
+        "acceptance": [
+          "In the full sphere the ground is exactly 2, with admissible x and y.",
+          "For the separately declared axisymmetric space the same constraints give ground 6; scope binding must distinguish the two."
+        ],
+        "category": 6,
+        "frozen_v94_baseline": "No extra-constraint API; full and axisymmetric meanings must not be conflated.",
+        "id": "C12",
+        "input": {
+          "orthogonality": [
+            "1",
+            "z"
+          ],
+          "q": [
+            "0"
+          ]
+        },
+        "origin": "exact_calibration",
+        "source_ids": [
+          "sphere"
+        ],
+        "status": "fixed_challenge_not_claimed_solved",
+        "title": "只删除常数和z仍保留横向模"
+      },
+      "original_target_met": true,
+      "outer_process_limit_seconds": 90,
+      "service_calls": [
+        {
+          "request": {
+            "L": 2,
+            "constraints": [
+              {
+                "0,0,0": "1"
+              },
+              {
+                "0,0,1": "1"
+              }
+            ],
+            "op": "constraints",
+            "q": {}
+          },
+          "result": {
+            "certificate_id": "d729ed37ddc00dc5c90fe5f1cfbe7629f5c53fc4224a070776c63afd582c95bb",
+            "constraints": [
+              {
+                "0,0,0": "1"
+              },
+              {
+                "0,0,1": "1"
+              }
+            ],
+            "exact_width": "0",
+            "formal_proof_assistant_checked": false,
+            "lower": "2",
+            "mathematical_proof_verified": true,
+            "operation": "constraints",
+            "original_request_bound": true,
+            "potential": {},
+            "scope": "all_real_H1_functions_on_unit_S2_satisfying_all_recorded_moments",
+            "status": "certified_ground_enclosure",
+            "upper": "2"
+          }
+        }
+      ],
+      "unchanged_input_scope_and_target": true
+    },
+    {
+      "case": "C14",
+      "detail": {
+        "full_mean_zero": {
+          "negative_count": 8,
+          "negative_trace": 20
+        },
+        "full_unprojected": {
+          "negative_count": 9,
+          "negative_trace": 27
+        }
+      },
+      "elapsed_including_store_and_replay_seconds": 0.007011334000000008,
+      "original": {
+        "acceptance": [
+          "Mean-zero result: negative count 8 and negative-part trace 20 (l=1:3*5; l=2:5*1).",
+          "Unprojected result: negative count 9 and trace 27; prove no omitted negative eigenvalues. These are exact test identities, not a new Lieb-Thirring bound."
+        ],
+        "category": 7,
+        "frozen_v94_baseline": "Sector energies are available; full counting and negative-trace sum API are absent.",
+        "id": "C14",
+        "input": {
+          "q": [
+            "-7"
+          ],
+          "quantity": "sum_j max(0,-lambda_j), with multiplicity",
+          "spaces": [
+            "full_mean_zero",
+            "full_unprojected"
+          ]
+        },
+        "origin": "exact_calibration",
+        "source_ids": [
+          "sphere",
+          "gn"
+        ],
+        "status": "fixed_challenge_not_claimed_solved",
+        "title": "负谱个数及负部迹"
+      },
+      "original_target_met": true,
+      "outer_process_limit_seconds": 90,
+      "service_calls": [
+        {
+          "request": {
+            "k": 9,
+            "op": "spectrum",
+            "q": [
+              "-7"
+            ],
+            "quantities": [
+              "ordered",
+              "count",
+              "trace"
+            ],
+            "spaces": [
+              "full_mean_zero",
+              "full_unprojected"
+            ]
+          },
+          "result": {
+            "all_requested_targets_met": true,
+            "certificate_id": "8827f8b11f7c0ddb24fae55695fbd560d3796647992cbc8109887166eecca180",
+            "formal_proof_assistant_checked": false,
+            "mathematical_proof_verified": true,
+            "operation": "spectrum",
+            "original_request_bound": true,
+            "spaces": [
+              {
+                "count": {
+                  "count_lower": 8,
+                  "count_upper": 8,
+                  "threshold": "0"
+                },
+                "decisions": {
+                  "count": "certified_target_met",
+                  "ordered": "certified_target_met",
+                  "trace": "certified_target_met"
+                },
+                "negative_trace": {
+                  "lower": "20",
+                  "upper": "20",
+                  "width": "0"
+                },
+                "ordered": {
+                  "intervals": [
+                    {
+                      "index": 1,
+                      "lower": "-5",
+                      "upper": "-5",
+                      "width": "0"
+                    },
+                    {
+                      "index": 2,
+                      "lower": "-5",
+                      "upper": "-5",
+                      "width": "0"
+                    },
+                    {
+                      "index": 3,
+                      "lower": "-5",
+                      "upper": "-5",
+                      "width": "0"
+                    },
+                    {
+                      "index": 4,
+                      "lower": "-1",
+                      "upper": "-1",
+                      "width": "0"
+                    },
+                    {
+                      "index": 5,
+                      "lower": "-1",
+                      "upper": "-1",
+                      "width": "0"
+                    },
+                    {
+                      "index": 6,
+                      "lower": "-1",
+                      "upper": "-1",
+                      "width": "0"
+                    },
+                    {
+                      "index": 7,
+                      "lower": "-1",
+                      "upper": "-1",
+                      "width": "0"
+                    },
+                    {
+                      "index": 8,
+                      "lower": "-1",
+                      "upper": "-1",
+                      "width": "0"
+                    },
+                    {
+                      "index": 9,
+                      "lower": "5",
+                      "upper": "5",
+                      "width": "0"
+                    }
+                  ],
+                  "k": 9
+                },
+                "q": [
+                  "-7"
+                ],
+                "space": "full_mean_zero"
+              },
+              {
+                "count": {
+                  "count_lower": 9,
+                  "count_upper": 9,
+                  "threshold": "0"
+                },
+                "decisions": {
+                  "count": "certified_target_met",
+                  "ordered": "certified_target_met",
+                  "trace": "certified_target_met"
+                },
+                "negative_trace": {
+                  "lower": "27",
+                  "upper": "27",
+                  "width": "0"
+                },
+                "ordered": {
+                  "intervals": [
+                    {
+                      "index": 1,
+                      "lower": "-7",
+                      "upper": "-7",
+                      "width": "0"
+                    },
+                    {
+                      "index": 2,
+                      "lower": "-5",
+                      "upper": "-5",
+                      "width": "0"
+                    },
+                    {
+                      "index": 3,
+                      "lower": "-5",
+                      "upper": "-5",
+                      "width": "0"
+                    },
+                    {
+                      "index": 4,
+                      "lower": "-5",
+                      "upper": "-5",
+                      "width": "0"
+                    },
+                    {
+                      "index": 5,
+                      "lower": "-1",
+                      "upper": "-1",
+                      "width": "0"
+                    },
+                    {
+                      "index": 6,
+                      "lower": "-1",
+                      "upper": "-1",
+                      "width": "0"
+                    },
+                    {
+                      "index": 7,
+                      "lower": "-1",
+                      "upper": "-1",
+                      "width": "0"
+                    },
+                    {
+                      "index": 8,
+                      "lower": "-1",
+                      "upper": "-1",
+                      "width": "0"
+                    },
+                    {
+                      "index": 9,
+                      "lower": "-1",
+                      "upper": "-1",
+                      "width": "0"
+                    }
+                  ],
+                  "k": 9
+                },
+                "q": [
+                  "-7"
+                ],
+                "space": "full_unprojected"
+              }
+            ],
+            "status": "targets_met"
+          }
+        }
+      ],
+      "unchanged_input_scope_and_target": true
+    },
+    {
+      "case": "C16",
+      "detail": [
+        {
+          "all_four_moments_independently_checked": true,
+          "n": 4,
+          "original_coefficients_checked": 5,
+          "pi_times_area_K": "1674/5525",
+          "probability_ratio": "6696/5525"
+        },
+        {
+          "all_four_moments_independently_checked": true,
+          "n": 16,
+          "original_coefficients_checked": 17,
+          "pi_times_area_K": "395208/920465",
+          "probability_ratio": "1580832/920465"
+        },
+        {
+          "all_four_moments_independently_checked": true,
+          "n": 64,
+          "original_coefficients_checked": 65,
+          "pi_times_area_K": "100694304/209564225",
+          "probability_ratio": "402777216/209564225"
+        }
+      ],
+      "elapsed_including_store_and_replay_seconds": 0.012227457999999997,
+      "original": {
+        "acceptance": [
+          "For each prescribed n, independently integrate mean, M2, M4 and Dirichlet energy and return the exact rational GN quotient.",
+          "M2=2^(2n)*(1/(2n+1)-1/(n+1)^2); energy=n*2^(2n-1)/(2n+1). M4 follows binomial expansion with E((1+t)^j)=2^j/(j+1).",
+          "All three cases stay in the record even if a resource limit is reached. No claim that these trials are globally optimal or attain the sharp constant."
+        ],
+        "category": 8,
+        "frozen_v94_baseline": "No GN moment/search interface; potential squares would exceed degree 6 for these trials.",
+        "id": "C16",
+        "input": {
+          "mean_zero": true,
+          "n_values": [
+            4,
+            16,
+            64
+          ],
+          "normalization": "mu=d_sigma/(4*pi)",
+          "trial_family": "u_n(t)=(1+t)^n-2^n/(n+1)"
+        },
+        "origin": "constructed_stress_case",
+        "source_ids": [
+          "gn"
+        ],
+        "status": "fixed_challenge_not_claimed_solved",
+        "title": "明确集中序列的有理矩与GN试探"
+      },
+      "original_target_met": true,
+      "outer_process_limit_seconds": 90,
+      "service_calls": [
+        {
+          "request": {
+            "n": 4,
+            "op": "cap_original",
+            "raw_t_coefficients": [
+              "-11/5",
+              "4",
+              "6",
+              "4",
+              "1"
+            ]
+          },
+          "result": {
+            "certificate_id": "0b4dba4eecd5ad5223d03e14a4ffc56a4c29099afe733251b121894979200966",
+            "formal_proof_assistant_checked": false,
+            "function": "(1+t)^n-2^n/(n+1)",
+            "mathematical_proof_verified": true,
+            "n": 4,
+            "operation": "cap_original",
+            "original_request_bound": true,
+            "pi_times_area_K": "1674/5525",
+            "probability_ratio": "6696/5525",
+            "scope": "one_axisymmetric_mean_zero_trial_not_a_full_space_GN_upper_bound",
+            "status": "exact_trial_moments",
+            "universal_GN_sharp_constant_proved": false
+          }
+        },
+        {
+          "request": {
+            "n": 16,
+            "op": "cap_original",
+            "raw_t_coefficients": [
+              "-65519/17",
+              "16",
+              "120",
+              "560",
+              "1820",
+              "4368",
+              "8008",
+              "11440",
+              "12870",
+              "11440",
+              "8008",
+              "4368",
+              "1820",
+              "560",
+              "120",
+              "16",
+              "1"
+            ]
+          },
+          "result": {
+            "certificate_id": "a163286d3047477565a5e3cdd0bc9b45037bc99ce7f4118a8e987284272bcd23",
+            "formal_proof_assistant_checked": false,
+            "function": "(1+t)^n-2^n/(n+1)",
+            "mathematical_proof_verified": true,
+            "n": 16,
+            "operation": "cap_original",
+            "original_request_bound": true,
+            "pi_times_area_K": "395208/920465",
+            "probability_ratio": "1580832/920465",
+            "scope": "one_axisymmetric_mean_zero_trial_not_a_full_space_GN_upper_bound",
+            "status": "exact_trial_moments",
+            "universal_GN_sharp_constant_proved": false
+          }
+        },
+        {
+          "request": {
+            "n": 64,
+            "op": "cap_original",
+            "raw_t_coefficients": [
+              "-18446744073709551551/65",
+              "64",
+              "2016",
+              "41664",
+              "635376",
+              "7624512",
+              "74974368",
+              "621216192",
+              "4426165368",
+              "27540584512",
+              "151473214816",
+              "743595781824",
+              "3284214703056",
+              "13136858812224",
+              "47855699958816",
+              "159518999862720",
+              "488526937079580",
+              "1379370175283520",
+              "3601688791018080",
+              "8719878125622720",
+              "19619725782651120",
+              "41107996877935680",
+              "80347448443237920",
+              "146721427591999680",
+              "250649105469666120",
+              "401038568751465792",
+              "601557853127198688",
+              "846636978475316672",
+              "1118770292985239888",
+              "1388818294740297792",
+              "1620288010530347424",
+              "1777090076065542336",
+              "1832624140942590534",
+              "1777090076065542336",
+              "1620288010530347424",
+              "1388818294740297792",
+              "1118770292985239888",
+              "846636978475316672",
+              "601557853127198688",
+              "401038568751465792",
+              "250649105469666120",
+              "146721427591999680",
+              "80347448443237920",
+              "41107996877935680",
+              "19619725782651120",
+              "8719878125622720",
+              "3601688791018080",
+              "1379370175283520",
+              "488526937079580",
+              "159518999862720",
+              "47855699958816",
+              "13136858812224",
+              "3284214703056",
+              "743595781824",
+              "151473214816",
+              "27540584512",
+              "4426165368",
+              "621216192",
+              "74974368",
+              "7624512",
+              "635376",
+              "41664",
+              "2016",
+              "64",
+              "1"
+            ]
+          },
+          "result": {
+            "certificate_id": "e50a282ef6c8a05b6e44d34e8f1233f138a6785aea583fa8da47f2272365ea18",
+            "formal_proof_assistant_checked": false,
+            "function": "(1+t)^n-2^n/(n+1)",
+            "mathematical_proof_verified": true,
+            "n": 64,
+            "operation": "cap_original",
+            "original_request_bound": true,
+            "pi_times_area_K": "100694304/209564225",
+            "probability_ratio": "402777216/209564225",
+            "scope": "one_axisymmetric_mean_zero_trial_not_a_full_space_GN_upper_bound",
+            "status": "exact_trial_moments",
+            "universal_GN_sharp_constant_proved": false
+          }
+        }
+      ],
+      "unchanged_input_scope_and_target": true
+    },
+    {
+      "case": "C18",
+      "detail": {
+        "complete_reflection_blocks": 8,
+        "exact_width": "18701891022471/302231454903657293676544",
+        "lower": "1082670971198065026650489/302231454903657293676544",
+        "max_computed_dimension": 6,
+        "upper": "984683512085/274877906944"
+      },
+      "elapsed_including_store_and_replay_seconds": 0.141178333,
+      "original": {
+        "acceptance": [
+          "Replay a full-sphere certificate for x^2+2y^2+3z^2, which has no rotation making it a function of one axis alone.",
+          "Independent coarse guard is 3 <= ground <=18/5: q>=1 and the trial u=x has potential quotient 8/5 and Dirichlet quotient 2."
+        ],
+        "category": 9,
+        "frozen_v94_baseline": "Nonaxisymmetric coefficients/couplings are outside V94 input scope.",
+        "id": "C18",
+        "input": {
+          "mean_zero": true,
+          "q_xyz": [
+            {
+              "coefficient": "1",
+              "powers": [
+                2,
+                0,
+                0
+              ]
+            },
+            {
+              "coefficient": "2",
+              "powers": [
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "coefficient": "3",
+              "powers": [
+                0,
+                0,
+                2
+              ]
+            }
+          ],
+          "target_width": "1/100000000"
+        },
+        "origin": "constructed_stress_case",
+        "source_ids": [],
+        "status": "fixed_challenge_not_claimed_solved",
+        "title": "真正三轴二次势"
+      },
+      "original_target_met": true,
+      "outer_process_limit_seconds": 90,
+      "service_calls": [
+        {
+          "request": {
+            "bits": 40,
+            "max_L": 9,
+            "op": "parity_ground",
+            "q": {
+              "0,0,2": "3",
+              "0,2,0": "2",
+              "2,0,0": "1"
+            },
+            "start_L": 3,
+            "target": "1/100000000",
+            "wall_budget_seconds": 90
+          },
+          "result": {
+            "certificate_id": "2e1ac185d0e161d4684e35917838375189f83de118d3eff34f18f2b6ddabcb9e",
+            "exact_width": "18701891022471/302231454903657293676544",
+            "formal_proof_assistant_checked": false,
+            "lower": "1082670971198065026650489/302231454903657293676544",
+            "mathematical_proof_verified": true,
+            "operation": "parity_ground",
+            "original_request_bound": true,
+            "potential": {
+              "0,0,2": "3",
+              "0,2,0": "2",
+              "2,0,0": "1"
+            },
+            "requested_width": "1/100000000",
+            "scope": "all_real_mean_zero_H1_functions_on_unit_S2",
+            "status": "target_met",
+            "upper": "984683512085/274877906944"
+          }
+        }
+      ],
+      "unchanged_input_scope_and_target": true
+    }
+  ],
+  "executable_increments": 40,
+  "four_retested_targets_met": true,
+  "original_problem_bank_sha256": "e583a5bf8d028b968b832c3b71c8fd8580ad09a27e5d3994b01f0ab3ec1c3e05",
+  "previous_integrity": {
+    "differences": [],
+    "manifest_sha256": "21e1f84c06fdc467247c6139aea93eb3a1a9c93369176e63c3f6b567af1cb755",
+    "unchanged_files": 440
+  },
+  "previous_replay": {
+    "cases_bound_to_original": 20,
+    "certificates_verified": 56,
+    "previous_complete_cases": 16,
+    "proofs": [
+      {
+        "case": "C01",
+        "path": "cross_challenge/certs/C01_original_explicit_trial.json",
+        "sha256": "ac3e8881f3562b808e0ee9b37bae9a05457e5705815152bc92e5b35918b8932b",
+        "verified": true
+      },
+      {
+        "case": "C02",
+        "path": "cross_challenge/certs/C02_original_explicit_trial.json",
+        "sha256": "e93d3e71ad77991007bea05628d307eede1410b6af898ec6d81ada237ec3ecc9",
+        "verified": true
+      },
+      {
+        "case": "C03",
+        "path": "cross_challenge/certs/C03_schur_N8.json",
+        "sha256": "79be7c37a0aa480b25adc35efa86b1d074e4c3306f16cf7858d644fe04a6bebd",
+        "verified": true
+      },
+      {
+        "case": "C03",
+        "path": "cross_challenge/certs/C03_trial_N8.json",
+        "sha256": "b77ba93164f8ec7e63fe026c988763f32aad96600643012d19d3940a432077d5",
+        "verified": true
+      },
+      {
+        "case": "C03",
+        "path": "cross_challenge/certs/C03_temple_N8.json",
+        "sha256": "c82390813ce08d29a1cb0662ec980f4f0c71db4928ea8d1e7732407c8f574006",
+        "verified": true
+      },
+      {
+        "case": "C03",
+        "path": "cross_challenge/certs/C03_combined_N8.json",
+        "sha256": "9a655e6909ff5df374d87787a6cd5c96f956ea7da7998a36232cc2111673dd4f",
+        "verified": true
+      },
+      {
+        "case": "C03",
+        "path": "cross_challenge/certs/C03_schur_N12.json",
+        "sha256": "f55f2465bc046653ece885c1f1aa32af248737be4e0779d2c1f552ca99648125",
+        "verified": true
+      },
+      {
+        "case": "C03",
+        "path": "cross_challenge/certs/C03_trial_N12.json",
+        "sha256": "223537c00ea063ecbf576f50920b777f43b336ec71d3621ba838a40145d36823",
+        "verified": true
+      },
+      {
+        "case": "C03",
+        "path": "cross_challenge/certs/C03_temple_N12.json",
+        "sha256": "37364ee8f4538e346717772758774f55faed6da52188b39326b108df4befb75e",
+        "verified": true
+      },
+      {
+        "case": "C03",
+        "path": "cross_challenge/certs/C03_combined_N12.json",
+        "sha256": "5de80ed436fd955eda80cc62e2865760be346c2e9621afb3f0d6526d6e00b253",
+        "verified": true
+      },
+      {
+        "case": "C04",
+        "path": "cross_challenge/certs/C04_original_budget.json",
+        "sha256": "5f79c161acf0abc62c5b27d222ca5c1ad6ddd2933c80ac76e686d9dc756f52bb",
+        "verified": true
+      },
+      {
+        "case": "C04",
+        "path": "cross_challenge/certs/C04_refined_full.json",
+        "sha256": "f70942822de67305bf894df3116d3b6ad6c06a2a1199829baf0eea85f03c14af",
+        "verified": true
+      },
+      {
+        "case": "C05",
+        "path": "cross_challenge/certs/C05_cheap_global.json",
+        "sha256": "9e6c810411225f9c26ba2d55cead1d1b895c1c63c8c41e37efcb085020315c1f",
+        "verified": true
+      },
+      {
+        "case": "C05",
+        "path": "cross_challenge/certs/C05_wide_full.json",
+        "sha256": "9de707d1e64125ff129f71f162c92f1d47287652c32989e0f792aa40dd920967",
+        "verified": true
+      },
+      {
+        "case": "C06",
+        "path": "cross_challenge/certs/C06_cheap_global.json",
+        "sha256": "9cb663b0d31136ca780d27589d2278c5fde6b88977474b156fe1b251a3a02b61",
+        "verified": true
+      },
+      {
+        "case": "C06",
+        "path": "cross_challenge/certs/C06_wide_full.json",
+        "sha256": "7fa939c0dfb14811f110614f0e6824d6f970b0c16d5375e7d3c5f25b9c438881",
+        "verified": true
+      },
+      {
+        "case": "C07",
+        "path": "cross_challenge/certs/C07_whole_box_cheap.json",
+        "sha256": "283e544c15f1cd4129a6015c2dac70ed0f41bfae8682aa5845d931aa080d5963",
+        "verified": true
+      },
+      {
+        "case": "C07",
+        "path": "cross_challenge/certs/C07_whole_box_concavity.json",
+        "sha256": "ff6fea63864f6f71e08013c688599e888be7ecfa88f0ca36463e3c8aae0591f2",
+        "verified": true
+      },
+      {
+        "case": "C08",
+        "path": "cross_challenge/certs/C08_whole_box_cheap.json",
+        "sha256": "66143771c8ff99d07c3c993d3fb8dc13feb441e6e3ecac8e8df1e0c08a01b4a7",
+        "verified": true
+      },
+      {
+        "case": "C08",
+        "path": "cross_challenge/certs/C08_equality_a0_x.json",
+        "sha256": "b059e0652abc6e9cf2015dfd2be7202f71b900aba22bb438557ba6d05f76d3a5",
+        "verified": true
+      },
+      {
+        "case": "C09",
+        "path": "cross_challenge/certs/C09_cheap_objective.json",
+        "sha256": "1532758a0f6cf88107ab11aa472949be706f6cf8e5b5164020f0054235b2d3a0",
+        "verified": true
+      },
+      {
+        "case": "C09",
+        "path": "cross_challenge/certs/C09_global_objective.json",
+        "sha256": "e3ace0845f6db95fefb182c39adeb6dd73fb3f3df73a895f4b24dcfd117982a6",
+        "verified": true
+      },
+      {
+        "case": "C10",
+        "path": "cross_challenge/certs/C10_a-2_m0.json",
+        "sha256": "302d87a65d7826c302765ed8415b01c9e5dfe14185db3be134f6f2a0bd4b0d6b",
+        "verified": true
+      },
+      {
+        "case": "C10",
+        "path": "cross_challenge/certs/C10_a-2_m1.json",
+        "sha256": "abea9129958d867ee7b7f54cdc5b0c0fce8eb869943a735057ab89bd999d480b",
+        "verified": true
+      },
+      {
+        "case": "C10",
+        "path": "cross_challenge/certs/C10_a-2_full.json",
+        "sha256": "3e483bb088cfdeeab04e6229863d40e7f9304c6e8ed6101fa29d3e4c359a7be8",
+        "verified": true
+      },
+      {
+        "case": "C10",
+        "path": "cross_challenge/certs/C10_a0_m0.json",
+        "sha256": "f88fdaeab38d0a8922353b644abc5e074063bf7eae8ade13b7152885db11368a",
+        "verified": true
+      },
+      {
+        "case": "C10",
+        "path": "cross_challenge/certs/C10_a0_m1.json",
+        "sha256": "2e62b5fa207095f19df25487f474ac3f2f9058b7951642e310cb0605b76a6dfd",
+        "verified": true
+      },
+      {
+        "case": "C10",
+        "path": "cross_challenge/certs/C10_a0_full.json",
+        "sha256": "710cfb56bf45e5a22b25a1bdbc18be8bb811c96c53bed69e0f6187d51564add8",
+        "verified": true
+      },
+      {
+        "case": "C10",
+        "path": "cross_challenge/certs/C10_a2_m0.json",
+        "sha256": "fc654afe50a336e917d2ee197076c7b58e29960e63bc04ab54f228223b77e0d9",
+        "verified": true
+      },
+      {
+        "case": "C10",
+        "path": "cross_challenge/certs/C10_a2_m1.json",
+        "sha256": "529923488e97d88a8ffd0a5e4ce6a3065626ee5d1e6e03b4da0dd753d9d6b1e9",
+        "verified": true
+      },
+      {
+        "case": "C10",
+        "path": "cross_challenge/certs/C10_a2_full.json",
+        "sha256": "9eb0cb36e9667e81bcedcc7c036757c122aa6dff3ad968cfcfe910e63dfd4c94",
+        "verified": true
+      },
+      {
+        "case": "C10",
+        "path": "cross_challenge/certs/C10_zero_multiplicity.json",
+        "sha256": "f01a80d85ca001913fc30ab2125d121ba8330af003793d592f6ffee941614ddc",
+        "verified": true
+      },
+      {
+        "case": "C11",
+        "path": "cross_challenge/certs/C11_full_l01_excluded.json",
+        "sha256": "6287edf20f988f4ca66275ec8e8f363e2d3006bd7c7d3b4f33894ef3e9381eed",
+        "verified": true
+      },
+      {
+        "case": "C11",
+        "path": "cross_challenge/certs/C11_trial_3z2_minus1.json",
+        "sha256": "8560ab8cc7f0068076a1ca009dbdecea46ee1d7a70aaf535e7766f8f5efcd0ac",
+        "verified": true
+      },
+      {
+        "case": "C12",
+        "path": "cross_challenge/certs/C12_axisymmetric_1z_constraints.json",
+        "sha256": "d523a5741671ee6552d856e82e8f4480767af5fdd54a8801fd4cb264bdccdfd0",
+        "verified": true
+      },
+      {
+        "case": "C12",
+        "path": "cross_challenge/certs/C12_axisymmetric_exact_6.json",
+        "sha256": "626bf82b1a2483774fccaafbfe30806758c85508bb7f2999a66a528edcf4449d",
+        "verified": true
+      },
+      {
+        "case": "C12",
+        "path": "cross_challenge/certs/C12_full_transverse_trial.json",
+        "sha256": "b059e0652abc6e9cf2015dfd2be7202f71b900aba22bb438557ba6d05f76d3a5",
+        "verified": true
+      },
+      {
+        "case": "C13",
+        "path": "cross_challenge/certs/C13_ordered_full.json",
+        "sha256": "b33333176dd66a964b30ed9bb053619486a7b00dd52b417ce61b994d493aa63f",
+        "verified": true
+      },
+      {
+        "case": "C14",
+        "path": "cross_challenge/certs/C14_ordered_full.json",
+        "sha256": "90ba9b8d538c2fde2961bd42766ef1e9c210b106d2e8fd8deca1f17f77fb0199",
+        "verified": true
+      },
+      {
+        "case": "C14",
+        "path": "cross_challenge/certs/C14_negative_count.json",
+        "sha256": "6314e75d6788736f2b0b2c5273e141733f1fa0349103c1b1031e44baa9b9c07c",
+        "verified": true
+      },
+      {
+        "case": "C14",
+        "path": "cross_challenge/certs/C14_negative_trace.json",
+        "sha256": "8b2057cf5e889af3a3829ebd8f8aa6cbaeada62cc0a84a120889f1f17ec4f58d",
+        "verified": true
+      },
+      {
+        "case": "C15",
+        "path": "cross_challenge/certs/C15_original_z_GN.json",
+        "sha256": "3ef81a727bf1b296c4b033618f969d01f9f3ba4287ed73b0c29336b6919b72a2",
+        "verified": true
+      },
+      {
+        "case": "C16",
+        "path": "cross_challenge/certs/C16_n4_original_moments.json",
+        "sha256": "5790cb662d94d6d864ab76589cb374622e4f6f795acefc867de0de09960bb49d",
+        "verified": true
+      },
+      {
+        "case": "C16",
+        "path": "cross_challenge/certs/C16_n16_original_moments.json",
+        "sha256": "7bcca8f2cd17568f43082156e57c0483aa6bf9c3e6c6b572223ae29ac77d7a1a",
+        "verified": true
+      },
+      {
+        "case": "C17",
+        "path": "cross_challenge/certs/C17_qz_full_source.json",
+        "sha256": "3a29c21d30105730fa105293d012e1c280611bae7358dd1e3824ecfdc742d191",
+        "verified": true
+      },
+      {
+        "case": "C17",
+        "path": "cross_challenge/certs/C17_qx_rotated_full.json",
+        "sha256": "4e9bde51c7b7d11223f3c8d6e7bd1b2006d9827cc4fd140939199c3574c3e355",
+        "verified": true
+      },
+      {
+        "case": "C18",
+        "path": "cross_challenge/certs/C18_cheap_full.json",
+        "sha256": "9edf3d219b2a52ffaa856878deaa0b773f8a7d61d275fac72a98937cd73723d0",
+        "verified": true
+      },
+      {
+        "case": "C18",
+        "path": "cross_challenge/certs/C18_coupled_L3.json",
+        "sha256": "de8ce607f6afe85afb0be6121a5390dccf6d6f842f12b52ab2b42044ff95892b",
+        "verified": true
+      },
+      {
+        "case": "C18",
+        "path": "cross_challenge/certs/C18_coupled_L4.json",
+        "sha256": "ef721bdf3438c64103a3297b00451ec81baa27c20f4d98da0c2203ca4cf4643b",
+        "verified": true
+      },
+      {
+        "case": "C19",
+        "path": "cross_challenge/certs/C19_one_original_spectrum.json",
+        "sha256": "11c2d4112dcef2fc27bf4c68bfa8ed88c3276c6f39a27790ed18c06bf6df6d57",
+        "verified": true
+      },
+      {
+        "case": "C19",
+        "path": "cross_challenge/certs/C19_reused_decision_0.json",
+        "sha256": "733aeb6c2ba364b9adcf5f7b757bd2ee8d07149a9e109e55af33445efe2babb0",
+        "verified": true
+      },
+      {
+        "case": "C19",
+        "path": "cross_challenge/certs/C19_reused_decision_1.json",
+        "sha256": "7f36a6f3f108eef75fe1733f073e48b0fcc749cdf55286c6fdef5debdc73200e",
+        "verified": true
+      },
+      {
+        "case": "C20",
+        "path": "cross_challenge/certs/C20_original_first_budget.json",
+        "sha256": "043b59e5129e11e5687a6e81860f1d656dad7e1a2fb84ac6e583149227b07b27",
+        "verified": true
+      },
+      {
+        "case": "C20",
+        "path": "cross_challenge/certs/C20_precision_ancestry_bridge.json",
+        "sha256": "6eba704de9e61d4d5d3999b5ebea199990c2f669132701456d16a6e9a42b4707",
+        "verified": true
+      },
+      {
+        "case": "C20",
+        "path": "cross_challenge/certs/C20_bound_checkpoint.json",
+        "sha256": "876ce4fa4b0a03b817fea68c04eef401a50f241340b2151a12b3d1e1bc234c74",
+        "verified": true
+      },
+      {
+        "case": "C20",
+        "path": "cross_challenge/certs/C20_continued_full.json",
+        "sha256": "661e87c6dd1d1f89cf709fd301b91c83333108d3bc7fd26c2e38178d6d532980",
+        "verified": true
+      }
+    ]
+  },
+  "scope_note": "A fixed calibration/stress bank; not 20 open problems solved.",
+  "twenty_case_status": {
+    "completed_original_targets": 20,
+    "newly_completed_original_cases": 4,
+    "previously_complete_replayed": 16
+  },
+  "versions": [
+    195,
+    234
+  ]
+}

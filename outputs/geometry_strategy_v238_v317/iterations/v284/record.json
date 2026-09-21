@@ -1,0 +1,25 @@
+{
+  "version": 284,
+  "recorded_at": "2026-09-18T18:42:08.447040+00:00",
+  "hypothesis": "Small affordable steps plus explicit backend capabilities can replace fixed large solves",
+  "change": "Run incremental actions with preflight attempt/work budgets and optional singular_supports capability negotiation",
+  "source_sha256": {
+    "research_controller.py": "9b97406ab09c2218ff26eea4c51176ddfd1768422860225518f3824cf20196cd",
+    "test_research_controller.py": "703d1074c9b58bc261c7de4a83a3d3092e53515cfea72b35443bac70fa32c4f2"
+  },
+  "validation": {
+    "tests": 12,
+    "passed": true
+  },
+  "comparison": {
+    "real_L2_target_one_tenth": "reached in two incremental actions",
+    "unaffordable_spectrum_solver_calls": 0,
+    "new_singular_family": "only dispatches with explicit capability"
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Work units are a scheduling proxy, not runtime or token measurements",
+    "Backend still redoes work inside repeated calls"
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

@@ -1,0 +1,69 @@
+{
+  "all_passed": true,
+  "all_saved_certificates_passed": true,
+  "certificate_checks": [
+    {
+      "certificate_index_in_file": 0,
+      "file": "round09/certificates/degree4_mixed.json",
+      "format": "anisotropic_mean_zero_sphere_v182",
+      "verified": true
+    },
+    {
+      "certificate_index_in_file": 0,
+      "file": "round09/certificates/radius_identity.json",
+      "format": "anisotropic_mean_zero_sphere_v182",
+      "verified": true
+    },
+    {
+      "certificate_index_in_file": 0,
+      "file": "round09/certificates/rotated_oblique_square.json",
+      "format": "sphere_rotation_transfer_v184",
+      "verified": true
+    },
+    {
+      "certificate_index_in_file": 0,
+      "file": "round09/certificates/rotated_x.json",
+      "format": "sphere_rotation_transfer_v184",
+      "verified": true
+    },
+    {
+      "certificate_index_in_file": 0,
+      "file": "round09/certificates/x_L3.json",
+      "format": "anisotropic_mean_zero_sphere_v182",
+      "verified": true
+    },
+    {
+      "certificate_index_in_file": 0,
+      "file": "round09/certificates/xy_L2.json",
+      "format": "anisotropic_mean_zero_sphere_v182",
+      "verified": true
+    },
+    {
+      "certificate_index_in_file": 0,
+      "file": "round09/certificates/xy_L3.json",
+      "format": "anisotropic_mean_zero_sphere_v182",
+      "verified": true
+    },
+    {
+      "certificate_index_in_file": 0,
+      "file": "round09/certificates/xy_cheap.json",
+      "format": "anisotropic_cheap_ground_v175",
+      "verified": true
+    },
+    {
+      "certificate_index_in_file": 0,
+      "file": "round09/certificates/zero.json",
+      "format": "anisotropic_mean_zero_sphere_v182",
+      "verified": true
+    }
+  ],
+  "errors": 0,
+  "failures": 0,
+  "implementation": "anisotropic.py",
+  "implementation_sha256": "9b64b383d8eca971ed5c3ade15a2b8f0183cbfe2ac3d63b681761ef1bf74e7f2",
+  "reviewer": "family_cycle",
+  "saved_certificate_objects_replayed": 9,
+  "test_and_replay_seconds": 0.36635050000000025,
+  "test_log": "test_cheap_enclosure_is_mathematical_and_bound_to_input (test_anisotropic_review.IndependentAnisotropicReview) ... ok\ntest_cross_m_zero_to_two_exact_moment (test_anisotropic_review.IndependentAnisotropicReview) ... ok\ntest_exact_complete_tail_norm_xy_times_x (test_anisotropic_review.IndependentAnisotropicReview) ... ok\ntest_far_tail_all_components_vanish_after_degree_band (test_anisotropic_review.IndependentAnisotropicReview) ... ok\ntest_projection_removes_constant_before_tail_norm (test_anisotropic_review.IndependentAnisotropicReview) ... ok\ntest_rotation_child_binding_and_radius_zero_trial (test_anisotropic_review.IndependentAnisotropicReview) ... ok\ntest_rotation_exact_orthogonality_and_oblique_axis (test_anisotropic_review.IndependentAnisotropicReview) ... ok\ntest_rotation_mod_sphere_identity_is_safe_current_limitation (test_anisotropic_review.IndependentAnisotropicReview) ... ok\ntest_saved_certificate_roundtrips (test_anisotropic_review.IndependentAnisotropicReview) ... ok\ntest_schur_correction_independent_mass_formula (test_anisotropic_review.IndependentAnisotropicReview) ... ok\ntest_sphere_ideal_reduction_identity_and_range (test_anisotropic_review.IndependentAnisotropicReview) ... ok\ntest_tail_omission_mass_projection_and_range_mutations_rejected (test_anisotropic_review.IndependentAnisotropicReview) ... ok\ntest_xyz_normalization_and_cross_m_form_closed_formula (test_anisotropic_review.IndependentAnisotropicReview) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.223s\n\nOK\n",
+  "tests_run": 13
+}

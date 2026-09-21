@@ -1,0 +1,95 @@
+[
+  {
+    "callable": "general_spectrum.analytic_bounds",
+    "capability": "Global analytic ordered bounds include l=0 with multiplicity one in the unprojected space.",
+    "evidence": [
+      "C14/v205.json"
+    ],
+    "outcome": "q=t: first eigenvalue in [-1,1], next three in [1,3], before any sector solve.",
+    "version": 205
+  },
+  {
+    "callable": "general_spectrum.enumerate_sector",
+    "capability": "Distinct radial enumeration for actual full and mean-zero operators.",
+    "evidence": [
+      "C14/v206.json",
+      "C14/v206_projected.json"
+    ],
+    "outcome": "For q=t the full m=0 basis starts at l=0 and has a negative ground state; the projected basis starts at l=1.",
+    "version": 206
+  },
+  {
+    "callable": "general_spectrum.ordered_merge",
+    "capability": "Full kth eigenvalue merge with uncomputed angular and radial min-max intervals.",
+    "evidence": [
+      "C14/v207.json"
+    ],
+    "outcome": "All six requested full-space eigenvalues for q=t certified to tolerance 1e-6.",
+    "version": 207
+  },
+  {
+    "callable": "general_spectrum.strict_count",
+    "capability": "Strict threshold counting with the constant mode and exact threshold ties.",
+    "evidence": [
+      "C14/v208.json"
+    ],
+    "outcome": "Original C14 unprojected negative count exactly 9.",
+    "version": 208
+  },
+  {
+    "callable": "general_spectrum.negative_trace",
+    "capability": "Complete negative trace including every potentially negative omitted mode.",
+    "evidence": [
+      "C14/v209.json"
+    ],
+    "outcome": "Original C14 unprojected trace exactly 27; l>=3 has lower bound 5 and cannot be negative.",
+    "version": 209
+  },
+  {
+    "callable": "general_spectrum.adaptive_spectrum",
+    "capability": "Trace-aware adaptive scheduling continues after requested ordered eigenvalues close.",
+    "evidence": [
+      "C14/v210.json",
+      "C14/trace_schedule.json"
+    ],
+    "outcome": "k=1 ordering closes at step 2; full negative trace closes at step 9.",
+    "version": 210
+  },
+  {
+    "callable": "general_spectrum.spectral_shift",
+    "capability": "Projection-preserving threshold shift computes both count and sum(T-lambda)+.",
+    "evidence": [
+      "C14/v211.json"
+    ],
+    "outcome": "Full q=0 at T=6: strict count 4, shifted negative trace 18; five ties are excluded.",
+    "version": 211
+  },
+  {
+    "callable": "general_spectrum.fixed_potential_quotient",
+    "capability": "Scope-bound fixed-V trace quotient with standard-area factor 4 and constant-mode obstruction.",
+    "evidence": [
+      "C14/v212.json"
+    ],
+    "outcome": "V=1/100 gives pi-scaled full trace quotient 25; the 1/(4 epsilon) divergence is explicit.",
+    "version": 212
+  },
+  {
+    "callable": "general_spectrum.projection_interlacing",
+    "capability": "Verified codimension-one interlacing for the same nonconstant potential.",
+    "evidence": [
+      "C14/v213.json"
+    ],
+    "outcome": "q=t: five interlacing relations bind the actual full and projected operators.",
+    "version": 213
+  },
+  {
+    "callable": "general_spectrum.research_driver",
+    "capability": "One driver gives separate requested-quantity decisions and verified input-bound cache reuse.",
+    "evidence": [
+      "C14/v214.json",
+      "C14/cache_execution.json"
+    ],
+    "outcome": "Original C14: mean-zero count 8 / trace 20; unprojected count 9 / trace 27; second run reuses both verified results.",
+    "version": 214
+  }
+]

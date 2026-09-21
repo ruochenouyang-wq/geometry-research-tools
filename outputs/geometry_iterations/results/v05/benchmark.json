@@ -1,0 +1,129 @@
+{
+  "version": 5,
+  "rows": [
+    {
+      "case": "positive_quadratic",
+      "q": [
+        0,
+        0,
+        100
+      ],
+      "method": "coefficient_range",
+      "status": "target_met",
+      "modes": 18,
+      "median_seconds": 0.048133208,
+      "samples": [
+        0.048827917,
+        0.048133208,
+        0.04693979200000001
+      ],
+      "exact_width": "42463072309/1374389534720000000000"
+    },
+    {
+      "case": "positive_quadratic",
+      "q": [
+        0,
+        0,
+        100
+      ],
+      "method": "certified_range",
+      "status": "target_met",
+      "modes": 18,
+      "median_seconds": 0.047527750000000035,
+      "samples": [
+        0.04690058299999997,
+        0.048092124999999986,
+        0.047527750000000035
+      ],
+      "exact_width": "52006222743/2748779069440000000000"
+    },
+    {
+      "case": "shifted_quartic",
+      "q": [
+        "100/81",
+        "-400/27",
+        "200/3",
+        "-400/3",
+        100
+      ],
+      "method": "coefficient_range",
+      "status": "target_met",
+      "modes": 20,
+      "median_seconds": 0.22552908299999996,
+      "samples": [
+        0.22667008299999997,
+        0.22552908299999996,
+        0.22539925000000005
+      ],
+      "exact_width": "35490416059/1374389534720000000000"
+    },
+    {
+      "case": "shifted_quartic",
+      "q": [
+        "100/81",
+        "-400/27",
+        "200/3",
+        "-400/3",
+        100
+      ],
+      "method": "certified_range",
+      "status": "target_met",
+      "modes": 20,
+      "median_seconds": 0.25058229200000004,
+      "samples": [
+        0.25357137499999993,
+        0.2505187499999999,
+        0.25058229200000004
+      ],
+      "exact_width": "156804187847/10995116277760000000000"
+    },
+    {
+      "case": "perturbed",
+      "q": [
+        0,
+        20,
+        -100,
+        0,
+        1
+      ],
+      "method": "coefficient_range",
+      "status": "target_met",
+      "modes": 18,
+      "median_seconds": 0.15166037500000007,
+      "samples": [
+        0.15269137500000007,
+        0.15166037500000007,
+        0.151139417
+      ],
+      "exact_width": "33640670421/343597383680000000000"
+    },
+    {
+      "case": "perturbed",
+      "q": [
+        0,
+        20,
+        -100,
+        0,
+        1
+      ],
+      "method": "certified_range",
+      "status": "target_met",
+      "modes": 18,
+      "median_seconds": 0.17873020799999972,
+      "samples": [
+        0.177940875,
+        0.17934758299999976,
+        0.17873020799999972
+      ],
+      "exact_width": "5673351199/85899345920000000000"
+    }
+  ],
+  "repetitions": 3,
+  "range_example": {
+    "polynomial": "(t^2-1/3)^2",
+    "leaves": 20,
+    "lower": "-1189/3221225472",
+    "upper": "4/9",
+    "target_met": true
+  }
+}

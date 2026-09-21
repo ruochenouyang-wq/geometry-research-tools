@@ -1,0 +1,133 @@
+{
+  "all_certificate_replays_passed": true,
+  "baseline": {
+    "actual_global_minimum": "7/4",
+    "certifies_global_optimum": false,
+    "method": "three_point_sampling_only",
+    "quartic_parameters": [
+      "-1",
+      "0",
+      "1"
+    ],
+    "reason": "The penalty s^4-s^2 has minima at +-1/sqrt(2) between sampled points.",
+    "sampled_values": [
+      "2",
+      "2",
+      "2"
+    ],
+    "uncovered_improvement": "1/4"
+  },
+  "boundary": {
+    "gap": "0",
+    "incumbent_parameter": "-1",
+    "lower": "1",
+    "status": "certified_target_met",
+    "upper": "1"
+  },
+  "certificate_paths": [
+    "round05/global_quartic.json",
+    "round05/global_sphere.json",
+    "round05/global_boundary.json",
+    "round05/resumed.json",
+    "round05/open_budget.json"
+  ],
+  "cheap_objective": {
+    "gap": "12/5",
+    "lower": "0",
+    "point_spectrum_solver_calls": 0,
+    "trial_function": "x1",
+    "upper": "12/5"
+  },
+  "cheap_objective_replay_passed": true,
+  "checkpoint_monotone": true,
+  "chord_whole_interval_lower": "81946312960083506821/36893488147419103232",
+  "elapsed_seconds": 2.9135950420000003,
+  "finite_budget_open": {
+    "gap": "5958156034240137595/36893488147419103232",
+    "lower": "81946312960083506821/36893488147419103232",
+    "minimizer_intervals": [
+      [
+        "-2",
+        "2"
+      ]
+    ],
+    "status": "certified_bound_open_gap",
+    "upper": "1279178381/536870912"
+  },
+  "lipschitz_whole_interval_lower": "882343292975532403/2305843009213693952",
+  "penalty_transition_cases": [
+    {
+      "alpha": "1/100",
+      "certificate_path": "round05/transition_alpha_1_100.json",
+      "gap": "2945631189/2305843009213693952",
+      "incumbent_parameter": "-2",
+      "lower": "102802137990638002227/57646075230342348800",
+      "minimizer_intervals": [
+        [
+          "-2",
+          "0"
+        ],
+        [
+          "0",
+          "2"
+        ]
+      ],
+      "upper": "47870975949/26843545600"
+    },
+    {
+      "alpha": "1/10",
+      "certificate_path": "round05/transition_alpha_1_10.json",
+      "gap": "461500615107788222630028302417045/10633823966279326983230456482242756608",
+      "incumbent_parameter": "0",
+      "lower": "21267186431943546178238282936183096171/10633823966279326983230456482242756608",
+      "minimizer_intervals": [
+        [
+          "-1/16",
+          "0"
+        ],
+        [
+          "0",
+          "1/16"
+        ]
+      ],
+      "upper": "2"
+    }
+  ],
+  "quartic": {
+    "gap": "49/4294967296",
+    "lower": "7/4",
+    "minimizer_intervals": [
+      [
+        "-91/128",
+        "-45/64"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "status": "certified_target_met",
+    "upper": "7516192817/4294967296"
+  },
+  "sphere": {
+    "gap": "11472076505978919925681529839420392909/174224571863520493293247799005065324265472",
+    "lower": "415105645996741948453681174941298416728627/174224571863520493293247799005065324265472",
+    "minimizer_intervals": [
+      [
+        "-1/8",
+        "0"
+      ],
+      [
+        "0",
+        "1/8"
+      ]
+    ],
+    "status": "certified_target_met",
+    "upper": "1279178381/536870912"
+  },
+  "threshold_statuses": [
+    "proved",
+    "refuted_by_feasible_parameter_spectral_existence",
+    "undetermined"
+  ]
+}

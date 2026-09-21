@@ -1,0 +1,35 @@
+{
+  "version": 266,
+  "recorded_at": "2026-09-18T18:46:51.540459+00:00",
+  "hypothesis": "A request must stop at its planning/representation budget without losing already verified useful work.",
+  "change": "Bound fresh shape evaluations and certificate slots; retain the best examined candidate, return explicit open state when no candidate exists, and allow warmed caches within zero fresh budget.",
+  "source_sha256": {
+    "adaptive_approx.py": "0e52c9155d8f5bbbf12a4f5e3b188afbae94e5130f68a09d835eb9dc344b6597",
+    "test_adaptive_approx.py": "d3721c782f5503cae72bc63e3883cc2648d647a06626b7ea2a3851b6a18df897"
+  },
+  "validation": {
+    "unit_tests_passed": 17,
+    "best_examined_error_preserved": true,
+    "zero_budget_no_fabricated_certificate": true
+  },
+  "comparison": {
+    "unrestricted_shape_evaluations": 55,
+    "restricted_cost": {
+      "shape_evaluations": 2,
+      "shape_cache_hits": 0,
+      "shape_requests": 2,
+      "level_comparisons": 0,
+      "planning_cache_supplied": false,
+      "sqrt_comparisons": 1,
+      "certificate_builds": 1,
+      "certificate_replays": 1
+    },
+    "restricted_status": "open",
+    "restricted_error": "109989016325/1099511627776"
+  },
+  "outcome": "retained",
+  "limitations": [
+    "A budgeted open result is not a proof that the target is impossible; finite candidates may be missed."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

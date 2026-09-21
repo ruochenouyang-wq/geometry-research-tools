@@ -1,0 +1,34 @@
+[
+  {
+    "version": 235,
+    "capability": "Full-sphere spectral transfer from a verified uniform error of an original analytic expression",
+    "callable": "spectral_transfer.transfer_linf",
+    "evidence": [
+      "certificates/V235_analytic_order12.json",
+      "certificates/V235_multiaxis_original_function.json"
+    ],
+    "outcome": "Original composite analytic target met at width 3.062060626e-9; multiaxis original function remains valid/open"
+  },
+  {
+    "version": 236,
+    "capability": "Closed-form spectral transfer from exact probability-L2 projection errors, including jumps and integrable singularities",
+    "callable": "spectral_transfer.transfer_l2",
+    "evidence": [
+      "certificates/V236_step_degree8.json",
+      "certificates/V236_negative_singularity_degree12.json",
+      "FAILURES.json"
+    ],
+    "outcome": "Original jump and negative singular potentials certified on full mean-zero H1; broad intervals remain open"
+  },
+  {
+    "version": 237,
+    "capability": "Certified fixed-reference coercivity and relative-form spectral transfer with explicit stability thresholds",
+    "callable": "spectral_transfer.transfer_fixed",
+    "evidence": [
+      "certificates/V237_fixed_p4_degree12.json",
+      "FIXED_REFERENCE_NORMS.json",
+      "RESULTS.json"
+    ],
+    "outcome": "At identical degree12 source the original singular interval narrows from 3.15447 to 2.34612; degree8 negative benefit preserved"
+  }
+]

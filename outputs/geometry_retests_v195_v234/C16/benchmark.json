@@ -1,0 +1,97 @@
+{
+  "measurement": "Five bounded repeats on preconstructed identical original functions; moment call time includes each implementation own certificate construction, excludes input conversion and verification.",
+  "operation_count_limit": "Old convolution coefficient products are instrumented. New convolution products and energy-kernel evaluations are reported separately; these are not total machine instructions.",
+  "rows": [
+    {
+      "compact_original_input_bytes": 22,
+      "dense_original_input_bytes": 25,
+      "exact_moments_agree": true,
+      "n": 4,
+      "new_median_seconds": 6.937500000003816e-05,
+      "new_operation_counts": {
+        "convolution_coefficient_products": 13,
+        "energy_kernel_evaluations": 4,
+        "mass_mean_terms": 3,
+        "quartic_mean_terms": 5
+      },
+      "new_seconds": [
+        6.63750000000074e-05,
+        6.179099999997772e-05,
+        6.937500000003816e-05,
+        7.03750000000114e-05,
+        7.820799999996852e-05
+      ],
+      "new_serialized_certificate_bytes": 854,
+      "old_median_seconds": 0.00027808299999998454,
+      "old_operation_counts": {
+        "convolution_calls": 7,
+        "convolution_coefficient_products": 202
+      },
+      "old_seconds": [
+        0.00026887500000000175,
+        0.00028379200000000493,
+        0.00027679099999999845,
+        0.00027808299999998454,
+        0.0003149579999999763
+      ],
+      "old_serialized_certificate_bytes": 225
+    },
+    {
+      "compact_original_input_bytes": 30,
+      "dense_original_input_bytes": 117,
+      "exact_moments_agree": true,
+      "n": 16,
+      "new_median_seconds": 6.899999999998574e-05,
+      "new_operation_counts": {
+        "convolution_coefficient_products": 13,
+        "energy_kernel_evaluations": 4,
+        "mass_mean_terms": 3,
+        "quartic_mean_terms": 5
+      },
+      "new_seconds": [
+        8.270900000001413e-05,
+        6.899999999998574e-05,
+        6.545799999996271e-05,
+        6.404099999995916e-05,
+        7.03750000000114e-05
+      ],
+      "new_serialized_certificate_bytes": 1038,
+      "old_median_seconds": 0.0031266670000000274,
+      "old_operation_counts": {
+        "convolution_calls": 7,
+        "convolution_coefficient_products": 2326
+      },
+      "old_seconds": [
+        0.0030092079999999855,
+        0.0032515000000000183,
+        0.0033226670000000014,
+        0.002935375000000018,
+        0.0031266670000000274
+      ],
+      "old_serialized_certificate_bytes": 359
+    },
+    {
+      "compact_original_input_bytes": 60,
+      "dense_original_input_bytes": 1084,
+      "n": 64,
+      "new_median_seconds": 7.562500000002359e-05,
+      "new_operation_counts": {
+        "convolution_coefficient_products": 13,
+        "energy_kernel_evaluations": 4,
+        "mass_mean_terms": 3,
+        "quartic_mean_terms": 5
+      },
+      "new_seconds": [
+        7.545799999997271e-05,
+        7.562500000002359e-05,
+        7.304200000002314e-05,
+        0.00012541700000001654,
+        7.737499999999065e-05
+      ],
+      "new_serialized_certificate_bytes": 1680,
+      "old_outcome": "degree36_input_rejection",
+      "speed_comparison_available": false
+    }
+  ],
+  "timing_limit": "Small local timing samples only; no universal speed or model-token claim. n64 has no successful old path, hence no comparable speed ratio."
+}

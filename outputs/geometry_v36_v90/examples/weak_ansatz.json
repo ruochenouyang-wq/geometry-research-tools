@@ -1,0 +1,20 @@
+{
+  "geometry": "unit_sphere",
+  "function_space": "full_sphere",
+  "eigenvalue_index": 1,
+  "parameters": [
+    "a"
+  ],
+  "potential": "a*t",
+  "penalty": "a*a/5",
+  "domain": {
+    "kind": "box",
+    "box": [
+      [
+        -2,
+        2
+      ]
+    ]
+  },
+  "threshold": "0"
+}

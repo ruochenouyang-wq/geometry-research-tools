@@ -1,0 +1,28 @@
+{
+  "degree8_12_probe": {
+    "message": "Trial basis degree must be at most six",
+    "status": "rejected_as_outside_old_scope"
+  },
+  "limits": [
+    "Exactly two configured 2D trial spaces, each basis degree <=6.",
+    "No complete Euler-Lagrange residual or automatic variation loop in the frozen module.",
+    "The old plane upper bounds never purported to bound all sphere H1 functions."
+  ],
+  "previous_cases": [
+    {
+      "case": "legendre_P1_P3",
+      "lower": "4898062993161441456761543594854741510236569/17709890789686972638369057915759967978802640",
+      "upper": "612257874366553816966280107336455912726570724735033/2213736348710871579796132239469995997350330000000000",
+      "verified": true
+    },
+    {
+      "case": "centered_caps_5_6",
+      "lower": "181192117755820414793443713416354190553902426359/498570693490413848451378601801980298198406836200",
+      "upper": "9059605890283874207124254913074602536705022808942034181/24928534674520692422568930090099014909920341810000000000",
+      "verified": true
+    }
+  ],
+  "scope": "all_nonzero_real_combinations_of_the_two_recorded_basis_functions",
+  "source": "/PROJECT/outputs/geometry_external_trials/interpolation_results.json",
+  "source_sha256": "30b8b1a998fdf517d8d0b1dadf57c8db6b76e7f069556aab97ec1e6f0b7ff823"
+}

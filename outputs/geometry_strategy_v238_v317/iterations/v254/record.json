@@ -1,0 +1,51 @@
+{
+  "version": 254,
+  "recorded_at": "2026-09-18T19:00:13.492922+00:00",
+  "hypothesis": "An immutable owned source can share one verified context among candidate trials.",
+  "change": "Add frozen SourceContext and compatible trial_certificate/enrich with mandatory final frozen replay.",
+  "source_sha256": {
+    "fast_math.py": "5b4e3794f676a9dfebe847ac4579f6cd6b0c5b727134b193674d19f983e25d60",
+    "test_fast_math.py": "c625c15f988e7bcfacdbe7a7a1115c6767a4da1fedaa1435798e17c5994cc5fb"
+  },
+  "validation": {
+    "tests_run": 8,
+    "failures": 0,
+    "frozen_verifiers_retained": true
+  },
+  "comparison": {
+    "fixed_input": "frozen singular_n4 source; enriched max_terms6 bits32 iterations3",
+    "final_exact_certificate_equal": true,
+    "baseline_full_source_verifications": 5,
+    "candidate_full_source_verifications": 2,
+    "candidate_counters": {
+      "source_context_verifications": 1,
+      "final_enriched_frozen_replays": 1
+    },
+    "attempt_count": 3,
+    "baseline": {
+      "serial_seconds": [
+        0.017295250087045133,
+        0.017111290944740176,
+        0.01697966700885445
+      ],
+      "median_seconds": 0.017111290944740176,
+      "not_a_model_speed_claim": true
+    },
+    "candidate": {
+      "serial_seconds": [
+        0.007896500057540834,
+        0.007848292007111013,
+        0.007879166048951447
+      ],
+      "median_seconds": 0.007879166048951447,
+      "not_a_model_speed_claim": true
+    },
+    "cache_regime": "fresh immutable context for each run; final old enriched verifier always retained"
+  },
+  "outcome": "implemented_exact_checks_passed",
+  "limitations": [
+    "Small serial probes; no claim of universal speedup.",
+    "Caches are process-local; cold and warm costs are identified."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

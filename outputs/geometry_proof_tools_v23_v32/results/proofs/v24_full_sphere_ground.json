@@ -1,0 +1,213 @@
+{
+  "certificate": {
+    "method": "proof_search_v32",
+    "compiled_goal": {
+      "method": "expression_compiler_v23",
+      "source": {
+        "geometry": "unit_sphere",
+        "function_space": "full_sphere",
+        "eigenvalue_index": 1,
+        "parameters": [],
+        "potential": "2*t*t",
+        "penalty": "0",
+        "domain": {
+          "kind": "box",
+          "box": []
+        },
+        "threshold": "0"
+      },
+      "problem": {
+        "geometry": "unit_sphere",
+        "function_space": "full_sphere",
+        "eigenvalue_index": 1,
+        "q0": [
+          "0",
+          "0",
+          "2"
+        ],
+        "directions": [],
+        "penalty": {
+          "constant": "0",
+          "linear": [],
+          "hessian": []
+        },
+        "domain": {
+          "kind": "box",
+          "box": []
+        }
+      },
+      "threshold": "0",
+      "relation": ">="
+    },
+    "reductions": [
+      {
+        "rule": "sphere_ground_v24",
+        "original": {
+          "geometry": "unit_sphere",
+          "function_space": "full_sphere",
+          "eigenvalue_index": 1,
+          "q0": [
+            "0",
+            "0",
+            "2"
+          ],
+          "directions": [],
+          "penalty": {
+            "constant": "0",
+            "linear": [],
+            "hessian": []
+          },
+          "domain": {
+            "kind": "box",
+            "box": []
+          }
+        },
+        "reduced": {
+          "geometry": "unit_sphere",
+          "function_space": "axisymmetric",
+          "eigenvalue_index": 1,
+          "q0": [
+            "0",
+            "0",
+            "2"
+          ],
+          "directions": [],
+          "penalty": {
+            "constant": "0",
+            "linear": [],
+            "hessian": []
+          },
+          "domain": {
+            "kind": "box",
+            "box": []
+          }
+        },
+        "justification": "azimuthal_L2_envelope",
+        "witness_lift": "identity_axisymmetric_function"
+      }
+    ],
+    "terminal": {
+      "kind": "decision",
+      "proof": {
+        "method": "threshold_decision_v28",
+        "problem": {
+          "geometry": "unit_sphere",
+          "function_space": "axisymmetric",
+          "eigenvalue_index": 1,
+          "q0": [
+            "0",
+            "0",
+            "2"
+          ],
+          "directions": [],
+          "penalty": {
+            "constant": "0",
+            "linear": [],
+            "hessian": []
+          },
+          "domain": {
+            "kind": "box",
+            "box": []
+          }
+        },
+        "threshold": "0",
+        "proof_kind": "fixed",
+        "inner": {
+          "method": "fixed_spectrum",
+          "problem": {
+            "geometry": "unit_sphere",
+            "function_space": "axisymmetric",
+            "eigenvalue_index": 1,
+            "q0": [
+              "0",
+              "0",
+              "2"
+            ],
+            "directions": [],
+            "penalty": {
+              "constant": "0",
+              "linear": [],
+              "hessian": []
+            },
+            "domain": {
+              "kind": "box",
+              "box": []
+            }
+          },
+          "record": {
+            "at": [
+              "0"
+            ],
+            "spectral_certificate": {
+              "method": "modewise_schur_v3",
+              "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+              "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+              "q_coefficients": [
+                "0",
+                "0",
+                "2"
+              ],
+              "modes": 6,
+              "eigenvalue_index": 1,
+              "tail_policy": "sandwich",
+              "range_proof": {
+                "kind": "quadratic_range_v5",
+                "lower": "0",
+                "upper": "2"
+              },
+              "upper_kind": "upper_tail",
+              "tail_lower": "42",
+              "lower_inertia": [
+                0,
+                0,
+                6
+              ],
+              "upper_inertia": [
+                1,
+                0,
+                5
+              ],
+              "formal_assistant_checked": false,
+              "lower": "10754354878611639237/17592186044416000000",
+              "upper": "2688589001213281597/4398046511104000000",
+              "exact_width": "1126241487151/17592186044416000000",
+              "decimal_enclosure": [
+                "0.611314298942",
+                "0.611314362963"
+              ]
+            },
+            "trial_legendre": [
+              "1",
+              "0",
+              "-3651630080713/17592186044416",
+              "0",
+              "122733804991/17592186044416",
+              "0"
+            ],
+            "rayleigh_quotient": "330602505817682016864934694719/540806049634322711267836239971"
+          },
+          "lower_bound": "10754354878611639237/17592186044416000000",
+          "upper_bound": "330602505817682016864934694719/540806049634322711267836239971",
+          "candidate_parameters": []
+        },
+        "lower_bound": "10754354878611639237/17592186044416000000",
+        "upper_bound": "330602505817682016864934694719/540806049634322711267836239971",
+        "candidate_parameters": [],
+        "status": "proved",
+        "formal_assistant_checked": false
+      }
+    },
+    "status": "proved",
+    "lower_bound": "10754354878611639237/17592186044416000000",
+    "upper_bound": "330602505817682016864934694719/540806049634322711267836239971",
+    "candidate_parameters": [],
+    "original_function_space": "full_sphere",
+    "threshold": "0",
+    "formal_assistant_checked": false
+  },
+  "statistics": {
+    "points": 1,
+    "parameter_splits": 0
+  },
+  "seconds": 0.007544708000000011
+}

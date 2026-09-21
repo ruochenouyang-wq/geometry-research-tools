@@ -1,0 +1,286 @@
+{
+  "baseline": [
+    {
+      "L": 3,
+      "bits": 40,
+      "certificate": "C18/certificates/baseline_L3_bits40.json",
+      "dimension": 15,
+      "lower": "8458364896409780694401/2361183241434822606848",
+      "seconds": 0.162595667,
+      "solver": "frozen_V182",
+      "target": "1/100000000",
+      "target_met": false,
+      "upper": "61542745045/17179869184",
+      "verified": true,
+      "wall_budget_seconds": 90,
+      "width": "5576369132851839/2361183241434822606848",
+      "width_decimal": 2.3616841907887e-06,
+      "within_wall_budget": true
+    },
+    {
+      "L": 4,
+      "bits": 40,
+      "certificate": "C18/certificates/baseline_L4_bits40.json",
+      "dimension": 24,
+      "lower": "8458364896409780694401/2361183241434822606848",
+      "seconds": 0.514852458,
+      "solver": "frozen_V182",
+      "target": "1/100000000",
+      "target_met": false,
+      "upper": "61542745045/17179869184",
+      "verified": true,
+      "wall_budget_seconds": 90,
+      "width": "5576369132851839/2361183241434822606848",
+      "width_decimal": 2.3616841907887e-06,
+      "within_wall_budget": true
+    },
+    {
+      "L": 4,
+      "bits": 48,
+      "certificate": "C18/certificates/baseline_L4_bits48.json",
+      "dimension": 24,
+      "lower": "1108654803702386446712342173/309485009821345068724781056",
+      "seconds": 0.571583417,
+      "solver": "frozen_V182",
+      "target": "1/100000000",
+      "target_met": false,
+      "upper": "15754942731517/4398046511104",
+      "verified": true,
+      "wall_budget_seconds": 90,
+      "width": "730905480203387894115/309485009821345068724781056",
+      "width_decimal": 2.361682979816419e-06,
+      "within_wall_budget": true
+    }
+  ],
+  "case": "C18",
+  "median_new_seconds": 0.09900795900000015,
+  "new_lower": "1082670971198065026650489/302231454903657293676544",
+  "new_runs": [
+    {
+      "certificate": "C18/certificates/C18_adaptive_repeat1.json",
+      "repeat": 1,
+      "seconds": 0.09868087500000011,
+      "status": "target_met",
+      "trace": [
+        {
+          "action": "initial_all_character_coverage",
+          "elapsed_seconds": 0.037884750000000134,
+          "lower": "135333855926553565806325/37778931862957161709568",
+          "upper": "123085453657/34359738368",
+          "width": "31579401916170507/37778931862957161709568"
+        },
+        {
+          "action": "increase_competing_character_degree",
+          "bits": 40,
+          "dimension": 6,
+          "elapsed_seconds": 0.08349204200000004,
+          "lower": "1082670971198065026650489/302231454903657293676544",
+          "parity": [
+            1,
+            0,
+            0
+          ],
+          "retained_degree": 5,
+          "upper": "984683512085/274877906944",
+          "width": "18701891022471/302231454903657293676544"
+        }
+      ],
+      "verified": true,
+      "width": "18701891022471/302231454903657293676544",
+      "within_wall_budget": true,
+      "work": {
+        "built_dimensions": [
+          3,
+          3,
+          3,
+          6
+        ],
+        "form_builds": 4,
+        "form_hits": 0,
+        "inertia_calls": 332,
+        "range_builds": 1,
+        "range_hits": 3
+      }
+    },
+    {
+      "certificate": "C18/certificates/C18_adaptive_repeat2.json",
+      "repeat": 2,
+      "seconds": 0.09935424999999998,
+      "status": "target_met",
+      "trace": [
+        {
+          "action": "initial_all_character_coverage",
+          "elapsed_seconds": 0.03840104200000005,
+          "lower": "135333855926553565806325/37778931862957161709568",
+          "upper": "123085453657/34359738368",
+          "width": "31579401916170507/37778931862957161709568"
+        },
+        {
+          "action": "increase_competing_character_degree",
+          "bits": 40,
+          "dimension": 6,
+          "elapsed_seconds": 0.08462812500000005,
+          "lower": "1082670971198065026650489/302231454903657293676544",
+          "parity": [
+            1,
+            0,
+            0
+          ],
+          "retained_degree": 5,
+          "upper": "984683512085/274877906944",
+          "width": "18701891022471/302231454903657293676544"
+        }
+      ],
+      "verified": true,
+      "width": "18701891022471/302231454903657293676544",
+      "within_wall_budget": true,
+      "work": {
+        "built_dimensions": [
+          3,
+          3,
+          3,
+          6
+        ],
+        "form_builds": 4,
+        "form_hits": 0,
+        "inertia_calls": 332,
+        "range_builds": 1,
+        "range_hits": 3
+      }
+    },
+    {
+      "certificate": "C18/certificates/C18_adaptive_repeat3.json",
+      "repeat": 3,
+      "seconds": 0.09900795900000015,
+      "status": "target_met",
+      "trace": [
+        {
+          "action": "initial_all_character_coverage",
+          "elapsed_seconds": 0.03791974999999992,
+          "lower": "135333855926553565806325/37778931862957161709568",
+          "upper": "123085453657/34359738368",
+          "width": "31579401916170507/37778931862957161709568"
+        },
+        {
+          "action": "increase_competing_character_degree",
+          "bits": 40,
+          "dimension": 6,
+          "elapsed_seconds": 0.08436704199999978,
+          "lower": "1082670971198065026650489/302231454903657293676544",
+          "parity": [
+            1,
+            0,
+            0
+          ],
+          "retained_degree": 5,
+          "upper": "984683512085/274877906944",
+          "width": "18701891022471/302231454903657293676544"
+        }
+      ],
+      "verified": true,
+      "width": "18701891022471/302231454903657293676544",
+      "within_wall_budget": true,
+      "work": {
+        "built_dimensions": [
+          3,
+          3,
+          3,
+          6
+        ],
+        "form_builds": 4,
+        "form_hits": 0,
+        "inertia_calls": 332,
+        "range_builds": 1,
+        "range_hits": 3
+      }
+    }
+  ],
+  "new_upper": "984683512085/274877906944",
+  "new_width": "18701891022471/302231454903657293676544",
+  "new_width_decimal": 6.187936668747012e-11,
+  "original_certificate": "C18/certificates/C18_original_target.json",
+  "potential": {
+    "0,0,2": "3",
+    "0,2,0": "2",
+    "2,0,0": "1"
+  },
+  "saved_replays": [
+    {
+      "path": "C18/certificates/C18_adaptive_repeat1.json",
+      "verified": true
+    },
+    {
+      "path": "C18/certificates/C18_adaptive_repeat2.json",
+      "verified": true
+    },
+    {
+      "path": "C18/certificates/C18_adaptive_repeat3.json",
+      "verified": true
+    },
+    {
+      "path": "C18/certificates/C18_original_target.json",
+      "verified": true
+    },
+    {
+      "path": "C18/certificates/baseline_L3_bits40.json",
+      "verified": true
+    },
+    {
+      "path": "C18/certificates/baseline_L4_bits40.json",
+      "verified": true
+    },
+    {
+      "path": "C18/certificates/baseline_L4_bits48.json",
+      "verified": true
+    },
+    {
+      "path": "C18/certificates/diagnosis_larger_block.json",
+      "verified": true
+    },
+    {
+      "path": "C18/certificates/diagnosis_precision_high.json",
+      "verified": true
+    },
+    {
+      "path": "C18/certificates/diagnosis_precision_low.json",
+      "verified": true
+    },
+    {
+      "path": "C18/certificates/general_even_quartic.json",
+      "verified": true
+    },
+    {
+      "path": "C18/certificates/initial_full_L3.json",
+      "verified": true
+    },
+    {
+      "path": "C18/certificates/insufficient_budget_open.json",
+      "verified": true
+    },
+    {
+      "path": "C18/certificates/winner_L3.json",
+      "verified": true
+    }
+  ],
+  "scope": "all_real_mean_zero_H1_functions_on_unit_S2",
+  "target_width": "1/100000000",
+  "timing_note": "One Python process; exact moments may be warm. Each attempt has the same90-second allowance; old methods stop at their degree cap. Driver times include final replay; no model speed claim.",
+  "unsupported_bits80": {
+    "exception": "ValueError",
+    "interpretation": "unsupported precision request, not a measured accuracy failure",
+    "reason": "Require bits in 8..48",
+    "rejected": true
+  },
+  "validation": {
+    "all_passed": true,
+    "errors": 0,
+    "failures": 0,
+    "formal_assistant_checked": false,
+    "original_input_preserved": true,
+    "original_target_width_preserved": "1/100000000",
+    "saved_certificates_replayed": 14,
+    "tests_run": 36
+  },
+  "whole_reproduction_elapsed_seconds": 3.442164792,
+  "width_improvement_vs_old_L4_bits48": 38165.92034214586
+}

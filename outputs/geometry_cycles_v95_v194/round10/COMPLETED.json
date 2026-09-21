@@ -1,0 +1,224 @@
+{
+  "completed_utc": "2026-09-11T11:31:05.895857+00:00",
+  "cycle": 10,
+  "file_sha256": {
+    "round10/STAGES.json": "dec867a8c7f1b26368b8bdfb105d39a9817f4cf20f683786b095e4a2d9c22465",
+    "sphere_scale.py": "6b821c39ec004e0e014eae27bf9912176db9ce1b5d4e3d5accad921b8ad291ad",
+    "test_scale_review.py": "4774b95b6cae4e907e691d77203c0133304b5f6fb788e578c26710a89df934f0",
+    "test_sphere_scale.py": "e13e01167340b15b784f76b5727e3497a40a1a2a9473b93f5f2066bda9d3df1a"
+  },
+  "first_version": 185,
+  "last_version": 194,
+  "stages": [
+    {
+      "actual_outcome": {
+        "R2_q0_ground": "1/2",
+        "R2_q_minus6_ground": "-11/2",
+        "unit_only_baseline": "unsupported radius field"
+      },
+      "callable": "sphere_scale.scale_ground",
+      "capability": "Exact sphere-dilation transfer of full mean-zero ground bounds",
+      "evidence": [
+        "round10/certificates/V185_R2_laplace.json",
+        "round10/certificates/V185_R2_negative_shift.json",
+        "round10/evidence/v185.json"
+      ],
+      "version": 185
+    },
+    {
+      "actual_outcome": {
+        "pulled_back_q": [
+          "1",
+          "-4",
+          "12"
+        ],
+        "unit_operator_q": [
+          "4",
+          "-16",
+          "48"
+        ]
+      },
+      "callable": "sphere_scale.physical_pullback",
+      "capability": "Ambient polynomial coordinate pullback and operator scaling",
+      "evidence": [
+        "round10/certificates/V186_ambient_pullback.json",
+        "round10/evidence/v186.json"
+      ],
+      "version": 186
+    },
+    {
+      "actual_outcome": {
+        "degree12_rayleigh": "7/10",
+        "normalized_q_rayleigh": "11/10",
+        "physical_q_rayleigh": "29/10",
+        "same_trial_u": "x3/R"
+      },
+      "callable": "sphere_scale.scale_trial",
+      "capability": "Natural-area explicit trial mass, Dirichlet and wide-potential energy scaling",
+      "evidence": [
+        "round10/certificates/V187_normalized_t2.json",
+        "round10/certificates/V187_physical_x3square.json",
+        "round10/certificates/V187_degree12_trial.json",
+        "round10/evidence/v187.json"
+      ],
+      "version": 187
+    },
+    {
+      "actual_outcome": {
+        "q_minus3over2_R2_negative_trace": "3",
+        "q_minus3over2_R2_strict_negative_count": 3,
+        "q_minus6_R2_negative_trace": "69",
+        "q_minus6_R2_strict_negative_count": 24,
+        "zero_levels_excluded": true
+      },
+      "callable": "sphere_scale.scale_ordered",
+      "capability": "Preserve ordered eigenvalue multiplicities and scale the complete negative trace",
+      "evidence": [
+        "round10/certificates/V188_scaled_minus6_unit_spectrum.json",
+        "round10/certificates/V188_R2_physical_minus6_spectrum.json",
+        "round10/evidence/v188.json"
+      ],
+      "version": 188
+    },
+    {
+      "actual_outcome": {
+        "R_in_1_2_laplace_range": [
+          "1/2",
+          "2"
+        ],
+        "negative_constant_range": [
+          "-11/2",
+          "-4"
+        ],
+        "negative_nonconstant_bound": [
+          "-433639431168911239/18014398509481984",
+          "57468807/134217728"
+        ],
+        "uses_all_four_signed_products": true
+      },
+      "callable": "sphere_scale.radius_cell",
+      "capability": "Uniform radius perturbation enclosure with sign-aware interval products",
+      "evidence": [
+        "round10/certificates/V189_laplace_radius_cell.json",
+        "round10/certificates/V189_negative_radius_cell.json",
+        "round10/certificates/V189_nonconstant_negative_cell.json",
+        "round10/evidence/v189.json"
+      ],
+      "version": 189
+    },
+    {
+      "actual_outcome": {
+        "initial_width": "296289299739164069/576460752303423488",
+        "nonconstant_global_bracket": [
+          "51424057081177310308063/75263004051111122305024",
+          "183483085/268435456"
+        ],
+        "physical_coordinate_search_status": "certified_global_bound_open_gap",
+        "refined_width": "20295224001653823777/75263004051111122305024",
+        "retained_partition_cells": 19,
+        "status": "certified_global_bound_open_gap",
+        "target": "1/10000",
+        "width_reduction_factor": "77367358237190260861349/40590448003307647554"
+      },
+      "callable": "sphere_scale.adaptive_minimum",
+      "capability": "Complete-coverage adaptive global minimization over positive radii",
+      "evidence": [
+        "round10/certificates/V190_initial_nonconstant_global.json",
+        "round10/certificates/V190_refined_nonconstant_global.json",
+        "round10/certificates/V190_physical_nonconstant_open.json",
+        "round10/certificates/V190_exact_laplace_minmax.json",
+        "round10/evidence/v190.json"
+      ],
+      "version": 190
+    },
+    {
+      "actual_outcome": {
+        "new_lower": "5640763879072908659/9223372036854775808",
+        "new_upper": "183483085/268435456",
+        "old_lower": "1885531983033133651/4611686018427387904",
+        "old_upper": "183483085/268435456",
+        "resumed_work": {
+          "new_spectral_anchor_computations": 4,
+          "verified_anchor_cache_hits": 4
+        },
+        "review_fix": "Retain incomparable old/new proofs at one radius; width alone cannot replace an incumbent.",
+        "zero_step_resume_work": {
+          "new_spectral_anchor_computations": 0,
+          "verified_anchor_cache_hits": 2
+        }
+      },
+      "callable": "sphere_scale.resume_minimum",
+      "capability": "Verified cache continuation retaining old incumbents and monotone parent bounds",
+      "evidence": [
+        "round10/certificates/V191_checkpoint.json",
+        "round10/certificates/V191_resumed_global.json",
+        "round10/certificates/V191_replayed_global.json",
+        "round10/evidence/v191.json"
+      ],
+      "version": 191
+    },
+    {
+      "actual_outcome": {
+        "function": "[P_1^1(x3/R)-P_3^1(x3/R)/36]*cos(phi)",
+        "rayleigh": "361/606",
+        "status": "explicit_counterexample",
+        "strict_margin": "13/3030",
+        "threshold": "3/5"
+      },
+      "callable": "sphere_scale.transfer_counterexample",
+      "capability": "Explicit scaled function counterexamples with threshold binding",
+      "evidence": [
+        "round10/certificates/V192_explicit_R2_counterexample.json",
+        "round10/evidence/v192.json"
+      ],
+      "version": 192
+    },
+    {
+      "actual_outcome": {
+        "precision_backend": "precision_v114",
+        "precision_physical_width": "38258235629235563601/2722258935367507707706996859454145691648",
+        "precision_target_met": true,
+        "wide_backend": "wide_v124",
+        "wide_degree": 12
+      },
+      "callable": "sphere_scale.backend_ground",
+      "capability": "Choose and bind suitable exact backends by degree and required scaled accuracy",
+      "evidence": [
+        "round10/certificates/V193_precision_backend.json",
+        "round10/certificates/V193_wide_backend.json",
+        "round10/evidence/v193.json"
+      ],
+      "version": 193
+    },
+    {
+      "actual_outcome": {
+        "decisions": [
+          "proved",
+          "refuted_by_explicit_function",
+          "undetermined"
+        ],
+        "model_token_measurement": null,
+        "proved_resume_work": {
+          "new_spectral_anchor_computations": 0,
+          "verified_anchor_cache_hits": 2
+        },
+        "work_measurement_is_only_local_anchor_computations": true
+      },
+      "callable": "sphere_scale.research_job",
+      "capability": "Unified radius research jobs with content-bound proof replay and honest tri-state decisions",
+      "evidence": [
+        "round10/certificates/V194_proved_interval_inequality.json",
+        "round10/certificates/V194_refuted_explicit_inequality.json",
+        "round10/certificates/V194_undetermined_interval_inequality.json",
+        "round10/evidence/v194.json"
+      ],
+      "version": 194
+    }
+  ],
+  "validation": {
+    "all_passed": true,
+    "evidence": "round10/ROOT_ACCEPTANCE.json",
+    "replayed_certificates": 24,
+    "tests": 59
+  }
+}

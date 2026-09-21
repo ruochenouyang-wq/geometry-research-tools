@@ -1,0 +1,122 @@
+{
+  "algorithm_version": 21,
+  "certificate": {
+    "method": "constrained_rayleigh_dual_v21",
+    "q": [
+      "0"
+    ],
+    "moment_polynomial": [
+      "0",
+      "1"
+    ],
+    "target": "1/2",
+    "multiplier": "9/4",
+    "spectral_certificate": {
+      "method": "modewise_schur_v3",
+      "model": "unit_sphere_axisymmetric_polynomial_potential_v1",
+      "scope": "axisymmetric functions on the unit two-sphere; eigenvalues indexed from 1 including the constant mode at q=0",
+      "q_coefficients": [
+        "0",
+        "-9/4"
+      ],
+      "modes": 4,
+      "eigenvalue_index": 1,
+      "tail_policy": "sandwich",
+      "range_proof": {
+        "kind": "quadratic_range_v5",
+        "lower": "-9/4",
+        "upper": "9/4"
+      },
+      "upper_kind": "upper_tail",
+      "tail_lower": "71/4",
+      "lower_inertia": [
+        0,
+        0,
+        4
+      ],
+      "upper_inertia": [
+        1,
+        0,
+        3
+      ],
+      "formal_assistant_checked": false,
+      "lower": "-383636022756719763/562949953421312000",
+      "upper": "-191817250970192681/281474976710656000",
+      "exact_width": "1520816334401/562949953421312000",
+      "decimal_enclosure": [
+        "-0.681474472865",
+        "-0.681471771351"
+      ]
+    },
+    "trial_legendre": [
+      "1",
+      "33254969155448822327083/37778931862957161709568",
+      "7309933946104900684831/37778931862957161709568",
+      "375265561189125844277/18889465931478580854784"
+    ],
+    "candidate_moment": "23712231135521226571776712096223670649774633014/47424462270595063631671588458926801463076535039",
+    "global_lower": "249682674842256237/562949953421312000",
+    "candidate_upper": "21061682130564174007224622525318761742770251449/47424462270595063631671588458926801463076535039",
+    "global_gap": "15606381697744850107388848963109323701430896453600944534299757/26697598826262259401630477483175005590886635213619604297351168000",
+    "tolerance": "1/1000",
+    "status": "epsilon_global",
+    "optimization_scope": "all nonzero axisymmetric form-domain functions satisfying the expectation inequality",
+    "formal_assistant_checked": false
+  },
+  "steps": 7,
+  "history": [
+    {
+      "step": 0,
+      "beta": "0",
+      "lower": "-2251799813685373/2305843009213693952000",
+      "upper": null
+    },
+    {
+      "step": 1,
+      "beta": "1",
+      "lower": "96358888075839181/281474976710656000",
+      "upper": null
+    },
+    {
+      "step": 2,
+      "beta": "2",
+      "lower": "124612774283542181/281474976710656000",
+      "upper": null
+    },
+    {
+      "step": 3,
+      "beta": "4",
+      "lower": "124612774283542181/281474976710656000",
+      "upper": "10553183704178920018639417431208247800602784880258/23759491276815557656295099498775351185977559089363"
+    },
+    {
+      "step": 4,
+      "beta": "3",
+      "lower": "124612774283542181/281474976710656000",
+      "upper": "81658711623844770863287004822966703736962287926/183864289268909694933532434419297302018383898181"
+    },
+    {
+      "step": 5,
+      "beta": "5/2",
+      "lower": "124612774283542181/281474976710656000",
+      "upper": "164519021553343075939904423379186038598222077/370444335589817657990494115179034369540228992"
+    },
+    {
+      "step": 6,
+      "beta": "9/4",
+      "lower": "249682674842256237/562949953421312000",
+      "upper": "21061682130564174007224622525318761742770251449/47424462270595063631671588458926801463076535039"
+    }
+  ],
+  "statistics": {
+    "points": 7,
+    "spectral_searches": 8,
+    "orbit_reuses": 0,
+    "modes_histogram": {
+      "4": 6,
+      "6": 1
+    },
+    "maximum_point_width": "2141891693754732812788593988701604681403/84885746915199960814875262676206115356672000"
+  },
+  "seconds": 0.05904462500001273
+}

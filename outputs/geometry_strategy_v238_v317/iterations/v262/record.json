@@ -1,0 +1,34 @@
+{
+  "version": 262,
+  "recorded_at": "2026-09-18T18:37:50.709129+00:00",
+  "hypothesis": "A single geometric ratio can prevent attainable accuracy even at maximum degree.",
+  "change": "Compare exact adaptive-degree plans across a bounded set of root ratios before constructing one certificate.",
+  "source_sha256": {
+    "adaptive_approx.py": "b16314f09bdb14304c37eab42b3a87ca3aa70da5f0197bd4c32b2bcaba8f3f07",
+    "test_adaptive_approx.py": "40e639a66d11b2405ffd4e59069dc0e54d890ee11a9d5a6d8a49cc8452f2aca3"
+  },
+  "validation": {
+    "unit_tests_passed": 7,
+    "frozen_winner_replay": true
+  },
+  "comparison": {
+    "target": "1/100000000",
+    "single_ratio_error": "75073/549755813888",
+    "single_ratio_status": "open",
+    "new_ratio": "3/4",
+    "new_degree": 12,
+    "new_error": "10611/1099511627776",
+    "new_status": "met",
+    "cost": {
+      "shape_evaluations": 55,
+      "level_comparisons": 14,
+      "certificate_builds": 1,
+      "certificate_replays": 1
+    }
+  },
+  "outcome": "retained",
+  "limitations": [
+    "Finite ratio candidates do not establish global optimality; extra planning work is counted."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

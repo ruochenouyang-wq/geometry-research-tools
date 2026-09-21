@@ -1,0 +1,28 @@
+{
+  "version": 302,
+  "recorded_at": "2026-09-18T18:37:58.661474+00:00",
+  "hypothesis": "Stored data and self-declared verified flags must be separated from mathematical replay.",
+  "change": "Add default frozen verifier dispatch and optional strict-boolean verification callback; unknown/error statuses remain false.",
+  "source_sha256": {
+    "evidence_store.py": "c305c92c0aef76a9184ef482d877e790d6d085efeb1f45c2153397acb7181272",
+    "test_evidence_store.py": "fee6b5df6b11d601a161dfca776e447197f4428d75b88af57e5c39dcfb6657e4"
+  },
+  "validation": {
+    "tests_run": 5,
+    "passed": true,
+    "log": "test_298_full_content_dedup (test_evidence_store.EvidenceTests) ... ok\ntest_299_strict_json_and_complete_summary (test_evidence_store.EvidenceTests) ... ok\ntest_300_tamper_and_failed_atomic_publish (test_evidence_store.EvidenceTests) ... ok\ntest_301_paths_sizes_and_unknown_format (test_evidence_store.EvidenceTests) ... ok\ntest_302_default_math_replay_and_callback_boundary (test_evidence_store.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.053s\n\nOK\n",
+    "initial_test_failure": "Disabled piecewise_model although the frozen verifier intentionally rebuilds its exact algebra with that routine. Corrected test disables spectral and trial search, not shared exact replay."
+  },
+  "comparison": {
+    "valid_step_piecewise_with_search_disabled": "replayed true",
+    "negative_error_tamper": "rejected",
+    "truthy_nonboolean_callbacks": "rejected",
+    "unknown_format": "unknown instead of verified"
+  },
+  "outcome": "passed",
+  "limitations": [
+    "Default verification shares frozen exact assembly code; it is independent of search history, not a separate formal proof kernel.",
+    "Callbacks are trusted checking rules, not automatically sound."
+  ],
+  "note": "A small component iteration; final system claims require integrated evaluation."
+}

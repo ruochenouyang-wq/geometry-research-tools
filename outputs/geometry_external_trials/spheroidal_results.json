@@ -1,0 +1,930 @@
+{
+  "algorithm_changes": false,
+  "core_cases": [
+    {
+      "attempts": [
+        {
+          "bits": 40,
+          "certificate": "certificates/spheroidal/c2_1_n0_core_N12.json",
+          "independent_dense_verified": true,
+          "lower": "48205925390488233338231/151115727451828646838272",
+          "lower_decimal": "0.3190000551455",
+          "modes": 12,
+          "seconds_including_verification": 0.02546979199999999,
+          "status": "target_met",
+          "tail_policy": "sandwich",
+          "upper": "43843033737/137438953472",
+          "upper_decimal": "0.3190000551476",
+          "width": "318720940681/151115727451828646838272"
+        }
+      ],
+      "c_squared": 1,
+      "case_id": "prolate_c2_1_m0_n0",
+      "core_eigenvalue_index": 1,
+      "m": 0,
+      "n": 0,
+      "potential_power_coefficients": [
+        "0",
+        "0",
+        "1"
+      ],
+      "reference_comparison": {
+        "certified_interval_inside_reference_rounding_interval": true,
+        "interpretation": "compatible with the supplied six-decimal table entry",
+        "intervals_overlap": true,
+        "printed_value": "0.319000",
+        "reference_is_not_a_rigorous_truth_certificate": true,
+        "reference_rounding_interval": [
+          "637999/2000000",
+          "638001/2000000"
+        ]
+      },
+      "reference_reporting_diagnostic": {
+        "certified_absolute_difference_from_printed_value_upper": "947429/17179869184000",
+        "certified_absolute_difference_is_less_than_one_last_place": true,
+        "certified_interval_fits_positive_truncation_pattern": true,
+        "hypothetical_interval_right_endpoint_is_open": true,
+        "hypothetical_positive_truncation_interval": [
+          "319/1000",
+          "319001/1000000"
+        ],
+        "independent_author_numerical_crosscheck": {
+          "author_numeric_value_is_not_a_rigorous_truth_certificate": true,
+          "author_reported_value": "0.31900005515",
+          "author_value_half_last_place_interval": [
+            "63800011029/200000000000",
+            "63800011031/200000000000"
+          ],
+          "intervals_overlap": true,
+          "printed_page": 5,
+          "source": "https://arxiv.org/pdf/2307.04124v1",
+          "table": "1a"
+        },
+        "interpretation": "A separate numerical pattern check only. The original +/-0.5e-6 compatibility outcome is unchanged; this does not establish the book's truncation policy.",
+        "reported_decimal_policy_confirmed": false
+      },
+      "selected": {
+        "bits": 40,
+        "certificate": "certificates/spheroidal/c2_1_n0_core_N12.json",
+        "independent_dense_verified": true,
+        "lower": "48205925390488233338231/151115727451828646838272",
+        "lower_decimal": "0.3190000551455",
+        "modes": 12,
+        "seconds_including_verification": 0.02546979199999999,
+        "status": "target_met",
+        "tail_policy": "sandwich",
+        "upper": "43843033737/137438953472",
+        "upper_decimal": "0.3190000551476",
+        "width": "318720940681/151115727451828646838272"
+      },
+      "status": "target_met",
+      "target_width": "1/100000000",
+      "timing_scope": "generation (including internal verification), JSON round trip and independent dense verification; excludes file writing"
+    },
+    {
+      "attempts": [
+        {
+          "bits": 40,
+          "certificate": "certificates/spheroidal/c2_1_n1_core_N12.json",
+          "independent_dense_verified": true,
+          "lower": "391855862647350820568231/151115727451828646838272",
+          "lower_decimal": "2.5930845799770",
+          "modes": 12,
+          "seconds_including_verification": 0.024689166,
+          "status": "target_met",
+          "tail_policy": "sandwich",
+          "upper": "356390830937/137438953472",
+          "upper_decimal": "2.5930845799812",
+          "width": "631268737881/151115727451828646838272"
+        }
+      ],
+      "c_squared": 1,
+      "case_id": "prolate_c2_1_m0_n1",
+      "core_eigenvalue_index": 2,
+      "m": 0,
+      "n": 1,
+      "potential_power_coefficients": [
+        "0",
+        "0",
+        "1"
+      ],
+      "reference_comparison": {
+        "certified_interval_inside_reference_rounding_interval": false,
+        "interpretation": "not compatible with the supplied six-decimal table entry; inspect conventions/transcription",
+        "intervals_overlap": false,
+        "printed_value": "2.593084",
+        "reference_is_not_a_rigorous_truth_certificate": true,
+        "reference_rounding_interval": [
+          "5186167/2000000",
+          "5186169/2000000"
+        ]
+      },
+      "reference_reporting_diagnostic": {
+        "certified_absolute_difference_from_printed_value_upper": "1245500193/2147483648000000",
+        "certified_absolute_difference_is_less_than_one_last_place": true,
+        "certified_interval_fits_positive_truncation_pattern": true,
+        "hypothetical_interval_right_endpoint_is_open": true,
+        "hypothetical_positive_truncation_interval": [
+          "648271/250000",
+          "518617/200000"
+        ],
+        "independent_author_numerical_crosscheck": {
+          "author_numeric_value_is_not_a_rigorous_truth_certificate": true,
+          "author_reported_value": "2.59308457998",
+          "author_value_half_last_place_interval": [
+            "103723383199/40000000000",
+            "518616915997/200000000000"
+          ],
+          "intervals_overlap": true,
+          "printed_page": 5,
+          "source": "https://arxiv.org/pdf/2307.04124v1",
+          "table": "1a"
+        },
+        "interpretation": "A separate numerical pattern check only. The original +/-0.5e-6 compatibility outcome is unchanged; this does not establish the book's truncation policy.",
+        "reported_decimal_policy_confirmed": false
+      },
+      "selected": {
+        "bits": 40,
+        "certificate": "certificates/spheroidal/c2_1_n1_core_N12.json",
+        "independent_dense_verified": true,
+        "lower": "391855862647350820568231/151115727451828646838272",
+        "lower_decimal": "2.5930845799770",
+        "modes": 12,
+        "seconds_including_verification": 0.024689166,
+        "status": "target_met",
+        "tail_policy": "sandwich",
+        "upper": "356390830937/137438953472",
+        "upper_decimal": "2.5930845799812",
+        "width": "631268737881/151115727451828646838272"
+      },
+      "status": "target_met",
+      "target_width": "1/100000000",
+      "timing_scope": "generation (including internal verification), JSON round trip and independent dense verification; excludes file writing"
+    },
+    {
+      "attempts": [
+        {
+          "bits": 40,
+          "certificate": "certificates/spheroidal/c2_1_n2_core_N12.json",
+          "independent_dense_verified": true,
+          "lower": "1974620687843486999320537/302231454903657293676544",
+          "lower_decimal": "6.5334718005210",
+          "modes": 12,
+          "seconds_including_verification": 0.026535791000000003,
+          "status": "target_met",
+          "tail_policy": "sandwich",
+          "upper": "1795907053607/274877906944",
+          "upper_decimal": "6.5334718005288",
+          "width": "2345662867495/302231454903657293676544"
+        }
+      ],
+      "c_squared": 1,
+      "case_id": "prolate_c2_1_m0_n2",
+      "core_eigenvalue_index": 3,
+      "m": 0,
+      "n": 2,
+      "potential_power_coefficients": [
+        "0",
+        "0",
+        "1"
+      ],
+      "reference_comparison": {
+        "certified_interval_inside_reference_rounding_interval": false,
+        "interpretation": "not compatible with the supplied six-decimal table entry; inspect conventions/transcription",
+        "intervals_overlap": false,
+        "printed_value": "6.533471",
+        "reference_is_not_a_rigorous_truth_certificate": true,
+        "reference_rounding_interval": [
+          "13066941/2000000",
+          "13066943/2000000"
+        ]
+      },
+      "reference_reporting_diagnostic": {
+        "certified_absolute_difference_from_printed_value_upper": "3438244959/4294967296000000",
+        "certified_absolute_difference_is_less_than_one_last_place": true,
+        "certified_interval_fits_positive_truncation_pattern": true,
+        "hypothetical_interval_right_endpoint_is_open": true,
+        "hypothetical_positive_truncation_interval": [
+          "6533471/1000000",
+          "204171/31250"
+        ],
+        "independent_author_numerical_crosscheck": {
+          "author_numeric_value_is_not_a_rigorous_truth_certificate": true,
+          "author_reported_value": "6.53347180052",
+          "author_value_half_last_place_interval": [
+            "1306694360103/200000000000",
+            "261338872021/40000000000"
+          ],
+          "intervals_overlap": true,
+          "printed_page": 5,
+          "source": "https://arxiv.org/pdf/2307.04124v1",
+          "table": "1a"
+        },
+        "interpretation": "A separate numerical pattern check only. The original +/-0.5e-6 compatibility outcome is unchanged; this does not establish the book's truncation policy.",
+        "reported_decimal_policy_confirmed": false
+      },
+      "selected": {
+        "bits": 40,
+        "certificate": "certificates/spheroidal/c2_1_n2_core_N12.json",
+        "independent_dense_verified": true,
+        "lower": "1974620687843486999320537/302231454903657293676544",
+        "lower_decimal": "6.5334718005210",
+        "modes": 12,
+        "seconds_including_verification": 0.026535791000000003,
+        "status": "target_met",
+        "tail_policy": "sandwich",
+        "upper": "1795907053607/274877906944",
+        "upper_decimal": "6.5334718005288",
+        "width": "2345662867495/302231454903657293676544"
+      },
+      "status": "target_met",
+      "target_width": "1/100000000",
+      "timing_scope": "generation (including internal verification), JSON round trip and independent dense verification; excludes file writing"
+    },
+    {
+      "attempts": [
+        {
+          "bits": 40,
+          "certificate": "certificates/spheroidal/c2_4_n0_core_N12.json",
+          "independent_dense_verified": true,
+          "lower": "340836707162952252850285/302231454903657293676544",
+          "lower_decimal": "1.1277340648464",
+          "modes": 12,
+          "seconds_including_verification": 0.025932417000000013,
+          "status": "target_met",
+          "tail_policy": "sandwich",
+          "upper": "619978358675/549755813888",
+          "upper_decimal": "1.1277340648576",
+          "width": "3368757428115/302231454903657293676544"
+        }
+      ],
+      "c_squared": 4,
+      "case_id": "prolate_c2_4_m0_n0",
+      "core_eigenvalue_index": 1,
+      "m": 0,
+      "n": 0,
+      "potential_power_coefficients": [
+        "0",
+        "0",
+        "4"
+      ],
+      "reference_comparison": {
+        "certified_interval_inside_reference_rounding_interval": true,
+        "interpretation": "compatible with the supplied six-decimal table entry",
+        "intervals_overlap": true,
+        "printed_value": "1.127734",
+        "reference_is_not_a_rigorous_truth_certificate": true,
+        "reference_rounding_interval": [
+          "2255467/2000000",
+          "2255469/2000000"
+        ]
+      },
+      "reference_reporting_diagnostic": {
+        "certified_absolute_difference_from_printed_value_upper": "557122347/8589934592000000",
+        "certified_absolute_difference_is_less_than_one_last_place": true,
+        "certified_interval_fits_positive_truncation_pattern": true,
+        "hypothetical_interval_right_endpoint_is_open": true,
+        "hypothetical_positive_truncation_interval": [
+          "563867/500000",
+          "225547/200000"
+        ],
+        "independent_author_numerical_crosscheck": {
+          "author_numeric_value_is_not_a_rigorous_truth_certificate": true,
+          "author_reported_value": "1.12773406485",
+          "author_value_half_last_place_interval": [
+            "225546812969/200000000000",
+            "225546812971/200000000000"
+          ],
+          "intervals_overlap": true,
+          "printed_page": 5,
+          "source": "https://arxiv.org/pdf/2307.04124v1",
+          "table": "1b"
+        },
+        "interpretation": "A separate numerical pattern check only. The original +/-0.5e-6 compatibility outcome is unchanged; this does not establish the book's truncation policy.",
+        "reported_decimal_policy_confirmed": false
+      },
+      "selected": {
+        "bits": 40,
+        "certificate": "certificates/spheroidal/c2_4_n0_core_N12.json",
+        "independent_dense_verified": true,
+        "lower": "340836707162952252850285/302231454903657293676544",
+        "lower_decimal": "1.1277340648464",
+        "modes": 12,
+        "seconds_including_verification": 0.025932417000000013,
+        "status": "target_met",
+        "tail_policy": "sandwich",
+        "upper": "619978358675/549755813888",
+        "upper_decimal": "1.1277340648576",
+        "width": "3368757428115/302231454903657293676544"
+      },
+      "status": "target_met",
+      "target_width": "1/100000000",
+      "timing_scope": "generation (including internal verification), JSON round trip and independent dense verification; excludes file writing"
+    },
+    {
+      "attempts": [
+        {
+          "bits": 40,
+          "certificate": "certificates/spheroidal/c2_4_n1_core_N12.json",
+          "independent_dense_verified": true,
+          "lower": "647852548598229478906235/151115727451828646838272",
+          "lower_decimal": "4.2871285439482",
+          "modes": 12,
+          "seconds_including_verification": 0.025417333999999986,
+          "status": "target_met",
+          "tail_policy": "sandwich",
+          "upper": "1178436920965/274877906944",
+          "upper_decimal": "4.2871285439651",
+          "width": "2552826455685/151115727451828646838272"
+        }
+      ],
+      "c_squared": 4,
+      "case_id": "prolate_c2_4_m0_n1",
+      "core_eigenvalue_index": 2,
+      "m": 0,
+      "n": 1,
+      "potential_power_coefficients": [
+        "0",
+        "0",
+        "4"
+      ],
+      "reference_comparison": {
+        "certified_interval_inside_reference_rounding_interval": false,
+        "interpretation": "not compatible with the supplied six-decimal table entry; inspect conventions/transcription",
+        "intervals_overlap": false,
+        "printed_value": "4.287128",
+        "reference_is_not_a_rigorous_truth_certificate": true,
+        "reference_rounding_interval": [
+          "1714851/400000",
+          "8574257/2000000"
+        ]
+      },
+      "reference_reporting_diagnostic": {
+        "certified_absolute_difference_from_printed_value_upper": "2336312237/4294967296000000",
+        "certified_absolute_difference_is_less_than_one_last_place": true,
+        "certified_interval_fits_positive_truncation_pattern": true,
+        "hypothetical_interval_right_endpoint_is_open": true,
+        "hypothetical_positive_truncation_interval": [
+          "535891/125000",
+          "4287129/1000000"
+        ],
+        "independent_author_numerical_crosscheck": {
+          "author_numeric_value_is_not_a_rigorous_truth_certificate": true,
+          "author_reported_value": "4.28712854396",
+          "author_value_half_last_place_interval": [
+            "857425708791/200000000000",
+            "857425708793/200000000000"
+          ],
+          "intervals_overlap": true,
+          "printed_page": 5,
+          "source": "https://arxiv.org/pdf/2307.04124v1",
+          "table": "1b"
+        },
+        "interpretation": "A separate numerical pattern check only. The original +/-0.5e-6 compatibility outcome is unchanged; this does not establish the book's truncation policy.",
+        "reported_decimal_policy_confirmed": false
+      },
+      "selected": {
+        "bits": 40,
+        "certificate": "certificates/spheroidal/c2_4_n1_core_N12.json",
+        "independent_dense_verified": true,
+        "lower": "647852548598229478906235/151115727451828646838272",
+        "lower_decimal": "4.2871285439482",
+        "modes": 12,
+        "seconds_including_verification": 0.025417333999999986,
+        "status": "target_met",
+        "tail_policy": "sandwich",
+        "upper": "1178436920965/274877906944",
+        "upper_decimal": "4.2871285439651",
+        "width": "2552826455685/151115727451828646838272"
+      },
+      "status": "target_met",
+      "target_width": "1/100000000",
+      "timing_scope": "generation (including internal verification), JSON round trip and independent dense verification; excludes file writing"
+    },
+    {
+      "attempts": [
+        {
+          "bits": 40,
+          "certificate": "certificates/spheroidal/c2_4_n2_core_N12.json",
+          "independent_dense_verified": true,
+          "lower": "621517301985671623918495/75557863725914323419136",
+          "lower_decimal": "8.2257130011010",
+          "modes": 12,
+          "seconds_including_verification": 0.02430075000000001,
+          "status": "target_met",
+          "tail_policy": "sandwich",
+          "upper": "565266693217/68719476736",
+          "upper_decimal": "8.2257130011130",
+          "width": "908864076897/75557863725914323419136"
+        }
+      ],
+      "c_squared": 4,
+      "case_id": "prolate_c2_4_m0_n2",
+      "core_eigenvalue_index": 3,
+      "m": 0,
+      "n": 2,
+      "potential_power_coefficients": [
+        "0",
+        "0",
+        "4"
+      ],
+      "reference_comparison": {
+        "certified_interval_inside_reference_rounding_interval": true,
+        "interpretation": "compatible with the supplied six-decimal table entry",
+        "intervals_overlap": true,
+        "printed_value": "8.225713",
+        "reference_is_not_a_rigorous_truth_certificate": true,
+        "reference_rounding_interval": [
+          "658057/80000",
+          "16451427/2000000"
+        ]
+      },
+      "reference_reporting_diagnostic": {
+        "certified_absolute_difference_from_printed_value_upper": "1195113/1073741824000000",
+        "certified_absolute_difference_is_less_than_one_last_place": true,
+        "certified_interval_fits_positive_truncation_pattern": true,
+        "hypothetical_interval_right_endpoint_is_open": true,
+        "hypothetical_positive_truncation_interval": [
+          "8225713/1000000",
+          "4112857/500000"
+        ],
+        "independent_author_numerical_crosscheck": {
+          "author_numeric_value_is_not_a_rigorous_truth_certificate": true,
+          "author_reported_value": "8.22571300111",
+          "author_value_half_last_place_interval": [
+            "1645142600221/200000000000",
+            "1645142600223/200000000000"
+          ],
+          "intervals_overlap": true,
+          "printed_page": 5,
+          "source": "https://arxiv.org/pdf/2307.04124v1",
+          "table": "1b"
+        },
+        "interpretation": "A separate numerical pattern check only. The original +/-0.5e-6 compatibility outcome is unchanged; this does not establish the book's truncation policy.",
+        "reported_decimal_policy_confirmed": false
+      },
+      "selected": {
+        "bits": 40,
+        "certificate": "certificates/spheroidal/c2_4_n2_core_N12.json",
+        "independent_dense_verified": true,
+        "lower": "621517301985671623918495/75557863725914323419136",
+        "lower_decimal": "8.2257130011010",
+        "modes": 12,
+        "seconds_including_verification": 0.02430075000000001,
+        "status": "target_met",
+        "tail_policy": "sandwich",
+        "upper": "565266693217/68719476736",
+        "upper_decimal": "8.2257130011130",
+        "width": "908864076897/75557863725914323419136"
+      },
+      "status": "target_met",
+      "target_width": "1/100000000",
+      "timing_scope": "generation (including internal verification), JSON round trip and independent dense verification; excludes file writing"
+    },
+    {
+      "attempts": [
+        {
+          "bits": 40,
+          "certificate": "certificates/spheroidal/c2_10_n0_core_N12.json",
+          "independent_dense_verified": true,
+          "lower": "1393311250862821541551157/604462909807314587353088",
+          "lower_decimal": "2.3050401079315",
+          "modes": 12,
+          "seconds_including_verification": 0.025900041999999984,
+          "status": "target_met",
+          "tail_policy": "sandwich",
+          "upper": "1267209200587/549755813888",
+          "upper_decimal": "2.3050401079436",
+          "width": "7314523153355/604462909807314587353088"
+        }
+      ],
+      "c_squared": 10,
+      "case_id": "prolate_c2_10_m0_n0",
+      "core_eigenvalue_index": 1,
+      "m": 0,
+      "n": 0,
+      "potential_power_coefficients": [
+        "0",
+        "0",
+        "10"
+      ],
+      "reference_comparison": {
+        "certified_interval_inside_reference_rounding_interval": true,
+        "interpretation": "compatible with the supplied six-decimal table entry",
+        "intervals_overlap": true,
+        "printed_value": "2.305040",
+        "reference_is_not_a_rigorous_truth_certificate": true,
+        "reference_rounding_interval": [
+          "4610079/2000000",
+          "4610081/2000000"
+        ]
+      },
+      "reference_reporting_diagnostic": {
+        "certified_absolute_difference_from_printed_value_upper": "185445639/1717986918400000",
+        "certified_absolute_difference_is_less_than_one_last_place": true,
+        "certified_interval_fits_positive_truncation_pattern": true,
+        "hypothetical_interval_right_endpoint_is_open": true,
+        "hypothetical_positive_truncation_interval": [
+          "28813/12500",
+          "2305041/1000000"
+        ],
+        "interpretation": "A separate numerical pattern check only. The original +/-0.5e-6 compatibility outcome is unchanged; this does not establish the book's truncation policy.",
+        "reported_decimal_policy_confirmed": false
+      },
+      "selected": {
+        "bits": 40,
+        "certificate": "certificates/spheroidal/c2_10_n0_core_N12.json",
+        "independent_dense_verified": true,
+        "lower": "1393311250862821541551157/604462909807314587353088",
+        "lower_decimal": "2.3050401079315",
+        "modes": 12,
+        "seconds_including_verification": 0.025900041999999984,
+        "status": "target_met",
+        "tail_policy": "sandwich",
+        "upper": "1267209200587/549755813888",
+        "upper_decimal": "2.3050401079436",
+        "width": "7314523153355/604462909807314587353088"
+      },
+      "status": "target_met",
+      "target_width": "1/100000000",
+      "timing_scope": "generation (including internal verification), JSON round trip and independent dense verification; excludes file writing"
+    },
+    {
+      "attempts": [
+        {
+          "bits": 40,
+          "certificate": "certificates/spheroidal/c2_10_n1_core_N12.json",
+          "independent_dense_verified": true,
+          "lower": "1100916509517722726582633/151115727451828646838272",
+          "lower_decimal": "7.2852543417009",
+          "modes": 12,
+          "seconds_including_verification": 0.02614391599999999,
+          "status": "target_met",
+          "tail_policy": "sandwich",
+          "upper": "1001277732503/137438953472",
+          "upper_decimal": "7.2852543417175",
+          "width": "2513106220695/151115727451828646838272"
+        }
+      ],
+      "c_squared": 10,
+      "case_id": "prolate_c2_10_m0_n1",
+      "core_eigenvalue_index": 2,
+      "m": 0,
+      "n": 1,
+      "potential_power_coefficients": [
+        "0",
+        "0",
+        "10"
+      ],
+      "reference_comparison": {
+        "certified_interval_inside_reference_rounding_interval": true,
+        "interpretation": "compatible with the supplied six-decimal table entry",
+        "intervals_overlap": true,
+        "printed_value": "7.285254",
+        "reference_is_not_a_rigorous_truth_certificate": true,
+        "reference_rounding_interval": [
+          "14570507/2000000",
+          "14570509/2000000"
+        ]
+      },
+      "reference_reporting_diagnostic": {
+        "certified_absolute_difference_from_printed_value_upper": "733832783/2147483648000000",
+        "certified_absolute_difference_is_less_than_one_last_place": true,
+        "certified_interval_fits_positive_truncation_pattern": true,
+        "hypothetical_interval_right_endpoint_is_open": true,
+        "hypothetical_positive_truncation_interval": [
+          "3642627/500000",
+          "1457051/200000"
+        ],
+        "interpretation": "A separate numerical pattern check only. The original +/-0.5e-6 compatibility outcome is unchanged; this does not establish the book's truncation policy.",
+        "reported_decimal_policy_confirmed": false
+      },
+      "selected": {
+        "bits": 40,
+        "certificate": "certificates/spheroidal/c2_10_n1_core_N12.json",
+        "independent_dense_verified": true,
+        "lower": "1100916509517722726582633/151115727451828646838272",
+        "lower_decimal": "7.2852543417009",
+        "modes": 12,
+        "seconds_including_verification": 0.02614391599999999,
+        "status": "target_met",
+        "tail_policy": "sandwich",
+        "upper": "1001277732503/137438953472",
+        "upper_decimal": "7.2852543417175",
+        "width": "2513106220695/151115727451828646838272"
+      },
+      "status": "target_met",
+      "target_width": "1/100000000",
+      "timing_scope": "generation (including internal verification), JSON round trip and independent dense verification; excludes file writing"
+    },
+    {
+      "attempts": [
+        {
+          "bits": 40,
+          "certificate": "certificates/spheroidal/c2_10_n2_core_N12.json",
+          "independent_dense_verified": true,
+          "lower": "1781714031416895648218333/151115727451828646838272",
+          "lower_decimal": "11.7903944312140",
+          "modes": 12,
+          "seconds_including_verification": 0.026795791999999985,
+          "status": "target_met",
+          "tail_policy": "sandwich",
+          "upper": "1620459471651/137438953472",
+          "upper_decimal": "11.7903944312347",
+          "width": "3132287959843/151115727451828646838272"
+        }
+      ],
+      "c_squared": 10,
+      "case_id": "prolate_c2_10_m0_n2",
+      "core_eigenvalue_index": 3,
+      "m": 0,
+      "n": 2,
+      "potential_power_coefficients": [
+        "0",
+        "0",
+        "10"
+      ],
+      "reference_comparison": {
+        "certified_interval_inside_reference_rounding_interval": true,
+        "interpretation": "compatible with the supplied six-decimal table entry",
+        "intervals_overlap": true,
+        "printed_value": "11.790394",
+        "reference_is_not_a_rigorous_truth_certificate": true,
+        "reference_rounding_interval": [
+          "23580787/2000000",
+          "23580789/2000000"
+        ]
+      },
+      "reference_reporting_diagnostic": {
+        "certified_absolute_difference_from_printed_value_upper": "926069563/2147483648000000",
+        "certified_absolute_difference_is_less_than_one_last_place": true,
+        "certified_interval_fits_positive_truncation_pattern": true,
+        "hypothetical_interval_right_endpoint_is_open": true,
+        "hypothetical_positive_truncation_interval": [
+          "5895197/500000",
+          "2358079/200000"
+        ],
+        "interpretation": "A separate numerical pattern check only. The original +/-0.5e-6 compatibility outcome is unchanged; this does not establish the book's truncation policy.",
+        "reported_decimal_policy_confirmed": false
+      },
+      "selected": {
+        "bits": 40,
+        "certificate": "certificates/spheroidal/c2_10_n2_core_N12.json",
+        "independent_dense_verified": true,
+        "lower": "1781714031416895648218333/151115727451828646838272",
+        "lower_decimal": "11.7903944312140",
+        "modes": 12,
+        "seconds_including_verification": 0.026795791999999985,
+        "status": "target_met",
+        "tail_policy": "sandwich",
+        "upper": "1620459471651/137438953472",
+        "upper_decimal": "11.7903944312347",
+        "width": "3132287959843/151115727451828646838272"
+      },
+      "status": "target_met",
+      "target_width": "1/100000000",
+      "timing_scope": "generation (including internal verification), JSON round trip and independent dense verification; excludes file writing"
+    }
+  ],
+  "experiment": "external_prolate_spheroidal_table_trials_v1",
+  "frozen_source_after": {
+    "aggregate_sha256": "b073fc177b12c7fb059ab3f930c0beeda82eb41213da1d72d60bb0a22591cea4",
+    "file_count": 88,
+    "manifest_sha256": "d10188fb93bd502c6209acb4a8f661aed618b91d67dfb91148411a5c7aedb91a"
+  },
+  "frozen_source_before": {
+    "aggregate_sha256": "b073fc177b12c7fb059ab3f930c0beeda82eb41213da1d72d60bb0a22591cea4",
+    "file_count": 88,
+    "manifest_sha256": "d10188fb93bd502c6209acb4a8f661aed618b91d67dfb91148411a5c7aedb91a"
+  },
+  "frozen_sources_unchanged": true,
+  "model_calls": 0,
+  "operator_mapping": {
+    "DLMF_convention": "With gamma_squared=c_squared, this operator eigenvalue is DLMF lambda + gamma_squared; do not identify the unshifted quantities.",
+    "H0": "-d/dt((1-t^2)d/dt)",
+    "indexing": "n=0,1,2 corresponds to core k=1,2,3",
+    "m": 0,
+    "operator": "H0 + c_squared*t^2",
+    "potential_sign": "positive prolate",
+    "scope": "axisymmetric m=0 eigenvalues; n>0 is not the corresponding full-sphere ordered eigenvalue"
+  },
+  "positive_function_ground_trials": [
+    {
+      "ansatz_gap": "2546411410320302155207992661286708099188439898164377419339847848629494111406956692798909499804560500179557851859787162406180181178804086554413127038033412800318418758945712010686027653796081719808271899/9551211697490431091179304531305491722735873643209613700484743546569832431317462240685006714178461396375851058593599368883691547395251627481717837815925587785634892576465698570602556196496096867195593687040",
+      "ansatz_status": "ansatz_gap_open",
+      "ansatz_upper": "10760612374858996650680206775574283357206031163154397256454884602743540399097813833982982544099860600832518913068778946612309499129397287512893822647416311448731563939688899476563050933279660435633825818139/9551211697490431091179304531305491722735873643209613700484743546569832431317462240685006714178461396375851058593599368883691547395251627481717837815925587785634892576465698570602556196496096867195593687040",
+      "attempts": [
+        {
+          "proposal": "zero",
+          "verified_spectral_lower": "0"
+        },
+        {
+          "proposal": "projected_poisson",
+          "verified_spectral_lower": "8/9"
+        },
+        {
+          "proposal": "softmin_exchange_0",
+          "verified_spectral_lower": "22986634062137912703093982279752210507991/20416942015256307807802476445906092687360"
+        },
+        {
+          "proposal": "softmin_exchange_1",
+          "verified_spectral_lower": "140361011042656086479117207239005599/124615124604835863084731911901282304"
+        }
+      ],
+      "baseline_certificate": "certificates/spheroidal/c2_4_projected_poisson.json",
+      "c_squared": 4,
+      "certificate": "certificates/spheroidal/c2_4_positive_search.json",
+      "comparison_with_old_core": {
+        "core_certificate": "certificates/spheroidal/c2_4_n0_core_N12.json",
+        "core_lower": "340836707162952252850285/302231454903657293676544",
+        "core_upper": "619978358675/549755813888",
+        "core_width": "3368757428115/302231454903657293676544",
+        "interpretation": "Record actual bound quality; no claim that the new function family improves the old core on every problem.",
+        "intersection_lower": "340836707162952252850285/302231454903657293676544",
+        "intersection_upper": "619978358675/549755813888",
+        "intersection_width": "3368757428115/302231454903657293676544",
+        "new_lower_minus_core_lower": "-171709969299964925826491251812961/124615124604835863084731911901282304"
+      },
+      "failed_proposals": [],
+      "improvement_over_projected_poisson": "88776034181739291211399856646930653/373845373814507589254195735703846912",
+      "limitation": "ansatz_upper is not a spectral upper; only the explicit Rayleigh certificate supplies the spectral upper",
+      "m": 0,
+      "n": 0,
+      "optimized_barta_lower": "140361011042656086479117207239005599/124615124604835863084731911901282304",
+      "projected_poisson_lower": "8/9",
+      "reference_comparison": {
+        "certified_interval_inside_reference_rounding_interval": false,
+        "interpretation": "compatible with the supplied six-decimal table entry",
+        "intervals_overlap": true,
+        "printed_value": "1.127734",
+        "reference_is_not_a_rigorous_truth_certificate": true,
+        "reference_rounding_interval": [
+          "2255467/2000000",
+          "2255469/2000000"
+        ]
+      },
+      "scope": "ground eigenvalue on full unit S2; it equals the m=0 ground value for this rotation-invariant potential",
+      "seconds_including_verification": 0.06682749999999998,
+      "settings": {
+        "degree": 6,
+        "grid_size": 17,
+        "max_exchanges": 2,
+        "max_leaves": 64,
+        "max_newton": 15,
+        "range_tolerance": "1/1000000000",
+        "symmetry": true,
+        "tolerance": "1/1000000"
+      },
+      "spectral_interval_width": "2407309502907182510853253719197320525243269106073231076169249/1747056729962529619926263166874378444081389451895685382001393664",
+      "spectral_upper_from_rayleigh": "15810403390263684282581434852/14019620294908669984029819841",
+      "spectral_width_target_met": false,
+      "status": "verified",
+      "timing_scope": "search (including internal checks), JSON round trips and final exact verification; excludes file writing"
+    },
+    {
+      "ansatz_gap": "430096822663169529684180950197581327126184503025031011167210852048003702755800854876729466456590728633134956580837306897749772714440207216546914025707651920922762087213990471635806640917724710513499094945276618323/502842824372230191084796630710832105760424468072032334616795441357776412712832021327292957344021778342884309527723515321227546664690736159779121172087977767892041328395500148227240751185279961774666448142071507189760",
+      "ansatz_status": "ansatz_gap_open",
+      "ansatz_upper": "1154223393441368945908360019748060439681264126022981198052909154170690564644055313400436059679838298525935401287515192419559896315928962428195994272244824367297244627352781816059397207247558956066302404846770033780307/502842824372230191084796630710832105760424468072032334616795441357776412712832021327292957344021778342884309527723515321227546664690736159779121172087977767892041328395500148227240751185279961774666448142071507189760",
+      "attempts": [
+        {
+          "proposal": "zero",
+          "verified_spectral_lower": "0"
+        },
+        {
+          "proposal": "projected_poisson",
+          "verified_spectral_lower": "5/9"
+        },
+        {
+          "proposal": "softmin_exchange_0",
+          "verified_spectral_lower": "1169969634793424155251775851152065826791/510423550381407695195061911147652317184"
+        },
+        {
+          "proposal": "softmin_exchange_1",
+          "verified_spectral_lower": "2998240206172095802910616147009047779256111/1306684288976403699699358492537989931991040"
+        }
+      ],
+      "baseline_certificate": "certificates/spheroidal/c2_10_projected_poisson.json",
+      "c_squared": 10,
+      "certificate": "certificates/spheroidal/c2_10_positive_search.json",
+      "comparison_with_old_core": {
+        "core_certificate": "certificates/spheroidal/c2_10_n0_core_N12.json",
+        "core_lower": "1393311250862821541551157/604462909807314587353088",
+        "core_upper": "1267209200587/549755813888",
+        "core_width": "7314523153355/604462909807314587353088",
+        "interpretation": "Record actual bound quality; no claim that the new function family improves the old core on every problem.",
+        "intersection_lower": "1393311250862821541551157/604462909807314587353088",
+        "intersection_upper": "1267209200587/549755813888",
+        "intersection_width": "7314523153355/604462909807314587353088",
+        "new_lower_minus_core_lower": "-13719488322427125679957099299900923402449/1306684288976403699699358492537989931991040"
+      },
+      "failed_proposals": [],
+      "improvement_over_projected_poisson": "6816913470222281242566250953463826784449933/3920052866929211099098075477613969795973120",
+      "limitation": "ansatz_upper is not a spectral upper; only the explicit Rayleigh certificate supplies the spectral upper",
+      "m": 0,
+      "n": 0,
+      "optimized_barta_lower": "2998240206172095802910616147009047779256111/1306684288976403699699358492537989931991040",
+      "projected_poisson_lower": "5/9",
+      "reference_comparison": {
+        "certified_interval_inside_reference_rounding_interval": false,
+        "interpretation": "compatible with the supplied six-decimal table entry",
+        "intervals_overlap": true,
+        "printed_value": "2.305040",
+        "reference_is_not_a_rigorous_truth_certificate": true,
+        "reference_rounding_interval": [
+          "4610079/2000000",
+          "4610081/2000000"
+        ]
+      },
+      "scope": "ground eigenvalue on full unit S2; it equals the m=0 ground value for this rotation-invariant potential",
+      "seconds_including_verification": 0.07803216699999999,
+      "settings": {
+        "degree": 6,
+        "grid_size": 17,
+        "max_exchanges": 2,
+        "max_leaves": 64,
+        "max_newton": 15,
+        "range_tolerance": "1/1000000000",
+        "symmetry": true,
+        "tolerance": "1/1000000"
+      },
+      "spectral_interval_width": "837149652994058565590920836177774268828359856281224069015684832192329/79729818826380355598821604217138749646469151144465283604917427151831040",
+      "spectral_upper_from_rayleigh": "140646413835273901242763050086/61016895587561570957648971001",
+      "spectral_width_target_met": false,
+      "status": "verified",
+      "timing_scope": "search (including internal checks), JSON round trips and final exact verification; excludes file writing"
+    }
+  ],
+  "reference_source_audit": {
+    "accurate_wording": "All nine certified intervals lie strictly less than 1e-6 above the printed values, a pattern consistent with truncation. No explicit source statement establishing truncation was found. Under the preselected +/-0.5e-6 comparison, six cases remain compatible and three remain incompatible.",
+    "author_primary_source_status": {
+      "arxiv_id": "2307.04124v1",
+      "author": "N. A. Usov",
+      "author_comparisons": 6,
+      "finding": "The author places the same Ref.11 six-decimal entries beside longer computed values, including all three original half-ulp conflicts.",
+      "matched_author_comparisons": 6,
+      "pdf": "https://arxiv.org/pdf/2307.04124v1",
+      "pdf_heading": "Spheroidal quantum well",
+      "printed_page": 5,
+      "tables": [
+        "1a",
+        "1b"
+      ],
+      "truncation_policy_statement_found": false
+    },
+    "certificate_files_modified": false,
+    "certified_max_absolute_difference_from_printed_value_upper": "3438244959/4294967296000000",
+    "certified_max_absolute_difference_less_than_1e_minus6": true,
+    "certified_one_last_place_diagnostic_count": 9,
+    "original_book_status": {
+      "access_note": "UNT indexed PDF text confirmed the supplied rows. A direct page image was not obtained in the bounded audit.",
+      "landing_page": "https://digital.library.unt.edu/ark:/67531/metadc40302/",
+      "nine_transcribed_numbers_confirmed_in_primary_book_indexed_text": true,
+      "page_image_directly_inspected_in_this_audit": false,
+      "pdf": "https://digital.library.unt.edu/ark%3A/67531/metadc40302/m2/1/high_res_d/applmathser_55_1972_w.pdf",
+      "printed_page": 760,
+      "table": "21.1"
+    },
+    "original_compatible_count": 6,
+    "original_half_last_place_comparison_unchanged": true,
+    "original_incompatible_cases": [
+      {
+        "case_id": "prolate_c2_1_m0_n1",
+        "lower_minus_printed": "1369432081026722770143/2361183241434822606848000000",
+        "printed_value": "2.593084",
+        "upper_minus_printed": "1245500193/2147483648000000"
+      },
+      {
+        "case_id": "prolate_c2_1_m0_n2",
+        "lower_minus_printed": "3780353660580411771809/4722366482869645213696000000",
+        "printed_value": "6.533471",
+        "upper_minus_printed": "3438244959/4294967296000000"
+      },
+      {
+        "case_id": "prolate_c2_4_m0_n1",
+        "lower_minus_printed": "1284361347435058869331/2361183241434822606848000000",
+        "printed_value": "4.287128",
+        "upper_minus_printed": "2336312237/4294967296000000"
+      }
+    ],
+    "seconds_including_stored_dense_replay": 0.036514624999999995,
+    "truncation_explanation_status": "numerically_consistent_but_undocumented_hypothesis"
+  },
+  "source": {
+    "printed_page": 760,
+    "table": "21.1",
+    "title": "Abramowitz and Stegun, Handbook of Mathematical Functions, NBS AMS 55",
+    "transcription": "Six-decimal entries supplied by the parent research task; this script does not fetch or revise the table.",
+    "url": "https://digital.library.unt.edu/ark%3A/67531/metadc40302/m2/1/high_res_d/applmathser_55_1972_w.pdf",
+    "use": "reference rounding intervals only; not strict truth certificates"
+  },
+  "summary": {
+    "core_cases": 9,
+    "core_verified": 9,
+    "core_width_target_met": 9,
+    "positive_trials_verified": 2,
+    "reference_compatible": 6
+  },
+  "target_width": "1/100000000",
+  "timing_note": "Local wall times include verification. They are observations of these fixed runs, not model-speed or general algorithm-speed claims.",
+  "total_seconds": 0.394772791
+}
