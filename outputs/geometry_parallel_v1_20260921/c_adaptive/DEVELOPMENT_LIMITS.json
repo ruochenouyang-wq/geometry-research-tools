@@ -1,0 +1,28 @@
+{
+  "scope": "Single public diagnostic reported by independent reviewer originality_core; not a paired benchmark or held-out evaluation.",
+  "source_sha256_at_failure": "3b50f348356590c8663e5299e211fab93d75fd3ab29d39c34a44f0d8acd1e2e7",
+  "task": {
+    "kind": "spectrum",
+    "function": {"kind": "axis_profile", "profile": "abs_power", "axis": 0, "amplitude": "-3", "offset": "0", "exponent": "-2/5"},
+    "mean_zero": false,
+    "tolerance": "1/100000000",
+    "budget": {"wall_seconds": 5}
+  },
+  "observed_result": {
+    "status": "budget_exceeded",
+    "certificate_valid": false,
+    "certificate": null,
+    "total_elapsed_seconds": 5.3280562499999995,
+    "counters": {"search_inertia_checks": 0, "gap_threshold_checks": 0, "kernel_constructions": 2, "candidate_proposals": 10, "final_frozen_replays": 0, "baseline_fallback_calls": 1},
+    "failed_actions": {"centered_form": 1, "gap_threshold_strict_tail_rejection": 20}
+  },
+  "same_diagnostic_mean_zero": {
+    "status": "target_met",
+    "exact_width_display_float_only": 9.374998456554118e-9,
+    "total_elapsed_seconds": 2.4411784169999997,
+    "note": "This float is the reviewer's display summary, not a replacement for the exact certificate."
+  },
+  "decision": "For the complete full-space form regime where centered_L2 is unavailable, stop adaptive preparation and immediately call the unchanged baseline using the remaining budget. Keep the mean-zero route separate. This deliberately gives up observed gains on some easier strong full-space cases.",
+  "updated_source_sha256": "cf8b9010b0000d0fd784e93862ffa114e3db59fdc34d6171625aef455169c9c9",
+  "post_change_performance_claim": null
+}

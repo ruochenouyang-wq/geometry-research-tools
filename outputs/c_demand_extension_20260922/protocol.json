@@ -1,0 +1,20 @@
+{
+  "version": "c2_public_extension_v1",
+  "case_count": 24,
+  "repetitions": 3,
+  "cold_seconds": 10,
+  "systems": [
+    "baseline",
+    "C1",
+    "C2"
+  ],
+  "execution": "serial_cold_process_rotated_order",
+  "case_classification": "public_development_not_holdout",
+  "success": "original task-bound verifier valid AND exact metric <= original tolerance AND process within deadline",
+  "stable_success": "success in all three repetitions",
+  "expected_unsupported_controls": "Report separately; never count expected rejection as a solved math problem.",
+  "scope": "Axis-profile potentials on unit S2; axis changes are rotation controls, not new ambient dimensions.",
+  "model_token_measurement": "No live model API calls; do not infer tokens from certificate bytes.",
+  "cases_locked_before_comparative_timing": true,
+  "failure_policy": "Retain every run and trace; no performance tuning or case replacement after freeze."
+}

@@ -1,0 +1,481 @@
+[
+  {
+    "dimension": "precision",
+    "family": {
+      "amplitude_interval": [
+        "-101/200",
+        "-99/200"
+      ],
+      "axis": 2,
+      "exponent": "-1/4",
+      "mean_zero": false,
+      "offset": "0",
+      "profile": "abs_power",
+      "tolerance": "1/10000"
+    },
+    "id": "S01",
+    "label": "固定负幂，目标宽度 1/10000",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-1/2",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "spectrum",
+      "mean_zero": false,
+      "tolerance": "1/10000"
+    }
+  },
+  {
+    "dimension": "precision",
+    "family": {
+      "amplitude_interval": [
+        "-101/200",
+        "-99/200"
+      ],
+      "axis": 2,
+      "exponent": "-1/4",
+      "mean_zero": false,
+      "offset": "0",
+      "profile": "abs_power",
+      "tolerance": "1/1000000"
+    },
+    "id": "S02",
+    "label": "固定负幂，目标宽度 1/1000000",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-1/2",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "spectrum",
+      "mean_zero": false,
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "precision",
+    "family": {
+      "amplitude_interval": [
+        "-101/200",
+        "-99/200"
+      ],
+      "axis": 2,
+      "exponent": "-1/4",
+      "mean_zero": false,
+      "offset": "0",
+      "profile": "abs_power",
+      "tolerance": "1/100000000"
+    },
+    "id": "S03",
+    "label": "固定负幂，目标宽度 1/100000000",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-1/2",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "spectrum",
+      "mean_zero": false,
+      "tolerance": "1/100000000"
+    }
+  },
+  {
+    "dimension": "singularity",
+    "family": {
+      "amplitude_interval": [
+        "-101/200",
+        "-99/200"
+      ],
+      "axis": 2,
+      "exponent": "-1/6",
+      "mean_zero": false,
+      "offset": "0",
+      "profile": "abs_power",
+      "tolerance": "1/1000000"
+    },
+    "id": "S04",
+    "label": "改变奇异指数 -1/6",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-1/2",
+        "axis": 2,
+        "exponent": "-1/6",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "spectrum",
+      "mean_zero": false,
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "singularity",
+    "family": {
+      "amplitude_interval": [
+        "-101/200",
+        "-99/200"
+      ],
+      "axis": 2,
+      "exponent": "-2/5",
+      "mean_zero": false,
+      "offset": "0",
+      "profile": "abs_power",
+      "tolerance": "1/1000000"
+    },
+    "id": "S05",
+    "label": "改变奇异指数 -2/5",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-1/2",
+        "axis": 2,
+        "exponent": "-2/5",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "spectrum",
+      "mean_zero": false,
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "singularity",
+    "family": {
+      "amplitude_interval": [
+        "-101/200",
+        "-99/200"
+      ],
+      "axis": 2,
+      "exponent": "-13/27",
+      "mean_zero": false,
+      "offset": "0",
+      "profile": "abs_power",
+      "tolerance": "1/1000000"
+    },
+    "id": "S06",
+    "label": "改变奇异指数 -13/27",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-1/2",
+        "axis": 2,
+        "exponent": "-13/27",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "spectrum",
+      "mean_zero": false,
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "amplitude",
+    "family": {
+      "amplitude_interval": [
+        "-101/1000",
+        "-99/1000"
+      ],
+      "axis": 2,
+      "exponent": "-1/4",
+      "mean_zero": false,
+      "offset": "0",
+      "profile": "abs_power",
+      "tolerance": "1/1000000"
+    },
+    "id": "S07",
+    "label": "改变势的幅度 -1/10",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-1/10",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "spectrum",
+      "mean_zero": false,
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "amplitude",
+    "family": {
+      "amplitude_interval": [
+        "-303/200",
+        "-297/200"
+      ],
+      "axis": 2,
+      "exponent": "-1/4",
+      "mean_zero": false,
+      "offset": "0",
+      "profile": "abs_power",
+      "tolerance": "1/1000000"
+    },
+    "id": "S08",
+    "label": "改变势的幅度 -3/2",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-3/2",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "spectrum",
+      "mean_zero": false,
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "stress",
+    "family": {
+      "amplitude_interval": [
+        "-303/100",
+        "-297/100"
+      ],
+      "axis": 2,
+      "exponent": "-2/5",
+      "mean_zero": false,
+      "offset": "0",
+      "profile": "abs_power",
+      "tolerance": "1/100000000"
+    },
+    "id": "S09",
+    "label": "保留已知强势失败题",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-3",
+        "axis": 2,
+        "exponent": "-2/5",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "spectrum",
+      "mean_zero": false,
+      "tolerance": "1/100000000"
+    }
+  },
+  {
+    "dimension": "space",
+    "id": "S10",
+    "label": "相同负幂改用平均零空间",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-1/2",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "spectrum",
+      "mean_zero": true,
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "space",
+    "id": "S11",
+    "label": "平均零空间加负偏移",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-1/2",
+        "axis": 2,
+        "exponent": "-1/4",
+        "kind": "axis_profile",
+        "offset": "-4",
+        "profile": "abs_power"
+      },
+      "kind": "spectrum",
+      "mean_zero": true,
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "shape",
+    "id": "S12",
+    "label": "阶跃势全空间",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "kind": "spectrum",
+      "mean_zero": false,
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "shape",
+    "id": "S13",
+    "label": "阶跃势平均零空间",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-1",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "step"
+      },
+      "kind": "spectrum",
+      "mean_zero": true,
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "zero_crossing",
+    "id": "S14",
+    "label": "常势负谱与零模校准",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "0",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "-6",
+        "profile": "step"
+      },
+      "kind": "spectrum",
+      "mean_zero": false,
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "zero_crossing",
+    "id": "S15",
+    "label": "平均零最低谱在零上方",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "0",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "-1999999/1000000",
+        "profile": "step"
+      },
+      "kind": "spectrum",
+      "mean_zero": true,
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "zero_crossing",
+    "id": "S16",
+    "label": "平均零最低谱在零下方",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "0",
+        "axis": 2,
+        "kind": "axis_profile",
+        "offset": "-2000001/1000000",
+        "profile": "step"
+      },
+      "kind": "spectrum",
+      "mean_zero": true,
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "objective_control",
+    "id": "S17",
+    "label": "一般负幂函数全域L2逼近",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-1/2",
+        "axis": 2,
+        "exponent": "-1/3",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "approximation",
+      "tolerance": "1/1000000"
+    }
+  },
+  {
+    "dimension": "objective_control",
+    "id": "S18",
+    "label": "更奇异的函数L2逼近及更紧精度",
+    "task": {
+      "budget": {
+        "wall_seconds": 10
+      },
+      "function": {
+        "amplitude": "-2/3",
+        "axis": 2,
+        "exponent": "-5/12",
+        "kind": "axis_profile",
+        "offset": "0",
+        "profile": "abs_power"
+      },
+      "kind": "approximation",
+      "tolerance": "1/100000000"
+    }
+  }
+]

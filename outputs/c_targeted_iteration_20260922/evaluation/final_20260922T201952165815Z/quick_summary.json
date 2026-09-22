@@ -1,0 +1,1064 @@
+{
+  "report_path": "/PROJECT/outputs/c_targeted_iteration_20260922/evaluation/final_20260922T201952165815Z/report.json",
+  "report_sha256": "f9bbef2757dbc14972ebb6683e03b929300e745ce36a2d5c8550f876de38f534",
+  "rows": 180,
+  "unique_row_keys": 180,
+  "frozen_valid": true,
+  "complete": true,
+  "systems": {
+    "C2": {
+      "math": {
+        "fixed_case_denominator": 28,
+        "fixed_run_denominator": 84,
+        "stable_success_cases": 25,
+        "successful_runs": 75
+      },
+      "cohorts": {
+        "added_sealed_neighbors": {
+          "case_denominator": 6,
+          "run_denominator": 18,
+          "stable_success_cases": 4,
+          "successful_runs": 12
+        },
+        "retained_C2_cases": {
+          "case_denominator": 24,
+          "run_denominator": 72,
+          "stable_success_cases": 21,
+          "successful_runs": 63
+        }
+      },
+      "classification": {
+        "expected_unsupported_control": {
+          "case_denominator": 2,
+          "run_denominator": 6,
+          "stable_success_cases": 0,
+          "successful_runs": 0
+        },
+        "new_public": {
+          "case_denominator": 20,
+          "run_denominator": 60,
+          "stable_success_cases": 19,
+          "successful_runs": 57
+        },
+        "old_failure_regression": {
+          "case_denominator": 2,
+          "run_denominator": 6,
+          "stable_success_cases": 2,
+          "successful_runs": 6
+        },
+        "sealed_neighbor_public": {
+          "case_denominator": 6,
+          "run_denominator": 18,
+          "stable_success_cases": 4,
+          "successful_runs": 12
+        }
+      },
+      "controls": {
+        "fixed_run_denominator": 6,
+        "math_successes": 0,
+        "note": "Expected method rejection is reported separately and never counted as a solved mathematical task.",
+        "other_failures_or_timeouts": 0,
+        "reported_unsupported_within_deadline": 6
+      },
+      "route_counts": {
+        "baseline_fallback": 15,
+        "native_c2": 51,
+        "reused_c1": 24
+      },
+      "successful_route_counts": {
+        "baseline_fallback": 6,
+        "native_c2": 45,
+        "reused_c1": 24
+      },
+      "total_wall_all_attempts": 145.3184778795112,
+      "total_cpu_all_attempts": 143.286679,
+      "missing_explanations": 0,
+      "hard_timeouts": 0,
+      "max_process_wall": 6.979937124997377
+    },
+    "C3": {
+      "math": {
+        "fixed_case_denominator": 28,
+        "fixed_run_denominator": 84,
+        "stable_success_cases": 26,
+        "successful_runs": 78
+      },
+      "cohorts": {
+        "added_sealed_neighbors": {
+          "case_denominator": 6,
+          "run_denominator": 18,
+          "stable_success_cases": 4,
+          "successful_runs": 12
+        },
+        "retained_C2_cases": {
+          "case_denominator": 24,
+          "run_denominator": 72,
+          "stable_success_cases": 22,
+          "successful_runs": 66
+        }
+      },
+      "classification": {
+        "expected_unsupported_control": {
+          "case_denominator": 2,
+          "run_denominator": 6,
+          "stable_success_cases": 0,
+          "successful_runs": 0
+        },
+        "new_public": {
+          "case_denominator": 20,
+          "run_denominator": 60,
+          "stable_success_cases": 20,
+          "successful_runs": 60
+        },
+        "old_failure_regression": {
+          "case_denominator": 2,
+          "run_denominator": 6,
+          "stable_success_cases": 2,
+          "successful_runs": 6
+        },
+        "sealed_neighbor_public": {
+          "case_denominator": 6,
+          "run_denominator": 18,
+          "stable_success_cases": 4,
+          "successful_runs": 12
+        }
+      },
+      "controls": {
+        "fixed_run_denominator": 6,
+        "math_successes": 0,
+        "note": "Expected method rejection is reported separately and never counted as a solved mathematical task.",
+        "other_failures_or_timeouts": 0,
+        "reported_unsupported_within_deadline": 6
+      },
+      "route_counts": {
+        "baseline_fallback": 9,
+        "native_c3": 48,
+        "reused_c1": 9,
+        "reused_c2": 24
+      },
+      "successful_route_counts": {
+        "baseline_fallback": 6,
+        "native_c3": 39,
+        "reused_c1": 9,
+        "reused_c2": 24
+      },
+      "total_wall_all_attempts": 120.52733837603591,
+      "total_cpu_all_attempts": 118.23556599999999,
+      "missing_explanations": 0,
+      "hard_timeouts": 0,
+      "max_process_wall": 5.216854916885495
+    }
+  },
+  "same_success_pair": {
+    "cases": 25,
+    "case_ids": [
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08",
+      "E09",
+      "E10",
+      "E11",
+      "E12",
+      "E13",
+      "E14",
+      "E15",
+      "E16",
+      "E17",
+      "E19",
+      "E20",
+      "E21",
+      "E22",
+      "N25",
+      "N26",
+      "N27",
+      "N28"
+    ],
+    "rows_each": 75,
+    "wall_seconds": {
+      "sums": {
+        "C2": 123.41518850368448,
+        "C3": 101.35875596036203
+      },
+      "ratio_C3_over_C2": 0.8212826734639395,
+      "saving_fraction": 0.17871732653606054
+    },
+    "cpu_seconds": {
+      "sums": {
+        "C2": 121.732503,
+        "C3": 99.390383
+      },
+      "ratio_C3_over_C2": 0.8164654513018598,
+      "saving_fraction": 0.18353454869814023
+    }
+  },
+  "stable_gained": [
+    "E18"
+  ],
+  "stable_lost": [],
+  "per_case_cost_median": [
+    {
+      "id": "E01",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 0.35028241598047316,
+          "cpu_seconds": 0.343817,
+          "peak_rss_bytes": 36683776
+        },
+        "C3": {
+          "wall_seconds": 0.3853704999201,
+          "cpu_seconds": 0.37466900000000003,
+          "peak_rss_bytes": 36765696
+        }
+      },
+      "cpu_ratio": 1.089733782797244,
+      "wall_ratio": 1.1001708402673083
+    },
+    {
+      "id": "E02",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 0.44910724996589124,
+          "cpu_seconds": 0.43683299999999997,
+          "peak_rss_bytes": 36732928
+        },
+        "C3": {
+          "wall_seconds": 0.4623983751516789,
+          "cpu_seconds": 0.452335,
+          "peak_rss_bytes": 36782080
+        }
+      },
+      "cpu_ratio": 1.0354872456980129,
+      "wall_ratio": 1.0295945460394975
+    },
+    {
+      "id": "E03",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 0.43156220810487866,
+          "cpu_seconds": 0.422288,
+          "peak_rss_bytes": 36864000
+        },
+        "C3": {
+          "wall_seconds": 0.40138304186984897,
+          "cpu_seconds": 0.389315,
+          "peak_rss_bytes": 36880384
+        }
+      },
+      "cpu_ratio": 0.9219182169514645,
+      "wall_ratio": 0.9300699512880064
+    },
+    {
+      "id": "E04",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 0.4886669160332531,
+          "cpu_seconds": 0.481463,
+          "peak_rss_bytes": 36814848
+        },
+        "C3": {
+          "wall_seconds": 0.48077970813028514,
+          "cpu_seconds": 0.47102499999999997,
+          "peak_rss_bytes": 36896768
+        }
+      },
+      "cpu_ratio": 0.9783202447540101,
+      "wall_ratio": 0.9838597464976917
+    },
+    {
+      "id": "E05",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 0.4461507499217987,
+          "cpu_seconds": 0.436027,
+          "peak_rss_bytes": 36683776
+        },
+        "C3": {
+          "wall_seconds": 0.41749454103410244,
+          "cpu_seconds": 0.410553,
+          "peak_rss_bytes": 36765696
+        }
+      },
+      "cpu_ratio": 0.9415770124327163,
+      "wall_ratio": 0.9357701205417247
+    },
+    {
+      "id": "E06",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 0.4489796659909189,
+          "cpu_seconds": 0.43927099999999997,
+          "peak_rss_bytes": 36716544
+        },
+        "C3": {
+          "wall_seconds": 0.48189833387732506,
+          "cpu_seconds": 0.47065999999999997,
+          "peak_rss_bytes": 36913152
+        }
+      },
+      "cpu_ratio": 1.0714570276662925,
+      "wall_ratio": 1.073318839092085
+    },
+    {
+      "id": "E07",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 0.3878688330296427,
+          "cpu_seconds": 0.377403,
+          "peak_rss_bytes": 36683776
+        },
+        "C3": {
+          "wall_seconds": 0.4015047091525048,
+          "cpu_seconds": 0.394566,
+          "peak_rss_bytes": 36782080
+        }
+      },
+      "cpu_ratio": 1.045476586036677,
+      "wall_ratio": 1.035155895399876
+    },
+    {
+      "id": "E08",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 0.39979925006628036,
+          "cpu_seconds": 0.38817,
+          "peak_rss_bytes": 36716544
+        },
+        "C3": {
+          "wall_seconds": 0.43339566607028246,
+          "cpu_seconds": 0.42350299999999996,
+          "peak_rss_bytes": 36864000
+        }
+      },
+      "cpu_ratio": 1.0910245510987453,
+      "wall_ratio": 1.08403321416544
+    },
+    {
+      "id": "E09",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 0.7796617499552667,
+          "cpu_seconds": 0.762824,
+          "peak_rss_bytes": 37158912
+        },
+        "C3": {
+          "wall_seconds": 0.6956256250850856,
+          "cpu_seconds": 0.684198,
+          "peak_rss_bytes": 37470208
+        }
+      },
+      "cpu_ratio": 0.896927731691714,
+      "wall_ratio": 0.8922146368280826
+    },
+    {
+      "id": "E10",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 1.004426290979609,
+          "cpu_seconds": 0.992143,
+          "peak_rss_bytes": 37355520
+        },
+        "C3": {
+          "wall_seconds": 0.875519499881193,
+          "cpu_seconds": 0.859965,
+          "peak_rss_bytes": 37568512
+        }
+      },
+      "cpu_ratio": 0.8667752531641104,
+      "wall_ratio": 0.8716612734492503
+    },
+    {
+      "id": "E11",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 1.2419111661147326,
+          "cpu_seconds": 1.222908,
+          "peak_rss_bytes": 37519360
+        },
+        "C3": {
+          "wall_seconds": 1.3381705831270665,
+          "cpu_seconds": 1.317286,
+          "peak_rss_bytes": 37552128
+        }
+      },
+      "cpu_ratio": 1.0771750614109972,
+      "wall_ratio": 1.0775091001987505
+    },
+    {
+      "id": "E12",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 0.8684273329563439,
+          "cpu_seconds": 0.8505529999999999,
+          "peak_rss_bytes": 37339136
+        },
+        "C3": {
+          "wall_seconds": 0.8367120411712676,
+          "cpu_seconds": 0.823243,
+          "peak_rss_bytes": 37601280
+        }
+      },
+      "cpu_ratio": 0.9678914776621799,
+      "wall_ratio": 0.9634796250860628
+    },
+    {
+      "id": "E13",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 1.3096558752004057,
+          "cpu_seconds": 1.270165,
+          "peak_rss_bytes": 37568512
+        },
+        "C3": {
+          "wall_seconds": 1.2673392079304904,
+          "cpu_seconds": 1.251374,
+          "peak_rss_bytes": 37650432
+        }
+      },
+      "cpu_ratio": 0.9852058590813004,
+      "wall_ratio": 0.9676887126830627
+    },
+    {
+      "id": "E14",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 2.816742000170052,
+          "cpu_seconds": 2.7629099999999998,
+          "peak_rss_bytes": 37830656
+        },
+        "C3": {
+          "wall_seconds": 1.7912927498109639,
+          "cpu_seconds": 1.758147,
+          "peak_rss_bytes": 46972928
+        }
+      },
+      "cpu_ratio": 0.636338860114879,
+      "wall_ratio": 0.6359449142671996
+    },
+    {
+      "id": "E15",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 2.7066957908682525,
+          "cpu_seconds": 2.6817539999999997,
+          "peak_rss_bytes": 38797312
+        },
+        "C3": {
+          "wall_seconds": 2.8677439170423895,
+          "cpu_seconds": 2.8409159999999996,
+          "peak_rss_bytes": 38748160
+        }
+      },
+      "cpu_ratio": 1.059349962748261,
+      "wall_ratio": 1.0594998989976911
+    },
+    {
+      "id": "E16",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 3.6156734169926494,
+          "cpu_seconds": 3.573911,
+          "peak_rss_bytes": 37863424
+        },
+        "C3": {
+          "wall_seconds": 2.741146749816835,
+          "cpu_seconds": 2.696593,
+          "peak_rss_bytes": 47038464
+        }
+      },
+      "cpu_ratio": 0.7545215871352141,
+      "wall_ratio": 0.758128966220847
+    },
+    {
+      "id": "E17",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 3.3810673328116536,
+          "cpu_seconds": 3.3446949999999998,
+          "peak_rss_bytes": 37797888
+        },
+        "C3": {
+          "wall_seconds": 2.617693917127326,
+          "cpu_seconds": 2.582683,
+          "peak_rss_bytes": 47038464
+        }
+      },
+      "cpu_ratio": 0.7721729485050206,
+      "wall_ratio": 0.7742211732146974
+    },
+    {
+      "id": "E19",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 6.3872915839310735,
+          "cpu_seconds": 6.316054,
+          "peak_rss_bytes": 38649856
+        },
+        "C3": {
+          "wall_seconds": 4.583471292164177,
+          "cpu_seconds": 4.5190470000000005,
+          "peak_rss_bytes": 47808512
+        }
+      },
+      "cpu_ratio": 0.7154858080694054,
+      "wall_ratio": 0.7175923052730385
+    },
+    {
+      "id": "E20",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 3.782851167023182,
+          "cpu_seconds": 3.720776,
+          "peak_rss_bytes": 37912576
+        },
+        "C3": {
+          "wall_seconds": 2.8610245001036674,
+          "cpu_seconds": 2.840081,
+          "peak_rss_bytes": 47071232
+        }
+      },
+      "cpu_ratio": 0.7633034076762483,
+      "wall_ratio": 0.7563143178998177
+    },
+    {
+      "id": "E21",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 0.16093300003558397,
+          "cpu_seconds": 0.153787,
+          "peak_rss_bytes": 33816576
+        },
+        "C3": {
+          "wall_seconds": 0.15639987494796515,
+          "cpu_seconds": 0.150845,
+          "peak_rss_bytes": 33800192
+        }
+      },
+      "cpu_ratio": 0.9808696443782634,
+      "wall_ratio": 0.9718322215666364
+    },
+    {
+      "id": "E22",
+      "cohort": "retained_C2_cases",
+      "medians": {
+        "C2": {
+          "wall_seconds": 0.17946633393876255,
+          "cpu_seconds": 0.172677,
+          "peak_rss_bytes": 33800192
+        },
+        "C3": {
+          "wall_seconds": 0.16397737502120435,
+          "cpu_seconds": 0.15782,
+          "peak_rss_bytes": 33882112
+        }
+      },
+      "cpu_ratio": 0.9139607475228316,
+      "wall_ratio": 0.9136943482511694
+    },
+    {
+      "id": "N25",
+      "cohort": "added_sealed_neighbors",
+      "medians": {
+        "C2": {
+          "wall_seconds": 0.6872829170897603,
+          "cpu_seconds": 0.67425,
+          "peak_rss_bytes": 37158912
+        },
+        "C3": {
+          "wall_seconds": 0.6825683750212193,
+          "cpu_seconds": 0.662621,
+          "peak_rss_bytes": 37502976
+        }
+      },
+      "cpu_ratio": 0.982752688172043,
+      "wall_ratio": 0.9931403182716888
+    },
+    {
+      "id": "N26",
+      "cohort": "added_sealed_neighbors",
+      "medians": {
+        "C2": {
+          "wall_seconds": 1.0156664589885622,
+          "cpu_seconds": 1.003917,
+          "peak_rss_bytes": 37355520
+        },
+        "C3": {
+          "wall_seconds": 0.9483504998497665,
+          "cpu_seconds": 0.9362139999999999,
+          "peak_rss_bytes": 37552128
+        }
+      },
+      "cpu_ratio": 0.932561157944332,
+      "wall_ratio": 0.9337223765311385
+    },
+    {
+      "id": "N27",
+      "cohort": "added_sealed_neighbors",
+      "medians": {
+        "C2": {
+          "wall_seconds": 3.844638334121555,
+          "cpu_seconds": 3.808959,
+          "peak_rss_bytes": 37847040
+        },
+        "C3": {
+          "wall_seconds": 2.867706916993484,
+          "cpu_seconds": 2.822783,
+          "peak_rss_bytes": 46956544
+        }
+      },
+      "cpu_ratio": 0.7410904134174192,
+      "wall_ratio": 0.7458977068251893
+    },
+    {
+      "id": "N28",
+      "cohort": "added_sealed_neighbors",
+      "medians": {
+        "C2": {
+          "wall_seconds": 3.9570156252011657,
+          "cpu_seconds": 3.917138,
+          "peak_rss_bytes": 37912576
+        },
+        "C3": {
+          "wall_seconds": 2.9246576249133795,
+          "cpu_seconds": 2.8795699999999997,
+          "peak_rss_bytes": 47104000
+        }
+      },
+      "cpu_ratio": 0.7351208969405724,
+      "wall_ratio": 0.7391069184278737
+    }
+  ],
+  "unsolved_math_details": [
+    {
+      "system": "C2",
+      "id": "E18",
+      "success_runs": 0,
+      "failures": [
+        "precision_insufficient",
+        "precision_insufficient",
+        "precision_insufficient"
+      ],
+      "stages": [
+        "exact_target_check",
+        "exact_target_check",
+        "exact_target_check"
+      ],
+      "routes": [
+        "baseline_fallback",
+        "baseline_fallback",
+        "baseline_fallback"
+      ],
+      "fallback_reason": "c1_candidate_schedule_exhausted",
+      "metric_float": [
+        3.862442531949574e-06,
+        3.862442531949574e-06,
+        3.862442531949574e-06
+      ],
+      "tolerance": "1/1000000",
+      "recorded_reasons": [
+        {
+          "action": "gap_threshold",
+          "status": "failed",
+          "reason": "Requested gap reaches the strict radial tail barrier",
+          "error": "ValueError"
+        },
+        {
+          "action": "gap_threshold",
+          "status": "failed",
+          "reason": "Requested gap reaches the strict radial tail barrier",
+          "error": "ValueError"
+        },
+        {
+          "action": "other_sector_threshold",
+          "status": "failed",
+          "reason": "Requested exclusion lower exceeds a certified Ritz upper",
+          "error": "ValueError"
+        },
+        {
+          "action": "other_sector_threshold",
+          "status": "failed",
+          "reason": "Requested exclusion lower exceeds a certified Ritz upper",
+          "error": "ValueError"
+        },
+        {
+          "action": "other_sector_threshold",
+          "status": "failed",
+          "reason": "Requested exclusion lower exceeds a certified Ritz upper",
+          "error": "ValueError"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "baseline_fallback"
+        }
+      ]
+    },
+    {
+      "system": "C2",
+      "id": "N29",
+      "success_runs": 0,
+      "failures": [
+        "precision_insufficient",
+        "precision_insufficient",
+        "precision_insufficient"
+      ],
+      "stages": [
+        "exact_target_check",
+        "exact_target_check",
+        "exact_target_check"
+      ],
+      "routes": [
+        "baseline_fallback",
+        "baseline_fallback",
+        "baseline_fallback"
+      ],
+      "fallback_reason": "c1_candidate_schedule_exhausted",
+      "metric_float": [
+        0.0005088078846477835,
+        0.0005088078846477835,
+        0.0005088078846477835
+      ],
+      "tolerance": "1/1000000",
+      "recorded_reasons": [
+        {
+          "action": "gap_threshold",
+          "status": "failed",
+          "reason": "Requested gap reaches the strict radial tail barrier",
+          "error": "ValueError"
+        },
+        {
+          "action": "gap_threshold",
+          "status": "failed",
+          "reason": "Requested gap reaches the strict radial tail barrier",
+          "error": "ValueError"
+        },
+        {
+          "action": "gap_threshold",
+          "status": "failed",
+          "reason": "Requested gap reaches the strict radial tail barrier",
+          "error": "ValueError"
+        },
+        {
+          "action": "gap_threshold",
+          "status": "failed",
+          "reason": "Requested gap reaches the strict radial tail barrier",
+          "error": "ValueError"
+        },
+        {
+          "action": "other_sector_threshold",
+          "status": "failed",
+          "reason": "Requested exclusion lower exceeds a certified Ritz upper",
+          "error": "ValueError"
+        },
+        {
+          "action": "other_sector_threshold",
+          "status": "failed",
+          "reason": "Requested exclusion lower exceeds a certified Ritz upper",
+          "error": "ValueError"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "baseline_fallback"
+        }
+      ]
+    },
+    {
+      "system": "C2",
+      "id": "N30",
+      "success_runs": 0,
+      "failures": [
+        "no_certificate",
+        "no_certificate",
+        "no_certificate"
+      ],
+      "stages": [
+        "c1_demand_search",
+        "c1_demand_search",
+        "c1_demand_search"
+      ],
+      "routes": [
+        "baseline_fallback",
+        "baseline_fallback",
+        "baseline_fallback"
+      ],
+      "fallback_reason": "c1_search_precondition_or_candidate_failure",
+      "metric_float": [
+        null,
+        null,
+        null
+      ],
+      "tolerance": "1/100000000",
+      "recorded_reasons": [
+        {
+          "action": "holder_form",
+          "status": "failed",
+          "reason": "Require a negative amplitude",
+          "error": "ValueError"
+        },
+        {
+          "action": "c1_demand_search",
+          "status": "failed",
+          "reason": "Require a negative amplitude",
+          "error": "ValueError"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "c1_search_precondition_or_candidate_failure",
+          "reason": "Require a negative amplitude",
+          "error": "ValueError"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "baseline_fallback"
+        }
+      ]
+    },
+    {
+      "system": "C3",
+      "id": "E18",
+      "success_runs": 3,
+      "failures": [
+        null,
+        null,
+        null
+      ],
+      "stages": [
+        null,
+        null,
+        null
+      ],
+      "routes": [
+        "native_c3",
+        "native_c3",
+        "native_c3"
+      ],
+      "fallback_reason": null,
+      "metric_float": [
+        7.242073270893462e-07,
+        7.242073270893462e-07,
+        7.242073270893462e-07
+      ],
+      "tolerance": "1/1000000",
+      "recorded_reasons": [
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_complete_sector"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_complete_sector"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_global_interval"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_refine_active_sector",
+          "reason": "This certified lower endpoint limits the global interval"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_complete_sector"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_global_interval"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_original_target_reached"
+        }
+      ]
+    },
+    {
+      "system": "C3",
+      "id": "N29",
+      "success_runs": 0,
+      "failures": [
+        "precision_insufficient",
+        "precision_insufficient",
+        "precision_insufficient"
+      ],
+      "stages": [
+        "exact_target_check",
+        "exact_target_check",
+        "exact_target_check"
+      ],
+      "routes": [
+        "native_c3",
+        "native_c3",
+        "native_c3"
+      ],
+      "fallback_reason": null,
+      "metric_float": [
+        1.392945120676351,
+        1.392945120676351,
+        1.392945120676351
+      ],
+      "tolerance": "1/1000000",
+      "recorded_reasons": [
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_complete_sector"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_complete_sector"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_global_interval"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_extend_angular_coverage",
+          "reason": "Complete angular tail still limits original global width"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_complete_sector"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_global_interval"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_extend_angular_coverage",
+          "reason": "Complete angular tail still limits original global width"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_complete_sector"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_global_interval"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_extend_angular_coverage",
+          "reason": "Complete angular tail still limits original global width"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_complete_sector"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_global_interval"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "mean_zero_angular_schedule_exhausted"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "valid_certificate_precision_insufficient"
+        }
+      ]
+    },
+    {
+      "system": "C3",
+      "id": "N30",
+      "success_runs": 0,
+      "failures": [
+        "no_certificate",
+        "no_certificate",
+        "no_certificate"
+      ],
+      "stages": [
+        "c1_demand_search",
+        "c1_demand_search",
+        "c1_demand_search"
+      ],
+      "routes": [
+        "baseline_fallback",
+        "baseline_fallback",
+        "baseline_fallback"
+      ],
+      "fallback_reason": "c1_search_precondition_or_candidate_failure",
+      "metric_float": [
+        null,
+        null,
+        null
+      ],
+      "tolerance": "1/100000000",
+      "recorded_reasons": [
+        {
+          "action": "holder_form",
+          "status": "failed",
+          "reason": "Require a negative amplitude",
+          "error": "ValueError"
+        },
+        {
+          "action": "c1_demand_search",
+          "status": "failed",
+          "reason": "Require a negative amplitude",
+          "error": "ValueError"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "c1_search_precondition_or_candidate_failure",
+          "reason": "Require a negative amplitude",
+          "error": "ValueError"
+        },
+        {
+          "action": "decision",
+          "status": "decision",
+          "reason_code": "baseline_fallback"
+        }
+      ]
+    }
+  ]
+}

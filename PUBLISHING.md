@@ -1,5 +1,7 @@
 # 2026-09-21 公开发行说明
 
+2026-09-22 的 C3 / C3.1 增量发行及公开归档说明见 [本次发行记录](docs/PUBLICATION_20260922.md)。下文和根目录的 `PUBLICATION_CHECK.json`、`PUBLICATION_TRANSFORM.json` 保留为初次发行的历史记录。
+
 本目录是为公开 GitHub 仓库制作的独立发行副本，项目采用 MIT License。原研究工作目录、私有发行副本及原始归档继续保存在本地，未被覆盖。
 
 ## 文件范围

@@ -1,0 +1,684 @@
+[
+  {
+    "dimension": "batch_interval_span",
+    "id": "F1",
+    "label": "窄幅度区间",
+    "query_ratios": [
+      "1/2",
+      "1/4",
+      "3/4",
+      "1/8",
+      "3/8",
+      "5/8",
+      "7/8",
+      "1/16",
+      "3/16",
+      "5/16",
+      "7/16",
+      "9/16",
+      "11/16",
+      "13/16",
+      "15/16",
+      "1/32"
+    ],
+    "spec": {
+      "amplitude_interval": [
+        "-101/200",
+        "-99/200"
+      ],
+      "axis": 2,
+      "exponent": "-1/4",
+      "mean_zero": false,
+      "offset": "0",
+      "profile": "abs_power",
+      "tolerance": "1/10000"
+    },
+    "tasks": [
+      {
+        "id": "F1Q01",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-1/2",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q02",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-201/400",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q03",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-199/400",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q04",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-403/800",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q05",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-401/800",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q06",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-399/800",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q07",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-397/800",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q08",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-807/1600",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q09",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-161/320",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q10",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-803/1600",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q11",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-801/1600",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q12",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-799/1600",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q13",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-797/1600",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q14",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-159/320",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q15",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-793/1600",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F1Q16",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-323/640",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      }
+    ]
+  },
+  {
+    "dimension": "batch_interval_span",
+    "id": "F2",
+    "label": "宽幅度区间",
+    "query_ratios": [
+      "1/2",
+      "1/4",
+      "3/4",
+      "1/8",
+      "3/8",
+      "5/8",
+      "7/8",
+      "1/16",
+      "3/16",
+      "5/16",
+      "7/16",
+      "9/16",
+      "11/16",
+      "13/16",
+      "15/16",
+      "1/32"
+    ],
+    "spec": {
+      "amplitude_interval": [
+        "-3/5",
+        "-2/5"
+      ],
+      "axis": 2,
+      "exponent": "-1/4",
+      "mean_zero": false,
+      "offset": "0",
+      "profile": "abs_power",
+      "tolerance": "1/10000"
+    },
+    "tasks": [
+      {
+        "id": "F2Q01",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-1/2",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q02",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-11/20",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q03",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-9/20",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q04",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-23/40",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q05",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-21/40",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q06",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-19/40",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q07",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-17/40",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q08",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-47/80",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q09",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-9/16",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q10",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-43/80",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q11",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-41/80",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q12",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-39/80",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q13",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-37/80",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q14",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-7/16",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q15",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-33/80",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      },
+      {
+        "id": "F2Q16",
+        "task": {
+          "budget": {
+            "wall_seconds": 10
+          },
+          "function": {
+            "amplitude": "-19/32",
+            "axis": 2,
+            "exponent": "-1/4",
+            "kind": "axis_profile",
+            "offset": "0",
+            "profile": "abs_power"
+          },
+          "kind": "spectrum",
+          "mean_zero": false,
+          "tolerance": "1/10000"
+        }
+      }
+    ]
+  }
+]

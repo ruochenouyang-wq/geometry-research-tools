@@ -1,0 +1,717 @@
+{
+  "scope": "Six explicitly public development inputs; same process, shared baseline caches, alternating order; not a cold or held-out benchmark.",
+  "model_calls": 0,
+  "model_token_savings": null,
+  "rows": [
+    {
+      "task": {
+        "kind": "spectrum",
+        "function": {
+          "kind": "axis_profile",
+          "profile": "abs_power",
+          "amplitude": "-1",
+          "exponent": "-1/4",
+          "offset": "0",
+          "axis": 2
+        },
+        "mean_zero": false,
+        "tolerance": "1/100000000",
+        "budget": {
+          "wall_seconds": 10
+        }
+      },
+      "runs": {
+        "baseline": [
+          {
+            "seconds_with_json_and_external_replay": 0.395119208144024,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "1532189619332443080499920651200766278663497703196128824387698912520141305344097205270319921892088155495678757643771956784262623586530391858500251477998131037605129672291776462848/4712324722547009755918057033695658402243188564907624023991053892912783614840488654354315549161610219677014227720156011784024744504896612405758583611839599422826674576489438204134785328471045",
+            "search_counters": null
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.3327921670861542,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "1532189619332443080499920651200766278663497703196128824387698912520141305344097205270319921892088155495678757643771956784262623586530391858500251477998131037605129672291776462848/4712324722547009755918057033695658402243188564907624023991053892912783614840488654354315549161610219677014227720156011784024744504896612405758583611839599422826674576489438204134785328471045",
+            "search_counters": null
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.3314447079319507,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "1532189619332443080499920651200766278663497703196128824387698912520141305344097205270319921892088155495678757643771956784262623586530391858500251477998131037605129672291776462848/4712324722547009755918057033695658402243188564907624023991053892912783614840488654354315549161610219677014227720156011784024744504896612405758583611839599422826674576489438204134785328471045",
+            "search_counters": null
+          }
+        ],
+        "C": [
+          {
+            "seconds_with_json_and_external_replay": 0.1602554169949144,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "646269375487228643117047635082856606317310219129561321919427496479019951777222764242298706166442900183947529810708524328699780696639585235549337550342320463541305344/69256606271431952092120831891761856505387303359911558178931197870369412338090078322012031256700141885694127581387072907550562902831106088684610058973812788255621434511813785",
+            "search_counters": {
+              "search_inertia_checks": 3,
+              "gap_threshold_checks": 3,
+              "kernel_constructions": 1,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.16156587493605912,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "646269375487228643117047635082856606317310219129561321919427496479019951777222764242298706166442900183947529810708524328699780696639585235549337550342320463541305344/69256606271431952092120831891761856505387303359911558178931197870369412338090078322012031256700141885694127581387072907550562902831106088684610058973812788255621434511813785",
+            "search_counters": {
+              "search_inertia_checks": 3,
+              "gap_threshold_checks": 3,
+              "kernel_constructions": 1,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.16365283401682973,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "646269375487228643117047635082856606317310219129561321919427496479019951777222764242298706166442900183947529810708524328699780696639585235549337550342320463541305344/69256606271431952092120831891761856505387303359911558178931197870369412338090078322012031256700141885694127581387072907550562902831106088684610058973812788255621434511813785",
+            "search_counters": {
+              "search_inertia_checks": 3,
+              "gap_threshold_checks": 3,
+              "kernel_constructions": 1,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          }
+        ]
+      },
+      "profiles_separate_from_timing": {
+        "baseline": [
+          {
+            "file": "spectral_certifier.py",
+            "function": "inertia",
+            "calls": 39
+          }
+        ],
+        "C": [
+          {
+            "file": "spectral_certifier.py",
+            "function": "inertia",
+            "calls": 8
+          }
+        ]
+      },
+      "median_seconds": {
+        "baseline": 0.3327921670861542,
+        "C": 0.16156587493605912
+      }
+    },
+    {
+      "task": {
+        "kind": "spectrum",
+        "function": {
+          "kind": "axis_profile",
+          "profile": "abs_power",
+          "amplitude": "-1",
+          "exponent": "-1/4",
+          "offset": "0",
+          "axis": 2
+        },
+        "mean_zero": true,
+        "tolerance": "1/100000000",
+        "budget": {
+          "wall_seconds": 10
+        }
+      },
+      "runs": {
+        "baseline": [
+          {
+            "seconds_with_json_and_external_replay": 0.5835782908834517,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "6364961968415775518830499285887529794204223523070787897690030010173721895311196789242845663972520586322332680784820175085276852598062425675497669121511081074322006563612803919115110278234112/327531181753218892982854346596354844011282190126282204835701404646824026510493282677695690328018718664860830069780018313320718327481510568035016988713919064431568061218756483185596210410924602189816321",
+            "search_counters": null
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.5742342500016093,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "6364961968415775518830499285887529794204223523070787897690030010173721895311196789242845663972520586322332680784820175085276852598062425675497669121511081074322006563612803919115110278234112/327531181753218892982854346596354844011282190126282204835701404646824026510493282677695690328018718664860830069780018313320718327481510568035016988713919064431568061218756483185596210410924602189816321",
+            "search_counters": null
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.5747838339302689,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "6364961968415775518830499285887529794204223523070787897690030010173721895311196789242845663972520586322332680784820175085276852598062425675497669121511081074322006563612803919115110278234112/327531181753218892982854346596354844011282190126282204835701404646824026510493282677695690328018718664860830069780018313320718327481510568035016988713919064431568061218756483185596210410924602189816321",
+            "search_counters": null
+          }
+        ],
+        "C": [
+          {
+            "seconds_with_json_and_external_replay": 0.2556180830579251,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "3859266124840224025217139136589157590426853568758080593209663984558405533675005420107994519623098668381821990372567097489855982590029225730478883100968888098772978121277024862208/411697747439722321122633160990878782640614679143812090813912740770762408857652209993808924871446993484685326543518389552127484771886401402331751544067109659789315001410078963696900539947",
+            "search_counters": {
+              "search_inertia_checks": 14,
+              "gap_threshold_checks": 1,
+              "kernel_constructions": 2,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.25503920787014067,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "3859266124840224025217139136589157590426853568758080593209663984558405533675005420107994519623098668381821990372567097489855982590029225730478883100968888098772978121277024862208/411697747439722321122633160990878782640614679143812090813912740770762408857652209993808924871446993484685326543518389552127484771886401402331751544067109659789315001410078963696900539947",
+            "search_counters": {
+              "search_inertia_checks": 14,
+              "gap_threshold_checks": 1,
+              "kernel_constructions": 2,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.25784991681575775,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "3859266124840224025217139136589157590426853568758080593209663984558405533675005420107994519623098668381821990372567097489855982590029225730478883100968888098772978121277024862208/411697747439722321122633160990878782640614679143812090813912740770762408857652209993808924871446993484685326543518389552127484771886401402331751544067109659789315001410078963696900539947",
+            "search_counters": {
+              "search_inertia_checks": 14,
+              "gap_threshold_checks": 1,
+              "kernel_constructions": 2,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          }
+        ]
+      },
+      "profiles_separate_from_timing": {
+        "baseline": [
+          {
+            "file": "error_bounds.py",
+            "function": "banded_inertia",
+            "calls": 100
+          },
+          {
+            "file": "spectral_certifier.py",
+            "function": "inertia",
+            "calls": 75
+          }
+        ],
+        "C": [
+          {
+            "file": "error_bounds.py",
+            "function": "banded_inertia",
+            "calls": 9
+          },
+          {
+            "file": "spectral_certifier.py",
+            "function": "inertia",
+            "calls": 23
+          }
+        ]
+      },
+      "median_seconds": {
+        "baseline": 0.5747838339302689,
+        "C": 0.2556180830579251
+      }
+    },
+    {
+      "task": {
+        "kind": "spectrum",
+        "function": {
+          "kind": "axis_profile",
+          "profile": "abs_power",
+          "amplitude": "-1/3",
+          "exponent": "-2/5",
+          "offset": "0",
+          "axis": 2
+        },
+        "mean_zero": false,
+        "tolerance": "1/100000000",
+        "budget": {
+          "wall_seconds": 10
+        }
+      },
+      "runs": {
+        "baseline": [
+          {
+            "seconds_with_json_and_external_replay": 0.35439162515103817,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "420330568755017315740104972772634063895294189396044566721357679074076029238930893927601722794095725758062828480101123369042752429719026580821511651644306008253280480318092519914554748043264/2839087370162859467062865281455426740365298041307026491319908974327304432703312597540638085615718818396277338551361098706285777035741944501539707422392043883603965813929378175042340656351071110359531075",
+            "search_counters": null
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.35414425004273653,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "420330568755017315740104972772634063895294189396044566721357679074076029238930893927601722794095725758062828480101123369042752429719026580821511651644306008253280480318092519914554748043264/2839087370162859467062865281455426740365298041307026491319908974327304432703312597540638085615718818396277338551361098706285777035741944501539707422392043883603965813929378175042340656351071110359531075",
+            "search_counters": null
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.35698799998499453,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "420330568755017315740104972772634063895294189396044566721357679074076029238930893927601722794095725758062828480101123369042752429719026580821511651644306008253280480318092519914554748043264/2839087370162859467062865281455426740365298041307026491319908974327304432703312597540638085615718818396277338551361098706285777035741944501539707422392043883603965813929378175042340656351071110359531075",
+            "search_counters": null
+          }
+        ],
+        "C": [
+          {
+            "seconds_with_json_and_external_replay": 0.17562470794655383,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "3058307402207118253428088594028915859928341447055896909451677340796421261903967344024580399812080764663280777168264637068516112265344611520569827201283667878693671666537502605312/333407788310934003591580084539831296253299514009620226927184788335477954105116393412362834891023128487406146896747109667985536384332429984404126288930856232813353602367424240514137227525",
+            "search_counters": {
+              "search_inertia_checks": 3,
+              "gap_threshold_checks": 3,
+              "kernel_constructions": 1,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.17494941712357104,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "3058307402207118253428088594028915859928341447055896909451677340796421261903967344024580399812080764663280777168264637068516112265344611520569827201283667878693671666537502605312/333407788310934003591580084539831296253299514009620226927184788335477954105116393412362834891023128487406146896747109667985536384332429984404126288930856232813353602367424240514137227525",
+            "search_counters": {
+              "search_inertia_checks": 3,
+              "gap_threshold_checks": 3,
+              "kernel_constructions": 1,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.17914475011639297,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "3058307402207118253428088594028915859928341447055896909451677340796421261903967344024580399812080764663280777168264637068516112265344611520569827201283667878693671666537502605312/333407788310934003591580084539831296253299514009620226927184788335477954105116393412362834891023128487406146896747109667985536384332429984404126288930856232813353602367424240514137227525",
+            "search_counters": {
+              "search_inertia_checks": 3,
+              "gap_threshold_checks": 3,
+              "kernel_constructions": 1,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          }
+        ]
+      },
+      "profiles_separate_from_timing": {
+        "baseline": [
+          {
+            "file": "spectral_certifier.py",
+            "function": "inertia",
+            "calls": 39
+          }
+        ],
+        "C": [
+          {
+            "file": "spectral_certifier.py",
+            "function": "inertia",
+            "calls": 8
+          }
+        ]
+      },
+      "median_seconds": {
+        "baseline": 0.35439162515103817,
+        "C": 0.17562470794655383
+      }
+    },
+    {
+      "task": {
+        "kind": "spectrum",
+        "function": {
+          "kind": "axis_profile",
+          "profile": "abs_power",
+          "amplitude": "-1/3",
+          "exponent": "-2/5",
+          "offset": "0",
+          "axis": 2
+        },
+        "mean_zero": true,
+        "tolerance": "1/100000000",
+        "budget": {
+          "wall_seconds": 10
+        }
+      },
+      "runs": {
+        "baseline": [
+          {
+            "seconds_with_json_and_external_replay": 0.6282901661470532,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "34677747409775032123874949699164528166828400059170046157927891410803128379483674470349833662730879749282261316564840133584305833284057637288477853783423012117298605563872099133234353523506110097127282573312/718528827859135579065919104223979665935289556524473479519872969830593227602326101412668248541696092775214484321615212631279603057942249909049213585201645739492555504128510352913844191258001977903610800657061256717625",
+            "search_counters": null
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.6208209169562906,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "34677747409775032123874949699164528166828400059170046157927891410803128379483674470349833662730879749282261316564840133584305833284057637288477853783423012117298605563872099133234353523506110097127282573312/718528827859135579065919104223979665935289556524473479519872969830593227602326101412668248541696092775214484321615212631279603057942249909049213585201645739492555504128510352913844191258001977903610800657061256717625",
+            "search_counters": null
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.6224511249456555,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "34677747409775032123874949699164528166828400059170046157927891410803128379483674470349833662730879749282261316564840133584305833284057637288477853783423012117298605563872099133234353523506110097127282573312/718528827859135579065919104223979665935289556524473479519872969830593227602326101412668248541696092775214484321615212631279603057942249909049213585201645739492555504128510352913844191258001977903610800657061256717625",
+            "search_counters": null
+          }
+        ],
+        "C": [
+          {
+            "seconds_with_json_and_external_replay": 0.2796539170667529,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "246400215145392793117728655965695794569316490617225995819182254896895247352146004049798716996597248036112129316882431834189800904397725654522431098196641216569692329328746176978159734883221504/26283817259933949640163903057277490966337404603863193319002950594262976040219103372871154715285746794318068543751156752461591639603138626984671432811115288849287547720197645363525506209726881527098375",
+            "search_counters": {
+              "search_inertia_checks": 14,
+              "gap_threshold_checks": 1,
+              "kernel_constructions": 2,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.2796524171717465,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "246400215145392793117728655965695794569316490617225995819182254896895247352146004049798716996597248036112129316882431834189800904397725654522431098196641216569692329328746176978159734883221504/26283817259933949640163903057277490966337404603863193319002950594262976040219103372871154715285746794318068543751156752461591639603138626984671432811115288849287547720197645363525506209726881527098375",
+            "search_counters": {
+              "search_inertia_checks": 14,
+              "gap_threshold_checks": 1,
+              "kernel_constructions": 2,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.2803910421207547,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "246400215145392793117728655965695794569316490617225995819182254896895247352146004049798716996597248036112129316882431834189800904397725654522431098196641216569692329328746176978159734883221504/26283817259933949640163903057277490966337404603863193319002950594262976040219103372871154715285746794318068543751156752461591639603138626984671432811115288849287547720197645363525506209726881527098375",
+            "search_counters": {
+              "search_inertia_checks": 14,
+              "gap_threshold_checks": 1,
+              "kernel_constructions": 2,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          }
+        ]
+      },
+      "profiles_separate_from_timing": {
+        "baseline": [
+          {
+            "file": "error_bounds.py",
+            "function": "banded_inertia",
+            "calls": 100
+          },
+          {
+            "file": "spectral_certifier.py",
+            "function": "inertia",
+            "calls": 75
+          }
+        ],
+        "C": [
+          {
+            "file": "error_bounds.py",
+            "function": "banded_inertia",
+            "calls": 9
+          },
+          {
+            "file": "spectral_certifier.py",
+            "function": "inertia",
+            "calls": 23
+          }
+        ]
+      },
+      "median_seconds": {
+        "baseline": 0.6224511249456555,
+        "C": 0.2796539170667529
+      }
+    },
+    {
+      "task": {
+        "kind": "spectrum",
+        "function": {
+          "kind": "axis_profile",
+          "profile": "abs_power",
+          "amplitude": "-2",
+          "exponent": "-1/3",
+          "offset": "0",
+          "axis": 2
+        },
+        "mean_zero": false,
+        "tolerance": "1/100000000",
+        "budget": {
+          "wall_seconds": 10
+        }
+      },
+      "runs": {
+        "baseline": [
+          {
+            "seconds_with_json_and_external_replay": 0.7716206249315292,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "1890300124144405196514528152844530360879933451639015662387817175683890924542935312620422913440230456534705594754913746804402535812286523650178018826221837003691637615139749888/529567332456444945807770505150274620672403262024142726928839735829594030962465378496757522840657737587712709919279090888622432023548570419112627447069195057734789586898538033275271817001",
+            "search_counters": null
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.7606764170341194,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "1890300124144405196514528152844530360879933451639015662387817175683890924542935312620422913440230456534705594754913746804402535812286523650178018826221837003691637615139749888/529567332456444945807770505150274620672403262024142726928839735829594030962465378496757522840657737587712709919279090888622432023548570419112627447069195057734789586898538033275271817001",
+            "search_counters": null
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.7599942500237375,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "1890300124144405196514528152844530360879933451639015662387817175683890924542935312620422913440230456534705594754913746804402535812286523650178018826221837003691637615139749888/529567332456444945807770505150274620672403262024142726928839735829594030962465378496757522840657737587712709919279090888622432023548570419112627447069195057734789586898538033275271817001",
+            "search_counters": null
+          }
+        ],
+        "C": [
+          {
+            "seconds_with_json_and_external_replay": 0.2959235841408372,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "53725560864688907159760678747617542992427770844841906591336088913632548967113260477515919815238886955475709179237178057189866416714679748172841835475476187971584/5731291828865607813046439715306189387273465255233788878696304810677637525613620674025215288894888446434765962386051735586857097036586478263489538394090669576426365871135",
+            "search_counters": {
+              "search_inertia_checks": 1,
+              "gap_threshold_checks": 1,
+              "kernel_constructions": 1,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.29720995808020234,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "53725560864688907159760678747617542992427770844841906591336088913632548967113260477515919815238886955475709179237178057189866416714679748172841835475476187971584/5731291828865607813046439715306189387273465255233788878696304810677637525613620674025215288894888446434765962386051735586857097036586478263489538394090669576426365871135",
+            "search_counters": {
+              "search_inertia_checks": 1,
+              "gap_threshold_checks": 1,
+              "kernel_constructions": 1,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.2971492921933532,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "53725560864688907159760678747617542992427770844841906591336088913632548967113260477515919815238886955475709179237178057189866416714679748172841835475476187971584/5731291828865607813046439715306189387273465255233788878696304810677637525613620674025215288894888446434765962386051735586857097036586478263489538394090669576426365871135",
+            "search_counters": {
+              "search_inertia_checks": 1,
+              "gap_threshold_checks": 1,
+              "kernel_constructions": 1,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          }
+        ]
+      },
+      "profiles_separate_from_timing": {
+        "baseline": [
+          {
+            "file": "spectral_certifier.py",
+            "function": "inertia",
+            "calls": 39
+          }
+        ],
+        "C": [
+          {
+            "file": "spectral_certifier.py",
+            "function": "inertia",
+            "calls": 6
+          }
+        ]
+      },
+      "median_seconds": {
+        "baseline": 0.7606764170341194,
+        "C": 0.2971492921933532
+      }
+    },
+    {
+      "task": {
+        "kind": "spectrum",
+        "function": {
+          "kind": "axis_profile",
+          "profile": "abs_power",
+          "amplitude": "-2",
+          "exponent": "-1/3",
+          "offset": "0",
+          "axis": 2
+        },
+        "mean_zero": true,
+        "tolerance": "1/100000000",
+        "budget": {
+          "wall_seconds": 10
+        }
+      },
+      "runs": {
+        "baseline": [
+          {
+            "seconds_with_json_and_external_replay": 1.5376346250995994,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "11398136078524181950472692849934181985745990727894356481136448081398426105858586971601328162007689470692452300003677752198628986906378665623155382954344084178626275260947681861697536/19421263186234716734950834372468455734344504478087087957619081595098594847301857982912874638805807491214799629460708466213208120938998620637040575372377378048446791145684777289395761774119993",
+            "search_counters": null
+          },
+          {
+            "seconds_with_json_and_external_replay": 1.5360717501025647,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "11398136078524181950472692849934181985745990727894356481136448081398426105858586971601328162007689470692452300003677752198628986906378665623155382954344084178626275260947681861697536/19421263186234716734950834372468455734344504478087087957619081595098594847301857982912874638805807491214799629460708466213208120938998620637040575372377378048446791145684777289395761774119993",
+            "search_counters": null
+          },
+          {
+            "seconds_with_json_and_external_replay": 1.529301333008334,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "11398136078524181950472692849934181985745990727894356481136448081398426105858586971601328162007689470692452300003677752198628986906378665623155382954344084178626275260947681861697536/19421263186234716734950834372468455734344504478087087957619081595098594847301857982912874638805807491214799629460708466213208120938998620637040575372377378048446791145684777289395761774119993",
+            "search_counters": null
+          }
+        ],
+        "C": [
+          {
+            "seconds_with_json_and_external_replay": 0.6491115000098944,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "80988627918004723585970998910953127745997837848039725948982323312452721394966111543576859062964171234657245435099623536236130312505414008392928216681696683413536243712/8638789107686870508164372152243808475894723441118740295528014296725992225916702971407830842533091918982581239210644968457099738043959548599601321995941198360186065773228668467",
+            "search_counters": {
+              "search_inertia_checks": 14,
+              "gap_threshold_checks": 1,
+              "kernel_constructions": 2,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.6579299159348011,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "80988627918004723585970998910953127745997837848039725948982323312452721394966111543576859062964171234657245435099623536236130312505414008392928216681696683413536243712/8638789107686870508164372152243808475894723441118740295528014296725992225916702971407830842533091918982581239210644968457099738043959548599601321995941198360186065773228668467",
+            "search_counters": {
+              "search_inertia_checks": 14,
+              "gap_threshold_checks": 1,
+              "kernel_constructions": 2,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          },
+          {
+            "seconds_with_json_and_external_replay": 0.6519810841418803,
+            "target_met": true,
+            "independent_target_met": true,
+            "status": "target_met",
+            "metric": "80988627918004723585970998910953127745997837848039725948982323312452721394966111543576859062964171234657245435099623536236130312505414008392928216681696683413536243712/8638789107686870508164372152243808475894723441118740295528014296725992225916702971407830842533091918982581239210644968457099738043959548599601321995941198360186065773228668467",
+            "search_counters": {
+              "search_inertia_checks": 14,
+              "gap_threshold_checks": 1,
+              "kernel_constructions": 2,
+              "candidate_proposals": 3,
+              "final_frozen_replays": 1,
+              "baseline_fallback_calls": 0
+            }
+          }
+        ]
+      },
+      "profiles_separate_from_timing": {
+        "baseline": [
+          {
+            "file": "error_bounds.py",
+            "function": "banded_inertia",
+            "calls": 100
+          },
+          {
+            "file": "spectral_certifier.py",
+            "function": "inertia",
+            "calls": 75
+          }
+        ],
+        "C": [
+          {
+            "file": "error_bounds.py",
+            "function": "banded_inertia",
+            "calls": 9
+          },
+          {
+            "file": "spectral_certifier.py",
+            "function": "inertia",
+            "calls": 23
+          }
+        ]
+      },
+      "median_seconds": {
+        "baseline": 1.5360717501025647,
+        "C": 0.6519810841418803
+      }
+    }
+  ],
+  "source_sha256_at_execution": "3b50f348356590c8663e5299e211fab93d75fd3ab29d39c34a44f0d8acd1e2e7",
+  "superseded_policy_note": "Predates conservative full-space centered-form applicability gate. All measurements are retained as development data; they are not final frozen performance results."
+}

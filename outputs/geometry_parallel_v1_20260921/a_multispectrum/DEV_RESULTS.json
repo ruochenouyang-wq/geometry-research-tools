@@ -1,0 +1,299 @@
+{
+  "classification": "public_development_only_not_benchmark",
+  "source_sha256": "ef10294d8eda87465ea67716cdf591766052ca4fdbd9ee2c7f61a4899c33bcf2",
+  "tests": "13 unittest methods passed; subsequently added near-zero unresolved-count test passed independently (14 total methods).",
+  "cases": [
+    {
+      "name": "step_simple",
+      "task": {
+        "kind": "negative_spectrum",
+        "function": {
+          "kind": "axis_profile",
+          "profile": "step",
+          "axis": 2,
+          "amplitude": "-1",
+          "offset": "0"
+        },
+        "mean_zero": false,
+        "tolerance": "1/1000000",
+        "budget": {
+          "wall_seconds": 10
+        }
+      },
+      "version": "parallel-A-multispectrum-v1",
+      "route": "complete_moment_multispectrum",
+      "fallback": false,
+      "certificate_valid": true,
+      "count_lower": 1,
+      "count_upper": 1,
+      "count_certified": true,
+      "negative_count": 1,
+      "sum_lower": "-5338909717918321/9007199254740992",
+      "sum_upper": "-79554077/134217728",
+      "sum_width": "125983879793/9007199254740992",
+      "abs_negative_sum_lower": "79554077/134217728",
+      "abs_negative_sum_upper": "5338909717918321/9007199254740992",
+      "sum_certified": true,
+      "sum_target_met": false,
+      "target_met": false,
+      "status": "count_certified_sum_open",
+      "tolerance": "1/1000000",
+      "attempts": [
+        {
+          "modes": 8,
+          "near_tail": 16,
+          "count_lower": 1,
+          "count_upper": 1,
+          "count_certified": true,
+          "angular_sectors": 1,
+          "sum_width": "1566564240861/18014398509481984",
+          "sum_target_met": false,
+          "status": "certified_open",
+          "elapsed_seconds": 0.1319842089433223
+        },
+        {
+          "modes": 12,
+          "near_tail": 16,
+          "count_lower": 1,
+          "count_upper": 1,
+          "count_certified": true,
+          "angular_sectors": 1,
+          "sum_width": "535011930255/18014398509481984",
+          "sum_target_met": false,
+          "status": "certified_open",
+          "elapsed_seconds": 0.499109165975824
+        },
+        {
+          "modes": 16,
+          "near_tail": 16,
+          "count_lower": 1,
+          "count_upper": 1,
+          "count_certified": true,
+          "angular_sectors": 1,
+          "sum_width": "125983879793/9007199254740992",
+          "sum_target_met": false,
+          "status": "certified_open",
+          "elapsed_seconds": 1.423043791204691
+        }
+      ],
+      "total_elapsed_seconds": 2.19312204211019,
+      "within_budget": true,
+      "budget_scope": "cooperative; caller enforces hard deadline",
+      "actual_model_calls": 0,
+      "actual_model_tokens": null,
+      "independent_public_replay": {
+        "certificate_valid": true,
+        "count_lower": 1,
+        "count_upper": 1,
+        "count_certified": true,
+        "negative_count": 1,
+        "sum_lower": "-5338909717918321/9007199254740992",
+        "sum_upper": "-79554077/134217728",
+        "sum_width": "125983879793/9007199254740992",
+        "abs_negative_sum_lower": "79554077/134217728",
+        "abs_negative_sum_upper": "5338909717918321/9007199254740992",
+        "sum_certified": true,
+        "sum_target_met": false,
+        "target_met": false,
+        "status": "count_certified_sum_open",
+        "tolerance": "1/1000000",
+        "fallback": false
+      }
+    },
+    {
+      "name": "step_shifted",
+      "task": {
+        "kind": "negative_spectrum",
+        "function": {
+          "kind": "axis_profile",
+          "profile": "step",
+          "axis": 2,
+          "amplitude": "-1",
+          "offset": "-4"
+        },
+        "mean_zero": false,
+        "tolerance": "1/1000000",
+        "budget": {
+          "wall_seconds": 10
+        }
+      },
+      "version": "parallel-A-multispectrum-v1",
+      "route": "complete_moment_multispectrum",
+      "fallback": false,
+      "certificate_valid": true,
+      "count_lower": 4,
+      "count_upper": 4,
+      "count_certified": true,
+      "negative_count": 4,
+      "sum_lower": "-109069393228401943/9007199254740992",
+      "sum_upper": "-101578343/8388608",
+      "sum_width": "477936684311/9007199254740992",
+      "abs_negative_sum_lower": "101578343/8388608",
+      "abs_negative_sum_upper": "109069393228401943/9007199254740992",
+      "sum_certified": true,
+      "sum_target_met": false,
+      "target_met": false,
+      "status": "count_certified_sum_open",
+      "tolerance": "1/1000000",
+      "attempts": [
+        {
+          "modes": 8,
+          "near_tail": 16,
+          "count_lower": 4,
+          "count_upper": 4,
+          "count_certified": true,
+          "angular_sectors": 2,
+          "sum_width": "5479347023437/18014398509481984",
+          "sum_target_met": false,
+          "status": "certified_open",
+          "elapsed_seconds": 0.36875570798292756
+        },
+        {
+          "modes": 12,
+          "near_tail": 16,
+          "count_lower": 4,
+          "count_upper": 4,
+          "count_certified": true,
+          "angular_sectors": 2,
+          "sum_width": "1968738085155/18014398509481984",
+          "sum_target_met": false,
+          "status": "certified_open",
+          "elapsed_seconds": 1.4131840839982033
+        },
+        {
+          "modes": 16,
+          "near_tail": 16,
+          "count_lower": 4,
+          "count_upper": 4,
+          "count_certified": true,
+          "angular_sectors": 2,
+          "sum_width": "477936684311/9007199254740992",
+          "sum_target_met": false,
+          "status": "certified_open",
+          "elapsed_seconds": 3.8339520001318306
+        }
+      ],
+      "total_elapsed_seconds": 5.93586020800285,
+      "within_budget": true,
+      "budget_scope": "cooperative; caller enforces hard deadline",
+      "actual_model_calls": 0,
+      "actual_model_tokens": null,
+      "independent_public_replay": {
+        "certificate_valid": true,
+        "count_lower": 4,
+        "count_upper": 4,
+        "count_certified": true,
+        "negative_count": 4,
+        "sum_lower": "-109069393228401943/9007199254740992",
+        "sum_upper": "-101578343/8388608",
+        "sum_width": "477936684311/9007199254740992",
+        "abs_negative_sum_lower": "101578343/8388608",
+        "abs_negative_sum_upper": "109069393228401943/9007199254740992",
+        "sum_certified": true,
+        "sum_target_met": false,
+        "target_met": false,
+        "status": "count_certified_sum_open",
+        "tolerance": "1/1000000",
+        "fallback": false
+      }
+    },
+    {
+      "name": "power_shifted",
+      "task": {
+        "kind": "negative_spectrum",
+        "function": {
+          "kind": "axis_profile",
+          "profile": "abs_power",
+          "axis": 2,
+          "exponent": "-1/4",
+          "amplitude": "-1/5",
+          "offset": "-6"
+        },
+        "mean_zero": true,
+        "tolerance": "1/1000000",
+        "budget": {
+          "wall_seconds": 10
+        }
+      },
+      "version": "parallel-A-multispectrum-v1",
+      "route": "complete_moment_multispectrum",
+      "fallback": false,
+      "certificate_valid": true,
+      "count_lower": 8,
+      "count_upper": 8,
+      "count_certified": true,
+      "negative_count": 8,
+      "sum_lower": "-4300418399522428326070694681400643/304236144054775056359208769290240",
+      "sum_upper": "-8010137043507400046816177/566683977944357425643520",
+      "sum_width": "2939909875594729217013019073/101412048018258352119736256430080",
+      "abs_negative_sum_lower": "8010137043507400046816177/566683977944357425643520",
+      "abs_negative_sum_upper": "4300418399522428326070694681400643/304236144054775056359208769290240",
+      "sum_certified": true,
+      "sum_target_met": false,
+      "target_met": false,
+      "status": "count_certified_sum_open",
+      "tolerance": "1/1000000",
+      "attempts": [
+        {
+          "modes": 8,
+          "near_tail": 16,
+          "count_lower": 8,
+          "count_upper": 8,
+          "count_certified": true,
+          "angular_sectors": 3,
+          "sum_width": "11091125977631865334416095873/101412048018258352119736256430080",
+          "sum_target_met": false,
+          "status": "certified_open",
+          "elapsed_seconds": 0.4844708750024438
+        },
+        {
+          "modes": 12,
+          "near_tail": 16,
+          "count_lower": 8,
+          "count_upper": 8,
+          "count_certified": true,
+          "angular_sectors": 3,
+          "sum_width": "3791063355058701920004140543/76059036013693764089802192322560",
+          "sum_target_met": false,
+          "status": "certified_open",
+          "elapsed_seconds": 1.48855245904997
+        },
+        {
+          "modes": 16,
+          "near_tail": 16,
+          "count_lower": 8,
+          "count_upper": 8,
+          "count_certified": true,
+          "angular_sectors": 3,
+          "sum_width": "2939909875594729217013019073/101412048018258352119736256430080",
+          "sum_target_met": false,
+          "status": "certified_open",
+          "elapsed_seconds": 3.8604121669195592
+        }
+      ],
+      "total_elapsed_seconds": 6.342214917065576,
+      "within_budget": true,
+      "budget_scope": "cooperative; caller enforces hard deadline",
+      "actual_model_calls": 0,
+      "actual_model_tokens": null,
+      "independent_public_replay": {
+        "certificate_valid": true,
+        "count_lower": 8,
+        "count_upper": 8,
+        "count_certified": true,
+        "negative_count": 8,
+        "sum_lower": "-4300418399522428326070694681400643/304236144054775056359208769290240",
+        "sum_upper": "-8010137043507400046816177/566683977944357425643520",
+        "sum_width": "2939909875594729217013019073/101412048018258352119736256430080",
+        "abs_negative_sum_lower": "8010137043507400046816177/566683977944357425643520",
+        "abs_negative_sum_upper": "4300418399522428326070694681400643/304236144054775056359208769290240",
+        "sum_certified": true,
+        "sum_target_met": false,
+        "target_met": false,
+        "status": "count_certified_sum_open",
+        "tolerance": "1/1000000",
+        "fallback": false
+      }
+    }
+  ]
+}

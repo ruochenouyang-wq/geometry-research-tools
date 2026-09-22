@@ -1,0 +1,38 @@
+{
+  "scope": "Public integration checks before freeze, not comparative performance",
+  "records": [
+    {
+      "case": "E01",
+      "route": "native_c2",
+      "status": "target_met",
+      "target_met": true,
+      "certificate_valid": true,
+      "failure_stage": null,
+      "fallback_reason": null,
+      "error": null,
+      "elapsed_seconds": 0.24640004197135568
+    },
+    {
+      "case": "E11",
+      "route": "reused_c1",
+      "status": "target_met",
+      "target_met": true,
+      "certificate_valid": true,
+      "failure_stage": null,
+      "fallback_reason": null,
+      "error": null,
+      "elapsed_seconds": 0.9663506250362843
+    },
+    {
+      "case": "E19",
+      "route": "baseline_fallback",
+      "status": "budget_exceeded",
+      "target_met": false,
+      "certificate_valid": false,
+      "failure_stage": "strong_fullspace_search",
+      "fallback_reason": "protected_budget_stop",
+      "error": null,
+      "elapsed_seconds": 10.904348583891988
+    }
+  ]
+}

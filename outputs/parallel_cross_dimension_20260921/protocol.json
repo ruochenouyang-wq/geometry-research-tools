@@ -1,0 +1,47 @@
+{
+  "batch_family_count": 2,
+  "classification": "public_development_comparison_not_holdout",
+  "cold_seconds": 10,
+  "comparison_policy": "report fixed denominators; compare costs on identical successful tasks only; show success and errors first",
+  "geometry_scope": "unit S2; dimension means evaluation axes, not a claim of arbitrary manifold dimension",
+  "known_case_disclosure": "S09 is an explicitly retained known development failure; no unseen-test claim",
+  "mutation_policy": "solver sources unchanged; source and public inputs freeze before final serial runs",
+  "prefixes": [
+    1,
+    4,
+    16
+  ],
+  "prepare_seconds": 30,
+  "query_seconds": 10,
+  "repetitions": 5,
+  "replay_seconds": 10,
+  "resource_metrics": [
+    "wall_seconds",
+    "cpu_user_seconds",
+    "cpu_system_seconds",
+    "peak_rss_bytes",
+    "response_json_utf8_bytes",
+    "certificate_json_utf8_bytes",
+    "preparation_bytes"
+  ],
+  "route_policy": {
+    "A": "native_negative_spectrum_projected_to_ground_interval",
+    "B": "native_prepared_family_no_baseline_fallback",
+    "C": "frozen_adaptive_solver_including_its_explicit_fallback",
+    "baseline": "frozen_baseline"
+  },
+  "session_seconds": 200,
+  "single_case_count": 18,
+  "singlepoint_B_interval_rule": "a plus/minus abs(a)/100, fixed before solving",
+  "speed_threshold_cost_reduction": 0.2,
+  "success_policy": "external task binding plus complete certificate verification and exact original tolerance, within hard deadline",
+  "systems": [
+    "baseline",
+    "A",
+    "B",
+    "C"
+  ],
+  "token_policy": "no model API calls in measured solvers; actual model tokens and research-agent tokens unmeasured; bytes are not tokens",
+  "unsupported_policy": "retain and exclude from speed wins; never silently fallback A/B",
+  "version": "parallel_cross_dimension_public_v1"
+}
